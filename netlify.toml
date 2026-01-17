@@ -1,0 +1,36 @@
+[build]
+command = "npx vite build"
+publish = "dist"
+
+[build.environment]
+SECRETS_SCAN_ENABLED = "false"
+
+[[redirects]]
+from = "/auth/v1/callback"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/privacy-policy"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/terms"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/auth/*"
+to = "/index.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = true

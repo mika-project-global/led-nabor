@@ -1,0 +1,12 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow admin and auth pages
+Disallow: /admin
+Disallow: /auth
+Disallow: /profile
+Disallow: /checkout
+
+# Sitemap location
+Sitemap: https://led-nabor.com/sitemap.xml
