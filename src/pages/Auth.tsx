@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { signInWithEmail, signUpWithEmail, signInWithGoogle, signInWithFacebook, signInWithApple, getCurrentUser, resetPassword } from '../lib/supabase-auth';
+import { signInWithEmail, signUpWithEmail, signInWithGoogle, signInWithFacebook, getCurrentUser, resetPassword } from '../lib/supabase-auth';
 import { useNotifications } from '../hooks/useNotifications';
 import { supabase } from '../lib/supabase';
 import { Mail } from 'lucide-react';
@@ -20,109 +20,23 @@ export default function Auth() {
   const [showEmailForm, setShowEmailForm] = useState(false);
   const [showForgotPassword, setShowForgotPassword] = useState(false);
 
-  // Обработка callback от Apple Auth
-  useEffect(() => {
-    const handleCallback = async () => {
-      console.log('🔍 Обрабатываем callback аутентификации...');
-      // Получаем все параметры из URL
-      const params = new URLSearchParams(window.location.search);
-      const hashParams = new URLSearchParams(window.location.hash.slice(1));
 
-      // Объединяем параметры из search и hash
-      for (const [key, value] of hashParams.entries()) {
-        params.set(key, value);
-      }
-
-      const error = params.get('error');
-      const code = params.get('code');
-      const state = params.get('state');
-      const provider = params.get('provider');
-      const access_token = params.get('access_token');
-      const refresh_token = params.get('refresh_token');
-
-      console.log('🔍 Auth params:', { error, code, state, provider });
-      console.log('🔍 Tokens:', { access_token, refresh_token });
-
-      // Verify state for Apple auth
-      if (provider === 'apple') {
-        const savedState = localStorage.getItem('apple_auth_state');
-        if (state !== savedState) {
-          console.error('❌ State mismatch in Apple auth callback');
-          showNotification('error', t('auth.error_invalid_state'));
-          navigate('/auth');
-          return;
-        }
-        localStorage.removeItem('apple_auth_state');
-      }
-
-      if (error === 'user_cancelled_authorize') {
-        showNotification('info', t('auth.apple_cancelled'));
-        navigate('/auth');
-        return;
-      } else if (error) {
-        showNotification('error', t('auth.apple_error'));
-        navigate('/auth');
-        return;
-      }
-      
-      // Если есть токены, устанавливаем сессию
-      if (access_token) {
-        try {
-          const { error: sessionError } = await supabase.auth.setSession({
-            access_token,
-            refresh_token: refresh_token || null
-          });
-          
-          if (sessionError) throw sessionError;
-          
-          navigate('/profile');
-          return;
-        } catch (error) {
-          console.error('❌ Ошибка установки сессии:', error);
-          showNotification('error', t('auth.session_error'));
-          navigate('/auth');
-          return;
-        }
-      }
-
-      // Если нет токенов, проверяем наличие сессии
-      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-      
-      if (sessionError) {
-        console.error('❌ Ошибка получения сессии:', sessionError);
-        showNotification('error', 'Ошибка при получении сессии');
-        navigate('/auth');
-        return;
-      }
-
-      if (session) {
-        navigate('/profile');
-      }
-    };
-
-    if (location.pathname === '/auth/v1/callback') {
-      handleCallback();
-    }
-  }, [navigate, showNotification]);
-
-  const handleSocialSignIn = async (provider: 'google' | 'facebook' | 'apple') => {
+  const handleSocialSignIn = async (provider: 'google' | 'facebook') => {
     setIsLoading(true);
-    const providerName = provider === 'apple' ? 'Apple' : provider === 'google' ? 'Google' : 'Facebook';
+    const providerName = provider === 'google' ? 'Google' : 'Facebook';
     showNotification('info', t('auth.connecting_to', { provider: providerName }));
 
     try {
       const { error } = await (
-        provider === 'google' ? signInWithGoogle() :
-        provider === 'facebook' ? signInWithFacebook() :
-        signInWithApple() // Apple auth теперь обрабатывается в handleAppleCallback
+        provider === 'google' ? signInWithGoogle() : signInWithFacebook()
       );
-      
+
       if (error) {
         console.error(`❌ Ошибка входа через ${provider}:`, error);
         showNotification('error', error.message);
         return;
       }
-      
+
       console.log(`✅ Успешное подключение к ${provider}`);
     } catch (error) {
       console.error(`❌ Ошибка входа через ${provider}:`, error);
@@ -373,15 +287,6 @@ export default function Auth() {
           >
             <img src="https://www.facebook.com/favicon.ico" alt="" className="w-5 h-5" />
             {t('auth.sign_in_with_facebook')}
-          </button>
-          
-          <button
-            onClick={() => handleSocialSignIn('apple')}
-            className="w-full flex items-center justify-center gap-3 bg-black hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
-            disabled={isLoading}
-          >
-            <img src="https://www.apple.com/favicon.ico" alt="" className="w-5 h-5" />
-            {t('auth.sign_in_with_apple')}
           </button>
         </div>
 
