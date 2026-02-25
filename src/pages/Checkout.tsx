@@ -178,6 +178,18 @@ export default function Checkout() {
     }
 
     try {
+      // Get user ID once at the beginning
+      let userId: string | null = null;
+      if (isAuthenticated) {
+        try {
+          const { user } = await getCurrentUser();
+          userId = user?.id || null;
+        } catch (error) {
+          console.error('Error getting user:', error);
+          userId = null;
+        }
+      }
+
       // Create serializable order items
       const serializableItems = items.map(createSerializableOrderItem);
 
@@ -195,11 +207,11 @@ export default function Checkout() {
             delivery_method: selectedDelivery,
             payment_method: serializablePaymentMethod,
             status: "pending",
-            user_id: isAuthenticated ? (await getCurrentUser()).user?.id : null
+            user_id: userId
           })
           .select()
           .single();
-        
+
         if (orderError) throw orderError;
 
         // Get the product from the database
@@ -225,7 +237,7 @@ export default function Checkout() {
           status: 'pending',
           createdAt: new Date().toISOString(),
           stripeProductId,
-          userId: isAuthenticated ? (await getCurrentUser()).user?.id : null
+          userId: userId
         };
 
         if (selectedPaymentMethod === 'cash') {
