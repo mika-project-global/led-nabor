@@ -257,6 +257,38 @@ export default function Checkout() {
 
         console.log('[CHECKOUT DEBUG] Order created successfully:', orderId);
 
+        // Send order confirmation email (non-blocking)
+        // If email fails, we still proceed with the order
+        try {
+          console.log('[EMAIL] Sending order confirmation email to:', customerInfo.email);
+          const emailResponse = await fetch(
+            `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-order-confirmation`,
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+              },
+              body: JSON.stringify({
+                orderId,
+                email: customerInfo.email,
+              }),
+            }
+          );
+
+          if (emailResponse.ok) {
+            const emailResult = await emailResponse.json();
+            console.log('[EMAIL] Order confirmation email sent successfully:', emailResult);
+          } else {
+            const emailError = await emailResponse.text();
+            console.warn('[EMAIL] Failed to send order confirmation email:', emailError);
+            // Don't show error to user, just log it
+          }
+        } catch (emailError) {
+          console.warn('[EMAIL] Exception sending order confirmation email:', emailError);
+          // Don't show error to user, just log it
+        }
+
         // Get the product from the database
         const { data: productData, error: productError } = await supabase
           .from('products')
@@ -267,7 +299,7 @@ export default function Checkout() {
         if (productError) {
           console.error('Error fetching product data:', productError);
         }
-        
+
         const stripeProductId = productData?.stripeProductId;
 
         const order: Order = {
