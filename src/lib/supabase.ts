@@ -40,7 +40,7 @@ export const supabase = createClient<Database>(
 );
 
 export function createAnonClient() {
-  return createClient<Database>(
+  const client = createClient<Database>(
     supabaseUrl,
     supabaseAnonKey,
     {
@@ -52,9 +52,13 @@ export function createAnonClient() {
       global: {
         headers: {
           ...headers,
+          'apikey': supabaseAnonKey,
+          'Authorization': `Bearer ${supabaseAnonKey}`,
           'X-Client-Info': 'guest-checkout'
         }
       }
     }
   );
+
+  return client;
 }
