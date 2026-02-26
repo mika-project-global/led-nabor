@@ -216,7 +216,11 @@ export default function Checkout() {
         // Create serializable payment method
         const serializablePaymentMethod = createSerializablePaymentMethod(selectedPaymentMethodObj);
 
+        // Generate UUID on client side to avoid needing SELECT permission
+        const orderId = crypto.randomUUID();
+
         console.log('[CHECKOUT DEBUG] Attempting to create order with:', {
+          orderId,
           userId,
           isGuest,
           totalItems: serializableItems.length
@@ -226,9 +230,11 @@ export default function Checkout() {
 
         // Create order in database with serializable data
         // Supabase client automatically uses 'anon' role when no session exists
-        const { data: orderData, error: orderError } = await supabase
+        // Using returning: 'minimal' to avoid SELECT permission requirement for anon role
+        const { error: orderError } = await supabase
           .from("orders")
           .insert({
+            id: orderId,
             customer_info: customerInfo,
             items: serializableItems,
             total: Number(total),
@@ -236,9 +242,7 @@ export default function Checkout() {
             payment_method: serializablePaymentMethod,
             status: "pending",
             user_id: userId
-          })
-          .select()
-          .single();
+          });
 
         if (orderError) {
           console.error('[CHECKOUT DEBUG] Order creation failed:', {
@@ -251,7 +255,7 @@ export default function Checkout() {
           throw orderError;
         }
 
-        console.log('[CHECKOUT DEBUG] Order created successfully:', orderData.id);
+        console.log('[CHECKOUT DEBUG] Order created successfully:', orderId);
 
         // Get the product from the database
         const { data: productData, error: productError } = await supabase
@@ -267,7 +271,7 @@ export default function Checkout() {
         const stripeProductId = productData?.stripeProductId;
 
         const order: Order = {
-          id: orderData.id,
+          id: orderId,
           items: serializableItems,
           total,
           customerInfo,
