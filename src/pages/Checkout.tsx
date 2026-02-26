@@ -7,7 +7,7 @@ import { getCurrentUser } from '../lib/supabase-auth';
 import { CreditCard, Truck, ChevronRight, Package, ChevronLeft, Banknote, Info, Shield, CreditCard as CardIcon, Minus, Plus } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { CustomerInfo, DeliveryMethod, PaymentMethod, Order } from '../types';
-import { supabase } from '../lib/supabase';
+import { supabase, createAnonClient } from '../lib/supabase';
 import { getImageUrl } from '../lib/supabase-storage';
 import { useNotifications } from '../hooks/useNotifications';
 import { SEO } from '../components/SEO';
@@ -86,8 +86,6 @@ export default function Checkout() {
           // No valid session = guest user
           setIsAuthenticated(false);
           setIsLoadingProfile(false);
-          // Clear any stale auth data
-          await supabase.auth.signOut({ scope: 'local' });
           return;
         }
 
@@ -100,8 +98,6 @@ export default function Checkout() {
           // Session exists but profile load failed - treat as guest
           setIsAuthenticated(false);
           setIsLoadingProfile(false);
-          // Clear any stale auth data
-          await supabase.auth.signOut({ scope: 'local' });
           return;
         }
 
@@ -123,8 +119,6 @@ export default function Checkout() {
       } catch (error) {
         console.error('Error loading user profile:', error);
         setIsAuthenticated(false);
-        // Clear any stale auth data on error
-        await supabase.auth.signOut({ scope: 'local' });
       } finally {
         setIsLoadingProfile(false);
       }
@@ -197,15 +191,22 @@ export default function Checkout() {
       let userId: string | null = null;
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
 
-      // If no valid session, explicitly clear any stored auth to ensure anon role
-      if (!session?.user || sessionError) {
+      console.log('[CHECKOUT DEBUG] Initial session check:', {
+        hasSession: !!session,
+        hasUser: !!session?.user,
+        sessionError: sessionError,
+        userId: session?.user?.id
+      });
+
+      // Determine if user is authenticated
+      const isGuest = !session?.user || sessionError;
+
+      if (isGuest) {
         userId = null;
-        // Temporarily clear the session to ensure we're using anon role
-        await supabase.auth.signOut({ scope: 'local' });
-        // Wait a bit for the signout to complete
-        await new Promise(resolve => setTimeout(resolve, 100));
+        console.log('[CHECKOUT DEBUG] No valid session - proceeding as guest');
       } else {
         userId = session.user.id;
+        console.log('[CHECKOUT DEBUG] Valid session found - proceeding as authenticated user:', userId);
       }
 
       // Create serializable order items
@@ -215,8 +216,19 @@ export default function Checkout() {
         // Create serializable payment method
         const serializablePaymentMethod = createSerializablePaymentMethod(selectedPaymentMethodObj);
 
+        console.log('[CHECKOUT DEBUG] Attempting to create order with:', {
+          userId,
+          isGuest,
+          totalItems: serializableItems.length
+        });
+
+        // Use anonymous client for guest orders, authenticated client for user orders
+        const clientToUse = isGuest ? createAnonClient() : supabase;
+
+        console.log('[CHECKOUT DEBUG] Using client:', isGuest ? 'anonymous' : 'authenticated');
+
         // Create order in database with serializable data
-        const { data: orderData, error: orderError } = await supabase
+        const { data: orderData, error: orderError } = await clientToUse
           .from("orders")
           .insert({
             customer_info: customerInfo,
@@ -230,7 +242,18 @@ export default function Checkout() {
           .select()
           .single();
 
-        if (orderError) throw orderError;
+        if (orderError) {
+          console.error('[CHECKOUT DEBUG] Order creation failed:', {
+            error: orderError,
+            code: orderError.code,
+            message: orderError.message,
+            details: orderError.details,
+            hint: orderError.hint
+          });
+          throw orderError;
+        }
+
+        console.log('[CHECKOUT DEBUG] Order created successfully:', orderData.id);
 
         // Get the product from the database
         const { data: productData, error: productError } = await supabase

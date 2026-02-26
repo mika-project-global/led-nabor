@@ -38,3 +38,23 @@ export const supabase = createClient<Database>(
     }
   }
 );
+
+export function createAnonClient() {
+  return createClient<Database>(
+    supabaseUrl,
+    supabaseAnonKey,
+    {
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+        detectSessionInUrl: false
+      },
+      global: {
+        headers: {
+          ...headers,
+          'X-Client-Info': 'guest-checkout'
+        }
+      }
+    }
+  );
+}
