@@ -7,7 +7,7 @@ import { getCurrentUser } from '../lib/supabase-auth';
 import { CreditCard, Truck, ChevronRight, Package, ChevronLeft, Banknote, Info, Shield, CreditCard as CardIcon, Minus, Plus } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { CustomerInfo, DeliveryMethod, PaymentMethod, Order } from '../types';
-import { supabase, createAnonClient } from '../lib/supabase';
+import { supabase } from '../lib/supabase';
 import { getImageUrl } from '../lib/supabase-storage';
 import { useNotifications } from '../hooks/useNotifications';
 import { SEO } from '../components/SEO';
@@ -222,13 +222,11 @@ export default function Checkout() {
           totalItems: serializableItems.length
         });
 
-        // Use anonymous client for guest orders, authenticated client for user orders
-        const clientToUse = isGuest ? createAnonClient() : supabase;
-
-        console.log('[CHECKOUT DEBUG] Using client:', isGuest ? 'anonymous' : 'authenticated');
+        console.log('[CHECKOUT DEBUG] Using supabase client (auto-detects auth state)');
 
         // Create order in database with serializable data
-        const { data: orderData, error: orderError } = await clientToUse
+        // Supabase client automatically uses 'anon' role when no session exists
+        const { data: orderData, error: orderError } = await supabase
           .from("orders")
           .insert({
             customer_info: customerInfo,

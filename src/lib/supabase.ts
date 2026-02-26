@@ -38,27 +38,3 @@ export const supabase = createClient<Database>(
     }
   }
 );
-
-export function createAnonClient() {
-  const client = createClient<Database>(
-    supabaseUrl,
-    supabaseAnonKey,
-    {
-      auth: {
-        persistSession: false,
-        autoRefreshToken: false,
-        detectSessionInUrl: false
-      },
-      global: {
-        headers: {
-          ...headers,
-          'apikey': supabaseAnonKey,
-          'Authorization': `Bearer ${supabaseAnonKey}`,
-          'X-Client-Info': 'guest-checkout'
-        }
-      }
-    }
-  );
-
-  return client;
-}
