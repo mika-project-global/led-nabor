@@ -82,10 +82,12 @@ export default function Checkout() {
         // Check current session directly from Supabase
         const { data: { session } } = await supabase.auth.getSession();
 
-        if (!session) {
-          // No session = guest user
+        if (!session?.user) {
+          // No valid session = guest user
           setIsAuthenticated(false);
           setIsLoadingProfile(false);
+          // Clear any stale auth data
+          await supabase.auth.signOut({ scope: 'local' });
           return;
         }
 
@@ -98,6 +100,8 @@ export default function Checkout() {
           // Session exists but profile load failed - treat as guest
           setIsAuthenticated(false);
           setIsLoadingProfile(false);
+          // Clear any stale auth data
+          await supabase.auth.signOut({ scope: 'local' });
           return;
         }
 
@@ -119,6 +123,8 @@ export default function Checkout() {
       } catch (error) {
         console.error('Error loading user profile:', error);
         setIsAuthenticated(false);
+        // Clear any stale auth data on error
+        await supabase.auth.signOut({ scope: 'local' });
       } finally {
         setIsLoadingProfile(false);
       }
@@ -189,9 +195,16 @@ export default function Checkout() {
     try {
       // Get user ID once at the beginning - check session directly
       let userId: string | null = null;
-      const { data: { session } } = await supabase.auth.getSession();
+      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
 
-      if (session?.user) {
+      // If no valid session, explicitly clear any stored auth to ensure anon role
+      if (!session?.user || sessionError) {
+        userId = null;
+        // Temporarily clear the session to ensure we're using anon role
+        await supabase.auth.signOut({ scope: 'local' });
+        // Wait a bit for the signout to complete
+        await new Promise(resolve => setTimeout(resolve, 100));
+      } else {
         userId = session.user.id;
       }
 
