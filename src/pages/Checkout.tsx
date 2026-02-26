@@ -79,19 +79,28 @@ export default function Checkout() {
   useEffect(() => {
     const loadUserProfile = async () => {
       try {
-        const { user, error } = await getCurrentUser();
-        
-        if (error) {
-          if (error.name === 'AuthSessionMissingError') {
-            // User is not authenticated - this is fine, continue as guest
-            setIsAuthenticated(false);
-            setIsLoadingProfile(false);
-            return;
-          }
-          throw error;
+        // Check current session directly from Supabase
+        const { data: { session } } = await supabase.auth.getSession();
+
+        if (!session) {
+          // No session = guest user
+          setIsAuthenticated(false);
+          setIsLoadingProfile(false);
+          return;
         }
 
+        // User has a valid session
         setIsAuthenticated(true);
+
+        const { user, error } = await getCurrentUser();
+
+        if (error) {
+          // Session exists but profile load failed - treat as guest
+          setIsAuthenticated(false);
+          setIsLoadingProfile(false);
+          return;
+        }
+
         if (user?.profile) {
           // Auto-fill form with user profile data
           setCustomerInfo({
@@ -178,16 +187,12 @@ export default function Checkout() {
     }
 
     try {
-      // Get user ID once at the beginning
+      // Get user ID once at the beginning - check session directly
       let userId: string | null = null;
-      if (isAuthenticated) {
-        try {
-          const { user } = await getCurrentUser();
-          userId = user?.id || null;
-        } catch (error) {
-          console.error('Error getting user:', error);
-          userId = null;
-        }
+      const { data: { session } } = await supabase.auth.getSession();
+
+      if (session?.user) {
+        userId = session.user.id;
       }
 
       // Create serializable order items

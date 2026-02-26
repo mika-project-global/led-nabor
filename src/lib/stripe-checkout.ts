@@ -65,11 +65,15 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
       return { error: 'Failed to create checkout session' };
     }
 
-    // Update order status to pending_payment
-    await supabase
+    // Update order status to pending_payment (works for both guest and authenticated users)
+    const { error: updateError } = await supabase
       .from('orders')
       .update({ status: 'pending_payment' })
       .eq('id', order.id);
+
+    if (updateError) {
+      console.error('Error updating order status:', updateError);
+    }
 
     // Create payment session record
     await supabase
@@ -140,13 +144,16 @@ export async function createCashOnDeliveryOrder(order: Order): Promise<boolean> 
       createdAt: order.createdAt
     };
 
-    // Update order status to indicate cash on delivery
-    const { error } = await supabase
+    // Update order status to indicate cash on delivery (works for both guest and authenticated users)
+    const { error: updateError } = await supabase
       .from('orders')
       .update({ status: 'pending_cod' }) // pending cash on delivery
       .eq('id', order.id);
 
-    if (error) throw error;
+    if (updateError) {
+      console.error('Error updating order status:', updateError);
+      throw updateError;
+    }
     
     // Store the clean order in sessionStorage for retrieval on the success page
     sessionStorage.setItem('cod_order', JSON.stringify(cleanOrder));
