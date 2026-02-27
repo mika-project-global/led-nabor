@@ -44,7 +44,7 @@ const createSerializablePaymentMethod = (method: PaymentMethod) => ({
 export default function Checkout() {
   const navigate = useNavigate();
   const { items, clearCart, updateQuantity } = useCart();
-  const { formatPrice } = useLocale();
+  const { formatPrice, currency, language } = useLocale();
   const { t } = useTranslation();
   const { showNotification } = useNotifications();
   const [step, setStep] = useState<'info' | 'delivery' | 'confirmation'>('info');
@@ -241,7 +241,9 @@ export default function Checkout() {
             delivery_method: selectedDelivery,
             payment_method: serializablePaymentMethod,
             status: "pending",
-            user_id: userId
+            user_id: userId,
+            currency: currency,
+            locale: language
           });
 
         if (orderError) {

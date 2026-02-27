@@ -1,51 +1,99 @@
 # Send Order Confirmation Email
 
-Edge Function для отправки писем подтверждения заказа клиентам и админу.
+Production-ready Edge Function for sending multilingual, multi-currency order confirmation emails.
 
-## Функциональность
+## Features
 
-- Отправляет красивое HTML письмо клиенту с деталями заказа
-- Отправляет копию письма админу для уведомления о новом заказе
-- Использует Resend API для надежной доставки писем
-- Поддерживает заказы от гостей и авторизованных пользователей
+- **Multi-currency support**: Formats prices in RUB, EUR, CZK, PLN, USD, etc.
+- **Multi-language support**: Email content in English, Russian, Czech
+- **HTML + Plain text**: Both formats for maximum compatibility
+- **Production email**: Supports custom domain emails with Reply-To
+- **Guest & authenticated orders**: Works for all customer types
+- **Localized payment methods**: COD and Stripe with translations
 
-## Настройка переменных окружения
+## Environment Variables
 
-### 1. Получите API ключ от Resend
+### Required
 
-1. Зарегистрируйтесь на [resend.com](https://resend.com)
-2. Перейдите в [API Keys](https://resend.com/api-keys)
-3. Создайте новый API ключ
-4. Скопируйте ключ (начинается с `re_`)
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `RESEND_API_KEY` | API key from [resend.com](https://resend.com/api-keys) | `re_xxxxxxxxxx` |
 
-### 2. Настройте секреты в Supabase
+### Optional
 
-Эти переменные уже автоматически настроены при деплое. Если нужно изменить:
+| Variable | Description | Default | Production Example |
+|----------|-------------|---------|-------------------|
+| `FROM_EMAIL` | Sender email address | `onboarding@resend.dev` | `orders@led-nabor.com` |
+| `REPLY_TO_EMAIL` | Reply-To email address | (none) | `support@led-nabor.com` |
+| `ADMIN_EMAIL` | Admin notification email | (none) | `admin@led-nabor.com` |
 
-```bash
-# В проекте Supabase перейдите в:
-# Settings → Edge Functions → Add secret
+### Setup for Production
 
-RESEND_API_KEY=re_xxxxxxxxxx
-FROM_EMAIL=onboarding@resend.dev
-ADMIN_EMAIL=your-admin@email.com
+1. **Get Resend API Key**
+   - Sign up at [resend.com](https://resend.com)
+   - Go to [API Keys](https://resend.com/api-keys)
+   - Create new API key
+   - Copy the key (starts with `re_`)
+
+2. **Add Your Domain to Resend**
+   - In Resend: Settings → Domains → Add Domain
+   - Add DNS records (MX, TXT, CNAME) to your domain
+   - Wait for verification (5-10 minutes)
+   - Update `FROM_EMAIL` to use your domain
+
+3. **Configure Secrets in Supabase**
+   - Secrets are automatically configured on deployment
+   - To update: Supabase Dashboard → Settings → Edge Functions → Manage secrets
+
+## How It Works
+
+### Currency & Language Detection
+
+The function reads `currency` and `locale` fields from the order:
+
+```typescript
+// Example order data
+{
+  id: "uuid",
+  currency: "CZK",  // or "EUR", "RUB", "PLN", etc.
+  locale: "en",     // or "ru", "cs"
+  // ... other fields
+}
 ```
 
-**Важно:**
-- `FROM_EMAIL`: Для тестирования используйте `onboarding@resend.dev` (работает сразу)
-- Для продакшена настройте свой домен в Resend и используйте email вида `orders@yourdomain.com`
-- `ADMIN_EMAIL`: Email, на который будут приходить уведомления о новых заказах
+Prices are formatted using `Intl.NumberFormat`:
 
-### 3. Для продакшена: настройте свой домен
+```typescript
+formatCurrency(1500, "CZK", "en")  // → "CZK 1,500"
+formatCurrency(1500, "EUR", "cs")  // → "1 500 €"
+formatCurrency(1500, "RUB", "ru")  // → "1 500 ₽"
+```
 
-1. В Resend добавьте свой домен (Settings → Domains)
-2. Добавьте DNS записи в настройки вашего домена
-3. Дождитесь верификации домена
-4. Обновите `FROM_EMAIL` на email с вашим доменом
+### Email Templates
 
-## Использование
+Each email includes:
+- **HTML version**: Beautiful gradient design, responsive tables
+- **Plain text version**: Simple text fallback for email clients
 
-Функция вызывается автоматически после создания заказа в `Checkout.tsx`:
+Supported languages:
+- `en`: English
+- `ru`: Russian (Русский)
+- `cs`: Czech (Čeština)
+
+Falls back to English if locale not supported.
+
+### Payment Method Localization
+
+Payment methods are localized based on order locale:
+
+| Type | English | Russian | Czech |
+|------|---------|---------|-------|
+| COD | Cash on Delivery | Наложенный платеж | Dobírka |
+| Stripe | Card Payment (Stripe) | Оплата картой (Stripe) | Platba kartou (Stripe) |
+
+## API Usage
+
+Called automatically from `Checkout.tsx` after order creation:
 
 ```typescript
 const response = await fetch(
@@ -57,48 +105,69 @@ const response = await fetch(
       'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
     },
     body: JSON.stringify({
-      orderId: 'uuid-here',
-      email: 'customer@email.com',
+      orderId: '550e8400-e29b-41d4-a716-446655440000',
+      email: 'customer@example.com',
     }),
   }
 );
 ```
 
-## Логирование
+## Logging
 
-Функция логирует:
-- Начало процесса отправки
-- Успешную отправку писем
-- Ошибки при отправке
-- Результаты вызовов Resend API
+All operations are logged with prefixes:
+- `[ORDER CONFIRMATION]` - Main process steps
+- `[RESEND SUCCESS]` - Successful email sends
+- `[RESEND ERROR]` - API errors
+- `[FORMAT CURRENCY ERROR]` - Currency formatting issues
 
-Проверить логи можно в Supabase Dashboard → Edge Functions → send-order-confirmation → Logs
+View logs: Supabase Dashboard → Edge Functions → send-order-confirmation → Logs
 
-## Обработка ошибок
+## Error Handling
 
-- Если письмо клиенту не отправляется - возвращается ошибка 500
-- Если письмо админу не отправляется - только логируется предупреждение
-- На фронтенде ошибки отправки email не блокируют создание заказа
-- Пользователь всегда видит страницу успеха, даже если email не отправился
+- **Customer email fails**: Returns 500 error (critical)
+- **Admin email fails**: Logs warning only (non-critical)
+- **Frontend**: Errors don't block order creation
+- **Fallbacks**: Invalid currency/locale defaults to RUB/en
 
-## Формат писем
+## Email Examples
 
-### Письмо клиенту
-- Красивый HTML шаблон с gradient header
-- Полная информация о заказе
-- Таблица с товарами и ценами
-- Адрес доставки и контактная информация
-- Способ оплаты
+### Customer Email (English)
+Subject: `Order Confirmed: 550e8400`
 
-### Письмо админу
-- Простой HTML шаблон
-- Информация о клиенте
-- Детали заказа
-- Контактные данные для связи
+Content:
+- Greeting with customer name
+- Order number in highlighted box
+- Order items table with quantities and prices
+- Total in customer's currency
+- Delivery address and payment method
+- Support contact info
 
-## Безопасность
+### Admin Email (English)
+Subject: `New Order: 550e8400`
 
-- Edge Function использует `verify_jwt: false` (публичная функция)
-- Service Role Key используется только на бэкенде для чтения заказов
-- На фронтенде используется только Anon Key
-- RLS политики остаются включенными
+Content:
+- Customer contact information
+- Full order details table
+- Order status and creation date
+- All in admin's preferred language
+
+## Testing
+
+```bash
+# Test with different locales and currencies
+curl -X POST "${SUPABASE_URL}/functions/v1/send-order-confirmation" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+  -d '{
+    "orderId": "your-order-id",
+    "email": "test@example.com"
+  }'
+```
+
+## Security
+
+- Uses `verify_jwt: false` (public endpoint)
+- Service Role Key only used server-side
+- Frontend uses Anon Key only
+- RLS policies remain enabled
+- No sensitive data in logs
