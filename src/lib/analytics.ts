@@ -50,3 +50,32 @@ export function trackPerformance() {
     });
   }
 }
+
+// Отправка события покупки в Google Analytics 4
+interface PurchaseItem {
+  item_name: string;
+  quantity: number;
+  price: number;
+}
+
+interface PurchaseEventParams {
+  transaction_id: string;
+  value: number;
+  currency: string;
+  items: PurchaseItem[];
+}
+
+export function trackPurchase(params: PurchaseEventParams) {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', 'purchase', {
+      transaction_id: params.transaction_id,
+      value: params.value,
+      currency: params.currency,
+      items: params.items
+    });
+
+    console.log('GA4 Purchase event sent:', params);
+  } else {
+    console.warn('gtag is not available for tracking purchase');
+  }
+}

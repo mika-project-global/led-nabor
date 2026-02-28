@@ -2,11 +2,12 @@ import React from 'react';
 import { useLocation, Link, Navigate } from 'react-router-dom';
 import { CheckCircle, Package, Banknote, CreditCard } from 'lucide-react';
 import { Order, CartItem } from '../types';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { supabase } from '../lib/supabase';
 import { useCart } from '../context/CartContext';
 import { SEO } from '../components/SEO';
 import { useTranslation } from '../hooks/useTranslation';
+import { trackPurchase } from '../lib/analytics';
 
 export default function OrderSuccess() {
   const { t } = useTranslation();
@@ -16,6 +17,7 @@ export default function OrderSuccess() {
   const sessionId = new URLSearchParams(location.search).get('session_id');
   const [isLoading, setIsLoading] = useState(false);
   const [stripeOrder, setStripeOrder] = useState<Order | null>(null);
+  const purchaseTracked = useRef(false);
 
   // Check for cash on delivery order in sessionStorage
   useEffect(() => {
@@ -97,6 +99,33 @@ export default function OrderSuccess() {
       clearCart();
     }
   }, [order, stripeOrder, sessionId, clearCart]);
+
+  // Track purchase in Google Analytics 4
+  useEffect(() => {
+    const displayOrder = order || stripeOrder;
+
+    if (displayOrder && !purchaseTracked.current) {
+      purchaseTracked.current = true;
+
+      // Get currency from delivery method, fallback to CZK
+      const currency = displayOrder.deliveryMethod?.currency || 'CZK';
+
+      // Map cart items to GA4 items format
+      const items = displayOrder.items.map(item => ({
+        item_name: `${item.name} (${item.variant.length}m)`,
+        quantity: item.quantity,
+        price: item.variant.price / 100 // Convert from cents to main currency unit
+      }));
+
+      // Send purchase event to GA4
+      trackPurchase({
+        transaction_id: displayOrder.id,
+        value: displayOrder.total / 100, // Convert from cents to main currency unit
+        currency: currency,
+        items: items
+      });
+    }
+  }, [order, stripeOrder]);
 
   // Show loading state while fetching order data
   if (isLoading) {
