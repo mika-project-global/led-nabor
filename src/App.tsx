@@ -18,6 +18,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import ErrorBoundary from './components/ErrorBoundary';
 import { ScrollIndicator } from './components/ScrollIndicator';
 import { ScrollToTop } from './components/ScrollToTop';
+import { LocaleWrapper } from './components/LocaleWrapper';
 
 // Lazy load pages
 const Catalog = React.lazy(() => import('./pages/Catalog'));
@@ -71,30 +72,40 @@ export default function App() {
                       <Suspense fallback={<LoadingState size="large" />}>
                         <main>
                           <ErrorBoundary>
-                            <Routes> 
-                              <Route path="/" element={<Catalog />} />
-                              <Route path="/catalog" element={<Catalog />} />
-                              <Route path="/auth/v1/callback" element={<Auth />} />
-                              <Route path="/auth" element={<Auth />} />
-                              <Route path="/auth/reset-password" element={<ResetPassword />} />
-                              <Route path="/category/:categoryId" element={<CategoryProducts />} />
-                              <Route path="/profile" element={<Profile />} />
-                              <Route path="/product/:productId" element={<ProductPage />} />
-                              <Route path="/checkout" element={<Checkout />} />
-                              <Route path="/order-success" element={<OrderSuccess />} />
-                              <Route path="/admin" element={<Admin />} />
-                              <Route path="/faq" element={<FAQ />} />
-                              <Route path="/installation-guide" element={<InstallationGuide />} />
-                              <Route path="/warranty" element={<Warranty />} />
-                              <Route path="/business" element={<Business />} />
-                              <Route path="/about" element={<About />} />
-                              <Route path="/support" element={<Support />} />
+                            <Routes>
+                              {/* Root redirect to default locale */}
+                              <Route path="/" element={<Navigate to="/en/" replace />} />
 
-                              {/* Добавленные маршруты */}
-                              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                              <Route path="/terms" element={<Terms />} />
-                              <Route path="/blog" element={<Blog />} />
-                              <Route path="/blog/:slug" element={<BlogPost />} />
+                              {/* Auth callbacks - no locale required */}
+                              <Route path="/auth/v1/callback" element={<Auth />} />
+
+                              {/* Locale-based routes */}
+                              <Route path="/:locale/*" element={
+                                <LocaleWrapper>
+                                  <Routes>
+                                    <Route path="/" element={<Catalog />} />
+                                    <Route path="/catalog" element={<Catalog />} />
+                                    <Route path="/product/:productId" element={<ProductPage />} />
+                                    <Route path="/category/:categoryId" element={<CategoryProducts />} />
+                                    <Route path="/faq" element={<FAQ />} />
+                                    <Route path="/about" element={<About />} />
+                                    <Route path="/warranty" element={<Warranty />} />
+                                    <Route path="/blog" element={<Blog />} />
+                                    <Route path="/blog/:slug" element={<BlogPost />} />
+                                    <Route path="/auth" element={<Auth />} />
+                                    <Route path="/auth/reset-password" element={<ResetPassword />} />
+                                    <Route path="/profile" element={<Profile />} />
+                                    <Route path="/checkout" element={<Checkout />} />
+                                    <Route path="/order-success" element={<OrderSuccess />} />
+                                    <Route path="/admin" element={<Admin />} />
+                                    <Route path="/installation-guide" element={<InstallationGuide />} />
+                                    <Route path="/business" element={<Business />} />
+                                    <Route path="/support" element={<Support />} />
+                                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                                    <Route path="/terms" element={<Terms />} />
+                                  </Routes>
+                                </LocaleWrapper>
+                              } />
                             </Routes>
                           </ErrorBoundary>
                         </main>

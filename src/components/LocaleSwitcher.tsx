@@ -1,16 +1,22 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
 import { useLocale } from '../context/LocaleContext';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
+  { code: 'cz', name: 'Čeština', flag: '🇨🇿' },
   { code: 'ru', name: 'Русский', flag: '🇷🇺' }
 ];
 
 export function LocaleSwitcher() {
   const { language, setLanguage } = useLocale();
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -28,7 +34,16 @@ export function LocaleSwitcher() {
   const currentLanguage = LANGUAGES.find(lang => lang.code === language) || LANGUAGES[0];
 
   const handleLanguageChange = (langCode: string) => {
-    setLanguage(langCode);
+    const pathSegments = location.pathname.split('/').filter(Boolean);
+
+    if (pathSegments.length > 0 && LANGUAGES.some(l => l.code === pathSegments[0])) {
+      pathSegments[0] = langCode;
+      const newPath = '/' + pathSegments.join('/') + location.search;
+      navigate(newPath);
+    } else {
+      navigate(`/${langCode}/`);
+    }
+
     setIsOpen(false);
   };
 

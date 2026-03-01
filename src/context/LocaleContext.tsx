@@ -56,15 +56,11 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
       setLanguage(savedLanguage);
     } else {
       const browserLang = navigator.language.split('-')[0];
-      const supportedLangs = ['en', 'ru'];
+      const supportedLangs = ['en', 'de', 'pl', 'cz', 'ru'];
       const detectedLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
       setLanguage(detectedLang);
     }
   };
-
-  useEffect(() => {
-    detectUserLocale();
-  }, []);
 
   const setLanguage = (lang: string) => {
     setLanguageState(lang);

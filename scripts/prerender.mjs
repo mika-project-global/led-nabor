@@ -7,27 +7,27 @@ import handler from 'serve-handler';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = join(__dirname, '../dist');
-const port = 3456;
+const port = 3457;
 
-// Routes to prerender
+// Routes to prerender - all with /en/ locale
 const routes = [
-  '/',
-  '/catalog',
-  '/product/1',
-  '/product/2',
-  '/category/rgb_cct',
-  '/category/cct',
-  '/faq',
-  '/about',
-  '/warranty',
-  '/blog'
+  '/en/',
+  '/en/catalog',
+  '/en/product/1',
+  '/en/product/2',
+  '/en/category/rgb_cct',
+  '/en/category/cct',
+  '/en/faq',
+  '/en/about',
+  '/en/warranty',
+  '/en/blog'
 ];
 
 async function startServer() {
   const server = createServer((request, response) => {
     return handler(request, response, {
       public: distDir,
-      rewrites: [{ source: '**', destination: '/index.html' }]
+      rewrites: [{ source: '**/**', destination: '/index.html' }]
     });
   });
 
@@ -48,25 +48,28 @@ async function prerenderRoute(browser, route) {
   const page = await browser.newPage();
 
   try {
+    // Set longer timeout for navigation
+    page.setDefaultTimeout(90000);
+
     // Navigate to the page
     await page.goto(url, {
       waitUntil: 'networkidle2',
-      timeout: 60000
+      timeout: 90000
     });
 
     // Wait for React to render
-    await page.waitForSelector('main', { timeout: 15000 });
+    await page.waitForSelector('main', { timeout: 20000 });
 
     // Wait a bit more for react-helmet-async to update meta tags
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 2500));
 
     // Get the final HTML
     const html = await page.content();
 
     // Determine output path
     let outputPath;
-    if (route === '/') {
-      outputPath = join(distDir, 'index.html');
+    if (route === '/en/') {
+      outputPath = join(distDir, 'en', 'index.html');
     } else if (route.endsWith('/')) {
       outputPath = join(distDir, route, 'index.html');
     } else {
@@ -96,7 +99,11 @@ async function prerenderRoute(browser, route) {
     console.error(`  ✗ Error prerendering ${route}:`, error.message);
     return { route, success: false, error: error.message };
   } finally {
-    await page.close();
+    try {
+      await page.close();
+    } catch (closeError) {
+      console.error(`  ⚠️  Error closing page for ${route}`);
+    }
   }
 }
 

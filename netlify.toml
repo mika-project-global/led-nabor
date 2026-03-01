@@ -5,6 +5,53 @@ publish = "dist"
 [build.environment]
 SECRETS_SCAN_ENABLED = "false"
 
+# 301 redirects to English locale (SEO-friendly permanent redirects)
+[[redirects]]
+from = "/catalog"
+to = "/en/catalog"
+status = 301
+
+[[redirects]]
+from = "/product/1"
+to = "/en/product/1"
+status = 301
+
+[[redirects]]
+from = "/product/2"
+to = "/en/product/2"
+status = 301
+
+[[redirects]]
+from = "/category/rgb_cct"
+to = "/en/category/rgb_cct"
+status = 301
+
+[[redirects]]
+from = "/category/cct"
+to = "/en/category/cct"
+status = 301
+
+[[redirects]]
+from = "/faq"
+to = "/en/faq"
+status = 301
+
+[[redirects]]
+from = "/about"
+to = "/en/about"
+status = 301
+
+[[redirects]]
+from = "/warranty"
+to = "/en/warranty"
+status = 301
+
+[[redirects]]
+from = "/blog"
+to = "/en/blog"
+status = 301
+
+# Auth callback - no locale needed
 [[redirects]]
 from = "/auth/v1/callback"
 to = "/index.html"

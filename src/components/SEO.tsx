@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useParams, useLocation } from 'react-router-dom';
 
 interface SEOProps {
   title: string;
@@ -11,9 +12,21 @@ interface SEOProps {
   schema?: object;
 }
 
+const LOCALE_MAP: Record<string, string> = {
+  en: 'en_US',
+  de: 'de_DE',
+  pl: 'pl_PL',
+  cz: 'cs_CZ',
+  ru: 'ru_RU'
+};
+
 export function SEO({ title, description, image, type = 'website', keywords, canonicalUrl, schema }: SEOProps) {
+  const { locale = 'en' } = useParams<{ locale: string }>();
+  const location = useLocation();
   const siteUrl = __SITE_URL__ || 'https://led-nabor.com';
   const defaultImage = '/og-image.jpg';
+  const ogLocale = LOCALE_MAP[locale] || 'en_US';
+  const fullCanonicalUrl = canonicalUrl || `${siteUrl}${location.pathname}`;
 
   const keywordsString = keywords
     ? Array.isArray(keywords)
@@ -27,7 +40,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <title>{`${title} | ${__APP_NAME__} - LED ленты для подсветки потолка`}</title>
       <meta name="description" content={description} />
       {keywordsString && <meta name="keywords" content={keywordsString} />}
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      <link rel="canonical" href={fullCanonicalUrl} />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://images.unsplash.com" />
       <meta name="format-detection" content="telephone=no" />
@@ -50,13 +63,12 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <meta property="og:image" content={image || `${siteUrl}${defaultImage}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:url" content={siteUrl} />
+      <meta property="og:url" content={fullCanonicalUrl} />
       <meta property="og:site_name" content="LED Nabor" />
-      <meta property="og:locale" content="cs_CZ" />
-      <meta property="og:locale:alternate" content="ru_RU" />
-      <meta property="og:locale:alternate" content="en_GB" />
-      <meta property="og:locale:alternate" content="de_DE" />
-      <meta property="og:locale:alternate" content="uk_UA" />
+      <meta property="og:locale" content={ogLocale} />
+      {Object.entries(LOCALE_MAP).filter(([key]) => key !== locale).map(([, value]) => (
+        <meta key={value} property="og:locale:alternate" content={value} />
+      ))}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
