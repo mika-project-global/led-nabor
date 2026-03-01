@@ -73,7 +73,7 @@ export function ProductRecommendations({ currentProduct, roomType, area, product
           <div
             key={product.id}
             className="group cursor-pointer"
-            onClick={() => navigate(`/${locale}/product/${product.id}`)}
+            onClick={() => navigate(`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`)}
           >
             <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
               <ImageWithFallback

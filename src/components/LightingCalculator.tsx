@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Calculator, Lightbulb, Ruler, PaintBucket } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useLocale } from '../context/LocaleContext';
+import { products } from '../data/products';
 
 interface CalculationResult {
   stripLength: number;
@@ -14,6 +16,8 @@ interface CalculationResult {
 
 export function LightingCalculator() {
   const { t } = useTranslation();
+  const { locale } = useLocale();
+  const currentLocale = locale as 'en' | 'ru' | 'cz' | 'de' | 'pl';
   const [roomDimensions, setRoomDimensions] = useState({
     length: 0,
     width: 0,
@@ -188,18 +192,22 @@ export function LightingCalculator() {
                   {t('calculator.recommended_kits')}
                 </h3>
                 <div className="space-y-4">
-                  {result.recommendedProducts.map((product) => (
-                    <div key={product.id} className="bg-white p-4 rounded-lg shadow-sm">
-                      <h4 className="font-medium text-cyan-600">{product.name}</h4>
-                      <p className="text-sm text-gray-600 mt-1">{product.reason}</p>
+                  {result.recommendedProducts.map((productRec) => {
+                    const fullProduct = products.find(p => p.id === productRec.id);
+                    const productSlug = fullProduct?.slugs[currentLocale] || productRec.id;
+
+                    return (
+                    <div key={productRec.id} className="bg-white p-4 rounded-lg shadow-sm">
+                      <h4 className="font-medium text-cyan-600">{productRec.name}</h4>
+                      <p className="text-sm text-gray-600 mt-1">{productRec.reason}</p>
                       <a
-                        href={`/product/${product.id}`}
+                        href={`/${locale}/product/${productSlug}`}
                         className="inline-block mt-2 text-sm text-cyan-600 hover:text-cyan-700"
                       >
                         {t('calculator.more_details')} →
                       </a>
                     </div>
-                  ))}
+                  )})}
                 </div>
               </div>
             </div>

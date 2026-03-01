@@ -45,7 +45,7 @@ export function RecentlyViewed() {
           return (
             <Link
               key={product.id}
-              to={`/${locale}/product/${product.id}`}
+              to={`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`}
               className="group bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300"
             >
               <div className="aspect-square relative overflow-hidden bg-gray-100">

@@ -4,6 +4,13 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Universal RGB+CCT",
+    slugs: {
+      en: "universal-rgb-cct",
+      ru: "universal-rgb-cct",
+      cz: "univerzalni-rgb-cct",
+      de: "universal-rgb-cct",
+      pl: "uniwersalny-rgb-cct",
+    },
     type: 'retail',
     stripeProductId: 'prod_S5mUYTNR1sF59r',
     description: `# Universal LED Ceiling Lighting Kit
@@ -51,6 +58,13 @@ Professional solution for creating modern lighting with the ability to control c
   {
     id: 2,
     name: "Adjustable White",
+    slugs: {
+      en: "adjustable-white",
+      ru: "adjustable-white",
+      cz: "nastavitelna-bila",
+      de: "einstellbares-weiss",
+      pl: "regulowana-biel",
+    },
     category: "cct",
     type: 'retail',
     stripeProductId: 'prod_SLys9BCrhGl9Yz',

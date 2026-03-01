@@ -114,7 +114,7 @@ export default function CategoryProducts() {
 
                 return (
                   <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <Link to={`/${locale}/product/${product.id}`} className="block">
+                    <Link to={`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`} className="block">
                       <div className="relative h-48">
                         <img
                           src={getImageUrl(product.image)}
@@ -155,7 +155,7 @@ export default function CategoryProducts() {
                           {t('add_to_cart')}
                         </button>
                         <Link
-                          to={`/${locale}/product/${product.id}`}
+                          to={`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`}
                           className="w-full text-center text-gray-600 hover:text-gray-800 transition-colors"
                         >
                           {t('more_details')} ›

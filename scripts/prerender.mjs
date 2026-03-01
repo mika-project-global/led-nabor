@@ -13,8 +13,8 @@ const port = 3457;
 const routes = [
   '/en/',
   '/en/catalog',
-  '/en/product/1',
-  '/en/product/2',
+  '/en/product/universal-rgb-cct',
+  '/en/product/adjustable-white',
   '/en/category/rgb_cct',
   '/en/category/cct',
   '/en/faq',

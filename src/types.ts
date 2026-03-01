@@ -12,6 +12,13 @@ interface PackageItem {
 export interface Product {
   id: number;
   name: string;
+  slugs: {
+    en: string;
+    ru: string;
+    cz: string;
+    de: string;
+    pl: string;
+  };
   type: 'retail' | 'b2b';
   stripeProductId?: string | null;
   segment?: 'hotel' | 'restaurant' | 'office' | 'mall' | 'exhibition';

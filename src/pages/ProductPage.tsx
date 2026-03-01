@@ -35,9 +35,10 @@ type TabType = 'overview' | 'details' | 'calculator' | 'gallery' | 'reviews';
 import { SEO } from '../components/SEO';
 
 function ProductPage() {
-  const { productId } = useParams<{ productId: string }>();
+  const { productSlug, locale: urlLocale } = useParams<{ productSlug: string; locale: string }>();
   const navigate = useNavigate();
-  const product = products.find(p => p.id === Number(productId));
+  const currentLocale = (urlLocale || 'en') as 'en' | 'ru' | 'cz' | 'de' | 'pl';
+  const product = products.find(p => p.slugs[currentLocale] === productSlug);
   const [selectedVariant, setSelectedVariant] = useState<any | null>(null);
   const [warrantyPolicies, setWarrantyPolicies] = useState<WarrantyPolicy[]>([]);
   const [selectedWarranty, setSelectedWarranty] = useState<WarrantySelection | null>(null);

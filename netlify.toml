@@ -48,12 +48,65 @@ status = 301
 
 [[redirects]]
 from = "/product/1"
-to = "/en/product/1"
+to = "/en/product/universal-rgb-cct"
 status = 301
 
 [[redirects]]
 from = "/product/2"
-to = "/en/product/2"
+to = "/en/product/adjustable-white"
+status = 301
+
+# Product ID to slug redirects for all locales
+# Product 1: Universal RGB+CCT
+[[redirects]]
+from = "/en/product/1"
+to = "/en/product/universal-rgb-cct"
+status = 301
+
+[[redirects]]
+from = "/ru/product/1"
+to = "/ru/product/universal-rgb-cct"
+status = 301
+
+[[redirects]]
+from = "/cz/product/1"
+to = "/cz/product/univerzalni-rgb-cct"
+status = 301
+
+[[redirects]]
+from = "/de/product/1"
+to = "/de/product/universal-rgb-cct"
+status = 301
+
+[[redirects]]
+from = "/pl/product/1"
+to = "/pl/product/uniwersalny-rgb-cct"
+status = 301
+
+# Product 2: Adjustable White
+[[redirects]]
+from = "/en/product/2"
+to = "/en/product/adjustable-white"
+status = 301
+
+[[redirects]]
+from = "/ru/product/2"
+to = "/ru/product/adjustable-white"
+status = 301
+
+[[redirects]]
+from = "/cz/product/2"
+to = "/cz/product/nastavitelna-bila"
+status = 301
+
+[[redirects]]
+from = "/de/product/2"
+to = "/de/product/einstellbares-weiss"
+status = 301
+
+[[redirects]]
+from = "/pl/product/2"
+to = "/pl/product/regulowana-biel"
 status = 301
 
 [[redirects]]
