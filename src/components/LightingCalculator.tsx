@@ -3,6 +3,7 @@ import { Calculator, Lightbulb, Ruler, PaintBucket } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useLocale } from '../context/LocaleContext';
 import { products } from '../data/products';
+import { getProductUrl } from '../lib/urls';
 
 interface CalculationResult {
   stripLength: number;
@@ -194,14 +195,14 @@ export function LightingCalculator() {
                 <div className="space-y-4">
                   {result.recommendedProducts.map((productRec) => {
                     const fullProduct = products.find(p => p.id === productRec.id);
-                    const productSlug = fullProduct?.slugs[currentLocale] || productRec.id;
+                    if (!fullProduct) return null;
 
                     return (
                     <div key={productRec.id} className="bg-white p-4 rounded-lg shadow-sm">
                       <h4 className="font-medium text-cyan-600">{productRec.name}</h4>
                       <p className="text-sm text-gray-600 mt-1">{productRec.reason}</p>
                       <a
-                        href={`/${locale}/product/${productSlug}`}
+                        href={getProductUrl(locale, fullProduct)}
                         className="inline-block mt-2 text-sm text-cyan-600 hover:text-cyan-700"
                       >
                         {t('calculator.more_details')} →

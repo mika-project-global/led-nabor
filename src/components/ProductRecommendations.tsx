@@ -5,6 +5,7 @@ import { Product } from '../types';
 import { useLocale } from '../context/LocaleContext';
 import { ImageWithFallback } from './ImageWithFallback';
 import { getImageUrl } from '../lib/supabase-storage';
+import { getProductUrl } from '../lib/urls';
 
 interface ProductRecommendationsProps {
   currentProduct?: Product;
@@ -73,7 +74,7 @@ export function ProductRecommendations({ currentProduct, roomType, area, product
           <div
             key={product.id}
             className="group cursor-pointer"
-            onClick={() => navigate(`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`)}
+            onClick={() => navigate(getProductUrl(locale, product))}
           >
             <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
               <ImageWithFallback

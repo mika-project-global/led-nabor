@@ -10,6 +10,7 @@ import { useTranslation } from '../hooks/useTranslation';
 import { getWarrantyPolicies, calculateWarrantyCost } from '../lib/warranty';
 import { getImageUrl } from '../lib/supabase-storage';
 import { useWishlist } from '../hooks/useWishlist';
+import { getProductUrl } from '../lib/urls';
 
 export default function CategoryProducts() {
   const { categoryId } = useParams<{ categoryId: string }>();
@@ -114,7 +115,7 @@ export default function CategoryProducts() {
 
                 return (
                   <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <Link to={`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`} className="block">
+                    <Link to={getProductUrl(locale, product)} className="block">
                       <div className="relative h-48">
                         <img
                           src={getImageUrl(product.image)}
@@ -155,7 +156,7 @@ export default function CategoryProducts() {
                           {t('add_to_cart')}
                         </button>
                         <Link
-                          to={`/${locale}/product/${product.slugs[locale as 'en' | 'ru' | 'cz' | 'de' | 'pl']}`}
+                          to={getProductUrl(locale, product)}
                           className="w-full text-center text-gray-600 hover:text-gray-800 transition-colors"
                         >
                           {t('more_details')} ›

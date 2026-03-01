@@ -8,6 +8,7 @@ import { useLocale } from '../context/LocaleContext';
 import { getImageUrl } from '../lib/supabase-storage';
 import { RecentReviews } from '../components/RecentReviews';
 import { CategoryGridSkeleton } from '../components/SkeletonLoader';
+import { getProductUrl, getCategoryUrl } from '../lib/urls';
 
 export default function Catalog() {
   const { t } = useTranslation();
@@ -37,8 +38,8 @@ export default function Catalog() {
 
           // Определяем URL для ссылки
           const linkUrl = categoryProducts.length === 1
-            ? `/${locale}/product/${categoryProducts[0].id}`
-            : `/${locale}/category/${category.id}`;
+            ? getProductUrl(locale, categoryProducts[0])
+            : getCategoryUrl(locale, category.id);
           
           return (
             <Link 

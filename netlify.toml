@@ -109,6 +109,37 @@ from = "/pl/product/2"
 to = "/pl/product/regulowana-biel"
 status = 301
 
+# Category without slug redirects to home
+[[redirects]]
+from = "/category"
+to = "/en/"
+status = 301
+
+[[redirects]]
+from = "/en/category"
+to = "/en/"
+status = 301
+
+[[redirects]]
+from = "/ru/category"
+to = "/ru/"
+status = 301
+
+[[redirects]]
+from = "/cz/category"
+to = "/cz/"
+status = 301
+
+[[redirects]]
+from = "/de/category"
+to = "/de/"
+status = 301
+
+[[redirects]]
+from = "/pl/category"
+to = "/pl/"
+status = 301
+
 [[redirects]]
 from = "/category/rgb_cct"
 to = "/en/category/rgb_cct"
