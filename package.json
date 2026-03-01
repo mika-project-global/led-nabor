@@ -6,28 +6,30 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:prerender": "npm run build && node scripts/prerender.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:prerendered": "serve dist -p 3000"
   },
   "dependencies": {
     "@stripe/stripe-js": "^2.4.0",
     "@supabase/supabase-js": "^2.39.3",
     "i18next": "^23.10.0",
     "i18next-browser-languagedetector": "^7.2.0",
-    "react-i18next": "^14.0.5",
     "lucide-react": "^0.344.0",
+    "plausible-tracker": "^0.3.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-markdown": "^9.0.1",
-    "react-router-dom": "^6.22.3",
     "react-helmet-async": "^2.0.4",
-    "plausible-tracker": "^0.3.8"
+    "react-i18next": "^14.0.5",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
-    "@tailwindcss/typography": "^0.5.10",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -37,6 +39,8 @@
     "eslint-plugin-react-refresh": "^0.4.11",
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
+    "puppeteer": "^24.37.5",
+    "serve": "^14.2.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
