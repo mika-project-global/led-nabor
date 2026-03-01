@@ -19,6 +19,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import { ScrollIndicator } from './components/ScrollIndicator';
 import { ScrollToTop } from './components/ScrollToTop';
 import { LocaleWrapper } from './components/LocaleWrapper';
+import { LanguageRedirect } from './components/LanguageRedirect';
 
 // Lazy load pages
 const Catalog = React.lazy(() => import('./pages/Catalog'));
@@ -99,8 +100,8 @@ export default function App() {
                         <main>
                           <ErrorBoundary>
                             <Routes>
-                              {/* Root redirect to default locale */}
-                              <Route path="/" element={<Navigate to="/en/" replace />} />
+                              {/* Root redirect to user's preferred locale */}
+                              <Route path="/" element={<LanguageRedirect />} />
 
                               {/* Auth callbacks - no locale required */}
                               <Route path="/auth/v1/callback" element={<Auth />} />

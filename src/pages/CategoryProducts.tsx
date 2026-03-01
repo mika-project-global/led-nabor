@@ -16,7 +16,7 @@ export default function CategoryProducts() {
   const category = categories.find(c => c.id === categoryId);
   const categoryProducts = products.filter(p => p.category === categoryId);
   const { addToCart } = useCart();
-  const { formatPrice } = useLocale();
+  const { formatPrice, locale } = useLocale();
   const { t } = useTranslation();
   const [warrantyPolicies, setWarrantyPolicies] = useState<Record<number, any[]>>({});
   const { isInWishlist, toggleWishlist } = useWishlist();

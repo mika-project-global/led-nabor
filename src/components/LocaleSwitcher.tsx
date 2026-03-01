@@ -36,13 +36,20 @@ export function LocaleSwitcher() {
   const handleLanguageChange = (langCode: string) => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
 
+    // Build new path with new locale
+    let newPath: string;
     if (pathSegments.length > 0 && LANGUAGES.some(l => l.code === pathSegments[0])) {
       pathSegments[0] = langCode;
-      const newPath = '/' + pathSegments.join('/') + location.search;
-      navigate(newPath);
+      newPath = '/' + pathSegments.join('/') + location.search;
     } else {
-      navigate(`/${langCode}/`);
+      newPath = `/${langCode}/`;
     }
+
+    // Save user's choice to localStorage (for LanguageRedirect on next visit)
+    localStorage.setItem('preferredLocale', langCode);
+
+    // Navigate to new URL - LocaleWrapper will handle the rest
+    navigate(newPath);
 
     setIsOpen(false);
   };

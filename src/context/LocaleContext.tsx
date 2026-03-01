@@ -2,10 +2,12 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface LocaleContextType {
-  language: string;
+  locale: string; // Current locale from URL (source of truth)
+  language: string; // Alias for backwards compatibility
   currency: string;
   country: string;
-  setLanguage: (lang: string) => void;
+  setLocale: (locale: string) => void;
+  setLanguage: (lang: string) => void; // Deprecated, use URL navigation instead
   setCurrency: (curr: string) => void;
   setCountry: (country: string) => void;
   formatPrice: (amount: number) => string;
@@ -28,10 +30,8 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const { i18n } = useTranslation();
 
-  const [language, setLanguageState] = useState<string>(() => {
-    const savedLanguage = localStorage.getItem('preferredLanguage');
-    return savedLanguage || DEFAULT_LANGUAGE;
-  });
+  // Locale from URL (set by LocaleWrapper) - this is the source of truth
+  const [locale, setLocaleState] = useState<string>(DEFAULT_LANGUAGE);
 
   const [country, setCountryState] = useState<string>(() => {
     const savedCountry = localStorage.getItem('preferredCountry');
@@ -43,30 +43,19 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     return savedCurrency || DEFAULT_CURRENCY;
   });
 
-  useEffect(() => {
-    if (language) {
-      i18n.changeLanguage(language);
-      document.documentElement.lang = language;
-    }
-  }, [language, i18n]);
-
   const detectUserLocale = async () => {
-    const savedLanguage = localStorage.getItem('preferredLanguage');
-    if (savedLanguage) {
-      setLanguage(savedLanguage);
-    } else {
-      const browserLang = navigator.language.split('-')[0];
-      const supportedLangs = ['en', 'de', 'pl', 'cz', 'ru'];
-      const detectedLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
-      setLanguage(detectedLang);
-    }
+    // This method is deprecated - locale detection now happens in LanguageRedirect
+    console.warn('detectUserLocale is deprecated. Locale is determined by URL.');
   };
 
+  const setLocale = (newLocale: string) => {
+    setLocaleState(newLocale);
+  };
+
+  // Backwards compatibility method (deprecated - use URL navigation instead)
   const setLanguage = (lang: string) => {
-    setLanguageState(lang);
-    localStorage.setItem('preferredLanguage', lang);
-    i18n.changeLanguage(lang);
-    document.documentElement.lang = lang;
+    console.warn('setLanguage is deprecated. Use navigate(`/${locale}/...`) to change language.');
+    setLocaleState(lang);
   };
 
   const setCurrency = (curr: string) => {
@@ -90,9 +79,11 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <LocaleContext.Provider value={{
-      language,
+      locale,
+      language: locale, // Alias for backwards compatibility
       currency,
       country,
+      setLocale,
       setLanguage,
       setCurrency,
       setCountry,
