@@ -4,6 +4,7 @@ import { categories } from '../data/categories';
 import { products } from '../data/products';
 import { useTranslation } from 'react-i18next';
 import { useCart } from '../context/CartContext';
+import { useLocale } from '../context/LocaleContext';
 import { getImageUrl } from '../lib/supabase-storage';
 import { RecentReviews } from '../components/RecentReviews';
 import { CategoryGridSkeleton } from '../components/SkeletonLoader';
@@ -11,6 +12,7 @@ import { CategoryGridSkeleton } from '../components/SkeletonLoader';
 export default function Catalog() {
   const { t } = useTranslation();
   const { addToCart } = useCart();
+  const { locale } = useLocale();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,11 +34,11 @@ export default function Catalog() {
         {categories.map(category => {
           // Находим все товары в данной категории
           const categoryProducts = products.filter(p => p.category === category.id);
-          
+
           // Определяем URL для ссылки
-          const linkUrl = categoryProducts.length === 1 
-            ? `/product/${categoryProducts[0].id}` 
-            : `/category/${category.id}`;
+          const linkUrl = categoryProducts.length === 1
+            ? `/${locale}/product/${categoryProducts[0].id}`
+            : `/${locale}/category/${category.id}`;
           
           return (
             <Link 

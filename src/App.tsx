@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { trackWebVitals, optimizeImageLoading, preloadCriticalResources } from './lib/performance';
 import { trackUserInteractions, enhanceAccessibility } from './lib/user-experience';
@@ -42,6 +42,32 @@ const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
 const Terms = React.lazy(() => import('./pages/Terms'));
 const Blog = React.lazy(() => import('./pages/Blog'));
 const BlogPost = React.lazy(() => import('./pages/BlogPost'));
+
+// Компонент для редиректа числовых ID
+function ProductIdRedirect() {
+  const { locale = 'en', '*': maybeId = '' } = useParams();
+
+  // Проверяем, является ли путь числом (старый формат /:locale/:id)
+  if (maybeId && /^\d+$/.test(maybeId)) {
+    return <Navigate to={`/${locale}/product/${maybeId}`} replace />;
+  }
+
+  // Если это не число, показываем 404
+  return (
+    <div className="min-h-[60vh] flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">404</h1>
+        <p className="text-xl text-gray-600 mb-8">Страница не найдена</p>
+        <Link
+          to={`/${locale}/catalog`}
+          className="inline-block bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+        >
+          Вернуться в каталог
+        </Link>
+      </div>
+    </div>
+  );
+}
 
 export default function App() {
   useEffect(() => {
@@ -103,6 +129,8 @@ export default function App() {
                                     <Route path="/support" element={<Support />} />
                                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                                     <Route path="/terms" element={<Terms />} />
+                                    {/* Catch-all для неправильных путей и редиректа числовых ID */}
+                                    <Route path="/*" element={<ProductIdRedirect />} />
                                   </Routes>
                                 </LocaleWrapper>
                               } />

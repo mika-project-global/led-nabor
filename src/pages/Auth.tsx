@@ -5,12 +5,14 @@ import { useNotifications } from '../hooks/useNotifications';
 import { supabase } from '../lib/supabase';
 import { Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useLocale } from '../context/LocaleContext';
 
 export default function Auth() {
   const navigate = useNavigate();
   const location = useLocation();
   const { showNotification } = useNotifications();
   const { t } = useTranslation();
+  const { locale } = useLocale();
   const [isLoading, setIsLoading] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
   const [email, setEmail] = useState('');
@@ -84,7 +86,7 @@ export default function Auth() {
         showNotification('success', t('auth.registration_successful'));
         setIsSignUp(false);
       } else {
-        navigate('/profile');
+        navigate(`/${locale}/profile`);
       }
     } catch (error: any) {
       console.error('Auth error details:', {
@@ -165,7 +167,7 @@ export default function Auth() {
           if (error.message.includes('refresh_token_not_found')) {
             clearAuthData();
             if (!skipRedirect) {
-              navigate('/auth');
+              navigate(`/${locale}/auth`);
             }
             return;
           }
@@ -174,18 +176,18 @@ export default function Auth() {
 
         if (session?.user) {
           console.log('✅ Сессия найдена! Перенаправляем в профиль...');
-          navigate('/profile');
+          navigate(`/${locale}/profile`);
         } else {
           console.log('⚠️ Сессия не найдена');
           clearAuthData();
           if (!skipRedirect) {
-            navigate('/auth');
+            navigate(`/${locale}/auth`);
           }
         }
       } catch (error) {
         console.error('❌ Ошибка получения сессии:', error);
         showNotification('error', t('auth.error_occurred'));
-        navigate('/auth');
+        navigate(`/${locale}/auth`);
       }
     };
 
@@ -212,7 +214,7 @@ export default function Auth() {
       if (authError) {
         console.error('❌ Ошибка аутентификации:', authError, errorDescription);
         showNotification('error', errorDescription || authError);
-        navigate('/auth');
+        navigate(`/${locale}/auth`);
       } else if (access_token || refresh_token) {
         console.log('✅ Токены найдены! Сохраняем...');
         if (access_token) {
@@ -226,7 +228,7 @@ export default function Auth() {
             return;
           }
         }
-        navigate('/profile');
+        navigate(`/${locale}/profile`);
       } else {
         console.log('⚠️ Проверяем сессию...');
         checkSession();
@@ -243,11 +245,11 @@ export default function Auth() {
       console.log('🔄 Состояние аутентификации изменилось:', event, session);
       if (event === 'SIGNED_IN' && session?.access_token) {
         console.log('✅ Пользователь вошел, перенаправляем в профиль...');
-        navigate('/profile');
+        navigate(`/${locale}/profile`);
       } else if (event === 'SIGNED_OUT' || event === 'USER_DELETED') {
         console.log('⚠️ Пользователь вышел или удален');
         clearAuthData();
-        navigate('/auth');
+        navigate(`/${locale}/auth`);
       } 
     });
 

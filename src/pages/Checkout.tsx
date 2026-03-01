@@ -44,7 +44,7 @@ const createSerializablePaymentMethod = (method: PaymentMethod) => ({
 export default function Checkout() {
   const navigate = useNavigate();
   const { items, clearCart, updateQuantity } = useCart();
-  const { formatPrice, currency, language } = useLocale();
+  const { formatPrice, currency, language, locale } = useLocale();
   const { t } = useTranslation();
   const { showNotification } = useNotifications();
   const [step, setStep] = useState<'info' | 'delivery' | 'confirmation'>('info');
@@ -321,7 +321,7 @@ export default function Checkout() {
           // Cash on delivery flow
           await createCashOnDeliveryOrder(order);
           showNotification('success', 'Order placed successfully!'); 
-          navigate('/order-success');
+          navigate(`/${locale}/order-success`);
           clearCart();
         } else if (selectedPaymentMethod === 'card') {
           // Card payment flow with Stripe

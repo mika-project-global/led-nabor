@@ -44,7 +44,7 @@ function ProductPage() {
   const [showLengthOptions, setShowLengthOptions] = useState(false);
   const [totalPrice, setTotalPrice] = useState<number | null>(null);
   const { addToCart } = useCart();
-  const { formatPrice } = useLocale();
+  const { formatPrice, locale } = useLocale();
   const { t } = useTranslation();
   
   const [selectedImage, setSelectedImage] = useState(0);
@@ -298,8 +298,21 @@ function ProductPage() {
 
   if (!product) {
     return (
-      <div className="max-w-7xl mx-auto px-4 py-8 text-center">
-        <h1 className="text-2xl font-bold text-gray-900">{t('product.not_found')}</h1>
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            {t('product.not_found') || 'Товар не найден'}
+          </h1>
+          <p className="text-xl text-gray-600 mb-8">
+            К сожалению, запрашиваемый товар не существует или был удален
+          </p>
+          <Link
+            to={`/${locale}/catalog`}
+            className="inline-block bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+          >
+            {t('back_to_catalog') || 'Вернуться в каталог'}
+          </Link>
+        </div>
       </div>
     );
   }
@@ -782,7 +795,7 @@ function ProductPage() {
                     },
                     warranty: selectedWarranty
                   })}
-                  onGoToCheckout={() => navigate('/checkout')}
+                  onGoToCheckout={() => navigate(`/${locale}/checkout`)}
                 >
                   <button
                     disabled={!selectedVariant}

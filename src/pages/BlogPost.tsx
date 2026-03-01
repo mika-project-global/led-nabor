@@ -28,7 +28,7 @@ interface BlogPostData {
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const { t } = useTranslation();
-  const { language } = useLocale();
+  const { language, locale } = useLocale();
   const navigate = useNavigate();
   const [post, setPost] = useState<BlogPostData | null>(null);
   const [relatedPosts, setRelatedPosts] = useState<BlogPostData[]>([]);
@@ -74,7 +74,7 @@ export default function BlogPost() {
             .maybeSingle();
 
           if (translatedPost) {
-            navigate(`/blog/${translatedPost.slug}`, { replace: true });
+            navigate(`/${locale}/blog/${translatedPost.slug}`, { replace: true });
             return;
           }
         }

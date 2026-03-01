@@ -111,10 +111,10 @@ export default function CategoryProducts() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {seriesProducts.map(product => {
                 const length = product.name.match(/\d+(?= метров)/)?.[0];
-                
+
                 return (
                   <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <Link to={`/product/${product.id}`} className="block">
+                    <Link to={`/${locale}/product/${product.id}`} className="block">
                       <div className="relative h-48">
                         <img
                           src={getImageUrl(product.image)}
@@ -154,8 +154,8 @@ export default function CategoryProducts() {
                           <CartIcon size={20} />
                           {t('add_to_cart')}
                         </button>
-                        <Link 
-                          to={`/product/${product.id}`}
+                        <Link
+                          to={`/${locale}/product/${product.id}`}
                           className="w-full text-center text-gray-600 hover:text-gray-800 transition-colors"
                         >
                           {t('more_details')} ›

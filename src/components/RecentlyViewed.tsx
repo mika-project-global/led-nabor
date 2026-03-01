@@ -3,12 +3,14 @@ import { Clock } from 'lucide-react';
 import { useViewingHistory } from '../hooks/useViewingHistory';
 import { products } from '../data/products';
 import { useTranslation } from 'react-i18next';
+import { useLocale } from '../context/LocaleContext';
 
 export function RecentlyViewed() {
   const { history, loading } = useViewingHistory();
   const { productId } = useParams<{ productId: string }>();
   const currentProductId = productId ? Number(productId) : null;
   const { t } = useTranslation();
+  const { locale } = useLocale();
 
   if (loading || history.length === 0) {
     return null;
@@ -43,7 +45,7 @@ export function RecentlyViewed() {
           return (
             <Link
               key={product.id}
-              to={`/product/${product.id}`}
+              to={`/${locale}/product/${product.id}`}
               className="group bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300"
             >
               <div className="aspect-square relative overflow-hidden bg-gray-100">

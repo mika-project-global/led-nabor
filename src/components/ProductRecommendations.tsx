@@ -15,7 +15,7 @@ interface ProductRecommendationsProps {
 
 export function ProductRecommendations({ currentProduct, roomType, area, products }: ProductRecommendationsProps) {
   const navigate = useNavigate();
-  const { formatPrice } = useLocale();
+  const { formatPrice, locale } = useLocale();
 
   // Логика рекомендаций
   const getRecommendations = () => {
@@ -70,10 +70,10 @@ export function ProductRecommendations({ currentProduct, roomType, area, product
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {recommendations.map(product => (
-          <div 
+          <div
             key={product.id}
             className="group cursor-pointer"
-            onClick={() => navigate(`/product/${product.id}`)}
+            onClick={() => navigate(`/${locale}/product/${product.id}`)}
           >
             <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
               <ImageWithFallback

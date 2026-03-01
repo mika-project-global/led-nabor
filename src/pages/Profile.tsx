@@ -42,13 +42,13 @@ export default function Profile() {
   const [orders, setOrders] = useState<Order[]>([]);
   const [isLoadingOrders, setIsLoadingOrders] = useState(true);
   const { showNotification } = useNotifications();
-  const { formatPrice } = useLocale();
+  const { formatPrice, locale } = useLocale();
 
   useEffect(() => {
     const loadProfile = async () => {
       const { user, error } = await getCurrentUser();
       if (error || !user) {
-        navigate('/');
+        navigate(`/${locale}/`);
         return;
       }
       const profile = user.profile;
@@ -142,7 +142,7 @@ export default function Profile() {
 
   const handleSignOut = async () => {
     await signOut();
-    navigate('/');
+    navigate(`/${locale}/`);
   };
 
   if (!profile) {

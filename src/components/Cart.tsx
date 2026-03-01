@@ -29,7 +29,7 @@ export function Cart({
   onClose 
 }: CartProps) {
   const navigate = useNavigate();
-  const { formatPrice } = useLocale();
+  const { formatPrice, locale } = useLocale();
   const { t } = useTranslation();
   const [warrantyPolicies, setWarrantyPolicies] = useState<Record<number, any[]>>({});
   const [showWarrantyOptions, setShowWarrantyOptions] = useState<Record<number, boolean>>({});
@@ -44,7 +44,7 @@ export function Cart({
 
   const handleCheckout = () => {
     onClose();
-    navigate('/checkout');
+    navigate(`/${locale}/checkout`);
   };
 
   // Load warranty policies for all items

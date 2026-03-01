@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { useNotifications } from '../hooks/useNotifications';
 import { useTranslation } from 'react-i18next';
+import { useLocale } from '../context/LocaleContext';
 
 export default function ResetPassword() {
   const navigate = useNavigate();
   const location = useLocation();
   const { showNotification } = useNotifications();
   const { t } = useTranslation();
+  const { locale } = useLocale();
   const [isLoading, setIsLoading] = useState(false);
   const [isVerifying, setIsVerifying] = useState(true);
   const [password, setPassword] = useState('');
@@ -101,7 +103,7 @@ export default function ResetPassword() {
       if (error) throw error;
 
       showNotification('success', t('auth.password_updated'));
-      navigate('/auth');
+      navigate(`/${locale}/auth`);
     } catch (error: any) {
       console.error('Reset password error:', error);
       const errorMsg = error.message || t('auth.error_occurred');
@@ -144,7 +146,7 @@ export default function ResetPassword() {
             </h1>
             <p className="text-gray-600 mb-6">{error}</p>
             <button
-              onClick={() => navigate('/auth')}
+              onClick={() => navigate(`/${locale}/auth`)}
               className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
             >
               {t('auth.back_to_login')}
@@ -219,7 +221,7 @@ export default function ResetPassword() {
 
           <button
             type="button"
-            onClick={() => navigate('/auth')}
+            onClick={() => navigate(`/${locale}/auth`)}
             className="w-full text-center text-sm text-cyan-600 hover:text-cyan-700 transition-colors"
             disabled={isLoading}
           >

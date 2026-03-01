@@ -14,7 +14,7 @@ export function Header() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const { items, removeFromCart, updateQuantity, updateWarranty } = useCart();
-  const { formatPrice } = useLocale();
+  const { formatPrice, locale } = useLocale();
   const { t } = useTranslation();
 
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
@@ -42,13 +42,13 @@ export function Header() {
   }, []);
 
   const dropdownItems = [
-    { path: '/blog', icon: BookOpen, label: t('menu.blog') },
-    { path: '/business', icon: Users, label: t('menu.for_business') },
-    { path: '/warranty', icon: Shield, label: t('menu.warranty') },
-    { path: '/faq', icon: HelpCircle, label: t('menu.faq') },
-    { path: '/installation-guide', icon: PenTool, label: t('menu.installation_guide') },
-    { path: '/about', icon: Users, label: t('menu.about_us') },
-    { path: '/support', icon: HeadphonesIcon, label: t('menu.support') }
+    { path: `/${locale}/blog`, icon: BookOpen, label: t('menu.blog') },
+    { path: `/${locale}/business`, icon: Users, label: t('menu.for_business') },
+    { path: `/${locale}/warranty`, icon: Shield, label: t('menu.warranty') },
+    { path: `/${locale}/faq`, icon: HelpCircle, label: t('menu.faq') },
+    { path: `/${locale}/installation-guide`, icon: PenTool, label: t('menu.installation_guide') },
+    { path: `/${locale}/about`, icon: Users, label: t('menu.about_us') },
+    { path: `/${locale}/support`, icon: HeadphonesIcon, label: t('menu.support') }
   ];
 
   return (
@@ -56,7 +56,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
-            <Link to="/" className="flex items-center">
+            <Link to={`/${locale}/`} className="flex items-center">
               <Logo />
             </Link>
           </div>
@@ -93,7 +93,7 @@ export function Header() {
                   ))}
                   <div className="border-t my-2" role="separator" />
                   <Link
-                    to="/privacy-policy"
+                    to={`/${locale}/privacy-policy`}
                     onClick={() => setIsMenuOpen(false)}
                     className="flex items-center gap-3 px-4 py-2 text-gray-600 hover:bg-gray-50 transition-colors"
                     role="menuitem"
@@ -101,7 +101,7 @@ export function Header() {
                     {t('privacy_policy')}
                   </Link>
                   <Link
-                    to="/terms"
+                    to={`/${locale}/terms`}
                     onClick={() => setIsMenuOpen(false)}
                     className="flex items-center gap-3 px-4 py-2 text-gray-600 hover:bg-gray-50 transition-colors"
                     role="menuitem"
@@ -126,7 +126,7 @@ export function Header() {
             </button>
 
             <Link
-              to="/auth"
+              to={`/${locale}/auth`}
               className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
               aria-label={t('menu.home')}
             >
