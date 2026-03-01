@@ -4,6 +4,7 @@ publish = "dist"
 
 [build.environment]
 SECRETS_SCAN_ENABLED = "false"
+PUPPETEER_CACHE_DIR = ".cache/puppeteer"
 
 # 301 redirects to English locale (SEO-friendly permanent redirects)
 [[redirects]]

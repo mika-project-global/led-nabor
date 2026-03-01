@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:prerender": "npm run build && node scripts/prerender.mjs",
+    "postinstall": "npx puppeteer browsers install chrome",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview:prerendered": "serve dist -p 3000"

@@ -159,6 +159,39 @@ const routes = [
 4. Нажмите "Test Live URL"
 5. Проверьте что в "View Crawled Page" видны все мета-теги
 
+## CI/CD (Netlify)
+
+### Автоматическая установка Chrome
+
+Chrome устанавливается автоматически в CI через `postinstall` скрипт:
+
+```json
+{
+  "scripts": {
+    "postinstall": "npx puppeteer browsers install chrome"
+  }
+}
+```
+
+**Переменные окружения в netlify.toml:**
+```toml
+[build.environment]
+PUPPETEER_CACHE_DIR = ".cache/puppeteer"
+```
+
+Это кеширует Chrome между деплоями и ускоряет сборку.
+
+**CI-specific браузерные аргументы:**
+```javascript
+puppeteer.launch({
+  args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--disable-dev-shm-usage'
+  ]
+});
+```
+
 ## Пакеты
 
 - `puppeteer` - Headless браузер для рендеринга страниц
