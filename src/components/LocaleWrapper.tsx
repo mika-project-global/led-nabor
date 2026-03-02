@@ -41,7 +41,9 @@ export function LocaleWrapper({ children }: { children: React.ReactNode }) {
       setLocale(locale);
 
       // Update document language attribute
-      document.documentElement.lang = locale;
+      if (document.documentElement.lang !== locale) {
+        document.documentElement.lang = locale;
+      }
 
       // Save to localStorage (for future visits via LanguageRedirect)
       localStorage.setItem('preferredLocale', locale);
