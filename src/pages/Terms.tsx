@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 const COMPANY_NAME = 'LED Nabor';
 const COMPANY_EMAIL = 'info@led-nabor.com';
@@ -14,6 +15,7 @@ export default function Terms() {
       <SEO
         title={t('terms_page.title')}
         description={t('terms_page.description')}
+        alternateUrls={getStaticPageAlternateUrls('/terms')}
       />
 
       <div className="text-center mb-12">

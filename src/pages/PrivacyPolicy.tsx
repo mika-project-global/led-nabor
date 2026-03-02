@@ -2,6 +2,7 @@ import React from 'react';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '../hooks/useTranslation';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 const COMPANY_NAME = 'LED Nabor';
 const COMPANY_EMAIL = 'info@led-nabor.com';
@@ -14,6 +15,7 @@ export default function PrivacyPolicy() {
       <SEO
         title={t('privacy_page.title')}
         description={t('privacy_page.description')}
+        alternateUrls={getStaticPageAlternateUrls('/privacy-policy')}
       />
 
       <div className="text-center mb-12">

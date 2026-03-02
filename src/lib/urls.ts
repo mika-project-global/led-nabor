@@ -2,6 +2,9 @@ import { Product } from '../types';
 
 type LocaleType = 'en' | 'ru' | 'cz' | 'de' | 'pl';
 
+export const SUPPORTED_LOCALES: LocaleType[] = ['en', 'ru', 'cz', 'de', 'pl'];
+export const SITE_URL = 'https://led-nabor.com';
+
 /**
  * Generate product URL with localized slug
  */
@@ -23,4 +26,57 @@ export function getCategoryUrl(locale: string, categoryId: string): string {
  */
 export function getHomeUrl(locale: string): string {
   return `/${locale}`;
+}
+
+/**
+ * Generate alternate URLs for hreflang tags
+ * For product pages - checks if slug exists for each locale
+ */
+export function getProductAlternateUrls(product: Product): Record<string, string> {
+  const alternates: Record<string, string> = {};
+
+  SUPPORTED_LOCALES.forEach(locale => {
+    if (product.slugs[locale]) {
+      alternates[locale] = `${SITE_URL}/${locale}/product/${product.slugs[locale]}`;
+    }
+  });
+
+  return alternates;
+}
+
+/**
+ * Generate alternate URLs for static pages (home, about, faq, etc.)
+ * These pages exist on all locales
+ */
+export function getStaticPageAlternateUrls(path: string): Record<string, string> {
+  const alternates: Record<string, string> = {};
+
+  SUPPORTED_LOCALES.forEach(locale => {
+    alternates[locale] = `${SITE_URL}/${locale}${path}`;
+  });
+
+  return alternates;
+}
+
+/**
+ * Generate alternate URLs for blog posts
+ * Checks if post exists for each locale
+ */
+export function getBlogPostAlternateUrls(slug: string, availableLocales: LocaleType[]): Record<string, string> {
+  const alternates: Record<string, string> = {};
+
+  availableLocales.forEach(locale => {
+    alternates[locale] = `${SITE_URL}/${locale}/blog/${slug}`;
+  });
+
+  return alternates;
+}
+
+/**
+ * Convert locale code to hreflang format
+ * cz -> cs (Czech Republic uses 'cs' in hreflang)
+ */
+export function localeToHreflang(locale: string): string {
+  if (locale === 'cz') return 'cs';
+  return locale;
 }

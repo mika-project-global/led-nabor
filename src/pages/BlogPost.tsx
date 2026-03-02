@@ -8,6 +8,7 @@ import { useTranslation } from '../hooks/useTranslation';
 import { useLocale } from '../context/LocaleContext';
 import { SEO } from '../components/SEO';
 import LoadingState from '../components/LoadingState';
+import { SITE_URL } from '../lib/urls';
 
 interface BlogPostData {
   id: string;
@@ -34,6 +35,7 @@ export default function BlogPost() {
   const [relatedPosts, setRelatedPosts] = useState<BlogPostData[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [alternateUrls, setAlternateUrls] = useState<Record<string, string>>({});
 
   useEffect(() => {
     if (slug) {
@@ -87,6 +89,7 @@ export default function BlogPost() {
 
       await incrementViews(data.id);
       await loadRelatedPosts(data.id, data.locale);
+      await loadAlternateUrls(data.translation_group_id);
     } catch (error) {
       console.error('Error loading blog post:', error);
       setError(true);
@@ -119,6 +122,26 @@ export default function BlogPost() {
       }
     } catch (error) {
       console.error('Error loading related posts:', error);
+    }
+  }
+
+  async function loadAlternateUrls(translationGroupId: string) {
+    try {
+      const { data } = await supabase
+        .from('blog_posts')
+        .select('slug, locale')
+        .eq('translation_group_id', translationGroupId)
+        .eq('published', true);
+
+      if (data) {
+        const alternates: Record<string, string> = {};
+        data.forEach(translation => {
+          alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}`;
+        });
+        setAlternateUrls(alternates);
+      }
+    } catch (error) {
+      console.error('Error loading alternate URLs:', error);
     }
   }
 
@@ -180,7 +203,8 @@ export default function BlogPost() {
         image={post.image_url || undefined}
         type="article"
         keywords={post.seo_keywords || undefined}
-        structuredData={structuredData}
+        schema={structuredData}
+        alternateUrls={alternateUrls}
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

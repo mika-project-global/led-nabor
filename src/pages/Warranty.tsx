@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Shield, CheckCircle, AlertTriangle, HelpCircle, FileText, Send } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 export default function Warranty() {
   const { t } = useTranslation();
@@ -33,6 +34,7 @@ export default function Warranty() {
       <SEO
         title={t('warranty_page.title')}
         description={t('warranty_page.subtitle')}
+        alternateUrls={getStaticPageAlternateUrls('/warranty')}
       />
 
       <div className="text-center mb-12">

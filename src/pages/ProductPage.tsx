@@ -30,6 +30,7 @@ import { RecentlyViewed } from '../components/RecentlyViewed';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { AIImageEditor } from '../components/AIImageEditor';
 import { checkIsAdmin } from '../lib/auth-utils';
+import { getProductAlternateUrls } from '../lib/urls';
 
 type TabType = 'overview' | 'details' | 'calculator' | 'gallery' | 'reviews';
 import { SEO } from '../components/SEO';
@@ -493,6 +494,7 @@ function ProductPage() {
         image={getImageUrl(productImage)}
         type="product"
         schema={productSchema}
+        alternateUrls={getProductAlternateUrls(product)}
       />
       <Breadcrumbs
         items={[

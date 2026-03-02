@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { PenTool as Tool, AlertTriangle, CheckCircle, Lightbulb } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { supabase } from '../lib/supabase';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 interface InstallationVideo {
   video_url: string;
@@ -81,6 +82,7 @@ export default function InstallationGuide() {
       <SEO
         title={t('installation_guide.title')}
         description={t('installation_guide.subtitle')}
+        alternateUrls={getStaticPageAlternateUrls('/installation-guide')}
       />
 
       <div className="text-center mb-12">

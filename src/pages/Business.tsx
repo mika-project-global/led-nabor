@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { B2BCalculator } from '../components/B2BCalculator';
 import { SEO } from '../components/SEO';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 export default function Business() {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ export default function Business() {
       <SEO
         title={t('business_page.title')}
         description={t('business_page.description')}
+        alternateUrls={getStaticPageAlternateUrls('/business')}
       />
 
       <h1 className="text-4xl font-bold mb-12">{t('business_page.title')}</h1>

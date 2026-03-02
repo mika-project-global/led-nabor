@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, useLocation } from 'react-router-dom';
+import { localeToHreflang } from '../lib/urls';
 
 interface SEOProps {
   title: string;
@@ -10,6 +11,7 @@ interface SEOProps {
   keywords?: string[] | string;
   canonicalUrl?: string;
   schema?: object;
+  alternateUrls?: Record<string, string>;
 }
 
 const LOCALE_MAP: Record<string, string> = {
@@ -20,7 +22,7 @@ const LOCALE_MAP: Record<string, string> = {
   ru: 'ru_RU'
 };
 
-export function SEO({ title, description, image, type = 'website', keywords, canonicalUrl, schema }: SEOProps) {
+export function SEO({ title, description, image, type = 'website', keywords, canonicalUrl, schema, alternateUrls }: SEOProps) {
   const { locale = 'en' } = useParams<{ locale: string }>();
   const location = useLocation();
   const siteUrl = __SITE_URL__ || 'https://led-nabor.com';
@@ -34,6 +36,9 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       : keywords
     : undefined;
 
+  // Get default alternate URL (English)
+  const defaultAlternateUrl = alternateUrls?.['en'] || `${siteUrl}/en${location.pathname.replace(/^\/(en|ru|cz|de|pl)/, '')}`;
+
   return (
     <Helmet>
       {/* Basic */}
@@ -41,6 +46,24 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <meta name="description" content={description} />
       {keywordsString && <meta name="keywords" content={keywordsString} />}
       <link rel="canonical" href={fullCanonicalUrl} />
+
+      {/* Hreflang tags for international SEO */}
+      {alternateUrls && Object.entries(alternateUrls).map(([localeKey, url]) => (
+        <link
+          key={localeKey}
+          rel="alternate"
+          hrefLang={localeToHreflang(localeKey)}
+          href={url}
+        />
+      ))}
+      {alternateUrls && (
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={defaultAlternateUrl}
+        />
+      )}
+
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://images.unsplash.com" />
       <meta name="format-detection" content="telephone=no" />

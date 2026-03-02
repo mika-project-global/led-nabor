@@ -7,6 +7,7 @@ import { useTranslation } from '../hooks/useTranslation';
 import { useLocale } from '../context/LocaleContext';
 import { SEO } from '../components/SEO';
 import LoadingState from '../components/LoadingState';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 interface BlogPost {
   id: string;
@@ -67,6 +68,7 @@ export default function Blog() {
         title={t('blog.title')}
         description={t('blog.description')}
         type="website"
+        alternateUrls={getStaticPageAlternateUrls('/blog')}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-12">
