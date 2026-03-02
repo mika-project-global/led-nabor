@@ -9,19 +9,27 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = join(__dirname, '../dist');
 const port = 3457;
 
-// Routes to prerender - all with /en/ locale
-const routes = [
-  '/en/',
-  '/en/catalog',
-  '/en/product/universal-rgb-cct',
-  '/en/product/adjustable-white',
-  '/en/category/rgb_cct',
-  '/en/category/cct',
-  '/en/faq',
-  '/en/about',
-  '/en/warranty',
-  '/en/blog'
+// All supported locales
+const locales = ['en', 'ru', 'de', 'pl', 'cz'];
+
+// Base routes to prerender (locale will be prepended)
+const baseRoutes = [
+  '/',
+  '/catalog',
+  '/product/universal-rgb-cct',
+  '/product/adjustable-white',
+  '/category/rgb_cct',
+  '/category/cct',
+  '/faq',
+  '/about',
+  '/warranty',
+  '/blog'
 ];
+
+// Generate routes for all locales
+const routes = locales.flatMap(locale =>
+  baseRoutes.map(route => `/${locale}${route}`)
+);
 
 async function startServer() {
   const server = createServer((request, response) => {
@@ -68,8 +76,11 @@ async function prerenderRoute(browser, route) {
 
     // Determine output path
     let outputPath;
-    if (route === '/en/') {
-      outputPath = join(distDir, 'en', 'index.html');
+    // Check if route ends with / or is a locale root (e.g., /en/, /ru/, etc.)
+    if (route.match(/^\/[a-z]{2}\/?$/)) {
+      // Root locale page like /en/ or /ru/
+      const locale = route.replace(/\//g, '');
+      outputPath = join(distDir, locale, 'index.html');
     } else if (route.endsWith('/')) {
       outputPath = join(distDir, route, 'index.html');
     } else {

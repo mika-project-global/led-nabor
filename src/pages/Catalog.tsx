@@ -8,7 +8,8 @@ import { useLocale } from '../context/LocaleContext';
 import { getImageUrl } from '../lib/supabase-storage';
 import { RecentReviews } from '../components/RecentReviews';
 import { CategoryGridSkeleton } from '../components/SkeletonLoader';
-import { getProductUrl, getCategoryUrl } from '../lib/urls';
+import { getProductUrl, getCategoryUrl, getStaticPageAlternateUrls, SITE_URL } from '../lib/urls';
+import { SEO } from '../components/SEO';
 
 export default function Catalog() {
   const { t } = useTranslation();
@@ -29,8 +30,18 @@ export default function Catalog() {
     );
   }
 
+  const homeAlternateUrls = getStaticPageAlternateUrls('');
+  const canonicalUrl = `${SITE_URL}/${locale}/`;
+
   return (
     <main className="max-w-7xl mx-auto px-4 py-8">
+      <SEO
+        title="LED Nabor - LED Strip Lights for Ceiling Lighting"
+        description="Professional LED strip lights for ceiling lighting. RGB+CCT and adjustable white options. Easy installation, WiFi control, 10-year lifespan. Free shipping across Europe."
+        type="website"
+        alternateUrls={homeAlternateUrls}
+        canonicalUrl={canonicalUrl}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {categories.map(category => {
           // Находим все товары в данной категории

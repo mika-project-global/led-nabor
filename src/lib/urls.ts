@@ -51,8 +51,11 @@ export function getProductAlternateUrls(product: Product): Record<string, string
 export function getStaticPageAlternateUrls(path: string): Record<string, string> {
   const alternates: Record<string, string> = {};
 
+  // Ensure path starts with / unless it's empty (for home page)
+  const normalizedPath = path === '' ? '/' : (path.startsWith('/') ? path : `/${path}`);
+
   SUPPORTED_LOCALES.forEach(locale => {
-    alternates[locale] = `${SITE_URL}/${locale}${path}`;
+    alternates[locale] = `${SITE_URL}/${locale}${normalizedPath}`;
   });
 
   return alternates;
