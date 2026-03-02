@@ -4,10 +4,21 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import handler from 'serve-handler';
+import { createClient } from '@supabase/supabase-js';
+import { config } from 'dotenv';
+
+// Load environment variables
+config();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = join(__dirname, '../dist');
 const port = 3457;
+
+// Initialize Supabase client
+const supabase = createClient(
+  process.env.VITE_SUPABASE_URL,
+  process.env.VITE_SUPABASE_ANON_KEY
+);
 
 // All supported locales
 const locales = ['en', 'ru', 'de', 'pl', 'cz'];
@@ -32,10 +43,32 @@ const baseRoutes = [
   '/blog/'
 ];
 
-// Generate routes for all locales
-const routes = locales.flatMap(locale =>
-  baseRoutes.map(route => `/${locale}${route}`)
-);
+// Function to fetch all published blog posts from Supabase
+async function fetchBlogPosts() {
+  try {
+    const { data, error } = await supabase
+      .from('blog_posts')
+      .select('slug, locale')
+      .eq('published', true);
+
+    if (error) {
+      console.error('Error fetching blog posts:', error);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error('Failed to fetch blog posts:', error);
+    return [];
+  }
+}
+
+// Generate base routes for all locales
+function generateBaseRoutes() {
+  return locales.flatMap(locale =>
+    baseRoutes.map(route => `/${locale}${route}`)
+  );
+}
 
 async function startServer() {
   const server = createServer((request, response) => {
@@ -137,6 +170,21 @@ async function main() {
   let browser;
 
   try {
+    // Fetch blog posts from database
+    console.log('Fetching blog posts from database...');
+    const blogPosts = await fetchBlogPosts();
+    console.log(`Found ${blogPosts.length} published blog posts\n`);
+
+    // Generate base routes
+    const routes = generateBaseRoutes();
+
+    // Add blog post routes
+    blogPosts.forEach(post => {
+      routes.push(`/${post.locale}/blog/${post.slug}/`);
+    });
+
+    console.log(`Total routes to prerender: ${routes.length}\n`);
+
     // Start local server
     server = await startServer();
 
