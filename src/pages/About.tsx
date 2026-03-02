@@ -101,7 +101,7 @@ export default function About() {
             </div>
             <div className="flex items-center gap-3">
               <Phone className="text-cyan-600" />
-              <span>+420 777 888 999</span>
+              <span>+420 722 414 539</span>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="text-cyan-600" />

@@ -169,8 +169,8 @@ export default function Support() {
                   <div className="flex items-center gap-3 text-gray-600">
                     <Phone className="text-cyan-600" />
                     <div>
-                      <a href="tel:+420777888999" className="hover:text-cyan-600">
-                        +420 777 888 999
+                      <a href="tel:+420722414539" className="hover:text-cyan-600">
+                        +420 722 414 539
                       </a>
                       <span className="text-sm ml-2">{t('support.prague')}</span>
                     </div>
