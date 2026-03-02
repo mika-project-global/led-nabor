@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Users, Award, Clock, MapPin, Mail, Phone, Star, PenTool as Tool, Shield } from 'lucide-react';
+import { SEO } from '../components/SEO';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 const COMPANY_NAME = 'LED Nabor';
 const COMPANY_EMAIL = 'info@led-nabor.com';
@@ -10,6 +12,11 @@ export default function About() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <SEO
+        title={t('about.title')}
+        description={t('about.subtitle')}
+        alternateUrls={getStaticPageAlternateUrls('/about')}
+      />
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">{t('about.title')}</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">

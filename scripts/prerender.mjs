@@ -13,17 +13,23 @@ const port = 3457;
 const locales = ['en', 'ru', 'de', 'pl', 'cz'];
 
 // Base routes to prerender (locale will be prepended)
+// All routes have trailing slash for SEO consistency
 const baseRoutes = [
   '/',
-  '/catalog',
-  '/product/universal-rgb-cct',
-  '/product/adjustable-white',
-  '/category/rgb_cct',
-  '/category/cct',
-  '/faq',
-  '/about',
-  '/warranty',
-  '/blog'
+  '/catalog/',
+  '/product/universal-rgb-cct/',
+  '/product/adjustable-white/',
+  '/category/rgb_cct/',
+  '/category/cct/',
+  '/faq/',
+  '/about/',
+  '/support/',
+  '/terms/',
+  '/privacy-policy/',
+  '/business/',
+  '/warranty/',
+  '/installation-guide/',
+  '/blog/'
 ];
 
 // Generate routes for all locales

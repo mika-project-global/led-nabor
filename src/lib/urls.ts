@@ -25,19 +25,20 @@ export function getCategoryUrl(locale: string, categoryId: string): string {
  * Generate home URL for locale
  */
 export function getHomeUrl(locale: string): string {
-  return `/${locale}`;
+  return `/${locale}/`;
 }
 
 /**
  * Generate alternate URLs for hreflang tags
  * For product pages - checks if slug exists for each locale
+ * Always includes trailing slash for consistency
  */
 export function getProductAlternateUrls(product: Product): Record<string, string> {
   const alternates: Record<string, string> = {};
 
   SUPPORTED_LOCALES.forEach(locale => {
     if (product.slugs[locale]) {
-      alternates[locale] = `${SITE_URL}/${locale}/product/${product.slugs[locale]}`;
+      alternates[locale] = `${SITE_URL}/${locale}/product/${product.slugs[locale]}/`;
     }
   });
 
@@ -47,12 +48,18 @@ export function getProductAlternateUrls(product: Product): Record<string, string
 /**
  * Generate alternate URLs for static pages (home, about, faq, etc.)
  * These pages exist on all locales
+ * Always includes trailing slash for consistency
  */
 export function getStaticPageAlternateUrls(path: string): Record<string, string> {
   const alternates: Record<string, string> = {};
 
   // Ensure path starts with / unless it's empty (for home page)
-  const normalizedPath = path === '' ? '/' : (path.startsWith('/') ? path : `/${path}`);
+  let normalizedPath = path === '' ? '/' : (path.startsWith('/') ? path : `/${path}`);
+
+  // Add trailing slash if not present (except for home page which is just '/')
+  if (normalizedPath !== '/' && !normalizedPath.endsWith('/')) {
+    normalizedPath += '/';
+  }
 
   SUPPORTED_LOCALES.forEach(locale => {
     alternates[locale] = `${SITE_URL}/${locale}${normalizedPath}`;
@@ -64,12 +71,13 @@ export function getStaticPageAlternateUrls(path: string): Record<string, string>
 /**
  * Generate alternate URLs for blog posts
  * Checks if post exists for each locale
+ * Always includes trailing slash for consistency
  */
 export function getBlogPostAlternateUrls(slug: string, availableLocales: LocaleType[]): Record<string, string> {
   const alternates: Record<string, string> = {};
 
   availableLocales.forEach(locale => {
-    alternates[locale] = `${SITE_URL}/${locale}/blog/${slug}`;
+    alternates[locale] = `${SITE_URL}/${locale}/blog/${slug}/`;
   });
 
   return alternates;

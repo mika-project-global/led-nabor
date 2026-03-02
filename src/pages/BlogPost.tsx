@@ -136,7 +136,7 @@ export default function BlogPost() {
       if (data) {
         const alternates: Record<string, string> = {};
         data.forEach(translation => {
-          alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}`;
+          alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
         });
         setAlternateUrls(alternates);
       }

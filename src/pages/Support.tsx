@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { SEO } from '../components/SEO';
+import { getStaticPageAlternateUrls } from '../lib/urls';
 
 const COMPANY_NAME = 'LED Nabor';
 const COMPANY_EMAIL = 'info@led-nabor.com';
@@ -43,6 +45,11 @@ export default function Support() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <SEO
+        title={t('support.title')}
+        description={t('support.subtitle')}
+        alternateUrls={getStaticPageAlternateUrls('/support')}
+      />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <h1 className="text-3xl font-bold mb-6">{t('support.title')}</h1>

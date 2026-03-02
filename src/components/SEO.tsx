@@ -28,7 +28,12 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const siteUrl = __SITE_URL__ || 'https://led-nabor.com';
   const defaultImage = '/og-image.jpg';
   const ogLocale = LOCALE_MAP[locale] || 'en_US';
-  const fullCanonicalUrl = canonicalUrl || `${siteUrl}${location.pathname}`;
+
+  // Ensure canonical URL has trailing slash
+  let fullCanonicalUrl = canonicalUrl || `${siteUrl}${location.pathname}`;
+  if (!fullCanonicalUrl.endsWith('/')) {
+    fullCanonicalUrl += '/';
+  }
 
   const keywordsString = keywords
     ? Array.isArray(keywords)
@@ -37,7 +42,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
     : undefined;
 
   // Get default alternate URL (English)
-  const defaultAlternateUrl = alternateUrls?.['en'] || `${siteUrl}/en${location.pathname.replace(/^\/(en|ru|cz|de|pl)/, '')}`;
+  const defaultAlternateUrl = alternateUrls?.['en'] || `${siteUrl}/en${location.pathname.replace(/^\/(en|ru|cz|de|pl)/, '')}/`;
 
   return (
     <Helmet>
