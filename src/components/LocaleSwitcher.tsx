@@ -36,30 +36,35 @@ export function LocaleSwitcher() {
   const currentLanguage = LANGUAGES.find(lang => lang.code === language) || LANGUAGES[0];
 
   const handleLanguageChange = (langCode: string) => {
-    // If we have blog translations (on blog post page), use them
-    if (translations && Object.keys(translations).length > 0) {
+    // Save user's preference immediately
+    localStorage.setItem('preferredLocale', langCode);
+
+    // Check if we're on a blog post page with translations
+    const pathSegments = location.pathname.split('/').filter(Boolean);
+    const isBlogPost = pathSegments.length >= 3 && pathSegments[1] === 'blog';
+
+    if (isBlogPost && translations && Object.keys(translations).length > 0) {
+      console.log('[LocaleSwitcher] Blog post detected, translations:', translations);
+
       const translatedUrl = translations[langCode];
 
       if (translatedUrl) {
-        // Navigate to the translated post
-        localStorage.setItem('preferredLocale', langCode);
+        console.log(`[LocaleSwitcher] Found translation for ${langCode}: ${translatedUrl}`);
         navigate(translatedUrl);
         setIsOpen(false);
         return;
       } else {
-        // Translation not available, go to blog list
-        localStorage.setItem('preferredLocale', langCode);
+        console.log(`[LocaleSwitcher] No translation for ${langCode}, going to blog list`);
         navigate(`/${langCode}/blog/`);
         setIsOpen(false);
         return;
       }
     }
 
-    // Default behavior: replace locale in path
-    const pathSegments = location.pathname.split('/').filter(Boolean);
+    // Default behavior for non-blog pages: replace locale in path
     const hasTrailingSlash = location.pathname.endsWith('/');
-
     let newPath: string;
+
     if (pathSegments.length > 0 && LANGUAGES.some(l => l.code === pathSegments[0])) {
       pathSegments[0] = langCode;
       newPath = '/' + pathSegments.join('/');
@@ -72,12 +77,8 @@ export function LocaleSwitcher() {
       newPath = `/${langCode}/`;
     }
 
-    // Save user's choice to localStorage (for LanguageRedirect on next visit)
-    localStorage.setItem('preferredLocale', langCode);
-
-    // Navigate to new URL - LocaleWrapper will handle the rest
+    console.log(`[LocaleSwitcher] Default behavior: ${location.pathname} → ${newPath}`);
     navigate(newPath);
-
     setIsOpen(false);
   };
 

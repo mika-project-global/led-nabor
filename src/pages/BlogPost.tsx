@@ -54,6 +54,8 @@ export default function BlogPost() {
       setLoading(true);
       setError(false);
 
+      console.log(`[BlogPost] Loading post: slug="${slug}", locale="${locale}"`);
+
       // HOTFIX: Load post ONLY by slug + locale from URL
       // No automatic redirects to other locales or slugs
       const { data, error: fetchError } = await supabase
@@ -69,11 +71,13 @@ export default function BlogPost() {
       if (!data) {
         // Post not found in current locale - show 404
         // Do NOT redirect to other locales automatically
+        console.log(`[BlogPost] Post not found for slug="${slug}", locale="${locale}"`);
         setError(true);
         setLoading(false);
         return;
       }
 
+      console.log(`[BlogPost] Post loaded successfully:`, data.title);
       setPost(data);
 
       // Load related data (without redirects)
@@ -117,13 +121,22 @@ export default function BlogPost() {
 
   async function loadAlternateUrls(translationGroupId: string) {
     try {
-      const { data } = await supabase
+      console.log('[BlogPost] Loading translations for group:', translationGroupId);
+
+      const { data, error: fetchError } = await supabase
         .from('blog_posts')
         .select('slug, locale')
         .eq('translation_group_id', translationGroupId)
         .eq('published', true);
 
+      if (fetchError) {
+        console.error('[BlogPost] Error fetching translations:', fetchError);
+        return;
+      }
+
       if (data) {
+        console.log('[BlogPost] Found translations:', data);
+
         const alternates: Record<string, string> = {};
         const translationUrls: Record<string, string> = {};
 
@@ -135,12 +148,12 @@ export default function BlogPost() {
           translationUrls[translation.locale] = relativeUrl;
         });
 
+        console.log('[BlogPost] Setting translations:', translationUrls);
         setAlternateUrls(alternates);
-        // Set translations for LocaleSwitcher to use
         setTranslations(translationUrls);
       }
     } catch (error) {
-      console.error('Error loading alternate URLs:', error);
+      console.error('[BlogPost] Error loading alternate URLs:', error);
     }
   }
 
