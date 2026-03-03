@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, Eye, ArrowLeft } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { supabase } from '../lib/supabase';
@@ -30,7 +30,6 @@ export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const { t } = useTranslation();
   const { language, locale } = useLocale();
-  const navigate = useNavigate();
   const [post, setPost] = useState<BlogPostData | null>(null);
   const [relatedPosts, setRelatedPosts] = useState<BlogPostData[]>([]);
   const [loading, setLoading] = useState(true);
@@ -48,6 +47,8 @@ export default function BlogPost() {
       setLoading(true);
       setError(false);
 
+      // HOTFIX: Load post ONLY by slug + locale from URL
+      // No automatic redirects to other locales or slugs
       const { data, error: fetchError } = await supabase
         .from('blog_posts')
         .select('*')
@@ -59,34 +60,16 @@ export default function BlogPost() {
       if (fetchError) throw fetchError;
 
       if (!data) {
-        const { data: postInOtherLocale } = await supabase
-          .from('blog_posts')
-          .select('translation_group_id')
-          .eq('slug', slug)
-          .eq('published', true)
-          .maybeSingle();
-
-        if (postInOtherLocale) {
-          const { data: translatedPost } = await supabase
-            .from('blog_posts')
-            .select('slug')
-            .eq('translation_group_id', postInOtherLocale.translation_group_id)
-            .eq('locale', locale)
-            .eq('published', true)
-            .maybeSingle();
-
-          if (translatedPost && translatedPost.slug !== slug) {
-            navigate(`/${locale}/blog/${translatedPost.slug}/`, { replace: true });
-            return;
-          }
-        }
-
+        // Post not found in current locale - show 404
+        // Do NOT redirect to other locales automatically
         setError(true);
+        setLoading(false);
         return;
       }
 
       setPost(data);
 
+      // Load related data (without redirects)
       await incrementViews(data.id);
       await loadRelatedPosts(data.id, data.locale);
       await loadAlternateUrls(data.translation_group_id);
