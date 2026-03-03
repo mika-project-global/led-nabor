@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Calendar, Clock, Eye, ArrowRight } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { addCacheBuster } from '../lib/supabase-storage';
 import { useTranslation } from '../hooks/useTranslation';
-import { useLocale } from '../context/LocaleContext';
 import { SEO } from '../components/SEO';
 import LoadingState from '../components/LoadingState';
 import { getStaticPageAlternateUrls } from '../lib/urls';
@@ -21,16 +20,17 @@ interface BlogPost {
 }
 
 export default function Blog() {
-  const { t } = useTranslation();
-  const { language, locale } = useLocale();
+  const { t, i18n } = useTranslation();
+  const { locale: urlLocale } = useParams<{ locale: string }>();
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // URL is the source of truth - normalize locale from URL
+  const locale = urlLocale === 'ru' ? 'ru' : 'en';
+
   useEffect(() => {
-    if (locale) {
-      console.log(`[Blog] Loading posts for locale: "${locale}"`);
-      loadPosts();
-    }
+    console.log(`[Blog] locale from URL: "${locale}", i18n.language: "${i18n.language}"`);
+    loadPosts();
   }, [locale]);
 
   async function loadPosts() {
@@ -55,7 +55,7 @@ export default function Blog() {
 
   function formatDate(dateString: string) {
     const date = new Date(dateString);
-    return new Intl.DateTimeFormat(language === 'ru' ? 'ru-RU' : 'en-GB', {
+    return new Intl.DateTimeFormat(locale === 'ru' ? 'ru-RU' : 'en-GB', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'

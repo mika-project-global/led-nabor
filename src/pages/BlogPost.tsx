@@ -28,9 +28,8 @@ interface BlogPostData {
 }
 
 export default function BlogPost() {
-  const { slug } = useParams<{ slug: string }>();
-  const { t } = useTranslation();
-  const { language, locale } = useLocale();
+  const { slug, locale: urlLocale } = useParams<{ slug: string; locale: string }>();
+  const { t, i18n } = useTranslation();
   const { setTranslations, clearTranslations } = useBlogTranslations();
   const [post, setPost] = useState<BlogPostData | null>(null);
   const [relatedPosts, setRelatedPosts] = useState<BlogPostData[]>([]);
@@ -38,8 +37,12 @@ export default function BlogPost() {
   const [error, setError] = useState(false);
   const [alternateUrls, setAlternateUrls] = useState<Record<string, string>>({});
 
+  // URL is the source of truth - normalize locale from URL
+  const locale = urlLocale === 'ru' ? 'ru' : 'en';
+
   useEffect(() => {
     if (slug && locale) {
+      console.log(`[BlogPost] locale from URL: "${locale}", i18n.language: "${i18n.language}"`);
       loadPost();
     }
 
@@ -159,7 +162,7 @@ export default function BlogPost() {
 
   function formatDate(dateString: string) {
     const date = new Date(dateString);
-    return new Intl.DateTimeFormat(language === 'ru' ? 'ru-RU' : 'en-GB', {
+    return new Intl.DateTimeFormat(locale === 'ru' ? 'ru-RU' : 'en-GB', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
