@@ -85,11 +85,36 @@ export default function BlogPost() {
         return;
       }
 
-      setPost(data);
+      const [relatedPostsData, alternatesData] = await Promise.all([
+        supabase
+          .from('blog_posts')
+          .select('id, title, slug, excerpt, image_url, published_at, views, locale')
+          .eq('published', true)
+          .eq('locale', data.locale)
+          .neq('id', data.id)
+          .order('published_at', { ascending: false })
+          .limit(3)
+          .then(result => result.data || []),
 
-      await incrementViews(data.id);
-      await loadRelatedPosts(data.id, data.locale);
-      await loadAlternateUrls(data.translation_group_id);
+        supabase
+          .from('blog_posts')
+          .select('slug, locale')
+          .eq('translation_group_id', data.translation_group_id)
+          .eq('published', true)
+          .then(result => {
+            const alternates: Record<string, string> = {};
+            (result.data || []).forEach(translation => {
+              alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
+            });
+            return alternates;
+          })
+      ]);
+
+      incrementViews(data.id).catch(err => console.error('Error incrementing views:', err));
+
+      setPost(data);
+      setRelatedPosts(relatedPostsData);
+      setAlternateUrls(alternatesData);
     } catch (error) {
       console.error('Error loading blog post:', error);
       setError(true);
@@ -103,45 +128,6 @@ export default function BlogPost() {
       await supabase.rpc('increment_blog_views', { post_id: postId });
     } catch (error) {
       console.error('Error incrementing views:', error);
-    }
-  }
-
-  async function loadRelatedPosts(currentPostId: string, postLocale: string) {
-    try {
-      const { data } = await supabase
-        .from('blog_posts')
-        .select('id, title, slug, excerpt, image_url, published_at, views, locale')
-        .eq('published', true)
-        .eq('locale', postLocale)
-        .neq('id', currentPostId)
-        .order('published_at', { ascending: false })
-        .limit(3);
-
-      if (data) {
-        setRelatedPosts(data);
-      }
-    } catch (error) {
-      console.error('Error loading related posts:', error);
-    }
-  }
-
-  async function loadAlternateUrls(translationGroupId: string) {
-    try {
-      const { data } = await supabase
-        .from('blog_posts')
-        .select('slug, locale')
-        .eq('translation_group_id', translationGroupId)
-        .eq('published', true);
-
-      if (data) {
-        const alternates: Record<string, string> = {};
-        data.forEach(translation => {
-          alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
-        });
-        setAlternateUrls(alternates);
-      }
-    } catch (error) {
-      console.error('Error loading alternate URLs:', error);
     }
   }
 

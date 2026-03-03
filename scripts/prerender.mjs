@@ -107,8 +107,8 @@ async function prerenderRoute(browser, route) {
     // Wait for React to render
     await page.waitForSelector('main', { timeout: 20000 });
 
-    // Wait a bit more for react-helmet-async to update meta tags
-    await new Promise(resolve => setTimeout(resolve, 2500));
+    // Wait for react-helmet-async to update meta tags AND for blog post alternateUrls to load
+    await new Promise(resolve => setTimeout(resolve, 5000));
 
     // Get the final HTML
     const html = await page.content();
