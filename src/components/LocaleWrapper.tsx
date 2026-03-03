@@ -23,8 +23,11 @@ export function LocaleWrapper({ children }: { children: React.ReactNode }) {
   const { i18n } = useTranslation();
 
   useEffect(() => {
+    console.log(`[LocaleWrapper] pathname="${location.pathname}", locale="${locale}", i18n.language="${i18n.language}"`);
+
     // Redirect invalid locales to default
     if (locale && !SUPPORTED_LOCALES.includes(locale)) {
+      console.log(`[LocaleWrapper] Invalid locale "${locale}", redirecting to ${DEFAULT_LOCALE}`);
       const newPath = location.pathname.replace(`/${locale}`, `/${DEFAULT_LOCALE}`);
       navigate(newPath, { replace: true });
       return;
@@ -34,6 +37,7 @@ export function LocaleWrapper({ children }: { children: React.ReactNode }) {
     if (locale && SUPPORTED_LOCALES.includes(locale)) {
       // Update i18n language if it's different
       if (i18n.language !== locale) {
+        console.log(`[LocaleWrapper] Syncing i18n: "${i18n.language}" → "${locale}"`);
         i18n.changeLanguage(locale);
       }
 

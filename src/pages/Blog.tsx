@@ -27,8 +27,11 @@ export default function Blog() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    loadPosts();
-  }, [language]);
+    if (locale) {
+      console.log(`[Blog] Loading posts for locale: "${locale}"`);
+      loadPosts();
+    }
+  }, [locale]);
 
   async function loadPosts() {
     try {
@@ -37,10 +40,11 @@ export default function Blog() {
         .from('blog_posts')
         .select('id, title, slug, excerpt, image_url, published_at, views, locale')
         .eq('published', true)
-        .eq('locale', language)
+        .eq('locale', locale)
         .order('published_at', { ascending: false });
 
       if (error) throw error;
+      console.log(`[Blog] Loaded ${data?.length || 0} posts for locale="${locale}"`);
       setPosts(data || []);
     } catch (error) {
       console.error('Error loading blog posts:', error);
