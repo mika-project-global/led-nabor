@@ -38,10 +38,10 @@ export default function BlogPost() {
   const [alternateUrls, setAlternateUrls] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    if (slug) {
+    if (slug && locale) {
       loadPost();
     }
-  }, [slug, language]);
+  }, [slug, locale]);
 
   async function loadPost() {
     try {
@@ -52,7 +52,7 @@ export default function BlogPost() {
         .from('blog_posts')
         .select('*')
         .eq('slug', slug)
-        .eq('locale', language)
+        .eq('locale', locale)
         .eq('published', true)
         .maybeSingle();
 
@@ -71,12 +71,12 @@ export default function BlogPost() {
             .from('blog_posts')
             .select('slug')
             .eq('translation_group_id', postInOtherLocale.translation_group_id)
-            .eq('locale', language)
+            .eq('locale', locale)
             .eq('published', true)
             .maybeSingle();
 
-          if (translatedPost) {
-            navigate(`/${locale}/blog/${translatedPost.slug}`, { replace: true });
+          if (translatedPost && translatedPost.slug !== slug) {
+            navigate(`/${locale}/blog/${translatedPost.slug}/`, { replace: true });
             return;
           }
         }
@@ -170,7 +170,7 @@ export default function BlogPost() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           {t('blog.postNotFound')}
         </h1>
-        <Link to="/blog" className="text-blue-600 hover:text-blue-700">
+        <Link to={`/${locale}/blog/`} className="text-blue-600 hover:text-blue-700">
           {t('blog.backToBlog')}
         </Link>
       </div>
@@ -209,7 +209,7 @@ export default function BlogPost() {
 
       <article className="max-w-4xl mx-auto px-4 py-12">
         <Link
-          to="/blog"
+          to={`/${locale}/blog/`}
           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -260,7 +260,7 @@ export default function BlogPost() {
               {relatedPosts.map((relatedPost) => (
                 <Link
                   key={relatedPost.id}
-                  to={`/blog/${relatedPost.slug}`}
+                  to={`/${locale}/blog/${relatedPost.slug}/`}
                   className="group"
                 >
                   {relatedPost.image_url && (

@@ -35,12 +35,18 @@ export function LocaleSwitcher() {
 
   const handleLanguageChange = (langCode: string) => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
+    const hasTrailingSlash = location.pathname.endsWith('/');
 
     // Build new path with new locale
     let newPath: string;
     if (pathSegments.length > 0 && LANGUAGES.some(l => l.code === pathSegments[0])) {
       pathSegments[0] = langCode;
-      newPath = '/' + pathSegments.join('/') + location.search;
+      newPath = '/' + pathSegments.join('/');
+      // Preserve trailing slash
+      if (hasTrailingSlash && !newPath.endsWith('/')) {
+        newPath += '/';
+      }
+      newPath += location.search;
     } else {
       newPath = `/${langCode}/`;
     }
