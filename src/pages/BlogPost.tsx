@@ -42,7 +42,7 @@ export default function BlogPost() {
 
   useEffect(() => {
     if (slug && locale) {
-      console.log(`[BlogPost] locale from URL: "${locale}", i18n.language: "${i18n.language}"`);
+      console.log(`[BlogPost] locale from URL: "${locale}", i18n.language: "${i18n?.language || 'undefined'}"`);
       loadPost();
     }
 

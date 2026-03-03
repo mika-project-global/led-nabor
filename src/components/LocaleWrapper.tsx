@@ -36,7 +36,7 @@ export function LocaleWrapper({ children }: { children: React.ReactNode }) {
     // URL is the source of truth - ALWAYS sync i18n with URL locale
     if (locale && SUPPORTED_LOCALES.includes(locale)) {
       // Update i18n language if it's different
-      if (i18n.language !== locale) {
+      if (i18n && i18n.changeLanguage && i18n.language !== locale) {
         console.log(`[LocaleWrapper] Syncing i18n: "${i18n.language}" → "${locale}"`);
         i18n.changeLanguage(locale);
       }

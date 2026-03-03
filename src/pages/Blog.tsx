@@ -29,7 +29,7 @@ export default function Blog() {
   const locale = urlLocale === 'ru' ? 'ru' : 'en';
 
   useEffect(() => {
-    console.log(`[Blog] locale from URL: "${locale}", i18n.language: "${i18n.language}"`);
+    console.log(`[Blog] locale from URL: "${locale}", i18n.language: "${i18n?.language || 'undefined'}"`);
     loadPosts();
   }, [locale]);
 
