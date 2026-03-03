@@ -14,6 +14,7 @@ import { LocaleProvider } from './context/LocaleContext';
 import { NotificationsProvider } from './context/NotificationsContext';
 import { WarrantyProvider } from './context/WarrantyContext';
 import { SiteProvider } from './context/SiteContext';
+import { BlogTranslationsProvider } from './context/BlogTranslationsContext';
 import { HelmetProvider } from 'react-helmet-async';
 import ErrorBoundary from './components/ErrorBoundary';
 import { ScrollIndicator } from './components/ScrollIndicator';
@@ -86,16 +87,17 @@ export default function App() {
         <SiteProvider>
           <WarrantyProvider>
             <LocaleProvider>
-              <Router>
-                <CartProvider>
-                  <NotificationsProvider>
-                    <div className="min-h-screen bg-gray-100">
-                      <Header />
-                      <Analytics />
-                      <CookieConsent />
-                      <Notifications />
-                      <ScrollIndicator />
-                      <ScrollToTop />
+              <BlogTranslationsProvider>
+                <Router>
+                  <CartProvider>
+                    <NotificationsProvider>
+                      <div className="min-h-screen bg-gray-100">
+                        <Header />
+                        <Analytics />
+                        <CookieConsent />
+                        <Notifications />
+                        <ScrollIndicator />
+                        <ScrollToTop />
                       <Suspense fallback={<LoadingState size="large" />}>
                         <main>
                           <ErrorBoundary>
@@ -140,9 +142,10 @@ export default function App() {
                         </main>
                       </Suspense>
                     </div>
-                  </NotificationsProvider>
-                </CartProvider> 
-              </Router>
+                    </NotificationsProvider>
+                  </CartProvider>
+                </Router>
+              </BlogTranslationsProvider>
             </LocaleProvider>
           </WarrantyProvider>
         </SiteProvider>

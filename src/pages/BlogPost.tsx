@@ -6,6 +6,7 @@ import { supabase } from '../lib/supabase';
 import { addCacheBuster } from '../lib/supabase-storage';
 import { useTranslation } from '../hooks/useTranslation';
 import { useLocale } from '../context/LocaleContext';
+import { useBlogTranslations } from '../context/BlogTranslationsContext';
 import { SEO } from '../components/SEO';
 import LoadingState from '../components/LoadingState';
 import { SITE_URL } from '../lib/urls';
@@ -30,6 +31,7 @@ export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const { t } = useTranslation();
   const { language, locale } = useLocale();
+  const { setTranslations, clearTranslations } = useBlogTranslations();
   const [post, setPost] = useState<BlogPostData | null>(null);
   const [relatedPosts, setRelatedPosts] = useState<BlogPostData[]>([]);
   const [loading, setLoading] = useState(true);
@@ -40,6 +42,11 @@ export default function BlogPost() {
     if (slug && locale) {
       loadPost();
     }
+
+    // Clear translations when unmounting or changing post
+    return () => {
+      clearTranslations();
+    };
   }, [slug, locale]);
 
   async function loadPost() {
@@ -118,10 +125,19 @@ export default function BlogPost() {
 
       if (data) {
         const alternates: Record<string, string> = {};
+        const translationUrls: Record<string, string> = {};
+
         data.forEach(translation => {
-          alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
+          const fullUrl = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
+          const relativeUrl = `/${translation.locale}/blog/${translation.slug}/`;
+
+          alternates[translation.locale] = fullUrl;
+          translationUrls[translation.locale] = relativeUrl;
         });
+
         setAlternateUrls(alternates);
+        // Set translations for LocaleSwitcher to use
+        setTranslations(translationUrls);
       }
     } catch (error) {
       console.error('Error loading alternate URLs:', error);

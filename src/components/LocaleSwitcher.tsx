@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
 import { useLocale } from '../context/LocaleContext';
+import { useBlogTranslations } from '../context/BlogTranslationsContext';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -14,6 +15,7 @@ const LANGUAGES = [
 
 export function LocaleSwitcher() {
   const { language, setLanguage } = useLocale();
+  const { translations } = useBlogTranslations();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
@@ -34,10 +36,29 @@ export function LocaleSwitcher() {
   const currentLanguage = LANGUAGES.find(lang => lang.code === language) || LANGUAGES[0];
 
   const handleLanguageChange = (langCode: string) => {
+    // If we have blog translations (on blog post page), use them
+    if (translations && Object.keys(translations).length > 0) {
+      const translatedUrl = translations[langCode];
+
+      if (translatedUrl) {
+        // Navigate to the translated post
+        localStorage.setItem('preferredLocale', langCode);
+        navigate(translatedUrl);
+        setIsOpen(false);
+        return;
+      } else {
+        // Translation not available, go to blog list
+        localStorage.setItem('preferredLocale', langCode);
+        navigate(`/${langCode}/blog/`);
+        setIsOpen(false);
+        return;
+      }
+    }
+
+    // Default behavior: replace locale in path
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const hasTrailingSlash = location.pathname.endsWith('/');
 
-    // Build new path with new locale
     let newPath: string;
     if (pathSegments.length > 0 && LANGUAGES.some(l => l.code === pathSegments[0])) {
       pathSegments[0] = langCode;
