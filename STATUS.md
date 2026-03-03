@@ -1,8 +1,9 @@
-# Locale Flicker & Missing Hreflang - СТАТУС ИСПРАВЛЕНИЯ
+# Locale Flicker & Missing Hreflang - ФАКТИЧЕСКИЙ СТАТУС
 
 Дата: 2026-03-03
+Обновлено: после реального аудита и build
 
-## ✅ Выполнено
+## ✅ Выполнено (подтверждено)
 
 ### 1. LocaleWrapper - Исправлен useEffect Loop
 **Файл**: `src/components/LocaleWrapper.tsx`
@@ -47,22 +48,47 @@
 - `LOCALE_FIX_SUMMARY.md` - детальная документация исправлений
 - `STATUS.md` - этот файл
 
+## 📊 Фактические результаты prerender
+
+После множественных попыток:
+
+**EN Blog Posts:**
+- ✅ `/en/blog/children-room-lighting-cri-color-rendering/` - canonical YES, hreflang YES (3 tags: en, ru, x-default)
+- ✅ `/en/blog/can-led-strip-replace-chandelier/` - canonical YES, hreflang YES (3 tags)
+
+**RU Blog Posts:**
+- ❌ `/ru/blog/osveshchenie-detskoy-komnaty-indeks-tsvetoperedachi/` - canonical NO, hreflang NO
+- ❌ `/ru/blog/zamena-lyustry-na-svetodiodnuyu-lentu/` - canonical NO, hreflang NO
+
+**Итого:** 2/4 (50%) blog posts имеют корректный hreflang
+
 ## ⚠️ Известные проблемы
 
-### 1. Prerender Timeout
-**Симптом**: `npm run build:prerender` зависает после 10 минут
+### 1. RU Blog Posts без hreflang (КРИТИЧЕСКАЯ ПРОБЛЕМА)
 
-**Текущий статус**:
-- Build успешен
-- Prerender начинается но не завершается
-- RU blog posts не генерируются
+**Симптом**: RU blog posts генерируются БЕЗ canonical и hreflang тегов, в то время как EN посты работают корректно
 
-**Возможные причины**:
-- Puppeteer зависает на RU страницах
-- Network timeout к Supabase
-- Слишком большой wait time (5s)
+**Причина**: React-helmet-async НЕ обновляет `<head>` на RU страницах во время prerender. Возможные факторы:
+- Async timing issue при загрузке данных из Supabase
+- alternateUrls state не устанавливается вовремя перед захватом HTML
+- Race condition между setPost() и setAlternateUrls()
 
-**Временное решение**: Manual prerendering с уменьшенным wait time или отдельный prerender для blog posts
+**Подтверждено**:
+- RU страницы загружаются (loading spinner исчезает)
+- RU контент отображается корректно (title, body на русском)
+- НО react-helmet-async теги НЕ применяются к `<head>`
+
+**Попытки решения**:
+1. ✅ Увеличен wait time до 8, 12, 30 секунд - не помогло
+2. ✅ Ожидание исчезновения loading spinner - частично помогло
+3. ✅ Использование domcontentloaded + wait - не полностью решило
+4. ✅ Параллельная загрузка alternates ПЕРЕД setPost - код исправлен, но проблема остаётся
+
+**Текущее состояние**:
+- EN posts: canonical ✓, hreflang ✓ (работает стабильно)
+- RU posts: canonical ✗, hreflang ✗ (не работает)
+
+**Требуется дальнейшая отладка**: Нужно проверить почему React-helmet-async не работает на RU страницах в prerender
 
 ### 2. Test Script Overwrite
 **Симптом**: Тестовый скрипт `test-blog-prerender.mjs` перезаписывал файлы 404 страницами
