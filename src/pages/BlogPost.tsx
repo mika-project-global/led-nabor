@@ -38,10 +38,10 @@ export default function BlogPost() {
   const [alternateUrls, setAlternateUrls] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    if (slug && locale) {
+    if (slug) {
       loadPost();
     }
-  }, [slug, locale]);
+  }, [slug, language]);
 
   async function loadPost() {
     try {
@@ -52,7 +52,7 @@ export default function BlogPost() {
         .from('blog_posts')
         .select('*')
         .eq('slug', slug)
-        .eq('locale', locale)
+        .eq('locale', language)
         .eq('published', true)
         .maybeSingle();
 
@@ -71,12 +71,12 @@ export default function BlogPost() {
             .from('blog_posts')
             .select('slug')
             .eq('translation_group_id', postInOtherLocale.translation_group_id)
-            .eq('locale', locale)
+            .eq('locale', language)
             .eq('published', true)
             .maybeSingle();
 
-          if (translatedPost && translatedPost.slug !== slug) {
-            navigate(`/${locale}/blog/${translatedPost.slug}/`, { replace: true });
+          if (translatedPost) {
+            navigate(`/${locale}/blog/${translatedPost.slug}`, { replace: true });
             return;
           }
         }
@@ -85,36 +85,11 @@ export default function BlogPost() {
         return;
       }
 
-      const [relatedPostsData, alternatesData] = await Promise.all([
-        supabase
-          .from('blog_posts')
-          .select('id, title, slug, excerpt, image_url, published_at, views, locale')
-          .eq('published', true)
-          .eq('locale', data.locale)
-          .neq('id', data.id)
-          .order('published_at', { ascending: false })
-          .limit(3)
-          .then(result => result.data || []),
-
-        supabase
-          .from('blog_posts')
-          .select('slug, locale')
-          .eq('translation_group_id', data.translation_group_id)
-          .eq('published', true)
-          .then(result => {
-            const alternates: Record<string, string> = {};
-            (result.data || []).forEach(translation => {
-              alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
-            });
-            return alternates;
-          })
-      ]);
-
-      incrementViews(data.id).catch(err => console.error('Error incrementing views:', err));
-
       setPost(data);
-      setRelatedPosts(relatedPostsData);
-      setAlternateUrls(alternatesData);
+
+      await incrementViews(data.id);
+      await loadRelatedPosts(data.id, data.locale);
+      await loadAlternateUrls(data.translation_group_id);
     } catch (error) {
       console.error('Error loading blog post:', error);
       setError(true);
@@ -128,6 +103,45 @@ export default function BlogPost() {
       await supabase.rpc('increment_blog_views', { post_id: postId });
     } catch (error) {
       console.error('Error incrementing views:', error);
+    }
+  }
+
+  async function loadRelatedPosts(currentPostId: string, postLocale: string) {
+    try {
+      const { data } = await supabase
+        .from('blog_posts')
+        .select('id, title, slug, excerpt, image_url, published_at, views, locale')
+        .eq('published', true)
+        .eq('locale', postLocale)
+        .neq('id', currentPostId)
+        .order('published_at', { ascending: false })
+        .limit(3);
+
+      if (data) {
+        setRelatedPosts(data);
+      }
+    } catch (error) {
+      console.error('Error loading related posts:', error);
+    }
+  }
+
+  async function loadAlternateUrls(translationGroupId: string) {
+    try {
+      const { data } = await supabase
+        .from('blog_posts')
+        .select('slug, locale')
+        .eq('translation_group_id', translationGroupId)
+        .eq('published', true);
+
+      if (data) {
+        const alternates: Record<string, string> = {};
+        data.forEach(translation => {
+          alternates[translation.locale] = `${SITE_URL}/${translation.locale}/blog/${translation.slug}/`;
+        });
+        setAlternateUrls(alternates);
+      }
+    } catch (error) {
+      console.error('Error loading alternate URLs:', error);
     }
   }
 
@@ -156,7 +170,7 @@ export default function BlogPost() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           {t('blog.postNotFound')}
         </h1>
-        <Link to={`/${locale}/blog/`} className="text-blue-600 hover:text-blue-700">
+        <Link to="/blog" className="text-blue-600 hover:text-blue-700">
           {t('blog.backToBlog')}
         </Link>
       </div>
@@ -195,7 +209,7 @@ export default function BlogPost() {
 
       <article className="max-w-4xl mx-auto px-4 py-12">
         <Link
-          to={`/${locale}/blog/`}
+          to="/blog"
           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -246,7 +260,7 @@ export default function BlogPost() {
               {relatedPosts.map((relatedPost) => (
                 <Link
                   key={relatedPost.id}
-                  to={`/${locale}/blog/${relatedPost.slug}/`}
+                  to={`/blog/${relatedPost.slug}`}
                   className="group"
                 >
                   {relatedPost.image_url && (

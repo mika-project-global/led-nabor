@@ -93,7 +93,7 @@ export default function Blog() {
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 {post.image_url && (
-                  <Link to={`/${locale}/blog/${post.slug}/`}>
+                  <Link to={`/${locale}/blog/${post.slug}`}>
                     <img
                       src={addCacheBuster(post.image_url)}
                       alt={post.title}
@@ -103,7 +103,7 @@ export default function Blog() {
                 )}
 
                 <div className="p-6">
-                  <Link to={`/${locale}/blog/${post.slug}/`}>
+                  <Link to={`/${locale}/blog/${post.slug}`}>
                     <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
                       {post.title}
                     </h2>
@@ -127,7 +127,7 @@ export default function Blog() {
                   </div>
 
                   <Link
-                    to={`/${locale}/blog/${post.slug}/`}
+                    to={`/${locale}/blog/${post.slug}`}
                     className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium group"
                   >
                     {t('blog.readMore')}
