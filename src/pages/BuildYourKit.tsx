@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { useLocale } from '../context/LocaleContext';
 import { useCart } from '../context/CartContext';
 import { SEO } from '../components/SEO';
 import { getStaticPageAlternateUrls, SITE_URL } from '../lib/urls';
-import { Check, Zap, Wifi, Home, Radio, Shield, Truck, CreditCard, Headphones as HeadphonesIcon, ChevronDown, ChevronUp } from 'lucide-react';
+import { Check, Zap, Wifi, Home, Radio, Shield, Truck, CreditCard, Headphones as HeadphonesIcon, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { KIT_CONFIG, formatKitPrice, calculateKitPrice } from '../config/kit-prices';
+import { Product } from '../types';
 
 type Length = '5m' | '10m' | '15m' | '20m' | '25m' | '30m';
 type LightType = 'rgb_cct' | 'adjustable_white';
@@ -22,6 +25,7 @@ export default function BuildYourKit() {
   const { t } = useTranslation();
   const { locale } = useLocale();
   const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   const [config, setConfig] = useState<KitConfig>({
     length: null,
@@ -32,57 +36,146 @@ export default function BuildYourKit() {
 
   const [showNotification, setShowNotification] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState(false);
+  const [highlightButton, setHighlightButton] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // Refs for auto-scroll
+  const step1Ref = useRef<HTMLDivElement>(null);
+  const step2Ref = useRef<HTMLDivElement>(null);
+  const step3Ref = useRef<HTMLDivElement>(null);
+  const step4Ref = useRef<HTMLDivElement>(null);
+  const addToCartButtonRef = useRef<HTMLButtonElement>(null);
 
   const lengths: Length[] = ['5m', '10m', '15m', '20m', '25m', '30m'];
 
-  const prices = {
-    led_strip: {
-      rgb_cct: { '5m': 79, '10m': 139, '15m': 199, '20m': 259, '25m': 319, '30m': 379 },
-      adjustable_white: { '5m': 59, '10m': 109, '15m': 159, '20m': 209, '25m': 259, '30m': 309 },
-    },
-    control: {
-      remote: 0,
-      wifi: 25,
-      smart_home: 45,
-    },
-    power: {
-      standard: 29,
-      premium: 49,
-    },
-  };
-
   const calculatePrice = () => {
-    if (!config.length || !config.lightType || !config.controlType || !config.powerSupply) {
-      return { ledStrip: 0, control: 0, power: 0, total: 0 };
-    }
-
-    const ledStrip = prices.led_strip[config.lightType][config.length];
-    const control = prices.control[config.controlType];
-    const power = prices.power[config.powerSupply];
-    const total = ledStrip + control + power;
-
-    return { ledStrip, control, power, total };
+    return calculateKitPrice(
+      config.length,
+      config.lightType,
+      config.controlType,
+      config.powerSupply
+    );
   };
 
   const handleAddToCart = () => {
     if (!config.length || !config.lightType || !config.controlType || !config.powerSupply) {
-      alert(t('build_your_kit.select_all'));
+      setError(t('build_your_kit.select_all'));
+      setTimeout(() => setError(null), 3000);
       return;
     }
 
-    const price = calculatePrice();
-    const kitName = `Custom LED Kit - ${config.length} ${t(`build_your_kit.light_type.${config.lightType}`)}`;
+    try {
+      const price = calculatePrice();
 
-    addToCart({
-      id: `custom-kit-${Date.now()}`,
-      name: kitName,
-      price: price.total,
-      image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop',
-      quantity: 1,
-    });
+      // Build kit name with selected options
+      const lightTypeName = t(`build_your_kit.light_type.${config.lightType}`);
+      const controlTypeName = t(`build_your_kit.control_type.${config.controlType}`);
+      const powerTypeName = t(`build_your_kit.power_supply.${config.powerSupply}`);
 
-    setShowNotification(true);
-    setTimeout(() => setShowNotification(false), 3000);
+      const kitName = locale === 'ru'
+        ? `LED комплект ${config.length} - ${lightTypeName}`
+        : `LED Kit ${config.length} - ${lightTypeName}`;
+
+      // Create a proper Product object for the cart
+      const customKit: Product = {
+        id: Date.now(), // Unique ID for custom kit
+        name: kitName,
+        slugs: {
+          en: 'custom-led-kit',
+          ru: 'custom-led-kit',
+          cz: 'custom-led-kit',
+          de: 'custom-led-kit',
+          pl: 'custom-led-kit',
+        },
+        type: 'retail',
+        basePrice: price.total,
+        description: locale === 'ru'
+          ? `Индивидуальный LED комплект: ${config.length}, ${lightTypeName}, ${controlTypeName}, ${powerTypeName}`
+          : `Custom LED Kit: ${config.length}, ${lightTypeName}, ${controlTypeName}, ${powerTypeName}`,
+        image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop',
+        images: ['https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop'],
+        category: 'custom-kits',
+        variants: [
+          {
+            id: `kit-${config.length}-${config.lightType}-${config.controlType}-${config.powerSupply}`,
+            length: parseInt(config.length),
+            price: price.total,
+            stockStatus: 'in_stock',
+          },
+        ],
+        features: [
+          `${config.length} LED ${lightTypeName}`,
+          controlTypeName,
+          powerTypeName,
+        ],
+        controlOptions: [controlTypeName],
+      };
+
+      addToCart(customKit);
+
+      setShowNotification(true);
+      setTimeout(() => {
+        setShowNotification(false);
+        // Navigate to checkout after notification
+        navigate(`/${locale}/checkout`);
+      }, 1000);
+
+    } catch (err) {
+      console.error('Error adding to cart:', err);
+      setError(t('build_your_kit.add_to_cart_error') || 'Failed to add to cart');
+      setTimeout(() => setError(null), 3000);
+    }
+  };
+
+  // Auto-scroll to next step
+  const scrollToStep = (stepRef: React.RefObject<HTMLDivElement>) => {
+    if (stepRef.current) {
+      const headerOffset = 120; // Account for sticky header + some padding
+      const elementPosition = stepRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  // Highlight add to cart button
+  const highlightAddToCartButton = () => {
+    setHighlightButton(true);
+    setTimeout(() => setHighlightButton(false), 2000);
+
+    // Also scroll to button on mobile
+    if (window.innerWidth < 1024 && addToCartButtonRef.current) {
+      setTimeout(() => {
+        addToCartButtonRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }, 300);
+    }
+  };
+
+  // Update handlers with auto-scroll
+  const handleLengthSelect = (length: Length) => {
+    setConfig({ ...config, length });
+    setTimeout(() => scrollToStep(step2Ref), 100);
+  };
+
+  const handleLightTypeSelect = (lightType: LightType) => {
+    setConfig({ ...config, lightType });
+    setTimeout(() => scrollToStep(step3Ref), 100);
+  };
+
+  const handleControlTypeSelect = (controlType: ControlType) => {
+    setConfig({ ...config, controlType });
+    setTimeout(() => scrollToStep(step4Ref), 100);
+  };
+
+  const handlePowerSupplySelect = (powerSupply: PowerSupply) => {
+    setConfig({ ...config, powerSupply });
+    setTimeout(() => highlightAddToCartButton(), 100);
   };
 
   const price = calculatePrice();
@@ -142,8 +235,17 @@ export default function BuildYourKit() {
         </div>
       )}
 
+      {error && (
+        <div className="fixed top-24 right-4 bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-slide-in-right">
+          <div className="flex items-center gap-2">
+            <X className="w-5 h-5" />
+            <span className="font-semibold">{error}</span>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('build_your_kit.title')}
           </h1>
@@ -152,42 +254,9 @@ export default function BuildYourKit() {
           </p>
         </div>
 
-        {/* Progress Indicator */}
-        <div className="max-w-2xl mx-auto mb-8">
-          <div className="bg-white rounded-xl shadow-md p-6">
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-semibold text-gray-700">
-                {t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
-              </span>
-              <span className="text-sm font-semibold text-blue-600">
-                {Math.round(progressPercentage)}%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-              <div
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 h-2 rounded-full transition-all duration-500 ease-out"
-                style={{ width: `${progressPercentage}%` }}
-                role="progressbar"
-                aria-valuenow={progressPercentage}
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-label={t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
-              />
-            </div>
-            {showMotivation() && (
-              <p className="text-sm text-green-600 mt-3 text-center font-medium">
-                {4 - completedSteps === 1
-                  ? t('build_your_kit.progress.almost_done', { remaining: 4 - completedSteps })
-                  : t('build_your_kit.progress.almost_done_plural', { remaining: 4 - completedSteps })
-                }
-              </p>
-            )}
-          </div>
-        </div>
-
         <div className="grid lg:grid-cols-3 gap-8 pb-32 lg:pb-0">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div ref={step1Ref} className="bg-white rounded-2xl shadow-lg p-6 md:p-8" style={{ scrollMarginTop: '120px' }}>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {t('build_your_kit.step1')}
               </h2>
@@ -195,7 +264,7 @@ export default function BuildYourKit() {
                 {lengths.map((length) => (
                   <button
                     key={length}
-                    onClick={() => setConfig({ ...config, length })}
+                    onClick={() => handleLengthSelect(length)}
                     className={`p-4 rounded-xl border-2 transition-all ${
                       config.length === length
                         ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -220,13 +289,13 @@ export default function BuildYourKit() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div ref={step2Ref} className="bg-white rounded-2xl shadow-lg p-6 md:p-8" style={{ scrollMarginTop: '120px' }}>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {t('build_your_kit.step2')}
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <button
-                  onClick={() => setConfig({ ...config, lightType: 'rgb_cct' })}
+                  onClick={() => handleLightTypeSelect('rgb_cct')}
                   className={`p-6 rounded-xl border-2 transition-all text-left ${
                     config.lightType === 'rgb_cct'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -248,7 +317,7 @@ export default function BuildYourKit() {
                 </button>
 
                 <button
-                  onClick={() => setConfig({ ...config, lightType: 'adjustable_white' })}
+                  onClick={() => handleLightTypeSelect('adjustable_white')}
                   className={`p-6 rounded-xl border-2 transition-all text-left ${
                     config.lightType === 'adjustable_white'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -271,13 +340,13 @@ export default function BuildYourKit() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div ref={step3Ref} className="bg-white rounded-2xl shadow-lg p-6 md:p-8" style={{ scrollMarginTop: '120px' }}>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {t('build_your_kit.step3')}
               </h2>
               <div className="grid md:grid-cols-3 gap-4">
                 <button
-                  onClick={() => setConfig({ ...config, controlType: 'remote' })}
+                  onClick={() => handleControlTypeSelect('remote')}
                   className={`p-6 rounded-xl border-2 transition-all text-center ${
                     config.controlType === 'remote'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -306,7 +375,7 @@ export default function BuildYourKit() {
                 </button>
 
                 <button
-                  onClick={() => setConfig({ ...config, controlType: 'wifi' })}
+                  onClick={() => handleControlTypeSelect('wifi')}
                   className={`p-6 rounded-xl border-2 transition-all text-center ${
                     config.controlType === 'wifi'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -325,7 +394,7 @@ export default function BuildYourKit() {
                     {t('build_your_kit.control_type.wifi_desc')}
                   </p>
                   <div className="text-sm font-semibold text-blue-600">
-                    +€{prices.control.wifi}
+                    +{formatKitPrice(KIT_CONFIG.control.wifi, locale)}
                   </div>
                   {config.controlType === 'wifi' && (
                     <div className="mt-3 flex justify-center">
@@ -335,7 +404,7 @@ export default function BuildYourKit() {
                 </button>
 
                 <button
-                  onClick={() => setConfig({ ...config, controlType: 'smart_home' })}
+                  onClick={() => handleControlTypeSelect('smart_home')}
                   className={`p-6 rounded-xl border-2 transition-all text-center ${
                     config.controlType === 'smart_home'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -354,7 +423,7 @@ export default function BuildYourKit() {
                     {t('build_your_kit.control_type.smart_home_desc')}
                   </p>
                   <div className="text-sm font-semibold text-blue-600">
-                    +€{prices.control.smart_home}
+                    +{formatKitPrice(KIT_CONFIG.control.smart_home, locale)}
                   </div>
                   {config.controlType === 'smart_home' && (
                     <div className="mt-3 flex justify-center">
@@ -365,13 +434,13 @@ export default function BuildYourKit() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div ref={step4Ref} className="bg-white rounded-2xl shadow-lg p-6 md:p-8" style={{ scrollMarginTop: '120px' }}>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {t('build_your_kit.step4')}
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <button
-                  onClick={() => setConfig({ ...config, powerSupply: 'standard' })}
+                  onClick={() => handlePowerSupplySelect('standard')}
                   className={`p-6 rounded-xl border-2 transition-all text-left ${
                     config.powerSupply === 'standard'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -393,12 +462,12 @@ export default function BuildYourKit() {
                     {t('build_your_kit.power_supply.standard_desc')}
                   </p>
                   <div className="text-lg font-semibold text-blue-600">
-                    €{prices.power.standard}
+                    {formatKitPrice(KIT_CONFIG.power.standard, locale)}
                   </div>
                 </button>
 
                 <button
-                  onClick={() => setConfig({ ...config, powerSupply: 'premium' })}
+                  onClick={() => handlePowerSupplySelect('premium')}
                   className={`p-6 rounded-xl border-2 transition-all text-left ${
                     config.powerSupply === 'premium'
                       ? 'border-blue-600 bg-blue-50 shadow-lg'
@@ -420,7 +489,7 @@ export default function BuildYourKit() {
                     {t('build_your_kit.power_supply.premium_desc')}
                   </p>
                   <div className="text-lg font-semibold text-blue-600">
-                    €{prices.power.premium}
+                    {formatKitPrice(KIT_CONFIG.power.premium, locale)}
                   </div>
                 </button>
               </div>
@@ -429,6 +498,36 @@ export default function BuildYourKit() {
 
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 sticky top-24 hidden lg:block">
+              {/* Progress Indicator - now inside sticky block */}
+              <div className="mb-6 pb-6 border-b border-gray-200">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-semibold text-gray-700">
+                    {t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
+                  </span>
+                  <span className="text-sm font-semibold text-blue-600">
+                    {Math.round(progressPercentage)}%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                  <div
+                    className="bg-gradient-to-r from-blue-600 to-cyan-600 h-2 rounded-full transition-all duration-500 ease-out"
+                    style={{ width: `${progressPercentage}%` }}
+                    role="progressbar"
+                    aria-valuenow={progressPercentage}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
+                  />
+                </div>
+                {showMotivation() && (
+                  <p className="text-xs text-green-600 mt-2 text-center font-medium">
+                    {4 - completedSteps === 1
+                      ? t('build_your_kit.progress.almost_done', { remaining: 4 - completedSteps })
+                      : t('build_your_kit.progress.almost_done_plural', { remaining: 4 - completedSteps })
+                    }
+                  </p>
+                )}
+              </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {t('build_your_kit.price_summary')}
               </h2>
@@ -437,40 +536,41 @@ export default function BuildYourKit() {
                 <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                   <span className="text-gray-600">{t('build_your_kit.led_strip')}</span>
                   <span className="font-semibold text-gray-900">
-                    {isComplete ? `€${price.ledStrip}` : '—'}
+                    {isComplete ? formatKitPrice(price.ledStrip, locale) : '—'}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                   <span className="text-gray-600">{t('build_your_kit.control')}</span>
                   <span className="font-semibold text-gray-900">
-                    {isComplete ? `€${price.control}` : '—'}
+                    {isComplete ? formatKitPrice(price.control, locale) : '—'}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                   <span className="text-gray-600">{t('build_your_kit.power')}</span>
                   <span className="font-semibold text-gray-900">
-                    {isComplete ? `€${price.power}` : '—'}
+                    {isComplete ? formatKitPrice(price.power, locale) : '—'}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center pt-3">
                   <span className="text-xl font-bold text-gray-900">{t('build_your_kit.total')}</span>
                   <span className="text-3xl font-bold text-blue-600">
-                    {isComplete ? `€${price.total}` : '—'}
+                    {isComplete ? formatKitPrice(price.total, locale) : '—'}
                   </span>
                 </div>
               </div>
 
               <button
+                ref={addToCartButtonRef}
                 onClick={handleAddToCart}
                 disabled={!isComplete}
                 className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${
                   isComplete
                     ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:shadow-xl hover:scale-105'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                }`}
+                } ${highlightButton ? 'animate-pulse ring-4 ring-blue-300' : ''}`}
                 aria-label={isComplete ? t('build_your_kit.add_to_cart') : t('build_your_kit.select_all')}
               >
                 {t('build_your_kit.add_to_cart')}
@@ -520,22 +620,40 @@ export default function BuildYourKit() {
           {/* Expandable Details */}
           {mobileExpanded && (
             <div className="border-b border-gray-200 p-4 space-y-3 animate-slide-up">
+              {/* Progress in mobile expanded */}
+              <div className="pb-3 border-b border-gray-200">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-semibold text-gray-700">
+                    {t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
+                  </span>
+                  <span className="text-xs font-semibold text-blue-600">
+                    {Math.round(progressPercentage)}%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+                  <div
+                    className="bg-gradient-to-r from-blue-600 to-cyan-600 h-1.5 rounded-full transition-all duration-500 ease-out"
+                    style={{ width: `${progressPercentage}%` }}
+                  />
+                </div>
+              </div>
+
               <div className="flex justify-between items-center text-sm">
                 <span className="text-gray-600">{t('build_your_kit.led_strip')}</span>
                 <span className="font-semibold text-gray-900">
-                  {isComplete ? `€${price.ledStrip}` : '—'}
+                  {isComplete ? formatKitPrice(price.ledStrip, locale) : '—'}
                 </span>
               </div>
               <div className="flex justify-between items-center text-sm">
                 <span className="text-gray-600">{t('build_your_kit.control')}</span>
                 <span className="font-semibold text-gray-900">
-                  {isComplete ? `€${price.control}` : '—'}
+                  {isComplete ? formatKitPrice(price.control, locale) : '—'}
                 </span>
               </div>
               <div className="flex justify-between items-center text-sm">
                 <span className="text-gray-600">{t('build_your_kit.power')}</span>
                 <span className="font-semibold text-gray-900">
-                  {isComplete ? `€${price.power}` : '—'}
+                  {isComplete ? formatKitPrice(price.power, locale) : '—'}
                 </span>
               </div>
               {/* Trust Badges Mobile */}
@@ -562,6 +680,26 @@ export default function BuildYourKit() {
 
           {/* Main Bar */}
           <div className="p-4">
+            {/* Compact progress when collapsed */}
+            {!mobileExpanded && (
+              <div className="mb-3">
+                <div className="flex items-center justify-between mb-1.5">
+                  <span className="text-xs font-semibold text-gray-600">
+                    {t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
+                  </span>
+                  <span className="text-xs font-semibold text-blue-600">
+                    {Math.round(progressPercentage)}%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1 overflow-hidden">
+                  <div
+                    className="bg-gradient-to-r from-blue-600 to-cyan-600 h-1 rounded-full transition-all duration-500 ease-out"
+                    style={{ width: `${progressPercentage}%` }}
+                  />
+                </div>
+              </div>
+            )}
+
             <div className="flex items-center justify-between gap-4">
               <button
                 onClick={() => setMobileExpanded(!mobileExpanded)}
@@ -572,7 +710,7 @@ export default function BuildYourKit() {
                 <div className="text-left">
                   <div className="text-xs text-gray-500">{t('build_your_kit.total')}</div>
                   <div className="text-2xl font-bold text-blue-600">
-                    {isComplete ? `€${price.total}` : '—'}
+                    {isComplete ? formatKitPrice(price.total, locale) : '—'}
                   </div>
                 </div>
                 {mobileExpanded ? (
@@ -589,7 +727,7 @@ export default function BuildYourKit() {
                   isComplete
                     ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white active:scale-95'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                }`}
+                } ${highlightButton ? 'animate-pulse ring-4 ring-blue-300' : ''}`}
                 aria-label={isComplete ? t('build_your_kit.add_to_cart') : t('build_your_kit.select_all')}
               >
                 {t('build_your_kit.add_to_cart')}

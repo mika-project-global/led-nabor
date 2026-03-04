@@ -953,7 +953,8 @@
       "delivery": "Delivery 1-3 days",
       "payment": "Secure payment",
       "support": "24/7 support"
-    }
+    },
+    "add_to_cart_error": "Failed to add to cart. Please try again."
   },
   "home_seo": {
     "title": "LED Ceiling Lighting Guide",
