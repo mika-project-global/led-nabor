@@ -5,6 +5,7 @@ import { trackWebVitals, optimizeImageLoading, preloadCriticalResources } from '
 import { trackUserInteractions, enhanceAccessibility } from './lib/user-experience';
 import { optimizeRendering } from './lib/optimization';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 import LoadingState from './components/LoadingState';
 import { Analytics } from './components/Analytics';
 import { CookieConsent } from './components/CookieConsent';
@@ -142,6 +143,7 @@ export default function App() {
                             </Routes>
                           </ErrorBoundary>
                         </main>
+                        <Footer />
                       </Suspense>
                     </div>
                     </NotificationsProvider>
