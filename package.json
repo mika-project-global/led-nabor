@@ -10,7 +10,8 @@
     "postinstall": "npx puppeteer browsers install chrome",
     "lint": "eslint .",
     "preview": "vite preview",
-    "preview:prerendered": "serve dist -p 3000"
+    "preview:prerendered": "serve dist -p 3000",
+    "generate-sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "@stripe/stripe-js": "^2.4.0",
