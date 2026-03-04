@@ -891,5 +891,81 @@
     "faq_q4": "How long does COB LED strip last?",
     "faq_a4": "High-quality COB LED strips have a lifespan of 10 years or more with proper installation and use. Our kits come with a 24-month warranty covering all components.",
     "view_product": "View Product"
+  },
+  "ceiling_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting | COB LED Strip Ceiling Lights",
+      "description": "Modern LED ceiling lighting using COB LED strips. Professional quality, easy installation, and stunning results for any interior."
+    },
+    "hero": {
+      "title": "LED Ceiling Lighting",
+      "subtitle": "Transform your space with modern COB LED ceiling lighting. Uniform, dot-free illumination with professional results.",
+      "cta_primary": "View Our Kits",
+      "cta_secondary": "Installation Guide"
+    },
+    "products": {
+      "title": "Our LED Ceiling Kits",
+      "subtitle": "Professional COB LED lighting solutions for modern interiors",
+      "view_product": "View Product"
+    },
+    "benefits": {
+      "title": "Why Choose COB LED Ceiling Lighting",
+      "subtitle": "Superior technology for modern spaces",
+      "uniform_light": {
+        "title": "Uniform Light",
+        "description": "COB technology provides continuous, even illumination without bright spots or dark areas."
+      },
+      "no_dots": {
+        "title": "No Visible Dots",
+        "description": "Unlike traditional LED strips, COB creates smooth lighting without individual LED points."
+      },
+      "modern_design": {
+        "title": "Modern Design",
+        "description": "Perfect for contemporary interiors, creating elegant ambient lighting effects."
+      },
+      "stretch_ceilings": {
+        "title": "Perfect for Stretch Ceilings",
+        "description": "Low heat emission makes COB LED strips ideal for use with stretch ceiling materials."
+      }
+    },
+    "ideas": {
+      "title": "LED Ceiling Lighting Ideas",
+      "subtitle": "Get inspired by professional installations",
+      "living_room": "Modern Living Room",
+      "bedroom": "Cozy Bedroom",
+      "kitchen": "Bright Kitchen",
+      "hallway": "Welcoming Hallway",
+      "view_more": "View More Ideas"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about LED ceiling lighting",
+      "q1": {
+        "question": "What is COB LED strip?",
+        "answer": "COB (Chip-on-Board) is an advanced LED technology where multiple LED chips are bonded directly to a substrate, creating a continuous light source without visible individual LEDs. This results in smooth, uniform lighting perfect for ceiling installations."
+      },
+      "q2": {
+        "question": "How to install LED ceiling lighting?",
+        "answer": "Installation is straightforward: 1) Clean and prepare the ceiling surface, 2) Mount the LED strips in ceiling recesses or behind crown molding, 3) Connect to the power supply and controller, 4) Test the system. Our kits come pre-assembled and include detailed installation instructions."
+      },
+      "q3": {
+        "question": "Is COB better than SMD LED strips?",
+        "answer": "For ceiling lighting, COB is superior to traditional SMD strips. COB provides uniform, dot-free lighting, better heat dissipation, higher luminous intensity, and a more professional appearance. While SMD strips are suitable for hidden applications, COB is the best choice for visible ceiling installations."
+      },
+      "q4": {
+        "question": "Can LED strips replace traditional ceiling lights?",
+        "answer": "Yes, LED ceiling lighting can serve as primary illumination or complement existing fixtures. When properly designed, COB LED strips provide sufficient brightness for ambient lighting while creating a modern, elegant atmosphere. Many homeowners use them alongside traditional lighting for maximum flexibility."
+      },
+      "q5": {
+        "question": "How long do COB LED strips last?",
+        "answer": "Quality COB LED strips have a lifespan of 50,000-100,000 hours, which translates to 10-30 years with normal use. Superior heat management and build quality contribute to this longevity. Our products come with a 24-month warranty and are designed for long-term reliability."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Space?",
+      "subtitle": "Start your LED ceiling lighting project today with our professional kits",
+      "button_primary": "Browse Products",
+      "button_secondary": "Contact Support"
+    }
   }
 }
