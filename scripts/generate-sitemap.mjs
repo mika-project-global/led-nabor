@@ -61,12 +61,19 @@ async function generateSitemap() {
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/`, new Date(), 'daily', '1.0'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/catalog/`, new Date(), 'daily', '0.9'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/blog/`, new Date(), 'daily', '0.9'));
+
+    urls.push(generateUrlEntry(`${SITE_URL}/${locale}/ceiling-led-lighting/`, new Date(), 'weekly', '0.9'));
+    urls.push(generateUrlEntry(`${SITE_URL}/${locale}/led-ceiling-lighting-kit/`, new Date(), 'weekly', '0.9'));
+    urls.push(generateUrlEntry(`${SITE_URL}/${locale}/build-your-kit/`, new Date(), 'weekly', '0.8'));
+
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/about/`, new Date(), 'monthly', '0.7'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/support/`, new Date(), 'monthly', '0.7'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/installation-guide/`, new Date(), 'monthly', '0.7'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/warranty/`, new Date(), 'monthly', '0.6'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/business/`, new Date(), 'monthly', '0.7'));
     urls.push(generateUrlEntry(`${SITE_URL}/${locale}/faq/`, new Date(), 'monthly', '0.7'));
+    urls.push(generateUrlEntry(`${SITE_URL}/${locale}/privacy-policy/`, new Date(), 'yearly', '0.5'));
+    urls.push(generateUrlEntry(`${SITE_URL}/${locale}/terms/`, new Date(), 'yearly', '0.5'));
   });
 
   categories.forEach(category => {
