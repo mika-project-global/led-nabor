@@ -896,10 +896,13 @@
   "build_your_kit": {
     "title": "Build Your LED Kit",
     "subtitle": "Customize your perfect LED ceiling lighting kit",
-    "step1": "Step 1: Choose LED Strip Length",
-    "step2": "Step 2: Choose Light Type",
-    "step3": "Step 3: Choose Control Type",
-    "step4": "Step 4: Choose Power Supply",
+    "step1": "Step 1",
+    "step2": "Step 2",
+    "step3": "Step 3",
+    "step4": "Step 4",
+    "choose_light_type": "Choose Light Type",
+    "choose_length": "Choose Length",
+    "meters": "m",
     "length": {
       "5m": "5 meters",
       "10m": "10 meters",
