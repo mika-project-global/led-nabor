@@ -864,5 +864,31 @@
     "click_to_upload": "Click to upload",
     "image_requirements": "PNG, JPG, GIF up to 5MB",
     "uploading": "Uploading"
+  },
+  "led_ceiling_kit": {
+    "seo_title": "LED Ceiling Lighting Kit | Modern COB LED Ceiling Lights",
+    "seo_description": "Complete LED ceiling lighting kits with COB LED strips for modern interiors.",
+    "hero_title": "Best LED Ceiling Lighting Kit",
+    "hero_subtitle": "Complete COB LED ceiling lighting kits for modern interiors. Easy installation and professional lighting.",
+    "hero_cta": "View Lighting Kits",
+    "why_title": "Why LED Ceiling Lighting",
+    "why_text": "COB LED ceiling lighting creates smooth and modern indirect lighting without visible light dots. It is perfect for living rooms, bedrooms and modern interiors.",
+    "kits_title": "Our Kits",
+    "gallery_title": "Interior Gallery",
+    "gallery_subtitle": "See how LED ceiling lighting transforms modern spaces",
+    "installation_title": "How Installation Works",
+    "installation_step_1": "Attach LED strip to ceiling niche",
+    "installation_step_2": "Connect power supply",
+    "installation_step_3": "Control lighting with remote",
+    "faq_title": "Frequently Asked Questions",
+    "faq_q1": "What is COB LED strip?",
+    "faq_a1": "COB (Chip-on-Board) is a technology where LEDs are mounted directly on the substrate without visible dots. This creates uniform lighting without spots, making it ideal for ceiling lighting in modern interiors.",
+    "faq_q2": "What is the difference between COB and SMD LED strip?",
+    "faq_a2": "SMD strips have visible individual LEDs that can create a dotted light effect. COB strips provide continuous, uniform lighting without dots, which is more aesthetically pleasing and comfortable for the eyes.",
+    "faq_q3": "Can LED strip be used for ceiling lighting?",
+    "faq_a3": "Yes, LED strips are perfect for ceiling lighting. They are installed in ceiling niches or recesses, creating beautiful indirect lighting that visually expands the space and adds a modern touch to the interior.",
+    "faq_q4": "How long does COB LED strip last?",
+    "faq_a4": "High-quality COB LED strips have a lifespan of 10 years or more with proper installation and use. Our kits come with a 24-month warranty covering all components.",
+    "view_product": "View Product"
   }
 }
