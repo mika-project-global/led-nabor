@@ -892,6 +892,26 @@
     "faq_a4": "High-quality COB LED strips have a lifespan of 10 years or more with proper installation and use. Our kits come with a 24-month warranty covering all components.",
     "view_product": "View Product"
   },
+  "home_seo": {
+    "title": "LED Ceiling Lighting Guide",
+    "intro": "Modern LED ceiling lighting has transformed how we illuminate our homes. COB (Chip-on-Board) LED technology represents the latest advancement in LED strip lighting, offering superior quality and performance compared to traditional lighting solutions.",
+    "cob_benefits_title": "The Advantages of COB LED Technology",
+    "cob_benefits_text": "COB LED strips stand out for their exceptional uniform lighting without visible dots or spots. Unlike traditional SMD LED strips where individual LEDs are visible, COB technology bonds multiple LED chips directly onto a substrate, creating a continuous light source. This results in smooth, professional-grade illumination that's perfect for modern ceiling installations. The technology also provides better heat dissipation, ensuring longer lifespan and more reliable performance over time.",
+    "uniform_lighting_title": "Achieving Perfect Uniform Lighting",
+    "uniform_lighting_text": "One of the most significant advantages of COB LED ceiling lighting is its ability to create perfectly uniform illumination. The continuous light emission eliminates the spotty appearance common with traditional LED strips, making it ideal for visible installations in ceiling recesses, coves, and behind crown molding. This uniform light distribution creates a sophisticated ambient glow that enhances your interior design without harsh shadows or bright spots.",
+    "living_room_title": "LED Lighting for Living Rooms",
+    "living_room_text": "The living room is where COB LED ceiling lighting truly shines. Install LED strips around the ceiling perimeter to create an elegant ambient glow that makes the space feel larger and more inviting. With RGB+CCT options, you can adjust both color and white light temperature to match any occasion – warm tones for cozy evenings, cool white for daytime activities, or vibrant colors for entertaining. The indirect lighting reduces eye strain while providing sufficient illumination for various activities.",
+    "bedroom_title": "Creating the Perfect Bedroom Atmosphere",
+    "bedroom_text": "For bedrooms, COB LED ceiling lighting offers unmatched versatility in creating the perfect atmosphere. Adjustable white light from warm 2700K to cool 6500K allows you to mimic natural light cycles, promoting better sleep patterns. Install the strips behind the headboard wall or around the ceiling perimeter for soft, relaxing illumination. The dimmable nature of LED strips means you can have bright light for reading or getting ready, then dim to a gentle glow for bedtime.",
+    "kitchen_title": "Functional Kitchen Lighting Solutions",
+    "kitchen_text": "Kitchens demand both functional and aesthetic lighting, and COB LED strips deliver on both fronts. Install them under cabinets for task lighting or around the ceiling perimeter for ambient illumination. The high color rendering index (CRI) of quality COB LEDs ensures food looks natural and appetizing. Cool white temperatures around 4000-5000K provide excellent visibility for food preparation, while the uniform light distribution eliminates shadows on work surfaces.",
+    "conclusion_title": "Getting Started with LED Ceiling Lighting",
+    "conclusion_text": "Whether you're renovating your entire home or updating a single room, COB LED ceiling lighting offers a modern, energy-efficient solution that enhances any interior. Our complete kits include everything needed for easy installation, from pre-assembled LED strips and power supplies to controllers and accessories.",
+    "learn_more": "Learn more about",
+    "led_kits": "LED ceiling lighting kits",
+    "installation_ideas": "installation ideas and guides",
+    "category_page": "complete ceiling lighting solutions"
+  },
   "ceiling_lighting": {
     "seo": {
       "title": "LED Ceiling Lighting | COB LED Strip Ceiling Lights",

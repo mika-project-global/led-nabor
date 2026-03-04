@@ -80,6 +80,105 @@ export default function Catalog() {
         })}
       </div>
 
+      {/* SEO Content Section */}
+      <div className="mt-16 mb-16 prose prose-lg max-w-none">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            {t('home_seo.title')}
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            {t('home_seo.intro')}
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {t('home_seo.cob_benefits_title')}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {t('home_seo.cob_benefits_text')}
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {t('home_seo.uniform_lighting_title')}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {t('home_seo.uniform_lighting_text')}
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-6 mb-8">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {t('home_seo.living_room_title')}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {t('home_seo.living_room_text')}
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {t('home_seo.bedroom_title')}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {t('home_seo.bedroom_text')}
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                {t('home_seo.kitchen_title')}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {t('home_seo.kitchen_text')}
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              {t('home_seo.conclusion_title')}
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              {t('home_seo.conclusion_text')}
+            </p>
+          </div>
+
+          <div className="border-t border-gray-200 pt-6">
+            <p className="text-gray-700 mb-4">
+              {t('home_seo.learn_more')}{' '}
+              <Link
+                to={`/${locale}/led-ceiling-lighting-kit`}
+                className="text-blue-600 hover:text-blue-700 font-semibold underline"
+              >
+                {t('home_seo.led_kits')}
+              </Link>
+              ,{' '}
+              <Link
+                to={`/${locale}/blog`}
+                className="text-blue-600 hover:text-blue-700 font-semibold underline"
+              >
+                {t('home_seo.installation_ideas')}
+              </Link>
+              ,{' '}
+              {locale === 'ru' ? 'или' : 'or'}{' '}
+              <Link
+                to={`/${locale}/ceiling-led-lighting`}
+                className="text-blue-600 hover:text-blue-700 font-semibold underline"
+              >
+                {t('home_seo.category_page')}
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* LED Ceiling Lighting Kit CTA */}
       <div className="mt-16 mb-8">
         <Link
