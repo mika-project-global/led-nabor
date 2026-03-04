@@ -29,7 +29,6 @@ export default function Blog() {
   const locale = urlLocale === 'ru' ? 'ru' : 'en';
 
   useEffect(() => {
-    console.log(`[Blog] locale from URL: "${locale}", i18n.language: "${i18n?.language || 'undefined'}"`);
     loadPosts();
   }, [locale]);
 
@@ -44,10 +43,8 @@ export default function Blog() {
         .order('published_at', { ascending: false });
 
       if (error) throw error;
-      console.log(`[Blog] Loaded ${data?.length || 0} posts for locale="${locale}"`);
       setPosts(data || []);
     } catch (error) {
-      console.error('Error loading blog posts:', error);
     } finally {
       setLoading(false);
     }

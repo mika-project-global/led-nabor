@@ -42,7 +42,6 @@ export default function BlogPost() {
 
   useEffect(() => {
     if (slug && locale) {
-      console.log(`[BlogPost] locale from URL: "${locale}", i18n.language: "${i18n?.language || 'undefined'}"`);
       loadPost();
     }
 
@@ -56,8 +55,6 @@ export default function BlogPost() {
     try {
       setLoading(true);
       setError(false);
-
-      console.log(`[BlogPost] Loading post: slug="${slug}", locale="${locale}"`);
 
       // HOTFIX: Load post ONLY by slug + locale from URL
       // No automatic redirects to other locales or slugs
@@ -74,13 +71,11 @@ export default function BlogPost() {
       if (!data) {
         // Post not found in current locale - show 404
         // Do NOT redirect to other locales automatically
-        console.log(`[BlogPost] Post not found for slug="${slug}", locale="${locale}"`);
         setError(true);
         setLoading(false);
         return;
       }
 
-      console.log(`[BlogPost] Post loaded successfully:`, data.title);
       setPost(data);
 
       // Load related data (without redirects)
@@ -88,7 +83,6 @@ export default function BlogPost() {
       await loadRelatedPosts(data.id, data.locale);
       await loadAlternateUrls(data.translation_group_id);
     } catch (error) {
-      console.error('Error loading blog post:', error);
       setError(true);
     } finally {
       setLoading(false);
@@ -99,7 +93,6 @@ export default function BlogPost() {
     try {
       await supabase.rpc('increment_blog_views', { post_id: postId });
     } catch (error) {
-      console.error('Error incrementing views:', error);
     }
   }
 
@@ -118,14 +111,11 @@ export default function BlogPost() {
         setRelatedPosts(data);
       }
     } catch (error) {
-      console.error('Error loading related posts:', error);
     }
   }
 
   async function loadAlternateUrls(translationGroupId: string) {
     try {
-      console.log('[BlogPost] Loading translations for group:', translationGroupId);
-
       const { data, error: fetchError } = await supabase
         .from('blog_posts')
         .select('slug, locale')
@@ -133,13 +123,10 @@ export default function BlogPost() {
         .eq('published', true);
 
       if (fetchError) {
-        console.error('[BlogPost] Error fetching translations:', fetchError);
         return;
       }
 
       if (data) {
-        console.log('[BlogPost] Found translations:', data);
-
         const alternates: Record<string, string> = {};
         const translationUrls: Record<string, string> = {};
 
@@ -151,12 +138,10 @@ export default function BlogPost() {
           translationUrls[translation.locale] = relativeUrl;
         });
 
-        console.log('[BlogPost] Setting translations:', translationUrls);
         setAlternateUrls(alternates);
         setTranslations(translationUrls);
       }
     } catch (error) {
-      console.error('[BlogPost] Error loading alternate URLs:', error);
     }
   }
 

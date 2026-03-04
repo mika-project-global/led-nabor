@@ -43,26 +43,18 @@ export function LocaleSwitcher() {
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const isBlogPost = pathSegments.length >= 3 && pathSegments[1] === 'blog';
 
-    console.log(`[LocaleSwitcher] Switching to ${langCode}, pathname="${location.pathname}", isBlogPost=${isBlogPost}, translations:`, translations);
-
     if (isBlogPost && translations && Object.keys(translations).length > 0) {
-      console.log('[LocaleSwitcher] Blog post detected, translations:', translations);
-
       const translatedUrl = translations[langCode];
 
       if (translatedUrl) {
-        console.log(`[LocaleSwitcher] Found translation for ${langCode}: ${translatedUrl}`);
         navigate(translatedUrl);
         setIsOpen(false);
         return;
       } else {
-        console.log(`[LocaleSwitcher] No translation for ${langCode}, going to blog list`);
         navigate(`/${langCode}/blog/`);
         setIsOpen(false);
         return;
       }
-    } else {
-      console.log(`[LocaleSwitcher] Not a blog post or no translations, using default behavior`);
     }
 
     // Default behavior for non-blog pages: replace locale in path
@@ -81,7 +73,6 @@ export function LocaleSwitcher() {
       newPath = `/${langCode}/`;
     }
 
-    console.log(`[LocaleSwitcher] Default behavior: ${location.pathname} → ${newPath}`);
     navigate(newPath);
     setIsOpen(false);
   };
