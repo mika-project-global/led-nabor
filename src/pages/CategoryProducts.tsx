@@ -10,7 +10,8 @@ import { useTranslation } from '../hooks/useTranslation';
 import { getWarrantyPolicies, calculateWarrantyCost } from '../lib/warranty';
 import { getImageUrl } from '../lib/supabase-storage';
 import { useWishlist } from '../hooks/useWishlist';
-import { getProductUrl } from '../lib/urls';
+import { getProductUrl, getCategoryAlternateUrls, SITE_URL } from '../lib/urls';
+import { SEO } from '../components/SEO';
 
 export default function CategoryProducts() {
   const { categoryId } = useParams<{ categoryId: string }>();
@@ -75,6 +76,9 @@ export default function CategoryProducts() {
     return <div>{t('category_not_found')}</div>;
   }
 
+  const alternateUrls = getCategoryAlternateUrls(categoryId || '');
+  const canonicalUrl = `${SITE_URL}/${locale}/category/${categoryId}/`;
+
   const getSeriesTitle = (series: string, index: number, powerInfo: string) => {
     const titles: Record<string, string> = {
       'Стандарт': `${index + 1}. Набор «Стандарт» (${powerInfo})`,
@@ -94,9 +98,17 @@ export default function CategoryProducts() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-8">
-      <h2 className="text-4xl font-bold mb-2">{t(`categories.${category.id}.name`)}</h2>
-      <p className="text-xl text-gray-600 mb-8">{t(`categories.${category.id}.description`)}</p>
+    <>
+      <SEO
+        title={t(`categories.${category.id}.name`)}
+        description={t(`categories.${category.id}.description`)}
+        type="website"
+        alternateUrls={alternateUrls}
+        canonicalUrl={canonicalUrl}
+      />
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        <h2 className="text-4xl font-bold mb-2">{t(`categories.${category.id}.name`)}</h2>
+        <p className="text-xl text-gray-600 mb-8">{t(`categories.${category.id}.description`)}</p>
       
       {Object.entries(groupedProducts).map(([series, seriesProducts], index) => {
         const firstProduct = seriesProducts[0];
@@ -170,6 +182,7 @@ export default function CategoryProducts() {
           </div>
         );
       })}
-    </main>
+      </main>
+    </>
   );
 }

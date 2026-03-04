@@ -84,6 +84,21 @@ export function getBlogPostAlternateUrls(slug: string, availableLocales: LocaleT
 }
 
 /**
+ * Generate alternate URLs for category pages
+ * Categories exist on all locales
+ * Always includes trailing slash for consistency
+ */
+export function getCategoryAlternateUrls(categoryId: string): Record<string, string> {
+  const alternates: Record<string, string> = {};
+
+  SUPPORTED_LOCALES.forEach(locale => {
+    alternates[locale] = `${SITE_URL}/${locale}/category/${categoryId}/`;
+  });
+
+  return alternates;
+}
+
+/**
  * Convert locale code to hreflang format
  * cz -> cs (Czech Republic uses 'cs' in hreflang)
  */
