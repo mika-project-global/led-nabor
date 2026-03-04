@@ -80,101 +80,79 @@ export default function Catalog() {
         })}
       </div>
 
-      {/* SEO Content Section */}
-      <div className="mt-16 mb-16 prose prose-lg max-w-none">
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            {t('home_seo.title')}
-          </h2>
+      {/* SEO Content Section - Compact Preview */}
+      <div className="mt-16 mb-12">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+              {t('home_seo.title')}
+            </h2>
 
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            {t('home_seo.intro')}
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {t('home_seo.cob_benefits_title')}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t('home_seo.cob_benefits_text')}
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {t('home_seo.uniform_lighting_title')}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t('home_seo.uniform_lighting_text')}
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-6 mb-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {t('home_seo.living_room_title')}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t('home_seo.living_room_text')}
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {t('home_seo.bedroom_title')}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t('home_seo.bedroom_text')}
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {t('home_seo.kitchen_title')}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t('home_seo.kitchen_text')}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {t('home_seo.conclusion_title')}
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              {t('home_seo.conclusion_text')}
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {t('home_seo.intro')}
             </p>
-          </div>
 
-          <div className="border-t border-gray-200 pt-6">
-            <p className="text-gray-700 mb-4">
-              {t('home_seo.learn_more')}{' '}
-              <Link
-                to={`/${locale}/led-ceiling-lighting-kit`}
-                className="text-blue-600 hover:text-blue-700 font-semibold underline"
-              >
-                {t('home_seo.led_kits')}
-              </Link>
-              ,{' '}
-              <Link
-                to={`/${locale}/blog`}
-                className="text-blue-600 hover:text-blue-700 font-semibold underline"
-              >
-                {t('home_seo.installation_ideas')}
-              </Link>
-              ,{' '}
-              {locale === 'ru' ? 'или' : 'or'}{' '}
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {t('home_seo.cob_benefits_title')}
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  {t('home_seo.cob_benefits_text')}
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                  {t('home_seo.uniform_lighting_title')}
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  {t('home_seo.uniform_lighting_text')}
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
               <Link
                 to={`/${locale}/ceiling-led-lighting`}
-                className="text-blue-600 hover:text-blue-700 font-semibold underline"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                {t('home_seo.category_page')}
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"  />
+                </svg>
+                {locale === 'ru' ? 'Читать полное руководство' : 'Read Complete Guide'}
               </Link>
-              .
-            </p>
+              <p className="text-sm text-gray-500 mt-4">
+                {locale === 'ru'
+                  ? 'Узнайте больше о технологиях, установке и дизайне LED подсветки потолка'
+                  : 'Learn more about LED ceiling lighting technologies, installation, and design'}
+              </p>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-gray-200">
+              <p className="text-center text-gray-600 text-sm">
+                {t('home_seo.learn_more')}{' '}
+                <Link
+                  to={`/${locale}/led-ceiling-lighting-kit`}
+                  className="text-blue-600 hover:text-blue-700 font-semibold hover:underline transition-colors"
+                >
+                  {t('home_seo.led_kits')}
+                </Link>
+                ,{' '}
+                <Link
+                  to={`/${locale}/blog`}
+                  className="text-blue-600 hover:text-blue-700 font-semibold hover:underline transition-colors"
+                >
+                  {t('home_seo.installation_ideas')}
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </div>
