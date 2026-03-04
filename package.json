@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:production": "npm run generate-sitemap && npm run build",
+    "build:production": "npm run generate-sitemap && npm run build && npm run sitemap:copy",
     "build:prerender": "npm run build && node scripts/prerender.mjs",
     "postinstall": "npx puppeteer browsers install chrome",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview:prerendered": "serve dist -p 3000",
-    "generate-sitemap": "node scripts/generate-sitemap.mjs"
+    "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "sitemap:check": "node scripts/check-sitemap.mjs",
+    "sitemap:copy": "cp public/sitemap.xml dist/sitemap.xml 2>/dev/null || echo 'Sitemap already in dist'"
   },
   "dependencies": {
     "@stripe/stripe-js": "^2.4.0",
