@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "how-to-install-led-strip-on-ceiling",
+    "category": "installation",
+    "relatedArticles": ["how-to-hide-led-strip-on-ceiling", "led-strip-installation-mistakes", "how-to-connect-led-strip"]
+  },
+  {
+    "slug": "best-led-strip-for-ceiling-lighting",
+    "category": "buying-guide",
+    "relatedArticles": ["cob-vs-smd-led-strip", "led-strip-brightness-guide", "best-led-strip-for-apartment-lighting"]
+  },
+  {
+    "slug": "cob-vs-smd-led-strip",
+    "category": "comparison",
+    "relatedArticles": ["best-led-strip-for-ceiling-lighting", "modern-ceiling-lighting-trends"]
+  },
+  {
+    "slug": "led-ceiling-lighting-ideas",
+    "category": "design",
+    "relatedArticles": ["rgb-led-ceiling-lighting-ideas", "modern-ceiling-lighting-trends", "led-lighting-for-living-room-ceiling"]
+  },
+  {
+    "slug": "led-lighting-for-living-room-ceiling",
+    "category": "room-guide",
+    "relatedArticles": ["led-ceiling-lighting-ideas", "rgb-led-ceiling-lighting-ideas", "smart-led-ceiling-lighting"]
+  },
+  {
+    "slug": "led-lighting-for-bedroom-ceiling",
+    "category": "room-guide",
+    "relatedArticles": ["warm-vs-cool-led-lighting", "smart-led-ceiling-lighting", "how-many-lumens-for-ceiling-lighting"]
+  },
+  {
+    "slug": "led-lighting-for-kitchen-ceiling",
+    "category": "room-guide",
+    "relatedArticles": ["warm-vs-cool-led-lighting", "led-strip-brightness-guide", "how-many-lumens-for-ceiling-lighting"]
+  },
+  {
+    "slug": "how-to-hide-led-strip-on-ceiling",
+    "category": "installation",
+    "relatedArticles": ["how-to-install-led-strip-on-ceiling", "led-ceiling-lighting-ideas"]
+  },
+  {
+    "slug": "what-power-supply-for-led-strip",
+    "category": "technical",
+    "relatedArticles": ["how-to-connect-led-strip", "led-strip-installation-mistakes"]
+  },
+  {
+    "slug": "how-long-do-led-strips-last",
+    "category": "maintenance",
+    "relatedArticles": ["best-led-strip-for-ceiling-lighting", "cob-vs-smd-led-strip"]
+  },
+  {
+    "slug": "warm-vs-cool-led-lighting",
+    "category": "technical",
+    "relatedArticles": ["led-lighting-for-bedroom-ceiling", "led-lighting-for-kitchen-ceiling", "how-many-lumens-for-ceiling-lighting"]
+  },
+  {
+    "slug": "led-strip-brightness-guide",
+    "category": "technical",
+    "relatedArticles": ["how-many-lumens-for-ceiling-lighting", "best-led-strip-for-ceiling-lighting"]
+  },
+  {
+    "slug": "how-many-lumens-for-ceiling-lighting",
+    "category": "technical",
+    "relatedArticles": ["led-strip-brightness-guide", "led-lighting-for-kitchen-ceiling", "led-lighting-for-living-room-ceiling"]
+  },
+  {
+    "slug": "smart-led-ceiling-lighting",
+    "category": "smart-home",
+    "relatedArticles": ["rgb-led-ceiling-lighting-ideas", "modern-ceiling-lighting-trends", "led-lighting-for-living-room-ceiling"]
+  },
+  {
+    "slug": "rgb-led-ceiling-lighting-ideas",
+    "category": "design",
+    "relatedArticles": ["led-ceiling-lighting-ideas", "smart-led-ceiling-lighting", "led-lighting-for-living-room-ceiling"]
+  },
+  {
+    "slug": "modern-ceiling-lighting-trends",
+    "category": "trends",
+    "relatedArticles": ["led-ceiling-lighting-ideas", "smart-led-ceiling-lighting", "cob-vs-smd-led-strip"]
+  },
+  {
+    "slug": "led-strip-installation-mistakes",
+    "category": "installation",
+    "relatedArticles": ["how-to-install-led-strip-on-ceiling", "what-power-supply-for-led-strip", "how-to-connect-led-strip"]
+  },
+  {
+    "slug": "how-to-connect-led-strip",
+    "category": "installation",
+    "relatedArticles": ["how-to-install-led-strip-on-ceiling", "what-power-supply-for-led-strip", "led-strip-installation-mistakes"]
+  },
+  {
+    "slug": "best-led-strip-for-apartment-lighting",
+    "category": "buying-guide",
+    "relatedArticles": ["best-led-strip-for-ceiling-lighting", "cob-vs-smd-led-strip", "led-ceiling-lighting-ideas"]
+  },
+  {
+    "slug": "led-ceiling-lighting-guide",
+    "category": "comprehensive",
+    "relatedArticles": ["how-to-install-led-strip-on-ceiling", "best-led-strip-for-ceiling-lighting", "led-ceiling-lighting-ideas"]
+  }
+]
