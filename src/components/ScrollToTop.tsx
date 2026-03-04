@@ -32,12 +32,11 @@ export function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 lg:bottom-6 right-4 lg:right-6 z-50 bg-gradient-to-br from-cyan-500 to-cyan-600 text-white p-3 lg:p-4 rounded-full shadow-lg hover:shadow-2xl transform transition-all duration-500 backdrop-blur-sm border border-cyan-400/30 group ${
+      className={`fixed bottom-6 right-6 z-50 bg-gradient-to-br from-cyan-500 to-cyan-600 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transform transition-all duration-500 backdrop-blur-sm border border-cyan-400/30 group ${
         isVisible
           ? 'opacity-100 translate-y-0 scale-100'
           : 'opacity-0 translate-y-12 scale-95 pointer-events-none'
       }`}
-      style={{ bottom: window.innerWidth < 1024 ? '120px' : '24px' }}
       aria-label={t('common.scroll_to_top')}
     >
       <ArrowUp className="w-5 h-5 transition-transform duration-300 group-hover:-translate-y-1" />
