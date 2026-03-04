@@ -4,7 +4,7 @@ import { useLocale } from '../context/LocaleContext';
 import { useCart } from '../context/CartContext';
 import { SEO } from '../components/SEO';
 import { getStaticPageAlternateUrls, SITE_URL } from '../lib/urls';
-import { Check, Zap, Wifi, Home, Radio, Shield, Truck, CreditCard, HeadphonesIcon, ChevronDown, ChevronUp } from 'lucide-react';
+import { Check, Zap, Wifi, Home, Radio, Shield, Truck, CreditCard, Headphones as HeadphonesIcon, ChevronDown, ChevronUp } from 'lucide-react';
 
 type Length = '5m' | '10m' | '15m' | '20m' | '25m' | '30m';
 type LightType = 'rgb_cct' | 'adjustable_white';
