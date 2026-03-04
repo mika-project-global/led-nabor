@@ -1,81 +1,59 @@
-# Sitemap - Быстрый старт
+# Sitemap Quick Fix - Production
 
-## Основные команды
+## Проблема
 
-### 🚀 Полная сборка с обновлением sitemap (для продакшена)
+На продакшене sitemap.xml содержит только 36 URL (без блог-постов). Локально работает правильно - 88 URL.
+
+## Причина
+
+На продакшене используется **старый sitemap.xml** который был загружен ДО исправлений, или:
+- Не установлены переменные окружения
+- Используется команда `npm run build` вместо `npm run build:production`
+
+## ✅ Решение - 3 шага
+
+### Шаг 1: Проверьте переменные окружения
+
+В настройках хостинга (Netlify/Vercel/etc) должны быть установлены:
+
+```bash
+VITE_SUPABASE_URL=https://aahexteequomvfvlvkal.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...полный ключ...
+```
+
+### Шаг 2: Измените команду сборки
+
+В настройках деплоя измените build command на:
+
 ```bash
 npm run build:production
 ```
-✅ Автоматически генерирует sitemap + собирает проект
 
-### 🔄 Только обновить sitemap
+**НЕ используйте:** `npm run build` ❌
+
+### Шаг 3: Удалите старый sitemap и передеплойте
+
 ```bash
-npm run generate-sitemap
-```
-✅ Загружает все статьи из БД и обновляет sitemap.xml
-
-### 🔨 Обычная сборка
-```bash
-npm run build
-```
-⚠️ Использует существующий sitemap.xml (не обновляет)
-
----
-
-## Что включено в sitemap
-
-✅ **88 URL** из которых:
-- 28 статических страниц (RU + EN)
-- 4 категории товаров
-- 4 страницы товаров
-- **52 статьи блога из базы данных**
-
-### Новые SEO страницы:
-- ✅ `/ceiling-led-lighting/` - Руководство по LED подсветке
-- ✅ `/led-ceiling-lighting-kit/` - Комплекты подсветки
-- ✅ `/build-your-kit/` - Конструктор комплектов
-
----
-
-## Когда обновлять sitemap?
-
-### ✅ Обязательно:
-- После добавления новых статей в блог
-- Перед деплоем в продакшен
-- При добавлении новых статических страниц
-
-### ℹ️ По желанию:
-- После изменения контента существующих страниц
-- При обновлении SEO приоритетов
-
----
-
-## Проверка
-
-### Локально:
-```bash
-# Количество URL
-grep -c '<url>' public/sitemap.xml
-
-# Последние статьи блога
-grep 'blog' public/sitemap.xml | tail -10
+# Локально:
+git rm public/sitemap.xml
+git add .
+git commit -m "Remove old sitemap, will regenerate on deploy"
+git push
 ```
 
-### После деплоя:
-- https://led-nabor.com/sitemap.xml
-- Google Search Console → Sitemaps
+## Проверка после деплоя
 
----
+```bash
+curl https://led-nabor.com/sitemap.xml | grep -c '<url>'
+# Должно: 88
+```
 
-## Автоматическое обновление
+## Логи успешного билда
 
-При добавлении новой статьи через админ-панель:
-1. Статья автоматически попадет в базу данных
-2. При следующем запуске `npm run build:production` она появится в sitemap
-3. После деплоя Google автоматически обнаружит новые URL
-
-**Ничего дополнительно делать не нужно!** 🎉
-
----
-
-📖 Полная документация: [SITEMAP_UPDATE_GUIDE.md](./SITEMAP_UPDATE_GUIDE.md)
+```
+📰 Fetching blog posts from Supabase...
+   ✓ Found 52 published blog posts
+   ✓ Added 27 RU blog posts
+   ✓ Added 25 EN blog posts
+📊 Total URLs: 88
+```
