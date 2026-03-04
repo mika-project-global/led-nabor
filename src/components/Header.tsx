@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart as CartIcon, Menu, LogIn, HelpCircle, PenTool, Users, HeadphonesIcon, Shield, BookOpen, Lightbulb } from 'lucide-react';
+import { ShoppingCart as CartIcon, Menu, LogIn, HelpCircle, PenTool, Users, Headphones as HeadphonesIcon, Shield, BookOpen, Lightbulb } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useTranslation } from 'react-i18next';
 import { Cart } from './Cart';
