@@ -65,7 +65,8 @@
     "installation_guide": "Installation Guide",
     "about_us": "About Us",
     "support": "Support",
-    "ceiling_lighting_kit": "Ceiling Lighting Kit"
+    "ceiling_lighting_kit": "Ceiling Lighting Kit",
+    "build_your_kit": "Build Your Kit"
   },
   "site": {
     "tagline": "LED Ceiling Kits"
@@ -891,6 +892,51 @@
     "faq_q4": "How long does COB LED strip last?",
     "faq_a4": "High-quality COB LED strips have a lifespan of 10 years or more with proper installation and use. Our kits come with a 24-month warranty covering all components.",
     "view_product": "View Product"
+  },
+  "build_your_kit": {
+    "title": "Build Your LED Kit",
+    "subtitle": "Customize your perfect LED ceiling lighting kit",
+    "step1": "Step 1: Choose LED Strip Length",
+    "step2": "Step 2: Choose Light Type",
+    "step3": "Step 3: Choose Control Type",
+    "step4": "Step 4: Choose Power Supply",
+    "length": {
+      "5m": "5 meters",
+      "10m": "10 meters",
+      "15m": "15 meters",
+      "20m": "20 meters",
+      "25m": "25 meters",
+      "30m": "30 meters"
+    },
+    "light_type": {
+      "rgb_cct": "RGB+CCT",
+      "rgb_cct_desc": "RGB colors + adjustable white (2700K-6500K)",
+      "adjustable_white": "Adjustable White",
+      "adjustable_white_desc": "Warm to cool white (2700K-6500K)"
+    },
+    "control_type": {
+      "remote": "Remote Control",
+      "remote_desc": "Infrared remote included",
+      "wifi": "WiFi Control",
+      "wifi_desc": "Control via smartphone app",
+      "smart_home": "Smart Home",
+      "smart_home_desc": "Alexa, Google Home, Siri compatible"
+    },
+    "power_supply": {
+      "title": "Power Supply",
+      "standard": "Standard",
+      "standard_desc": "Reliable power supply for your kit",
+      "premium": "Premium",
+      "premium_desc": "Enhanced efficiency and durability"
+    },
+    "price_summary": "Price Summary",
+    "led_strip": "LED Strip",
+    "control": "Control",
+    "power": "Power Supply",
+    "total": "Total",
+    "add_to_cart": "Add to Cart",
+    "select_all": "Please select all options",
+    "added_to_cart": "Kit added to cart!"
   },
   "home_seo": {
     "title": "LED Ceiling Lighting Guide",

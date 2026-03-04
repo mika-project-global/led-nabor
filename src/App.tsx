@@ -47,6 +47,7 @@ const Blog = React.lazy(() => import('./pages/Blog'));
 const BlogPost = React.lazy(() => import('./pages/BlogPost'));
 const LedCeilingLightingKit = React.lazy(() => import('./pages/LedCeilingLightingKit'));
 const CeilingLedLighting = React.lazy(() => import('./pages/CeilingLedLighting'));
+const BuildYourKit = React.lazy(() => import('./pages/BuildYourKit'));
 
 // Компонент для редиректа числовых ID
 function ProductIdRedirect() {
@@ -137,6 +138,7 @@ export default function App() {
                                     <Route path="/terms" element={<Terms />} />
                                     <Route path="/led-ceiling-lighting-kit" element={<LedCeilingLightingKit />} />
                                     <Route path="/ceiling-led-lighting" element={<CeilingLedLighting />} />
+                                    <Route path="/build-your-kit" element={<BuildYourKit />} />
                                     {/* Catch-all для неправильных путей и редиректа числовых ID */}
                                     <Route path="/*" element={<ProductIdRedirect />} />
                                   </Routes>
