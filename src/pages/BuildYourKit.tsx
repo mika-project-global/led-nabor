@@ -4,7 +4,7 @@ import { useLocale } from '../context/LocaleContext';
 import { useCart } from '../context/CartContext';
 import { SEO } from '../components/SEO';
 import { getStaticPageAlternateUrls, SITE_URL } from '../lib/urls';
-import { Check, Zap, Wifi, Home, Radio } from 'lucide-react';
+import { Check, Zap, Wifi, Home, Radio, Shield, Truck, CreditCard, HeadphonesIcon, ChevronDown, ChevronUp } from 'lucide-react';
 
 type Length = '5m' | '10m' | '15m' | '20m' | '25m' | '30m';
 type LightType = 'rgb_cct' | 'adjustable_white';
@@ -31,6 +31,7 @@ export default function BuildYourKit() {
   });
 
   const [showNotification, setShowNotification] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState(false);
 
   const lengths: Length[] = ['5m', '10m', '15m', '20m', '25m', '30m'];
 
@@ -87,6 +88,38 @@ export default function BuildYourKit() {
   const price = calculatePrice();
   const isComplete = config.length && config.lightType && config.controlType && config.powerSupply;
 
+  const getCompletedSteps = () => {
+    let completed = 0;
+    if (config.length) completed++;
+    if (config.lightType) completed++;
+    if (config.controlType) completed++;
+    if (config.powerSupply) completed++;
+    return completed;
+  };
+
+  const getMissingSteps = () => {
+    const missing: string[] = [];
+    if (!config.length) missing.push(t('build_your_kit.missing.length'));
+    if (!config.lightType) missing.push(t('build_your_kit.missing.light_type'));
+    if (!config.controlType) missing.push(t('build_your_kit.missing.control_type'));
+    if (!config.powerSupply) missing.push(t('build_your_kit.missing.power_supply'));
+    return missing;
+  };
+
+  const getProgressPercentage = () => {
+    return (getCompletedSteps() / 4) * 100;
+  };
+
+  const showMotivation = () => {
+    const completed = getCompletedSteps();
+    const remaining = 4 - completed;
+    return completed >= 2 && completed < 4 && remaining > 0;
+  };
+
+  const completedSteps = getCompletedSteps();
+  const missingSteps = getMissingSteps();
+  const progressPercentage = getProgressPercentage();
+
   const alternateUrls = getStaticPageAlternateUrls('build-your-kit');
   const canonicalUrl = `${SITE_URL}/${locale}/build-your-kit`;
 
@@ -110,7 +143,7 @@ export default function BuildYourKit() {
       )}
 
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('build_your_kit.title')}
           </h1>
@@ -119,7 +152,40 @@ export default function BuildYourKit() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        {/* Progress Indicator */}
+        <div className="max-w-2xl mx-auto mb-8">
+          <div className="bg-white rounded-xl shadow-md p-6">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-sm font-semibold text-gray-700">
+                {t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
+              </span>
+              <span className="text-sm font-semibold text-blue-600">
+                {Math.round(progressPercentage)}%
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+              <div
+                className="bg-gradient-to-r from-blue-600 to-cyan-600 h-2 rounded-full transition-all duration-500 ease-out"
+                style={{ width: `${progressPercentage}%` }}
+                role="progressbar"
+                aria-valuenow={progressPercentage}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-label={t('build_your_kit.progress.step_of', { current: completedSteps, total: 4 })}
+              />
+            </div>
+            {showMotivation() && (
+              <p className="text-sm text-green-600 mt-3 text-center font-medium">
+                {4 - completedSteps === 1
+                  ? t('build_your_kit.progress.almost_done', { remaining: 4 - completedSteps })
+                  : t('build_your_kit.progress.almost_done_plural', { remaining: 4 - completedSteps })
+                }
+              </p>
+            )}
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8 pb-32 lg:pb-0">
           <div className="lg:col-span-2 space-y-8">
             <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
@@ -362,7 +428,7 @@ export default function BuildYourKit() {
           </div>
 
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 sticky top-24">
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 sticky top-24 hidden lg:block">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {t('build_your_kit.price_summary')}
               </h2>
@@ -405,16 +471,136 @@ export default function BuildYourKit() {
                     ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:shadow-xl hover:scale-105'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                 }`}
+                aria-label={isComplete ? t('build_your_kit.add_to_cart') : t('build_your_kit.select_all')}
               >
                 {t('build_your_kit.add_to_cart')}
               </button>
 
-              {!isComplete && (
-                <p className="text-sm text-gray-500 text-center mt-4">
-                  {t('build_your_kit.select_all')}
-                </p>
+              {!isComplete && missingSteps.length > 0 && (
+                <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                  <p className="text-sm text-amber-800 font-medium mb-2">
+                    {t('build_your_kit.select_all')}:
+                  </p>
+                  <ul className="text-sm text-amber-700 space-y-1">
+                    {missingSteps.map((step, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 bg-amber-600 rounded-full" />
+                        {step}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               )}
+
+              {/* Trust Badges */}
+              <div className="mt-6 pt-6 border-t border-gray-200 space-y-3">
+                <div className="flex items-center gap-3 text-sm text-gray-600">
+                  <Shield className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <span>{t('build_your_kit.trust_badges.warranty')}</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-600">
+                  <Truck className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <span>{t('build_your_kit.trust_badges.delivery')}</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-600">
+                  <CreditCard className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <span>{t('build_your_kit.trust_badges.payment')}</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-600">
+                  <HeadphonesIcon className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <span>{t('build_your_kit.trust_badges.support')}</span>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Mobile Bottom Bar */}
+        <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t border-gray-200 z-40">
+          {/* Expandable Details */}
+          {mobileExpanded && (
+            <div className="border-b border-gray-200 p-4 space-y-3 animate-slide-up">
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-gray-600">{t('build_your_kit.led_strip')}</span>
+                <span className="font-semibold text-gray-900">
+                  {isComplete ? `€${price.ledStrip}` : '—'}
+                </span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-gray-600">{t('build_your_kit.control')}</span>
+                <span className="font-semibold text-gray-900">
+                  {isComplete ? `€${price.control}` : '—'}
+                </span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-gray-600">{t('build_your_kit.power')}</span>
+                <span className="font-semibold text-gray-900">
+                  {isComplete ? `€${price.power}` : '—'}
+                </span>
+              </div>
+              {/* Trust Badges Mobile */}
+              <div className="pt-3 border-t border-gray-200 grid grid-cols-2 gap-2">
+                <div className="flex items-center gap-2 text-xs text-gray-600">
+                  <Shield className="w-4 h-4 text-blue-600" />
+                  <span>{t('build_your_kit.trust_badges.warranty')}</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-gray-600">
+                  <Truck className="w-4 h-4 text-blue-600" />
+                  <span>{t('build_your_kit.trust_badges.delivery')}</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-gray-600">
+                  <CreditCard className="w-4 h-4 text-blue-600" />
+                  <span>{t('build_your_kit.trust_badges.payment')}</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-gray-600">
+                  <HeadphonesIcon className="w-4 h-4 text-blue-600" />
+                  <span>{t('build_your_kit.trust_badges.support')}</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Main Bar */}
+          <div className="p-4">
+            <div className="flex items-center justify-between gap-4">
+              <button
+                onClick={() => setMobileExpanded(!mobileExpanded)}
+                className="flex items-center gap-2 min-w-0"
+                aria-label={mobileExpanded ? 'Hide details' : 'Show details'}
+                aria-expanded={mobileExpanded}
+              >
+                <div className="text-left">
+                  <div className="text-xs text-gray-500">{t('build_your_kit.total')}</div>
+                  <div className="text-2xl font-bold text-blue-600">
+                    {isComplete ? `€${price.total}` : '—'}
+                  </div>
+                </div>
+                {mobileExpanded ? (
+                  <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                ) : (
+                  <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                )}
+              </button>
+
+              <button
+                onClick={handleAddToCart}
+                disabled={!isComplete}
+                className={`px-6 py-3 rounded-xl font-bold text-base transition-all flex-shrink-0 ${
+                  isComplete
+                    ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white active:scale-95'
+                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                }`}
+                aria-label={isComplete ? t('build_your_kit.add_to_cart') : t('build_your_kit.select_all')}
+              >
+                {t('build_your_kit.add_to_cart')}
+              </button>
+            </div>
+
+            {!isComplete && missingSteps.length > 0 && !mobileExpanded && (
+              <p className="text-xs text-amber-600 mt-2 text-center">
+                {missingSteps.join(' • ')}
+              </p>
+            )}
           </div>
         </div>
       </div>

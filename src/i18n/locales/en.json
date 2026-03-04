@@ -936,7 +936,24 @@
     "total": "Total",
     "add_to_cart": "Add to Cart",
     "select_all": "Please select all options",
-    "added_to_cart": "Kit added to cart!"
+    "added_to_cart": "Kit added to cart!",
+    "progress": {
+      "step_of": "Step {{current}} of {{total}}",
+      "almost_done": "Almost done! {{remaining}} more step to complete",
+      "almost_done_plural": "Almost done! {{remaining}} more steps to complete"
+    },
+    "missing": {
+      "length": "Choose length",
+      "light_type": "Choose light type",
+      "control_type": "Choose control",
+      "power_supply": "Choose power supply"
+    },
+    "trust_badges": {
+      "warranty": "2-year warranty",
+      "delivery": "Delivery 1-3 days",
+      "payment": "Secure payment",
+      "support": "24/7 support"
+    }
   },
   "home_seo": {
     "title": "LED Ceiling Lighting Guide",
