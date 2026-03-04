@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart as CartIcon, Menu, LogIn, HelpCircle, PenTool, Users, Headphones as HeadphonesIcon, Shield, BookOpen, Lightbulb, Settings } from 'lucide-react';
+import { ShoppingCart as CartIcon, Menu, LogIn, HelpCircle, PenTool, Users, Headphones as HeadphonesIcon, Shield, BookOpen, Lightbulb } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useTranslation } from 'react-i18next';
 import { Cart } from './Cart';
@@ -42,7 +42,6 @@ export function Header() {
   }, []);
 
   const dropdownItems = [
-    { path: `/${locale}/build-your-kit`, icon: Settings, label: t('menu.build_your_kit') },
     { path: `/${locale}/led-ceiling-lighting-kit`, icon: Lightbulb, label: t('menu.ceiling_lighting_kit') },
     { path: `/${locale}/blog`, icon: BookOpen, label: t('menu.blog') },
     { path: `/${locale}/business`, icon: Users, label: t('menu.for_business') },

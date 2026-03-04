@@ -8,7 +8,7 @@ export default function Business() {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title={t('business_page.title')}
         description={t('business_page.description')}

@@ -31,12 +31,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/build-your-kit/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://led-nabor.com/ru/about/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -113,12 +107,6 @@
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/build-your-kit/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://led-nabor.com/en/about/</loc>
@@ -217,43 +205,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/osveshchenie-detskoy-komnaty-indeks-tsvetoperedachi/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/cob-vs-smd-led-strip-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/best-led-strip-for-ceiling-lighting-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/how-to-install-led-strip-on-ceiling-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/idei-led-podsvietki-potolka/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/kak-ustanovit-led-lentu-na-potolok/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/cob-vs-smd-led-strip/</loc>
+    <loc>https://led-nabor.com/ru/blog/led-ceiling-lighting-guide-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -265,25 +217,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/children-room-lighting-cri-color-rendering/</loc>
+    <loc>https://led-nabor.com/en/blog/smart-led-ceiling-lighting/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/led-strip-installation-mistakes-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/led-ceiling-lighting-guide-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/led-ceiling-lighting-guide/</loc>
+    <loc>https://led-nabor.com/ru/blog/what-power-supply-for-led-strip-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -295,25 +235,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/best-led-strip-for-ceiling-lighting/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/best-led-strip-for-apartment-lighting/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://led-nabor.com/ru/blog/how-to-connect-led-strip-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/how-to-connect-led-strip/</loc>
+    <loc>https://led-nabor.com/en/blog/led-lighting-for-bedroom-ceiling/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/cob-vs-smd-led-strip/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/rgb-led-ceiling-lighting-ideas/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/how-many-lumens-for-ceiling-lighting-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/cob-vs-smd-led-strip-comparison/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -325,13 +277,109 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/modern-ceiling-lighting-trends-ru/</loc>
+    <loc>https://led-nabor.com/ru/blog/led-strip-brightness-guide-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/modern-ceiling-lighting-trends/</loc>
+    <loc>https://led-nabor.com/ru/blog/warm-vs-cool-led-lighting-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/cob-ili-smd-led-lenta-sravnenie/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/best-led-strip-for-ceiling-lighting-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/cob-vs-smd-led-strip-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/kak-ustanovit-led-lentu-na-potolok/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/how-many-lumens-for-ceiling-lighting/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/led-lighting-for-living-room-ceiling-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/how-to-install-led-strip-on-ceiling/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/luchshaya-led-lenta-dlya-podsvietki-potolka/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/how-long-do-led-strips-last/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/what-power-supply-for-led-strip/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/led-ceiling-lighting-ideas-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/led-ceiling-lighting-guide/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/smart-led-ceiling-lighting-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/led-strip-installation-mistakes-ru/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/warm-vs-cool-led-lighting/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/en/blog/best-led-strip-for-apartment-lighting/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -349,31 +397,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/rgb-led-ceiling-lighting-ideas/</loc>
+    <loc>https://led-nabor.com/ru/blog/led-lighting-for-bedroom-ceiling-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/smart-led-ceiling-lighting-ru/</loc>
+    <loc>https://led-nabor.com/en/blog/best-led-strip-for-ceiling-lighting/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/smart-led-ceiling-lighting/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/how-many-lumens-for-ceiling-lighting-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/how-many-lumens-for-ceiling-lighting/</loc>
+    <loc>https://led-nabor.com/en/blog/how-to-connect-led-strip/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -385,49 +421,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/led-strip-brightness-guide/</loc>
+    <loc>https://led-nabor.com/en/blog/led-lighting-for-living-room-ceiling/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/warm-vs-cool-led-lighting-ru/</loc>
+    <loc>https://led-nabor.com/ru/blog/modern-ceiling-lighting-trends-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/luchshaya-led-lenta-dlya-podsvietki-potolka/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/warm-vs-cool-led-lighting/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/kak-vybrat-blok-pitaniya-dlya-led-lenty/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/cob-vs-smd-led-strip-comparison/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/how-long-do-led-strips-last-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/zamena-lyustry-na-svetodiodnuyu-lentu/</loc>
+    <loc>https://led-nabor.com/en/blog/children-room-lighting-cri-color-rendering/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -439,43 +445,49 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/cob-ili-smd-led-lenta-sravnenie/</loc>
+    <loc>https://led-nabor.com/ru/blog/zamena-lyustry-na-svetodiodnuyu-lentu/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/how-long-do-led-strips-last/</loc>
+    <loc>https://led-nabor.com/ru/blog/osveshchenie-detskoy-komnaty-indeks-tsvetoperedachi/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/what-power-supply-for-led-strip-ru/</loc>
+    <loc>https://led-nabor.com/ru/blog/how-to-install-led-strip-on-ceiling-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/what-power-supply-for-led-strip/</loc>
+    <loc>https://led-nabor.com/ru/blog/idei-led-podsvietki-potolka/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/how-to-hide-led-strip-on-ceiling-ru/</loc>
+    <loc>https://led-nabor.com/en/blog/modern-ceiling-lighting-trends/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/how-to-hide-led-strip-on-ceiling/</loc>
+    <loc>https://led-nabor.com/en/blog/led-strip-brightness-guide/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/how-to-install-led-strip-on-ceiling/</loc>
+    <loc>https://led-nabor.com/ru/blog/kak-vybrat-blok-pitaniya-dlya-led-lenty/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://led-nabor.com/ru/blog/how-long-do-led-strips-last-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -493,37 +505,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/ru/blog/led-lighting-for-bedroom-ceiling-ru/</loc>
+    <loc>https://led-nabor.com/ru/blog/how-to-hide-led-strip-on-ceiling-ru/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://led-nabor.com/en/blog/led-lighting-for-bedroom-ceiling/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/led-strip-brightness-guide-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/led-lighting-for-living-room-ceiling-ru/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/en/blog/led-lighting-for-living-room-ceiling/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://led-nabor.com/ru/blog/led-ceiling-lighting-ideas-ru/</loc>
+    <loc>https://led-nabor.com/en/blog/how-to-hide-led-strip-on-ceiling/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

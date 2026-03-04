@@ -24,7 +24,7 @@ export default function Catalog() {
 
   if (loading) {
     return (
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-7xl mx-auto px-4 py-5 md:py-8">
         <CategoryGridSkeleton count={categories.length} />
       </main>
     );
@@ -34,7 +34,7 @@ export default function Catalog() {
   const canonicalUrl = `${SITE_URL}/${locale}/`;
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-8">
+    <main className="max-w-7xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title="LED Nabor - LED Strip Lights for Ceiling Lighting"
         description="Professional LED strip lights for ceiling lighting. RGB+CCT and adjustable white options. Easy installation, WiFi control, 10-year lifespan. Free shipping across Europe."
@@ -42,7 +42,7 @@ export default function Catalog() {
         alternateUrls={homeAlternateUrls}
         canonicalUrl={canonicalUrl}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
         {categories.map(category => {
           // Находим все товары в данной категории
           const categoryProducts = products.filter(p => p.category === category.id);
@@ -81,8 +81,8 @@ export default function Catalog() {
       </div>
 
       {/* SEO Content Section - Compact Preview */}
-      <div className="mt-16 mb-12">
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
+      <div className="mt-10 md:mt-16 mb-8 md:mb-12">
+        <div className="bg-white rounded-2xl shadow-lg p-5 md:p-8 lg:p-12 border border-gray-100">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
               {t('home_seo.title')}
@@ -92,7 +92,7 @@ export default function Catalog() {
               {t('home_seo.intro')}
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
               <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-100">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

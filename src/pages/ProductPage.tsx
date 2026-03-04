@@ -487,7 +487,7 @@ function ProductPage() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-8">
+    <main className="max-w-7xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title={t(`products.${product.id}.name`)}
         description={t(`products.${product.id}.description`).slice(0, 160)}

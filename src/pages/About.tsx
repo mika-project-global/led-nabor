@@ -11,7 +11,7 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title={t('about.title')}
         description={t('about.subtitle')}

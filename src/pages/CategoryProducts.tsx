@@ -106,7 +106,7 @@ export default function CategoryProducts() {
         alternateUrls={alternateUrls}
         canonicalUrl={canonicalUrl}
       />
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-7xl mx-auto px-4 py-5 md:py-8">
         <h2 className="text-4xl font-bold mb-2">{t(`categories.${category.id}.name`)}</h2>
         <p className="text-xl text-gray-600 mb-8">{t(`categories.${category.id}.description`)}</p>
       

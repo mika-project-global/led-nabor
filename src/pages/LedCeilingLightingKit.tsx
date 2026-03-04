@@ -63,7 +63,7 @@ export default function LedCeilingLightingKit() {
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Section */}
-        <section className="relative py-20 px-4 overflow-hidden">
+        <section className="relative py-12 md:py-20 px-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 via-blue-50 to-indigo-50 opacity-60"></div>
           <div className="max-w-5xl mx-auto relative z-10">
             <div className="text-center space-y-6">
@@ -87,9 +87,9 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* Why LED Ceiling Lighting */}
-        <section className="py-16 px-4">
+        <section className="py-10 md:py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100">
+            <div className="bg-white rounded-2xl shadow-xl p-5 md:p-8 lg:p-12 border border-gray-100">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center">
@@ -110,7 +110,7 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* Our Kits Section */}
-        <section id="kits" className="py-16 px-4 bg-gray-50">
+        <section id="kits" className="py-10 md:py-16 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
               {t('led_ceiling_kit.kits_title')}
@@ -155,7 +155,7 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* Gallery Section */}
-        <section className="py-16 px-4">
+        <section className="py-10 md:py-16 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -188,7 +188,7 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* Installation Steps */}
-        <section className="py-16 px-4 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <section className="py-10 md:py-16 px-4 bg-gradient-to-br from-cyan-50 to-blue-50">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
               {t('led_ceiling_kit.installation_title')}
@@ -216,7 +216,7 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 px-4">
+        <section className="py-10 md:py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
               {t('led_ceiling_kit.faq_title')}
@@ -247,7 +247,7 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <section className="py-10 md:py-16 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">
               {locale === 'ru' ? 'Готовы преобразить ваш интерьер?' : 'Ready to Transform Your Space?'}
@@ -268,7 +268,7 @@ export default function LedCeilingLightingKit() {
         </section>
 
         {/* Internal Links */}
-        <section className="py-12 px-4 bg-gray-50">
+        <section className="py-8 md:py-12 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <Link
