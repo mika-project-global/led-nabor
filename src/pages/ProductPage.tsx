@@ -505,7 +505,7 @@ function ProductPage() {
         {/* Left Column: Images and Video */}
         <div className="space-y-4 md:space-y-5">
           <div className="product-card">
-            <div className="relative aspect-[282/200] lg:aspect-[282/200] mb-3 lg:mb-4 bg-gray-100 rounded-lg overflow-hidden">
+            <div className="relative aspect-[282/199] lg:aspect-[282/199] mb-3 lg:mb-4 bg-gray-100 rounded-lg overflow-hidden">
               {(() => {
                 const currentMedia = product.images && product.images.length > 0
                   ? product.images[selectedImage]
