@@ -11,7 +11,7 @@ import { useTranslation } from '../hooks/useTranslation';
 import { supabase } from '../lib/supabase';
 import { checkIsAdmin } from '../lib/auth-utils';
 import { products } from '../data/products';
-import { Trash2, CheckCircle, Plus, Edit2, Eye, Sparkles } from 'lucide-react';
+import { Trash2, CheckCircle, Plus, CreditCard as Edit2, Eye, Sparkles } from 'lucide-react';
 
 interface ProductVideo {
   id: string;
