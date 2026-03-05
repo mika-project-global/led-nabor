@@ -15,7 +15,7 @@ export default function Business() {
         alternateUrls={getStaticPageAlternateUrls('/business')}
       />
 
-      <h1 className="text-3xl font-bold mb-8">{t('business_page.title')}</h1>
+      <h1 className="heading-h1 mb-8">{t('business_page.title')}</h1>
 
       <div className="space-y-8">
         <B2BCalculator />

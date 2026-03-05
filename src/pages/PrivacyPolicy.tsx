@@ -19,15 +19,15 @@ export default function PrivacyPolicy() {
       />
 
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">{t('privacy_page.title')}</h1>
-        <p className="text-gray-600">
+        <h1 className="heading-h1 mb-4">{t('privacy_page.title')}</h1>
+        <p className="text-body">
           {t('privacy_page.last_updated')} {new Date().toLocaleDateString()}
         </p>
       </div>
 
       <div className="space-y-12">
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">1.</span> {t('privacy_page.section_1_title')}
           </h2>
           <p>
@@ -36,13 +36,13 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">2.</span> {t('privacy_page.section_2_title')}
           </h2>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">{t('privacy_page.section_2_1_title')}</h3>
+              <h3 className="heading-h3 mb-4">{t('privacy_page.section_2_1_title')}</h3>
               <p>{t('privacy_page.section_2_1_desc')}</p>
               <ul className="mt-4 space-y-4">
                 <li>
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">{t('privacy_page.section_2_2_title')}</h3>
+              <h3 className="heading-h3 mb-4">{t('privacy_page.section_2_2_title')}</h3>
               <p>{t('privacy_page.section_2_2_desc')}</p>
               <ul className="mt-4 space-y-2 text-gray-600 ml-6">
                 <li>{t('privacy_page.use_item_1')}</li>
@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">3.</span> {t('privacy_page.section_3_title')}
           </h2>
           <p>
@@ -105,7 +105,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">4.</span> {t('privacy_page.section_4_title')}
           </h2>
           <p>
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">5.</span> {t('privacy_page.section_5_title')}
           </h2>
           <p>
@@ -139,7 +139,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">6.</span> {t('privacy_page.section_6_title')}
           </h2>
           <p>
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">7.</span> {t('privacy_page.section_7_title')}
           </h2>
           <p>
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">8.</span> {t('privacy_page.section_8_title')}
           </h2>
           <p>

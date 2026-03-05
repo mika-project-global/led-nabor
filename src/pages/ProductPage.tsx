@@ -679,8 +679,8 @@ function ProductPage() {
 
         {/* Right Column: Product Info */}
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">{t(`products.${product.id}.name`)}</h1>
-          <p className="text-base text-gray-600 mb-3">{t(`products.${product.id}.description`)}</p>
+          <h1 className="heading-h1 mb-2">{t(`products.${product.id}.name`)}</h1>
+          <p className="text-body mb-3">{t(`products.${product.id}.description`)}</p>
 
           <div className="flex items-center gap-3 mb-4">
             <div className="flex items-center gap-2">
@@ -1101,7 +1101,7 @@ function ProductPage() {
         {activeTab === 'reviews' && (
           <div>
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl md:text-2xl font-bold">{t('product_page.reviews_title')}</h2>
+              <h2 className="heading-h2">{t('product_page.reviews_title')}</h2>
               <button
                 onClick={() => setIsReviewFormVisible(!isReviewFormVisible)}
                 className="btn-primary"

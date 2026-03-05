@@ -225,7 +225,7 @@ export default function BlogPost() {
         )}
 
         <header className="mb-6">
-          <h1 className="text-3xl font-bold text-gray-900 mb-3">
+          <h1 className="heading-h1 mb-3">
             {post.title}
           </h1>
 
@@ -247,7 +247,7 @@ export default function BlogPost() {
           </div>
         </header>
 
-        <div className="prose prose-sm md:prose-base max-w-none mb-8 md:mb-10">
+        <div className="prose prose-sm md:prose-base max-w-none mb-8 md:mb-10 prose-headings:font-semibold prose-h2:text-2xl prose-h2:md:text-3xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:leading-relaxed prose-li:leading-relaxed">
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
 
@@ -266,7 +266,7 @@ export default function BlogPost() {
                 </div>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">
+                <h3 className="heading-h3 text-white mb-2">
                   {locale === 'ru' ? 'Готовые комплекты LED подсветки потолка' : 'Complete LED Ceiling Lighting Kits'}
                 </h3>
                 <p className="text-white/90">
@@ -286,7 +286,7 @@ export default function BlogPost() {
 
         {relatedPosts.length > 0 && (
           <section className="mt-12 md:mt-14 pt-6 md:pt-8 border-t border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-5">
+            <h2 className="heading-h2 mb-5">
               {t('blog.relatedArticles')}
             </h2>
             <div className="grid md:grid-cols-3 gap-4 md:gap-5">

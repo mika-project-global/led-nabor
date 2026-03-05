@@ -67,7 +67,7 @@ export default function Catalog() {
                   loading="eager"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white z-20">
-                  <h3 className="text-3xl md:text-3xl font-bold mb-2 group-hover:translate-y-[-5px] transition-transform">
+                  <h3 className="heading-h2 text-white mb-2 group-hover:translate-y-[-5px] transition-transform">
                     {t(`categories.${category.id}.name`)}
                   </h3>
                   <p className="text-base md:text-lg text-gray-100 group-hover:translate-y-[-5px] transition-transform delay-75">
@@ -83,12 +83,12 @@ export default function Catalog() {
       {/* SEO Content Section - Compact Preview */}
       <div className="mt-8 md:mt-12 mb-6 md:mb-8">
         <div className="premium-card p-5 md:p-6 lg:p-7">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
+          <div className="prose-container-wide">
+            <h2 className="heading-h2 mb-4 text-center">
               {t('home_seo.title')}
             </h2>
 
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 md:mb-5">
+            <p className="text-body-lg mb-4 md:mb-5">
               {t('home_seo.intro')}
             </p>
 

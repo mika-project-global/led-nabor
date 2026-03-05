@@ -74,10 +74,10 @@ export default function Blog() {
 
       <div className="max-w-7xl mx-auto px-4 py-6 md:py-10">
         <div className="text-center mb-8 md:mb-10">
-          <h1 className="text-3xl font-bold text-gray-900 mb-3">
+          <h1 className="heading-h1 mb-3">
             {t('blog.heading')}
           </h1>
-          <p className="text-lg md:text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-body-lg max-w-3xl mx-auto">
             {t('blog.subheading')}
           </p>
         </div>

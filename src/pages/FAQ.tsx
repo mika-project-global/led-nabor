@@ -150,7 +150,7 @@ export default function FAQ() {
         description={t('faq.subtitle')}
         alternateUrls={getStaticPageAlternateUrls('/faq')}
       />
-      <h1 className="text-3xl font-bold mb-6">{t('faq.title')}</h1>
+      <h1 className="heading-h1 mb-6">{t('faq.title')}</h1>
 
       <div className="mb-6">
         <div className="relative">

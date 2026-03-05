@@ -19,7 +19,7 @@ export default function Terms() {
       />
 
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">{t('terms_page.title')}</h1>
+        <h1 className="heading-h1 mb-4">{t('terms_page.title')}</h1>
         <p className="text-gray-600">
           {t('terms_page.last_updated')} {new Date().toLocaleDateString()}
         </p>
@@ -27,35 +27,35 @@ export default function Terms() {
 
       <div className="space-y-12">
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">1.</span> {t('terms_page.section_1_title')}
           </h2>
           <p>{t('terms_page.section_1_desc')}</p>
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">2.</span> {t('terms_page.section_2_title')}
           </h2>
           <p>{t('terms_page.section_2_desc')}</p>
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">3.</span> {t('terms_page.section_3_title')}
           </h2>
           <p>{t('terms_page.section_3_desc')}</p>
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">4.</span> {t('terms_page.section_4_title')}
           </h2>
           <p>{t('terms_page.section_4_desc')}</p>
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">5.</span> {t('terms_page.section_5_title')}
           </h2>
           <div className="space-y-6">
@@ -77,7 +77,7 @@ export default function Terms() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">6.</span> {t('terms_page.section_6_title')}
           </h2>
           <p>{t('terms_page.section_6_desc')}</p>
@@ -90,7 +90,7 @@ export default function Terms() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">7.</span> {t('terms_page.section_7_title')}
           </h2>
           <p>{t('terms_page.section_7_desc')}</p>
@@ -103,14 +103,14 @@ export default function Terms() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">8.</span> {t('terms_page.section_8_title')}
           </h2>
           <p>{t('terms_page.section_8_desc')}</p>
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">9.</span> {t('terms_page.section_9_title')}
           </h2>
           <p>{t('terms_page.section_9_desc')}</p>
@@ -122,7 +122,7 @@ export default function Terms() {
         </section>
 
         <section className="bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+          <h2 className="heading-h2 mb-6 flex items-center gap-3">
             <span className="text-cyan-600">10.</span> {t('terms_page.section_10_title')}
           </h2>
           <p>{t('terms_page.section_10_desc')}</p>

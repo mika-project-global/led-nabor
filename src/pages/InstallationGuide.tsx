@@ -86,12 +86,12 @@ export default function InstallationGuide() {
       />
 
       <div className="text-center mb-8 md:mb-10">
-        <h1 className="text-3xl font-bold mb-3">{t('installation_guide.title')}</h1>
-        <p className="text-lg md:text-lg text-gray-600">{t('installation_guide.subtitle')}</p>
+        <h1 className="heading-h1 mb-3">{t('installation_guide.title')}</h1>
+        <p className="text-body-lg">{t('installation_guide.subtitle')}</p>
       </div>
 
       <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-4 md:p-5 mb-8 md:mb-10">
-        <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+        <h2 className="heading-h3 mb-4 flex items-center gap-2">
           <Tool className="text-cyan-600" />
           {t('installation_guide.required_tools')}
         </h2>
