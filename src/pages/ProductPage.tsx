@@ -501,9 +501,9 @@ function ProductPage() {
           { label: t(`products.${product.id}.name`) }
         ]}
       />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6">
         {/* Left Column: Images and Video */}
-        <div className="space-y-5 md:space-y-6">
+        <div className="space-y-4 md:space-y-5">
           <div className="product-card">
             <div className="relative aspect-[4/3] mb-4 bg-gray-100 rounded-lg overflow-hidden">
               {(() => {
@@ -680,9 +680,9 @@ function ProductPage() {
         {/* Right Column: Product Info */}
         <div>
           <h1 className="text-2xl md:text-3xl font-bold mb-2">{t(`products.${product.id}.name`)}</h1>
-          <p className="text-base md:text-lg text-gray-600 mb-3">{t(`products.${product.id}.description`)}</p>
+          <p className="text-base text-gray-600 mb-3">{t(`products.${product.id}.description`)}</p>
 
-          <div className="flex items-center gap-3 mb-5">
+          <div className="flex items-center gap-3 mb-4">
             <div className="flex items-center gap-2">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
@@ -708,12 +708,12 @@ function ProductPage() {
             </div>
           </div>
 
-          <div className="bg-gray-50 p-4 md:p-5 rounded-lg mb-5">
+          <div className="bg-gray-50 p-3 md:p-4 rounded-lg mb-4">
             {/* Introduction */}
             {intro && (
               <div className="mb-4">
                 {/* Features */}
-                <div className="bg-white rounded-lg p-3 md:p-4 mb-5">
+                <div className="bg-white rounded-lg p-3 md:p-4 mb-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {t(`products.${product.id}.features`, { returnObjects: true }).map((feature: string, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -725,8 +725,8 @@ function ProductPage() {
                 </div>
 
                 {/* Control Options */}
-                <div className="bg-white rounded-lg p-3 md:p-4 mb-5">
-                  <h3 className="font-medium mb-3 flex items-center gap-2">
+                <div className="bg-white rounded-lg p-3 md:p-4 mb-4">
+                  <h3 className="font-medium mb-2 flex items-center gap-2">
                     {t('product_page.control_options_title')}:
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -740,7 +740,7 @@ function ProductPage() {
                 </div>
 
                 {/* Length Selection */}
-                <div className="mb-6 space-y-2">
+                <div className="mb-4 space-y-2">
                   <label className="block text-sm font-medium text-gray-700">{t('product.length')}</label>
                   <div className="relative">
                     <button
@@ -847,7 +847,7 @@ function ProductPage() {
                       {t('product_page.adapt_kit')}
                     </p>
 
-                    <ul className="space-y-2 mb-6">
+                    <ul className="space-y-2 mb-4">
                       <li className="flex items-center gap-2">
                         <CheckCircle size={16} className="text-cyan-600" />
                         <span>{t('product_page.change_strip_length')}</span>
@@ -990,19 +990,19 @@ function ProductPage() {
       </div>
 
       {/* Tabs Navigation */}
-      <div className="border-b mt-8 md:mt-10">
+      <div className="border-b mt-6 md:mt-8">
         <div className="flex gap-2 overflow-x-auto pb-2">
           {tabs.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id as TabType)}
-              className={`flex items-center gap-2 px-6 py-3 border-b-2 transition-colors whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 border-b-2 transition-colors whitespace-nowrap ${
                 activeTab === tab.id
                   ? 'border-cyan-500 text-cyan-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700'
               }`}
             >
-              <tab.icon size={20} />
+              <tab.icon size={18} />
               {tab.label}
             </button>
           ))}
@@ -1010,9 +1010,9 @@ function ProductPage() {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-6 md:mt-8">
+      <div className="mt-5 md:mt-6">
         {activeTab === 'overview' && (
-          <div className="space-y-5 md:space-y-6">
+          <div className="space-y-4 md:space-y-5">
             <div className="bg-white rounded-lg shadow-lg p-4 md:p-5">
               <div className="text-base md:text-lg text-gray-700">
                 <p>{t(`products.${product.id}.overview_text`)}</p>
@@ -1024,7 +1024,7 @@ function ProductPage() {
         )}
 
         {activeTab === 'details' && (
-          <div className="space-y-5 md:space-y-6">
+          <div className="space-y-4 md:space-y-5">
             <ComparisonTable />
             {/* Product description sections */}
             <ProductRecommendations
@@ -1086,13 +1086,13 @@ function ProductPage() {
         )}
 
         {activeTab === 'calculator' && (
-          <div className="space-y-5 md:space-y-6">
+          <div className="space-y-4 md:space-y-5">
             <LightingCalculator />
           </div>
         )}
 
         {activeTab === 'gallery' && (
-          <div className="space-y-5 md:space-y-6">
+          <div className="space-y-4 md:space-y-5">
             <ProjectGallery />
             <InstallationTimeline />
           </div>
@@ -1111,7 +1111,7 @@ function ProductPage() {
             </div>
 
             {isReviewFormVisible && (
-              <div className="bg-white rounded-lg shadow-lg p-4 md:p-5 mb-6">
+              <div className="bg-white rounded-lg shadow-lg p-4 md:p-5 mb-5">
                 <h3 className="text-xl font-bold mb-4">{t('product_page.new_review')}</h3>
                 <ReviewForm onSubmit={handleReviewSubmit} />
               </div>
