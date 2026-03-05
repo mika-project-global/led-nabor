@@ -505,7 +505,7 @@ function ProductPage() {
         {/* Left Column: Images and Video */}
         <div className="space-y-4 md:space-y-5">
           <div className="product-card">
-            <div className="relative aspect-[4/3] mb-4 bg-gray-100 rounded-lg overflow-hidden">
+            <div className="relative aspect-[4/3] lg:aspect-[16/10] mb-3 lg:mb-4 bg-gray-100 rounded-lg overflow-hidden">
               {(() => {
                 const currentMedia = product.images && product.images.length > 0
                   ? product.images[selectedImage]
@@ -549,8 +549,8 @@ function ProductPage() {
             )}
 
             {product.images && product.images.length > 1 && (
-              <div className="space-y-4">
-                <div className="grid grid-cols-4 gap-2">
+              <div className="space-y-3">
+                <div className="grid grid-cols-4 gap-1.5 lg:gap-2">
                   {product.images.slice(0, 4).map((image, index) => {
                     const isYouTube = image.includes('youtube.com') || image.includes('youtu.be');
 
@@ -565,7 +565,7 @@ function ProductPage() {
                       >
                         {isYouTube ? (
                           <div className="w-full h-full bg-black flex items-center justify-center">
-                            <Play className="w-12 h-12 text-white opacity-80" />
+                            <Play className="w-8 h-8 lg:w-10 lg:h-10 text-white opacity-80" />
                           </div>
                         ) : (
                           <ImageWithFallback
@@ -581,42 +581,42 @@ function ProductPage() {
                   })}
                 </div>
 
-                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-4 md:p-5 border border-cyan-100">
-                  <div className="grid grid-cols-3 gap-4">
+                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-3 lg:p-4 border border-cyan-100">
+                  <div className="grid grid-cols-3 gap-3">
                     <div className="flex flex-col items-center text-center">
-                      <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-3 shadow-md">
-                        <Package size={26} className="text-cyan-600" />
+                      <div className="w-11 h-11 lg:w-12 lg:h-12 bg-white rounded-full flex items-center justify-center mb-2 shadow-md">
+                        <Package size={20} className="text-cyan-600 lg:w-[22px] lg:h-[22px]" />
                       </div>
                       <span className="text-sm font-semibold text-gray-800">{t('product.in_stock')}</span>
                       <span className="text-xs text-gray-600 mt-1">{t('product.ready_to_ship')}</span>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                      <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-3 shadow-md">
-                        <Truck size={26} className="text-cyan-600" />
+                      <div className="w-11 h-11 lg:w-12 lg:h-12 bg-white rounded-full flex items-center justify-center mb-2 shadow-md">
+                        <Truck size={20} className="text-cyan-600 lg:w-[22px] lg:h-[22px]" />
                       </div>
                       <span className="text-sm font-semibold text-gray-800">{t('product.free_delivery')}</span>
                       <span className="text-xs text-gray-600 mt-1">{t('product.fast_shipping')}</span>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                      <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-3 shadow-md">
-                        <Shield size={26} className="text-cyan-600" />
+                      <div className="w-11 h-11 lg:w-12 lg:h-12 bg-white rounded-full flex items-center justify-center mb-2 shadow-md">
+                        <Shield size={20} className="text-cyan-600 lg:w-[22px] lg:h-[22px]" />
                       </div>
                       <span className="text-sm font-semibold text-gray-800">24 {t('product.months')}</span>
                       <span className="text-xs text-gray-600 mt-1">{t('product.full_warranty')}</span>
                     </div>
                   </div>
-                  <div className="mt-4 pt-4 border-t border-cyan-200/50">
-                    <div className="grid grid-cols-3 gap-4">
+                  <div className="mt-3 pt-3 border-t border-cyan-200/50">
+                    <div className="grid grid-cols-3 gap-3">
                       <div className="flex flex-col items-center text-center">
-                        <CheckCircle size={22} className="text-cyan-600 mb-2" />
+                        <CheckCircle size={18} className="text-cyan-600 mb-1.5" />
                         <span className="text-xs font-medium text-gray-700">{t('product.quality_certified')}</span>
                       </div>
                       <div className="flex flex-col items-center text-center">
-                        <Star size={22} className="text-cyan-600 mb-2" />
+                        <Star size={18} className="text-cyan-600 mb-1.5" />
                         <span className="text-xs font-medium text-gray-700">{t('product.premium_quality')}</span>
                       </div>
                       <div className="flex flex-col items-center text-center">
-                        <Sparkles size={22} className="text-cyan-600 mb-2" />
+                        <Sparkles size={18} className="text-cyan-600 mb-1.5" />
                         <span className="text-xs font-medium text-gray-700">{t('product.easy_installation')}</span>
                       </div>
                     </div>
