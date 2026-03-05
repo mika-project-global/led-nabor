@@ -30,49 +30,49 @@ export default function Warranty() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title={t('warranty_page.title')}
         description={t('warranty_page.subtitle')}
         alternateUrls={getStaticPageAlternateUrls('/warranty')}
       />
 
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">{t('warranty_page.title')}</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+      <div className="text-center mb-8 md:mb-10">
+        <h1 className="text-3xl font-bold mb-3">{t('warranty_page.title')}</h1>
+        <p className="text-lg md:text-lg text-gray-600 max-w-3xl mx-auto">
           {t('warranty_page.subtitle')}
         </p>
       </div>
 
-      <div className="bg-gradient-to-br from-cyan-50 to-white rounded-lg p-8 shadow-lg border border-cyan-100 mb-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div className="bg-gradient-to-br from-cyan-50 to-white rounded-lg p-5 md:p-6 shadow-lg border border-cyan-100 mb-8 md:mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 text-center">
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
-              <CheckCircle className="w-8 h-8 text-cyan-600" />
+            <div className="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
+              <CheckCircle className="w-7 h-7 text-cyan-600" />
             </div>
-            <h3 className="text-xl font-bold mb-2">{t('warranty_page.standard_warranty')}</h3>
-            <p className="text-gray-600">{t('warranty_page.standard_warranty_desc')}</p>
+            <h3 className="text-lg font-bold mb-2">{t('warranty_page.standard_warranty')}</h3>
+            <p className="text-gray-600 text-sm md:text-base">{t('warranty_page.standard_warranty_desc')}</p>
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
-              <FileText className="w-8 h-8 text-cyan-600" />
+            <div className="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
+              <FileText className="w-7 h-7 text-cyan-600" />
             </div>
-            <h3 className="text-xl font-bold mb-2">{t('warranty_page.technical_support')}</h3>
-            <p className="text-gray-600">{t('warranty_page.technical_support_desc')}</p>
+            <h3 className="text-lg font-bold mb-2">{t('warranty_page.technical_support')}</h3>
+            <p className="text-gray-600 text-sm md:text-base">{t('warranty_page.technical_support_desc')}</p>
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
-              <Shield className="w-8 h-8 text-cyan-600" />
+            <div className="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
+              <Shield className="w-7 h-7 text-cyan-600" />
             </div>
-            <h3 className="text-xl font-bold mb-2">{t('warranty_page.service_life')}</h3>
-            <p className="text-gray-600">{t('warranty_page.service_life_desc')}</p>
+            <h3 className="text-lg font-bold mb-2">{t('warranty_page.service_life')}</h3>
+            <p className="text-gray-600 text-sm md:text-base">{t('warranty_page.service_life_desc')}</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8 md:mb-10">
         <div className="flex border-b">
           <button
             onClick={() => setActiveTab('info')}

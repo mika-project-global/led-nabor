@@ -68,7 +68,7 @@ export default function InstallationGuide() {
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-5 md:py-8">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-600 mx-auto"></div>
           <p className="mt-4 text-gray-600">{t('common.loading')}</p>
@@ -78,19 +78,19 @@ export default function InstallationGuide() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title={t('installation_guide.title')}
         description={t('installation_guide.subtitle')}
         alternateUrls={getStaticPageAlternateUrls('/installation-guide')}
       />
 
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">{t('installation_guide.title')}</h1>
-        <p className="text-xl text-gray-600">{t('installation_guide.subtitle')}</p>
+      <div className="text-center mb-8 md:mb-10">
+        <h1 className="text-3xl font-bold mb-3">{t('installation_guide.title')}</h1>
+        <p className="text-lg md:text-lg text-gray-600">{t('installation_guide.subtitle')}</p>
       </div>
 
-      <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-6 mb-12">
+      <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-4 md:p-5 mb-8 md:mb-10">
         <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
           <Tool className="text-cyan-600" />
           {t('installation_guide.required_tools')}

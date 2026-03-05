@@ -501,9 +501,9 @@ function ProductPage() {
           { label: t(`products.${product.id}.name`) }
         ]}
       />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
         {/* Left Column: Images and Video */}
-        <div className="space-y-8">
+        <div className="space-y-5 md:space-y-6">
           <div className="product-card">
             <div className="relative aspect-[4/3] mb-4 bg-gray-100 rounded-lg overflow-hidden">
               {(() => {

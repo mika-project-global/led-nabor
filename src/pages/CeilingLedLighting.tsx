@@ -90,27 +90,27 @@ const CeilingLedLighting: React.FC = () => {
 
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-12 md:py-16 overflow-hidden">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjA1IiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] opacity-10"></div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-5">
                 {t('ceiling_lighting.hero.title')}
               </h1>
-              <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
                 {t('ceiling_lighting.hero.subtitle')}
               </p>
-              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   to="/catalog"
-                  className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base md:text-lg font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   {t('ceiling_lighting.hero.cta_primary')}
                 </Link>
                 <Link
                   to="/installation-guide"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-medium rounded-lg text-white hover:bg-white hover:text-blue-700 transition-all duration-200"
+                  className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base md:text-lg font-medium rounded-lg text-white hover:bg-white hover:text-blue-700 transition-all duration-200"
                 >
                   {t('ceiling_lighting.hero.cta_secondary')}
                 </Link>
@@ -120,18 +120,18 @@ const CeilingLedLighting: React.FC = () => {
         </section>
 
         {/* Products Section */}
-        <section className="py-20 bg-white">
+        <section className="py-10 md:py-14 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 {t('ceiling_lighting.products.title')}
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg md:text-lg text-gray-600 max-w-2xl mx-auto">
                 {t('ceiling_lighting.products.subtitle')}
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-8">
               {ceilingProducts.map((product) => (
                 <div
                   key={product.id}

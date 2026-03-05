@@ -72,22 +72,22 @@ export default function Blog() {
         alternateUrls={getStaticPageAlternateUrls('/blog')}
       />
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+      <div className="max-w-7xl mx-auto px-4 py-6 md:py-10">
+        <div className="text-center mb-8 md:mb-10">
+          <h1 className="text-3xl font-bold text-gray-900 mb-3">
             {t('blog.heading')}
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-lg text-gray-600 max-w-3xl mx-auto">
             {t('blog.subheading')}
           </p>
         </div>
 
         {posts.length === 0 ? (
-          <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">{t('blog.noPosts')}</p>
+          <div className="text-center py-10">
+            <p className="text-gray-500 text-base">{t('blog.noPosts')}</p>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
             {posts.map((post) => (
               <article
                 key={post.id}

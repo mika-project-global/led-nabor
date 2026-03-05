@@ -144,33 +144,33 @@ export default function FAQ() {
   });
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-5 md:py-8">
       <SEO
         title={t('faq.title')}
         description={t('faq.subtitle')}
         alternateUrls={getStaticPageAlternateUrls('/faq')}
       />
-      <h1 className="text-4xl font-bold mb-8">{t('faq.title')}</h1>
+      <h1 className="text-3xl font-bold mb-6">{t('faq.title')}</h1>
 
-      <div className="mb-8">
+      <div className="mb-6">
         <div className="relative">
           <input
             type="text"
             placeholder={t('faq.search_placeholder')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+            className="w-full pl-12 pr-4 py-2.5 rounded-lg border focus:ring-2 focus:ring-cyan-500"
           />
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
         </div>
       </div>
 
-      <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+      <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
         {['installation', 'technical', 'warranty', 'delivery'].map(category => (
           <button
             key={category}
             onClick={() => setSelectedCategory(selectedCategory === category ? null : category)}
-            className={`px-4 py-2 rounded-full whitespace-nowrap ${
+            className={`px-4 py-2 rounded-full whitespace-nowrap text-sm ${
               selectedCategory === category
                 ? 'bg-cyan-500 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -181,7 +181,7 @@ export default function FAQ() {
         ))}
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-3">
         {filteredItems.map(item => (
           <div
             key={item.id}
@@ -189,18 +189,18 @@ export default function FAQ() {
           >
             <button
               onClick={() => setActiveId(activeId === item.id ? null : item.id)}
-              className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50"
+              className="w-full flex items-center justify-between p-3.5 text-left hover:bg-gray-50"
             >
-              <span className="font-medium">{t(item.questionKey)}</span>
+              <span className="font-medium text-sm md:text-base">{t(item.questionKey)}</span>
               {activeId === item.id ? (
-                <ChevronUp size={20} className="text-gray-500" />
+                <ChevronUp size={20} className="text-gray-500 flex-shrink-0" />
               ) : (
-                <ChevronDown size={20} className="text-gray-500" />
+                <ChevronDown size={20} className="text-gray-500 flex-shrink-0" />
               )}
             </button>
             {activeId === item.id && (
-              <div className="p-4 bg-gray-50 border-t">
-                <p className="text-gray-600">{t(item.answerKey)}</p>
+              <div className="p-3.5 bg-gray-50 border-t">
+                <p className="text-gray-600 text-sm md:text-base">{t(item.answerKey)}</p>
               </div>
             )}
           </div>
