@@ -372,7 +372,7 @@ export default function Auth() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-all hover:shadow-md disabled:bg-gray-300 disabled:cursor-not-allowed"
+              className="w-full btn-primary"
             >
               {isLoading ? (
                 <div>

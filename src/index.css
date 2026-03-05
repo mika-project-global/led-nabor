@@ -223,6 +223,58 @@
   transform: translateY(-1px);
 }
 
+/* Premium Button System */
+.btn-base {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  /* Mobile-first: compact size */
+  @apply h-10 px-4 text-sm;
+  /* Desktop: larger size */
+  @apply md:h-11 md:px-5 md:text-base;
+}
+
+.btn-primary {
+  @apply btn-base bg-cyan-600 text-white shadow-sm;
+  @apply hover:bg-cyan-700 hover:shadow-md;
+  @apply focus:ring-cyan-500;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply btn-base bg-white text-gray-700 border border-gray-300 shadow-sm;
+  @apply hover:bg-gray-50 hover:border-gray-400;
+  @apply focus:ring-gray-400;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply active:scale-[0.98];
+}
+
+.btn-tertiary {
+  @apply btn-base bg-gray-100 text-gray-700;
+  @apply hover:bg-gray-200;
+  @apply focus:ring-gray-400;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply active:scale-[0.98];
+}
+
+.btn-danger {
+  @apply btn-base bg-red-600 text-white shadow-sm;
+  @apply hover:bg-red-700 hover:shadow-md;
+  @apply focus:ring-red-500;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply active:scale-[0.98];
+}
+
+.btn-sm {
+  @apply h-8 px-3 text-xs;
+  @apply md:h-9 md:px-4 md:text-sm;
+}
+
+.btn-lg {
+  @apply h-11 px-5 text-base;
+  @apply md:h-12 md:px-6 md:text-lg;
+}
+
 .product-card {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;

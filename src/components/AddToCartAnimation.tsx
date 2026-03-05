@@ -40,10 +40,10 @@ export function AddToCartAnimation({ children, onAddToCart, onGoToCheckout }: Ad
         </div>
         <div class="cart-success-text mb-6">${t('product.added_to_cart')}</div>
         <div class="flex gap-4">
-          <button class="cart-continue px-6 py-2 rounded-lg border border-gray-300 hover:bg-gray-50">
+          <button class="cart-continue btn-secondary">
             ${t('continue_shopping')}
           </button>
-          <button class="cart-checkout px-6 py-2 rounded-lg bg-cyan-500 text-white hover:bg-cyan-600">
+          <button class="cart-checkout btn-primary">
             ${t('menu.checkout')}
           </button>
         </div>

@@ -529,7 +529,7 @@ export default function Checkout() {
               </div>
               <button
                 type="submit"
-                className="mt-6 w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+                className="mt-6 w-full btn-primary"
               >
                 {t('checkout.continue_to_delivery')}
               </button>
@@ -591,7 +591,7 @@ export default function Checkout() {
               
               <button
                 type="submit"
-                className="mt-6 w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+                className="mt-6 w-full btn-primary"
               >
                 {t('checkout.review_order')}
               </button>
@@ -633,7 +633,7 @@ export default function Checkout() {
                 <button
                   onClick={handlePlaceOrder}
                   disabled={isSubmitting}
-                  className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="w-full btn-primary"
                 >
                   {isSubmitting ? t('checkout.processing') : t('checkout.place_order')}
                 </button>

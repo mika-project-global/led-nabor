@@ -97,7 +97,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors disabled:bg-gray-300"
+        className="w-full btn-primary"
       >
         {isSubmitting ? t('review_form.submitting') : t('review_form.submit')}
       </button>

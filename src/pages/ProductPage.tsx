@@ -818,7 +818,7 @@ function ProductPage() {
                 >
                   <button
                     disabled={!selectedVariant}
-                    className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-cyan-600 transition-colors mb-4"
+                    className="w-full btn-primary"
                   >
                     <CartIcon size={20} />
                     {t('product.add_to_cart')}
@@ -828,7 +828,7 @@ function ProductPage() {
                 <div className="mt-4">
                   <button
                     onClick={() => setShowCustomOrderForm(!showCustomOrderForm)}
-                    className="w-full bg-gradient-to-r from-cyan-600 to-cyan-500 text-white px-6 py-3 rounded-lg hover:from-cyan-700 hover:to-cyan-600 transition-all flex items-center justify-center gap-2"
+                    className="w-full btn-secondary"
                   >
                     <Sparkles size={20} />
                     {t('product.order_custom')}
@@ -970,7 +970,7 @@ function ProductPage() {
 
                       <button
                         type="submit"
-                        className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2"
+                        className="w-full btn-primary"
                       >
                         <Send size={20} />
                         {t('product_page.send_request')}
@@ -1104,7 +1104,7 @@ function ProductPage() {
               <h2 className="text-xl md:text-2xl font-bold">{t('product_page.reviews_title')}</h2>
               <button
                 onClick={() => setIsReviewFormVisible(!isReviewFormVisible)}
-                className="bg-cyan-500 text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors"
+                className="btn-primary"
               >
                 {t('product_page.leave_review')}
               </button>

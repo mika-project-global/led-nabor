@@ -223,7 +223,7 @@ export function Cart({
               </div>
               <button
                 onClick={handleCheckout}
-                className="w-full mt-4 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors"
+                className="w-full mt-4 btn-primary bg-green-600 hover:bg-green-700 focus:ring-green-500"
               >
                 {t('cart.checkout')}
               </button>
