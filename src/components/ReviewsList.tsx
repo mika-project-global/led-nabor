@@ -66,7 +66,7 @@ export function ReviewsList({ reviews }: ReviewsListProps) {
         {displayedReviews.map((review) => (
           <div
             key={review.id}
-            className="bg-white rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-md"
+            className="premium-card-compact p-5"
           >
             <div className="flex items-center gap-2 mb-3">
               <div className="flex text-yellow-400">

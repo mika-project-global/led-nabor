@@ -70,7 +70,7 @@ export function ProjectGallery() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
+    <div className="premium-card p-5 md:p-6">
       <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
         <ImageIcon className="text-cyan-600" />
         {t('gallery.title')}

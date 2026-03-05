@@ -63,7 +63,7 @@ export function ProductRecommendations({ currentProduct, roomType, area, product
   if (recommendations.length === 0) return null;
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
+    <div className="premium-card p-5 md:p-6">
       <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
         <Sparkles className="text-cyan-600" />
         Рекомендуемые товары

@@ -50,7 +50,7 @@ export function SocialProof() {
   ];
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
+    <div className="premium-card p-5 md:p-6">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
         {stats.map((stat, index) => (
           <div key={index} className="text-center">

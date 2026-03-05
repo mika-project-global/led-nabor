@@ -204,6 +204,25 @@
   }
 }
 
+/* Premium Card System */
+.premium-card {
+  @apply bg-white rounded-2xl border border-gray-100 shadow-sm transition-all duration-300;
+}
+
+.premium-card:hover {
+  @apply shadow-lg border-gray-200;
+  transform: translateY(-2px);
+}
+
+.premium-card-compact {
+  @apply bg-white rounded-2xl border border-gray-100 shadow-sm transition-all duration-300;
+}
+
+.premium-card-compact:hover {
+  @apply shadow-md border-gray-200;
+  transform: translateY(-1px);
+}
+
 .product-card {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;

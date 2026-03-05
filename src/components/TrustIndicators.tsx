@@ -29,7 +29,7 @@ export function TrustIndicators() {
   ];
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
+    <div className="premium-card p-5 md:p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {indicators.map((indicator, index) => (
           <div key={index} className="flex flex-col items-center text-center">

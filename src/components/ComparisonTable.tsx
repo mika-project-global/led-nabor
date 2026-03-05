@@ -57,7 +57,7 @@ export function ComparisonTable() {
   ];
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
+    <div className="premium-card p-5 md:p-6">
       <h2 className="text-2xl font-bold mb-6">{t('comparison.title')}</h2>
 
       <div className="overflow-x-auto">

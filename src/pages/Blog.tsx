@@ -91,7 +91,7 @@ export default function Blog() {
             {posts.map((post) => (
               <article
                 key={post.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="premium-card-compact overflow-hidden"
               >
                 {post.image_url && (
                   <Link to={`/${locale}/blog/${post.slug}/`}>

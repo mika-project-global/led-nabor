@@ -126,7 +126,7 @@ export default function CategoryProducts() {
                 const length = product.name.match(/\d+(?= метров)/)?.[0];
 
                 return (
-                  <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <div key={product.id} className="premium-card-compact overflow-hidden">
                     <Link to={getProductUrl(locale, product)} className="block">
                       <div className="relative h-40">
                         <img

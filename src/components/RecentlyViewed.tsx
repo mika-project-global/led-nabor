@@ -47,7 +47,7 @@ export function RecentlyViewed() {
             <Link
               key={product.id}
               to={getProductUrl(locale, product)}
-              className="group bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300"
+              className="group premium-card-compact overflow-hidden"
             >
               <div className="aspect-square relative overflow-hidden bg-gray-100">
                 <img

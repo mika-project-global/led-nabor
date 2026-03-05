@@ -56,7 +56,7 @@ export default function Catalog() {
             <Link
               key={category.id}
               to={linkUrl}
-              className="group block bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              className="group premium-card overflow-hidden"
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
@@ -82,7 +82,7 @@ export default function Catalog() {
 
       {/* SEO Content Section - Compact Preview */}
       <div className="mt-8 md:mt-12 mb-6 md:mb-8">
-        <div className="bg-white rounded-2xl shadow-lg p-4 md:p-6 lg:p-8 border border-gray-100">
+        <div className="premium-card p-5 md:p-6 lg:p-7">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
               {t('home_seo.title')}

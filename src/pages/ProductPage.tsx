@@ -635,7 +635,7 @@ function ProductPage() {
                   const isYouTube = video.video_url.includes('youtube.com') || video.video_url.includes('youtu.be');
 
                   return (
-                    <div key={video.id} className="bg-white rounded-lg border p-4">
+                    <div key={video.id} className="premium-card-compact p-4">
                       {video.title && (
                         <h3 className="text-lg font-semibold mb-2">{video.title}</h3>
                       )}
@@ -661,7 +661,7 @@ function ProductPage() {
                 })}
 
                 {product.video && (
-                  <div className="bg-white rounded-lg border p-4">
+                  <div className="premium-card-compact p-4">
                     <div className="relative aspect-video">
                       <video
                         src={product.video}
@@ -713,7 +713,7 @@ function ProductPage() {
             {intro && (
               <div className="mb-4">
                 {/* Features */}
-                <div className="bg-white rounded-lg p-3 md:p-4 mb-4">
+                <div className="premium-card-compact p-3 md:p-4 mb-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {t(`products.${product.id}.features`, { returnObjects: true }).map((feature: string, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -725,7 +725,7 @@ function ProductPage() {
                 </div>
 
                 {/* Control Options */}
-                <div className="bg-white rounded-lg p-3 md:p-4 mb-4">
+                <div className="premium-card-compact p-3 md:p-4 mb-4">
                   <h3 className="font-medium mb-2 flex items-center gap-2">
                     {t('product_page.control_options_title')}:
                   </h3>
@@ -1013,7 +1013,7 @@ function ProductPage() {
       <div className="mt-5 md:mt-6">
         {activeTab === 'overview' && (
           <div className="space-y-4 md:space-y-5">
-            <div className="bg-white rounded-lg shadow-lg p-4 md:p-5">
+            <div className="premium-card p-4 md:p-5">
               <div className="text-base md:text-lg text-gray-700">
                 <p>{t(`products.${product.id}.overview_text`)}</p>
               </div>
@@ -1033,7 +1033,7 @@ function ProductPage() {
             />
             <div className="space-y-3">
               {contentSections.map((section) => (
-                <div key={section.title} className="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div key={section.title} className="premium-card-compact overflow-hidden">
                   <button
                     onClick={() => toggleSection(section.title)}
                     className="w-full flex items-center justify-between text-left p-3 md:p-4 hover:bg-gray-50 transition-colors font-medium"
@@ -1111,7 +1111,7 @@ function ProductPage() {
             </div>
 
             {isReviewFormVisible && (
-              <div className="bg-white rounded-lg shadow-lg p-4 md:p-5 mb-5">
+              <div className="premium-card p-4 md:p-5 mb-5">
                 <h3 className="text-xl font-bold mb-4">{t('product_page.new_review')}</h3>
                 <ReviewForm onSubmit={handleReviewSubmit} />
               </div>
