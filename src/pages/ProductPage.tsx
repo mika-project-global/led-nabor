@@ -1014,7 +1014,7 @@ function ProductPage() {
         {activeTab === 'overview' && (
           <div className="space-y-5 md:space-y-6">
             <div className="bg-white rounded-lg shadow-lg p-4 md:p-5">
-              <div className="text-lg text-gray-700">
+              <div className="text-base md:text-lg text-gray-700">
                 <p>{t(`products.${product.id}.overview_text`)}</p>
               </div>
             </div>
@@ -1036,10 +1036,10 @@ function ProductPage() {
                 <div key={section.title} className="bg-white rounded-lg shadow-sm overflow-hidden">
                   <button
                     onClick={() => toggleSection(section.title)}
-                    className="w-full flex items-center justify-between text-left p-4 hover:bg-gray-50 transition-colors font-medium"
+                    className="w-full flex items-center justify-between text-left p-3 md:p-4 hover:bg-gray-50 transition-colors font-medium"
                   >
                     <span className="flex items-center gap-2">
-                      <Info size={18} className="text-cyan-600" />
+                      <Info size={16} className="text-cyan-600" />
                       <span className="text-gray-700">{section.title}</span>
                     </span>
                     {openSections[section.title] ? (
@@ -1051,7 +1051,7 @@ function ProductPage() {
                   {openSections[section.title] && (
                     <div className="border-t">
                       {section.content && (
-                        <div className="p-6 bg-gray-50 prose prose-sm max-w-none">
+                        <div className="p-4 md:p-5 bg-gray-50 prose prose-sm max-w-none">
                           <ReactMarkdown>{section.content}</ReactMarkdown>
                         </div>
                       )}
@@ -1059,7 +1059,7 @@ function ProductPage() {
                         <div key={subsection.title} className="border-t">
                           <button
                             onClick={() => toggleSubsection(subsection.title)}
-                            className="w-full flex items-center justify-between text-left p-4 hover:bg-gray-100 transition-colors"
+                            className="w-full flex items-center justify-between text-left p-3 md:p-4 hover:bg-gray-100 transition-colors"
                           >
                             <span className="font-medium text-cyan-600">
                               {subsection.title}
@@ -1071,7 +1071,7 @@ function ProductPage() {
                             )}
                           </button>
                           {openSubsections[subsection.title] && (
-                            <div className="p-6 bg-white prose prose-sm max-w-none border-t">
+                            <div className="p-4 md:p-5 bg-white prose prose-sm max-w-none border-t">
                               <ReactMarkdown>{subsection.content}</ReactMarkdown>
                             </div>
                           )}

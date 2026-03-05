@@ -247,7 +247,7 @@ export default function BlogPost() {
           </div>
         </header>
 
-        <div className="prose prose-lg max-w-none mb-8 md:mb-10">
+        <div className="prose prose-sm md:prose-base max-w-none mb-8 md:mb-10">
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
 
@@ -266,7 +266,7 @@ export default function BlogPost() {
                 </div>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">
                   {locale === 'ru' ? 'Готовые комплекты LED подсветки потолка' : 'Complete LED Ceiling Lighting Kits'}
                 </h3>
                 <p className="text-white/90">
