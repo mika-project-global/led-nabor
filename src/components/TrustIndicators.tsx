@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Truck, CreditCard, HeadphonesIcon, Clock } from 'lucide-react';
+import { Shield, Truck, CreditCard, Headphones as HeadphonesIcon, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function TrustIndicators() {
