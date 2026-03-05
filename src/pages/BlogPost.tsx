@@ -207,10 +207,10 @@ export default function BlogPost() {
         alternateUrls={alternateUrls}
       />
 
-      <article className="max-w-4xl mx-auto px-4 py-12">
+      <article className="max-w-4xl mx-auto px-4 py-6 md:py-10">
         <Link
           to={`/${locale}/blog/`}
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-8"
+          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-6"
         >
           <ArrowLeft className="w-4 h-4" />
           {t('blog.backToBlog')}
@@ -220,16 +220,16 @@ export default function BlogPost() {
           <img
             src={addCacheBuster(post.image_url)}
             alt={post.title}
-            className="w-full h-96 object-cover rounded-lg mb-8"
+            className="w-full h-72 md:h-80 object-cover rounded-lg mb-6"
           />
         )}
 
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <header className="mb-6">
+          <h1 className="text-3xl font-bold text-gray-900 mb-3">
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-6 text-gray-600">
+          <div className="flex items-center gap-4 md:gap-5 text-gray-600">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5" />
               <time dateTime={post.published_at}>
@@ -247,19 +247,19 @@ export default function BlogPost() {
           </div>
         </header>
 
-        <div className="prose prose-lg max-w-none mb-12">
+        <div className="prose prose-lg max-w-none mb-8 md:mb-10">
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
 
         {/* Recommended Product CTA */}
-        <div className="my-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl p-8 shadow-lg">
+        <div className="my-8 md:my-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl p-5 md:p-6 shadow-lg">
           <Link
             to={`/${locale}/led-ceiling-lighting-kit`}
             className="block group"
           >
-            <div className="flex flex-col md:flex-row items-center gap-6 text-white">
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-5 text-white">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
@@ -276,7 +276,7 @@ export default function BlogPost() {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <div className="bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold group-hover:bg-cyan-50 transition-colors">
+                <div className="bg-white text-cyan-600 px-5 py-2.5 rounded-lg font-semibold group-hover:bg-cyan-50 transition-colors">
                   {locale === 'ru' ? 'Посмотреть →' : 'View Kits →'}
                 </div>
               </div>
@@ -285,11 +285,11 @@ export default function BlogPost() {
         </div>
 
         {relatedPosts.length > 0 && (
-          <section className="mt-16 pt-8 border-t border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <section className="mt-12 md:mt-14 pt-6 md:pt-8 border-t border-gray-200">
+            <h2 className="text-2xl font-bold text-gray-900 mb-5">
               {t('blog.relatedArticles')}
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-4 md:gap-5">
               {relatedPosts.map((relatedPost) => (
                 <Link
                   key={relatedPost.id}

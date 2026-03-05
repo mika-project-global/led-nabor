@@ -581,7 +581,7 @@ function ProductPage() {
                   })}
                 </div>
 
-                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-6 border border-cyan-100">
+                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-lg p-4 md:p-5 border border-cyan-100">
                   <div className="grid grid-cols-3 gap-4">
                     <div className="flex flex-col items-center text-center">
                       <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-3 shadow-md">
@@ -629,7 +629,7 @@ function ProductPage() {
           {/* Video Presentation */}
           {(product.video || productVideos.length > 0) && (
             <div>
-              <h2 className="text-xl font-bold mb-4">{t('product.video_presentation')}</h2>
+              <h2 className="text-lg md:text-xl font-bold mb-3">{t('product.video_presentation')}</h2>
               <div className="space-y-4">
                 {productVideos.map((video) => {
                   const isYouTube = video.video_url.includes('youtube.com') || video.video_url.includes('youtu.be');
@@ -679,10 +679,10 @@ function ProductPage() {
 
         {/* Right Column: Product Info */}
         <div>
-          <h1 className="text-3xl font-bold mb-2">{t(`products.${product.id}.name`)}</h1>
-          <p className="text-lg text-gray-600 mb-4">{t(`products.${product.id}.description`)}</p>
-          
-          <div className="flex items-center gap-4 mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">{t(`products.${product.id}.name`)}</h1>
+          <p className="text-base md:text-lg text-gray-600 mb-3">{t(`products.${product.id}.description`)}</p>
+
+          <div className="flex items-center gap-3 mb-5">
             <div className="flex items-center gap-2">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
@@ -708,12 +708,12 @@ function ProductPage() {
             </div>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg mb-6">
+          <div className="bg-gray-50 p-4 md:p-5 rounded-lg mb-5">
             {/* Introduction */}
             {intro && (
               <div className="mb-4">
                 {/* Features */}
-                <div className="bg-white rounded-lg p-4 mb-6">
+                <div className="bg-white rounded-lg p-3 md:p-4 mb-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {t(`products.${product.id}.features`, { returnObjects: true }).map((feature: string, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -725,7 +725,7 @@ function ProductPage() {
                 </div>
 
                 {/* Control Options */}
-                <div className="bg-white rounded-lg p-4 mb-6">
+                <div className="bg-white rounded-lg p-3 md:p-4 mb-5">
                   <h3 className="font-medium mb-3 flex items-center gap-2">
                     {t('product_page.control_options_title')}:
                   </h3>
@@ -780,7 +780,7 @@ function ProductPage() {
                   </div>
                 </div>
 
-                <div className="text-3xl font-bold mt-6 mb-4">
+                <div className="text-2xl md:text-3xl font-bold mt-5 mb-3">
                   <div className="relative h-10">
                     {selectedVariant ? (
                       <div className={`absolute inset-0 flex items-center transition-opacity duration-300 ${
@@ -837,7 +837,7 @@ function ProductPage() {
 
                 {/* Custom Order Form */}
                 {showCustomOrderForm && (
-                  <div className="mt-4 bg-cyan-50 rounded-lg p-6 border border-cyan-100 animate-fadeIn">
+                  <div className="mt-4 bg-cyan-50 rounded-lg p-4 md:p-5 border border-cyan-100 animate-fadeIn">
                     <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                       <Tool className="text-cyan-600" />
                       {t('product_page.custom_configuration')}
@@ -990,7 +990,7 @@ function ProductPage() {
       </div>
 
       {/* Tabs Navigation */}
-      <div className="border-b mt-12">
+      <div className="border-b mt-8 md:mt-10">
         <div className="flex gap-2 overflow-x-auto pb-2">
           {tabs.map(tab => (
             <button
@@ -1010,10 +1010,10 @@ function ProductPage() {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-8">
+      <div className="mt-6 md:mt-8">
         {activeTab === 'overview' && (
-          <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
+          <div className="space-y-5 md:space-y-6">
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-5">
               <div className="text-lg text-gray-700">
                 <p>{t(`products.${product.id}.overview_text`)}</p>
               </div>
@@ -1024,14 +1024,14 @@ function ProductPage() {
         )}
 
         {activeTab === 'details' && (
-          <div className="space-y-8">
+          <div className="space-y-5 md:space-y-6">
             <ComparisonTable />
             {/* Product description sections */}
-            <ProductRecommendations 
+            <ProductRecommendations
               currentProduct={product}
               products={products}
             />
-            <div className="space-y-4">
+            <div className="space-y-3">
               {contentSections.map((section) => (
                 <div key={section.title} className="bg-white rounded-lg shadow-sm overflow-hidden">
                   <button
@@ -1086,13 +1086,13 @@ function ProductPage() {
         )}
 
         {activeTab === 'calculator' && (
-          <div className="space-y-8">
+          <div className="space-y-5 md:space-y-6">
             <LightingCalculator />
           </div>
         )}
 
         {activeTab === 'gallery' && (
-          <div className="space-y-8">
+          <div className="space-y-5 md:space-y-6">
             <ProjectGallery />
             <InstallationTimeline />
           </div>
@@ -1100,8 +1100,8 @@ function ProductPage() {
 
         {activeTab === 'reviews' && (
           <div>
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold">{t('product_page.reviews_title')}</h2>
+            <div className="flex items-center justify-between mb-5">
+              <h2 className="text-xl md:text-2xl font-bold">{t('product_page.reviews_title')}</h2>
               <button
                 onClick={() => setIsReviewFormVisible(!isReviewFormVisible)}
                 className="bg-cyan-500 text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors"
@@ -1111,7 +1111,7 @@ function ProductPage() {
             </div>
 
             {isReviewFormVisible && (
-              <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+              <div className="bg-white rounded-lg shadow-lg p-4 md:p-5 mb-6">
                 <h3 className="text-xl font-bold mb-4">{t('product_page.new_review')}</h3>
                 <ReviewForm onSubmit={handleReviewSubmit} />
               </div>
