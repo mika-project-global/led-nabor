@@ -59,7 +59,7 @@ export default function Catalog() {
               className="group premium-card overflow-hidden"
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent z-10" />
                 <img
                   src={category.image}
                   alt={t(`categories.${category.id}.name`)}
@@ -69,13 +69,13 @@ export default function Catalog() {
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white z-20">
                   <h3
                     className="heading-h2 text-white mb-2 group-hover:translate-y-[-5px] transition-transform"
-                    style={{ textShadow: '0 3px 20px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5)' }}
+                    style={{ textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}
                   >
                     {t(`categories.${category.id}.name`)}
                   </h3>
                   <p
                     className="text-base md:text-lg text-gray-100 group-hover:translate-y-[-5px] transition-transform delay-75"
-                    style={{ textShadow: '0 3px 20px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5)' }}
+                    style={{ textShadow: '0 2px 12px rgba(0,0,0,0.45)' }}
                   >
                     {t(`categories.${category.id}.description`)}
                   </p>
