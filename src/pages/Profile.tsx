@@ -325,7 +325,7 @@ export default function Profile() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+                    className="btn-primary btn-full disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? 'Saving...' : 'Save Changes'}
                   </button>

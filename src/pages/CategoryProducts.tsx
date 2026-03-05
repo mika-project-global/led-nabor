@@ -160,11 +160,11 @@ export default function CategoryProducts() {
                         {formatPrice(product.price)}
                       </div>
                       <div className="flex flex-col gap-2">
-                        <button 
+                        <button
                           onClick={() => handleAddToCart(product)}
-                          className="w-full bg-cyan-500 text-white px-4 py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-cyan-600 transition-colors"
+                          className="btn-primary btn-full btn-compact"
                         >
-                          <CartIcon size={20} />
+                          <CartIcon size={18} />
                           {t('add_to_cart')}
                         </button>
                         <Link

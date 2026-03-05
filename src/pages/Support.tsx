@@ -138,7 +138,7 @@ export default function Support() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors disabled:bg-gray-300 flex items-center justify-center gap-2"
+              className="btn-primary btn-full disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 t('support.form.sending')

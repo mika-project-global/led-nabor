@@ -225,6 +225,57 @@
 
 /* Premium Button System */
 .btn-base {
+  @apply h-11 px-6 rounded-xl font-medium transition-all duration-200 inline-flex items-center justify-center gap-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply btn-base bg-cyan-600 text-white shadow-sm;
+  @apply hover:bg-cyan-700 hover:shadow-md;
+  @apply focus:ring-cyan-500;
+  @apply active:bg-cyan-800;
+}
+
+.btn-secondary {
+  @apply btn-base bg-white text-gray-700 border border-gray-300 shadow-sm;
+  @apply hover:bg-gray-50 hover:border-gray-400;
+  @apply focus:ring-gray-400;
+  @apply active:bg-gray-100;
+}
+
+.btn-tertiary {
+  @apply btn-base bg-gray-100 text-gray-700;
+  @apply hover:bg-gray-200;
+  @apply focus:ring-gray-400;
+  @apply active:bg-gray-300;
+}
+
+.btn-danger {
+  @apply btn-base bg-red-600 text-white shadow-sm;
+  @apply hover:bg-red-700 hover:shadow-md;
+  @apply focus:ring-red-500;
+  @apply active:bg-red-800;
+}
+
+.btn-success {
+  @apply btn-base bg-green-600 text-white shadow-sm;
+  @apply hover:bg-green-700 hover:shadow-md;
+  @apply focus:ring-green-500;
+  @apply active:bg-green-800;
+}
+
+/* Compact button variant for mobile/tight spaces */
+.btn-compact {
+  @apply h-10 px-4 text-sm;
+}
+
+/* Full width button */
+.btn-full {
+  @apply w-full;
+}
+
+/* Premium Button System */
+.btn-base {
   @apply inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200;
   @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
   /* Mobile-first: compact size */

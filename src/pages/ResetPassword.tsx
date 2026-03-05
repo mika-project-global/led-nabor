@@ -147,7 +147,7 @@ export default function ResetPassword() {
             <p className="text-gray-600 mb-6">{error}</p>
             <button
               onClick={() => navigate(`/${locale}/auth`)}
-              className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+              className="w-full btn-primary btn-full"
             >
               {t('auth.back_to_login')}
             </button>
@@ -207,7 +207,7 @@ export default function ResetPassword() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-all hover:shadow-md disabled:bg-gray-300 disabled:cursor-not-allowed"
+            className="btn-primary btn-full disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? (
               <div className="flex items-center justify-center">

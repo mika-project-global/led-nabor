@@ -203,13 +203,13 @@ export default function OrderSuccess() {
         <div className="space-y-4">
           <Link
             to="/"
-            className="block w-full bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
+            className="btn-primary btn-full"
           >
             {t('order.continue_shopping')}
           </Link>
           <button
             onClick={() => window.print()}
-            className="block w-full border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors"
+            className="btn-secondary btn-full"
           >
             {t('order.print_order')}
           </button>
