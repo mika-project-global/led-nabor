@@ -107,28 +107,28 @@ export default function CategoryProducts() {
         canonicalUrl={canonicalUrl}
       />
       <main className="max-w-7xl mx-auto px-4 py-5 md:py-8">
-        <h2 className="text-4xl font-bold mb-2">{t(`categories.${category.id}.name`)}</h2>
-        <p className="text-xl text-gray-600 mb-8">{t(`categories.${category.id}.description`)}</p>
-      
+        <h2 className="text-3xl font-bold mb-2">{t(`categories.${category.id}.name`)}</h2>
+        <p className="text-lg text-gray-600 mb-6">{t(`categories.${category.id}.description`)}</p>
+
       {Object.entries(groupedProducts).map(([series, seriesProducts], index) => {
         const firstProduct = seriesProducts[0];
         const powerInfo = firstProduct.name.match(/\((.*?)\)/)?.[1] || '';
-        
+
         return (
-          <div key={series} className="mb-16">
-            <h2 className="text-3xl font-bold mb-4">
+          <div key={series} className="mb-10 md:mb-12">
+            <h2 className="text-2xl md:text-2xl font-bold mb-3">
               {getSeriesTitle(series, index, powerInfo)}
             </h2>
-            <div className="text-lg mb-8">{getSeriesDescription(series)}</div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-base mb-5 md:mb-6">{getSeriesDescription(series)}</div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {seriesProducts.map(product => {
                 const length = product.name.match(/\d+(?= метров)/)?.[0];
 
                 return (
                   <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                     <Link to={getProductUrl(locale, product)} className="block">
-                      <div className="relative h-48">
+                      <div className="relative h-40">
                         <img
                           src={getImageUrl(product.image)}
                           alt={product.name}
@@ -139,11 +139,11 @@ export default function CategoryProducts() {
                             e.preventDefault();
                             toggleWishlist(product.id);
                           }}
-                          className="absolute top-2 right-2 p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                          className="absolute top-2 right-2 p-1.5 bg-white/90 rounded-full hover:bg-white transition-colors"
                           aria-label={isInWishlist(product.id) ? 'Remove from wishlist' : 'Add to wishlist'}
                         >
                           <Heart
-                            className={`w-5 h-5 ${
+                            className={`w-4 h-4 ${
                               isInWishlist(product.id)
                                 ? 'fill-red-500 text-red-500'
                                 : 'text-gray-600'
@@ -152,11 +152,11 @@ export default function CategoryProducts() {
                         </button>
                       </div>
                     </Link>
-                    <div className="p-4">
-                      <div className="text-lg font-medium mb-2">
+                    <div className="p-3">
+                      <div className="text-base font-medium mb-1.5">
                         {length} {t('meters')}
                       </div>
-                      <div className="text-xl font-bold mb-4">
+                      <div className="text-lg font-bold mb-3">
                         {formatPrice(product.price)}
                       </div>
                       <div className="flex flex-col gap-2">
