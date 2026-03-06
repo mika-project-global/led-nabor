@@ -351,6 +351,14 @@
       "remote_control": "Remote control",
       "connectors_cables": "Connectors and cables",
       "installation_manual": "Installation manual"
+    },
+    "why_choose_this_kit": "Why Choose This Kit",
+    "kit_advantages": {
+      "dot_free_light": "Dot-free light (COB technology)",
+      "complete_kit": "Complete kit for installation",
+      "smartphone_control": "Smartphone control",
+      "rgb_adjustable": "RGB + adjustable white",
+      "any_interior": "Suitable for any interior"
     }
   },
   "trust_indicators": {

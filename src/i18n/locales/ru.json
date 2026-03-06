@@ -351,6 +351,14 @@
       "remote_control": "Пульт управления",
       "connectors_cables": "Коннекторы и кабели",
       "installation_manual": "Инструкция по установке"
+    },
+    "why_choose_this_kit": "Почему выбирают этот комплект",
+    "kit_advantages": {
+      "dot_free_light": "Свет без точек (COB технология)",
+      "complete_kit": "Полный комплект для установки",
+      "smartphone_control": "Управление через смартфон",
+      "rgb_adjustable": "RGB + регулируемый белый",
+      "any_interior": "Подходит для любого интерьера"
     }
   },
   "trust_indicators": {

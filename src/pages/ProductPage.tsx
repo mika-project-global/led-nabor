@@ -1023,6 +1023,27 @@ function ProductPage() {
               </div>
             </div>
 
+            {/* Почему выбирают этот комплект */}
+            <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 md:p-5 border border-cyan-100">
+              <h3 className="text-lg font-semibold mb-3 text-gray-900">
+                {t('product_page.why_choose_this_kit')}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {[
+                  'dot_free_light',
+                  'complete_kit',
+                  'smartphone_control',
+                  'rgb_adjustable',
+                  'any_interior'
+                ].map((advantage, index) => (
+                  <div key={index} className="flex items-center gap-2.5">
+                    <Check className="w-4 h-4 text-cyan-600 flex-shrink-0" />
+                    <span className="text-sm text-gray-700">{t(`product_page.kit_advantages.${advantage}`)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* Комплектация */}
             <div className="premium-card p-4 md:p-5">
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
