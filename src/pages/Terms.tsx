@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { getStaticPageAlternateUrls } from '../lib/urls';
+import { useLocale } from '../context/LocaleContext';
 
 const COMPANY_NAME = 'LED Nabor';
 const COMPANY_EMAIL = 'info@led-nabor.com';
 
 export default function Terms() {
   const { t } = useTranslation();
+  const { locale } = useLocale();
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 bg-gradient-to-b from-white to-gray-50">
@@ -83,7 +85,7 @@ export default function Terms() {
           <p>{t('terms_page.section_6_desc')}</p>
           <p className="mt-6">
             {t('terms_page.section_6_link')}{' '}
-            <Link to="/privacy-policy" className="text-cyan-600 hover:text-cyan-700">
+            <Link to={`/${locale}/privacy-policy`} className="text-cyan-600 hover:text-cyan-700">
               {t('privacy_policy')}
             </Link>.
           </p>
@@ -140,7 +142,7 @@ export default function Terms() {
         </p>
         <p className="text-gray-600">
           {t('terms_page.additional_info_questions')}{' '}
-          <Link to="/support" className="text-cyan-600 hover:text-cyan-700">
+          <Link to={`/${locale}/support`} className="text-cyan-600 hover:text-cyan-700">
             {t('terms_page.support_team')}
           </Link>.
         </p>

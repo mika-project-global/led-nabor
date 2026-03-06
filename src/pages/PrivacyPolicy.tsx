@@ -3,12 +3,14 @@ import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '../hooks/useTranslation';
 import { getStaticPageAlternateUrls } from '../lib/urls';
+import { useLocale } from '../context/LocaleContext';
 
 const COMPANY_NAME = 'LED Nabor';
 const COMPANY_EMAIL = 'info@led-nabor.com';
 
 export default function PrivacyPolicy() {
   const { t } = useTranslation();
+  const { locale } = useLocale();
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 bg-gradient-to-b from-white to-gray-50">
@@ -186,14 +188,14 @@ export default function PrivacyPolicy() {
           <h2 className="text-xl font-bold mb-4">{t('privacy_page.additional_info')}</h2>
           <p className="mb-4">
             {t('privacy_page.additional_info_desc')}{' '}
-            <Link to="/terms" className="text-cyan-600 hover:text-cyan-700">
+            <Link to={`/${locale}/terms`} className="text-cyan-600 hover:text-cyan-700">
               {t('terms_of_use')}
             </Link>
             {t('privacy_page.additional_info_link')}
           </p>
           <p>
             {t('privacy_page.additional_info_questions')}{' '}
-            <Link to="/support" className="text-cyan-600 hover:text-cyan-700">
+            <Link to={`/${locale}/support`} className="text-cyan-600 hover:text-cyan-700">
               {t('terms_page.support_team')}
             </Link>.
           </p>

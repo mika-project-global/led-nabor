@@ -989,7 +989,7 @@ function ProductPage() {
 
                 <div className="flex items-center gap-2 text-gray-600">
                   <Package size={20} />
-                  <span>{t('product.in_stock')} • {t('product.free_delivery')} • <Link to="/warranty" className="text-cyan-600 hover:underline">{t('product.warranty_24_months')}</Link></span>
+                  <span>{t('product.in_stock')} • {t('product.free_delivery')} • <Link to={`/${locale}/warranty`} className="text-cyan-600 hover:underline">{t('product.warranty_24_months')}</Link></span>
                 </div>
               </div>
             )}

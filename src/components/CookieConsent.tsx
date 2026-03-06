@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useLocale } from '../context/LocaleContext';
 
 export function CookieConsent() {
   const { t } = useTranslation();
+  const { locale } = useLocale();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -26,11 +28,11 @@ export function CookieConsent() {
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         <p className="text-gray-600">
           {t('cookie_consent.message')}{' '}
-          <Link to="/privacy-policy" className="text-cyan-600 hover:text-cyan-700">
+          <Link to={`/${locale}/privacy-policy`} className="text-cyan-600 hover:text-cyan-700">
             {t('cookie_consent.privacy_policy')}
           </Link>{' '}
           {t('cookie_consent.and')}{' '}
-          <Link to="/terms" className="text-cyan-600 hover:text-cyan-700">
+          <Link to={`/${locale}/terms`} className="text-cyan-600 hover:text-cyan-700">
             {t('cookie_consent.terms')}
           </Link>.
         </p>
