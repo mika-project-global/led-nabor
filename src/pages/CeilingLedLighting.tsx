@@ -103,13 +103,13 @@ const CeilingLedLighting: React.FC = () => {
               </p>
               <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
-                  to="/led-ceiling-lighting-kit"
+                  to={`/${locale}/led-ceiling-lighting-kit`}
                   className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base md:text-lg font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   {t('ceiling_lighting.hero.cta_primary')}
                 </Link>
                 <Link
-                  to="/installation-guide"
+                  to={`/${locale}/installation-guide`}
                   className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base md:text-lg font-medium rounded-lg text-white hover:bg-white hover:text-blue-700 transition-all duration-200"
                 >
                   {t('ceiling_lighting.hero.cta_secondary')}
@@ -172,7 +172,7 @@ const CeilingLedLighting: React.FC = () => {
                     </div>
 
                     <Link
-                      to={`/product/${product.id}`}
+                      to={`/${locale}/product/${product.id}`}
                       className="inline-flex items-center justify-center w-full px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
                     >
                       {t('ceiling_lighting.products.view_product')}
@@ -255,7 +255,7 @@ const CeilingLedLighting: React.FC = () => {
 
             <div className="text-center mt-12">
               <Link
-                to="/blog"
+                to={`/${locale}/blog`}
                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
               >
                 {t('ceiling_lighting.ideas.view_more')}
@@ -319,13 +319,13 @@ const CeilingLedLighting: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/catalog"
+                to={`/${locale}/catalog`}
                 className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 {t('ceiling_lighting.cta.button_primary')}
               </Link>
               <Link
-                to="/support"
+                to={`/${locale}/support`}
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-medium rounded-lg text-white hover:bg-white hover:text-blue-700 transition-all duration-200"
               >
                 {t('ceiling_lighting.cta.button_secondary')}
