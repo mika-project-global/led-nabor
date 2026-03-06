@@ -171,6 +171,16 @@ const CeilingLedLighting: React.FC = () => {
                           ))}
                     </div>
 
+                    <div className="mb-6 pb-6 border-t pt-6">
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-gray-500 text-sm">{t('ceiling_lighting.products.price_from')}</span>
+                        <span className="text-3xl font-bold text-gray-900">
+                          {Math.min(...product.variants.map(v => v.price)).toLocaleString('cs-CZ')}
+                        </span>
+                        <span className="text-xl text-gray-600">Kč</span>
+                      </div>
+                    </div>
+
                     <Link
                       to={`/${locale}/product/${product.id}`}
                       className="inline-flex items-center justify-center w-full px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"

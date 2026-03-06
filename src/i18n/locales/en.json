@@ -1018,7 +1018,8 @@
     "products": {
       "title": "Our LED Ceiling Kits",
       "subtitle": "Professional COB LED lighting solutions for modern interiors",
-      "view_product": "View Product"
+      "view_product": "View Product",
+      "price_from": "from"
     },
     "benefits": {
       "title": "Why Choose COB LED Ceiling Lighting",
