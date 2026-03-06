@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getWarrantyPolicies } from '../lib/warranty';
 import { WarrantyPolicy, WarrantySelection } from '../types';
-import { ShoppingCart as CartIcon, Truck, Shield, Package, Star, Info, Play, CheckCircle, Radio, Sparkles, Wrench, FileText, PenTool as Tool, Send, Upload, Table as Tabs, Settings, Calculator, Image as ImageIcon } from 'lucide-react';
+import { ShoppingCart as CartIcon, Truck, Shield, Package, Star, Info, Play, CheckCircle, Radio, Sparkles, Wrench, FileText, PenTool as Tool, Send, Upload, Table as Tabs, Settings, Calculator, Image as ImageIcon, Check } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { useCart } from '../context/CartContext';
 import { useLocale } from '../context/LocaleContext';
@@ -1022,6 +1022,29 @@ function ProductPage() {
                 ))}
               </div>
             </div>
+
+            {/* Комплектация */}
+            <div className="premium-card p-4 md:p-5">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Что входит в комплект
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {[
+                  'COB LED лента',
+                  'Блок питания',
+                  'Wi-Fi контроллер',
+                  'Пульт управления',
+                  'Коннекторы и кабели',
+                  'Инструкция по установке'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <span className="text-gray-700">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <TrustIndicators />
             <SocialProof />
           </div>
