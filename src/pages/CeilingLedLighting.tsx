@@ -103,7 +103,7 @@ const CeilingLedLighting: React.FC = () => {
               </p>
               <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
-                  to="/catalog"
+                  to="/led-ceiling-lighting-kit"
                   className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base md:text-lg font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   {t('ceiling_lighting.hero.cta_primary')}
