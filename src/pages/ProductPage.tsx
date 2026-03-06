@@ -1014,8 +1014,12 @@ function ProductPage() {
         {activeTab === 'overview' && (
           <div className="space-y-4 md:space-y-5">
             <div className="premium-card p-4 md:p-5">
-              <div className="text-base md:text-lg text-gray-700">
-                <p>{t(`products.${product.id}.overview_text`)}</p>
+              <div className="text-base md:text-lg text-gray-700 space-y-4">
+                {t(`products.${product.id}.overview_text`).split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </div>
             <TrustIndicators />
