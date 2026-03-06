@@ -227,6 +227,25 @@ const CeilingLedLighting: React.FC = () => {
           </div>
         </section>
 
+        {/* Usage Section - SEO */}
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                {t('ceiling_lighting.usage.title')}
+              </h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg">
+                  {t('ceiling_lighting.usage.text_1')}
+                </p>
+                <p className="text-base md:text-lg">
+                  {t('ceiling_lighting.usage.text_2')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Design Ideas Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
