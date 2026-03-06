@@ -72,7 +72,7 @@
     "tagline": "LED Ceiling Kits"
   },
   "product": {
-    "add_to_cart": "Add to cart",
+    "add_to_cart": "Buy Complete Kit",
     "in_stock": "In stock",
     "out_of_stock": "Out of stock",
     "details": "Product details",
@@ -959,7 +959,7 @@
     "control": "Control",
     "power": "Power Supply",
     "total": "Total",
-    "add_to_cart": "Add to Cart",
+    "add_to_cart": "Buy Complete Kit",
     "select_all": "Please select all options",
     "added_to_cart": "Kit added to cart!",
     "progress": {
