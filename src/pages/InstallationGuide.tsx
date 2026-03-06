@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { PenTool as Tool, AlertTriangle, CheckCircle, Lightbulb } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { PenTool as Tool, AlertTriangle, CheckCircle, Lightbulb, Package } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { supabase } from '../lib/supabase';
 import { getStaticPageAlternateUrls } from '../lib/urls';
+import { useLocale } from '../context/LocaleContext';
 
 interface InstallationVideo {
   video_url: string;
@@ -12,6 +14,7 @@ interface InstallationVideo {
 
 export default function InstallationGuide() {
   const { t } = useTranslation();
+  const { locale } = useLocale();
   const [videos, setVideos] = useState<InstallationVideo[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -179,6 +182,24 @@ export default function InstallationGuide() {
             </div>
           );
         })}
+      </div>
+
+      <div className="mt-16 text-center">
+        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-10 border border-blue-100">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            {t('installation_guide.cta_title')}
+          </h2>
+          <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+            {t('installation_guide.cta_subtitle')}
+          </p>
+          <Link
+            to={`/${locale}/led-ceiling-lighting-kit`}
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+          >
+            <Package className="w-5 h-5" />
+            {t('installation_guide.view_kits_button')}
+          </Link>
+        </div>
       </div>
     </div>
   );
