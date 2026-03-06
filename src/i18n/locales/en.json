@@ -342,7 +342,16 @@
     "send_request": "Send Request",
     "in_stock_delivery": "In stock • Free delivery • 24-month warranty",
     "placeholder_example": "Example: 12",
-    "control_options_title": "Control Options"
+    "control_options_title": "Control Options",
+    "whats_included": "What's Included",
+    "kit_items": {
+      "cob_led_strip": "COB LED strip",
+      "power_supply": "Power supply",
+      "wifi_controller": "Wi-Fi controller",
+      "remote_control": "Remote control",
+      "connectors_cables": "Connectors and cables",
+      "installation_manual": "Installation manual"
+    }
   },
   "trust_indicators": {
     "warranty_years": "2 years",

@@ -342,7 +342,16 @@
     "send_request": "Отправить запрос",
     "in_stock_delivery": "В наличии • Бесплатная доставка • 24 месяца гарантии",
     "placeholder_example": "Пример: 12",
-    "control_options_title": "Варианты управления"
+    "control_options_title": "Варианты управления",
+    "whats_included": "Что входит в комплект",
+    "kit_items": {
+      "cob_led_strip": "COB LED лента",
+      "power_supply": "Блок питания",
+      "wifi_controller": "Wi-Fi контроллер",
+      "remote_control": "Пульт управления",
+      "connectors_cables": "Коннекторы и кабели",
+      "installation_manual": "Инструкция по установке"
+    }
   },
   "trust_indicators": {
     "warranty_years": "2 года",

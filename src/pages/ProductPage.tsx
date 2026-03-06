@@ -1026,20 +1026,20 @@ function ProductPage() {
             {/* Комплектация */}
             <div className="premium-card p-4 md:p-5">
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                Что входит в комплект
+                {t('product_page.whats_included')}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {[
-                  'COB LED лента',
-                  'Блок питания',
-                  'Wi-Fi контроллер',
-                  'Пульт управления',
-                  'Коннекторы и кабели',
-                  'Инструкция по установке'
+                  'cob_led_strip',
+                  'power_supply',
+                  'wifi_controller',
+                  'remote_control',
+                  'connectors_cables',
+                  'installation_manual'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-700">{t(`product_page.kit_items.${item}`)}</span>
                   </div>
                 ))}
               </div>
