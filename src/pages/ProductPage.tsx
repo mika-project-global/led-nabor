@@ -1023,6 +1023,31 @@ function ProductPage() {
               </div>
             </div>
 
+            {/* SEO Block - Perfect For */}
+            <div className="premium-card p-4">
+              <h3 className="text-base font-semibold mb-2.5 text-gray-900">
+                {t('product_page.perfect_for')}
+              </h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+                <li className="flex items-center gap-2">
+                  <span className="text-cyan-600">•</span>
+                  {t('product_page.perfect_for_items.ceiling_lighting')}
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-cyan-600">•</span>
+                  {t('product_page.perfect_for_items.hidden_led')}
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-cyan-600">•</span>
+                  {t('product_page.perfect_for_items.cornice_lighting')}
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-cyan-600">•</span>
+                  {t('product_page.perfect_for_items.modern_interior')}
+                </li>
+              </ul>
+            </div>
+
             {/* Почему выбирают этот комплект */}
             <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 md:p-5 border border-cyan-100">
               <h3 className="text-lg font-semibold mb-3 text-gray-900">

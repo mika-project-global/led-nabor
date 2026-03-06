@@ -360,6 +360,13 @@
       "rgb_adjustable": "RGB + adjustable white",
       "tunable_white": "Tunable white temperature (2700K-6500K)",
       "any_interior": "Suitable for any interior"
+    },
+    "perfect_for": "Perfect For",
+    "perfect_for_items": {
+      "ceiling_lighting": "ceiling lighting",
+      "hidden_led": "hidden LED lighting",
+      "cornice_lighting": "cornice lighting",
+      "modern_interior": "modern interior lighting"
     }
   },
   "trust_indicators": {

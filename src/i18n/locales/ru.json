@@ -360,6 +360,13 @@
       "rgb_adjustable": "RGB + регулируемый белый",
       "tunable_white": "Регулируемая температура белого (2700K-6500K)",
       "any_interior": "Подходит для любого интерьера"
+    },
+    "perfect_for": "Идеально подходит для",
+    "perfect_for_items": {
+      "ceiling_lighting": "потолочной подсветки",
+      "hidden_led": "скрытой LED подсветки",
+      "cornice_lighting": "карнизной подсветки",
+      "modern_interior": "современного интерьерного освещения"
     }
   },
   "trust_indicators": {
