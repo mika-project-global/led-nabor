@@ -706,6 +706,13 @@ function ProductPage() {
                 )}
               </span>
             </div>
+            {product.id === 1 && (
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-full">
+                <span className="text-xs font-medium text-amber-700">
+                  {t('led_ceiling_kit.popular_badge')}
+                </span>
+              </div>
+            )}
           </div>
 
           <div className="bg-gray-50 p-3 md:p-4 rounded-lg mb-4">
