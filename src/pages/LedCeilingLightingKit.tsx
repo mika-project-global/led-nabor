@@ -121,13 +121,13 @@ export default function LedCeilingLightingKit() {
                   <div className="relative h-52 bg-gradient-to-br from-gray-100 to-gray-200">
                     <img
                       src={getImageUrl(product.image)}
-                      alt={product.name}
+                      alt={t(`products.${product.id}.name`)}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-4 md:p-5">
                     <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-2">
-                      {product.name}
+                      {t(`products.${product.id}.name`)}
                     </h3>
                     {product.id === 1 && (
                       <div className="mb-3 inline-flex items-center gap-1.5 px-2.5 py-1 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-full">
@@ -137,7 +137,7 @@ export default function LedCeilingLightingKit() {
                       </div>
                     )}
                     <p className="text-gray-600 text-sm md:text-base mb-3 line-clamp-2">
-                      {product.description.split('\n')[2]}
+                      {t(`products.${product.id}.description`)}
                     </p>
                     <div className="mb-3">
                       <div className="text-sm text-gray-500 mb-1">
