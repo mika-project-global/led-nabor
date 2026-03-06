@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, CheckCircle2, Lightbulb } from 'lucide-react';
+import { ChevronRight, CheckCircle2, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useLocale } from '../context/LocaleContext';
 import { SEO } from '../components/SEO';
@@ -10,6 +11,11 @@ import { getImageUrl } from '../lib/supabase-storage';
 export default function LedCeilingLightingKit() {
   const { t } = useTranslation();
   const { locale, formatPrice } = useLocale();
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
   const alternateUrls = getStaticPageAlternateUrls('/led-ceiling-lighting-kit');
   const canonicalUrl = `${SITE_URL}/${locale}/led-ceiling-lighting-kit/`;
@@ -228,25 +234,32 @@ export default function LedCeilingLightingKit() {
             <h2 className="text-xl md:text-2xl font-bold text-center text-gray-900 mb-6">
               {t('led_ceiling_kit.faq_title')}
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {faqItems.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-4 md:p-5 border border-gray-100"
+                  className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
                 >
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-1">
-                      <CheckCircle2 className="w-5 h-5 text-cyan-500" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-gray-900 mb-2">
-                        {item.question}
-                      </h3>
-                      <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-4 md:px-5 py-3 md:py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-gray-900 pr-8">
+                      {item.question}
+                    </span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-cyan-500 flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-4 md:px-5 pb-3 md:pb-4 pt-1 md:pt-2">
+                      <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                         {item.answer}
                       </p>
                     </div>
-                  </div>
+                  )}
                 </div>
               ))}
             </div>
