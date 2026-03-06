@@ -9,11 +9,11 @@ import { getImageUrl } from '../lib/supabase-storage';
 
 interface CartProps {
   items: CartItem[];
-  onRemoveFromCart: (id: number) => void;
-  onUpdateQuantity: (id: number, quantity: number) => void;
-  onUpdatePlugType?: (id: number, plugType: 'EU' | 'UK') => void;
-  onUpdateAdapter?: (id: number, adapter: boolean) => void;
-  onUpdateWarranty: (id: number, warrantyId: string | null) => void;
+  onRemoveFromCart: (id: number, variantId: string) => void;
+  onUpdateQuantity: (id: number, variantId: string, quantity: number) => void;
+  onUpdatePlugType?: (id: number, variantId: string, plugType: 'EU' | 'UK') => void;
+  onUpdateAdapter?: (id: number, variantId: string, adapter: boolean) => void;
+  onUpdateWarranty: (id: number, variantId: string, warrantyId: string | null) => void;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -94,11 +94,11 @@ export function Cart({
           <>
             <div className="space-y-4">
               {items.map((item) => (
-                <div key={item.id} className="flex gap-4 border-b pb-4">
+                <div key={`${item.id}-${item.variant.id}`} className="flex gap-4 border-b pb-4">
                   <div className="w-20 h-20 flex-shrink-0">
-                    <img 
-                      src={getImageUrl(item.image)} 
-                      alt={item.name} 
+                    <img
+                      src={getImageUrl(item.image)}
+                      alt={item.name}
                       className="w-full h-full object-cover rounded"
                       onError={(e) => {
                         const img = e.target as HTMLImageElement;
@@ -108,6 +108,7 @@ export function Cart({
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold">{item.name}</h3>
+                    <p className="text-sm text-gray-500">{item.variant.length}m</p>
                     <p className="text-gray-600">
                       {formatPrice(item.variant.price + (item.warranty?.additionalCost || 0))} × {item.quantity}
                     </p>
@@ -160,10 +161,10 @@ export function Cart({
                                     // Calculate the additional cost
                                     // Store the warranty policy in the item
                                     item.warrantyPolicies = warrantyPolicies[item.id];
-                                    
+
                                     // Update the warranty
-                                    onUpdateWarranty(item.id, policy.id);
-                                    
+                                    onUpdateWarranty(item.id, item.variant.id, policy.id);
+
                                     // Close the dropdown
                                     toggleWarrantyOptions(item.id);
                                   }}
@@ -193,19 +194,19 @@ export function Cart({
                       <div className="flex items-center gap-2">
                         <button
                           className="px-2 py-1 border rounded"
-                          onClick={() => onUpdateQuantity(item.id, Math.max(0, item.quantity - 1))}
+                          onClick={() => onUpdateQuantity(item.id, item.variant.id, Math.max(0, item.quantity - 1))}
                         >
                           -
                         </button>
                         <span>{item.quantity}</span>
                         <button
                           className="px-2 py-1 border rounded"
-                          onClick={() => onUpdateQuantity(item.id, item.quantity + 1)}
+                          onClick={() => onUpdateQuantity(item.id, item.variant.id, item.quantity + 1)}
                         >
                           +
                         </button>
                         <button
-                          onClick={() => onRemoveFromCart(item.id)}
+                          onClick={() => onRemoveFromCart(item.id, item.variant.id)}
                           className="text-red-500 hover:text-red-700 ml-auto"
                         >
                           <X size={20} />

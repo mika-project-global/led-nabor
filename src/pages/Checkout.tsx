@@ -355,11 +355,11 @@ export default function Checkout() {
   };
 
   // Function to handle quantity changes
-  const handleQuantityChange = (id: number, change: number) => {
-    const item = items.find(item => item.id === id);
+  const handleQuantityChange = (id: number, variantId: string, change: number) => {
+    const item = items.find(item => item.id === id && item.variant.id === variantId);
     if (item) {
       const newQuantity = Math.max(1, item.quantity + change);
-      updateQuantity(id, newQuantity);
+      updateQuantity(id, variantId, newQuantity);
     }
   };
 
@@ -647,7 +647,7 @@ export default function Checkout() {
             <h2 className="text-xl font-bold mb-6">{t('checkout.order_summary')}</h2>
             <div className="space-y-4">
               {items.map((item) => (
-                <div key={item.id} className="flex gap-4">
+                <div key={`${item.id}-${item.variant.id}`} className="flex gap-4">
                   <div className="w-20 h-20 flex-shrink-0">
                     <img
                       src={getImageUrl(item.image)}
@@ -661,6 +661,7 @@ export default function Checkout() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-medium">{item.name}</h3>
+                    <p className="text-sm text-gray-500">{item.variant.length}m</p>
                     <p className="text-gray-600">
                       {formatPrice(item.variant.price)} × {item.quantity}
                     </p>
@@ -673,7 +674,7 @@ export default function Checkout() {
                     {/* Quantity controls */}
                     <div className="flex items-center mt-2 space-x-2">
                       <button
-                        onClick={() => handleQuantityChange(item.id, -1)}
+                        onClick={() => handleQuantityChange(item.id, item.variant.id, -1)}
                         className="p-1 border border-gray-300 rounded hover:bg-gray-100"
                         aria-label="Decrease quantity"
                       >
@@ -681,7 +682,7 @@ export default function Checkout() {
                       </button>
                       <span className="text-gray-700 mx-1">{item.quantity}</span>
                       <button
-                        onClick={() => handleQuantityChange(item.id, 1)}
+                        onClick={() => handleQuantityChange(item.id, item.variant.id, 1)}
                         className="p-1 border border-gray-300 rounded hover:bg-gray-100"
                         aria-label="Increase quantity"
                       >

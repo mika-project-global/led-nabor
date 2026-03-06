@@ -5,15 +5,15 @@ interface CartContextType {
   items: CartItem[];
   setItems: (items: CartItem[]) => void;
   addToCart: (product: Product) => void;
-  removeFromCart: (productId: number) => void;
-  updateQuantity: (productId: number, quantity: number) => void;
-  updateWarranty: (productId: number, warrantyId: string | null) => void;
-  updateAdapter: (productId: number, adapter: boolean) => void;
-  updatePlugType: (productId: number, plugType: 'EU' | 'UK') => void;
+  removeFromCart: (productId: number, variantId: string) => void;
+  updateQuantity: (productId: number, variantId: string, quantity: number) => void;
+  updateWarranty: (productId: number, variantId: string, warrantyId: string | null) => void;
+  updateAdapter: (productId: number, variantId: string, adapter: boolean) => void;
+  updatePlugType: (productId: number, variantId: string, plugType: 'EU' | 'UK') => void;
   clearCart: () => void;
   getTotalItems: () => number;
   getTotalPrice: () => number;
-  hasItem: (productId: number) => boolean;
+  hasItem: (productId: number, variantId?: string) => boolean;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -67,70 +67,83 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     }, 0);
   };
 
-  const hasItem = (productId: number) => {
+  const hasItem = (productId: number, variantId?: string) => {
+    if (variantId) {
+      return items.some(item => item.id === productId && item.variant.id === variantId);
+    }
     return items.some(item => item.id === productId);
   };
 
   const addToCart = (product: Product) => {
     setItems(currentItems => {
-      const existingItem = currentItems.find(item => item.id === product.id);
-      
+      const existingItem = currentItems.find(
+        item => item.id === product.id && item.variant.id === product.variant.id
+      );
+
       if (existingItem) {
         return currentItems.map(item =>
-          item.id === product.id
+          item.id === product.id && item.variant.id === product.variant.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       }
-      
+
       return [...currentItems, { ...product, quantity: 1 }];
     });
   };
 
-  const removeFromCart = (productId: number) => {
-    setItems(currentItems => currentItems.filter(item => item.id !== productId));
+  const removeFromCart = (productId: number, variantId: string) => {
+    setItems(currentItems => currentItems.filter(
+      item => !(item.id === productId && item.variant.id === variantId)
+    ));
   };
 
-  const updateQuantity = (productId: number, quantity: number) => {
+  const updateQuantity = (productId: number, variantId: string, quantity: number) => {
     setItems(currentItems => {
       if (quantity === 0) {
-        return currentItems.filter(item => item.id !== productId);
+        return currentItems.filter(
+          item => !(item.id === productId && item.variant.id === variantId)
+        );
       }
-      
+
       return currentItems.map(item =>
-        item.id === productId ? { ...item, quantity } : item
+        item.id === productId && item.variant.id === variantId
+          ? { ...item, quantity }
+          : item
       );
     });
   };
 
-  const updateAdapter = (productId: number, adapter: boolean) => {
+  const updateAdapter = (productId: number, variantId: string, adapter: boolean) => {
     setItems(currentItems => {
       return currentItems.map(item =>
-        item.id === productId ? { ...item, adapter } : item
+        item.id === productId && item.variant.id === variantId
+          ? { ...item, adapter }
+          : item
       );
     });
   };
 
-  const updatePlugType = (productId: number, plugType: 'EU' | 'UK') => {
+  const updatePlugType = (productId: number, variantId: string, plugType: 'EU' | 'UK') => {
     setItems(currentItems => {
       return currentItems.map(item =>
-        item.id === productId ? { ...item, plugType } : item
+        item.id === productId && item.variant.id === variantId
+          ? { ...item, plugType }
+          : item
       );
     });
   };
 
-  const updateWarranty = (productId: number, warrantyId: string | null) => {
+  const updateWarranty = (productId: number, variantId: string, warrantyId: string | null) => {
     setItems(currentItems => {
       return currentItems.map(item => {
-        if (item.id === productId) {
+        if (item.id === productId && item.variant.id === variantId) {
           if (warrantyId === null) {
-            // Remove warranty
             const { warranty, ...itemWithoutWarranty } = item;
             return itemWithoutWarranty;
           } else {
-            // Get the warranty policy details from the item's warrantyPolicies array
             const warrantyPolicy = item.warrantyPolicies?.find(p => p.id === warrantyId);
-            
+
             if (warrantyPolicy) {
               return {
                 ...item,
