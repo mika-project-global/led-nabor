@@ -121,11 +121,11 @@ export default function LedCeilingLightingKit() {
             <div className="grid md:grid-cols-2 gap-5 md:gap-6">
               {featuredProducts.map((product) => (
                 <div key={product.id} className="premium-card overflow-hidden transform hover:-translate-y-1 flex flex-col bg-white">
-                  <div className="relative h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex-shrink-0">
+                  <div className="relative h-56 bg-gradient-to-br from-gray-100 to-gray-200 flex-shrink-0 flex items-center justify-center">
                     <ImageWithFallback
                       src={getImageUrl(product.image)}
                       alt={t(`products.${product.id}.name`)}
-                      className="w-full h-full object-contain p-4"
+                      className="max-w-full max-h-full object-contain"
                       width={800}
                       height={600}
                       loading="lazy"
