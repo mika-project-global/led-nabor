@@ -697,12 +697,13 @@ function ProductPage() {
                 {reviews.length > 0 ? (
                   <>
                     {averageRating.toFixed(1)} ({reviews.length} {
-                      reviews.length === 1 ? 'review' :
-                      'reviews'
+                      reviews.length === 1
+                        ? t('product.review_singular')
+                        : t('product.review_plural')
                     })
                   </>
                 ) : (
-                  'No reviews'
+                  t('product.no_reviews')
                 )}
               </span>
             </div>

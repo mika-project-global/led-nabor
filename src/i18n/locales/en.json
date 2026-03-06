@@ -120,6 +120,8 @@
     "all_reviews": "All Reviews",
     "no_reviews": "No reviews yet",
     "be_first_review": "Be the first to write a review!",
+    "review_singular": "review",
+    "review_plural": "reviews",
     "select_warranty": "Select warranty",
     "ready_to_ship": "Ready to ship",
     "fast_shipping": "Fast shipping",

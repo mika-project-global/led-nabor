@@ -120,6 +120,8 @@
     "all_reviews": "Все отзывы",
     "no_reviews": "Пока нет отзывов",
     "be_first_review": "Будьте первым, кто напишет отзыв!",
+    "review_singular": "отзыв",
+    "review_plural": "отзывов",
     "select_warranty": "Выберите гарантию",
     "ready_to_ship": "Готов к отправке",
     "fast_shipping": "Быстрая доставка",
