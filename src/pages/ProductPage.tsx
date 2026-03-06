@@ -1029,13 +1029,22 @@ function ProductPage() {
                 {t('product_page.why_choose_this_kit')}
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {[
-                  'dot_free_light',
-                  'complete_kit',
-                  'smartphone_control',
-                  'rgb_adjustable',
-                  'any_interior'
-                ].map((advantage, index) => (
+                {(product.id === 1
+                  ? [
+                      'dot_free_light',
+                      'complete_kit',
+                      'smartphone_control',
+                      'rgb_adjustable',
+                      'any_interior'
+                    ]
+                  : [
+                      'dot_free_light',
+                      'complete_kit',
+                      'smartphone_control',
+                      'tunable_white',
+                      'any_interior'
+                    ]
+                ).map((advantage, index) => (
                   <div key={index} className="flex items-center gap-2.5">
                     <Check className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                     <span className="text-sm text-gray-700">{t(`product_page.kit_advantages.${advantage}`)}</span>
