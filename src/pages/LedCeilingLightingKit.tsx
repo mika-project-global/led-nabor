@@ -1,21 +1,18 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, CheckCircle2, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronRight, CheckCircle2, Lightbulb } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { useLocale } from '../context/LocaleContext';
 import { SEO } from '../components/SEO';
 import { getStaticPageAlternateUrls, SITE_URL, getProductUrl } from '../lib/urls';
 import { products } from '../data/products';
 import { getImageUrl } from '../lib/supabase-storage';
+import { ImageWithFallback } from '../components/ImageWithFallback';
+import Accordion from '../components/Accordion';
+import CTASection from '../components/CTASection';
 
 export default function LedCeilingLightingKit() {
   const { t } = useTranslation();
   const { locale, formatPrice } = useLocale();
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
 
   const alternateUrls = getStaticPageAlternateUrls('/led-ceiling-lighting-kit');
   const canonicalUrl = `${SITE_URL}/${locale}/led-ceiling-lighting-kit/`;
@@ -123,12 +120,15 @@ export default function LedCeilingLightingKit() {
             </h2>
             <div className="grid md:grid-cols-2 gap-5 md:gap-6">
               {featuredProducts.map((product) => (
-                <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-1 flex flex-col">
+                <div key={product.id} className="premium-card overflow-hidden transform hover:-translate-y-1 flex flex-col">
                   <div className="relative h-52 bg-gradient-to-br from-gray-100 to-gray-200">
-                    <img
+                    <ImageWithFallback
                       src={getImageUrl(product.image)}
                       alt={t(`products.${product.id}.name`)}
                       className="w-full h-full object-cover"
+                      width={800}
+                      height={600}
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-4 md:p-5 flex flex-col flex-1">
@@ -184,10 +184,13 @@ export default function LedCeilingLightingKit() {
                   key={index}
                   className="relative h-64 md:h-72 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow group"
                 >
-                  <img
+                  <ImageWithFallback
                     src={image.url}
                     alt={image.title}
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                    width={800}
+                    height={600}
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end">
                     <div className="p-4 text-white">
@@ -234,58 +237,20 @@ export default function LedCeilingLightingKit() {
             <h2 className="text-xl md:text-2xl font-bold text-center text-gray-900 mb-6">
               {t('led_ceiling_kit.faq_title')}
             </h2>
-            <div className="space-y-3">
-              {faqItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
-                >
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full px-4 md:px-5 py-3 md:py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    <span className="text-base md:text-lg font-semibold text-gray-900 pr-8">
-                      {item.question}
-                    </span>
-                    {openFaq === index ? (
-                      <ChevronUp className="w-5 h-5 text-cyan-500 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                    )}
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-4 md:px-5 pb-3 md:pb-4 pt-1 md:pt-2">
-                      <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                        {item.answer}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            <Accordion items={faqItems} />
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-6 md:py-10 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-xl md:text-2xl font-bold mb-3">
-              {locale === 'ru' ? 'Готовы преобразить ваш интерьер?' : 'Ready to Transform Your Space?'}
-            </h2>
-            <p className="text-base md:text-lg mb-4 text-gray-300">
-              {locale === 'ru'
-                ? 'Выберите идеальный комплект LED подсветки для вашего потолка'
-                : 'Choose the perfect LED ceiling lighting kit for your home'}
-            </p>
-            <a
-              href="#kits"
-              className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
-            >
-              {t('led_ceiling_kit.hero_cta')}
-              <ChevronRight className="w-5 h-5" />
-            </a>
-          </div>
-        </section>
+        <CTASection
+          title={t('led_ceiling_kit.cta_title')}
+          subtitle={t('led_ceiling_kit.cta_subtitle')}
+          primaryButton={{
+            text: t('led_ceiling_kit.hero_cta'),
+            to: `#kits`
+          }}
+          variant="dark"
+        />
 
         {/* Internal Links */}
         <section className="py-6 md:py-8 px-4 bg-gray-50">
@@ -296,21 +261,21 @@ export default function LedCeilingLightingKit() {
                 className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-gray-900 mb-1.5">{t('menu.installation_guide')}</h3>
-                <p className="text-sm text-gray-600">{locale === 'ru' ? 'Узнайте как установить' : 'Learn how to install'}</p>
+                <p className="text-sm text-gray-600">{t('led_ceiling_kit.link_installation_desc')}</p>
               </Link>
               <Link
                 to={`/${locale}/blog`}
                 className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-gray-900 mb-1.5">{t('menu.blog')}</h3>
-                <p className="text-sm text-gray-600">{locale === 'ru' ? 'Полезные статьи' : 'Helpful articles'}</p>
+                <p className="text-sm text-gray-600">{t('led_ceiling_kit.link_blog_desc')}</p>
               </Link>
               <Link
                 to={`/${locale}/support`}
                 className="p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-semibold text-gray-900 mb-1.5">{t('menu.support')}</h3>
-                <p className="text-sm text-gray-600">{locale === 'ru' ? 'Нужна помощь?' : 'Need help?'}</p>
+                <p className="text-sm text-gray-600">{t('led_ceiling_kit.link_support_desc')}</p>
               </Link>
             </div>
           </div>

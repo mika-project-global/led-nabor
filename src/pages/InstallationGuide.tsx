@@ -6,6 +6,7 @@ import { SEO } from '../components/SEO';
 import { supabase } from '../lib/supabase';
 import { getStaticPageAlternateUrls } from '../lib/urls';
 import { useLocale } from '../context/LocaleContext';
+import LoadingState from '../components/LoadingState';
 
 interface InstallationVideo {
   video_url: string;
@@ -70,14 +71,7 @@ export default function InstallationGuide() {
   ];
 
   if (loading) {
-    return (
-      <div className="max-w-4xl mx-auto px-4 py-5 md:py-8">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">{t('common.loading')}</p>
-        </div>
-      </div>
-    );
+    return <LoadingState size="large" />;
   }
 
   return (

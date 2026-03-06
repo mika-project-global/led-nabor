@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Lightbulb, CheckCircle, Sparkles, Home, ChevronDown, ChevronUp } from 'lucide-react';
+import { Lightbulb, CheckCircle, Sparkles, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
+import { ImageWithFallback } from '../components/ImageWithFallback';
+import Accordion from '../components/Accordion';
+import CTASection from '../components/CTASection';
 
 const CeilingLedLighting: React.FC = () => {
   const { t, locale } = useTranslation();
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
 
   const ceilingProducts = products.filter(p => [1, 2].includes(p.id));
 
@@ -135,14 +133,17 @@ const CeilingLedLighting: React.FC = () => {
               {ceilingProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100"
+                  className="premium-card overflow-hidden group"
                 >
                   <div className="aspect-video bg-gradient-to-br from-blue-100 to-indigo-100 relative overflow-hidden">
                     {product.images && product.images.length > 0 ? (
-                      <img
+                      <ImageWithFallback
                         src={product.images[0]}
                         alt={t(`products.${product.id}.name`)}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        width={800}
+                        height={600}
+                        loading="lazy"
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full">
@@ -210,7 +211,7 @@ const CeilingLedLighting: React.FC = () => {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="text-center p-5 md:p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+                  className="premium-card-compact text-center p-5 md:p-6"
                 >
                   <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-4">
                     <benefit.icon className="w-7 h-7 text-blue-600" />
@@ -265,10 +266,13 @@ const CeilingLedLighting: React.FC = () => {
                   className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img
+                    <ImageWithFallback
                       src={idea.image}
                       alt={t(idea.titleKey)}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      width={800}
+                      height={600}
+                      loading="lazy"
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end">
@@ -305,63 +309,29 @@ const CeilingLedLighting: React.FC = () => {
               </p>
             </div>
 
-            <div className="space-y-3">
-              {faqItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
-                >
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full px-4 md:px-5 py-3 md:py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    <span className="text-base md:text-lg font-semibold text-gray-900 pr-8">
-                      {t(item.questionKey)}
-                    </span>
-                    {openFaq === index ? (
-                      <ChevronUp className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                    )}
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-4 md:px-5 pb-3 md:pb-4 pt-1 md:pt-2">
-                      <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                        {t(item.answerKey)}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            <Accordion
+              items={faqItems.map(item => ({
+                question: t(item.questionKey),
+                answer: t(item.answerKey)
+              }))}
+            />
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-12 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-              {t('ceiling_lighting.cta.title')}
-            </h2>
-            <p className="text-base md:text-lg text-blue-100 mb-5 md:mb-6">
-              {t('ceiling_lighting.cta.subtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link
-                to={`/${locale}/catalog`}
-                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl"
-              >
-                {t('ceiling_lighting.cta.button_primary')}
-              </Link>
-              <Link
-                to={`/${locale}/support`}
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base font-medium rounded-lg text-white hover:bg-white hover:text-blue-700 transition-all duration-200"
-              >
-                {t('ceiling_lighting.cta.button_secondary')}
-              </Link>
-            </div>
-          </div>
-        </section>
+        <CTASection
+          title={t('ceiling_lighting.cta.title')}
+          subtitle={t('ceiling_lighting.cta.subtitle')}
+          primaryButton={{
+            text: t('ceiling_lighting.cta.button_primary'),
+            to: `/${locale}/catalog`
+          }}
+          secondaryButton={{
+            text: t('ceiling_lighting.cta.button_secondary'),
+            to: `/${locale}/support`
+          }}
+          variant="blue"
+        />
       </div>
     </>
   );
