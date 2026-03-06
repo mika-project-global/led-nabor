@@ -229,7 +229,7 @@ const CeilingLedLighting: React.FC = () => {
         </section>
 
         {/* Usage Section - SEO */}
-        <section className="py-6 md:py-10 bg-white">
+        <section className="py-4 md:py-6 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 md:p-6 border border-gray-100 shadow-sm">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
