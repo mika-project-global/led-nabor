@@ -2,7 +2,7 @@ import { useLocale } from '../context/LocaleContext';
 import i18next from 'i18next';
 
 export function useTranslation() {
-  const { language } = useLocale();
+  const { language, locale } = useLocale();
 
   const t = (key: string, params?: Record<string, string | number>): string => {
     try {
@@ -16,5 +16,5 @@ export function useTranslation() {
     }
   };
 
-  return { t };
+  return { t, locale };
 }
