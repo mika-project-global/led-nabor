@@ -123,7 +123,7 @@ export default function LedCeilingLightingKit() {
             </h2>
             <div className="grid md:grid-cols-2 gap-5 md:gap-6">
               {featuredProducts.map((product) => (
-                <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-1 flex flex-col">
                   <div className="relative h-52 bg-gradient-to-br from-gray-100 to-gray-200">
                     <img
                       src={getImageUrl(product.image)}
@@ -131,7 +131,7 @@ export default function LedCeilingLightingKit() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="p-4 md:p-5">
+                  <div className="p-4 md:p-5 flex flex-col flex-1">
                     <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-2">
                       {t(`products.${product.id}.name`)}
                     </h3>
@@ -145,7 +145,7 @@ export default function LedCeilingLightingKit() {
                     <p className="text-gray-600 text-sm md:text-base mb-3 line-clamp-2">
                       {t(`products.${product.id}.description`)}
                     </p>
-                    <div className="mb-3">
+                    <div className="mb-3 mt-auto">
                       <div className="text-sm text-gray-500 mb-1">
                         {t('product.from')}
                       </div>
