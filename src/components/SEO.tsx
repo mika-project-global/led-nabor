@@ -119,11 +119,11 @@ export function SEO({ title, description, image, type = 'website', keywords, can
           "url": siteUrl,
           "logo": {
             "@type": "ImageObject",
-            "url": `${siteUrl}/favicon/web-app-manifest-512x512.png`,
+            "url": `${siteUrl}/favicon/web-app-manifest-512x512.webp`,
             "width": 512,
             "height": 512
           },
-          "image": `${siteUrl}/favicon/web-app-manifest-512x512.png`,
+          "image": `${siteUrl}/favicon/web-app-manifest-512x512.webp`,
           "sameAs": [
             "https://www.facebook.com/lednabor",
             "https://www.instagram.com/lednabor",
