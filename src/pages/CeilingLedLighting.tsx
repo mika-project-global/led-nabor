@@ -4,6 +4,7 @@ import { Lightbulb, CheckCircle, Sparkles, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
+import { getProductUrl } from '../lib/urls';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import Accordion from '../components/Accordion';
 import CTASection from '../components/CTASection';
@@ -183,7 +184,7 @@ const CeilingLedLighting: React.FC = () => {
                     </div>
 
                     <Link
-                      to={`/${locale}/product/${product.id}`}
+                      to={getProductUrl(locale, product)}
                       className="inline-flex items-center justify-center w-full px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
                     >
                       {t('ceiling_lighting.products.view_product')}
