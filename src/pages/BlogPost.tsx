@@ -105,6 +105,7 @@ export default function BlogPost() {
         .eq('locale', postLocale)
         .neq('id', currentPostId)
         .order('published_at', { ascending: false })
+        .order('created_at', { ascending: false })
         .limit(3);
 
       if (data) {

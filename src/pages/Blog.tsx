@@ -40,7 +40,8 @@ export default function Blog() {
         .select('id, title, slug, excerpt, image_url, published_at, views, locale')
         .eq('published', true)
         .eq('locale', locale)
-        .order('published_at', { ascending: false });
+        .order('published_at', { ascending: false })
+        .order('created_at', { ascending: false });
 
       if (error) throw error;
       setPosts(data || []);
