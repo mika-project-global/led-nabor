@@ -110,6 +110,33 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <meta name="twitter:label2" value="Гарантия" />
       <meta name="twitter:data2" value="24 месяца" />
 
+      {/* Organization Schema - для логотипа в Google Search */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "LED Nabor",
+          "url": siteUrl,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/favicon/web-app-manifest-512x512.png`,
+            "width": 512,
+            "height": 512
+          },
+          "image": `${siteUrl}/favicon/web-app-manifest-512x512.png`,
+          "sameAs": [
+            "https://www.facebook.com/lednabor",
+            "https://www.instagram.com/lednabor",
+            "https://twitter.com/lednabor"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "availableLanguage": ["en", "ru", "de", "pl", "cs"]
+          }
+        })}
+      </script>
+
       {/* Structured Data */}
       {type === 'product' && schema && (
         <script type="application/ld+json">
@@ -140,6 +167,14 @@ export function SEO({ title, description, image, type = 'website', keywords, can
             author: {
               "@type": "Organization",
               name: "LED Nabor"
+            },
+            publisher: {
+              "@type": "Organization",
+              "name": "LED Nabor",
+              "logo": {
+                "@type": "ImageObject",
+                "url": `${siteUrl}/favicon/web-app-manifest-512x512.png`
+              }
             }
           })}
         </script>
