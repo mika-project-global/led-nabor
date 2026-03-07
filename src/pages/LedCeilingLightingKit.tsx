@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, CheckCircle2, Lightbulb } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
@@ -17,12 +18,13 @@ export default function LedCeilingLightingKit() {
   const alternateUrls = getStaticPageAlternateUrls('/led-ceiling-lighting-kit');
   const canonicalUrl = `${SITE_URL}/${locale}/led-ceiling-lighting-kit/`;
 
-  const universalRgb = products.find(p => p.id === 1);
-  const adjustableWhite = products.find(p => p.id === 2);
+  const featuredProducts = useMemo(() => {
+    const universalRgb = products.find(p => p.id === 1);
+    const adjustableWhite = products.find(p => p.id === 2);
+    return [universalRgb, adjustableWhite].filter(Boolean);
+  }, []);
 
-  const featuredProducts = [universalRgb, adjustableWhite].filter(Boolean);
-
-  const galleryImages = [
+  const galleryImages = useMemo(() => [
     {
       url: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop',
       title: 'Modern Living Room'
@@ -39,20 +41,20 @@ export default function LedCeilingLightingKit() {
       url: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&auto=format&fit=crop',
       title: 'Luxury Dining Room'
     }
-  ];
+  ], []);
 
-  const installationSteps = [
+  const installationSteps = useMemo(() => [
     { number: 1, text: t('led_ceiling_kit.installation_step_1') },
     { number: 2, text: t('led_ceiling_kit.installation_step_2') },
     { number: 3, text: t('led_ceiling_kit.installation_step_3') }
-  ];
+  ], [t]);
 
-  const faqItems = [
+  const faqItems = useMemo(() => [
     { question: t('led_ceiling_kit.faq_q1'), answer: t('led_ceiling_kit.faq_a1') },
     { question: t('led_ceiling_kit.faq_q2'), answer: t('led_ceiling_kit.faq_a2') },
     { question: t('led_ceiling_kit.faq_q3'), answer: t('led_ceiling_kit.faq_a3') },
     { question: t('led_ceiling_kit.faq_q4'), answer: t('led_ceiling_kit.faq_a4') }
-  ];
+  ], [t]);
 
   return (
     <>

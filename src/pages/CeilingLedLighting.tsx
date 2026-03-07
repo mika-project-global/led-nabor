@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Lightbulb, CheckCircle, Sparkles, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
@@ -11,9 +11,9 @@ import CTASection from '../components/CTASection';
 const CeilingLedLighting: React.FC = () => {
   const { t, locale } = useTranslation();
 
-  const ceilingProducts = products.filter(p => [1, 2].includes(p.id));
+  const ceilingProducts = useMemo(() => products.filter(p => [1, 2].includes(p.id)), []);
 
-  const benefits = [
+  const benefits = useMemo(() => [
     {
       icon: Lightbulb,
       titleKey: 'ceiling_lighting.benefits.uniform_light.title',
@@ -34,9 +34,9 @@ const CeilingLedLighting: React.FC = () => {
       titleKey: 'ceiling_lighting.benefits.stretch_ceilings.title',
       descKey: 'ceiling_lighting.benefits.stretch_ceilings.description'
     }
-  ];
+  ], []);
 
-  const designIdeas = [
+  const designIdeas = useMemo(() => [
     {
       image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&auto=format&fit=crop',
       titleKey: 'ceiling_lighting.ideas.living_room'
@@ -53,9 +53,9 @@ const CeilingLedLighting: React.FC = () => {
       image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&auto=format&fit=crop',
       titleKey: 'ceiling_lighting.ideas.hallway'
     }
-  ];
+  ], []);
 
-  const faqItems = [
+  const faqItems = useMemo(() => [
     {
       questionKey: 'ceiling_lighting.faq.q1.question',
       answerKey: 'ceiling_lighting.faq.q1.answer'
@@ -76,7 +76,7 @@ const CeilingLedLighting: React.FC = () => {
       questionKey: 'ceiling_lighting.faq.q5.question',
       answerKey: 'ceiling_lighting.faq.q5.answer'
     }
-  ];
+  ], []);
 
   return (
     <>
