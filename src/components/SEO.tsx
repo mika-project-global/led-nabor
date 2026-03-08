@@ -29,6 +29,10 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const defaultImage = '/og-image.jpg';
   const ogLocale = LOCALE_MAP[locale] || 'en_US';
 
+  // Block indexing for unused language versions
+  const unusedLocales = ['pl', 'cz', 'de'];
+  const shouldNoIndex = unusedLocales.includes(locale);
+
   // Ensure canonical URL has trailing slash
   let fullCanonicalUrl = canonicalUrl || `${siteUrl}${location.pathname}`;
   if (!fullCanonicalUrl.endsWith('/')) {
@@ -76,7 +80,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <link rel="manifest" href="/manifest.json" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={shouldNoIndex ? "noindex, follow" : "index, follow"} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="theme-color" content="#0891b2" />
       <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
