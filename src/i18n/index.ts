@@ -4,10 +4,16 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import enTranslation from './locales/en.json';
 import ruTranslation from './locales/ru.json';
+import plTranslation from './locales/pl.json';
+import deTranslation from './locales/de.json';
+import czTranslation from './locales/cz.json';
 
 const resources = {
   en: { translation: enTranslation },
-  ru: { translation: ruTranslation }
+  ru: { translation: ruTranslation },
+  pl: { translation: plTranslation },
+  de: { translation: deTranslation },
+  cz: { translation: czTranslation }
 };
 
 i18n

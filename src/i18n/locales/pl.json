@@ -1,0 +1,256 @@
+{
+  "categories": {
+    "rgb_cct": {
+      "name": "Uniwersalny RGB+CCT",
+      "description": "RGB + regulowana barwa bieli (2700K-6500K). Taśma COB bez kropek."
+    },
+    "cct": {
+      "name": "Regulowana Biel",
+      "description": "Regulowana barwa bieli od ciepłej do zimnej (2700K-6500K). Taśma COB bez kropek."
+    }
+  },
+  "products": {
+    "1": {
+      "name": "Uniwersalny RGB+CCT",
+      "description": "Profesjonalne rozwiązanie do tworzenia nowoczesnego oświetlenia z możliwością sterowania kolorem i odcieniami światła białego.",
+      "overview_text": "Zestaw Uniwersalny RGB+CCT to kompleksowe rozwiązanie oświetlenia sufitowego, które łączy miliony kolorów RGB z regulowaną barwą światła białego od ciepłej (2700K) do zimnej (6500K). Ten system premium wykorzystuje zaawansowaną technologię COB, która zapewnia idealnie równomierne światło bez widocznych punktów czy plamświetlnych, tworząc profesjonalny, dopracowany wygląd.\n\nKażdy zestaw zawiera wszystko, czego potrzebujesz do instalacji: wysokiej jakości taśmę LED COB, kompaktowe zasilacze, sterownik Wi-Fi z aplikacją mobilną, profile montażowe z dyfuzorami oraz wszystkie niezbędne złącza. Modułowa konstrukcja pozwala na łatwą instalację w dowolnym pomieszczeniu bez specjalistycznych narzędzi czy pomocy fachowca.\n\nGłówną zaletą jest technologia taśm COB – w przeciwieństwie do tradycyjnych taśm LED z widocznymi punktami, COB zapewnia ciągłe, komfortowe dla oczu oświetlenie, idealne do widocznych instalacji. Funkcja RGB pozwala tworzyć kolorowe oświetlenie akcentujące podczas imprez i specjalnych okazji, a tryb regulowanej bieli (2700K-6500K) jest idealny do codziennego użytku, wspierając naturalny rytm dobowy.\n\nDoskonałe do salonów, sypialni, kuchni, domowych biur i przestrzeni rozrywkowych. Utwórz romantyczne ciepłe oświetlenie na wieczór, energetyzującą zimną biel do pracy lub żywe kolory na wieczory filmowe i imprezy. Kontroluj wszystko ze smartfona, komendami głosowymi (Alexa, Google Home) lub ustaw zautomatyzowane scenariusze dostosowujące oświetlenie w ciągu dnia.",
+      "warranty_info": "24-miesięczna gwarancja obejmuje wszystkie komponenty systemu przy prawidłowej instalacji i użytkowaniu. W przypadku wady fabrycznej wymienimy wadliwy komponent bezpłatnie. Żywotność to 10 lat.",
+      "key_benefits": "Kluczowe Zalety",
+      "features": [
+        "RGB + regulowana biel (2700K-6500K)",
+        "Taśma COB (równomierne światło, bez kropek)",
+        "Sterowanie Wi-Fi",
+        "Wsparcie komend głosowych",
+        "10-letnia żywotność"
+      ],
+      "control_options": [
+        "Aplikacja mobilna",
+        "Pilot zdalnego sterowania",
+        "Komendy głosowe",
+        "Sceny i automatyzacja"
+      ]
+    },
+    "2": {
+      "name": "Regulowana Biel",
+      "description": "Nowoczesne rozwiązanie do tworzenia komfortowego oświetlenia z regulowaną temperaturą barwową.",
+      "overview_text": "Zestaw Regulowana Biel to wyrafinowane rozwiązanie oświetlenia sufitowego, które oferuje płynną kontrolę temperatury barwowej światła białego od ciepłej 2700K do zimnej 6500K. Zbudowany z użyciem technologii premium COB, ten system zapewnia idealnie równomierne oświetlenie bez widocznych punktów, tworząc elegancki, profesjonalny efekt świetlny idealny do każdego nowoczesnego wnętrza.\n\nKompletny zestaw zawiera wszystkie niezbędne komponenty: taśmę LED COB bez kropek, kompaktowe energooszczędne zasilacze, sterownik Wi-Fi z intuicyjną aplikacją mobilną, aluminiowe profile montażowe z dyfuzorami dla czystego wykończenia oraz akcesoria podłączeniowe. Wszystko zostało zaprojektowane z myślą o prostej instalacji DIY bez wymagania specjalistycznej wiedzy czy narzędzi.\n\nKluczową zaletą jest funkcja regulowanej bieli w połączeniu z technologią COB. Dostosuj od przytulnej ciepłej bieli (2700K) idealnej do relaksu, przez neutralne światło dzienne (4000K) do ogólnych aktywności, po energetyzującą zimną biel (6500K) do skupionej pracy. Taśma COB bez kropek zapewnia komfortowe dla oczu oświetlenie, które wygląda profesjonalnie nawet w odsłoniętych instalacjach, co czyni je idealnym do widocznych aplikacji sufitowych.\n\nIdealne do sypialni, salonów, kuchni, łazienek, domowych biur i każdej przestrzeni, gdzie jakość oświetlenia ma znaczenie. Rozpocznij poranek energetyzującą zimną bielą, przejdź do neutralnej bieli w ciągu dnia i rozluźnij się ciepłymi relaksującymi tonami wieczorem. Inteligentne sterowanie przez aplikację smartfona, komendy głosowe (Alexa, Google Home) lub tworzenie zautomatyzowanych harmonogramów oświetlenia wspierających codzienną rutynę i rytm dobowy.",
+      "warranty_info": "24-miesięczna gwarancja obejmuje wszystkie komponenty systemu przy prawidłowej instalacji i użytkowaniu. W przypadku wady fabrycznej wymienimy wadliwy komponent bezpłatnie. Żywotność to 10 lat.",
+      "key_benefits": "Kluczowe Zalety",
+      "features": [
+        "Regulowane światło białe (2700K-6500K)",
+        "Taśma COB (bez kropek, równomierne światło)",
+        "Kompaktowe zasilacze",
+        "Sterowanie Wi-Fi",
+        "10-letnia żywotność"
+      ],
+      "control_options": [
+        "Aplikacja mobilna",
+        "Pilot zdalnego sterowania",
+        "Komendy głosowe",
+        "Sceny i automatyzacja"
+      ]
+    }
+  },
+  "menu": {
+    "home": "Strona Główna",
+    "products": "Produkty",
+    "about": "O Nas",
+    "contact": "Kontakt",
+    "cart": "Koszyk",
+    "checkout": "Kasa",
+    "blog": "Blog i Poradniki",
+    "for_business": "Dla Firm",
+    "warranty": "Gwarancja",
+    "faq": "FAQ",
+    "installation_guide": "Instrukcja Montażu",
+    "about_us": "O Nas",
+    "support": "Wsparcie",
+    "ceiling_lighting_kit": "Zestaw Oświetlenia Sufitowego",
+    "build_your_kit": "Zbuduj Swój Zestaw"
+  },
+  "site": {
+    "tagline": "Zestawy LED Sufitowego"
+  },
+  "product": {
+    "add_to_cart": "Kup Kompletny Zestaw",
+    "in_stock": "W magazynie",
+    "out_of_stock": "Brak w magazynie",
+    "details": "Szczegóły produktu",
+    "from": "od",
+    "more_details": "Więcej szczegółów",
+    "free_delivery": "Darmowa dostawa",
+    "warranty": "Gwarancja",
+    "months": "miesięcy",
+    "video_presentation": "Prezentacja Wideo",
+    "select_length": "Wybierz długość",
+    "length": "Długość:",
+    "meters_unit": "metrów",
+    "order_custom": "Zamów Konfigurację Niestandardową",
+    "in_stock_delivery_warranty": "W magazynie • Darmowa dostawa • Gwarancja 24 miesiące",
+    "warranty_24_months": "Gwarancja 24 miesiące",
+    "recently_viewed": "Ostatnio Oglądane",
+    "not_found": "Produkt nie znaleziony",
+    "overview": "Przegląd",
+    "specifications": "Specyfikacje",
+    "calculators": "Kalkulatory",
+    "gallery": "Galeria",
+    "reviews": "Opinie",
+    "technical_specs": "Specyfikacje Techniczne"
+  },
+  "ceiling_lighting": {
+    "seo": {
+      "title": "Oświetlenie Sufitowe LED | Taśmy LED COB do Sufitu",
+      "description": "Nowoczesne oświetlenie sufitowe LED wykorzystujące taśmy COB. Profesjonalna jakość, łatwy montaż i oszałamiające rezultaty dla każdego wnętrza."
+    },
+    "hero": {
+      "title": "Oświetlenie Sufitowe LED Bez Widocznych Kropek",
+      "subtitle": "Gotowe do instalacji zestawy oświetlenia COB LED dla nowoczesnych sufitów. Równomierne światło bez kropek, łatwy montaż i sterowanie smartfonem.",
+      "cta_primary": "Wybierz Zestaw",
+      "cta_secondary": "Instrukcja Montażu"
+    },
+    "products": {
+      "title": "Nasze Zestawy LED Sufitowego",
+      "subtitle": "Profesjonalne rozwiązania oświetlenia COB LED dla nowoczesnych wnętrz",
+      "view_product": "Zobacz Produkt",
+      "price_from": "od"
+    },
+    "benefits": {
+      "title": "Dlaczego Wybrać Oświetlenie Sufitowe COB LED",
+      "subtitle": "Doskonała technologia dla nowoczesnych przestrzeni",
+      "uniform_light": {
+        "title": "Równomierne Światło",
+        "description": "Technologia COB zapewnia ciągłe, równomierne oświetlenie bez jasnych plam czy ciemnych obszarów."
+      },
+      "no_dots": {
+        "title": "Bez Widocznych Kropek",
+        "description": "W przeciwieństwie do tradycyjnych taśm LED, COB tworzy gładkie oświetlenie bez pojedynczych punktów LED."
+      },
+      "modern_design": {
+        "title": "Nowoczesny Design",
+        "description": "Doskonałe do współczesnych wnętrz, tworząc eleganckie efekty oświetlenia ambiente."
+      },
+      "stretch_ceilings": {
+        "title": "Idealne do Sufitów Napinanych",
+        "description": "Niska emisja ciepła sprawia, że taśmy COB LED są idealne do użycia z materiałami sufitów napinanych."
+      }
+    },
+    "usage": {
+      "title": "Gdzie Stosuje Się Oświetlenie Sufitowe LED",
+      "text_1": "Oświetlenie sufitowe LED służy do tworzenia nowoczesnego oświetlenia wnętrz. Nadaje się do salonów, sypialni, kuchni, korytarzy i przestrzeni komercyjnych.",
+      "text_2": "Taśma COB LED zapewnia równomierne światło bez widocznych kropek, co czyni ją idealną do ukrytego oświetlenia sufitowego i designerskich rozwiązań."
+    },
+    "faq": {
+      "title": "Najczęściej Zadawane Pytania",
+      "subtitle": "Wszystko, co musisz wiedzieć o oświetleniu sufitowym LED",
+      "q1": {
+        "question": "Co to jest taśma LED COB?",
+        "answer": "COB (Chip-on-Board) to zaawansowana technologia LED, w której wiele chipów LED jest bezpośrednio łączonych z podłożem, tworząc ciągłe źródło światła bez widocznych pojedynczych LED. Rezultatem jest gładkie, równomierne oświetlenie doskonałe do instalacji sufitowych."
+      },
+      "q2": {
+        "question": "Jak zainstalować oświetlenie sufitowe LED?",
+        "answer": "Instalacja jest prosta: 1) Oczyść i przygotuj powierzchnię sufitu, 2) Zamontuj taśmy LED w wnękach sufitowych lub za listwami, 3) Podłącz do zasilacza i sterownika, 4) Przetestuj system. Nasze zestawy są dostarczane w wersji złożonej i zawierają szczegółowe instrukcje montażu."
+      },
+      "q3": {
+        "question": "Czy COB jest lepsze niż taśmy LED SMD?",
+        "answer": "Do oświetlenia sufitowego COB jest lepsze od tradycyjnych taśm SMD. COB zapewnia równomierne oświetlenie bez kropek, lepsze rozpraszanie ciepła, wyższą intensywność świecenia i bardziej profesjonalny wygląd. Podczas gdy taśmy SMD nadają się do ukrytych zastosowań, COB to najlepszy wybór do widocznych instalacji sufitowych."
+      },
+      "q4": {
+        "question": "Czy taśmy LED mogą zastąpić tradycyjne oświetlenie sufitowe?",
+        "answer": "Tak, oświetlenie sufitowe LED może służyć jako główne oświetlenie lub uzupełniać istniejące oprawy. Przy odpowiednim projektowaniu taśmy COB LED zapewniają wystarczającą jasność do oświetlenia ambientowego, jednocześnie tworząc nowoczesną, elegancką atmosferę. Wielu właścicieli domów używa ich razem z tradycyjnym oświetleniem dla maksymalnej elastyczności."
+      },
+      "q5": {
+        "question": "Jak długo działają taśmy COB LED?",
+        "answer": "Wysokiej jakości taśmy COB LED mają żywotność 50 000-100 000 godzin, co przekłada się na 10-30 lat przy normalnym użytkowaniu. Doskonałe zarządzanie ciepłem i jakość wykonania przyczyniają się do tej długowieczności. Nasze produkty są objęte 24-miesięczną gwarancją i zaprojektowane z myślą o długoterminowej niezawodności."
+      }
+    },
+    "cta": {
+      "title": "Gotowy na Transformację Swojej Przestrzeni?",
+      "subtitle": "Rozpocznij swój projekt oświetlenia sufitowego LED już dziś z naszymi profesjonalnymi zestawami",
+      "button_primary": "Przeglądaj Produkty",
+      "button_secondary": "Skontaktuj się ze Wsparciem"
+    }
+  },
+  "led_ceiling_kit": {
+    "seo_title": "Zestaw Oświetlenia Sufitowego LED | Nowoczesne Sufitowe Światła COB LED",
+    "seo_description": "Kompleksowe zestawy oświetlenia sufitowego LED z taśmami COB do nowoczesnych wnętrz.",
+    "hero_title": "Gotowe do Instalacji Zestawy Oświetlenia Sufitowego LED",
+    "hero_subtitle": "Profesjonalne zestawy COB LED do sufitów. Równomierne światło bez kropek, łatwy montaż i sterowanie smartfonem.",
+    "hero_cta": "Wybierz Zestaw",
+    "why_title": "Dlaczego Oświetlenie Sufitowe LED",
+    "why_text": "Oświetlenie sufitowe COB LED tworzy gładkie i nowoczesne oświetlenie pośrednie bez widocznych kropek światła. Jest idealne do salonów, sypialni i nowoczesnych wnętrz.",
+    "kits_title": "Nasze Zestawy",
+    "gallery_title": "Galeria Wnętrz",
+    "gallery_subtitle": "Zobacz, jak oświetlenie sufitowe LED transformuje nowoczesne przestrzenie",
+    "installation_title": "Jak Działa Montaż",
+    "installation_step_1": "Przymocuj taśmę LED do wnęki sufitowej",
+    "installation_step_2": "Podłącz zasilacz",
+    "installation_step_3": "Steruj oświetleniem pilotem",
+    "faq_title": "Najczęściej Zadawane Pytania",
+    "faq_q1": "Co to jest taśma LED COB?",
+    "faq_a1": "COB (Chip-on-Board) to technologia, w której LED-y są montowane bezpośrednio na podłożu bez widocznych kropek. To tworzy równomierne oświetlenie bez plam, co czyni je idealnym do oświetlenia sufitowego w nowoczesnych wnętrzach.",
+    "faq_q2": "Jaka jest różnica między COB a taśmą LED SMD?",
+    "faq_a2": "Taśmy SMD mają widoczne pojedyncze LED-y, które mogą tworzyć efekt kropkowanego światła. Taśmy COB zapewniają ciągłe, równomierne oświetlenie bez kropek, co jest bardziej estetyczne i komfortowe dla oczu.",
+    "faq_q3": "Czy taśmę LED można wykorzystać do oświetlenia sufitowego?",
+    "faq_a3": "Tak, taśmy LED są idealne do oświetlenia sufitowego. Instaluje się je we wnękach sufitowych lub zagłębieniach, tworząc piękne oświetlenie pośrednie, które wizualnie powiększa przestrzeń i dodaje nowoczesny akcent wnętrzu.",
+    "faq_q4": "Jak długo działa taśma COB LED?",
+    "faq_a4": "Wysokiej jakości taśmy COB LED mają żywotność 10 lat lub więcej przy odpowiedniej instalacji i użytkowaniu. Nasze zestawy są objęte 24-miesięczną gwarancją obejmującą wszystkie komponenty.",
+    "cta_title": "Gotowy na Transformację Swojej Przestrzeni?",
+    "cta_subtitle": "Wybierz idealny zestaw oświetlenia sufitowego LED dla swojego domu",
+    "link_installation_desc": "Dowiedz się, jak zainstalować",
+    "link_blog_desc": "Pomocne artykuły",
+    "link_support_desc": "Potrzebujesz pomocy?",
+    "view_product": "Zobacz Produkt",
+    "popular_badge": "Popularny Zestaw — Często Zamawiany"
+  },
+  "installation_guide": {
+    "title": "Instrukcja Montażu",
+    "subtitle": "Przewodnik krok po kroku instalacji taśmy LED",
+    "required_tools": "Wymagane Narzędzia",
+    "scissors": "Nożyczki",
+    "measuring_tape": "Miarka",
+    "pencil": "Ołówek",
+    "cleaning_supplies": "Środki Czyszczące",
+    "step_1_title": "Przygotowanie Powierzchni",
+    "step_1_desc": "Dokładnie oczyść powierzchnię sufitu z kurzu i brudu. Odtłuść miejsca, gdzie będzie montowana taśma, używając roztworu alkoholu.",
+    "step_1_tip_1": "Używaj ściereczki niezostawiającej włókien",
+    "step_1_tip_2": "Pozwól powierzchni całkowicie wyschnąć przed instalacją",
+    "step_1_warning_1": "Nie używaj agresywnych środków czyszczących",
+    "step_2_title": "Oznaczanie i Planowanie",
+    "step_2_desc": "Oznacz sufit, wskazując miejsca montażu taśmy i położenie zasilacza. Uwzględnij odległość do gniazdek elektrycznych.",
+    "step_2_tip_1": "Użyj ołówka do oznaczania",
+    "step_2_tip_2": "Uwzględnij rozmieszczenie mebli i główne strefy oświetlenia",
+    "step_3_title": "Instalacja Taśmy",
+    "step_3_desc": "Stopniowo zdejmuj warstwę ochronną i przyklejaj taśmę według oznaczeń. Dociskaj taśmę równomiernie, unikając pęcherzyków.",
+    "step_3_tip_1": "Nie rozciągaj taśmy podczas instalacji",
+    "step_3_tip_2": "Pracuj w odcinkach 30-50 cm",
+    "step_3_warning_1": "Nie zginaj taśmy pod ostrymi kątami",
+    "step_3_warning_2": "Unikaj dotykania LED-ów rękami",
+    "helpful_tips": "Pomocne Wskazówki",
+    "important_notes": "Ważne Uwagi",
+    "cta_title": "Gotowy na Rozpoczęcie Instalacji?",
+    "cta_subtitle": "Wybierz odpowiedni zestaw oświetlenia LED dla swojego sufitu",
+    "view_kits_button": "Zobacz Zestawy"
+  },
+  "trust_indicators": {
+    "warranty_years": "2 lata",
+    "warranty": "Gwarancja",
+    "free_delivery": "Darmowa Dostawa",
+    "delivery_time": "W całej Europie w ciągu 3-7 dni",
+    "secure_payment": "Bezpieczna Płatność",
+    "payment_methods": "Płatność kartą lub przy odbiorze",
+    "long_service_life": "Długa Żywotność",
+    "service_life_desc": "10 lat przy odpowiedniej instalacji"
+  },
+  "installation": {
+    "title": "Proces Instalacji",
+    "delivery": "Dostawa",
+    "delivery_desc": "Darmowa dostawa w całej Europie w ciągu 3-7 dni",
+    "delivery_time": "3-7 dni",
+    "installation": "Instalacja",
+    "installation_desc": "Prosta instalacja bez specjalnych narzędzi",
+    "installation_time": "15-30 minut",
+    "ready": "Gotowe",
+    "ready_desc": "Ciesz się pięknym oświetleniem",
+    "ready_time": "Natychmiast po instalacji"
+  }
+}

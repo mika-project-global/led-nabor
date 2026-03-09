@@ -1,0 +1,256 @@
+{
+  "categories": {
+    "rgb_cct": {
+      "name": "Univerzální RGB+CCT",
+      "description": "RGB + nastavitelné bílé světlo (2700K-6500K). COB pásek bez teček."
+    },
+    "cct": {
+      "name": "Nastavitelná Bílá",
+      "description": "Nastavitelné bílé světlo od teplého po studené (2700K-6500K). COB pásek bez teček."
+    }
+  },
+  "products": {
+    "1": {
+      "name": "Univerzální RGB+CCT",
+      "description": "Profesionální řešení pro vytvoření moderního osvětlení s možností ovládání barvy a odstínů bílého světla.",
+      "overview_text": "Sada Univerzální RGB+CCT je kompletní řešení stropního osvětlení, které kombinuje miliony RGB barev s nastavitelným bílým světlem od teplého (2700K) po studené (6500K). Tento prémiový systém využívá pokročilou technologii COB, která poskytuje dokonale rovnoměrné světlo bez viditelných bodů či jasných skvrn a vytváří profesionální, uhlazený vzhled.\n\nKaždá sada obsahuje vše potřebné k instalaci: vysoce kvalitní COB LED pásek, kompaktní zdroje napájení, Wi-Fi ovladač s mobilní aplikací, montážní profily s difuzory a všechny potřebné konektory. Modulární design umožňuje snadnou instalaci v jakémkoliv místnosti bez specializovaných nástrojů nebo profesionální pomoci.\n\nHlavní výhodou je technologie COB pásků – na rozdíl od tradičních LED pásků s viditelnými body poskytuje COB nepřetržité, pro oči příjemné osvětlení, perfektní pro viditelné instalace. Funkce RGB vám umožňuje vytvářet barevné akcentní osvětlení pro večírky a speciální příležitosti, zatímco laditelný režim bílé (2700K-6500K) je ideální pro každodenní použití a podporuje váš přirozený cirkadiální rytmus.\n\nPerfektní pro obývací pokoje, ložnice, kuchyně, domácí kanceláře a zábavní prostory. Vytvořte romantické teplé osvětlení pro večery, povzbudivou studenou bílou pro pracovní hodiny nebo živé barvy pro filmové večery a večírky. Ovládejte vše ze svého chytrého telefonu, hlasovými příkazy (Alexa, Google Home) nebo nastavte automatizované scény, které upravují osvětlení během dne.",
+      "warranty_info": "24měsíční záruka pokrývá všechny komponenty systému při správné instalaci a použití. V případě výrobní vady zdarma vyměníme vadnou součást. Životnost je 10 let.",
+      "key_benefits": "Klíčové výhody",
+      "features": [
+        "RGB + nastavitelná bílá (2700K-6500K)",
+        "COB pásek (rovnoměrné světlo, bez teček)",
+        "Wi-Fi ovládání",
+        "Podpora hlasových příkazů",
+        "10letá životnost"
+      ],
+      "control_options": [
+        "Mobilní aplikace",
+        "Dálkové ovládání",
+        "Hlasové příkazy",
+        "Scény a automatizace"
+      ]
+    },
+    "2": {
+      "name": "Nastavitelná Bílá",
+      "description": "Moderní řešení pro vytvoření pohodlného osvětlení s nastavitelnou barevnou teplotou.",
+      "overview_text": "Sada Nastavitelná Bílá je sofistikované řešení stropního osvětlení, které nabízí plynulé ovládání teploty bílého světla od teplých 2700K po studené 6500K. Postavený s prémiovým technologií COB, tento systém poskytuje dokonale rovnoměrné osvětlení bez jakýchkoli viditelných bodů a vytváří elegantní, profesionální světelný efekt ideální pro každý moderní interiér.\n\nKompletní sada obsahuje všechny potřebné komponenty: COB LED pásek bez teček, kompaktní energeticky účinné zdroje napájení, Wi-Fi ovladač s intuitivní mobilní aplikací, hliníkové montážní profily s difuzory pro čisté provedení a připojovací příslušenství. Vše je navrženo pro jednoduchou DIY instalaci bez vyžadování specializovaných znalostí nebo nástrojů.\n\nKlíčovou výhodou je funkce laditelné bílé v kombinaci s technologií COB. Upravte od útulné teplé bílé (2700K) perfektní pro relaxaci, přes neutrální denní světlo (4000K) pro obecné aktivity, až po povzbuzující studenou bílou (6500K) pro soustředěnou práci. COB pásek bez teček zajišťuje pro oči příjemné osvětlení, které vypadá profesionálně i při odhalených instalacích, což z něj činí perfektní pro viditelné stropní aplikace.\n\nIdeální pro ložnice, obývací pokoje, kuchyně, koupelny, domácí kanceláře a jakýkoli prostor, kde záleží na kvalitě osvětlení. Začněte své ráno povzbuzující studenou bílou, přejděte během dne na neutrální bílou a večer se uvolněte teplými relaxačními tóny. Chytré ovládání přes aplikaci v chytrém telefonu, hlasové příkazy (Alexa, Google Home) nebo vytvořte automatizované harmonogramy osvětlení, které podporují vaši denní rutinu a cirkadiální rytmus.",
+      "warranty_info": "24měsíční záruka pokrývá všechny komponenty systému při správné instalaci a použití. V případě výrobní vady zdarma vyměníme vadnou součást. Životnost je 10 let.",
+      "key_benefits": "Klíčové výhody",
+      "features": [
+        "Nastavitelné bílé světlo (2700K-6500K)",
+        "COB pásek (bez teček, rovnoměrné světlo)",
+        "Kompaktní zdroje napájení",
+        "Wi-Fi ovládání",
+        "10letá životnost"
+      ],
+      "control_options": [
+        "Mobilní aplikace",
+        "Dálkové ovládání",
+        "Hlasové příkazy",
+        "Scény a automatizace"
+      ]
+    }
+  },
+  "menu": {
+    "home": "Domů",
+    "products": "Produkty",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "cart": "Košík",
+    "checkout": "Pokladna",
+    "blog": "Blog a Průvodci",
+    "for_business": "Pro firmy",
+    "warranty": "Záruka",
+    "faq": "Časté dotazy",
+    "installation_guide": "Návod k instalaci",
+    "about_us": "O nás",
+    "support": "Podpora",
+    "ceiling_lighting_kit": "Sada stropního osvětlení",
+    "build_your_kit": "Sestavte si svou sadu"
+  },
+  "site": {
+    "tagline": "LED stropní sady"
+  },
+  "product": {
+    "add_to_cart": "Koupit kompletní sadu",
+    "in_stock": "Skladem",
+    "out_of_stock": "Není skladem",
+    "details": "Detaily produktu",
+    "from": "od",
+    "more_details": "Více detailů",
+    "free_delivery": "Doprava zdarma",
+    "warranty": "Záruka",
+    "months": "měsíců",
+    "video_presentation": "Video prezentace",
+    "select_length": "Vyberte délku",
+    "length": "Délka:",
+    "meters_unit": "metrů",
+    "order_custom": "Objednat vlastní konfiguraci",
+    "in_stock_delivery_warranty": "Skladem • Doprava zdarma • 24měsíční záruka",
+    "warranty_24_months": "24měsíční záruka",
+    "recently_viewed": "Nedávno zobrazené",
+    "not_found": "Produkt nenalezen",
+    "overview": "Přehled",
+    "specifications": "Specifikace",
+    "calculators": "Kalkulačky",
+    "gallery": "Galerie",
+    "reviews": "Recenze",
+    "technical_specs": "Technické specifikace"
+  },
+  "ceiling_lighting": {
+    "seo": {
+      "title": "LED stropní osvětlení | COB LED pásky pro stropy",
+      "description": "Moderní LED stropní osvětlení s použitím COB LED pásků. Profesionální kvalita, snadná instalace a ohromující výsledky pro každý interiér."
+    },
+    "hero": {
+      "title": "LED stropní osvětlení bez viditelných teček",
+      "subtitle": "Instalačně připravené COB LED osvětlovací sady pro moderní stropy. Rovnoměrné světlo bez teček, snadná instalace a ovládání chytrým telefonem.",
+      "cta_primary": "Vybrat sadu",
+      "cta_secondary": "Návod k instalaci"
+    },
+    "products": {
+      "title": "Naše LED stropní sady",
+      "subtitle": "Profesionální COB LED osvětlovací řešení pro moderní interiéry",
+      "view_product": "Zobrazit produkt",
+      "price_from": "od"
+    },
+    "benefits": {
+      "title": "Proč zvolit COB LED stropní osvětlení",
+      "subtitle": "Špičková technologie pro moderní prostory",
+      "uniform_light": {
+        "title": "Rovnoměrné světlo",
+        "description": "Technologie COB poskytuje nepřetržité, rovnoměrné osvětlení bez jasných skvrn nebo tmavých oblastí."
+      },
+      "no_dots": {
+        "title": "Bez viditelných teček",
+        "description": "Na rozdíl od tradičních LED pásků vytváří COB hladké osvětlení bez jednotlivých LED bodů."
+      },
+      "modern_design": {
+        "title": "Moderní design",
+        "description": "Perfektní pro současné interiéry a vytváří elegantní ambientní osvětlovací efekty."
+      },
+      "stretch_ceilings": {
+        "title": "Perfektní pro napínací stropy",
+        "description": "Nízká tepelná emise činí COB LED pásky ideální pro použití s materiály napínacích stropů."
+      }
+    },
+    "usage": {
+      "title": "Kde se používá LED stropní osvětlení",
+      "text_1": "LED stropní osvětlení se používá k vytvoření moderního interiérového osvětlení. Je vhodné pro obývací pokoje, ložnice, kuchyně, chodby a komerční prostory.",
+      "text_2": "COB LED pásek poskytuje rovnoměrné světlo bez viditelných teček, což z něj činí ideální pro skryté stropní osvětlení a designérská řešení."
+    },
+    "faq": {
+      "title": "Často kladené otázky",
+      "subtitle": "Vše, co potřebujete vědět o LED stropním osvětlení",
+      "q1": {
+        "question": "Co je COB LED pásek?",
+        "answer": "COB (Chip-on-Board) je pokročilá LED technologie, kde je více LED čipů přímo spojeno se substrátem a vytváří nepřetržitý zdroj světla bez viditelných jednotlivých LED. Výsledkem je hladké, rovnoměrné osvětlení perfektní pro stropní instalace."
+      },
+      "q2": {
+        "question": "Jak nainstalovat LED stropní osvětlení?",
+        "answer": "Instalace je jednoduchá: 1) Očistěte a připravte povrch stropu, 2) Namontujte LED pásky do stropních výklenků nebo za stropní lišty, 3) Připojte k napájecímu zdroji a ovladači, 4) Otestujte systém. Naše sady jsou dodávány předem sestavené a obsahují podrobné instalační pokyny."
+      },
+      "q3": {
+        "question": "Je COB lepší než SMD LED pásky?",
+        "answer": "Pro stropní osvětlení je COB lepší než tradiční SMD pásky. COB poskytuje rovnoměrné osvětlení bez teček, lepší odvod tepla, vyšší světelnou intenzitu a profesionálnější vzhled. Zatímco SMD pásky jsou vhodné pro skryté aplikace, COB je nejlepší volba pro viditelné stropní instalace."
+      },
+      "q4": {
+        "question": "Mohou LED pásky nahradit tradiční stropní osvětlení?",
+        "answer": "Ano, LED stropní osvětlení může sloužit jako primární osvětlení nebo doplňovat stávající svítidla. Při správném návrhu poskytují COB LED pásky dostatečný jas pro ambientní osvětlení a zároveň vytvářejí moderní, elegantní atmosféru. Mnoho majitelů domů je používá spolu s tradičním osvětlením pro maximální flexibilitu."
+      },
+      "q5": {
+        "question": "Jak dlouho vydrží COB LED pásky?",
+        "answer": "Vysoce kvalitní COB LED pásky mají životnost 50 000-100 000 hodin, což se při normálním použití překládá na 10-30 let. Vynikající řízení tepla a kvalita konstrukce přispívají k této dlouhověkosti. Naše produkty jsou dodávány s 24měsíční zárukou a jsou navrženy pro dlouhodobou spolehlivost."
+      }
+    },
+    "cta": {
+      "title": "Připraveni transformovat váš prostor?",
+      "subtitle": "Začněte svůj projekt LED stropního osvětlení ještě dnes s našimi profesionálními sadami",
+      "button_primary": "Prohlížet produkty",
+      "button_secondary": "Kontaktovat podporu"
+    }
+  },
+  "led_ceiling_kit": {
+    "seo_title": "Sada LED stropního osvětlení | Moderní COB LED stropní světla",
+    "seo_description": "Kompletní sady LED stropního osvětlení s COB LED pásky pro moderní interiéry.",
+    "hero_title": "Instalačně připravené sady LED stropního osvětlení",
+    "hero_subtitle": "Profesionální COB LED sady pro stropy. Rovnoměrné světlo bez teček, snadná instalace a ovládání chytrým telefonem.",
+    "hero_cta": "Vybrat sadu",
+    "why_title": "Proč LED stropní osvětlení",
+    "why_text": "COB LED stropní osvětlení vytváří hladké a moderní nepřímé osvětlení bez viditelných světelných teček. Je perfektní pro obývací pokoje, ložnice a moderní interiéry.",
+    "kits_title": "Naše sady",
+    "gallery_title": "Galerie interiérů",
+    "gallery_subtitle": "Podívejte se, jak LED stropní osvětlení transformuje moderní prostory",
+    "installation_title": "Jak funguje instalace",
+    "installation_step_1": "Připevněte LED pásek do stropního výklenku",
+    "installation_step_2": "Připojte napájecí zdroj",
+    "installation_step_3": "Ovládejte osvětlení dálkovým ovládáním",
+    "faq_title": "Často kladené otázky",
+    "faq_q1": "Co je COB LED pásek?",
+    "faq_a1": "COB (Chip-on-Board) je technologie, kde jsou LED diody montovány přímo na substrát bez viditelných teček. To vytváří rovnoměrné osvětlení bez skvrn, což z něj činí ideální pro stropní osvětlení v moderních interiérech.",
+    "faq_q2": "Jaký je rozdíl mezi COB a SMD LED páskem?",
+    "faq_a2": "SMD pásky mají viditelné jednotlivé LED diody, které mohou vytvářet efekt tečkovaného světla. COB pásky poskytují nepřetržité, rovnoměrné osvětlení bez teček, což je estetičtější a příjemnější pro oči.",
+    "faq_q3": "Lze LED pásek použít pro stropní osvětlení?",
+    "faq_a3": "Ano, LED pásky jsou perfektní pro stropní osvětlení. Instalují se do stropních výklenků nebo prohlubní a vytvářejí krásné nepřímé osvětlení, které opticky zvětšuje prostor a dodává interiéru moderní akcent.",
+    "faq_q4": "Jak dlouho vydrží COB LED pásek?",
+    "faq_a4": "Vysoce kvalitní COB LED pásky mají životnost 10 let nebo více při správné instalaci a použití. Naše sady jsou dodávány s 24měsíční zárukou pokrývající všechny komponenty.",
+    "cta_title": "Připraveni transformovat váš prostor?",
+    "cta_subtitle": "Vyberte perfektní sadu LED stropního osvětlení pro váš domov",
+    "link_installation_desc": "Zjistěte, jak instalovat",
+    "link_blog_desc": "Užitečné články",
+    "link_support_desc": "Potřebujete pomoc?",
+    "view_product": "Zobrazit produkt",
+    "popular_badge": "Populární sada — často objednáváno"
+  },
+  "installation_guide": {
+    "title": "Návod k instalaci",
+    "subtitle": "Krok za krokem průvodce instalací LED pásku",
+    "required_tools": "Potřebné nástroje",
+    "scissors": "Nůžky",
+    "measuring_tape": "Měřicí páska",
+    "pencil": "Tužka",
+    "cleaning_supplies": "Čisticí prostředky",
+    "step_1_title": "Příprava povrchu",
+    "step_1_desc": "Důkladně očistěte povrch stropu od prachu a nečistot. Odmastěte místa, kde bude pásek montován, pomocí alkoholového roztoku.",
+    "step_1_tip_1": "Používejte hadřík, který nepouští vlákna",
+    "step_1_tip_2": "Nechte povrch zcela vyschnout před instalací",
+    "step_1_warning_1": "Nepoužívejte agresivní čisticí prostředky",
+    "step_2_title": "Značení a plánování",
+    "step_2_desc": "Označte strop, označte místa montáže pásku a polohu napájecího zdroje. Zvažte vzdálenost k elektrickým zásuvkám.",
+    "step_2_tip_1": "Použijte tužku k označení",
+    "step_2_tip_2": "Zvažte umístění nábytku a hlavní osvětlovací zóny",
+    "step_3_title": "Instalace pásku",
+    "step_3_desc": "Postupně odstraňte ochrannou vrstvu a přilepte pásek podle značek. Rovnoměrně přitlačte pásek a vyvarujte se vzduchových bublin.",
+    "step_3_tip_1": "Nenatahujte pásek během instalace",
+    "step_3_tip_2": "Pracujte v úsecích 30-50 cm",
+    "step_3_warning_1": "Neohýbejte pásek v ostrých úhlech",
+    "step_3_warning_2": "Vyvarujte se dotýkání LED diod rukama",
+    "helpful_tips": "Užitečné tipy",
+    "important_notes": "Důležité poznámky",
+    "cta_title": "Připraveni začít s instalací?",
+    "cta_subtitle": "Vyberte správnou sadu LED osvětlení pro váš strop",
+    "view_kits_button": "Zobrazit sady"
+  },
+  "trust_indicators": {
+    "warranty_years": "2 roky",
+    "warranty": "Záruka",
+    "free_delivery": "Doprava zdarma",
+    "delivery_time": "Po celé Evropě do 3-7 dnů",
+    "secure_payment": "Bezpečná platba",
+    "payment_methods": "Platba kartou nebo na dobírku",
+    "long_service_life": "Dlouhá životnost",
+    "service_life_desc": "10 let při správné instalaci"
+  },
+  "installation": {
+    "title": "Proces instalace",
+    "delivery": "Doprava",
+    "delivery_desc": "Doprava zdarma po celé Evropě do 3-7 dnů",
+    "delivery_time": "3-7 dní",
+    "installation": "Instalace",
+    "installation_desc": "Jednoduchá instalace bez speciálních nástrojů",
+    "installation_time": "15-30 minut",
+    "ready": "Hotovo",
+    "ready_desc": "Užívejte si krásné osvětlení",
+    "ready_time": "Okamžitě po instalaci"
+  }
+}

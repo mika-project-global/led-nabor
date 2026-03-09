@@ -1,0 +1,256 @@
+{
+  "categories": {
+    "rgb_cct": {
+      "name": "Universal RGB+CCT",
+      "description": "RGB + einstellbares Weißlicht (2700K-6500K). COB-Streifen ohne Punkte."
+    },
+    "cct": {
+      "name": "Einstellbares Weiß",
+      "description": "Einstellbares Weißlicht von warm bis kalt (2700K-6500K). COB-Streifen ohne Punkte."
+    }
+  },
+  "products": {
+    "1": {
+      "name": "Universal RGB+CCT",
+      "description": "Professionelle Lösung zur Schaffung moderner Beleuchtung mit der Möglichkeit, Farbe und Weißlichttöne zu steuern.",
+      "overview_text": "Das Universal RGB+CCT Set ist eine komplette Deckenbeleuchtungslösung, die Millionen von RGB-Farben mit einstellbarem Weißlicht von warm (2700K) bis kühl (6500K) kombiniert. Dieses Premium-System nutzt fortschrittliche COB-Technologie, die perfekt gleichmäßiges Licht ohne sichtbare Punkte oder Hotspots liefert und ein professionelles, poliertesErscheinungsbild schafft.\n\nJedes Set enthält alles, was Sie für die Installation benötigen: hochwertiger COB-LED-Streifen, kompakte Netzteile, Wi-Fi-Controller mit mobiler App, Montageprofile mit Diffusoren und alle notwendigen Steckverbinder. Das modulare Design ermöglicht eine einfache Installation in jedem Raum ohne Spezialwerkzeug oder professionelle Hilfe.\n\nDer Hauptvorteil ist die COB-Streifentechnologie – im Gegensatz zu herkömmlichen LED-Streifen mit sichtbaren Punkten bietet COB kontinuierliche, augenfreundliche Beleuchtung, perfekt für sichtbare Installationen. Die RGB-Funktionalität ermöglicht es Ihnen, farbenfrohe Akzentbeleuchtung für Partys und besondere Anlässe zu schaffen, während der abstimmbare Weißmodus (2700K-6500K) ideal für den täglichen Gebrauch ist und Ihren natürlichen zirkadianen Rhythmus unterstützt.\n\nPerfekt für Wohnzimmer, Schlafzimmer, Küchen, Homeoffices und Unterhaltungsräume. Schaffen Sie romantisches warmes Licht für Abende, energetisierendes kühles Weiß für Arbeitsstunden oder lebendige Farben für Filmabende und Partys. Steuern Sie alles von Ihrem Smartphone aus, mit Sprachbefehlen (Alexa, Google Home) oder richten Sie automatisierte Szenen ein, die die Beleuchtung den ganzen Tag über anpassen.",
+      "warranty_info": "Die 24-Monats-Garantie deckt alle Systemkomponenten bei ordnungsgemäßer Installation und Verwendung ab. Im Falle eines Fabrikdefekts ersetzen wir die defekte Komponente kostenlos. Die Lebensdauer beträgt 10 Jahre.",
+      "key_benefits": "Hauptvorteile",
+      "features": [
+        "RGB + einstellbares Weiß (2700K-6500K)",
+        "COB-Streifen (gleichmäßiges Licht, keine Punkte)",
+        "Wi-Fi-Steuerung",
+        "Sprachbefehlsunterstützung",
+        "10 Jahre Lebensdauer"
+      ],
+      "control_options": [
+        "Mobile App",
+        "Fernbedienung",
+        "Sprachbefehle",
+        "Szenen und Automatisierung"
+      ]
+    },
+    "2": {
+      "name": "Einstellbares Weiß",
+      "description": "Moderne Lösung zur Schaffung komfortabler Beleuchtung mit einstellbarer Farbtemperatur.",
+      "overview_text": "Das Einstellbares Weiß Set ist eine anspruchsvolle Deckenbeleuchtungslösung, die nahtlose Kontrolle über die Weißlicht-Farbtemperatur von warm 2700K bis kühl 6500K bietet. Mit Premium-COB-Technologie gebaut, liefert dieses System perfekt gleichmäßige Beleuchtung ohne sichtbare Punkte und schafft einen eleganten, professionellen Lichteffekt, ideal für jedes moderne Interieur.\n\nDas komplette Set enthält alle notwendigen Komponenten: COB-LED-Streifen mit punktfreier Beleuchtung, kompakte energieeffiziente Netzteile, Wi-Fi-Controller mit intuitiver mobiler App, Aluminium-Montageprofile mit Diffusoren für ein sauberes Finish und Verbindungszubehör. Alles ist für eine unkomplizierte DIY-Installation konzipiert, ohne dass Spezialkenntnisse oder Werkzeuge erforderlich sind.\n\nDer Hauptvorteil ist die abstimmbare Weißfunktionalität in Kombination mit COB-Technologie. Passen Sie von gemütlichem Warmweiß (2700K) perfekt für Entspannung, über neutrales Tageslicht (4000K) für allgemeine Aktivitäten, bis hin zu energetisierendem Kaltweiß (6500K) für konzentrierte Arbeit an. Der punktfreie COB-Streifen gewährleistet augenfreundliche Beleuchtung, die selbst bei freiliegenden Installationen professionell aussieht und damit perfekt für sichtbare Deckenanwendungen ist.\n\nIdeal für Schlafzimmer, Wohnzimmer, Küchen, Badezimmer, Homeoffices und jeden Raum, in dem die Beleuchtungsqualität zählt. Beginnen Sie Ihren Morgen mit energetisierendem Kaltweiß, wechseln Sie tagsüber zu Neutralweiß und entspannen Sie sich abends mit warmen, beruhigenden Tönen. Intelligente Steuerung per Smartphone-App, Sprachbefehlen (Alexa, Google Home) oder erstellen Sie automatisierte Beleuchtungspläne, die Ihre tägliche Routine und Ihren zirkadianen Rhythmus unterstützen.",
+      "warranty_info": "Die 24-Monats-Garantie deckt alle Systemkomponenten bei ordnungsgemäßer Installation und Verwendung ab. Im Falle eines Fabrikdefekts ersetzen wir die defekte Komponente kostenlos. Die Lebensdauer beträgt 10 Jahre.",
+      "key_benefits": "Hauptvorteile",
+      "features": [
+        "Einstellbares Weißlicht (2700K-6500K)",
+        "COB-Streifen (keine Punkte, gleichmäßiges Licht)",
+        "Kompakte Netzteile",
+        "Wi-Fi-Steuerung",
+        "10 Jahre Lebensdauer"
+      ],
+      "control_options": [
+        "Mobile App",
+        "Fernbedienung",
+        "Sprachbefehle",
+        "Szenen und Automatisierung"
+      ]
+    }
+  },
+  "menu": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "cart": "Warenkorb",
+    "checkout": "Kasse",
+    "blog": "Blog & Anleitungen",
+    "for_business": "Für Unternehmen",
+    "warranty": "Garantie",
+    "faq": "FAQ",
+    "installation_guide": "Montageanleitung",
+    "about_us": "Über uns",
+    "support": "Support",
+    "ceiling_lighting_kit": "Deckenbeleuchtungs-Set",
+    "build_your_kit": "Erstellen Sie Ihr Set"
+  },
+  "site": {
+    "tagline": "LED-Deckensets"
+  },
+  "product": {
+    "add_to_cart": "Komplettes Set kaufen",
+    "in_stock": "Auf Lager",
+    "out_of_stock": "Nicht vorrätig",
+    "details": "Produktdetails",
+    "from": "ab",
+    "more_details": "Weitere Details",
+    "free_delivery": "Kostenloser Versand",
+    "warranty": "Garantie",
+    "months": "Monate",
+    "video_presentation": "Videopräsentation",
+    "select_length": "Länge wählen",
+    "length": "Länge:",
+    "meters_unit": "Meter",
+    "order_custom": "Individuelle Konfiguration bestellen",
+    "in_stock_delivery_warranty": "Auf Lager • Kostenloser Versand • 24 Monate Garantie",
+    "warranty_24_months": "24 Monate Garantie",
+    "recently_viewed": "Kürzlich angesehen",
+    "not_found": "Produkt nicht gefunden",
+    "overview": "Übersicht",
+    "specifications": "Spezifikationen",
+    "calculators": "Rechner",
+    "gallery": "Galerie",
+    "reviews": "Bewertungen",
+    "technical_specs": "Technische Spezifikationen"
+  },
+  "ceiling_lighting": {
+    "seo": {
+      "title": "LED-Deckenbeleuchtung | COB LED-Streifen Deckenleuchten",
+      "description": "Moderne LED-Deckenbeleuchtung mit COB-LED-Streifen. Professionelle Qualität, einfache Installation und beeindruckende Ergebnisse für jedes Interieur."
+    },
+    "hero": {
+      "title": "LED-Deckenbeleuchtung ohne sichtbare Punkte",
+      "subtitle": "Installationsfertige COB-LED-Beleuchtungssets für moderne Decken. Gleichmäßiges Licht ohne Punkte, einfache Installation und Smartphone-Steuerung.",
+      "cta_primary": "Set wählen",
+      "cta_secondary": "Montageanleitung"
+    },
+    "products": {
+      "title": "Unsere LED-Deckensets",
+      "subtitle": "Professionelle COB-LED-Beleuchtungslösungen für moderne Innenräume",
+      "view_product": "Produkt ansehen",
+      "price_from": "ab"
+    },
+    "benefits": {
+      "title": "Warum COB-LED-Deckenbeleuchtung wählen",
+      "subtitle": "Überlegene Technologie für moderne Räume",
+      "uniform_light": {
+        "title": "Gleichmäßiges Licht",
+        "description": "COB-Technologie liefert kontinuierliche, gleichmäßige Beleuchtung ohne helle Flecken oder dunkle Bereiche."
+      },
+      "no_dots": {
+        "title": "Keine sichtbaren Punkte",
+        "description": "Im Gegensatz zu herkömmlichen LED-Streifen schafft COB glatte Beleuchtung ohne einzelne LED-Punkte."
+      },
+      "modern_design": {
+        "title": "Modernes Design",
+        "description": "Perfekt für zeitgenössische Innenräume und schafft elegante Ambiente-Beleuchtungseffekte."
+      },
+      "stretch_ceilings": {
+        "title": "Perfekt für Spanndecken",
+        "description": "Geringe Wärmeabgabe macht COB-LED-Streifen ideal für die Verwendung mit Spanndeckenmaterialien."
+      }
+    },
+    "usage": {
+      "title": "Wo wird LED-Deckenbeleuchtung eingesetzt",
+      "text_1": "LED-Deckenbeleuchtung wird zur Schaffung moderner Innenraumbeleuchtung verwendet. Sie eignet sich für Wohnzimmer, Schlafzimmer, Küchen, Flure und Gewerberäume.",
+      "text_2": "COB-LED-Streifen bietet gleichmäßiges Licht ohne sichtbare Punkte, was ihn ideal für versteckte Deckenbeleuchtung und Designerlösungen macht."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Alles, was Sie über LED-Deckenbeleuchtung wissen müssen",
+      "q1": {
+        "question": "Was ist ein COB-LED-Streifen?",
+        "answer": "COB (Chip-on-Board) ist eine fortschrittliche LED-Technologie, bei der mehrere LED-Chips direkt auf ein Substrat gebondet werden und eine kontinuierliche Lichtquelle ohne sichtbare einzelne LEDs bilden. Das Ergebnis ist glatte, gleichmäßige Beleuchtung, perfekt für Deckeninstallationen."
+      },
+      "q2": {
+        "question": "Wie installiert man LED-Deckenbeleuchtung?",
+        "answer": "Die Installation ist unkompliziert: 1) Reinigen und bereiten Sie die Deckenoberfläche vor, 2) Montieren Sie die LED-Streifen in Deckennischen oder hinter Stuckleisten, 3) Schließen Sie an Netzteil und Controller an, 4) Testen Sie das System. Unsere Sets werden vormontiert geliefert und enthalten detaillierte Installationsanweisungen."
+      },
+      "q3": {
+        "question": "Ist COB besser als SMD-LED-Streifen?",
+        "answer": "Für Deckenbeleuchtung ist COB besser als herkömmliche SMD-Streifen. COB bietet gleichmäßige, punktfreie Beleuchtung, bessere Wärmeableitung, höhere Lichtintensität und ein professionelleres Erscheinungsbild. Während SMD-Streifen für versteckte Anwendungen geeignet sind, ist COB die beste Wahl für sichtbare Deckeninstallationen."
+      },
+      "q4": {
+        "question": "Können LED-Streifen traditionelle Deckenleuchten ersetzen?",
+        "answer": "Ja, LED-Deckenbeleuchtung kann als Hauptbeleuchtung dienen oder vorhandene Leuchten ergänzen. Bei richtiger Planung liefern COB-LED-Streifen ausreichende Helligkeit für Ambiente-Beleuchtung und schaffen gleichzeitig eine moderne, elegante Atmosphäre. Viele Hausbesitzer verwenden sie zusammen mit traditioneller Beleuchtung für maximale Flexibilität."
+      },
+      "q5": {
+        "question": "Wie lange halten COB-LED-Streifen?",
+        "answer": "Hochwertige COB-LED-Streifen haben eine Lebensdauer von 50.000-100.000 Stunden, was sich bei normalem Gebrauch auf 10-30 Jahre übersetzt. Überlegenes Wärmemanagement und Bauqualität tragen zu dieser Langlebigkeit bei. Unsere Produkte werden mit einer 24-Monats-Garantie geliefert und sind für langfristige Zuverlässigkeit ausgelegt."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren Raum zu transformieren?",
+      "subtitle": "Starten Sie Ihr LED-Deckenbeleuchtungsprojekt noch heute mit unseren professionellen Sets",
+      "button_primary": "Produkte durchsuchen",
+      "button_secondary": "Support kontaktieren"
+    }
+  },
+  "led_ceiling_kit": {
+    "seo_title": "LED-Deckenbeleuchtungs-Set | Moderne COB-LED-Deckenleuchten",
+    "seo_description": "Komplette LED-Deckenbeleuchtungssets mit COB-LED-Streifen für moderne Innenräume.",
+    "hero_title": "Installationsfertige LED-Deckenbeleuchtungssets",
+    "hero_subtitle": "Professionelle COB-LED-Sets für Decken. Gleichmäßiges Licht ohne Punkte, einfache Installation und Smartphone-Steuerung.",
+    "hero_cta": "Set wählen",
+    "why_title": "Warum LED-Deckenbeleuchtung",
+    "why_text": "COB-LED-Deckenbeleuchtung schafft glatte und moderne indirekte Beleuchtung ohne sichtbare Lichtpunkte. Sie ist perfekt für Wohnzimmer, Schlafzimmer und moderne Innenräume.",
+    "kits_title": "Unsere Sets",
+    "gallery_title": "Interieur-Galerie",
+    "gallery_subtitle": "Sehen Sie, wie LED-Deckenbeleuchtung moderne Räume transformiert",
+    "installation_title": "Wie die Installation funktioniert",
+    "installation_step_1": "LED-Streifen an Deckennische befestigen",
+    "installation_step_2": "Netzteil anschließen",
+    "installation_step_3": "Beleuchtung mit Fernbedienung steuern",
+    "faq_title": "Häufig gestellte Fragen",
+    "faq_q1": "Was ist ein COB-LED-Streifen?",
+    "faq_a1": "COB (Chip-on-Board) ist eine Technologie, bei der LEDs direkt auf das Substrat montiert werden, ohne sichtbare Punkte. Dies schafft gleichmäßige Beleuchtung ohne Flecken, was sie ideal für Deckenbeleuchtung in modernen Innenräumen macht.",
+    "faq_q2": "Was ist der Unterschied zwischen COB und SMD-LED-Streifen?",
+    "faq_a2": "SMD-Streifen haben sichtbare einzelne LEDs, die einen gepunkteten Lichteffekt erzeugen können. COB-Streifen bieten kontinuierliche, gleichmäßige Beleuchtung ohne Punkte, was ästhetischer und angenehmer für die Augen ist.",
+    "faq_q3": "Kann LED-Streifen für Deckenbeleuchtung verwendet werden?",
+    "faq_a3": "Ja, LED-Streifen sind perfekt für Deckenbeleuchtung. Sie werden in Deckennischen oder Vertiefungen installiert und schaffen schöne indirekte Beleuchtung, die den Raum optisch vergrößert und dem Interieur eine moderne Note verleiht.",
+    "faq_q4": "Wie lange hält ein COB-LED-Streifen?",
+    "faq_a4": "Hochwertige COB-LED-Streifen haben eine Lebensdauer von 10 Jahren oder mehr bei ordnungsgemäßer Installation und Verwendung. Unsere Sets werden mit einer 24-Monats-Garantie geliefert, die alle Komponenten abdeckt.",
+    "cta_title": "Bereit, Ihren Raum zu transformieren?",
+    "cta_subtitle": "Wählen Sie das perfekte LED-Deckenbeleuchtungs-Set für Ihr Zuhause",
+    "link_installation_desc": "Erfahren Sie, wie man installiert",
+    "link_blog_desc": "Hilfreiche Artikel",
+    "link_support_desc": "Benötigen Sie Hilfe?",
+    "view_product": "Produkt ansehen",
+    "popular_badge": "Beliebtes Set — Häufig bestellt"
+  },
+  "installation_guide": {
+    "title": "Montageanleitung",
+    "subtitle": "Schritt-für-Schritt-Anleitung zur Installation von LED-Streifen",
+    "required_tools": "Erforderliche Werkzeuge",
+    "scissors": "Schere",
+    "measuring_tape": "Maßband",
+    "pencil": "Bleistift",
+    "cleaning_supplies": "Reinigungsmittel",
+    "step_1_title": "Oberflächenvorbereitung",
+    "step_1_desc": "Reinigen Sie die Deckenoberfläche gründlich von Staub und Schmutz. Entfetten Sie die Bereiche, in denen der Streifen montiert wird, mit einer Alkohollösung.",
+    "step_1_tip_1": "Verwenden Sie ein fusselfreies Tuch",
+    "step_1_tip_2": "Lassen Sie die Oberfläche vor der Installation vollständig trocknen",
+    "step_1_warning_1": "Verwenden Sie keine aggressiven Reinigungsmittel",
+    "step_2_title": "Markierung und Planung",
+    "step_2_desc": "Markieren Sie die Decke und zeigen Sie die Montageorte des Streifens und die Position des Netzteils an. Berücksichtigen Sie den Abstand zu Steckdosen.",
+    "step_2_tip_1": "Verwenden Sie einen Bleistift zum Markieren",
+    "step_2_tip_2": "Berücksichtigen Sie die Möbelplatzierung und Hauptbeleuchtungszonen",
+    "step_3_title": "Streifen-Installation",
+    "step_3_desc": "Entfernen Sie schrittweise die Schutzschicht und kleben Sie den Streifen gemäß den Markierungen. Drücken Sie den Streifen gleichmäßig an und vermeiden Sie Blasen.",
+    "step_3_tip_1": "Dehnen Sie den Streifen nicht während der Installation",
+    "step_3_tip_2": "Arbeiten Sie in 30-50 cm Abschnitten",
+    "step_3_warning_1": "Biegen Sie den Streifen nicht in scharfen Winkeln",
+    "step_3_warning_2": "Vermeiden Sie es, die LEDs mit den Händen zu berühren",
+    "helpful_tips": "Hilfreiche Tipps",
+    "important_notes": "Wichtige Hinweise",
+    "cta_title": "Bereit mit der Installation zu beginnen?",
+    "cta_subtitle": "Wählen Sie das richtige LED-Beleuchtungs-Set für Ihre Decke",
+    "view_kits_button": "Sets ansehen"
+  },
+  "trust_indicators": {
+    "warranty_years": "2 Jahre",
+    "warranty": "Garantie",
+    "free_delivery": "Kostenloser Versand",
+    "delivery_time": "In ganz Europa innerhalb von 3-7 Tagen",
+    "secure_payment": "Sichere Zahlung",
+    "payment_methods": "Zahlung per Karte oder bei Lieferung",
+    "long_service_life": "Lange Lebensdauer",
+    "service_life_desc": "10 Jahre bei ordnungsgemäßer Installation"
+  },
+  "installation": {
+    "title": "Installationsprozess",
+    "delivery": "Lieferung",
+    "delivery_desc": "Kostenloser Versand in ganz Europa innerhalb von 3-7 Tagen",
+    "delivery_time": "3-7 Tage",
+    "installation": "Installation",
+    "installation_desc": "Einfache Installation ohne Spezialwerkzeug",
+    "installation_time": "15-30 Minuten",
+    "ready": "Fertig",
+    "ready_desc": "Genießen Sie schöne Beleuchtung",
+    "ready_time": "Sofort nach der Installation"
+  }
+}

@@ -7,7 +7,10 @@ import { useTranslation } from 'react-i18next';
 
 const LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' }
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'cz', name: 'Čeština', flag: '🇨🇿' }
 ];
 
 export function LocaleSwitcher() {
