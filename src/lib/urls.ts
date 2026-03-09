@@ -1,8 +1,8 @@
 import { Product } from '../types';
 
-type LocaleType = 'en' | 'ru' | 'cz' | 'de' | 'pl';
+type LocaleType = 'en' | 'ru' | 'uk' | 'cz' | 'de' | 'pl';
 
-export const SUPPORTED_LOCALES: LocaleType[] = ['en', 'ru', 'cz', 'de', 'pl'];
+export const SUPPORTED_LOCALES: LocaleType[] = ['en', 'ru', 'uk', 'cz', 'de', 'pl'];
 export const SITE_URL = 'https://led-nabor.com';
 
 /**

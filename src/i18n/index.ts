@@ -7,13 +7,15 @@ import ruTranslation from './locales/ru.json';
 import plTranslation from './locales/pl.json';
 import deTranslation from './locales/de.json';
 import czTranslation from './locales/cz.json';
+import ukTranslation from './locales/uk.json';
 
 const resources = {
   en: { translation: enTranslation },
   ru: { translation: ruTranslation },
   pl: { translation: plTranslation },
   de: { translation: deTranslation },
-  cz: { translation: czTranslation }
+  cz: { translation: czTranslation },
+  uk: { translation: ukTranslation }
 };
 
 i18n

@@ -19,7 +19,8 @@ const LOCALE_MAP: Record<string, string> = {
   de: 'de_DE',
   pl: 'pl_PL',
   cz: 'cs_CZ',
-  ru: 'ru_RU'
+  ru: 'ru_RU',
+  uk: 'uk_UA'
 };
 
 export function SEO({ title, description, image, type = 'website', keywords, canonicalUrl, schema, alternateUrls }: SEOProps) {
@@ -30,7 +31,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const ogLocale = LOCALE_MAP[locale] || 'en_US';
 
   // Block indexing for unused language versions
-  const unusedLocales = ['pl', 'cz', 'de'];
+  const unusedLocales = ['pl', 'cz', 'de', 'uk'];
   const shouldNoIndex = unusedLocales.includes(locale);
 
   // Ensure canonical URL has trailing slash
@@ -46,7 +47,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
     : undefined;
 
   // Get default alternate URL (English)
-  const defaultAlternateUrl = alternateUrls?.['en'] || `${siteUrl}/en${location.pathname.replace(/^\/(en|ru|cz|de|pl)/, '')}/`;
+  const defaultAlternateUrl = alternateUrls?.['en'] || `${siteUrl}/en${location.pathname.replace(/^\/(en|ru|uk|cz|de|pl)/, '')}/`;
 
   return (
     <Helmet>
@@ -136,7 +137,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Service",
-            "availableLanguage": ["en", "ru", "de", "pl", "cs"]
+            "availableLanguage": ["en", "ru", "uk", "de", "pl", "cs"]
           }
         })}
       </script>
