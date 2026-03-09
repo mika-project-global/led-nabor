@@ -613,5 +613,25 @@
       "support": "Podpora 24/7"
     },
     "add_to_cart_error": "Přidání do košíku se nezdařilo. Zkuste to prosím znovu."
+  },
+  "home_seo": {
+    "title": "Průvodce LED stropním osvětlením",
+    "intro": "Moderní LED stropní osvětlení změnilo způsob, jakým osvětlujeme naše domovy. Technologie COB (Chip-on-Board) LED představuje nejnovější pokrok v LED páscích a nabízí vynikající kvalitu a výkon ve srovnání s tradičními osvětlovacími řešeními.",
+    "cob_benefits_title": "Výhody technologie COB LED",
+    "cob_benefits_text": "COB LED pásky vynikají svým výjimečně rovnoměrným osvětlením bez viditelných bodů nebo skvrn. Na rozdíl od tradičních SMD LED pásků, kde jsou jednotlivé LED viditelné, technologie COB spojuje více LED čipů přímo na substrát a vytváří tak kontinuální světelný zdroj. Výsledkem je hladké, profesionální osvětlení, které je ideální pro moderní stropní instalace. Technologie také poskytuje lepší odvod tepla, což zajišťuje delší životnost a spolehlivější výkon v čase.",
+    "uniform_lighting_title": "Dosažení dokonale rovnoměrného osvětlení",
+    "uniform_lighting_text": "Jednou z nejvýznamnějších výhod COB LED stropního osvětlení je jeho schopnost vytvářet dokonale rovnoměrné osvětlení. Kontinuální emise světla eliminuje skvrnitý vzhled běžný u tradičních LED pásků, díky čemuž je ideální pro viditelné instalace ve stropních výklencích, římsách a za korunními lištami. Tato rovnoměrná distribuce světla vytváří sofistikovanou ambientní záři, která vylepšuje váš interiérový design bez ostrých stínů nebo jasných skvrn.",
+    "living_room_title": "LED osvětlení pro obývací pokoje",
+    "living_room_text": "Obývací pokoj je místo, kde COB LED stropní osvětlení skutečně září. Nainstalujte LED pásky kolem obvodu stropu a vytvořte elegantní ambientní záři, která působí, že prostor vypadá větší a příjemnější. S možnostmi RGB+CCT můžete upravit jak barvu, tak teplotu bílého světla pro jakoukoli příležitost – teplé tóny pro útulné večery, chladnou bílou pro denní aktivity nebo živé barvy pro zábavu. Nepřímé osvětlení snižuje únavu očí a zároveň poskytuje dostatečné osvětlení pro různé aktivity.",
+    "bedroom_title": "Vytvoření dokonalé atmosféry ložnice",
+    "bedroom_text": "Pro ložnice nabízí COB LED stropní osvětlení bezkonkurenční všestrannost při vytváření dokonalé atmosféry. Nastavitelné bílé světlo od teplých 2700K do chladných 6500K vám umožňuje napodobit přirozené světelné cykly a podporovat lepší spánkové vzorce. Nainstalujte pásky za stěnou u hlavy postele nebo kolem obvodu stropu pro měkké, relaxační osvětlení. Stmívatelná povaha LED pásků znamená, že můžete mít jasné světlo na čtení nebo přípravu a pak ztlumit na jemnou záři na spaní.",
+    "kitchen_title": "Funkční řešení osvětlení kuchyně",
+    "kitchen_text": "Kuchyně vyžadují jak funkční, tak estetické osvětlení a COB LED pásky splňují obě tyto požadavky. Nainstalujte je pod skříňky pro pracovní osvětlení nebo kolem obvodu stropu pro ambientní osvětlení. Vysoký index podání barev (CRI) kvalitních COB LED zajišťuje, že jídlo vypadá přirozeně a lákavě. Chladné bílé teploty kolem 4000-5000K poskytují vynikající viditelnost pro přípravu jídla, zatímco rovnoměrná distribuce světla eliminuje stíny na pracovních plochách.",
+    "conclusion_title": "Začínáme s LED stropním osvětlením",
+    "conclusion_text": "Ať už renovujete celý dům nebo aktualizujete jednotlivou místnost, COB LED stropní osvětlení nabízí moderní, energeticky úsporné řešení, které vylepšuje jakýkoli interiér. Naše kompletní sady zahrnují vše potřebné pro snadnou instalaci, od předem sestavených LED pásků a napájecích zdrojů až po ovladače a příslušenství.",
+    "learn_more": "Zjistěte více o",
+    "led_kits": "sadách LED stropního osvětlení",
+    "installation_ideas": "nápadech a průvodcích instalací",
+    "category_page": "kompletních řešeních stropního osvětlení"
   }
 }

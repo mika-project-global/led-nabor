@@ -613,5 +613,25 @@
       "support": "24/7 Support"
     },
     "add_to_cart_error": "Hinzufügen zum Warenkorb fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "home_seo": {
+    "title": "LED-Deckenbeleuchtung Ratgeber",
+    "intro": "Moderne LED-Deckenbeleuchtung hat die Art und Weise verändert, wie wir unsere Häuser beleuchten. Die COB (Chip-on-Board) LED-Technologie stellt den neuesten Fortschritt bei LED-Streifenbeleuchtung dar und bietet überlegene Qualität und Leistung im Vergleich zu traditionellen Beleuchtungslösungen.",
+    "cob_benefits_title": "Die Vorteile der COB LED-Technologie",
+    "cob_benefits_text": "COB LED-Streifen zeichnen sich durch ihre außergewöhnlich gleichmäßige Beleuchtung ohne sichtbare Punkte oder Flecken aus. Im Gegensatz zu herkömmlichen SMD LED-Streifen, bei denen einzelne LEDs sichtbar sind, verbindet die COB-Technologie mehrere LED-Chips direkt auf einem Substrat und schafft so eine kontinuierliche Lichtquelle. Dies führt zu glatter, professioneller Beleuchtung, die perfekt für moderne Deckeninstallationen ist. Die Technologie bietet auch eine bessere Wärmeableitung, die eine längere Lebensdauer und zuverlässigere Leistung im Laufe der Zeit gewährleistet.",
+    "uniform_lighting_title": "Perfekt gleichmäßige Beleuchtung erreichen",
+    "uniform_lighting_text": "Einer der bedeutendsten Vorteile der COB LED-Deckenbeleuchtung ist ihre Fähigkeit, perfekt gleichmäßige Beleuchtung zu schaffen. Die kontinuierliche Lichtemission eliminiert das fleckige Erscheinungsbild, das bei herkömmlichen LED-Streifen üblich ist, und macht sie ideal für sichtbare Installationen in Deckennischen, Hohlkehlen und hinter Stuckleisten. Diese gleichmäßige Lichtverteilung schafft ein elegantes Umgebungslicht, das Ihr Innendesign ohne harte Schatten oder helle Flecken verbessert.",
+    "living_room_title": "LED-Beleuchtung für Wohnzimmer",
+    "living_room_text": "Das Wohnzimmer ist der Ort, an dem COB LED-Deckenbeleuchtung wirklich glänzt. Installieren Sie LED-Streifen um den Deckenumfang, um ein elegantes Umgebungslicht zu schaffen, das den Raum größer und einladender wirken lässt. Mit RGB+CCT-Optionen können Sie sowohl Farbe als auch Weißlichttemperatur an jeden Anlass anpassen – warme Töne für gemütliche Abende, kühles Weiß für Tagesaktivitäten oder lebendige Farben zur Unterhaltung. Die indirekte Beleuchtung reduziert die Augenbelastung und bietet gleichzeitig ausreichende Beleuchtung für verschiedene Aktivitäten.",
+    "bedroom_title": "Die perfekte Schlafzimmer-Atmosphäre schaffen",
+    "bedroom_text": "Für Schlafzimmer bietet COB LED-Deckenbeleuchtung unübertroffene Vielseitigkeit bei der Schaffung der perfekten Atmosphäre. Einstellbares Weißlicht von warmem 2700K bis kühlem 6500K ermöglicht es Ihnen, natürliche Lichtzyklen nachzuahmen und bessere Schlafmuster zu fördern. Installieren Sie die Streifen hinter der Kopfteilwand oder um den Deckenumfang für sanfte, entspannende Beleuchtung. Die dimmbare Natur der LED-Streifen bedeutet, dass Sie helles Licht zum Lesen oder für die Vorbereitung haben können und dann auf ein sanftes Leuchten für die Schlafenszeit dimmen können.",
+    "kitchen_title": "Funktionale Küchenbeleuchtungslösungen",
+    "kitchen_text": "Küchen erfordern sowohl funktionale als auch ästhetische Beleuchtung, und COB LED-Streifen erfüllen beide Anforderungen. Installieren Sie sie unter Schränken für Arbeitsbeleuchtung oder um den Deckenumfang für Umgebungsbeleuchtung. Der hohe Farbwiedergabeindex (CRI) von hochwertigen COB LEDs stellt sicher, dass Lebensmittel natürlich und appetitlich aussehen. Kühle Weißtemperaturen um 4000-5000K bieten hervorragende Sichtbarkeit für die Lebensmittelzubereitung, während die gleichmäßige Lichtverteilung Schatten auf Arbeitsflächen eliminiert.",
+    "conclusion_title": "Erste Schritte mit LED-Deckenbeleuchtung",
+    "conclusion_text": "Ob Sie Ihr gesamtes Haus renovieren oder einen einzelnen Raum aktualisieren, COB LED-Deckenbeleuchtung bietet eine moderne, energieeffiziente Lösung, die jedes Interieur verbessert. Unsere kompletten Kits enthalten alles, was für eine einfache Installation benötigt wird, von vorgefertigten LED-Streifen und Netzteilen bis hin zu Controllern und Zubehör.",
+    "learn_more": "Erfahren Sie mehr über",
+    "led_kits": "LED-Deckenbeleuchtungs-Kits",
+    "installation_ideas": "Installationsideen und Anleitungen",
+    "category_page": "komplette Deckenbeleuchtungslösungen"
   }
 }

@@ -613,5 +613,25 @@
       "support": "Wsparcie 24/7"
     },
     "add_to_cart_error": "Nie udało się dodać do koszyka. Spróbuj ponownie."
+  },
+  "home_seo": {
+    "title": "Przewodnik po oświetleniu sufitowym LED",
+    "intro": "Nowoczesne oświetlenie sufitowe LED zmieniło sposób, w jaki oświetlamy nasze domy. Technologia COB (Chip-on-Board) LED stanowi najnowszy postęp w dziedzinie taśm LED, oferując wyższą jakość i wydajność w porównaniu z tradycyjnymi rozwiązaniami oświetleniowymi.",
+    "cob_benefits_title": "Zalety technologii COB LED",
+    "cob_benefits_text": "Taśmy COB LED wyróżniają się wyjątkowym równomiernym oświetleniem bez widocznych kropek czy plam. W przeciwieństwie do tradycyjnych taśm SMD LED, gdzie poszczególne diody LED są widoczne, technologia COB łączy wiele chipów LED bezpośrednio na podłożu, tworząc ciągłe źródło światła. Rezultatem jest gładkie, profesjonalne oświetlenie idealne do nowoczesnych instalacji sufitowych. Technologia zapewnia również lepsze odprowadzanie ciepła, zapewniając dłuższą żywotność i bardziej niezawodną wydajność w czasie.",
+    "uniform_lighting_title": "Osiągnięcie idealnego równomiernego oświetlenia",
+    "uniform_lighting_text": "Jedną z najważniejszych zalet oświetlenia sufitowego COB LED jest zdolność do tworzenia idealnie równomiernego oświetlenia. Ciągła emisja światła eliminuje kropkowany wygląd typowy dla tradycyjnych taśm LED, dzięki czemu idealnie nadaje się do widocznych instalacji we wnękach sufitowych, karniszach i za listwami sufitowymi. Ta równomierna dystrybucja światła tworzy wyrafinowaną otoczenie, które wzbogaca projekt wnętrza bez ostrych cieni lub jasnych plam.",
+    "living_room_title": "Oświetlenie LED do salonu",
+    "living_room_text": "Salon to miejsce, gdzie oświetlenie sufitowe COB LED naprawdę świeci. Zainstaluj taśmy LED wokół obwodu sufitu, aby stworzyć elegancką poświatę otoczenia, która sprawia, że przestrzeń wydaje się większa i bardziej zachęcająca. Z opcjami RGB+CCT możesz dostosować zarówno kolor, jak i temperaturę białego światła do każdej okazji – ciepłe tony na przytulne wieczory, chłodną biel na dzienne zajęcia lub żywe kolory na rozrywkę. Oświetlenie pośrednie zmniejsza zmęczenie oczu, zapewniając jednocześnie wystarczające oświetlenie do różnych zajęć.",
+    "bedroom_title": "Tworzenie idealnej atmosfery sypialni",
+    "bedroom_text": "W przypadku sypialni oświetlenie sufitowe COB LED oferuje niezrównaną wszechstronność w tworzeniu idealnej atmosfery. Regulowane białe światło od ciepłych 2700K do chłodnych 6500K pozwala naśladować naturalne cykle światła, promując lepsze wzorce snu. Zainstaluj taśmy za ścianą wezgłowia lub wokół obwodu sufitu, aby uzyskać miękkie, relaksujące oświetlenie. Ściemniana natura taśm LED oznacza, że możesz mieć jasne światło do czytania lub przygotowywania się, a następnie przyciemnić je do delikatnej poświaty na noc.",
+    "kitchen_title": "Funkcjonalne rozwiązania oświetleniowe kuchni",
+    "kitchen_text": "Kuchnie wymagają zarówno funkcjonalnego, jak i estetycznego oświetlenia, a taśmy COB LED spełniają oba te wymagania. Zainstaluj je pod szafkami do oświetlenia zadaniowego lub wokół obwodu sufitu do oświetlenia otoczenia. Wysoki wskaźnik oddawania barw (CRI) wysokiej jakości diod COB LED zapewnia, że jedzenie wygląda naturalnie i apetycznie. Chłodne białe temperatury około 4000-5000K zapewniają doskonałą widoczność podczas przygotowywania posiłków, podczas gdy równomierna dystrybucja światła eliminuje cienie na powierzchniach roboczych.",
+    "conclusion_title": "Rozpoczęcie pracy z oświetleniem sufitowym LED",
+    "conclusion_text": "Niezależnie od tego, czy remontujesz cały dom, czy aktualizujesz pojedyncze pomieszczenie, oświetlenie sufitowe COB LED oferuje nowoczesne, energooszczędne rozwiązanie, które wzbogaca każde wnętrze. Nasze kompletne zestawy zawierają wszystko, co potrzebne do łatwej instalacji, od wstępnie zmontowanych taśm LED i zasilaczy po kontrolery i akcesoria.",
+    "learn_more": "Dowiedz się więcej o",
+    "led_kits": "zestawach oświetlenia sufitowego LED",
+    "installation_ideas": "pomysłach i przewodnikach instalacyjnych",
+    "category_page": "kompletnych rozwiązaniach oświetlenia sufitowego"
   }
 }
