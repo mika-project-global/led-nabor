@@ -7,6 +7,7 @@ export const products: Product[] = [
     slugs: {
       en: "universal-rgb-cct",
       ru: "universal-rgb-cct",
+      uk: "universalnyi-rgb-cct",
       cz: "univerzalni-rgb-cct",
       de: "universal-rgb-cct",
       pl: "uniwersalny-rgb-cct",
@@ -61,6 +62,7 @@ Professional solution for creating modern lighting with the ability to control c
     slugs: {
       en: "adjustable-white",
       ru: "adjustable-white",
+      uk: "regulyuvanyi-bilyi",
       cz: "nastavitelna-bila",
       de: "einstellbares-weiss",
       pl: "regulowana-biel",

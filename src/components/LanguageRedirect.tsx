@@ -1,6 +1,6 @@
 import { Navigate } from 'react-router-dom';
 
-const SUPPORTED_LOCALES = ['en', 'de', 'pl', 'cz', 'ru'];
+const SUPPORTED_LOCALES = ['en', 'de', 'pl', 'cz', 'ru', 'uk'];
 const DEFAULT_LOCALE = 'en';
 
 /**
@@ -25,6 +25,7 @@ export function LanguageRedirect() {
     const localeMap: Record<string, string> = {
       'cs': 'cz', // Czech
       'ru': 'ru',
+      'uk': 'uk', // Ukrainian
       'de': 'de',
       'pl': 'pl',
       'en': 'en'

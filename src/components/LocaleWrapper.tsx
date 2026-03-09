@@ -3,7 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useLocale } from '../context/LocaleContext';
 import { useTranslation } from 'react-i18next';
 
-const SUPPORTED_LOCALES = ['en', 'de', 'pl', 'cz', 'ru'];
+const SUPPORTED_LOCALES = ['en', 'de', 'pl', 'cz', 'ru', 'uk'];
 const DEFAULT_LOCALE = 'en';
 
 /**

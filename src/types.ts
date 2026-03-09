@@ -15,6 +15,7 @@ export interface Product {
   slugs: {
     en: string;
     ru: string;
+    uk: string;
     cz: string;
     de: string;
     pl: string;
