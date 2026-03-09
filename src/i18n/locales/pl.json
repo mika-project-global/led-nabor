@@ -632,6 +632,10 @@
     "learn_more": "Dowiedz się więcej o",
     "led_kits": "zestawach oświetlenia sufitowego LED",
     "installation_ideas": "pomysłach i przewodnikach instalacyjnych",
-    "category_page": "kompletnych rozwiązaniach oświetlenia sufitowego"
-  }
+    "category_page": "kompletnych rozwiązaniach oświetlenia sufitowego",
+    "read_full_guide": "Przeczytaj pełny przewodnik",
+    "read_full_guide_subtitle": "Dowiedz się więcej o technologiach, instalacji i designie oświetlenia sufitowego LED"
+  },
+  "customerReviews": "Opinie klientów",
+  "customerReviewDescription": "Ponad 5000 zadowolonych klientów wybrało już nasze zestawy oświetleniowe"
 }

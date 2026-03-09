@@ -632,6 +632,10 @@
     "learn_more": "Zjistěte více o",
     "led_kits": "sadách LED stropního osvětlení",
     "installation_ideas": "nápadech a průvodcích instalací",
-    "category_page": "kompletních řešeních stropního osvětlení"
-  }
+    "category_page": "kompletních řešeních stropního osvětlení",
+    "read_full_guide": "Přečíst kompletního průvodce",
+    "read_full_guide_subtitle": "Zjistěte více o LED stropním osvětlení technologiích, instalaci a designu"
+  },
+  "customerReviews": "Recenze zákazníků",
+  "customerReviewDescription": "Více než 5000 spokojených zákazníků již zvolilo naše osvětlovací sady"
 }
