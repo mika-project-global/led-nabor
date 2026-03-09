@@ -637,5 +637,13 @@
     "read_full_guide_subtitle": "Dowiedz się więcej o technologiach, instalacji i designie oświetlenia sufitowego LED"
   },
   "customerReviews": "Opinie klientów",
-  "customerReviewDescription": "Ponad 5000 zadowolonych klientów wybrało już nasze zestawy oświetleniowe"
+  "customerReviewDescription": "Ponad 5000 zadowolonych klientów wybrało już nasze zestawy oświetleniowe",
+  "footer": {
+    "all_products": "Wszystkie produkty",
+    "information": "Informacje",
+    "support": "Wsparcie",
+    "contact": "Kontakt",
+    "prague_czech_republic": "Praga, Czechy",
+    "all_rights_reserved": "Wszelkie prawa zastrzeżone."
+  }
 }

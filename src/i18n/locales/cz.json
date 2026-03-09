@@ -637,5 +637,13 @@
     "read_full_guide_subtitle": "Zjistěte více o LED stropním osvětlení technologiích, instalaci a designu"
   },
   "customerReviews": "Recenze zákazníků",
-  "customerReviewDescription": "Více než 5000 spokojených zákazníků již zvolilo naše osvětlovací sady"
+  "customerReviewDescription": "Více než 5000 spokojených zákazníků již zvolilo naše osvětlovací sady",
+  "footer": {
+    "all_products": "Všechny produkty",
+    "information": "Informace",
+    "support": "Podpora",
+    "contact": "Kontakt",
+    "prague_czech_republic": "Praha, Česká republika",
+    "all_rights_reserved": "Všechna práva vyhrazena."
+  }
 }

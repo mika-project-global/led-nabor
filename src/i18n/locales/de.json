@@ -637,5 +637,13 @@
     "read_full_guide_subtitle": "Erfahren Sie mehr über LED-Deckenbeleuchtung Technologien, Installation und Design"
   },
   "customerReviews": "Kundenbewertungen",
-  "customerReviewDescription": "Über 5000 zufriedene Kunden haben bereits unsere Beleuchtungs-Kits gewählt"
+  "customerReviewDescription": "Über 5000 zufriedene Kunden haben bereits unsere Beleuchtungs-Kits gewählt",
+  "footer": {
+    "all_products": "Alle Produkte",
+    "information": "Informationen",
+    "support": "Unterstützung",
+    "contact": "Kontakt",
+    "prague_czech_republic": "Prag, Tschechien",
+    "all_rights_reserved": "Alle Rechte vorbehalten."
+  }
 }

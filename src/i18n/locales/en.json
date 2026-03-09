@@ -554,6 +554,14 @@
   "terms_of_use": "Terms of Use",
   "customerReviews": "Customer reviews",
   "customerReviewDescription": "Over 5000 happy clients have already chosen our lighting kits",
+  "footer": {
+    "all_products": "All Products",
+    "information": "Information",
+    "support": "Support",
+    "contact": "Contact",
+    "prague_czech_republic": "Prague, Czech Republic",
+    "all_rights_reserved": "All rights reserved."
+  },
   "back": "Back",
   "continue_shopping": "Continue shopping",
   "empty_cart": "Your cart is empty",

@@ -556,6 +556,14 @@
   "terms_of_use": "Условия использования",
   "customerReviews": "Отзывы клиентов",
   "customerReviewDescription": "Более 5000 довольных клиентов уже выбрали наши комплекты освещения",
+  "footer": {
+    "all_products": "Все продукты",
+    "information": "Информация",
+    "support": "Поддержка",
+    "contact": "Контакты",
+    "prague_czech_republic": "Прага, Чехия",
+    "all_rights_reserved": "Все права защищены."
+  },
   "back": "Назад",
   "continue_shopping": "Продолжить покупки",
   "empty_cart": "Ваша корзина пуста",

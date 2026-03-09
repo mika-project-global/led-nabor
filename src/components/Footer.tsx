@@ -32,7 +32,7 @@ export function Footer() {
                   to={`/${locale}/catalog`}
                   className="hover:text-white transition-colors"
                 >
-                  {locale === 'ru' ? 'Все продукты' : 'All Products'}
+                  {t('footer.all_products')}
                 </Link>
               </li>
               <li>
@@ -49,7 +49,7 @@ export function Footer() {
           {/* Information Section */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">
-              {locale === 'ru' ? 'Информация' : 'Information'}
+              {t('footer.information')}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -90,7 +90,7 @@ export function Footer() {
           {/* Support Section */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">
-              {locale === 'ru' ? 'Поддержка' : 'Support'}
+              {t('footer.support')}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -131,7 +131,7 @@ export function Footer() {
           {/* Contact Section */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">
-              {locale === 'ru' ? 'Контакты' : 'Contact'}
+              {t('footer.contact')}
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
@@ -155,7 +155,7 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span>
-                  {locale === 'ru' ? 'Прага, Чехия' : 'Prague, Czech Republic'}
+                  {t('footer.prague_czech_republic')}
                 </span>
               </li>
             </ul>
@@ -164,7 +164,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
           <p>
-            &copy; {currentYear} LED Nabor. {locale === 'ru' ? 'Все права защищены.' : 'All rights reserved.'}
+            &copy; {currentYear} LED Nabor. {t('footer.all_rights_reserved')}
           </p>
         </div>
       </div>
