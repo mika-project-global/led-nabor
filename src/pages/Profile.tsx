@@ -154,12 +154,12 @@ export default function Profile() {
   }
 
   const tabs = [
-    { id: 'profile', label: 'Profile', icon: User },
-    { id: 'orders', label: 'Orders', icon: ShoppingBag },
-    { id: 'favorites', label: 'Favorites', icon: Heart },
-    { id: 'notifications', label: 'Notifications', icon: Bell },
-    { id: 'reviews', label: 'Reviews', icon: Star },
-    { id: 'settings', label: 'Settings', icon: Settings },
+    { id: 'profile', label: t('profile.tabs.profile'), icon: User },
+    { id: 'orders', label: t('profile.tabs.orders'), icon: ShoppingBag },
+    { id: 'favorites', label: t('profile.tabs.favorites'), icon: Heart },
+    { id: 'notifications', label: t('profile.tabs.notifications'), icon: Bell },
+    { id: 'reviews', label: t('profile.tabs.reviews'), icon: Star },
+    { id: 'settings', label: t('profile.tabs.settings'), icon: Settings },
   ];
 
   return (
@@ -214,7 +214,7 @@ export default function Profile() {
                 className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-red-600 hover:bg-red-50 transition-colors"
               >
                 <LogOut size={20} />
-                <span>Log Out</span>
+                <span>{t('profile.log_out')}</span>
               </button>
             </nav>
           </div>
@@ -225,12 +225,12 @@ export default function Profile() {
           <div className="bg-white rounded-lg shadow-lg p-6">
             {activeTab === 'profile' && (
               <div>
-                <h3 className="text-xl font-bold mb-6">Personal Information</h3>
+                <h3 className="text-xl font-bold mb-6">{t('profile.personal_info')}</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="firstName">
-                        First Name
+                        {t('profile.first_name')}
                       </label>
                       <input
                         id="firstName"
@@ -243,7 +243,7 @@ export default function Profile() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="lastName">
-                        Last Name
+                        {t('profile.last_name')}
                       </label>
                       <input
                         id="lastName"
@@ -256,7 +256,7 @@ export default function Profile() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Email
+                        {t('profile.email')}
                       </label>
                       <input
                         name="email"
@@ -268,7 +268,7 @@ export default function Profile() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Phone
+                        {t('profile.phone')}
                       </label>
                       <input
                         name="phone"
@@ -297,7 +297,7 @@ export default function Profile() {
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                          City
+                          {t('profile.city')}
                         </label>
                         <input
                           name="address.city"
@@ -309,7 +309,7 @@ export default function Profile() {
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
-                          Postal Code
+                          {t('profile.postal_code')}
                         </label>
                         <input
                           name="address.postal_code"
@@ -327,7 +327,7 @@ export default function Profile() {
                     disabled={isSubmitting}
                     className="btn-primary btn-full disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? 'Saving...' : 'Save Changes'}
+                    {isSubmitting ? t('profile.saving') : t('profile.save_changes')}
                   </button>
                 </form>
               </div>
@@ -335,7 +335,7 @@ export default function Profile() {
 
             {activeTab === 'orders' && (
               <div>
-                <h3 className="text-xl font-bold mb-6">My Orders</h3>
+                <h3 className="text-xl font-bold mb-6">{t('profile.my_orders')}</h3>
                 {isLoadingOrders ? (
                   <div className="flex justify-center">
                     <div className="w-8 h-8 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin" />
@@ -358,14 +358,14 @@ export default function Profile() {
                               order.status === 'cancelled' || order.status === 'отменен' ? 'bg-red-100 text-red-800' :
                               order.status === 'shipping' || order.status === 'в пути' ? 'bg-blue-100 text-blue-800' :
                               order.status === 'доставлен' ? 'bg-green-100 text-green-800' :
-                              'bg-gray-100 text-gray-800' 
+                              'bg-gray-100 text-gray-800'
                             }`}>
-                              {order.status === 'completed' ? 'Completed' :
-                               order.status === 'pending' || order.status === 'в обработке' ? 'Processing' :
-                               order.status === 'cancelled' || order.status === 'отменен' ? 'Cancelled' :
-                               order.status === 'завершенный' ? 'Completed' :
-                              order.status === 'shipping' || order.status === 'в пути' ? 'Shipping' :
-                               order.status === 'доставлен' ? 'Delivered' :
+                              {order.status === 'completed' ? t('profile.status.completed') :
+                               order.status === 'pending' || order.status === 'в обработке' ? t('profile.status.processing') :
+                               order.status === 'cancelled' || order.status === 'отменен' ? t('profile.status.cancelled') :
+                               order.status === 'завершенный' ? t('profile.status.completed') :
+                              order.status === 'shipping' || order.status === 'в пути' ? t('profile.status.shipping') :
+                               order.status === 'доставлен' ? t('profile.status.delivered') :
                                order.status}
                             </span>
                           </div>
@@ -386,7 +386,7 @@ export default function Profile() {
                                 </p>
                                 {item.warranty && (
                                   <p className="text-sm text-cyan-600">
-                                    Warranty: {item.warranty.months} months
+                                    {t('profile.warranty')}: {item.warranty.months} {t('cart.months')}
                                   </p>
                                 )}
                               </div>
@@ -407,7 +407,7 @@ export default function Profile() {
                   </div>
                 ) : (
                   <div className="text-center text-gray-500">
-                    You don't have any orders yet
+                    {t('profile.no_orders')}
                   </div>
                 )}
               </div>
@@ -452,18 +452,18 @@ export default function Profile() {
 
             {activeTab === 'reviews' && (
               <div>
-                <h3 className="text-xl font-bold mb-6">My Reviews</h3>
+                <h3 className="text-xl font-bold mb-6">{t('profile.my_reviews')}</h3>
                 <div className="text-center text-gray-500">
-                  You haven't written any reviews yet
+                  {t('profile.no_reviews')}
                 </div>
               </div>
             )}
 
             {activeTab === 'settings' && (
               <div>
-                <h3 className="text-xl font-bold mb-6">Settings</h3>
+                <h3 className="text-xl font-bold mb-6">{t('profile.tabs.settings')}</h3>
                 <div className="text-gray-500">
-                  No settings available at this time
+                  {t('profile.no_settings')}
                 </div>
               </div>
             )}
