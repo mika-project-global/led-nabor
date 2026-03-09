@@ -252,5 +252,160 @@
     "ready": "Hotovo",
     "ready_desc": "Užívejte si krásné osvětlení",
     "ready_time": "Okamžitě po instalaci"
+  },
+  "auth": {
+    "login_title": "Přihlásit se",
+    "register_title": "Registrovat se",
+    "email": "E-mail",
+    "password": "Heslo",
+    "confirm_password": "Potvrdit heslo",
+    "sign_in": "Přihlásit se",
+    "register": "Registrovat se",
+    "forgot_password": "Zapomenuté heslo?",
+    "no_account": "Nemáte účet?",
+    "already_have_account": "Již máte účet?",
+    "signing_in": "Přihlašování...",
+    "registering": "Registrace...",
+    "passwords_dont_match": "Hesla se neshodují",
+    "password_too_short": "Heslo musí mít alespoň 6 znaků",
+    "invalid_credentials": "Neplatný e-mail nebo heslo",
+    "reset_password_title": "Obnovit heslo",
+    "new_password": "Nové heslo",
+    "update_password": "Aktualizovat heslo",
+    "password_updated": "Heslo bylo aktualizováno!",
+    "back_to_login": "Zpět na přihlášení"
+  },
+  "checkout": {
+    "title": "Pokladna",
+    "customer_info": "Informace o zákazníkovi",
+    "first_name": "Jméno",
+    "last_name": "Příjmení",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "street": "Ulice",
+    "city": "Město",
+    "postal_code": "PSČ",
+    "country": "Země",
+    "delivery_method": "Způsob dopravy",
+    "free_delivery": "Doprava zdarma po celé Evropě",
+    "delivery_time": "Doba doručení: 3-7 pracovních dnů",
+    "payment_method": "Způsob platby",
+    "pay_on_delivery": "Platba na dobírku",
+    "pay_with_card": "Platba online kartou",
+    "place_order": "Odeslat objednávku",
+    "processing": "Zpracování...",
+    "order_summary": "Shrnutí objednávky",
+    "total": "Celkem",
+    "cart_empty": "Váš košík je prázdný",
+    "back": "Zpět"
+  },
+  "cart": {
+    "title": "Košík",
+    "empty": "Váš košík je prázdný",
+    "select_warranty": "Vyberte záruku",
+    "months": "měsíců",
+    "total": "Celkem:",
+    "checkout": "Přejít k pokladně"
+  },
+  "faq": {
+    "title": "Často kladené otázky",
+    "search_placeholder": "Hledat otázky",
+    "categories": {
+      "installation": "Instalace",
+      "technical": "Technické",
+      "warranty": "Záruka",
+      "delivery": "Doprava"
+    }
+  },
+  "about": {
+    "title": "LED Nabor – Profesionální řešení osvětlení",
+    "subtitle": "Specializujeme se na profesionální LED řešení pro stropní osvětlení od roku 2012. Vytváříme kvalitní osvětlení, které transformuje prostory a vytváří útulnou atmosféru.",
+    "stats": {
+      "customers": "Spokojených zákazníků",
+      "customers_count": "5000+",
+      "experience": "Zkušenosti",
+      "experience_count": "12 let",
+      "quality": "Kvalita",
+      "quality_value": "Premium",
+      "warranty": "Záruka",
+      "warranty_value": "až 24 měsíců"
+    }
+  },
+  "support": {
+    "title": "Pomoc inženýra",
+    "subtitle": "Napište, jaké osvětlení byste chtěli a rozměry vašeho domu. Inženýr vám zavolá a pomůže vybrat sadu.",
+    "form": {
+      "your_name": "Vaše jméno",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "city": "Město",
+      "message": "Zpráva",
+      "sending": "Odesílání...",
+      "send": "Odeslat",
+      "success": "Děkujeme za kontakt! Brzy se vám ozveme.",
+      "error": "Došlo k chybě. Zkuste to prosím později."
+    },
+    "contact_info": "Kontaktní informace",
+    "working_hours": "Pracovní doba:",
+    "weekdays": "Pracovní dny: 9:00 - 18:00",
+    "weekends": "Víkendy: 10:00 - 16:00"
+  },
+  "warranty_page": {
+    "title": "Záruka produktů LED Nabor",
+    "subtitle": "Jsme si jisti kvalitou našich produktů a nabízíme standardní 24měsíční záruku",
+    "standard_warranty": "24 měsíců",
+    "standard_warranty_desc": "Standardní záruka v souladu s předpisy EU",
+    "technical_support": "Technická podpora",
+    "technical_support_desc": "Bezplatná konzultace ohledně instalace a provozu",
+    "service_life": "Životnost",
+    "service_life_desc": "Naše produkty mají životnost 10 let při správném použití"
+  },
+  "privacy_page": {
+    "title": "Zásady ochrany osobních údajů",
+    "description": "Zásady ochrany osobních údajů LED Nabor - pravidla zpracování a ochrany osobních údajů"
+  },
+  "terms_page": {
+    "title": "Podmínky použití",
+    "description": "Podmínky použití LED Nabor - pravidla pro nákup a používání našich produktů"
+  },
+  "order": {
+    "success": "Objednávka úspěšná!",
+    "success_message": "Děkujeme za vaši objednávku! Ihned ji začneme zpracovávat.",
+    "order_number": "Číslo objednávky",
+    "continue_shopping": "Pokračovat v nákupu"
+  },
+  "profile": {
+    "title": "Osobní účet",
+    "description": "Spravujte svůj profil, objednávky a nastavení",
+    "log_out": "Odhlásit se",
+    "personal_info": "Osobní údaje",
+    "first_name": "Jméno",
+    "last_name": "Příjmení",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "save_changes": "Uložit změny",
+    "saving": "Ukládání...",
+    "my_orders": "Moje objednávky",
+    "no_orders": "Zatím nemáte žádné objednávky"
+  },
+  "common": {
+    "loading": "Načítání...",
+    "back": "Zpět",
+    "continue_shopping": "Pokračovat v nákupu",
+    "error_occurred": "Došlo k chybě"
+  },
+  "cookie_consent": {
+    "message": "Stránka led-nabor.com používá soubory cookie ke zlepšení výkonu webu a analýze návštěvnosti. Pokračováním v používání stránky vyjadřujete souhlas s našimi",
+    "privacy_policy": "Zásadami ochrany osobních údajů",
+    "and": "a",
+    "terms": "Podmínkami použití",
+    "accept": "Přijmout"
+  },
+  "lang": {
+    "en": "English",
+    "ru": "Русский",
+    "pl": "Polski",
+    "de": "Deutsch",
+    "cz": "Čeština"
   }
 }

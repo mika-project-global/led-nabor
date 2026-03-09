@@ -252,5 +252,160 @@
     "ready": "Gotowe",
     "ready_desc": "Ciesz się pięknym oświetleniem",
     "ready_time": "Natychmiast po instalacji"
+  },
+  "auth": {
+    "login_title": "Zaloguj się",
+    "register_title": "Zarejestruj się",
+    "email": "Email",
+    "password": "Hasło",
+    "confirm_password": "Potwierdź hasło",
+    "sign_in": "Zaloguj się",
+    "register": "Zarejestruj się",
+    "forgot_password": "Zapomniałeś hasła?",
+    "no_account": "Nie masz konta?",
+    "already_have_account": "Masz już konto?",
+    "signing_in": "Logowanie...",
+    "registering": "Rejestracja...",
+    "passwords_dont_match": "Hasła się nie zgadzają",
+    "password_too_short": "Hasło musi mieć co najmniej 6 znaków",
+    "invalid_credentials": "Nieprawidłowy email lub hasło",
+    "reset_password_title": "Zresetuj hasło",
+    "new_password": "Nowe hasło",
+    "update_password": "Zaktualizuj hasło",
+    "password_updated": "Hasło zostało zaktualizowane!",
+    "back_to_login": "Powrót do logowania"
+  },
+  "checkout": {
+    "title": "Kasa",
+    "customer_info": "Informacje o kliencie",
+    "first_name": "Imię",
+    "last_name": "Nazwisko",
+    "email": "Email",
+    "phone": "Telefon",
+    "street": "Ulica",
+    "city": "Miasto",
+    "postal_code": "Kod pocztowy",
+    "country": "Kraj",
+    "delivery_method": "Metoda dostawy",
+    "free_delivery": "Darmowa dostawa w całej Europie",
+    "delivery_time": "Czas dostawy: 3-7 dni roboczych",
+    "payment_method": "Metoda płatności",
+    "pay_on_delivery": "Płatność przy odbiorze",
+    "pay_with_card": "Płatność online kartą",
+    "place_order": "Złóż zamówienie",
+    "processing": "Przetwarzanie...",
+    "order_summary": "Podsumowanie zamówienia",
+    "total": "Razem",
+    "cart_empty": "Twój koszyk jest pusty",
+    "back": "Powrót"
+  },
+  "cart": {
+    "title": "Koszyk",
+    "empty": "Twój koszyk jest pusty",
+    "select_warranty": "Wybierz gwarancję",
+    "months": "miesięcy",
+    "total": "Razem:",
+    "checkout": "Przejdź do kasy"
+  },
+  "faq": {
+    "title": "Najczęściej Zadawane Pytania",
+    "search_placeholder": "Szukaj pytań",
+    "categories": {
+      "installation": "Instalacja",
+      "technical": "Techniczne",
+      "warranty": "Gwarancja",
+      "delivery": "Dostawa"
+    }
+  },
+  "about": {
+    "title": "LED Nabor – Profesjonalne Rozwiązania Oświetleniowe",
+    "subtitle": "Specjalizujemy się w profesjonalnych rozwiązaniach LED do oświetlenia sufitowego od 2012 roku. Tworzymy wysokiej jakości oświetlenie, które przekształca przestrzenie i tworzy przytulną atmosferę.",
+    "stats": {
+      "customers": "Zadowolonych Klientów",
+      "customers_count": "5000+",
+      "experience": "Doświadczenie",
+      "experience_count": "12 lat",
+      "quality": "Jakość",
+      "quality_value": "Premium",
+      "warranty": "Gwarancja",
+      "warranty_value": "do 24 miesięcy"
+    }
+  },
+  "support": {
+    "title": "Pomoc Inżyniera",
+    "subtitle": "Napisz, jakie oświetlenie chciałbyś mieć i wymiary swojego domu. Inżynier zadzwoni do Ciebie i pomoże wybrać zestaw.",
+    "form": {
+      "your_name": "Twoje imię",
+      "email": "Email",
+      "phone": "Telefon",
+      "city": "Miasto",
+      "message": "Wiadomość",
+      "sending": "Wysyłanie...",
+      "send": "Wyślij",
+      "success": "Dziękujemy za kontakt! Wkrótce się odezwiemy.",
+      "error": "Wystąpił błąd. Spróbuj ponownie później."
+    },
+    "contact_info": "Informacje Kontaktowe",
+    "working_hours": "Godziny pracy:",
+    "weekdays": "Dni powszednie: 9:00 - 18:00",
+    "weekends": "Weekendy: 10:00 - 16:00"
+  },
+  "warranty_page": {
+    "title": "Gwarancja produktów LED Nabor",
+    "subtitle": "Jesteśmy pewni jakości naszych produktów i oferujemy standardową 24-miesięczną gwarancję",
+    "standard_warranty": "24 miesiące",
+    "standard_warranty_desc": "Standardowa gwarancja zgodna z przepisami UE",
+    "technical_support": "Wsparcie Techniczne",
+    "technical_support_desc": "Bezpłatna konsultacja w zakresie instalacji i eksploatacji",
+    "service_life": "Żywotność",
+    "service_life_desc": "Nasze produkty mają żywotność 10 lat przy prawidłowym użytkowaniu"
+  },
+  "privacy_page": {
+    "title": "Polityka Prywatności",
+    "description": "Polityka prywatności LED Nabor - zasady przetwarzania i ochrony danych osobowych"
+  },
+  "terms_page": {
+    "title": "Regulamin",
+    "description": "Regulamin LED Nabor - zasady zakupu i korzystania z naszych produktów"
+  },
+  "order": {
+    "success": "Zamówienie Złożone Pomyślnie!",
+    "success_message": "Dziękujemy za zamówienie! Zaczniemy je przetwarzać natychmiast.",
+    "order_number": "Numer zamówienia",
+    "continue_shopping": "Kontynuuj zakupy"
+  },
+  "profile": {
+    "title": "Konto Osobiste",
+    "description": "Zarządzaj swoim profilem, zamówieniami i ustawieniami",
+    "log_out": "Wyloguj się",
+    "personal_info": "Dane Osobowe",
+    "first_name": "Imię",
+    "last_name": "Nazwisko",
+    "email": "Email",
+    "phone": "Telefon",
+    "save_changes": "Zapisz zmiany",
+    "saving": "Zapisywanie...",
+    "my_orders": "Moje zamówienia",
+    "no_orders": "Nie masz jeszcze żadnych zamówień"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "back": "Powrót",
+    "continue_shopping": "Kontynuuj zakupy",
+    "error_occurred": "Wystąpił błąd"
+  },
+  "cookie_consent": {
+    "message": "Strona led-nabor.com używa plików cookie w celu poprawy wydajności witryny i analizy ruchu. Kontynuując korzystanie ze strony, wyrażasz zgodę na naszą",
+    "privacy_policy": "Politykę Prywatności",
+    "and": "i",
+    "terms": "Regulamin",
+    "accept": "Akceptuj"
+  },
+  "lang": {
+    "en": "English",
+    "ru": "Русский",
+    "pl": "Polski",
+    "de": "Deutsch",
+    "cz": "Čeština"
   }
 }

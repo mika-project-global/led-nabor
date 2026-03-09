@@ -252,5 +252,160 @@
     "ready": "Fertig",
     "ready_desc": "Genießen Sie schöne Beleuchtung",
     "ready_time": "Sofort nach der Installation"
+  },
+  "auth": {
+    "login_title": "Anmelden",
+    "register_title": "Registrieren",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirm_password": "Passwort bestätigen",
+    "sign_in": "Anmelden",
+    "register": "Registrieren",
+    "forgot_password": "Passwort vergessen?",
+    "no_account": "Noch kein Konto?",
+    "already_have_account": "Bereits ein Konto?",
+    "signing_in": "Anmelden...",
+    "registering": "Registrieren...",
+    "passwords_dont_match": "Passwörter stimmen nicht überein",
+    "password_too_short": "Passwort muss mindestens 6 Zeichen lang sein",
+    "invalid_credentials": "Ungültige E-Mail oder Passwort",
+    "reset_password_title": "Passwort zurücksetzen",
+    "new_password": "Neues Passwort",
+    "update_password": "Passwort aktualisieren",
+    "password_updated": "Passwort wurde aktualisiert!",
+    "back_to_login": "Zurück zur Anmeldung"
+  },
+  "checkout": {
+    "title": "Kasse",
+    "customer_info": "Kundeninformationen",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "street": "Straße",
+    "city": "Stadt",
+    "postal_code": "Postleitzahl",
+    "country": "Land",
+    "delivery_method": "Liefermethode",
+    "free_delivery": "Kostenloser Versand in ganz Europa",
+    "delivery_time": "Lieferzeit: 3-7 Werktage",
+    "payment_method": "Zahlungsmethode",
+    "pay_on_delivery": "Bei Lieferung bezahlen",
+    "pay_with_card": "Online mit Karte bezahlen",
+    "place_order": "Bestellung aufgeben",
+    "processing": "Verarbeitung...",
+    "order_summary": "Bestellübersicht",
+    "total": "Gesamt",
+    "cart_empty": "Ihr Warenkorb ist leer",
+    "back": "Zurück"
+  },
+  "cart": {
+    "title": "Warenkorb",
+    "empty": "Ihr Warenkorb ist leer",
+    "select_warranty": "Garantie wählen",
+    "months": "Monate",
+    "total": "Gesamt:",
+    "checkout": "Zur Kasse"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "search_placeholder": "Fragen suchen",
+    "categories": {
+      "installation": "Installation",
+      "technical": "Technisch",
+      "warranty": "Garantie",
+      "delivery": "Lieferung"
+    }
+  },
+  "about": {
+    "title": "LED Nabor – Professionelle Beleuchtungslösungen",
+    "subtitle": "Wir sind seit 2012 auf professionelle LED-Lösungen für Deckenbeleuchtung spezialisiert. Wir schaffen hochwertige Beleuchtung, die Räume verwandelt und eine gemütliche Atmosphäre schafft.",
+    "stats": {
+      "customers": "Zufriedene Kunden",
+      "customers_count": "5000+",
+      "experience": "Erfahrung",
+      "experience_count": "12 Jahre",
+      "quality": "Qualität",
+      "quality_value": "Premium",
+      "warranty": "Garantie",
+      "warranty_value": "bis zu 24 Monate"
+    }
+  },
+  "support": {
+    "title": "Ingenieur-Unterstützung",
+    "subtitle": "Schreiben Sie, welche Beleuchtung Sie möchten und die Abmessungen Ihres Hauses. Ein Ingenieur ruft Sie an und hilft Ihnen bei der Auswahl eines Sets.",
+    "form": {
+      "your_name": "Ihr Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "city": "Stadt",
+      "message": "Nachricht",
+      "sending": "Senden...",
+      "send": "Senden",
+      "success": "Danke für Ihre Kontaktaufnahme! Wir melden uns in Kürze.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "contact_info": "Kontaktinformationen",
+    "working_hours": "Öffnungszeiten:",
+    "weekdays": "Wochentage: 9:00 - 18:00",
+    "weekends": "Wochenenden: 10:00 - 16:00"
+  },
+  "warranty_page": {
+    "title": "LED Nabor Produktgarantie",
+    "subtitle": "Wir sind von der Qualität unserer Produkte überzeugt und bieten eine standardmäßige 24-Monats-Garantie",
+    "standard_warranty": "24 Monate",
+    "standard_warranty_desc": "Standardgarantie gemäß EU-Vorschriften",
+    "technical_support": "Technischer Support",
+    "technical_support_desc": "Kostenlose Beratung zu Installation und Betrieb",
+    "service_life": "Lebensdauer",
+    "service_life_desc": "Unsere Produkte haben eine Lebensdauer von 10 Jahren bei ordnungsgemäßer Verwendung"
+  },
+  "privacy_page": {
+    "title": "Datenschutzerklärung",
+    "description": "LED Nabor Datenschutzerklärung - Regeln für die Verarbeitung und den Schutz personenbezogener Daten"
+  },
+  "terms_page": {
+    "title": "Nutzungsbedingungen",
+    "description": "LED Nabor Nutzungsbedingungen - Regeln für den Kauf und die Verwendung unserer Produkte"
+  },
+  "order": {
+    "success": "Bestellung erfolgreich!",
+    "success_message": "Vielen Dank für Ihre Bestellung! Wir beginnen sofort mit der Bearbeitung.",
+    "order_number": "Bestellnummer",
+    "continue_shopping": "Weiter einkaufen"
+  },
+  "profile": {
+    "title": "Persönliches Konto",
+    "description": "Verwalten Sie Ihr Profil, Bestellungen und Einstellungen",
+    "log_out": "Abmelden",
+    "personal_info": "Persönliche Informationen",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "save_changes": "Änderungen speichern",
+    "saving": "Speichern...",
+    "my_orders": "Meine Bestellungen",
+    "no_orders": "Sie haben noch keine Bestellungen"
+  },
+  "common": {
+    "loading": "Laden...",
+    "back": "Zurück",
+    "continue_shopping": "Weiter einkaufen",
+    "error_occurred": "Ein Fehler ist aufgetreten"
+  },
+  "cookie_consent": {
+    "message": "Die Website led-nabor.com verwendet Cookies, um die Leistung der Website zu verbessern und den Verkehr zu analysieren. Durch die weitere Nutzung der Website stimmen Sie unserer",
+    "privacy_policy": "Datenschutzerklärung",
+    "and": "und",
+    "terms": "Nutzungsbedingungen",
+    "accept": "Akzeptieren"
+  },
+  "lang": {
+    "en": "English",
+    "ru": "Русский",
+    "pl": "Polski",
+    "de": "Deutsch",
+    "cz": "Čeština"
   }
 }
