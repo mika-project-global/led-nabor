@@ -71,6 +71,10 @@
   "site": {
     "tagline": "LED Ceiling Kits"
   },
+  "catalog": {
+    "ceiling_kit_description": "Complete COB LED ceiling lighting kits for your home. Easy installation and professional results.",
+    "learn_more": "Learn More"
+  },
   "product": {
     "add_to_cart": "Buy Complete Kit",
     "in_stock": "In stock",

@@ -71,6 +71,10 @@
   "site": {
     "tagline": "LED-Deckensets"
   },
+  "catalog": {
+    "ceiling_kit_description": "Komplette COB LED Deckenbeleuchtungs-Sets für Ihr Zuhause. Einfache Installation und professionelle Ergebnisse.",
+    "learn_more": "Mehr erfahren"
+  },
   "product": {
     "add_to_cart": "Komplettes Set kaufen",
     "in_stock": "Auf Lager",

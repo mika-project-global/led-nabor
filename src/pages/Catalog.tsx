@@ -180,14 +180,12 @@ export default function Catalog() {
                 {t('menu.ceiling_lighting_kit')}
               </h2>
               <p className="text-base md:text-lg text-white/90">
-                {locale === 'ru'
-                  ? 'Готовые комплекты COB LED подсветки для вашего потолка. Простая установка и профессиональный результат.'
-                  : 'Complete COB LED ceiling lighting kits for your home. Easy installation and professional results.'}
+                {t('catalog.ceiling_kit_description')}
               </p>
             </div>
             <div className="flex-shrink-0">
               <div className="bg-white text-cyan-600 px-5 py-2.5 rounded-lg font-semibold hover:bg-cyan-50 transition-colors">
-                {locale === 'ru' ? 'Подробнее' : 'Learn More'}
+                {t('catalog.learn_more')}
               </div>
             </div>
           </div>

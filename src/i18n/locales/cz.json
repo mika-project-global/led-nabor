@@ -71,6 +71,10 @@
   "site": {
     "tagline": "LED stropní sady"
   },
+  "catalog": {
+    "ceiling_kit_description": "Kompletní sady stropního osvětlení COB LED pro váš domov. Snadná instalace a profesionální výsledky.",
+    "learn_more": "Zjistit více"
+  },
   "product": {
     "add_to_cart": "Koupit kompletní sadu",
     "in_stock": "Skladem",

@@ -71,6 +71,10 @@
   "site": {
     "tagline": "Zestawy LED Sufitowego"
   },
+  "catalog": {
+    "ceiling_kit_description": "Kompletne zestawy oświetlenia sufitowego COB LED dla Twojego domu. Łatwa instalacja i profesjonalne rezultaty.",
+    "learn_more": "Dowiedz się więcej"
+  },
   "product": {
     "add_to_cart": "Kup Kompletny Zestaw",
     "in_stock": "W magazynie",
