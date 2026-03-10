@@ -138,6 +138,14 @@
         "description": "Geringe Wärmeabgabe macht COB-LED-Streifen ideal für die Verwendung mit Spanndeckenmaterialien."
       }
     },
+    "technology": {
+      "title": "Moderne LED-Deckenbeleuchtung",
+      "intro": "Moderne LED-Deckenbeleuchtung hat die Art und Weise, wie wir unsere Häuser beleuchten, verändert. Die COB (Chip-on-Board) LED-Technologie stellt den neuesten Fortschritt in der LED-Streifenbeleuchtung dar und bietet überlegene Qualität und Leistung im Vergleich zu herkömmlichen Beleuchtungslösungen.",
+      "benefits_title": "Vorteile der COB LED-Technologie",
+      "benefits_text": "COB LED-Streifen zeichnen sich durch ihre außergewöhnlich gleichmäßige Beleuchtung ohne sichtbare Punkte oder Flecken aus. Im Gegensatz zu herkömmlichen SMD LED-Streifen, bei denen einzelne LEDs sichtbar sind, verbindet die COB-Technologie mehrere LED-Chips direkt mit dem Substrat und schafft so eine kontinuierliche Lichtquelle. Dies führt zu einer glatten, professionellen Beleuchtung, die ideal für moderne Deckeninstallationen ist. Die Technologie bietet auch eine bessere Wärmeableitung, was eine längere Lebensdauer und einen zuverlässigen Betrieb im Laufe der Zeit gewährleistet.",
+      "uniform_title": "Perfekt gleichmäßige Beleuchtung erreichen",
+      "uniform_text": "Einer der bedeutendsten Vorteile der COB LED-Deckenbeleuchtung ist die Fähigkeit, eine perfekt gleichmäßige Beleuchtung zu schaffen. Die kontinuierliche Lichtemission beseitigt das fleckige Erscheinungsbild, das für herkömmliche LED-Streifen charakteristisch ist, und macht sie ideal für sichtbare Installationen in Deckennischen, Gesimsen und hinter Zierleisten. Diese gleichmäßige Lichtverteilung schafft ein exquisites Ambiente, das Ihr Innendesign ohne harte Schatten oder helle Flecken aufwertet."
+    },
     "usage": {
       "title": "Wo wird LED-Deckenbeleuchtung eingesetzt",
       "text_1": "LED-Deckenbeleuchtung wird zur Schaffung moderner Innenraumbeleuchtung verwendet. Sie eignet sich für Wohnzimmer, Schlafzimmer, Küchen, Flure und Gewerberäume.",
