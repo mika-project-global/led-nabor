@@ -216,6 +216,7 @@
     "redirecting_payment": "Redirecting to payment...",
     "cart_empty": "Your cart is empty",
     "back": "Back",
+    "title": "Checkout",
     "delivery_included": "Delivery cost is already included in the product price",
     "months_warranty": "months warranty"
   },
@@ -262,27 +263,19 @@
     "room_width": "Room Width (meters)",
     "ceiling_height": "Ceiling Height (meters)",
     "room_type": "Room Type",
-    "room_length_hint": "Enter room length in meters",
-    "room_width_hint": "Enter room width in meters",
     "living_room": "Living Room",
     "bedroom": "Bedroom",
     "kitchen": "Kitchen",
     "other": "Other",
     "calculate": "Calculate",
+    "results": "Calculation Results",
     "required_strip_length": "Required Strip Length",
     "total_power": "Total Power",
     "recommended_kits": "Recommended Kits",
-    "more_details": "More details",
-    "rgb_kit": "Universal RGB+CCT kit",
-    "cct_kit": "White CCT lighting",
-    "meters": "meters",
-    "perfect_for_living": "Perfect for living rooms with color and brightness control",
-    "comfortable_white": "Comfortable white lighting with adjustable color temperature",
-    "optimal_rgb": "Optimal solution for spacious living rooms with RGB lighting",
-    "quality_white": "Quality white lighting for large spaces"
+    "more_details": "More details"
   },
   "installation": {
-    "title": "Installation Process",
+    "process": "Installation Process",
     "delivery": "Delivery",
     "delivery_desc": "Free delivery across Europe in 3-7 days",
     "delivery_time": "3-7 days",
@@ -295,16 +288,10 @@
   },
   "gallery": {
     "title": "Project Gallery",
-    "press_to_see_before": "Press to see BEFORE",
-    "project_1_title": "Modern Living Room",
-    "project_1_desc": "Ceiling perimeter lighting with \"Lux Bright\" 15-meter kit",
-    "project_1_review": "Amazing room transformation! The light is very soft and pleasant.",
-    "project_2_title": "Minimalist Bedroom",
-    "project_2_desc": "Ceiling lighting with \"Lux\" 10-meter kit",
-    "project_2_review": "Perfect solution for the bedroom. Creates a cozy atmosphere.",
-    "project_3_title": "Spacious Kitchen",
-    "project_3_desc": "Work area lighting with \"Lux Bright\" 5-meter kit",
-    "project_3_review": "Excellent functional lighting for the kitchen."
+    "modern_living_room": "Modern Living Room",
+    "minimalist_bedroom": "Minimalist Bedroom",
+    "spacious_kitchen": "Spacious Kitchen",
+    "press_to_see_before": "Press to see BEFORE"
   },
   "b2b": {
     "calculator": "B2B Calculator",
@@ -431,6 +418,56 @@
     "wifi_control_via_app": "Wi-Fi control via app",
     "voice_command_support": "Voice command support",
     "ten_year_lifespan": "10-year lifespan"
+  },
+  "calculator": {
+    "title": "Lighting Calculator",
+    "room_length": "Room Length (meters)",
+    "room_width": "Room Width (meters)",
+    "ceiling_height": "Ceiling Height (meters)",
+    "room_type": "Room Type",
+    "room_length_hint": "Enter room length in meters",
+    "room_width_hint": "Enter room width in meters",
+    "living_room": "Living Room",
+    "bedroom": "Bedroom",
+    "kitchen": "Kitchen",
+    "other": "Other",
+    "calculate": "Calculate",
+    "required_strip_length": "Required Strip Length",
+    "total_power": "Total Power",
+    "recommended_kits": "Recommended Kits",
+    "more_details": "More details",
+    "rgb_kit": "Universal RGB+CCT kit",
+    "cct_kit": "White CCT lighting",
+    "meters": "meters",
+    "perfect_for_living": "Perfect for living rooms with color and brightness control",
+    "comfortable_white": "Comfortable white lighting with adjustable color temperature",
+    "optimal_rgb": "Optimal solution for spacious living rooms with RGB lighting",
+    "quality_white": "Quality white lighting for large spaces"
+  },
+  "gallery": {
+    "title": "Project Gallery",
+    "press_to_see_before": "Press to see BEFORE",
+    "project_1_title": "Modern Living Room",
+    "project_1_desc": "Ceiling perimeter lighting with \"Lux Bright\" 15-meter kit",
+    "project_1_review": "Amazing room transformation! The light is very soft and pleasant.",
+    "project_2_title": "Minimalist Bedroom",
+    "project_2_desc": "Ceiling lighting with \"Lux\" 10-meter kit",
+    "project_2_review": "Perfect solution for the bedroom. Creates a cozy atmosphere.",
+    "project_3_title": "Spacious Kitchen",
+    "project_3_desc": "Work area lighting with \"Lux Bright\" 5-meter kit",
+    "project_3_review": "Excellent functional lighting for the kitchen."
+  },
+  "installation": {
+    "title": "Installation Process",
+    "delivery": "Delivery",
+    "delivery_desc": "Free delivery across Europe in 3-7 days",
+    "delivery_time": "3-7 days",
+    "installation": "Installation",
+    "installation_desc": "Simple installation without special tools",
+    "installation_time": "15-30 minutes",
+    "ready": "Ready",
+    "ready_desc": "Enjoy beautiful lighting",
+    "ready_time": "Immediately after installation"
   },
   "order": {
     "success": "Order Successful!",
@@ -1025,14 +1062,6 @@
         "title": "Perfect for Stretch Ceilings",
         "description": "Low heat emission makes COB LED strips ideal for use with stretch ceiling materials."
       }
-    },
-    "technology": {
-      "title": "Modern LED Ceiling Lighting",
-      "intro": "Modern LED ceiling lighting has transformed the way we illuminate our homes. COB (Chip-on-Board) LED technology represents the latest advancement in LED strip lighting, offering superior quality and performance compared to traditional lighting solutions.",
-      "benefits_title": "Benefits of COB LED Technology",
-      "benefits_text": "COB LED strips stand out with their exceptionally uniform lighting without visible dots or spots. Unlike traditional SMD LED strips where individual LEDs are visible, COB technology connects multiple LED chips directly to the substrate, creating a continuous light source. This results in smooth, professional lighting ideal for modern ceiling installations. The technology also provides better heat dissipation, ensuring longer lifespan and reliable operation over time.",
-      "uniform_title": "Achieving Perfectly Uniform Lighting",
-      "uniform_text": "One of the most significant advantages of COB LED ceiling lighting is the ability to create perfectly uniform illumination. The continuous light emission eliminates the spotty appearance characteristic of traditional LED strips, making it ideal for visible installations in ceiling niches, cornices, and behind moldings. This uniform light distribution creates exquisite ambient glow that enhances your interior design without harsh shadows or bright spots."
     },
     "usage": {
       "title": "Where LED Ceiling Lighting is Used",
