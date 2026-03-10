@@ -229,10 +229,38 @@ const CeilingLedLighting: React.FC = () => {
           </div>
         </section>
 
-        {/* Usage Section - SEO */}
-        <section className="py-4 md:py-6 bg-white">
+        {/* Technology Deep Dive - SEO Content */}
+        <section className="py-8 md:py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 md:p-6 border border-gray-100 shadow-sm">
+            <div className="prose prose-lg max-w-none">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                {t('ceiling_lighting.technology.title')}
+              </h2>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+                {t('ceiling_lighting.technology.intro')}
+              </p>
+
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 mt-8">
+                {t('ceiling_lighting.technology.benefits_title')}
+              </h3>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+                {t('ceiling_lighting.technology.benefits_text')}
+              </p>
+
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 mt-8">
+                {t('ceiling_lighting.technology.uniform_title')}
+              </h3>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                {t('ceiling_lighting.technology.uniform_text')}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Usage Section - SEO */}
+        <section className="py-4 md:py-6 bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-2xl p-5 md:p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
                 {t('ceiling_lighting.usage.title')}
               </h2>
