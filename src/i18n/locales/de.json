@@ -333,7 +333,19 @@
       "quality_value": "Premium",
       "warranty": "Garantie",
       "warranty_value": "bis zu 24 Monate"
-    }
+    },
+    "how_we_work": "Wie wir arbeiten",
+    "how_we_work_desc": "Bestellen Sie auf der Website und innerhalb von 5-10 Tagen liefert ein Kurier die Kartons zu Ihnen. Sie enthalten LED-Streifen, Netzteile, Steuereinheit, Kabel und Steckverbinder. Alles wird bereits miteinander verbunden sein. Sie müssen nur den LED-Streifen in die Deckenvertiefung kleben, das Netzteil befestigen und es an das 220V-Netz anschließen.",
+    "no_tools_needed": "Sie benötigen KEINE Werkzeuge",
+    "no_tools_desc": "Streifen und Komponenten kommen vom Lager in die Werkstatt. Die Arbeitsplätze sind mit professionellen Werkzeugen ausgestattet. Sie erhalten ein vormontiertes Set. Die Streifen, Netzteile und Controller sind miteinander verbunden.",
+    "advantages": "Unsere Vorteile",
+    "advantage_1_title": "Ingenieurberatung",
+    "advantage_1_desc": "Wir haben keine Verkäufer oder Manager. Wenn Sie anrufen oder schreiben, antwortet ein Beleuchtungsingenieur. Er wird Ihre Bestellung betreuen. Der Ingenieur ist von 10:00 bis 16:00 Uhr verfügbar.",
+    "advantage_2_title": "Qualitätsmarken",
+    "advantage_2_desc": "Sie können sicher sein: In Ihrer Decke werden keine billigen chinesischen Noname-Produkte verbaut. Wir arbeiten nur mit Herstellern bekannter Marken, die sich bewährt haben und offizielle Garantien bieten (Arlight, JazzWay, LedsPower, Rexant, Wago, Electrostandart, Klus).",
+    "advantage_3_title": "Zuverlässige Montage",
+    "advantage_3_desc": "Wir montieren mit Qualität im Sinn. Wir setzen an das Ende jedes Kabels eine Kontakthülse. Ein Kabel mit Hülse fällt niemals aus einem Steckverbinder. Die Decke wird eher vor Alter zerfallen als dass die Kontakte versagen.",
+    "contact_info": "Kontaktinformationen"
   },
   "support": {
     "title": "Ingenieur-Unterstützung",
@@ -352,7 +364,12 @@
     "contact_info": "Kontaktinformationen",
     "working_hours": "Öffnungszeiten:",
     "weekdays": "Wochentage: 9:00 - 18:00",
-    "weekends": "Wochenenden: 10:00 - 16:00"
+    "weekends": "Wochenenden: 10:00 - 16:00",
+    "email_for_files": "E-Mail für Dateien:",
+    "email_for_files_desc": "Senden Sie Schemata, Zeichnungen und andere Dokumente an diese E-Mail.",
+    "phone": "Telefon",
+    "prague": "Prag",
+    "our_location": "Unser Standort"
   },
   "warranty_page": {
     "title": "LED Nabor Produktgarantie",

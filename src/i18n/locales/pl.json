@@ -333,7 +333,19 @@
       "quality_value": "Premium",
       "warranty": "Gwarancja",
       "warranty_value": "do 24 miesięcy"
-    }
+    },
+    "how_we_work": "Jak pracujemy",
+    "how_we_work_desc": "Złóż zamówienie na stronie, a w ciągu 5-10 dni kurier dostarczy pudełka. Będą w nich taśmy LED, zasilacze, moduł sterujący, przewody i złącza. Wszystko będzie już ze sobą połączone. Wystarczy tylko przykleić taśmę LED do wnęki sufitowej, przymocować zasilacz i podłączyć do sieci 220V.",
+    "no_tools_needed": "NIE będziesz potrzebować żadnych narzędzi",
+    "no_tools_desc": "Taśmy i komponenty przychodzą z magazynu do warsztatu. Stanowiska pracy są wyposażone w profesjonalne narzędzia. Otrzymasz gotowy zestaw. Taśmy, zasilacze i kontrolery będą ze sobą połączone.",
+    "advantages": "Nasze zalety",
+    "advantage_1_title": "Konsultacja inżyniera",
+    "advantage_1_desc": "Nie mamy sprzedawców ani menedżerów. Jeśli zadzwonisz lub napiszesz, odpowie inżynier oświetlenia. On będzie nadzorował Twoje zamówienie. Inżynier jest dostępny od 10:00 do 16:00.",
+    "advantage_2_title": "Markowe produkty",
+    "advantage_2_desc": "Możesz być pewien: w Twoim suficie nie będzie tanich chińskich produktów bez nazwy. Pracujemy tylko z producentami znanych marek, które sprawdziły się w czasie i oferują oficjalne gwarancje (Arlight, JazzWay, LedsPower, Rexant, Wago, Electrostandart, Klus).",
+    "advantage_3_title": "Niezawodny montaż",
+    "advantage_3_desc": "Montujemy z myślą o jakości. Na koniec każdego przewodu zakładamy końcówkę kontaktową. Przewód z końcówką nigdy nie wypadnie ze złącza. Prędzej sufit się rozsypie ze starości niż zawiodą kontakty.",
+    "contact_info": "Informacje kontaktowe"
   },
   "support": {
     "title": "Pomoc Inżyniera",
@@ -352,7 +364,12 @@
     "contact_info": "Informacje Kontaktowe",
     "working_hours": "Godziny pracy:",
     "weekdays": "Dni powszednie: 9:00 - 18:00",
-    "weekends": "Weekendy: 10:00 - 16:00"
+    "weekends": "Weekendy: 10:00 - 16:00",
+    "email_for_files": "Email na pliki:",
+    "email_for_files_desc": "Wysyłaj schematy, rysunki i inne dokumenty na ten email.",
+    "phone": "Telefon",
+    "prague": "Praga",
+    "our_location": "Nasza lokalizacja"
   },
   "warranty_page": {
     "title": "Gwarancja produktów LED Nabor",

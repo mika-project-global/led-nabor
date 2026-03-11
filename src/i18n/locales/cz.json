@@ -333,7 +333,19 @@
       "quality_value": "Premium",
       "warranty": "Záruka",
       "warranty_value": "až 24 měsíců"
-    }
+    },
+    "how_we_work": "Jak pracujeme",
+    "how_we_work_desc": "Objednejte si na webu a během 5-10 dnů vám kurýr doveze krabice. Budou v nich LED pásky, napájecí zdroje, řídicí jednotka, kabely a konektory. Vše už bude propojeno. Stačí jen nalepit LED pásek do stropu, upevnit napájecí zdroj a připojit k síti 220V.",
+    "no_tools_needed": "NEBUDETE potřebovat žádné nástroje",
+    "no_tools_desc": "Pásky a komponenty přicházejí ze skladu do dílny. Pracovní místa jsou vybavena profesionálními nástroji. Dostanete již sestavený set. Pásky, napájecí zdroje a ovladače budou propojeny.",
+    "advantages": "Naše výhody",
+    "advantage_1_title": "Konzultace inženýra",
+    "advantage_1_desc": "Nemáme prodejce ani manažery. Pokud zavoláte nebo napíšete, odpoví inženýr osvětlení. On bude dohlížet na vaši objednávku. Inženýr je k dispozici od 10:00 do 16:00.",
+    "advantage_2_title": "Kvalitní značky",
+    "advantage_2_desc": "Můžete si být jisti: ve vašem stropě nebudou levné čínské noname produkty. Pracujeme pouze s výrobci známých značek, které prošly zkouškou času a poskytují oficiální záruky (Arlight, JazzWay, LedsPower, Rexant, Wago, Electrostandart, Klus).",
+    "advantage_3_title": "Spolehlivá montáž",
+    "advantage_3_desc": "Sestavujeme s důrazem na kvalitu. Na konec každého kabelu dáváme kontaktní dutinku. Kabel s dutinkou nikdy nevypadne z konektoru. Spíš se strop rozpadne stářím než selžou kontakty.",
+    "contact_info": "Kontaktní informace"
   },
   "support": {
     "title": "Pomoc inženýra",
@@ -352,7 +364,12 @@
     "contact_info": "Kontaktní informace",
     "working_hours": "Pracovní doba:",
     "weekdays": "Pracovní dny: 9:00 - 18:00",
-    "weekends": "Víkendy: 10:00 - 16:00"
+    "weekends": "Víkendy: 10:00 - 16:00",
+    "email_for_files": "Email pro soubory:",
+    "email_for_files_desc": "Posílejte schémata, výkresy a další dokumenty na tento email.",
+    "phone": "Telefon",
+    "prague": "Praha",
+    "our_location": "Naše poloha"
   },
   "warranty_page": {
     "title": "Záruka produktů LED Nabor",
