@@ -362,7 +362,7 @@
     "in_stock_delivery": "В наличии • Бесплатная доставка • 24 месяца гарантии",
     "placeholder_example": "Пример: 12",
     "control_options_title": "Способы управления",
-    "whats_included": "Что входит в комплект",
+    "whats_included": "Що входить у комплект",
     "kit_items": {
       "cob_led_strip": "COB LED лента",
       "power_supply": "Блок питания",
@@ -371,7 +371,7 @@
       "connectors_cables": "Коннекторы та кабели",
       "installation_manual": "Инструкция по установке"
     },
-    "why_choose_this_kit": "Почему выбирают этот комплект",
+    "why_choose_this_kit": "Чому обирають цей комплект",
     "kit_advantages": {
       "dot_free_light": "Свет без точок (COB технология)",
       "complete_kit": "Полный комплект для установки",
@@ -380,7 +380,7 @@
       "tunable_white": "Регулируемая температура белого (2700K-6500K)",
       "any_interior": "Подходит для любого интерьера"
     },
-    "perfect_for": "Идеально подходит для",
+    "perfect_for": "Ідеально підходить для",
     "perfect_for_items": {
       "ceiling_lighting": "потолочной подсветки",
       "hidden_led": "скрытой LED подсветки",
@@ -399,14 +399,14 @@
     "service_life_desc": "10 лет при правильной установке"
   },
   "social_proof": {
-    "happy_customers": "Довольные клиенты",
-    "average_rating": "Средний рейтинг",
-    "in_business": "На рынке",
+    "happy_customers": "Задоволені клієнти",
+    "average_rating": "Середній рейтинг",
+    "in_business": "На ринку",
     "warranty": "Гарантія",
     "years": "лет",
     "satisfied_customers": "Понад 5000 задоволених клієнтів вже обрали LED Nabor",
-    "quality": "Качество",
-    "premium": "Премиум",
+    "quality": "Якість",
+    "premium": "Преміум",
     "satisfied_customers_text": "задоволених клієнтів вже обрали LED Nabor",
     "over": "Более",
     "testimonial_1": "Отличное качество света! Очень доволен покупкой.",
@@ -601,12 +601,12 @@
     "title": "LED Nabor – Профессиональные решения для освещения",
     "subtitle": "Мы специализируемся на профессиональных LED-решениях для стельового освітлення з 2012 года. Мы создаем качественное освещение, которое преобразует пространства та создает уютную атмосферу.",
     "stats": {
-      "customers": "Довольных клиентов",
+      "customers": "Задоволених клієнтів",
       "customers_count": "5000+",
-      "experience": "Опыт работы",
-      "experience_count": "12 лет",
-      "quality": "Качество",
-      "quality_value": "Премиум",
+      "experience": "Досвід роботи",
+      "experience_count": "12 років",
+      "quality": "Якість",
+      "quality_value": "Преміум",
       "warranty": "Гарантія",
       "warranty_value": "до 24 месяцев"
     },
@@ -939,8 +939,8 @@
       "title": "Блок питания",
       "standard": "Стандартный",
       "standard_desc": "Надежный блок питания для вашего комплекта",
-      "premium": "Премиум",
-      "premium_desc": "Повышенная эффективность та долговечность"
+      "premium": "Преміум",
+      "premium_desc": "Підвищена ефективність та довговічність"
     },
     "price_summary": "Итоговая цена",
     "led_strip": "LED лента",
