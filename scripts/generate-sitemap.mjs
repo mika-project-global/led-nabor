@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const SITE_URL = 'https://led-nabor.com';
-const LOCALES = ['ru', 'en'];
+const LOCALES = ['ru', 'en', 'uk', 'cz', 'de', 'pl'];
 
 // Validate required environment variables
 console.log('\n🔍 Checking environment variables...');
@@ -46,14 +46,22 @@ const products = [
     id: 1,
     slugs: {
       en: 'universal-rgb-cct',
-      ru: 'universal-rgb-cct'
+      ru: 'universal-rgb-cct',
+      uk: 'universal-rgb-cct',
+      cz: 'universal-rgb-cct',
+      de: 'universal-rgb-cct',
+      pl: 'universal-rgb-cct'
     }
   },
   {
     id: 2,
     slugs: {
       en: 'adjustable-white-cct',
-      ru: 'adjustable-white-cct'
+      ru: 'adjustable-white-cct',
+      uk: 'adjustable-white-cct',
+      cz: 'adjustable-white-cct',
+      de: 'adjustable-white-cct',
+      pl: 'adjustable-white-cct'
     }
   }
 ];

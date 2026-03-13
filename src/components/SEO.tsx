@@ -30,9 +30,8 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const defaultImage = '/og-image.jpg';
   const ogLocale = LOCALE_MAP[locale] || 'en_US';
 
-  // Block indexing for unused language versions
-  const unusedLocales = ['pl', 'cz', 'de', 'uk'];
-  const shouldNoIndex = unusedLocales.includes(locale);
+  // All language versions are now ready for indexing
+  const shouldNoIndex = false;
 
   // Ensure canonical URL has trailing slash
   let fullCanonicalUrl = canonicalUrl || `${siteUrl}${location.pathname}`;
