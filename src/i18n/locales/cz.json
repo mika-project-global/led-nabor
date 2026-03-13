@@ -666,5 +666,18 @@
     "contact": "Kontakt",
     "prague_czech_republic": "Praha, Česká republika",
     "all_rights_reserved": "Všechna práva vyhrazena."
+  },
+  "blog": {
+    "title": "Blog a Průvodci",
+    "description": "Užitečné články, návody k instalaci, nápady designu a tipy pro LED osvětlení",
+    "heading": "Blog o LED osvětlení",
+    "subheading": "Odborné rady, průvodce instalací a inspirace designu pro vaše projekty LED osvětlení",
+    "noPosts": "Zatím žádné články",
+    "readMore": "Číst více",
+    "backToBlog": "Zpět na blog",
+    "postNotFound": "Článek nenalezen",
+    "minRead": "min čtení",
+    "views": "zobrazení",
+    "relatedArticles": "Související články"
   }
 }

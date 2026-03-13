@@ -666,5 +666,18 @@
     "contact": "Kontakt",
     "prague_czech_republic": "Praga, Czechy",
     "all_rights_reserved": "Wszelkie prawa zastrzeżone."
+  },
+  "blog": {
+    "title": "Blog i Poradniki",
+    "description": "Przydatne artykuły, przewodniki instalacji, pomysły projektowe i wskazówki dotyczące oświetlenia LED",
+    "heading": "Blog o oświetleniu LED",
+    "subheading": "Porady ekspertów, przewodniki instalacji i inspiracje projektowe dla twoich projektów oświetlenia LED",
+    "noPosts": "Brak dostępnych artykułów",
+    "readMore": "Czytaj więcej",
+    "backToBlog": "Wróć do bloga",
+    "postNotFound": "Artykuł nie został znaleziony",
+    "minRead": "min czytania",
+    "views": "wyświetleń",
+    "relatedArticles": "Powiązane artykuły"
   }
 }

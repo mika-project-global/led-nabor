@@ -666,5 +666,18 @@
     "contact": "Kontakt",
     "prague_czech_republic": "Prag, Tschechien",
     "all_rights_reserved": "Alle Rechte vorbehalten."
+  },
+  "blog": {
+    "title": "Blog & Anleitungen",
+    "description": "Nützliche Artikel, Installationsanleitungen, Designideen und LED-Beleuchtungstipps",
+    "heading": "LED-Beleuchtungs-Blog",
+    "subheading": "Expertenberatung, Installationsanleitungen und Designinspiration für Ihre LED-Beleuchtungsprojekte",
+    "noPosts": "Noch keine Artikel verfügbar",
+    "readMore": "Mehr lesen",
+    "backToBlog": "Zurück zum Blog",
+    "postNotFound": "Artikel nicht gefunden",
+    "minRead": "Min. Lesezeit",
+    "views": "Aufrufe",
+    "relatedArticles": "Ähnliche Artikel"
   }
 }
