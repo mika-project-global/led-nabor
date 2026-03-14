@@ -38,8 +38,8 @@ export default function Blog() {
       const { data, error } = await supabase
         .from('blog_posts')
         .select('id, title, slug, excerpt, image_url, published_at, views, locale')
-        .eq('published', true)
         .eq('locale', locale)
+        .not('published_at', 'is', null)
         .order('published_at', { ascending: false })
         .order('created_at', { ascending: false });
 
