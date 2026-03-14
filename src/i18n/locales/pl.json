@@ -172,6 +172,15 @@
       "subtitle": "Rozpocznij swój projekt oświetlenia sufitowego LED już dziś z naszymi profesjonalnymi zestawami",
       "button_primary": "Przeglądaj Produkty",
       "button_secondary": "Skontaktuj się ze Wsparciem"
+    },
+    "ideas": {
+      "title": "Pomysły na Oświetlenie Sufitowe LED",
+      "subtitle": "Zainspiruj się profesjonalnymi instalacjami",
+      "living_room": "Nowoczesny Salon",
+      "bedroom": "Przytulna Sypialnia",
+      "kitchen": "Jasna Kuchnia",
+      "hallway": "Zachęcający Korytarz",
+      "view_more": "Zobacz Więcej Pomysłów"
     }
   },
   "led_ceiling_kit": {

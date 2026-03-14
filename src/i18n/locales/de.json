@@ -172,6 +172,15 @@
       "subtitle": "Starten Sie Ihr LED-Deckenbeleuchtungsprojekt noch heute mit unseren professionellen Sets",
       "button_primary": "Produkte durchsuchen",
       "button_secondary": "Support kontaktieren"
+    },
+    "ideas": {
+      "title": "LED-Deckenbeleuchtung Ideen",
+      "subtitle": "Lassen Sie sich von professionellen Installationen inspirieren",
+      "living_room": "Modernes Wohnzimmer",
+      "bedroom": "Gemütliches Schlafzimmer",
+      "kitchen": "Helle Küche",
+      "hallway": "Einladender Flur",
+      "view_more": "Weitere Ideen Ansehen"
     }
   },
   "led_ceiling_kit": {
