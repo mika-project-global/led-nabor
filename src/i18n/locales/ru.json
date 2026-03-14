@@ -897,7 +897,10 @@
     "postNotFound": "Статья не найдена",
     "minRead": "мин чтения",
     "views": "просмотров",
-    "relatedArticles": "Похожие статьи"
+    "relatedArticles": "Похожие статьи",
+    "ctaKitsTitle": "Готовые комплекты LED подсветки потолка",
+    "ctaKitsDescription": "Простая установка, профессиональный результат. COB LED без видимых точек.",
+    "ctaKitsButton": "Посмотреть →"
   },
   "common": {
     "scroll_to_top": "Наверх",

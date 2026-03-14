@@ -895,7 +895,10 @@
     "postNotFound": "Article not found",
     "minRead": "min read",
     "views": "views",
-    "relatedArticles": "Related Articles"
+    "relatedArticles": "Related Articles",
+    "ctaKitsTitle": "Complete LED Ceiling Lighting Kits",
+    "ctaKitsDescription": "Easy installation, professional results. COB LED without visible dots.",
+    "ctaKitsButton": "View Kits →"
   },
   "common": {
     "scroll_to_top": "Scroll to top",

@@ -25,8 +25,8 @@ export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // URL is the source of truth - normalize locale from URL
-  const locale = urlLocale === 'ru' ? 'ru' : 'en';
+  // URL is the source of truth - use locale from URL directly
+  const locale = urlLocale || 'en';
 
   useEffect(() => {
     loadPosts();
@@ -53,7 +53,15 @@ export default function Blog() {
 
   function formatDate(dateString: string) {
     const date = new Date(dateString);
-    return new Intl.DateTimeFormat(locale === 'ru' ? 'ru-RU' : 'en-GB', {
+    const localeMap: Record<string, string> = {
+      'en': 'en-GB',
+      'ru': 'ru-RU',
+      'uk': 'uk-UA',
+      'cz': 'cs-CZ',
+      'de': 'de-DE',
+      'pl': 'pl-PL'
+    };
+    return new Intl.DateTimeFormat(localeMap[locale] || 'en-GB', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'

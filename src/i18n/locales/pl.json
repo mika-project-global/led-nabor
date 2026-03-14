@@ -759,6 +759,9 @@
     "postNotFound": "Artykuł nie został znaleziony",
     "minRead": "min czytania",
     "views": "wyświetleń",
-    "relatedArticles": "Powiązane artykuły"
+    "relatedArticles": "Powiązane artykuły",
+    "ctaKitsTitle": "Kompletne zestawy oświetlenia sufitowego LED",
+    "ctaKitsDescription": "Łatwa instalacja, profesjonalne rezultaty. COB LED bez widocznych punktów.",
+    "ctaKitsButton": "Zobacz zestawy →"
   }
 }

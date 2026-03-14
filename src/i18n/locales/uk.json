@@ -860,7 +860,10 @@
     "postNotFound": "Статтю не знайдено",
     "minRead": "хв читання",
     "views": "переглядів",
-    "relatedArticles": "Схожі статті"
+    "relatedArticles": "Схожі статті",
+    "ctaKitsTitle": "Готові комплекти LED підсвітки стелі",
+    "ctaKitsDescription": "Проста установка, професійний результат. COB LED без видимих точок.",
+    "ctaKitsButton": "Переглянути →"
   },
   "common": {
     "scroll_to_top": "Вгору",

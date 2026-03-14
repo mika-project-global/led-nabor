@@ -37,8 +37,8 @@ export default function BlogPost() {
   const [error, setError] = useState(false);
   const [alternateUrls, setAlternateUrls] = useState<Record<string, string>>({});
 
-  // URL is the source of truth - normalize locale from URL
-  const locale = urlLocale === 'ru' ? 'ru' : 'en';
+  // URL is the source of truth - use locale from URL directly
+  const locale = urlLocale || 'en';
 
   useEffect(() => {
     if (slug && locale) {
@@ -148,7 +148,15 @@ export default function BlogPost() {
 
   function formatDate(dateString: string) {
     const date = new Date(dateString);
-    return new Intl.DateTimeFormat(locale === 'ru' ? 'ru-RU' : 'en-GB', {
+    const localeMap: Record<string, string> = {
+      'en': 'en-GB',
+      'ru': 'ru-RU',
+      'uk': 'uk-UA',
+      'cz': 'cs-CZ',
+      'de': 'de-DE',
+      'pl': 'pl-PL'
+    };
+    return new Intl.DateTimeFormat(localeMap[locale] || 'en-GB', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -268,17 +276,15 @@ export default function BlogPost() {
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h3 className="heading-h3 text-white mb-2">
-                  {locale === 'ru' ? 'Готовые комплекты LED подсветки потолка' : 'Complete LED Ceiling Lighting Kits'}
+                  {t('blog.ctaKitsTitle')}
                 </h3>
                 <p className="text-white/90">
-                  {locale === 'ru'
-                    ? 'Простая установка, профессиональный результат. COB LED без видимых точек.'
-                    : 'Easy installation, professional results. COB LED without visible dots.'}
+                  {t('blog.ctaKitsDescription')}
                 </p>
               </div>
               <div className="flex-shrink-0">
                 <div className="bg-white text-cyan-600 px-5 py-2.5 rounded-lg font-semibold group-hover:bg-cyan-50 transition-colors">
-                  {locale === 'ru' ? 'Посмотреть →' : 'View Kits →'}
+                  {t('blog.ctaKitsButton')}
                 </div>
               </div>
             </div>

@@ -759,6 +759,9 @@
     "postNotFound": "Artikel nicht gefunden",
     "minRead": "Min. Lesezeit",
     "views": "Aufrufe",
-    "relatedArticles": "Ähnliche Artikel"
+    "relatedArticles": "Ähnliche Artikel",
+    "ctaKitsTitle": "Komplette LED-Deckenbeleuchtungs-Kits",
+    "ctaKitsDescription": "Einfache Installation, professionelle Ergebnisse. COB-LED ohne sichtbare Punkte.",
+    "ctaKitsButton": "Kits ansehen →"
   }
 }
