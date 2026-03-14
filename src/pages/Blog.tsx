@@ -40,6 +40,7 @@ export default function Blog() {
         .select('id, title, slug, excerpt, image_url, published_at, views, locale')
         .eq('locale', locale)
         .not('published_at', 'is', null)
+        .lte('published_at', new Date().toISOString())
         .order('published_at', { ascending: false })
         .order('created_at', { ascending: false });
 
