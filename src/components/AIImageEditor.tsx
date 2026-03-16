@@ -153,6 +153,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
           </h2>
           <button
             onClick={onClose}
+            aria-label="Close image editor"
             className="text-white hover:text-gray-200 text-2xl font-bold"
           >
             ✕

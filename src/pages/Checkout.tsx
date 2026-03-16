@@ -191,22 +191,13 @@ export default function Checkout() {
       let userId: string | null = null;
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
 
-      console.log('[CHECKOUT DEBUG] Initial session check:', {
-        hasSession: !!session,
-        hasUser: !!session?.user,
-        sessionError: sessionError,
-        userId: session?.user?.id
-      });
-
       // Determine if user is authenticated
       const isGuest = !session?.user || sessionError;
 
       if (isGuest) {
         userId = null;
-        console.log('[CHECKOUT DEBUG] No valid session - proceeding as guest');
       } else {
         userId = session.user.id;
-        console.log('[CHECKOUT DEBUG] Valid session found - proceeding as authenticated user:', userId);
       }
 
       // Create serializable order items
@@ -218,15 +209,6 @@ export default function Checkout() {
 
         // Generate UUID on client side to avoid needing SELECT permission
         const orderId = crypto.randomUUID();
-
-        console.log('[CHECKOUT DEBUG] Attempting to create order with:', {
-          orderId,
-          userId,
-          isGuest,
-          totalItems: serializableItems.length
-        });
-
-        console.log('[CHECKOUT DEBUG] Using supabase client (auto-detects auth state)');
 
         // Create order in database with serializable data
         // Supabase client automatically uses 'anon' role when no session exists
@@ -247,22 +229,12 @@ export default function Checkout() {
           });
 
         if (orderError) {
-          console.error('[CHECKOUT DEBUG] Order creation failed:', {
-            error: orderError,
-            code: orderError.code,
-            message: orderError.message,
-            details: orderError.details,
-            hint: orderError.hint
-          });
           throw orderError;
         }
-
-        console.log('[CHECKOUT DEBUG] Order created successfully:', orderId);
 
         // Send order confirmation email (non-blocking)
         // If email fails, we still proceed with the order
         try {
-          console.log('[EMAIL] Sending order confirmation email to:', customerInfo.email);
           const emailResponse = await fetch(
             `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-order-confirmation`,
             {
@@ -278,17 +250,9 @@ export default function Checkout() {
             }
           );
 
-          if (emailResponse.ok) {
-            const emailResult = await emailResponse.json();
-            console.log('[EMAIL] Order confirmation email sent successfully:', emailResult);
-          } else {
-            const emailError = await emailResponse.text();
-            console.warn('[EMAIL] Failed to send order confirmation email:', emailError);
-            // Don't show error to user, just log it
-          }
-        } catch (emailError) {
-          console.warn('[EMAIL] Exception sending order confirmation email:', emailError);
-          // Don't show error to user, just log it
+          // Email result is intentionally ignored - non-blocking
+        } catch {
+          // Don't show error to user if email fails
         }
 
         // Get the product from the database
@@ -299,7 +263,7 @@ export default function Checkout() {
           .single();
 
         if (productError) {
-          console.error('Error fetching product data:', productError);
+          // Non-critical error, continue without stripe product id
         }
 
         const stripeProductId = productData?.stripeProductId;
@@ -327,7 +291,6 @@ export default function Checkout() {
           // Card payment flow with Stripe
           const { id, error } = await createCheckoutSession(order);
           if (error) {
-            console.error('Error creating checkout session:', error);
             throw new Error(error);
           }
 
