@@ -1010,6 +1010,39 @@
     "read_full_guide": "Vollständigen Ratgeber lesen",
     "read_full_guide_subtitle": "Erfahren Sie mehr über LED-Deckenbeleuchtung Technologien, Installation und Design"
   },
+  "privacy_policy": "Datenschutzerklärung",
+  "terms_of_use": "Nutzungsbedingungen",
+  "back": "Zurück",
+  "continue_shopping": "Weiter einkaufen",
+  "empty_cart": "Ihr Warenkorb ist leer",
+  "days": "Tage",
+  "order_error": "Bei der Verarbeitung Ihrer Bestellung ist ein Fehler aufgetreten",
+  "admin": {
+    "title": "Admin-Panel",
+    "tabs": {
+      "media": "Mediendateien",
+      "prices": "Preisverwaltung",
+      "blog": "Blog",
+      "products": "Produkte"
+    },
+    "logo": {
+      "title": "Website-Logo",
+      "requirements": "Das Logo sollte im SVG-Format vorliegen. Empfohlene Größe: 200x50 Pixel. Transparenter Hintergrund."
+    },
+    "images": {
+      "title": "Bilder hochladen",
+      "drop_zone": "Bilder hierher ziehen oder zum Auswählen klicken",
+      "uploading": "Wird hochgeladen..."
+    },
+    "videos": {
+      "title": "Videos hochladen",
+      "drop_zone": "Videos hierher ziehen oder zum Auswählen klicken"
+    }
+  },
+  "business_page": {
+    "title": "Für Unternehmen",
+    "description": "Sonderangebote für Unternehmen und B2B-Rechner"
+  },
   "customerReviews": "Kundenbewertungen",
   "customerReviewDescription": "Über 5000 zufriedene Kunden haben bereits unsere Beleuchtungs-Kits gewählt",
   "footer": {

@@ -1010,6 +1010,39 @@
     "read_full_guide": "Przeczytaj pełny przewodnik",
     "read_full_guide_subtitle": "Dowiedz się więcej o technologiach, instalacji i designie oświetlenia sufitowego LED"
   },
+  "privacy_policy": "Polityka prywatności",
+  "terms_of_use": "Warunki użytkowania",
+  "back": "Wstecz",
+  "continue_shopping": "Kontynuuj zakupy",
+  "empty_cart": "Twój koszyk jest pusty",
+  "days": "dni",
+  "order_error": "Wystąpił błąd podczas przetwarzania zamówienia",
+  "admin": {
+    "title": "Panel administratora",
+    "tabs": {
+      "media": "Pliki multimedialne",
+      "prices": "Zarządzanie cenami",
+      "blog": "Blog",
+      "products": "Produkty"
+    },
+    "logo": {
+      "title": "Logo strony",
+      "requirements": "Logo powinno być w formacie SVG. Zalecany rozmiar: 200x50 pikseli. Przezroczyste tło."
+    },
+    "images": {
+      "title": "Prześlij zdjęcia",
+      "drop_zone": "Przeciągnij zdjęcia tutaj lub kliknij, aby wybrać",
+      "uploading": "Przesyłanie..."
+    },
+    "videos": {
+      "title": "Prześlij filmy",
+      "drop_zone": "Przeciągnij filmy tutaj lub kliknij, aby wybrać"
+    }
+  },
+  "business_page": {
+    "title": "Dla firm",
+    "description": "Oferty specjalne dla firm i kalkulator B2B"
+  },
   "customerReviews": "Opinie klientów",
   "customerReviewDescription": "Ponad 5000 zadowolonych klientów wybrało już nasze zestawy oświetleniowe",
   "footer": {

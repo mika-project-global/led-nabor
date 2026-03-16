@@ -1010,6 +1010,39 @@
     "read_full_guide": "Přečíst kompletního průvodce",
     "read_full_guide_subtitle": "Zjistěte více o LED stropním osvětlení technologiích, instalaci a designu"
   },
+  "privacy_policy": "Zásady ochrany osobních údajů",
+  "terms_of_use": "Podmínky použití",
+  "back": "Zpět",
+  "continue_shopping": "Pokračovat v nákupu",
+  "empty_cart": "Váš košík je prázdný",
+  "days": "dny",
+  "order_error": "Při zpracování objednávky došlo k chybě",
+  "admin": {
+    "title": "Administrátorský panel",
+    "tabs": {
+      "media": "Mediální soubory",
+      "prices": "Správa cen",
+      "blog": "Blog",
+      "products": "Produkty"
+    },
+    "logo": {
+      "title": "Logo webu",
+      "requirements": "Logo by mělo být ve formátu SVG. Doporučená velikost: 200x50 pixelů. Průhledné pozadí."
+    },
+    "images": {
+      "title": "Nahrát obrázky",
+      "drop_zone": "Přetáhněte obrázky sem nebo klikněte pro výběr",
+      "uploading": "Nahrávání..."
+    },
+    "videos": {
+      "title": "Nahrát videa",
+      "drop_zone": "Přetáhněte videa sem nebo klikněte pro výběr"
+    }
+  },
+  "business_page": {
+    "title": "Pro firmy",
+    "description": "Speciální nabídky pro firmy a B2B kalkulačka"
+  },
   "customerReviews": "Recenze zákazníků",
   "customerReviewDescription": "Více než 5000 spokojených zákazníků již zvolilo naše osvětlovací sady",
   "footer": {
