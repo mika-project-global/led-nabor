@@ -22,10 +22,10 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
   const [error, setError] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [variants, setVariants] = useState<ProcessedVariant[]>([
-    { id: 'original', title: 'Original', url: imageUrl, processing: false, error: null },
-    { id: 'no-bg', title: 'No Background', url: null, processing: false, error: null },
-    { id: 'enhanced', title: 'Enhanced', url: null, processing: false, error: null },
-    { id: 'crop-square', title: 'Square 1:1', url: null, processing: false, error: null },
+    { id: 'original', title: 'Оригинал', url: imageUrl, processing: false, error: null },
+    { id: 'no-bg', title: 'Без фона', url: null, processing: false, error: null },
+    { id: 'enhanced', title: 'Улучшенное', url: null, processing: false, error: null },
+    { id: 'crop-square', title: 'Квадрат 1:1', url: null, processing: false, error: null },
   ]);
   const [selectedVariant, setSelectedVariant] = useState<string>('original');
   const [autoProcessStarted, setAutoProcessStarted] = useState(false);
@@ -42,7 +42,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
   };
 
   const autoProcessAllVariants = async () => {
-    setSuccessMessage('Processing image automatically...');
+    setSuccessMessage('Автоматическая обработка изображения...');
 
     await processRemoveBackground();
     await processAutoEnhance();
@@ -60,7 +60,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
       });
     } catch (error) {
       updateVariant('crop-square', {
-        error: 'Processing error',
+        error: 'Ошибка обработки',
         processing: false
       });
     }
@@ -71,7 +71,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
 
     if (!apiKey) {
       updateVariant('no-bg', {
-        error: 'Remove.bg API key not configured',
+        error: 'API ключ Remove.bg не настроен',
         processing: false
       });
       return;
@@ -83,10 +83,10 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
       const blob = await removeBackgroundFromUrl(imageUrl);
       const url = URL.createObjectURL(blob);
       updateVariant('no-bg', { url, processing: false });
-      setSuccessMessage('Background removed successfully!');
+      setSuccessMessage('Фон успешно удалён!');
     } catch (error) {
       updateVariant('no-bg', {
-        error: error instanceof Error ? error.message : 'Error removing background',
+        error: error instanceof Error ? error.message : 'Ошибка удаления фона',
         processing: false
       });
     }
@@ -103,7 +103,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
       });
     } catch (error) {
       updateVariant('enhanced', {
-        error: 'Processing error',
+        error: 'Ошибка обработки',
         processing: false
       });
     }
@@ -120,7 +120,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
   const handleSmartCrop = async (aspectRatio: string) => {
     setProcessing(true);
     try {
-      alert(`Smart cropping ${aspectRatio} is available in the Pro plan`);
+      alert(`Умная обрезка ${aspectRatio} доступна в Pro версии`);
     } catch (error) {
     } finally {
       setProcessing(false);
@@ -144,11 +144,11 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
         <div className="p-4 border-b flex items-center justify-between bg-gradient-to-r from-gray-700 to-gray-900">
           <h2 className="text-xl font-bold flex items-center gap-2 text-white">
             <Sparkles />
-            AI Image Editor
+            ИИ Редактор изображений
           </h2>
           <button
             onClick={onClose}
-            aria-label="Close image editor"
+            aria-label="Закрыть редактор изображений"
             className="text-white hover:text-gray-200 text-2xl font-bold"
           >
             ✕
@@ -159,13 +159,13 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
         <div className="flex-1 overflow-auto p-6">
           {/* Selected Preview */}
           <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-3">Preview: {selectedVariantData?.title}</h3>
+            <h3 className="text-lg font-semibold mb-3">Просмотр: {selectedVariantData?.title}</h3>
             <div className="relative bg-gray-100 rounded-lg border-2 border-gray-200 overflow-hidden" style={{ maxHeight: '400px' }}>
               {selectedVariantData?.processing ? (
                 <div className="w-full h-96 flex items-center justify-center">
                   <div className="text-center">
                     <Sparkles className="mx-auto mb-2 animate-pulse text-gray-500" size={48} />
-                    <p className="text-gray-600">Processing...</p>
+                    <p className="text-gray-600">Обработка...</p>
                   </div>
                 </div>
               ) : selectedVariantData?.error ? (
@@ -187,7 +187,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
                 <div className="w-full h-96 flex items-center justify-center">
                   <div className="text-center text-gray-400">
                     <Sparkles className="mx-auto mb-2" size={48} />
-                    <p>Loading...</p>
+                    <p>Загрузка...</p>
                   </div>
                 </div>
               )}
@@ -196,7 +196,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
 
           {/* Variants Grid */}
           <div>
-            <h3 className="text-lg font-semibold mb-3">Select variant:</h3>
+            <h3 className="text-lg font-semibold mb-3">Выберите вариант:</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {variants.map((variant) => (
                 <button
@@ -256,24 +256,24 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
               <Sparkles className={`${import.meta.env.VITE_REMOVE_BG_API_KEY ? 'text-green-600' : 'text-amber-600'} flex-shrink-0 mt-0.5`} />
               <div>
                 <h4 className={`font-semibold mb-1 ${import.meta.env.VITE_REMOVE_BG_API_KEY ? 'text-green-900' : 'text-amber-900'}`}>
-                  {import.meta.env.VITE_REMOVE_BG_API_KEY ? 'AI features active!' : 'AI features setup'}
+                  {import.meta.env.VITE_REMOVE_BG_API_KEY ? 'ИИ функции активны!' : 'Настройка ИИ функций'}
                 </h4>
                 {import.meta.env.VITE_REMOVE_BG_API_KEY ? (
                   <div>
                     <p className="text-sm text-green-800 mb-2">
-                      Remove.bg API connected. Automatic image processing is active.
+                      Remove.bg API подключён. Автоматическая обработка изображений активна.
                     </p>
                   </div>
                 ) : (
                   <div>
                     <p className="text-sm text-amber-800 mb-2">
-                      To enable background removal, add your Remove.bg API key:
+                      Чтобы включить удаление фона, добавьте ваш API ключ Remove.bg:
                     </p>
                     <ol className="text-sm text-amber-700 space-y-1 list-decimal list-inside">
-                      <li>Register at <a href="https://www.remove.bg/api" target="_blank" rel="noopener noreferrer" className="underline font-semibold">remove.bg/api</a></li>
-                      <li>Get a free API key (50 images/month)</li>
-                      <li>Add to .env file: <code className="bg-amber-100 px-1 rounded">VITE_REMOVE_BG_API_KEY=your_key</code></li>
-                      <li>Restart the project</li>
+                      <li>Зарегистрируйтесь на <a href="https://www.remove.bg/api" target="_blank" rel="noopener noreferrer" className="underline font-semibold">remove.bg/api</a></li>
+                      <li>Получите бесплатный API ключ (50 изображений/месяц)</li>
+                      <li>Добавьте в файл .env: <code className="bg-amber-100 px-1 rounded">VITE_REMOVE_BG_API_KEY=ваш_ключ</code></li>
+                      <li>Перезапустите проект</li>
                     </ol>
                   </div>
                 )}
@@ -288,7 +288,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
             onClick={onClose}
             className="px-6 py-2 text-gray-700 hover:text-gray-900 font-medium"
           >
-            Cancel
+            Отмена
           </button>
           <div className="flex gap-3">
             {selectedVariantData?.url && (
@@ -298,7 +298,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
                 className="flex items-center gap-2 px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium shadow-md"
               >
                 <Download size={18} />
-                Download
+                Скачать
               </a>
             )}
             <button
@@ -306,7 +306,7 @@ export function AIImageEditor({ imageUrl, onImageProcessed, onClose }: AIImageEd
               disabled={!selectedVariantData?.url || selectedVariantData?.processing}
               className="px-8 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all disabled:opacity-50 disabled:cursor-not-allowed font-semibold shadow-md"
             >
-              {selectedVariantData?.processing ? 'Processing...' : 'Apply'}
+              {selectedVariantData?.processing ? 'Обработка...' : 'Применить'}
             </button>
           </div>
         </div>
