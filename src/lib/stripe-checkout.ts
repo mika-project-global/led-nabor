@@ -51,7 +51,8 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
         items: serializableItems,
         orderId: order.id,
         customerEmail: order.customerInfo.email,
-        stripeProductId: order.stripeProductId
+        stripeProductId: order.stripeProductId,
+        locale: order.locale
       }
     });
 

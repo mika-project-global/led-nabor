@@ -221,6 +221,7 @@ export interface Order {
   createdAt: string;
   stripeProductId?: string | null;
   userId?: string | null;
+  locale?: string;
 }
 
 export interface BlogPost {

@@ -27,7 +27,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const { locale = 'en' } = useParams<{ locale: string }>();
   const location = useLocation();
   const siteUrl = __SITE_URL__ || 'https://led-nabor.com';
-  const defaultImage = '/og-image.jpg';
+  const defaultImage = '/og-image.svg';
   const ogLocale = LOCALE_MAP[locale] || 'en_US';
 
   // All language versions are now ready for indexing
@@ -96,7 +96,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
-      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:type" content={image ? "image/jpeg" : "image/svg+xml"} />
       <meta property="og:url" content={fullCanonicalUrl} />
       <meta property="og:site_name" content="LED Nabor" />
       <meta property="og:locale" content={ogLocale} />

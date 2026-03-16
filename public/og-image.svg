@@ -1,0 +1,124 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stripGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Ambient glow top center -->
+  <ellipse cx="600" cy="80" rx="500" ry="120" fill="#06b6d4" opacity="0.06" />
+
+  <!-- Ceiling simulation -->
+  <rect x="0" y="0" width="1200" height="8" fill="#1e293b" />
+
+  <!-- LED strip on ceiling -->
+  <rect x="100" y="8" width="1000" height="3" fill="url(#stripGrad)" filter="url(#glow)" />
+
+  <!-- Glow from ceiling light -->
+  <rect x="0" y="8" width="1200" height="80" fill="url(#glowGrad)" />
+
+  <!-- Decorative light beams -->
+  <line x1="200" y1="11" x2="200" y2="630" stroke="#06b6d4" stroke-width="0.5" opacity="0.06"/>
+  <line x1="400" y1="11" x2="400" y2="630" stroke="#06b6d4" stroke-width="0.5" opacity="0.04"/>
+  <line x1="600" y1="11" x2="600" y2="630" stroke="#06b6d4" stroke-width="0.5" opacity="0.06"/>
+  <line x1="800" y1="11" x2="800" y2="630" stroke="#06b6d4" stroke-width="0.5" opacity="0.04"/>
+  <line x1="1000" y1="11" x2="1000" y2="630" stroke="#06b6d4" stroke-width="0.5" opacity="0.06"/>
+
+  <!-- Main logo / brand mark -->
+  <!-- LED strip icon -->
+  <rect x="540" y="155" width="120" height="16" rx="8" fill="#0e2b3d" stroke="#06b6d4" stroke-width="1.5"/>
+  <rect x="548" y="159" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.9" filter="url(#glow)"/>
+  <rect x="562" y="159" width="8" height="8" rx="2" fill="#22d3ee" opacity="0.9" filter="url(#glow)"/>
+  <rect x="576" y="159" width="8" height="8" rx="2" fill="#67e8f9" opacity="0.9" filter="url(#glow)"/>
+  <rect x="590" y="159" width="8" height="8" rx="2" fill="#22d3ee" opacity="0.9" filter="url(#glow)"/>
+  <rect x="604" y="159" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.9" filter="url(#glow)"/>
+  <rect x="618" y="159" width="8" height="8" rx="2" fill="#22d3ee" opacity="0.9" filter="url(#glow)"/>
+  <rect x="632" y="159" width="8" height="8" rx="2" fill="#06b6d4" opacity="0.9" filter="url(#glow)"/>
+  <rect x="646" y="159" width="8" height="8" rx="2" fill="#67e8f9" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- Brand name -->
+  <text x="600" y="265" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" text-anchor="middle" fill="#ffffff" letter-spacing="-1">LED<tspan fill="#06b6d4"> NABOR</tspan></text>
+
+  <!-- Tagline -->
+  <text x="600" y="318" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#94a3b8" letter-spacing="2">LED STRIP LIGHTING KITS FOR CEILING</text>
+
+  <!-- Divider line -->
+  <line x1="440" y1="348" x2="760" y2="348" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+
+  <!-- Features row -->
+  <!-- Feature 1 -->
+  <g transform="translate(220, 390)">
+    <circle cx="0" cy="0" r="20" fill="#06b6d4" opacity="0.12"/>
+    <text x="0" y="5" font-family="Arial" font-size="18" text-anchor="middle" fill="#06b6d4">✓</text>
+    <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#94a3b8">Free EU Delivery</text>
+  </g>
+
+  <!-- Feature 2 -->
+  <g transform="translate(390, 390)">
+    <circle cx="0" cy="0" r="20" fill="#06b6d4" opacity="0.12"/>
+    <text x="0" y="5" font-family="Arial" font-size="18" text-anchor="middle" fill="#06b6d4">✓</text>
+    <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#94a3b8">2-Year Warranty</text>
+  </g>
+
+  <!-- Feature 3 -->
+  <g transform="translate(560, 390)">
+    <circle cx="0" cy="0" r="20" fill="#06b6d4" opacity="0.12"/>
+    <text x="0" y="5" font-family="Arial" font-size="18" text-anchor="middle" fill="#06b6d4">✓</text>
+    <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#94a3b8">Easy Installation</text>
+  </g>
+
+  <!-- Feature 4 -->
+  <g transform="translate(730, 390)">
+    <circle cx="0" cy="0" r="20" fill="#06b6d4" opacity="0.12"/>
+    <text x="0" y="5" font-family="Arial" font-size="18" text-anchor="middle" fill="#06b6d4">✓</text>
+    <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#94a3b8">6 Languages</text>
+  </g>
+
+  <!-- Feature 5 -->
+  <g transform="translate(900, 390)">
+    <circle cx="0" cy="0" r="20" fill="#06b6d4" opacity="0.12"/>
+    <text x="0" y="5" font-family="Arial" font-size="18" text-anchor="middle" fill="#06b6d4">✓</text>
+    <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#94a3b8">COB &amp; SMD LED</text>
+  </g>
+
+  <!-- Domain -->
+  <text x="600" y="560" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#475569" letter-spacing="3">led-nabor.com</text>
+
+  <!-- Bottom LED strip -->
+  <rect x="100" y="615" width="1000" height="2" fill="url(#stripGrad)" filter="url(#glow)" opacity="0.6" />
+
+  <!-- Corner accents -->
+  <rect x="0" y="0" width="4" height="80" fill="#06b6d4" opacity="0.3"/>
+  <rect x="1196" y="0" width="4" height="80" fill="#06b6d4" opacity="0.3"/>
+  <rect x="0" y="550" width="4" height="80" fill="#06b6d4" opacity="0.3"/>
+  <rect x="1196" y="550" width="4" height="80" fill="#06b6d4" opacity="0.3"/>
+</svg>

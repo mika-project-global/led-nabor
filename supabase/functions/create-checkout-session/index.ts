@@ -22,7 +22,7 @@ Deno.serve(async (req) => {
 
   try {
     // Parse request body
-    const { items, orderId, customerEmail, stripeProductId } = await req.json();
+    const { items, orderId, customerEmail, stripeProductId, locale } = await req.json();
 
     if (!items || !items.length) {
       return new Response(JSON.stringify({ error: "No items provided" }), {
@@ -34,9 +34,9 @@ Deno.serve(async (req) => {
       });
     }
 
-    // Use fixed URLs for success and cancel
-    const successUrl = "https://led-nabor.com/order-success?session_id={CHECKOUT_SESSION_ID}";
-    const cancelUrl = "https://led-nabor.com/checkout";
+    const siteLocale = locale || "en";
+    const successUrl = `https://led-nabor.com/${siteLocale}/order-success?session_id={CHECKOUT_SESSION_ID}`;
+    const cancelUrl = `https://led-nabor.com/${siteLocale}/checkout`;
 
     console.log("Creating checkout session with items:", JSON.stringify(items));
     

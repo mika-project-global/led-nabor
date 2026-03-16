@@ -278,7 +278,8 @@ export default function Checkout() {
           status: 'pending',
           createdAt: new Date().toISOString(),
           stripeProductId,
-          userId: userId
+          userId: userId,
+          locale
         };
 
         if (selectedPaymentMethod === 'cash') {
@@ -596,9 +597,14 @@ export default function Checkout() {
                 <button
                   onClick={handlePlaceOrder}
                   disabled={isSubmitting}
-                  className="w-full btn-primary"
+                  className="w-full btn-primary disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {isSubmitting ? t('checkout.processing') : t('checkout.place_order')}
+                  {isSubmitting ? (
+                    <span className="flex items-center justify-center gap-2">
+                      <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      {t('checkout.processing')}
+                    </span>
+                  ) : t('checkout.place_order')}
                 </button>
               </div>
             </div>
