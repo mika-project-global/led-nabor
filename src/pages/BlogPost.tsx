@@ -187,20 +187,34 @@ export default function BlogPost() {
   }
 
   const readingTime = estimateReadingTime(post.content);
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://led-nabor.com';
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.seo_title || post.title,
     description: post.seo_description || post.excerpt,
-    image: post.image_url,
+    image: post.image_url || undefined,
+    url: `${siteUrl}/${locale}/blog/${post.slug}/`,
     datePublished: post.published_at,
+    dateModified: post.published_at,
+    keywords: post.seo_keywords || undefined,
     author: {
       '@type': 'Organization',
-      name: 'LED Store'
+      name: 'LED Nabor',
+      url: siteUrl
     },
     publisher: {
       '@type': 'Organization',
-      name: 'LED Store'
+      name: 'LED Nabor',
+      url: siteUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/favicon/web-app-manifest-512x512.png`
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}/${locale}/blog/${post.slug}/`
     }
   };
 

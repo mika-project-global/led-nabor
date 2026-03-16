@@ -95,6 +95,8 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <meta property="og:image" content={image || `${siteUrl}${defaultImage}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={title} />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:url" content={fullCanonicalUrl} />
       <meta property="og:site_name" content="LED Nabor" />
       <meta property="og:locale" content={ogLocale} />
@@ -159,30 +161,6 @@ export function SEO({ title, description, image, type = 'website', keywords, can
         </script>
       )}
 
-      {type === 'article' && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: title,
-            description: description,
-            image: image,
-            datePublished: new Date().toISOString(),
-            author: {
-              "@type": "Organization",
-              name: "LED Nabor"
-            },
-            publisher: {
-              "@type": "Organization",
-              "name": "LED Nabor",
-              "logo": {
-                "@type": "ImageObject",
-                "url": `${siteUrl}/favicon/web-app-manifest-512x512.png`
-              }
-            }
-          })}
-        </script>
-      )}
 
       {/* Apple Touch Icons */}
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
