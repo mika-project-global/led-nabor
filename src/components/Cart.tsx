@@ -83,7 +83,7 @@ export function Cart({
             <ShoppingBag />
             {t('cart.title')}
           </h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+          <button onClick={onClose} aria-label="Close cart" className="text-gray-500 hover:text-gray-700">
             <X size={24} />
           </button>
         </div>

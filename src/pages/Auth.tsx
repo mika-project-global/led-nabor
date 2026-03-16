@@ -34,31 +34,11 @@ export default function Auth() {
       );
 
       if (error) {
-        console.error(`❌ Ошибка входа через ${provider}:`, error);
         showNotification('error', error.message);
         return;
       }
-
-      console.log(`✅ Успешное подключение к ${provider}`);
     } catch (error) {
-      console.error(`❌ Ошибка входа через ${provider}:`, error);
       showNotification('error', t('auth.error_occurred'));
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const handleGoogleSignIn = async () => {
-    console.log('🔍 Инициируем вход через Google...');
-    setIsLoading(true);
-    showNotification('info', 'Переадресация на страницу входа Google...');
-    try {
-      const { error } = await signInWithGoogle();
-      if (error) throw error;
-      console.log('✅ Успешный вход через Google');
-    } catch (error) {
-      console.error('❌ Ошибка входа через Google:', error);
-      showNotification('error', error.message);
     } finally {
       setIsLoading(false);
     }
@@ -78,8 +58,6 @@ export default function Auth() {
         ? await signUpWithEmail(email, password)
         : await signInWithEmail(email, password);
 
-      console.log('Sign in/up response:', { data, error, email });
-
       if (error) throw error;
 
       if (isSignUp) {
@@ -89,17 +67,10 @@ export default function Auth() {
         navigate(`/${locale}/profile`);
       }
     } catch (error: any) {
-      console.error('Auth error details:', {
-        message: error?.message,
-        status: error?.status,
-        error
-      });
-
       let errorMessage = t('auth.error_occurred');
 
       if (error?.message) {
         const msg = error.message.toLowerCase();
-        console.log('Error message (lowercase):', msg);
 
         if (msg.includes('invalid') && (msg.includes('credentials') || msg.includes('password') || msg.includes('email') || msg.includes('login'))) {
           errorMessage = t('auth.invalid_credentials');
@@ -139,7 +110,6 @@ export default function Auth() {
       showNotification('success', t('auth.reset_password_sent'));
       setShowForgotPassword(false);
     } catch (error: any) {
-      console.error('Reset password error:', error);
       const errorMsg = error.message || t('auth.reset_password_error');
       showNotification('error', errorMsg);
       setError(errorMsg);
@@ -149,8 +119,6 @@ export default function Auth() {
   };
 
   useEffect(() => {
-    console.log('🔍 Auth.tsx загружен, текущий путь:', location.pathname);
-
     const clearAuthData = () => {
       localStorage.removeItem('supabase.auth.token');
       localStorage.removeItem('supabase.auth.refreshToken');
@@ -161,7 +129,6 @@ export default function Auth() {
     const checkSession = async (skipRedirect = false) => {
       try {
         const { data: { session }, error } = await supabase.auth.getSession();
-        console.log('📡 Проверка текущей сессии:', session);
 
         if (error) {
           if (error.message.includes('refresh_token_not_found')) {
@@ -175,26 +142,22 @@ export default function Auth() {
         }
 
         if (session?.user) {
-          console.log('✅ Сессия найдена! Перенаправляем в профиль...');
           navigate(`/${locale}/profile`);
         } else {
-          console.log('⚠️ Сессия не найдена');
           clearAuthData();
           if (!skipRedirect) {
             navigate(`/${locale}/auth`);
           }
         }
       } catch (error) {
-        console.error('❌ Ошибка получения сессии:', error);
         showNotification('error', t('auth.error_occurred'));
         navigate(`/${locale}/auth`);
       }
     };
 
     const handleCallback = async () => {
-      console.log('🔍 Обрабатываем callback аутентификации...');
       const params = new URLSearchParams(location.search || location.hash.slice(1));
-      
+
       const authError = params.get('error');
       const errorDescription = params.get('error_description');
       const access_token = params.get('access_token');
@@ -202,35 +165,22 @@ export default function Auth() {
       const code = params.get('code');
       const id_token = params.get('id_token');
 
-      console.log('🔍 Данные из URL:', {
-        error: authError,
-        errorDescription,
-        access_token,
-        refresh_token,
-        hasCode: !!code,
-        hasIdToken: !!id_token
-      });
-
       if (authError) {
-        console.error('❌ Ошибка аутентификации:', authError, errorDescription);
         showNotification('error', errorDescription || authError);
         navigate(`/${locale}/auth`);
       } else if (access_token || refresh_token) {
-        console.log('✅ Токены найдены! Сохраняем...');
         if (access_token) {
           const { error: sessionError } = await supabase.auth.setSession({
             access_token,
             refresh_token: refresh_token || null
           });
           if (sessionError) {
-            console.error('❌ Ошибка установки сессии:', sessionError);
             showNotification('error', t('auth.session_error'));
             return;
           }
         }
         navigate(`/${locale}/profile`);
       } else {
-        console.log('⚠️ Проверяем сессию...');
         checkSession();
       }
     };
@@ -242,15 +192,12 @@ export default function Auth() {
     }
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      console.log('🔄 Состояние аутентификации изменилось:', event, session);
       if (event === 'SIGNED_IN' && session?.access_token) {
-        console.log('✅ Пользователь вошел, перенаправляем в профиль...');
         navigate(`/${locale}/profile`);
       } else if (event === 'SIGNED_OUT' || event === 'USER_DELETED') {
-        console.log('⚠️ Пользователь вышел или удален');
         clearAuthData();
         navigate(`/${locale}/auth`);
-      } 
+      }
     });
 
     return () => {
@@ -270,7 +217,7 @@ export default function Auth() {
             <div className="w-8 h-8 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin" />
           </div>
         )}
-        
+
         {/* Primary Social Login Buttons */}
         <div className="space-y-3">
           <button
@@ -278,16 +225,16 @@ export default function Auth() {
             className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-50 text-gray-700 px-6 py-3 rounded-lg border transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={isLoading}
           >
-            <img src="https://www.google.com/favicon.ico" alt="" className="w-5 h-5" />
+            <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5" />
             {t('auth.sign_in_with_google')}
           </button>
-          
+
           <button
             onClick={() => handleSocialSignIn('facebook')}
             className="w-full flex items-center justify-center gap-3 bg-[#1877F2] hover:bg-[#1874EA] text-white px-6 py-3 rounded-lg transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={isLoading}
           >
-            <img src="https://www.facebook.com/favicon.ico" alt="" className="w-5 h-5" />
+            <img src="https://www.facebook.com/favicon.ico" alt="Facebook" className="w-5 h-5" />
             {t('auth.sign_in_with_facebook')}
           </button>
         </div>
