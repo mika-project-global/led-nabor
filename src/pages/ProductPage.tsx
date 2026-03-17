@@ -43,13 +43,24 @@ function ProductPage() {
   // Try to find product by slug first
   let product = products.find(p => p.slugs[currentLocale] === productSlug);
 
+  // Fallback: search across all locales (handles old translated slugs)
+  if (!product && productSlug) {
+    product = products.find(p =>
+      Object.values(p.slugs).includes(productSlug)
+    );
+    if (product) {
+      const correctSlug = product.slugs[currentLocale];
+      navigate(`/${currentLocale}/product/${correctSlug}`, { replace: true });
+      return null;
+    }
+  }
+
   // Fallback: If not found by slug, try to find by ID (for old URLs)
   if (!product && productSlug) {
     const productId = Number(productSlug);
     if (!isNaN(productId)) {
       const productById = products.find(p => p.id === productId);
       if (productById) {
-        // Redirect to the correct slug URL
         const correctSlug = productById.slugs[currentLocale];
         navigate(`/${currentLocale}/product/${correctSlug}`, { replace: true });
         return null;
