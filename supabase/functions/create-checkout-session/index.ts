@@ -1,118 +1,132 @@
 import Stripe from "npm:stripe@12.4.0";
 import { createClient } from "npm:@supabase/supabase-js@2.38.4";
 
-// Define CORS headers directly in this file instead of importing from shared module
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
-// Initialize Stripe and Supabase clients
+const CURRENCIES_WITH_PRICE_IDS = ["czk", "eur", "pln"];
+
+const CURRENCY_LOWER: Record<string, string> = {
+  CZK: "czk",
+  EUR: "eur",
+  PLN: "pln",
+  UAH: "uah",
+  GBP: "gbp",
+  USD: "usd",
+};
+
+const LOCALE_STRIPE_LOCALE: Record<string, string> = {
+  cz: "cs",
+  de: "de",
+  pl: "pl",
+  uk: "auto",
+  en: "en",
+  ru: "auto",
+};
+
 const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "");
 const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
 const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 Deno.serve(async (req) => {
-  // Handle CORS
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
   }
 
   try {
-    // Parse request body
-    const { items, orderId, customerEmail, stripeProductId, locale, currency } = await req.json();
+    const { items, orderId, customerEmail, locale, currency } = await req.json();
 
     if (!items || !items.length) {
       return new Response(JSON.stringify({ error: "No items provided" }), {
         status: 400,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders,
-        },
+        headers: { "Content-Type": "application/json", ...corsHeaders },
       });
     }
 
     const siteLocale = locale || "en";
+    const stripeCurrency = currency ? (CURRENCY_LOWER[currency] || "czk") : "czk";
+    const stripeLocale = LOCALE_STRIPE_LOCALE[siteLocale] || "en";
+    const usePriceData = !CURRENCIES_WITH_PRICE_IDS.includes(stripeCurrency);
+
     const successUrl = `https://led-nabor.com/${siteLocale}/order-success?session_id={CHECKOUT_SESSION_ID}`;
     const cancelUrl = `https://led-nabor.com/${siteLocale}/checkout`;
 
-    const LOCALE_STRIPE_LOCALE: Record<string, string> = {
-      cz: "cs",
-      de: "de",
-      pl: "pl",
-      uk: "auto",
-      en: "en",
-      ru: "auto",
-    };
+    console.log(`Creating checkout: currency=${stripeCurrency}, usePriceData=${usePriceData}`);
 
-    const CURRENCY_LOWER: Record<string, string> = {
-      CZK: "czk",
-      EUR: "eur",
-      PLN: "pln",
-      UAH: "uah",
-      GBP: "gbp",
-      USD: "usd",
-    };
-
-    const stripeCurrency = currency ? (CURRENCY_LOWER[currency] || "czk") : "czk";
-    const stripeLocale = LOCALE_STRIPE_LOCALE[siteLocale] || "en";
-
-    console.log("Creating checkout session with items:", JSON.stringify(items));
-    
-    // Create line items for Stripe
     const line_items = [];
 
-    // Add product items
     for (const item of items) {
-      console.log(`Processing item: ${item.id}, variant: ${item.variant.id}, stripePriceId: ${item.variant.stripePriceId}`);
-      
-      if (!item.variant.stripePriceId) {
-        throw new Error(`Missing Stripe price ID for product variant: ${item.variant.id}`);
-      }
-      
-      // Ensure quantity is a valid integer
       const quantity = parseInt(String(item.quantity), 10);
       if (isNaN(quantity) || quantity <= 0) {
         throw new Error(`Invalid quantity for item ${item.id}: ${item.quantity}`);
       }
 
-      line_items.push({
-        price: item.variant.stripePriceId,
-        quantity: quantity
-      });
-      
-      // Add warranty if selected
-      if (item.warranty?.stripePriceId) {
-        console.log(`Adding warranty: ${item.warranty.stripePriceId}`);
-        
-        // Ensure warranty quantity matches item quantity
-        const warrantyQuantity = parseInt(String(item.quantity), 10);
-        if (isNaN(warrantyQuantity) || warrantyQuantity <= 0) {
-          throw new Error(`Invalid warranty quantity for item ${item.id}: ${item.quantity}`);
+      if (usePriceData) {
+        const unitAmount = Math.round(Number(item.price) * 100);
+        if (!unitAmount || unitAmount <= 0) {
+          throw new Error(`Invalid price for item ${item.id}: ${item.price}`);
         }
-        
+
         line_items.push({
-          price: item.warranty.stripePriceId,
-          quantity: warrantyQuantity
+          price_data: {
+            currency: stripeCurrency,
+            unit_amount: unitAmount,
+            product_data: {
+              name: `${item.name} ${item.variant.length}m`,
+              images: item.image ? [item.image] : [],
+            },
+          },
+          quantity,
         });
+
+        if (item.warranty?.additionalCost && Number(item.warranty.additionalCost) > 0) {
+          const warrantyAmount = Math.round(Number(item.warranty.additionalCost) * 100);
+          line_items.push({
+            price_data: {
+              currency: stripeCurrency,
+              unit_amount: warrantyAmount,
+              product_data: {
+                name: `Warranty ${item.warranty.months} months`,
+              },
+            },
+            quantity,
+          });
+        }
+      } else {
+        if (!item.variant.stripePriceId) {
+          throw new Error(`Missing Stripe price ID for product variant: ${item.variant.id}`);
+        }
+
+        line_items.push({
+          price: item.variant.stripePriceId,
+          quantity,
+        });
+
+        if (item.warranty?.stripePriceId) {
+          line_items.push({
+            price: item.warranty.stripePriceId,
+            quantity,
+          });
+        }
       }
     }
 
-    // Create checkout session
     const session = await stripe.checkout.sessions.create({
       customer_email: customerEmail,
-      line_items: line_items,
+      line_items,
       mode: "payment",
       success_url: successUrl,
       cancel_url: cancelUrl,
       metadata: {
         orderId: orderId,
-        company_name: "LED Nabor"
+        company_name: "LED Nabor",
       },
       shipping_address_collection: {
-        allowed_countries: ['CZ', 'SK', 'DE', 'AT', 'PL', 'HU', 'UA', 'GB'],
+        allowed_countries: ["CZ", "SK", "DE", "AT", "PL", "HU", "UA", "GB"],
       },
       locale: stripeLocale as any,
     });
@@ -121,23 +135,17 @@ Deno.serve(async (req) => {
       JSON.stringify({ id: session.id, url: session.url }),
       {
         status: 200,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders,
-        },
+        headers: { "Content-Type": "application/json", ...corsHeaders },
       }
     );
   } catch (error) {
     console.error("Error creating checkout session:", error);
-    
+
     return new Response(
       JSON.stringify({ error: error.message || "Internal server error" }),
       {
         status: 500,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders,
-        },
+        headers: { "Content-Type": "application/json", ...corsHeaders },
       }
     );
   }
