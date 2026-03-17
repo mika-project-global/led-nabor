@@ -7,8 +7,6 @@ const corsHeaders = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
-const CURRENCIES_WITH_PRICE_IDS = ["czk", "eur", "pln"];
-
 const CURRENCY_LOWER: Record<string, string> = {
   CZK: "czk",
   EUR: "eur",
@@ -50,12 +48,11 @@ Deno.serve(async (req) => {
     const siteLocale = locale || "en";
     const stripeCurrency = currency ? (CURRENCY_LOWER[currency] || "czk") : "czk";
     const stripeLocale = LOCALE_STRIPE_LOCALE[siteLocale] || "en";
-    const usePriceData = !CURRENCIES_WITH_PRICE_IDS.includes(stripeCurrency);
 
     const successUrl = `https://led-nabor.com/${siteLocale}/order-success?session_id={CHECKOUT_SESSION_ID}`;
     const cancelUrl = `https://led-nabor.com/${siteLocale}/checkout`;
 
-    console.log(`Creating checkout: currency=${stripeCurrency}, usePriceData=${usePriceData}`);
+    console.log(`Creating checkout: currency=${stripeCurrency}, locale=${siteLocale}`);
 
     const line_items = [];
 
@@ -65,53 +62,36 @@ Deno.serve(async (req) => {
         throw new Error(`Invalid quantity for item ${item.id}: ${item.quantity}`);
       }
 
-      if (usePriceData) {
-        const unitAmount = Math.round(Number(item.variant?.price ?? item.price) * 100);
-        if (!unitAmount || unitAmount <= 0) {
-          throw new Error(`Invalid price for item ${item.id}: ${item.price}`);
-        }
+      const rawPrice = item.variant?.price ?? item.price;
+      const unitAmount = Math.round(Number(rawPrice) * 100);
+      if (!unitAmount || unitAmount <= 0) {
+        throw new Error(`Invalid price for item ${item.id}: ${rawPrice}`);
+      }
 
+      line_items.push({
+        price_data: {
+          currency: stripeCurrency,
+          unit_amount: unitAmount,
+          product_data: {
+            name: `${item.name} ${item.variant?.length ?? ""}m`.trim(),
+            images: item.image ? [item.image] : [],
+          },
+        },
+        quantity,
+      });
+
+      if (item.warranty?.additionalCost && Number(item.warranty.additionalCost) > 0) {
+        const warrantyAmount = Math.round(Number(item.warranty.additionalCost) * 100);
         line_items.push({
           price_data: {
             currency: stripeCurrency,
-            unit_amount: unitAmount,
+            unit_amount: warrantyAmount,
             product_data: {
-              name: `${item.name} ${item.variant.length}m`,
-              images: item.image ? [item.image] : [],
+              name: `Warranty ${item.warranty.months} months`,
             },
           },
           quantity,
         });
-
-        if (item.warranty?.additionalCost && Number(item.warranty.additionalCost) > 0) {
-          const warrantyAmount = Math.round(Number(item.warranty.additionalCost) * 100);
-          line_items.push({
-            price_data: {
-              currency: stripeCurrency,
-              unit_amount: warrantyAmount,
-              product_data: {
-                name: `Warranty ${item.warranty.months} months`,
-              },
-            },
-            quantity,
-          });
-        }
-      } else {
-        if (!item.variant.stripePriceId) {
-          throw new Error(`Missing Stripe price ID for product variant: ${item.variant.id}`);
-        }
-
-        line_items.push({
-          price: item.variant.stripePriceId,
-          quantity,
-        });
-
-        if (item.warranty?.stripePriceId) {
-          line_items.push({
-            price: item.warranty.stripePriceId,
-            quantity,
-          });
-        }
       }
     }
 
