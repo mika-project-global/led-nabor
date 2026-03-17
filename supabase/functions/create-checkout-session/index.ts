@@ -22,7 +22,7 @@ Deno.serve(async (req) => {
 
   try {
     // Parse request body
-    const { items, orderId, customerEmail, stripeProductId, locale } = await req.json();
+    const { items, orderId, customerEmail, stripeProductId, locale, currency } = await req.json();
 
     if (!items || !items.length) {
       return new Response(JSON.stringify({ error: "No items provided" }), {
@@ -37,6 +37,27 @@ Deno.serve(async (req) => {
     const siteLocale = locale || "en";
     const successUrl = `https://led-nabor.com/${siteLocale}/order-success?session_id={CHECKOUT_SESSION_ID}`;
     const cancelUrl = `https://led-nabor.com/${siteLocale}/checkout`;
+
+    const LOCALE_STRIPE_LOCALE: Record<string, string> = {
+      cz: "cs",
+      de: "de",
+      pl: "pl",
+      uk: "uk",
+      en: "en",
+      ru: "ru",
+    };
+
+    const CURRENCY_LOWER: Record<string, string> = {
+      CZK: "czk",
+      EUR: "eur",
+      PLN: "pln",
+      UAH: "uah",
+      GBP: "gbp",
+      USD: "usd",
+    };
+
+    const stripeCurrency = currency ? (CURRENCY_LOWER[currency] || "czk") : "czk";
+    const stripeLocale = LOCALE_STRIPE_LOCALE[siteLocale] || "en";
 
     console.log("Creating checkout session with items:", JSON.stringify(items));
     
@@ -86,14 +107,15 @@ Deno.serve(async (req) => {
       mode: "payment",
       success_url: successUrl,
       cancel_url: cancelUrl,
+      currency: stripeCurrency,
       metadata: {
         orderId: orderId,
         company_name: "LED Nabor"
       },
       shipping_address_collection: {
-        allowed_countries: ['CZ', 'SK', 'DE', 'AT', 'PL', 'HU'],
+        allowed_countries: ['CZ', 'SK', 'DE', 'AT', 'PL', 'HU', 'UA', 'GB'],
       },
-      locale: "en",
+      locale: stripeLocale as any,
     });
 
     return new Response(

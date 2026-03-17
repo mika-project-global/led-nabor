@@ -52,7 +52,8 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
         orderId: order.id,
         customerEmail: order.customerInfo.email,
         stripeProductId: order.stripeProductId,
-        locale: order.locale
+        locale: order.locale,
+        currency: order.currency
       }
     });
 
@@ -84,7 +85,7 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
         stripe_session_id: data.id,
         status: 'pending',
         amount: order.total,
-        currency: 'czk',
+        currency: (order.currency || 'CZK').toLowerCase(),
         user_id: order.userId
       });
 

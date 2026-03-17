@@ -279,7 +279,8 @@ export default function Checkout() {
           createdAt: new Date().toISOString(),
           stripeProductId,
           userId: userId,
-          locale
+          locale,
+          currency
         };
 
         if (selectedPaymentMethod === 'cash') {

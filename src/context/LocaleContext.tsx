@@ -24,7 +24,18 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   CZK: 'Kč',
   EUR: '€',
   USD: '$',
-  GBP: '£'
+  GBP: '£',
+  PLN: 'zł',
+  UAH: '₴'
+};
+
+export const LOCALE_CURRENCY_MAP: Record<string, string> = {
+  cz: 'CZK',
+  de: 'EUR',
+  pl: 'PLN',
+  uk: 'UAH',
+  en: 'EUR',
+  ru: 'EUR',
 };
 
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
@@ -40,7 +51,9 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   const [currency, setCurrencyState] = useState<string>(() => {
     const savedCurrency = localStorage.getItem('preferredCurrency');
-    return savedCurrency || DEFAULT_CURRENCY;
+    if (savedCurrency) return savedCurrency;
+    const pathLocale = window.location.pathname.split('/')[1];
+    return LOCALE_CURRENCY_MAP[pathLocale] || DEFAULT_CURRENCY;
   });
 
   const detectUserLocale = async () => {
@@ -50,6 +63,10 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   const setLocale = (newLocale: string) => {
     setLocaleState(newLocale);
+    const mappedCurrency = LOCALE_CURRENCY_MAP[newLocale];
+    if (mappedCurrency) {
+      setCurrencyState(mappedCurrency);
+    }
   };
 
   // Backwards compatibility method (deprecated - use URL navigation instead)
