@@ -107,7 +107,6 @@ Deno.serve(async (req) => {
       mode: "payment",
       success_url: successUrl,
       cancel_url: cancelUrl,
-      currency: stripeCurrency,
       metadata: {
         orderId: orderId,
         company_name: "LED Nabor"
