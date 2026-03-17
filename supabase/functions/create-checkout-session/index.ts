@@ -66,7 +66,7 @@ Deno.serve(async (req) => {
       }
 
       if (usePriceData) {
-        const unitAmount = Math.round(Number(item.price) * 100);
+        const unitAmount = Math.round(Number(item.variant?.price ?? item.price) * 100);
         if (!unitAmount || unitAmount <= 0) {
           throw new Error(`Invalid price for item ${item.id}: ${item.price}`);
         }
