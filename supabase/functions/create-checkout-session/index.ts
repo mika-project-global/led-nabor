@@ -42,9 +42,9 @@ Deno.serve(async (req) => {
       cz: "cs",
       de: "de",
       pl: "pl",
-      uk: "uk",
+      uk: "auto",
       en: "en",
-      ru: "ru",
+      ru: "auto",
     };
 
     const CURRENCY_LOWER: Record<string, string> = {
