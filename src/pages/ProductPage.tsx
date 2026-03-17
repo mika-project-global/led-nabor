@@ -62,7 +62,7 @@ function ProductPage() {
   const [showLengthOptions, setShowLengthOptions] = useState(false);
   const [totalPrice, setTotalPrice] = useState<number | null>(null);
   const { addToCart } = useCart();
-  const { formatPrice, locale } = useLocale();
+  const { formatPrice, locale, currency } = useLocale();
   const { t } = useTranslation();
   
   const [selectedImage, setSelectedImage] = useState(0);
@@ -168,16 +168,38 @@ function ProductPage() {
     }
   }, [product, addToHistory]);
 
+  const loadCurrencyPrice = async (variantId: string, fallbackPrice: number): Promise<number> => {
+    if (currency === 'CZK') return fallbackPrice;
+    try {
+      const { data, error } = await supabase
+        .from('product_prices')
+        .select('custom_price')
+        .eq('product_id', product!.id)
+        .eq('variant_id', variantId)
+        .eq('currency', currency)
+        .eq('is_active', true)
+        .order('updated_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      if (error || !data) return fallbackPrice;
+      return Number(data.custom_price);
+    } catch {
+      return fallbackPrice;
+    }
+  };
+
   // Set initial variant
   useEffect(() => {
     if (product && !selectedVariant) {
-      // Find the 5-meter variant as default, or fall back to the first variant
-      // Find the 5-meter variant or use the first one
       const initialVariant = product.variants.find(v => v.id.endsWith('-5')) || product.variants[0];
       setSelectedVariant(initialVariant);
-      setTotalPrice(initialVariant.price);
+      if (currency === 'CZK') {
+        setTotalPrice(initialVariant.price);
+      } else {
+        loadCurrencyPrice(initialVariant.id, initialVariant.price).then(setTotalPrice);
+      }
     }
-  }, [product, selectedVariant]);
+  }, [product, selectedVariant, currency]);
   
   // Handle variant change with automatic price refresh
   const handleVariantChange = async (variant: any) => {
@@ -187,42 +209,15 @@ function ProductPage() {
     }
     setSelectedVariant(variant);
     setShowLengthOptions(false);
-    
+
     try {
-      // Refresh product data to get the latest price
-      const refreshedProduct = await refreshProductData(product.id);
-      if (refreshedProduct?.variants) {
-        // Find the refreshed variant with the latest price
-        const refreshedVariant = refreshedProduct.variants.find((v: any) => v.id === variant.id);
-        
-        if (refreshedVariant) {
-          // Update with the latest price from the database
-          setTimeout(() => {
-            setPriceTransition('fade-in');
-            setTotalPrice(refreshedVariant.price || variant.price);
-            // Also update the selected variant with the latest data
-            setSelectedVariant(refreshedVariant);
-            setIsLoadingVariant(false);
-          }, 150);
-        } else {
-          // Fallback to the selected variant's price if refresh failed
-          setTimeout(() => {
-            setPriceTransition('fade-in');
-            setTotalPrice(variant.price);
-            setIsLoadingVariant(false);
-          }, 150);
-        }
-      } else {
-        // Fallback to the selected variant's price if refresh failed
-        setTimeout(() => {
-          setPriceTransition('fade-in');
-          setTotalPrice(variant.price);
-          setIsLoadingVariant(false);
-        }, 150);
-      }
+      const price = await loadCurrencyPrice(variant.id, variant.price);
+      setTimeout(() => {
+        setPriceTransition('fade-in');
+        setTotalPrice(price);
+        setIsLoadingVariant(false);
+      }, 150);
     } catch (error) {
-      console.error('Error refreshing variant price:', error);
-      // Fallback to the selected variant's price if refresh failed
       setTimeout(() => {
         setPriceTransition('fade-in');
         setTotalPrice(variant.price);
@@ -231,16 +226,16 @@ function ProductPage() {
     }
   };
   
-  // Calculate total price when variant or warranty changes
+  // Reload price when currency changes
   useEffect(() => {
-    if (selectedVariant) {
-      // Make sure we're using the latest price from the variant
+    if (selectedVariant && product) {
       const currentVariant = product.variants.find(v => v.id === selectedVariant.id);
-      setTotalPrice(currentVariant?.price || selectedVariant.price);
+      const fallback = currentVariant?.price || selectedVariant.price;
+      loadCurrencyPrice(selectedVariant.id, fallback).then(setTotalPrice);
     } else {
       setTotalPrice(null);
     }
-  }, [selectedVariant, selectedWarranty]);
+  }, [currency, selectedVariant]);
   
   // Load warranty policies
   useEffect(() => {
