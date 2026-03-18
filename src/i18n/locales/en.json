@@ -1110,5 +1110,241 @@
       "button_primary": "Browse Products",
       "button_secondary": "Contact Support"
     }
+  },
+  "bedroom_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting for Bedroom — Ambient, Dimmable, Wi-Fi Control",
+      "description": "Transform your bedroom with premium LED ceiling lighting. COB strips with warm light, smooth dimming, and Wi-Fi control. Perfect for stretch ceilings. Free shipping."
+    },
+    "badge": "Bedroom LED Lighting",
+    "hero": {
+      "title_line1": "LED Ceiling Lighting",
+      "title_line2": "for Your Bedroom",
+      "subtitle": "Create the perfect bedroom atmosphere with premium COB LED ceiling lighting. Warm, dimmable, flicker-free light that transforms your space from morning energizing to evening relaxation — all controlled from your phone.",
+      "cta_primary": "Shop LED Kits",
+      "cta_secondary": "Installation Guide"
+    },
+    "intro": {
+      "title": "Why LED Ceiling Lighting is Perfect for Bedrooms",
+      "p1": "The bedroom is the most personal room in your home — it's where you sleep, rest, and recharge. Lighting plays a crucial role in how well you relax and sleep. Harsh overhead lights can disrupt your circadian rhythm, while the right LED system creates a calming, warm environment that signals your body it's time to rest.",
+      "p2": "Modern LED ceiling strip lighting, especially COB (Chip-on-Board) technology, provides uniform, dot-free illumination that looks elegant on any ceiling type — plasterboard, stretch, or suspended. Unlike traditional spotlights or panel lights, LED strips run along the ceiling perimeter, creating indirect ambient light that's both functional and beautiful.",
+      "p3": "With adjustable color temperature and full dimming control, a single installation adapts to every moment: bright cool-white for morning routines, neutral white for reading, and warm amber for winding down before sleep. Add Wi-Fi control and you can automate the whole routine from your bedside or phone."
+    },
+    "benefits": {
+      "title": "Benefits of Bedroom LED Lighting",
+      "subtitle": "Everything you need for perfect bedroom ambiance — in one complete kit.",
+      "ambient": {
+        "title": "Ambient & Relaxing Atmosphere",
+        "desc": "Create the perfect wind-down environment with warm, dimmable light that promotes restful sleep."
+      },
+      "temperature": {
+        "title": "Adjustable Color Temperature",
+        "desc": "Switch between warm white for evenings and cool white for morning routines — all from one system."
+      },
+      "dimming": {
+        "title": "Smooth Dimming",
+        "desc": "Full 0–100% dimming range lets you set the exact brightness for reading, romance, or sleep."
+      },
+      "uniform": {
+        "title": "Uniform Dot-Free Light",
+        "desc": "COB technology delivers smooth, even illumination with no visible dots — ideal for stretch ceilings."
+      }
+    },
+    "features": {
+      "title": "Designed for Bedroom Use",
+      "circadian": {
+        "title": "Circadian-Friendly Light",
+        "desc": "Warm white (2700K) light in the evenings supports natural melatonin production, helping you fall asleep faster and sleep better."
+      },
+      "wakeup": {
+        "title": "Wake-Up Light Feature",
+        "desc": "Program gradual brightness increase in the morning to simulate sunrise. Start your day naturally without harsh alarms."
+      },
+      "scenes": {
+        "title": "Scene Automation",
+        "desc": "Set \"Relax\", \"Sleep\", and \"Morning\" scenes that activate automatically based on time of day or voice command."
+      },
+      "flicker": {
+        "title": "Flicker-Free for Better Sleep",
+        "desc": "Our COB strips operate at high frequency with zero flicker — no eye strain, no headaches, no sleep disruption."
+      },
+      "silent": {
+        "title": "Silent Operation",
+        "desc": "No buzz, no hum. LED technology operates in complete silence, essential for a peaceful bedroom environment."
+      }
+    },
+    "products": {
+      "title": "LED Kits for Bedroom Ceilings",
+      "subtitle": "Complete kits with everything included — LED strip, power supply, controller, and connectors.",
+      "from": "From",
+      "view_kit": "View Kit",
+      "view_all": "View All Products"
+    },
+    "stats": {
+      "temp_label": "Color Temperature Range",
+      "dimming_label": "Dimming Range",
+      "lifespan_label": "LED Lifespan",
+      "warranty_label": "Warranty",
+      "lifespan_value": "10 years",
+      "warranty_value": "24 months"
+    },
+    "articles": {
+      "title": "Helpful Articles on Bedroom Lighting",
+      "badge": "Featured Article",
+      "read_more": "Read article"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What color temperature is best for bedroom LED lighting?",
+        "answer": "For bedrooms, warm white (2700K–3000K) is ideal for evening relaxation and sleep preparation. If you want versatility, choose a CCT or RGB+CCT kit that lets you adjust from warm to cool white depending on your activity — reading, relaxing, or waking up."
+      },
+      "q2": {
+        "question": "Can LED strips be used on a stretch ceiling in the bedroom?",
+        "answer": "Yes, our COB LED strips are specifically designed for stretch ceilings. They produce uniform, dot-free light that looks beautiful on stretched surfaces. The slim profile makes installation easy without damaging the ceiling material."
+      },
+      "q3": {
+        "question": "How many meters of LED strip do I need for a bedroom?",
+        "answer": "For a standard bedroom (12–20 m²), 5–10 meters of LED strip is usually sufficient for perimeter lighting. For larger rooms or if you want brighter illumination, opt for 10–15 meters. Our kits come in 5m increments from 5m to 30m."
+      },
+      "q4": {
+        "question": "Can I control bedroom LED lighting from my phone?",
+        "answer": "Yes. Our RGB+CCT kits include Wi-Fi control via a mobile app. You can adjust brightness, color temperature, and set scenes or schedules directly from your smartphone without a hub."
+      },
+      "q5": {
+        "question": "Is LED ceiling lighting safe for a bedroom — does it emit UV or flicker?",
+        "answer": "Our COB LED strips have zero UV emission and are engineered for flicker-free operation, making them completely safe for bedrooms including children's rooms. They operate at low voltage (12V/24V DC) which is inherently safe."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Bedroom?",
+      "subtitle": "Complete LED kits with free shipping. Professional quality, easy installation, 24-month warranty.",
+      "primary": "Shop LED Kits",
+      "secondary": "Ask a Question"
+    }
+  },
+  "kitchen_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting for Kitchen — Bright, Functional, Easy Install",
+      "description": "Upgrade your kitchen with professional LED ceiling lighting. High-brightness COB strips, cool white light for cooking, Wi-Fi control. Complete kits with free shipping."
+    },
+    "badge": "Kitchen LED Lighting",
+    "hero": {
+      "title_line1": "LED Ceiling Lighting",
+      "title_line2": "for Your Kitchen",
+      "subtitle": "Bright, functional, and energy-efficient LED ceiling lighting designed for kitchens. High-lumen COB strips with accurate color rendering — see your food in its true colors and cook with confidence.",
+      "cta_primary": "Shop LED Kits",
+      "cta_secondary": "How to Install"
+    },
+    "intro": {
+      "title": "Why Your Kitchen Needs Modern LED Ceiling Lighting",
+      "p1": "The kitchen is the hardest-working room in your home. It's where you prepare food, eat, entertain, and often work — all of which demand different types of lighting. Traditional overhead fixtures leave shadows on countertops and give flat, unattractive light that makes cooking difficult and food look unappetizing.",
+      "p2": "LED ceiling strip lighting solves this elegantly. Running along the perimeter or in a cove design, COB LED strips provide wide, even illumination that eliminates shadows completely. The high CRI (90+) means food looks exactly as it should — colors are vivid and accurate, which matters when you're judging whether meat is cooked or fruit is ripe.",
+      "p3": "With adjustable color temperature, you can switch from bright cool-white (5000K) for cooking and food preparation to warm neutral (3000K) for a relaxed dinner atmosphere. Voice control and app automation mean you don't need to touch a switch when your hands are full."
+    },
+    "benefits": {
+      "title": "Benefits of LED Kitchen Lighting",
+      "subtitle": "Professional-grade features at an accessible price.",
+      "bright": {
+        "title": "Bright Task Lighting",
+        "desc": "High-lumen COB strips deliver the brightness needed for safe food preparation and cooking."
+      },
+      "cri": {
+        "title": "True Color Rendering (CRI 90+)",
+        "desc": "See food colors accurately — essential for cooking, checking freshness, and plating."
+      },
+      "control": {
+        "title": "Wi-Fi & Voice Control",
+        "desc": "Hands-free control via app or voice — ideal when your hands are busy in the kitchen."
+      },
+      "energy": {
+        "title": "Energy Efficient",
+        "desc": "Use 60–80% less energy than traditional kitchen lights. LED strips pay for themselves in months."
+      }
+    },
+    "features": {
+      "title": "Features That Matter in a Kitchen",
+      "shadows": {
+        "title": "Shadow-Free Work Surfaces",
+        "desc": "Perimeter LED strips cast even light across all counter surfaces, eliminating the shadows that traditional overhead fixtures create when you're standing at the counter."
+      },
+      "dining": {
+        "title": "Dining Mode",
+        "desc": "Instantly switch to warm, dimmed lighting for dinner. The same system that illuminated your cooking can create a warm, intimate dining atmosphere in seconds."
+      },
+      "clean": {
+        "title": "Easy to Clean Design",
+        "desc": "LED strips sit flush against the ceiling with no exposed bulbs, shades, or crevices to collect grease or dust — far easier to maintain than traditional kitchen light fixtures."
+      },
+      "heat": {
+        "title": "Heat-Resistant Components",
+        "desc": "Kitchen environments get warm. Our drivers and strips are rated for continuous operation in ambient temperatures up to 40°C — no performance degradation near the stove or oven."
+      },
+      "style": {
+        "title": "Compatible with Any Kitchen Style",
+        "desc": "From minimalist modern to rustic farmhouse — indirect LED lighting adapts to any kitchen aesthetic. The light source itself is hidden, only the glow is visible."
+      }
+    },
+    "setup": {
+      "title": "Recommended Setup for Kitchen",
+      "temp_label": "Color temperature",
+      "temp_value": "3000K–5000K (adjustable CCT)",
+      "brightness_label": "Brightness",
+      "brightness_value": "800–1200 lm/m (high output)",
+      "length_label": "Strip length (10–15 m²)",
+      "length_value": "5–10 meters",
+      "control_label": "Control",
+      "control_value": "App + remote + voice",
+      "install_label": "Installation",
+      "install_value": "Ceiling perimeter + optional under-cabinet"
+    },
+    "products": {
+      "title": "LED Kits for Kitchen Ceilings",
+      "subtitle": "Everything included in one box — LED strip, driver, controller, remote, and connectors.",
+      "from": "From",
+      "view_kit": "View Kit",
+      "view_all": "View All Products"
+    },
+    "stats": {
+      "cri_label": "Color Rendering Index",
+      "lumens_label": "Lumens per meter",
+      "savings_label": "Energy savings vs halogen",
+      "warranty_label": "Warranty included",
+      "warranty_value": "24 months"
+    },
+    "articles": {
+      "title": "Helpful Articles on Kitchen Lighting",
+      "badge": "Featured Article",
+      "read_more": "Read article"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What brightness (lumens) do I need for kitchen LED ceiling lighting?",
+        "answer": "Kitchens require higher brightness than other rooms. Plan for at least 300–500 lux at counter level. For a standard kitchen (10–15 m²), 800–1200 lumens per meter of LED strip is recommended. Our COB LED strips deliver 800–1200 lm/m depending on the model, providing excellent task lighting for cooking and food preparation."
+      },
+      "q2": {
+        "question": "What color temperature is best for kitchen lighting?",
+        "answer": "Cool white or neutral white (4000K–5000K) is best for kitchens — it improves color perception of food, reduces eye strain during food preparation, and provides a clean, modern appearance. Our CCT kits let you switch between warm (2700K) for dining ambiance and cool (5000K+) for cooking tasks."
+      },
+      "q3": {
+        "question": "Is LED strip lighting waterproof / moisture resistant for kitchens?",
+        "answer": "Our LED strips have an IP20 rating, suitable for normal kitchen environments away from direct water splash. For areas directly above the sink or stovetop, keep strips at least 60cm away from steam sources. The sealed driver units are designed for humid environments typical in kitchens."
+      },
+      "q4": {
+        "question": "Can I install LED strips under kitchen cabinets as well as the ceiling?",
+        "answer": "Yes, absolutely. Our kits work perfectly for both ceiling perimeter lighting and under-cabinet task lighting. You can run the same strip system for both areas using splitters and additional connectors (available separately), creating a layered kitchen lighting design."
+      },
+      "q5": {
+        "question": "How difficult is it to install LED ceiling lighting in a kitchen?",
+        "answer": "Installation is straightforward with our complete kits — no special tools required. The LED strip has 3M adhesive backing, and all components (power supply, controller, remote) are pre-wired and tested. Most kitchens can be completed in 2–3 hours. We provide step-by-step video guides for each kit."
+      }
+    },
+    "cta": {
+      "title": "Upgrade Your Kitchen Lighting Today",
+      "subtitle": "Professional LED kits with free shipping. Better light, lower energy bills, and a kitchen you'll enjoy spending time in.",
+      "primary": "Shop LED Kits",
+      "secondary": "Get Expert Advice"
+    }
   }
 }

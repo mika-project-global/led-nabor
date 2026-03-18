@@ -1077,5 +1077,241 @@
     "ctaKitsTitle": "Kompletne zestawy oświetlenia sufitowego LED",
     "ctaKitsDescription": "Łatwa instalacja, profesjonalne rezultaty. COB LED bez widocznych punktów.",
     "ctaKitsButton": "Zobacz zestawy →"
+  },
+  "bedroom_lighting": {
+    "seo": {
+      "title": "Oświetlenie LED sufitu sypialni — nastrojowe, ściemnialne, Wi-Fi",
+      "description": "Odmień swoją sypialnię z premium oświetleniem LED sufitu. Paski COB z ciepłym światłem, płynnym ściemnianiem i sterowaniem Wi-Fi. Idealne do sufitów napiętych. Darmowa dostawa."
+    },
+    "badge": "Oświetlenie LED sypialni",
+    "hero": {
+      "title_line1": "Oświetlenie LED sufitu",
+      "title_line2": "w Twojej sypialni",
+      "subtitle": "Stwórz idealną atmosferę w sypialni z paskami COB LED. Ciepłe, ściemnialne, bezmigotkowe światło — od porannej energii do wieczornego relaksu. Sterowanie smartfonem.",
+      "cta_primary": "Kup zestaw LED",
+      "cta_secondary": "Instrukcja montażu"
+    },
+    "intro": {
+      "title": "Dlaczego oświetlenie LED jest idealne do sypialni",
+      "p1": "Sypialnia to najbardziej osobiste pomieszczenie w domu. To tu śpisz i regenerujesz siły. Oświetlenie ma kluczowy wpływ na jakość snu. Właściwy system LED tworzy spokojną, ciepłą atmosferę.",
+      "p2": "Nowoczesne paski COB LED zapewniają równomierne, bezpunktowe oświetlenie na każdym typie sufitu — gips-karton, napięty lub podwieszany. Ukryty montaż po obwodzie tworzy pośrednie, miękkie światło.",
+      "p3": "Regulacja temperatury barwowej i jasności pozwala dostosować oświetlenie do każdej sytuacji: chłodne białe rano, neutralne do czytania i ciepłe bursztynowe przed snem."
+    },
+    "benefits": {
+      "title": "Zalety oświetlenia LED sypialni",
+      "subtitle": "Wszystko, czego potrzebujesz do idealnej atmosfery — w jednym zestawie.",
+      "ambient": {
+        "title": "Nastrojowe i relaksujące światło",
+        "desc": "Ciepłe, ściemnialne światło tworzy idealne warunki do wypoczynku i zdrowego snu."
+      },
+      "temperature": {
+        "title": "Regulowana temperatura barwowa",
+        "desc": "Przełączaj między ciepłą bielą wieczorem a chłodną bielą rano — wszystko w jednym systemie."
+      },
+      "dimming": {
+        "title": "Płynne ściemnianie",
+        "desc": "Zakres 0–100% pozwala ustawić dokładną jasność do czytania, romansu lub snu."
+      },
+      "uniform": {
+        "title": "Równomierne, bezpunktowe światło",
+        "desc": "Technologia COB zapewnia ciągłe, równomierne świecenie bez widocznych punktów — idealne do sufitów napiętych."
+      }
+    },
+    "features": {
+      "title": "Zaprojektowane do sypialni",
+      "circadian": {
+        "title": "Światło wspierające rytm dobowy",
+        "desc": "Ciepła biel (2700K) wieczorem wspomaga produkcję melatoniny, pomagając szybciej zasypiać."
+      },
+      "wakeup": {
+        "title": "Funkcja łagodnego budzenia",
+        "desc": "Programuj stopniowe rozjaśnianie rano, symulując wschód słońca. Budzisz się naturalnie."
+      },
+      "scenes": {
+        "title": "Automatyzacja scen",
+        "desc": "Utwórz sceny 'Relaks', 'Sen' i 'Ranek' aktywowane automatycznie według harmonogramu lub głosem."
+      },
+      "flicker": {
+        "title": "Światło bez migotania",
+        "desc": "Paski COB pracują bez migotania — bez zmęczenia oczu i zaburzeń snu."
+      },
+      "silent": {
+        "title": "Cicha praca",
+        "desc": "Żadnego brzęczenia. Technologia LED pracuje w całkowitej ciszy — ważne dla spokojnej atmosfery."
+      }
+    },
+    "products": {
+      "title": "Zestawy LED do sufitów sypialni",
+      "subtitle": "Kompletne zestawy ze wszystkim w zestawie — pasek LED, zasilacz, sterownik i złączki.",
+      "from": "Od",
+      "view_kit": "Zobacz zestaw",
+      "view_all": "Wszystkie produkty"
+    },
+    "stats": {
+      "temp_label": "Zakres temperatury barwowej",
+      "dimming_label": "Zakres ściemniania",
+      "lifespan_label": "Żywotność LED",
+      "warranty_label": "Gwarancja",
+      "lifespan_value": "10 lat",
+      "warranty_value": "24 miesiące"
+    },
+    "articles": {
+      "title": "Pomocne artykuły o oświetleniu sypialni",
+      "badge": "Polecany artykuł",
+      "read_more": "Czytaj artykuł"
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": {
+        "question": "Jaka temperatura barwowa jest najlepsza do sypialni?",
+        "answer": "Do sypialni idealna jest ciepła biel (2700K–3000K). Dla wszechstronności wybierz zestaw CCT lub RGB+CCT z regulacją temperatury barwowej."
+      },
+      "q2": {
+        "question": "Czy paski LED nadają się do sufitu napiętego w sypialni?",
+        "answer": "Tak, nasze paski COB LED są idealne do sufitów napiętych. Równomierne, bezpunktowe światło bez uszkodzenia materiału sufitu."
+      },
+      "q3": {
+        "question": "Ile metrów paska LED potrzeba do sypialni?",
+        "answer": "Do standardowej sypialni (12–20 m²) wystarczy 5–10 metrów. Nasze zestawy od 5 do 30 metrów co 5 m."
+      },
+      "q4": {
+        "question": "Czy mogę sterować oświetleniem sypialni smartfonem?",
+        "answer": "Tak. Zestawy RGB+CCT zawierają sterowanie Wi-Fi przez aplikację. Jasność, temperatura i sceny bez huba."
+      },
+      "q5": {
+        "question": "Czy oświetlenie LED jest bezpieczne dla sypialni — UV lub migotanie?",
+        "answer": "Nasze paski COB nie emitują UV i pracują bez migotania — w pełni bezpieczne, także dla pokojów dziecięcych. Niskie napięcie 12V/24V DC."
+      }
+    },
+    "cta": {
+      "title": "Gotowy odmienić swoją sypialnię?",
+      "subtitle": "Kompletne zestawy LED z darmową dostawą. Profesjonalna jakość, łatwy montaż, 24 miesiące gwarancji.",
+      "primary": "Kup zestaw LED",
+      "secondary": "Zadaj pytanie"
+    }
+  },
+  "kitchen_lighting": {
+    "seo": {
+      "title": "Oświetlenie LED sufitu kuchni — jasne, funkcjonalne światło",
+      "description": "Zmodernizuj kuchnię z profesjonalnym oświetleniem LED sufitu. Jasne paski COB, chłodna biel do gotowania, sterowanie Wi-Fi. Kompletne zestawy z darmową dostawą."
+    },
+    "badge": "Oświetlenie LED kuchni",
+    "hero": {
+      "title_line1": "Oświetlenie LED sufitu",
+      "title_line2": "w Twojej kuchni",
+      "subtitle": "Jasne, funkcjonalne i energooszczędne oświetlenie LED sufitu do kuchni. Paski COB o wysokim strumieniu świetlnym z dokładnym odwzorowaniem kolorów — widz produkty spożywcze w prawdziwych barwach.",
+      "cta_primary": "Kup zestaw LED",
+      "cta_secondary": "Jak zainstalować"
+    },
+    "intro": {
+      "title": "Dlaczego Twoja kuchnia potrzebuje nowoczesnego oświetlenia LED",
+      "p1": "Kuchnia to najbardziej pracowite pomieszczenie w domu. Tradycyjne oprawy tworzą cienie na blatach i dają nierównomierne, nieatrakcyjne światło utrudniające gotowanie.",
+      "p2": "Pasek LED po obwodzie sufitu zapewnia szeroki, równomierny strumień światła, całkowicie eliminując cienie. Wysoki CRI (90+) zapewnia dokładne odwzorowanie kolorów — ważne przy ocenie gotowości potraw.",
+      "p3": "Regulacja temperatury barwowej pozwala przełączać się od jasnej zimnej bieli (5000K) do gotowania po ciepłą neutralną (3000K) na kolację. Sterowanie głosem jest wygodne, gdy ręce są zajęte."
+    },
+    "benefits": {
+      "title": "Zalety oświetlenia LED kuchni",
+      "subtitle": "Profesjonalne parametry w przystępnej cenie.",
+      "bright": {
+        "title": "Jasne oświetlenie robocze",
+        "desc": "Wysoki strumień świetlny pasków COB zapewnia bezpieczną i komfortową pracę w kuchni."
+      },
+      "cri": {
+        "title": "Prawdziwe odwzorowanie kolorów (CRI 90+)",
+        "desc": "Widz kolory produktów spożywczych dokładnie — ważne przy gotowaniu, sprawdzaniu świeżości i podawaniu."
+      },
+      "control": {
+        "title": "Sterowanie Wi-Fi i głosem",
+        "desc": "Sterowanie bez rąk przez aplikację lub głos — idealne gdy ręce są zajęte w kuchni."
+      },
+      "energy": {
+        "title": "Energooszczędność",
+        "desc": "60–80% mniej energii niż tradycyjne oświetlenie kuchenne. Zwraca się w kilka miesięcy."
+      }
+    },
+    "features": {
+      "title": "Ważne cechy dla kuchni",
+      "shadows": {
+        "title": "Blaty robocze bez cieni",
+        "desc": "Paski LED po obwodzie równomiernie oświetlają wszystkie strefy robocze, eliminując cienie."
+      },
+      "dining": {
+        "title": "Tryb kolacji",
+        "desc": "Natychmiast przełącz na ciepłe, przyciemnione światło na kolację. Ten sam system — inna atmosfera."
+      },
+      "clean": {
+        "title": "Łatwe czyszczenie",
+        "desc": "Pasek przy suficie — żarówek, kloszów ani szczelin zbierających tłuszcz i kurz."
+      },
+      "heat": {
+        "title": "Komponenty odporne na ciepło",
+        "desc": "Zasilacze certyfikowane do pracy w temperaturze do 40°C — bez utraty mocy przy kuchence."
+      },
+      "style": {
+        "title": "Kompatybilne z każdym stylem kuchni",
+        "desc": "Od minimalizmu po rustykalny — ukryte oświetlenie LED pasuje do każdego wystroju kuchni."
+      }
+    },
+    "setup": {
+      "title": "Zalecana konfiguracja dla kuchni",
+      "temp_label": "Temperatura barwowa",
+      "temp_value": "3000K–5000K (regulowana CCT)",
+      "brightness_label": "Jasność",
+      "brightness_value": "800–1200 lm/m (wysoki strumień)",
+      "length_label": "Długość paska (10–15 m²)",
+      "length_value": "5–10 metrów",
+      "control_label": "Sterowanie",
+      "control_value": "Aplikacja + pilot + głos",
+      "install_label": "Miejsce montażu",
+      "install_value": "Obwód sufitu + opcjonalnie pod szafkami"
+    },
+    "products": {
+      "title": "Zestawy LED do sufitów kuchni",
+      "subtitle": "Wszystko w jednym pudełku — pasek LED, zasilacz, sterownik, pilot i złączki.",
+      "from": "Od",
+      "view_kit": "Zobacz zestaw",
+      "view_all": "Wszystkie produkty"
+    },
+    "stats": {
+      "cri_label": "Wskaźnik oddawania barw",
+      "lumens_label": "Lumenów na metr",
+      "savings_label": "Oszczędność energii vs halogen",
+      "warranty_label": "Gwarancja w zestawie",
+      "warranty_value": "24 miesiące"
+    },
+    "articles": {
+      "title": "Pomocne artykuły o oświetleniu kuchni",
+      "badge": "Polecany artykuł",
+      "read_more": "Czytaj artykuł"
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": {
+        "question": "Ile lumenów potrzebuję do oświetlenia LED sufitu kuchni?",
+        "answer": "Kuchnie wymagają wysokiej jasności. Do standardowej kuchni (10–15 m²) zaleca się 800–1200 lm/m. Nasze paski COB dostarczają dokładnie tyle."
+      },
+      "q2": {
+        "question": "Jaka temperatura barwowa jest najlepsza do kuchni?",
+        "answer": "Chłodna lub neutralna biel (4000K–5000K) jest najlepsza dla kuchni — poprawia percepcję kolorów produktów. Zestawy CCT umożliwiają przełączanie między trybami."
+      },
+      "q3": {
+        "question": "Czy pasek LED jest odporny na wilgoć w kuchni?",
+        "answer": "Nasze paski mają stopień ochrony IP20, odpowiedni dla normalnego środowiska kuchennego. Trzymaj pasek co najmniej 60 cm od źródeł pary."
+      },
+      "q4": {
+        "question": "Czy mogę używać paska zarówno na suficie, jak i pod szafkami?",
+        "answer": "Tak. Zestawy nadają się do obwodu sufitu i podświetlenia pod szafkami. Używaj rozgałęźników do równoległego podłączenia."
+      },
+      "q5": {
+        "question": "Czy instalacja oświetlenia LED w kuchni jest trudna?",
+        "answer": "Nie — pasek na kleju 3M, wszystkie komponenty pretestowane. Większość kuchni gotowa w 2–3 godziny. Instrukcja wideo w zestawie."
+      }
+    },
+    "cta": {
+      "title": "Zmodernizuj oświetlenie kuchni już dziś",
+      "subtitle": "Profesjonalne zestawy LED z darmową dostawą. Lepsze światło, niższe rachunki za prąd.",
+      "primary": "Kup zestaw LED",
+      "secondary": "Uzyskaj poradę"
+    }
   }
 }

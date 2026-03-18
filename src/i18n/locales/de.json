@@ -1077,5 +1077,241 @@
     "ctaKitsTitle": "Komplette LED-Deckenbeleuchtungs-Kits",
     "ctaKitsDescription": "Einfache Installation, professionelle Ergebnisse. COB-LED ohne sichtbare Punkte.",
     "ctaKitsButton": "Kits ansehen →"
+  },
+  "bedroom_lighting": {
+    "seo": {
+      "title": "LED Deckenbeleuchtung Schlafzimmer — Ambiente, Dimmer, Wi-Fi",
+      "description": "Verwandeln Sie Ihr Schlafzimmer mit Premium-LED-Deckenbeleuchtung. COB-Streifen mit warmem Licht, stufenlosem Dimmer und Wi-Fi-Steuerung. Für Spanndecken geeignet. Kostenloser Versand."
+    },
+    "badge": "Schlafzimmer-LED-Beleuchtung",
+    "hero": {
+      "title_line1": "LED Deckenbeleuchtung",
+      "title_line2": "für Ihr Schlafzimmer",
+      "subtitle": "Schaffen Sie die perfekte Schlafzimmeratmosphäre mit COB-LED-Deckenbeleuchtung. Warmes, dimmbares, flimmerfreies Licht — von der morgendlichen Energie bis zur abendlichen Entspannung. Steuerung per Smartphone.",
+      "cta_primary": "LED-Sets kaufen",
+      "cta_secondary": "Installationsanleitung"
+    },
+    "intro": {
+      "title": "Warum LED-Deckenbeleuchtung ideal für Schlafzimmer ist",
+      "p1": "Das Schlafzimmer ist der persönlichste Raum Ihres Hauses. Hier schlafen und erholen Sie sich. Beleuchtung spielt eine entscheidende Rolle für die Schlafqualität. Das richtige LED-System schafft eine beruhigende, warme Atmosphäre.",
+      "p2": "Moderne COB-LED-Streifen liefern gleichmäßiges, punktfreies Licht auf jedem Deckentyp — Gipskarton, Spann- oder Abhängedecke. Versteckte Montage am Perimeter erzeugt indirektes Umgebungslicht.",
+      "p3": "Dimmbare Farbtemperatur passt sich jeder Situation an: kühles Weiß für den Morgen, neutrales für das Lesen und warmes Bernstein zum Einschlafen."
+    },
+    "benefits": {
+      "title": "Vorteile der LED-Schlafzimmerbeleuchtung",
+      "subtitle": "Alles für die perfekte Schlafzimmeratmosphäre — in einem Komplettset.",
+      "ambient": {
+        "title": "Ambiente und Entspannungslicht",
+        "desc": "Warmes, dimmbares Licht schafft die ideale Umgebung für erholsamen Schlaf."
+      },
+      "temperature": {
+        "title": "Einstellbare Farbtemperatur",
+        "desc": "Wechseln Sie zwischen warmem Weiß abends und kühlem Weiß morgens — alles in einem System."
+      },
+      "dimming": {
+        "title": "Stufenloses Dimmen",
+        "desc": "0–100% Dimmbereich für die exakte Helligkeit zum Lesen, für Romantik oder Schlaf."
+      },
+      "uniform": {
+        "title": "Gleichmäßiges, punktfreies Licht",
+        "desc": "COB-Technologie liefert gleichmäßige Beleuchtung ohne sichtbare Punkte — ideal für Spanndecken."
+      }
+    },
+    "features": {
+      "title": "Für das Schlafzimmer konzipiert",
+      "circadian": {
+        "title": "Zirkadianes Licht",
+        "desc": "Warmes Weiß (2700K) abends fördert die Melatoninproduktion für besseren Schlaf."
+      },
+      "wakeup": {
+        "title": "Sanftes Aufwachen",
+        "desc": "Programmieren Sie allmählich heller werdendes Licht am Morgen, das den Sonnenaufgang simuliert."
+      },
+      "scenes": {
+        "title": "Szenenautomatisierung",
+        "desc": "Erstellen Sie Szenen 'Entspannen', 'Schlafen' und 'Morgen' für automatische Aktivierung."
+      },
+      "flicker": {
+        "title": "Flimmerfreies Licht",
+        "desc": "COB-Streifen arbeiten hochfrequent ohne Flimmern — kein Augenschmerz, kein Schlafstörung."
+      },
+      "silent": {
+        "title": "Geräuschloser Betrieb",
+        "desc": "Kein Summen, kein Brummen. LED arbeitet völlig still — ideal für eine ruhige Schlafatmosphäre."
+      }
+    },
+    "products": {
+      "title": "LED-Sets für Schlafzimmerdecken",
+      "subtitle": "Komplett-Sets mit allem inklusive — LED-Streifen, Netzteil, Controller und Verbinder.",
+      "from": "Ab",
+      "view_kit": "Set ansehen",
+      "view_all": "Alle Produkte"
+    },
+    "stats": {
+      "temp_label": "Farbtemperaturbereich",
+      "dimming_label": "Dimmbereich",
+      "lifespan_label": "LED-Lebensdauer",
+      "warranty_label": "Garantie",
+      "lifespan_value": "10 Jahre",
+      "warranty_value": "24 Monate"
+    },
+    "articles": {
+      "title": "Hilfreiche Artikel zur Schlafzimmerbeleuchtung",
+      "badge": "Empfohlener Artikel",
+      "read_more": "Artikel lesen"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Welche Farbtemperatur ist für das Schlafzimmer am besten?",
+        "answer": "Für Schlafzimmer ist warmweißes Licht (2700K–3000K) ideal. Für Vielseitigkeit wählen Sie ein CCT- oder RGB+CCT-Set mit einstellbarer Farbtemperatur."
+      },
+      "q2": {
+        "question": "Sind LED-Streifen für Spanndecken im Schlafzimmer geeignet?",
+        "answer": "Ja, unsere COB-LED-Streifen sind speziell für Spanndecken geeignet. Gleichmäßiges, punktfreies Licht ohne Beschädigung des Deckenmaterials."
+      },
+      "q3": {
+        "question": "Wie viele Meter LED-Streifen brauche ich für ein Schlafzimmer?",
+        "answer": "Für ein Standardschlafzimmer (12–20 m²) reichen 5–10 Meter. Unsere Sets sind von 5 bis 30 Meter in 5-m-Schritten erhältlich."
+      },
+      "q4": {
+        "question": "Kann ich die Schlafzimmerbeleuchtung vom Smartphone steuern?",
+        "answer": "Ja. RGB+CCT-Sets enthalten Wi-Fi-Steuerung per App. Helligkeit, Farbtemperatur und Szenen direkt vom Smartphone."
+      },
+      "q5": {
+        "question": "Ist LED-Deckenbeleuchtung sicher — gibt es UV oder Flimmern?",
+        "answer": "Unsere COB-Streifen emittieren kein UV und sind flimmerfrei — vollständig sicher, auch für Kinderzimmer. Niederspannung 12V/24V DC."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Schlafzimmer zu verwandeln?",
+      "subtitle": "Komplett-LED-Sets mit kostenlosem Versand. Professionelle Qualität, einfache Installation, 24 Monate Garantie.",
+      "primary": "LED-Sets kaufen",
+      "secondary": "Frage stellen"
+    }
+  },
+  "kitchen_lighting": {
+    "seo": {
+      "title": "LED Deckenbeleuchtung Küche — Helles, Funktionales Licht",
+      "description": "Modernisieren Sie Ihre Küche mit professioneller LED-Deckenbeleuchtung. Hochhelle COB-Streifen, kühles Weißlicht zum Kochen, Wi-Fi-Steuerung. Komplettsets mit kostenlosem Versand."
+    },
+    "badge": "Küchen-LED-Beleuchtung",
+    "hero": {
+      "title_line1": "LED Deckenbeleuchtung",
+      "title_line2": "für Ihre Küche",
+      "subtitle": "Helle, funktionale und energieeffiziente LED-Deckenbeleuchtung für Küchen. COB-Streifen mit hohem Lichtstrom und genauer Farbwiedergabe — sehen Sie Lebensmittel in ihren wahren Farben.",
+      "cta_primary": "LED-Sets kaufen",
+      "cta_secondary": "Wie installieren"
+    },
+    "intro": {
+      "title": "Warum Ihre Küche moderne LED-Deckenbeleuchtung braucht",
+      "p1": "Die Küche ist der am stärksten genutzte Raum im Haus. Traditionelle Leuchten werfen Schatten auf Arbeitsflächen und liefern unattraktives Licht, das das Kochen erschwert.",
+      "p2": "LED-Streifen am Deckenperimeter liefern breites, gleichmäßiges Licht, das Schatten vollständig eliminiert. Hoher CRI (90+) sorgt für genaue Farbwiedergabe — wichtig beim Beurteilen von Lebensmitteln.",
+      "p3": "Mit einstellbarer Farbtemperatur wechseln Sie von hellem Kühlweiß (5000K) zum Kochen zu warmem Neutral (3000K) für das Abendessen. Sprachsteuerung ist praktisch, wenn die Hände beschäftigt sind."
+    },
+    "benefits": {
+      "title": "Vorteile der LED-Küchenbeleuchtung",
+      "subtitle": "Professionelle Merkmale zu einem erschwinglichen Preis.",
+      "bright": {
+        "title": "Helles Arbeitslicht",
+        "desc": "Hoher Lichtstrom der COB-Streifen für sicheres und komfortables Arbeiten in der Küche."
+      },
+      "cri": {
+        "title": "Echte Farbwiedergabe (CRI 90+)",
+        "desc": "Lebensmittelfarben genau sehen — wichtig beim Kochen, Frischeprüfung und Anrichten."
+      },
+      "control": {
+        "title": "Wi-Fi & Sprachsteuerung",
+        "desc": "Freihändige Steuerung per App oder Sprache — ideal wenn die Hände in der Küche beschäftigt sind."
+      },
+      "energy": {
+        "title": "Energieeffizient",
+        "desc": "60–80% weniger Energie als herkömmliche Küchenleuchten. Amortisiert sich in wenigen Monaten."
+      }
+    },
+    "features": {
+      "title": "Wichtige Merkmale für die Küche",
+      "shadows": {
+        "title": "Schattenfreie Arbeitsflächen",
+        "desc": "Perimeter-LED-Streifen beleuchten alle Arbeitsflächen gleichmäßig und eliminieren Schatten."
+      },
+      "dining": {
+        "title": "Esszimmermodus",
+        "desc": "Sofort auf warmes, gedimmtes Licht für das Abendessen umschalten. Dasselbe System — andere Atmosphäre."
+      },
+      "clean": {
+        "title": "Leicht zu reinigen",
+        "desc": "Streifen bündig an der Decke — keine Lampen, Schirme oder Rillen, die Fett und Staub ansammeln."
+      },
+      "heat": {
+        "title": "Hitzebeständige Komponenten",
+        "desc": "Netzteile für Dauerbetrieb bei bis zu 40°C ausgelegt — keine Leistungseinbußen in Herndnähe."
+      },
+      "style": {
+        "title": "Kompatibel mit jedem Küchenstil",
+        "desc": "Vom minimalistischen Modern bis zum rustikalen Landhaus — indirekte LED-Beleuchtung passt zu jedem Interieur."
+      }
+    },
+    "setup": {
+      "title": "Empfohlene Konfiguration für die Küche",
+      "temp_label": "Farbtemperatur",
+      "temp_value": "3000K–5000K (einstellbar)",
+      "brightness_label": "Helligkeit",
+      "brightness_value": "800–1200 lm/m (hoher Lichtstrom)",
+      "length_label": "Streifenlänge (10–15 m²)",
+      "length_value": "5–10 Meter",
+      "control_label": "Steuerung",
+      "control_value": "App + Fernbedienung + Sprache",
+      "install_label": "Montageort",
+      "install_value": "Deckenperimeter + optional unter Schränken"
+    },
+    "products": {
+      "title": "LED-Sets für Küchendecken",
+      "subtitle": "Alles in einer Box — LED-Streifen, Netzteil, Controller, Fernbedienung und Verbinder.",
+      "from": "Ab",
+      "view_kit": "Set ansehen",
+      "view_all": "Alle Produkte"
+    },
+    "stats": {
+      "cri_label": "Farbwiedergabeindex",
+      "lumens_label": "Lumen pro Meter",
+      "savings_label": "Energieeinsparung vs. Halogen",
+      "warranty_label": "Garantie inklusive",
+      "warranty_value": "24 Monate"
+    },
+    "articles": {
+      "title": "Hilfreiche Artikel zur Küchenbeleuchtung",
+      "badge": "Empfohlener Artikel",
+      "read_more": "Artikel lesen"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Wie viel Lumen brauche ich für LED-Küchenbeleuchtung?",
+        "answer": "Küchen benötigen hohe Helligkeit. Für eine Standardküche (10–15 m²) werden 800–1200 lm/m empfohlen. Unsere COB-Streifen liefern genau das für komfortables Arbeiten."
+      },
+      "q2": {
+        "question": "Welche Farbtemperatur ist für die Küche am besten?",
+        "answer": "Kühles oder neutrales Weiß (4000K–5000K) ist für Küchen am besten — verbessert die Farbwahrnehmung von Lebensmitteln. CCT-Sets ermöglichen den Wechsel zwischen Modi."
+      },
+      "q3": {
+        "question": "Sind LED-Streifen feuchtigkeitsbeständig für Küchen?",
+        "answer": "Unsere Streifen haben IP20-Schutz, geeignet für normale Küchenumgebungen. Halten Sie Streifen mindestens 60 cm von Dampfquellen entfernt."
+      },
+      "q4": {
+        "question": "Kann ich Streifen sowohl an der Decke als auch unter Schränken verwenden?",
+        "answer": "Ja. Sets eignen sich sowohl für Deckenperimeter als auch für Unterschrankbeleuchtung. Verwenden Sie Splitter für Parallelschaltung."
+      },
+      "q5": {
+        "question": "Wie schwierig ist die Installation von LED-Küchenbeleuchtung?",
+        "answer": "Einfach — 3M-Selbstklebestreifen, alle Komponenten vorgetestet. Die meisten Küchen sind in 2–3 Stunden fertig. Videoanleitungen im Lieferumfang."
+      }
+    },
+    "cta": {
+      "title": "Modernisieren Sie Ihre Küchenbeleuchtung heute",
+      "subtitle": "Professionelle LED-Sets mit kostenlosem Versand. Besseres Licht, niedrigere Stromkosten.",
+      "primary": "LED-Sets kaufen",
+      "secondary": "Expertenberatung"
+    }
   }
 }

@@ -1077,5 +1077,241 @@
     "ctaKitsTitle": "Kompletní LED stropní osvětlovací sady",
     "ctaKitsDescription": "Snadná instalace, profesionální výsledky. COB LED bez viditelných bodů.",
     "ctaKitsButton": "Zobrazit sady →"
+  },
+  "bedroom_lighting": {
+    "seo": {
+      "title": "LED osvětlení stropu v ložnici — atmosférické, stmívatelné, Wi-Fi",
+      "description": "Proměňte svou ložnici prémiovým LED osvětlením stropu. COB pásky s teplým světlem, plynným stmíváním a ovládáním přes Wi-Fi. Vhodné pro napínané stropy. Doprava zdarma."
+    },
+    "badge": "LED osvětlení ložnice",
+    "hero": {
+      "title_line1": "LED osvětlení stropu",
+      "title_line2": "ve vaší ložnici",
+      "subtitle": "Vytvořte dokonalou atmosféru v ložnici s COB LED pásky. Teplé, stmívatelné, bezmihotavé světlo — od ranní energie po večerní relaxaci. Ovládání přes smartphone.",
+      "cta_primary": "Koupit sadu LED",
+      "cta_secondary": "Návod k instalaci"
+    },
+    "intro": {
+      "title": "Proč je LED osvětlení ideální pro ložnici",
+      "p1": "Ložnice je nejpriváttnějším prostorem vašeho domova. Osvětlení přímo ovlivňuje kvalitu spánku. Správně zvolený LED systém vytváří uklidňující, teplou atmosféru.",
+      "p2": "Moderní COB LED pásky poskytují rovnoměrné, bezpuntíkové osvětlení na jakémkoli typu stropu — sádrokarton, napínaný nebo zavěšený. Skrytá montáž po obvodu vytváří nepřímé, měkké světlo.",
+      "p3": "Nastavení barevné teploty a jasu umožňuje přizpůsobit osvětlení každé situaci: studené bílé ráno, neutrální pro čtení a teplé jantarové před spaním."
+    },
+    "benefits": {
+      "title": "Výhody LED osvětlení ložnice",
+      "subtitle": "Vše pro dokonalou atmosféru — v jedné sadě.",
+      "ambient": {
+        "title": "Atmosférické a relaxační světlo",
+        "desc": "Teplé, stmívatelné světlo vytváří ideální podmínky pro odpočinek a zdravý spánek."
+      },
+      "temperature": {
+        "title": "Nastavitelná barevná teplota",
+        "desc": "Přepínejte mezi teplou bílou večer a studenou bílou ráno — vše v jednom systému."
+      },
+      "dimming": {
+        "title": "Plynné stmívání",
+        "desc": "Rozsah 0–100% umožňuje nastavit přesný jas pro čtení, romantiku nebo spánek."
+      },
+      "uniform": {
+        "title": "Rovnoměrné světlo bez bodů",
+        "desc": "Technologie COB zajišťuje plynulé, rovnoměrné svícení bez viditelných bodů — ideální pro napínané stropy."
+      }
+    },
+    "features": {
+      "title": "Navrženo pro ložnici",
+      "circadian": {
+        "title": "Světlo podporující cirkadiánní rytmus",
+        "desc": "Teplá bílá (2700K) večer podporuje produkci melatoninu a pomáhá rychleji usnout."
+      },
+      "wakeup": {
+        "title": "Funkce jemného probouzení",
+        "desc": "Naprogramujte postupné zesvětlení ráno simulující východ slunce. Probouzejte se přirozeně."
+      },
+      "scenes": {
+        "title": "Automatizace scén",
+        "desc": "Vytvořte scény 'Relaxace', 'Spánek' a 'Ráno' aktivované automaticky podle rozvrhu nebo hlasem."
+      },
+      "flicker": {
+        "title": "Světlo bez blikání",
+        "desc": "COB pásky pracují bez blikání — žádná únava očí ani poruchy spánku."
+      },
+      "silent": {
+        "title": "Tichý provoz",
+        "desc": "Žádné bzučení. LED technologie pracuje zcela tiše — důležité pro klidnou atmosféru."
+      }
+    },
+    "products": {
+      "title": "LED sady pro stropy ložnice",
+      "subtitle": "Kompletní sady se vším — LED pásek, napájení, ovladač a konektory.",
+      "from": "Od",
+      "view_kit": "Zobrazit sadu",
+      "view_all": "Všechny produkty"
+    },
+    "stats": {
+      "temp_label": "Rozsah barevné teploty",
+      "dimming_label": "Rozsah stmívání",
+      "lifespan_label": "Životnost LED",
+      "warranty_label": "Záruka",
+      "lifespan_value": "10 let",
+      "warranty_value": "24 měsíců"
+    },
+    "articles": {
+      "title": "Užitečné články o osvětlení ložnice",
+      "badge": "Doporučený článek",
+      "read_more": "Číst článek"
+    },
+    "faq": {
+      "title": "Často kladené otázky",
+      "q1": {
+        "question": "Jaká barevná teplota je nejlepší pro ložnici?",
+        "answer": "Pro ložnici je ideální teplá bílá (2700K–3000K). Pro univerzálnost zvolte CCT nebo RGB+CCT sadu s nastavitelnou barevnou teplotou."
+      },
+      "q2": {
+        "question": "Jsou LED pásky vhodné pro napínaný strop v ložnici?",
+        "answer": "Ano, naše COB LED pásky jsou ideální pro napínané stropy. Rovnoměrné, bezpuntíkové světlo bez poškození materiálu stropu."
+      },
+      "q3": {
+        "question": "Kolik metrů LED pásky potřebuji pro ložnici?",
+        "answer": "Pro standardní ložnici (12–20 m²) stačí 5–10 metrů. Naše sady od 5 do 30 metrů po 5 m."
+      },
+      "q4": {
+        "question": "Mohu ovládat osvětlení ložnice smartphonem?",
+        "answer": "Ano. RGB+CCT sady obsahují Wi-Fi ovládání přes aplikaci. Jas, teplota a scény bez hubu."
+      },
+      "q5": {
+        "question": "Je LED osvětlení bezpečné pro ložnici — UV nebo blikání?",
+        "answer": "Naše COB pásky nevyzařují UV a pracují bez blikání — zcela bezpečné, i pro dětské pokoje. Nízké napětí 12V/24V DC."
+      }
+    },
+    "cta": {
+      "title": "Připraveni proměnit svou ložnici?",
+      "subtitle": "Kompletní LED sady s dopravou zdarma. Profesionální kvalita, snadná instalace, 24 měsíců záruky.",
+      "primary": "Koupit sadu LED",
+      "secondary": "Položit otázku"
+    }
+  },
+  "kitchen_lighting": {
+    "seo": {
+      "title": "LED osvětlení stropu v kuchyni — jasné, funkční světlo",
+      "description": "Modernizujte kuchyni profesionálním LED osvětlením stropu. Jasné COB pásky, studená bílá pro vaření, ovládání Wi-Fi. Kompletní sady s dopravou zdarma."
+    },
+    "badge": "LED osvětlení kuchyně",
+    "hero": {
+      "title_line1": "LED osvětlení stropu",
+      "title_line2": "ve vaší kuchyni",
+      "subtitle": "Jasné, funkční a energeticky úsporné LED osvětlení pro kuchyně. COB pásky s vysokým světelným tokem a přesným podáním barev — vidíte potraviny v jejich skutečných barvách.",
+      "cta_primary": "Koupit sadu LED",
+      "cta_secondary": "Jak nainstalovat"
+    },
+    "intro": {
+      "title": "Proč vaše kuchyně potřebuje moderní LED osvětlení",
+      "p1": "Kuchyně je nejpracovitější místností v domě. Tradiční svítidla vytvářejí stíny na pracovních plochách a poskytují nerovnoměrné, neatraktivní světlo.",
+      "p2": "LED pásek po obvodu stropu poskytuje široký, rovnoměrný světelný tok, který zcela eliminuje stíny. Vysoký CRI (90+) zajišťuje přesné podání barev — důležité při hodnocení pokrmů.",
+      "p3": "Nastavení barevné teploty umožňuje přepínat od jasné studené bílé (5000K) pro vaření po teplou neutrální (3000K) pro večeři. Hlasové ovládání je pohodlné, když máte plné ruce."
+    },
+    "benefits": {
+      "title": "Výhody LED osvětlení kuchyně",
+      "subtitle": "Profesionální parametry za dostupnou cenu.",
+      "bright": {
+        "title": "Jasné pracovní osvětlení",
+        "desc": "Vysoký světelný tok COB pásků zajišťuje bezpečnou a pohodlnou práci v kuchyni."
+      },
+      "cri": {
+        "title": "Věrné podání barev (CRI 90+)",
+        "desc": "Vidíte barvy potravin přesně — důležité při vaření, kontrole čerstvosti a servírování."
+      },
+      "control": {
+        "title": "Wi-Fi a hlasové ovládání",
+        "desc": "Ovládání bez rukou přes aplikaci nebo hlasem — ideální když máte ruce plné v kuchyni."
+      },
+      "energy": {
+        "title": "Energetická úspora",
+        "desc": "60–80% úspora oproti halogenovým svítidlům. Investice se vrátí během několika měsíců."
+      }
+    },
+    "features": {
+      "title": "Důležité vlastnosti pro kuchyni",
+      "shadows": {
+        "title": "Pracovní plochy bez stínů",
+        "desc": "LED pásky po obvodu rovnoměrně osvětlují všechny pracovní zóny a eliminují stíny."
+      },
+      "dining": {
+        "title": "Večeřní režim",
+        "desc": "Okamžitě přepněte na teplé, tlumené světlo pro večeři. Stejný systém — jiná atmosféra."
+      },
+      "clean": {
+        "title": "Snadná údržba",
+        "desc": "Pásek těsně u stropu — žádné žárovky, kryty ani štěrbiny sbírající tuk a prach."
+      },
+      "heat": {
+        "title": "Tepelně odolné součásti",
+        "desc": "Napájecí zdroje certifikovány pro provoz při teplotě do 40°C — bez ztráty výkonu u sporáku."
+      },
+      "style": {
+        "title": "Kompatibilní s jakýmkoli stylem kuchyně",
+        "desc": "Od minimalismu po rustikální — skryté LED osvětlení se hodí ke každému interiéru kuchyně."
+      }
+    },
+    "setup": {
+      "title": "Doporučená konfigurace pro kuchyni",
+      "temp_label": "Barevná teplota",
+      "temp_value": "3000K–5000K (nastavitelná CCT)",
+      "brightness_label": "Jas",
+      "brightness_value": "800–1200 lm/m (vysoký tok)",
+      "length_label": "Délka pásku (10–15 m²)",
+      "length_value": "5–10 metrů",
+      "control_label": "Ovládání",
+      "control_value": "Aplikace + dálkový ovladač + hlas",
+      "install_label": "Místo instalace",
+      "install_value": "Obvod stropu + volitelně pod skříňky"
+    },
+    "products": {
+      "title": "LED sady pro stropy kuchyní",
+      "subtitle": "Vše v jedné krabici — LED pásek, napájení, ovladač, dálkový ovladač a konektory.",
+      "from": "Od",
+      "view_kit": "Zobrazit sadu",
+      "view_all": "Všechny produkty"
+    },
+    "stats": {
+      "cri_label": "Index podání barev",
+      "lumens_label": "Lumenů na metr",
+      "savings_label": "Úspora energie oproti halogenu",
+      "warranty_label": "Záruka v ceně",
+      "warranty_value": "24 měsíců"
+    },
+    "articles": {
+      "title": "Užitečné články o osvětlení kuchyně",
+      "badge": "Doporučený článek",
+      "read_more": "Číst článek"
+    },
+    "faq": {
+      "title": "Často kladené otázky",
+      "q1": {
+        "question": "Kolik lumenů potřebuji pro LED osvětlení stropu kuchyně?",
+        "answer": "Kuchyně potřebují vysoký jas. Pro standardní kuchyni (10–15 m²) se doporučuje 800–1200 lm/m. Naše COB pásky přesně to poskytují."
+      },
+      "q2": {
+        "question": "Jaká barevná teplota je nejlepší pro kuchyni?",
+        "answer": "Studená nebo neutrální bílá (4000K–5000K) je nejlepší pro kuchyně — zlepšuje vnímání barev potravin. CCT sady umožňují přepínání mezi režimy."
+      },
+      "q3": {
+        "question": "Je LED pásek odolný vůči vlhkosti v kuchyni?",
+        "answer": "Naše pásky mají krytí IP20, vhodné pro normální kuchyňské prostředí. Udržujte pásek alespoň 60 cm od zdrojů páry."
+      },
+      "q4": {
+        "question": "Mohu použít pásek jak na stropě, tak pod skříňkami?",
+        "answer": "Ano. Sady jsou vhodné pro obvod stropu i podsvícení pod skříňkami. Použijte rozbočovače pro paralelní zapojení."
+      },
+      "q5": {
+        "question": "Je instalace LED osvětlení v kuchyni obtížná?",
+        "answer": "Ne — pásek na samolepce 3M, všechny součásti předtestovány. Většina kuchyní hotova za 2–3 hodiny. Video návod v sadě."
+      }
+    },
+    "cta": {
+      "title": "Modernizujte osvětlení kuchyně ještě dnes",
+      "subtitle": "Profesionální LED sady s dopravou zdarma. Lepší světlo, nižší účty za elektřinu.",
+      "primary": "Koupit sadu LED",
+      "secondary": "Získat poradenství"
+    }
   }
 }
