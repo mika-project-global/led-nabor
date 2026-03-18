@@ -1060,7 +1060,14 @@
     "support": "Unterstützung",
     "contact": "Kontakt",
     "prague_czech_republic": "Prag, Tschechien",
-    "all_rights_reserved": "Alle Rechte vorbehalten."
+    "all_rights_reserved": "Alle Rechte vorbehalten.",
+    "by_room": "Nach Raum",
+    "living_room": "Wohnzimmer",
+    "bedroom": "Schlafzimmer",
+    "kitchen": "Küche",
+    "bathroom": "Badezimmer",
+    "hallway": "Flur",
+    "office": "Büro"
   },
   "blog": {
     "title": "Blog & Anleitungen",

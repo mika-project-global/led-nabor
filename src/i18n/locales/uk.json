@@ -529,7 +529,14 @@
     "support": "Підтримка",
     "contact": "Контакти",
     "prague_czech_republic": "Прага, Чехія",
-    "all_rights_reserved": "Всі права захищені."
+    "all_rights_reserved": "Всі права захищені.",
+    "by_room": "За кімнатами",
+    "living_room": "Вітальня",
+    "bedroom": "Спальня",
+    "kitchen": "Кухня",
+    "bathroom": "Ванна кімната",
+    "hallway": "Коридор",
+    "office": "Кабінет"
   },
   "back": "Назад",
   "continue_shopping": "Продовжити покупки",

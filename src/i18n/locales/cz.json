@@ -1060,7 +1060,14 @@
     "support": "Podpora",
     "contact": "Kontakt",
     "prague_czech_republic": "Praha, Česká republika",
-    "all_rights_reserved": "Všechna práva vyhrazena."
+    "all_rights_reserved": "Všechna práva vyhrazena.",
+    "by_room": "Podle místnosti",
+    "living_room": "Obývací pokoj",
+    "bedroom": "Ložnice",
+    "kitchen": "Kuchyně",
+    "bathroom": "Koupelna",
+    "hallway": "Chodba",
+    "office": "Kancelář"
   },
   "blog": {
     "title": "Blog a Průvodci",

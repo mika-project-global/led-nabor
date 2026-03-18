@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Products Section */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">
@@ -41,6 +41,45 @@ export function Footer() {
                   className="hover:text-white transition-colors"
                 >
                   {t('menu.for_business')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* By Room Section */}
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-4">
+              {t('footer.by_room')}
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to={`/${locale}/led-ceiling-lighting-living-room`} className="hover:text-white transition-colors">
+                  {t('footer.living_room')}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${locale}/led-ceiling-lighting-bedroom`} className="hover:text-white transition-colors">
+                  {t('footer.bedroom')}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${locale}/led-ceiling-lighting-kitchen`} className="hover:text-white transition-colors">
+                  {t('footer.kitchen')}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${locale}/led-ceiling-lighting-bathroom`} className="hover:text-white transition-colors">
+                  {t('footer.bathroom')}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${locale}/led-ceiling-lighting-hallway`} className="hover:text-white transition-colors">
+                  {t('footer.hallway')}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${locale}/led-ceiling-lighting-office`} className="hover:text-white transition-colors">
+                  {t('footer.office')}
                 </Link>
               </li>
             </ul>

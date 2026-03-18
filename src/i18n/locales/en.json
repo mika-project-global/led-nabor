@@ -564,7 +564,14 @@
     "support": "Support",
     "contact": "Contact",
     "prague_czech_republic": "Prague, Czech Republic",
-    "all_rights_reserved": "All rights reserved."
+    "all_rights_reserved": "All rights reserved.",
+    "by_room": "By Room",
+    "living_room": "Living Room",
+    "bedroom": "Bedroom",
+    "kitchen": "Kitchen",
+    "bathroom": "Bathroom",
+    "hallway": "Hallway",
+    "office": "Office"
   },
   "back": "Back",
   "continue_shopping": "Continue shopping",

@@ -566,7 +566,14 @@
     "support": "Поддержка",
     "contact": "Контакты",
     "prague_czech_republic": "Прага, Чехия",
-    "all_rights_reserved": "Все права защищены."
+    "all_rights_reserved": "Все права защищены.",
+    "by_room": "По помещениям",
+    "living_room": "Гостиная",
+    "bedroom": "Спальня",
+    "kitchen": "Кухня",
+    "bathroom": "Ванная",
+    "hallway": "Прихожая",
+    "office": "Кабинет"
   },
   "back": "Назад",
   "continue_shopping": "Продолжить покупки",
