@@ -1158,7 +1158,13 @@
     "articles": {
       "title": "Užitečné články o osvětlení ložnice",
       "badge": "Doporučený článek",
-      "read_more": "Číst článek"
+      "read_more": "Číst článek",
+      "article1_title": "LED osvětlení stropu v ložnici — průvodce atmosférou",
+      "article1_desc": "Kompletní průvodce LED osvětlením stropu v ložnici: tvorba atmosféry, teplotní charakteristiky pro spánek a chytrá automatizace.",
+      "article2_title": "Teplé nebo studené bílé LED světlo: kompletní průvodce",
+      "article2_desc": "Kompletní průvodce teplotou barvy LED: vliv na zdraví, doporučení pro každou místnost a jak vybrat správnou barvu do ložnice.",
+      "article3_title": "Chytré LED osvětlení stropu",
+      "article3_desc": "Kompletní průvodce chytrým LED osvětlením: Wi-Fi, hlasové ovládání, automatizace a cirkadiánní rytmy pro ložnici."
     },
     "faq": {
       "title": "Často kladené otázky",
@@ -1282,7 +1288,13 @@
     "articles": {
       "title": "Užitečné články o osvětlení kuchyně",
       "badge": "Doporučený článek",
-      "read_more": "Číst článek"
+      "read_more": "Číst článek",
+      "article1_title": "LED osvětlení stropu v kuchyni",
+      "article1_desc": "Kompletní průvodce LED osvětlením stropu v kuchyni: pracovní osvětlení, výběr teploty barvy, jas a úspora energie.",
+      "article2_title": "Kolik lumenů potřebujete pro osvětlení stropu?",
+      "article2_desc": "Zjistěte, jak vypočítat přesné požadavky na lumeny pro osvětlení stropu s příklady pro každou místnost.",
+      "article3_title": "Průvodce LED osvětlením stropu",
+      "article3_desc": "Kompletní referenční průvodce LED osvětlením stropu: základy technologie, plánování, metody instalace a chytrá integrace."
     },
     "faq": {
       "title": "Často kladené otázky",

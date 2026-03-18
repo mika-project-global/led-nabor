@@ -1158,7 +1158,13 @@
     "articles": {
       "title": "Pomocne artykuły o oświetleniu sypialni",
       "badge": "Polecany artykuł",
-      "read_more": "Czytaj artykuł"
+      "read_more": "Czytaj artykuł",
+      "article1_title": "Oświetlenie sufitu LED w sypialni — przewodnik po atmosferze",
+      "article1_desc": "Kompletny przewodnik po oświetleniu sufitu LED w sypialni: tworzenie atmosfery, temperatury barwowe sprzyjające snu i inteligentna automatyzacja.",
+      "article2_title": "Ciepłe czy chłodne białe LED: kompletny przewodnik",
+      "article2_desc": "Kompletny przewodnik po temperaturze barwowej LED: wpływ na zdrowie, zalecenia dla każdego pokoju i jak wybrać odpowiednią barwę do sypialni.",
+      "article3_title": "Inteligentne oświetlenie sufitu LED",
+      "article3_desc": "Kompletny przewodnik po inteligentnym oświetleniu LED: Wi-Fi, sterowanie głosowe, automatyzacja i rytmy dobowe dla sypialni."
     },
     "faq": {
       "title": "Często zadawane pytania",
@@ -1282,7 +1288,13 @@
     "articles": {
       "title": "Pomocne artykuły o oświetleniu kuchni",
       "badge": "Polecany artykuł",
-      "read_more": "Czytaj artykuł"
+      "read_more": "Czytaj artykuł",
+      "article1_title": "Oświetlenie sufitu LED w kuchni",
+      "article1_desc": "Kompletny przewodnik po LED oświetleniu sufitu w kuchni: oświetlenie robocze, temperatura barwowa, jasność i oszczędność energii.",
+      "article2_title": "Ile lumenów potrzeba do oświetlenia sufitu?",
+      "article2_desc": "Dowiedz się, jak obliczyć dokładne wymagania dotyczące lumenów dla oświetlenia sufitu z przykładami dla każdego pomieszczenia.",
+      "article3_title": "Przewodnik po LED oświetleniu sufitu",
+      "article3_desc": "Kompletny przewodnik po LED oświetleniu sufitu: podstawy technologii, planowanie, metody instalacji i inteligentna integracja."
     },
     "faq": {
       "title": "Często zadawane pytania",

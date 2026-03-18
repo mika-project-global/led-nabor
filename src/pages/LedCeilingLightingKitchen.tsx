@@ -16,21 +16,21 @@ export default function LedCeilingLightingKitchen() {
 
   const blogArticles = [
     {
-      slug: 'led-ceiling-ideas-for-every-room',
-      title: t('kitchen_lighting.articles.article1_title', 'LED Ceiling Ideas for Every Room'),
-      desc: t('kitchen_lighting.articles.article1_desc', 'Practical design ideas for using LED ceiling lighting in the kitchen and other key areas of your home.'),
+      slug: 'led-lighting-for-kitchen-ceiling',
+      title: t('kitchen_lighting.articles.article1_title', 'LED Lighting for Kitchen Ceiling'),
+      desc: t('kitchen_lighting.articles.article1_desc', 'Practical guide to choosing and installing LED ceiling lighting for kitchens — brightness, color temperature, and energy savings.'),
       image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&auto=format&fit=crop'
     },
     {
-      slug: 'how-many-lumens-do-you-need',
-      title: t('kitchen_lighting.articles.article2_title', 'How Many Lumens Do You Need for Your Room?'),
-      desc: t('kitchen_lighting.articles.article2_desc', 'Calculate the correct brightness for your kitchen ceiling lighting based on room size and usage.'),
+      slug: 'how-many-lumens-for-ceiling-lighting',
+      title: t('kitchen_lighting.articles.article2_title', 'How Many Lumens for Ceiling Lighting?'),
+      desc: t('kitchen_lighting.articles.article2_desc', 'Learn how to calculate exact lumen requirements for ceiling lighting with room-by-room standards and practical examples for every space.'),
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop'
     },
     {
-      slug: 'best-led-ceiling-lighting-guide',
-      title: t('kitchen_lighting.articles.article3_title', 'Best LED Ceiling Lighting — Complete Guide'),
-      desc: t('kitchen_lighting.articles.article3_desc', 'Everything you need to know about choosing the best LED ceiling light system for your kitchen.'),
+      slug: 'led-ceiling-lighting-guide',
+      title: t('kitchen_lighting.articles.article3_title', 'LED Ceiling Lighting Guide'),
+      desc: t('kitchen_lighting.articles.article3_desc', 'Complete LED ceiling lighting reference guide covering technology basics, planning, installation methods, and smart integration.'),
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop'
     }
   ];

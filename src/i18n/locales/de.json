@@ -1158,7 +1158,13 @@
     "articles": {
       "title": "Hilfreiche Artikel zur Schlafzimmerbeleuchtung",
       "badge": "Empfohlener Artikel",
-      "read_more": "Artikel lesen"
+      "read_more": "Artikel lesen",
+      "article1_title": "LED-Deckenbeleuchtung im Schlafzimmer — Atmosphären-Guide",
+      "article1_desc": "Kompletter Leitfaden zur LED-Deckenbeleuchtung im Schlafzimmer: Atmosphäre, schlaffreundliche Farbtemperaturen und Smart-Automation.",
+      "article2_title": "Warmweißes oder Kaltweißes LED-Licht: Kompletter Leitfaden",
+      "article2_desc": "Vollständiger Leitfaden zur LED-Farbtemperatur: Gesundheitseffekte, Empfehlungen für jedes Zimmer und die richtige Wahl für das Schlafzimmer.",
+      "article3_title": "Smartes LED-Deckenbeleuchtung",
+      "article3_desc": "Vollständiger Leitfaden zu Smart-LED-Beleuchtung: WLAN, Sprachsteuerung, Automatisierung und circadiane Rhythmen für das Schlafzimmer."
     },
     "faq": {
       "title": "Häufig gestellte Fragen",
@@ -1282,7 +1288,13 @@
     "articles": {
       "title": "Hilfreiche Artikel zur Küchenbeleuchtung",
       "badge": "Empfohlener Artikel",
-      "read_more": "Artikel lesen"
+      "read_more": "Artikel lesen",
+      "article1_title": "LED-Küchendeckenbeleuchtung",
+      "article1_desc": "Vollständiger Leitfaden zur LED-Küchenbeleuchtung: Arbeitsbeleuchtung, Farbtemperaturwahl, Helligkeitsplanung und Energieeinsparungen.",
+      "article2_title": "Wie viele Lumen für Deckenbeleuchtung?",
+      "article2_desc": "Erfahren Sie, wie Sie den genauen Lumenbedarf für Deckenbeleuchtung berechnen — mit Zimmer-für-Zimmer-Standards und praktischen Beispielen.",
+      "article3_title": "LED-Deckenbeleuchtungs-Leitfaden",
+      "article3_desc": "Vollständiger Referenzleitfaden zur LED-Deckenbeleuchtung: Technologiegrundlagen, Planung, Installationsmethoden und Smart-Integration."
     },
     "faq": {
       "title": "Häufig gestellte Fragen",

@@ -16,21 +16,21 @@ export default function LedCeilingLightingBedroom() {
 
   const blogArticles = [
     {
-      slug: 'bedroom-ceiling-lighting-ideas',
-      title: t('bedroom_lighting.articles.article1_title', 'Bedroom Ceiling Lighting Ideas'),
-      desc: t('bedroom_lighting.articles.article1_desc', 'Discover inspiring ideas for creating a cozy and romantic atmosphere in your bedroom with LED strips.'),
+      slug: 'led-lighting-for-bedroom-ceiling',
+      title: t('bedroom_lighting.articles.article1_title', 'LED Lighting for Bedroom Ceiling — Ambiance Guide'),
+      desc: t('bedroom_lighting.articles.article1_desc', 'Complete guide to LED bedroom ceiling lighting including ambiance creation, sleep-friendly color temperatures, and smart automation for restful spaces.'),
       image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&auto=format&fit=crop'
     },
     {
-      slug: 'warm-vs-cool-white-led',
-      title: t('bedroom_lighting.articles.article2_title', 'Warm vs Cool White LED — Which to Choose?'),
-      desc: t('bedroom_lighting.articles.article2_desc', 'A complete guide to choosing the right color temperature for your bedroom lighting.'),
+      slug: 'warm-vs-cool-led-lighting',
+      title: t('bedroom_lighting.articles.article2_title', 'Warm or Cool LED Light: Complete Color Temperature Guide'),
+      desc: t('bedroom_lighting.articles.article2_desc', 'Complete guide to LED light color temperature: health effects, room-by-room recommendations, and how to choose the right warmth for your bedroom.'),
       image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&auto=format&fit=crop'
     },
     {
       slug: 'smart-led-ceiling-lighting',
       title: t('bedroom_lighting.articles.article3_title', 'Smart LED Ceiling Lighting'),
-      desc: t('bedroom_lighting.articles.article3_desc', 'How smart LED systems transform your bedroom into a fully automated, comfortable space.'),
+      desc: t('bedroom_lighting.articles.article3_desc', 'Complete guide to smart LED ceiling lighting: Wi-Fi, voice control, automation, circadian rhythms, and whole-home integration for your bedroom.'),
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop'
     }
   ];

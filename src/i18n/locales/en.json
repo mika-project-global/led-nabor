@@ -1191,7 +1191,13 @@
     "articles": {
       "title": "Helpful Articles on Bedroom Lighting",
       "badge": "Featured Article",
-      "read_more": "Read article"
+      "read_more": "Read article",
+      "article1_title": "LED Lighting for Bedroom Ceiling — Ambiance Guide",
+      "article1_desc": "Complete guide to LED bedroom ceiling lighting including ambiance creation, sleep-friendly color temperatures, and smart automation for restful spaces.",
+      "article2_title": "Warm or Cool LED Light: Complete Color Temperature Guide",
+      "article2_desc": "Complete guide to LED light color temperature: health effects, room-by-room recommendations, and how to choose the right warmth for your bedroom.",
+      "article3_title": "Smart LED Ceiling Lighting",
+      "article3_desc": "Complete guide to smart LED ceiling lighting: Wi-Fi, voice control, automation, circadian rhythms, and whole-home integration for your bedroom."
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -1315,7 +1321,13 @@
     "articles": {
       "title": "Helpful Articles on Kitchen Lighting",
       "badge": "Featured Article",
-      "read_more": "Read article"
+      "read_more": "Read article",
+      "article1_title": "LED Lighting for Kitchen Ceiling",
+      "article1_desc": "Complete guide to LED kitchen ceiling lighting: task lighting, ambient illumination, color temperature selection, and professional installation tips.",
+      "article2_title": "How Many Lumens for Ceiling Lighting?",
+      "article2_desc": "Learn how to calculate exact lumen requirements for ceiling lighting with room-by-room standards and practical examples for every space.",
+      "article3_title": "LED Ceiling Lighting Guide",
+      "article3_desc": "Complete LED ceiling lighting reference guide covering technology basics, planning, installation methods, and smart integration."
     },
     "faq": {
       "title": "Frequently Asked Questions",
