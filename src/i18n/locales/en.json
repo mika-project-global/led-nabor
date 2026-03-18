@@ -1358,5 +1358,529 @@
       "primary": "Shop LED Kits",
       "secondary": "Get Expert Advice"
     }
+  },
+  "living_room_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting for Living Room — Ambient, Dimmable, Smart Control",
+      "description": "Transform your living room with premium LED ceiling lighting. COB strips with adjustable color temperature, full dimming, and Wi-Fi control. Perfect for any ceiling type. Free shipping."
+    },
+    "badge": "Living Room LED Lighting",
+    "hero": {
+      "title_line1": "LED Ceiling Lighting",
+      "title_line2": "for Your Living Room",
+      "subtitle": "Create the perfect living room ambiance with premium COB LED ceiling lighting. From bright entertaining light to cozy movie-night warmth — one system adapts to every moment, controlled from your phone.",
+      "cta_primary": "Shop LED Kits",
+      "cta_secondary": "Installation Guide"
+    },
+    "intro": {
+      "title": "Why LED Ceiling Lighting Transforms Your Living Room",
+      "p1": "The living room is the heart of your home — a space for relaxing, entertaining, working, and everything in between. Traditional overhead lighting fails here: a single fixed bulb creates harsh shadows, limits your mood options, and wastes energy. Modern LED ceiling strip lighting changes everything.",
+      "p2": "COB LED strips mounted along the ceiling perimeter deliver soft, uniform indirect light that feels natural and luxurious. Unlike spotlights that create pools of brightness and dark corners, perimeter lighting fills the entire room with even, flattering illumination that makes your space feel larger and more inviting.",
+      "p3": "With full CCT adjustment (2700K warm to 6500K cool) and smooth 0–100% dimming, you can instantly shift from bright working light to cinematic movie mode to intimate dinner ambiance — all from one app or voice command. Smart scheduling means your lights adapt automatically to your daily routine."
+    },
+    "benefits": {
+      "title": "Benefits of Living Room LED Lighting",
+      "subtitle": "One intelligent system for every mood and activity in your most-used room.",
+      "ambiance": {
+        "title": "Perfect Ambiance Control",
+        "desc": "Set the exact mood for any occasion — from bright social gatherings to warm, relaxed evenings."
+      },
+      "scenes": {
+        "title": "Scene Presets",
+        "desc": "Save custom lighting scenes for TV, dinner, reading, and parties — switch instantly with one tap."
+      },
+      "dimming": {
+        "title": "Full Smooth Dimming",
+        "desc": "0–100% dimming range with no flicker, no buzz — silky smooth transitions between brightness levels."
+      },
+      "uniform": {
+        "title": "Uniform, Shadow-Free Light",
+        "desc": "COB technology delivers even illumination with no visible dots — elegant on stretch and plasterboard ceilings alike."
+      }
+    },
+    "features": {
+      "title": "Designed for Living Room Versatility",
+      "entertainment": {
+        "title": "Entertainment Mode",
+        "desc": "Sync lighting to music or set dynamic color effects for parties and social events directly from the app."
+      },
+      "movie": {
+        "title": "Cinema Mode",
+        "desc": "Dim to 10–20% warm white for the perfect movie-watching atmosphere without eye strain from contrast."
+      },
+      "social": {
+        "title": "Social & Dining Ambiance",
+        "desc": "Warm neutral light (3000K) at 70% brightness creates an inviting, flattering environment for guests."
+      },
+      "accent": {
+        "title": "Accent Lighting",
+        "desc": "Use the perimeter installation to highlight architectural features, artwork, or shelving with beautiful indirect light."
+      },
+      "smart": {
+        "title": "Full Smart Home Integration",
+        "desc": "Works with Alexa, Google Home, and major smart home platforms. Schedule, automate, and voice-control your entire lighting setup."
+      }
+    },
+    "setup": {
+      "title": "Recommended Setup for Living Room",
+      "temp_label": "Color temperature",
+      "temp_value": "2700K–6500K (full CCT range)",
+      "brightness_label": "Brightness",
+      "brightness_value": "600–1000 lm/m (adjustable)",
+      "length_label": "Strip length (15–25 m²)",
+      "length_value": "8–14 meters",
+      "control_label": "Control",
+      "control_value": "App + remote + voice",
+      "install_label": "Installation",
+      "install_value": "Ceiling perimeter cove"
+    },
+    "products": {
+      "title": "LED Kits for Living Room Ceilings",
+      "subtitle": "Complete kits with everything included — LED strip, power supply, controller, remote, and connectors.",
+      "from": "From",
+      "view_kit": "View Kit",
+      "view_all": "View All Products"
+    },
+    "stats": {
+      "temp_label": "Color Temperature Range",
+      "dimming_label": "Dimming Range",
+      "lifespan_label": "LED Lifespan",
+      "warranty_label": "Warranty",
+      "lifespan_value": "10 years",
+      "warranty_value": "24 months"
+    },
+    "articles": {
+      "title": "Helpful Articles on Living Room Lighting",
+      "badge": "Featured Article",
+      "read_more": "Read article",
+      "article1_title": "LED Ceiling Lighting Guide",
+      "article1_desc": "Complete LED ceiling lighting reference guide covering technology basics, planning, installation methods, and smart integration.",
+      "article2_title": "Smart LED Ceiling Lighting",
+      "article2_desc": "Complete guide to smart LED ceiling lighting: Wi-Fi, voice control, automation, and whole-home integration.",
+      "article3_title": "LED Ceiling Ideas for Every Room",
+      "article3_desc": "Inspiring LED ceiling lighting design ideas for living rooms, bedrooms, kitchens, and hallways — with practical installation tips."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How many meters of LED strip do I need for a living room?",
+        "answer": "For a typical living room (15–25 m²), plan for 8–14 meters of LED strip for perimeter ceiling lighting. Measure your room's perimeter and add 10% for corners and connections. Our kits come in 5m increments from 5m to 30m, so you can match any room size."
+      },
+      "q2": {
+        "question": "Can LED ceiling strips replace traditional living room lights?",
+        "answer": "Yes, absolutely. A properly designed LED ceiling strip system provides ample ambient light for a living room. At full brightness (100%), COB LED strips with 800+ lm/m deliver comfortable illumination for all activities. The advantage is you can dim them precisely for any mood — something traditional fixtures can't do as smoothly."
+      },
+      "q3": {
+        "question": "What color temperature is best for a living room?",
+        "answer": "For maximum versatility, choose a CCT or RGB+CCT kit. Warm white (2700K–3000K) is ideal for evenings, relaxing, and creating a cozy atmosphere. Neutral white (4000K) works well for daytime activities and reading. Our full-range CCT kits let you dial in exactly what you need at any time."
+      },
+      "q4": {
+        "question": "Can I use LED ceiling lighting for a home theater setup?",
+        "answer": "Absolutely. LED strips are ideal for home theater rooms. Use our RGB+CCT kit to set a deep red or blue backlight at low brightness — this reduces eye strain from the contrast between screen and room while adding atmosphere. You can save this as a scene and activate it instantly."
+      },
+      "q5": {
+        "question": "Are LED strips safe for stretch ceilings in living rooms?",
+        "answer": "Yes. Our COB LED strips generate very little heat and are specifically designed for stretch ceiling applications. The low-voltage (12V/24V DC) operation ensures safety, and the minimal heat output won't damage or warp stretch ceiling materials."
+      }
+    },
+    "cta": {
+      "title": "Transform Your Living Room Today",
+      "subtitle": "Complete LED kits with free shipping. Professional quality, easy installation, 24-month warranty.",
+      "primary": "Shop LED Kits",
+      "secondary": "Ask a Question"
+    }
+  },
+  "bathroom_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting for Bathroom — Bright, Safe, Low Voltage",
+      "description": "Upgrade your bathroom with premium LED ceiling lighting. High-CRI COB strips, safe low-voltage operation, and beautiful uniform light. Complete kits with free shipping."
+    },
+    "badge": "Bathroom LED Lighting",
+    "hero": {
+      "title_line1": "LED Ceiling Lighting",
+      "title_line2": "for Your Bathroom",
+      "subtitle": "Bright, flattering, and safe LED ceiling lighting for bathrooms. High-CRI COB strips deliver accurate color rendering for grooming — so you always look your best before leaving the house.",
+      "cta_primary": "Shop LED Kits",
+      "cta_secondary": "Installation Guide"
+    },
+    "intro": {
+      "title": "Why LED Ceiling Lighting is Ideal for Bathrooms",
+      "p1": "Bathroom lighting is more critical than most people realize. Poor lighting makes grooming tasks difficult — you can't accurately judge makeup, shaving, or skincare under low-CRI lights that distort skin tones. The right LED ceiling system solves this with bright, accurate, flattering light that makes the bathroom both functional and comfortable.",
+      "p2": "COB LED strips provide wide, even illumination that eliminates the shadows typical of single overhead fixtures. Running along the ceiling perimeter, they distribute light uniformly across the entire room — no dark corners near the mirror, no harsh spotlights. The result is the kind of soft, even light you'd find in a professional salon.",
+      "p3": "Safety is paramount in wet areas. Our systems operate at safe low voltage (12V/24V DC) with the power driver installed outside the bathroom. The strips themselves can be positioned away from direct water contact, and all components meet European safety standards. Clean design means no exposed bulbs or fixtures to collect moisture."
+    },
+    "benefits": {
+      "title": "Benefits of Bathroom LED Lighting",
+      "subtitle": "Professional-quality bathroom lighting with safety built in.",
+      "moisture": {
+        "title": "Moisture-Safe Design",
+        "desc": "Low-voltage operation with driver outside the bathroom zone ensures safe, reliable performance in humid environments."
+      },
+      "safe": {
+        "title": "Safe Low Voltage",
+        "desc": "12V/24V DC operation is inherently safe for bathroom use — no risk even if moisture reaches the strip."
+      },
+      "bright": {
+        "title": "Bright Task Lighting",
+        "desc": "High-lumen output ensures you have ample light for grooming, makeup, and skincare tasks."
+      },
+      "uniform": {
+        "title": "Shadow-Free Illumination",
+        "desc": "Perimeter strips eliminate the shadows that make grooming difficult with traditional overhead fixtures."
+      }
+    },
+    "features": {
+      "title": "Features Designed for Bathrooms",
+      "mirror": {
+        "title": "Mirror-Quality Lighting",
+        "desc": "High-CRI (90+) light renders skin tones and colors accurately — essential for makeup, grooming, and skincare routines."
+      },
+      "shadow": {
+        "title": "No More Facial Shadows",
+        "desc": "Perimeter ceiling lighting illuminates your face from multiple angles simultaneously, eliminating the shadows that single overhead lights create."
+      },
+      "spa": {
+        "title": "Spa Atmosphere Mode",
+        "desc": "Dim to warm white (2700K) for a relaxing bath experience. One system transitions from bright task lighting to spa-like ambiance."
+      },
+      "cri": {
+        "title": "CRI 90+ Accuracy",
+        "desc": "Colors — including skin tones — look exactly as they do in natural light. No more surprises when you step outside."
+      },
+      "lowvoltage": {
+        "title": "Low-Voltage Safety",
+        "desc": "The power driver is installed outside the bathroom. The strip itself operates at 12V/24V DC — safe even in the event of moisture contact."
+      }
+    },
+    "setup": {
+      "title": "Recommended Setup for Bathroom",
+      "temp_label": "Color temperature",
+      "temp_value": "3000K–5000K (task + relax)",
+      "brightness_label": "Brightness",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Strip length (4–8 m²)",
+      "length_value": "3–6 meters",
+      "ip_label": "Safety rating",
+      "ip_value": "Driver outside zone 1/2",
+      "install_label": "Installation",
+      "install_value": "Ceiling perimeter cove"
+    },
+    "products": {
+      "title": "LED Kits for Bathroom Ceilings",
+      "subtitle": "Everything included — LED strip, power supply, controller, remote, and connectors.",
+      "from": "From",
+      "view_kit": "View Kit",
+      "view_all": "View All Products"
+    },
+    "stats": {
+      "cri_label": "Color Rendering Index",
+      "voltage_label": "Safe operating voltage",
+      "lifespan_label": "LED Lifespan",
+      "warranty_label": "Warranty",
+      "lifespan_value": "10 years",
+      "warranty_value": "24 months"
+    },
+    "articles": {
+      "title": "Helpful Articles on Bathroom Lighting",
+      "badge": "Featured Article",
+      "read_more": "Read article",
+      "article1_title": "LED Ceiling Lighting Guide",
+      "article1_desc": "Complete LED ceiling lighting reference guide covering technology basics, planning, installation methods, and smart integration.",
+      "article2_title": "Warm or Cool LED Light: Complete Color Temperature Guide",
+      "article2_desc": "How to choose the right LED color temperature for every room — including bathrooms.",
+      "article3_title": "How to Install LED Strip Lights",
+      "article3_desc": "Step-by-step installation guide for LED strip ceiling lighting with tips for moisture-prone areas."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is LED strip lighting safe to install in a bathroom?",
+        "answer": "Yes, when installed correctly. Our systems use low-voltage strips (12V/24V DC) with the power driver installed outside the bathroom in a dry location. The LED strip itself is positioned in a ceiling cove away from direct water sources. This design meets European bathroom electrical safety standards."
+      },
+      "q2": {
+        "question": "What color temperature is best for bathroom LED lighting?",
+        "answer": "For bathrooms, neutral to cool white (3500K–5000K) works best for grooming and makeup tasks — it closely mimics natural daylight, giving you accurate color rendering. If you want versatility, our CCT kits let you switch to warm white (2700K) for relaxing baths, while keeping cool white available for morning routines."
+      },
+      "q3": {
+        "question": "How many meters of LED strip do I need for a bathroom?",
+        "answer": "Most standard bathrooms (4–8 m²) need 3–6 meters of LED strip for ceiling perimeter lighting. Measure your bathroom's perimeter and subtract doorway widths. Our smallest kit starts at 5 meters, which suits most bathrooms. For en-suite bathrooms, a 5m kit is typically sufficient."
+      },
+      "q4": {
+        "question": "Can LED ceiling lights help with makeup application in the bathroom?",
+        "answer": "Absolutely. This is one of the biggest advantages of proper bathroom LED lighting. High-CRI (90+) LED strips render skin tones and colors accurately, so what you see in your bathroom mirror matches how you'll look in natural light. This makes makeup application significantly more accurate than under low-CRI fluorescent or incandescent lights."
+      },
+      "q5": {
+        "question": "Can I dim bathroom LED ceiling lights?",
+        "answer": "Yes, all our LED kits include a dimmable controller. Dimming is useful in bathrooms for creating a relaxing atmosphere during baths or for late-night bathroom visits when you don't want full brightness. The dimming is smooth from 0–100% with no flicker or buzzing."
+      }
+    },
+    "cta": {
+      "title": "Upgrade Your Bathroom Lighting Today",
+      "subtitle": "Professional LED kits designed for bathrooms. Better light, accurate colors, safe low-voltage installation.",
+      "primary": "Shop LED Kits",
+      "secondary": "Ask a Question"
+    }
+  },
+  "hallway_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting for Hallway — Bright, Elegant, Energy Efficient",
+      "description": "Illuminate your hallway with premium LED ceiling lighting. Slim COB strips that make narrow spaces feel wider and brighter. Complete kits with free shipping."
+    },
+    "badge": "Hallway LED Lighting",
+    "hero": {
+      "title_line1": "LED Ceiling Lighting",
+      "title_line2": "for Your Hallway",
+      "subtitle": "Make a great first impression with sleek LED ceiling lighting in your hallway and corridor. Bright, uniform light that makes narrow spaces feel open and welcoming — with energy-efficient operation 24/7.",
+      "cta_primary": "Shop LED Kits",
+      "cta_secondary": "Installation Guide"
+    },
+    "intro": {
+      "title": "Why LED Ceiling Lighting Works Perfectly in Hallways",
+      "p1": "Hallways and corridors are often the most poorly lit areas in a home — yet they're used constantly throughout the day and night. Traditional single bulb fixtures in narrow hallways create dark spots at the ends of corridors and harsh brightness directly below the light. LED strip lighting solves this completely.",
+      "p2": "Running LED strips along the full length of the ceiling creates continuous, even illumination from end to end. No dark spots, no harsh transition zones. The indirect light also makes narrow hallways feel significantly wider and more inviting — a simple optical effect that transforms the feel of your entire home.",
+      "p3": "Because hallway lights are often left on for extended periods, energy efficiency matters enormously here. LED strips use 60–80% less energy than traditional bulbs, and with smart scheduling or motion sensing, you can ensure lights are never on unnecessarily. A hallway LED system typically pays for itself within 12–18 months in energy savings alone."
+    },
+    "benefits": {
+      "title": "Benefits of Hallway LED Lighting",
+      "subtitle": "Bright, efficient, and elegant — designed for spaces that are used all day.",
+      "visibility": {
+        "title": "Excellent Visibility",
+        "desc": "Uniform end-to-end illumination eliminates dark spots and makes navigation safe at any hour."
+      },
+      "space": {
+        "title": "Makes Spaces Feel Larger",
+        "desc": "Indirect ceiling light creates a visual expansion effect, making narrow hallways feel wider and more open."
+      },
+      "energy": {
+        "title": "Maximum Energy Efficiency",
+        "desc": "LED strips use 60–80% less energy — critical for lights that run many hours daily in hallways."
+      },
+      "safety": {
+        "title": "Safe Night Navigation",
+        "desc": "Dim overnight mode provides safe low-level lighting for nighttime movement without waking the household."
+      }
+    },
+    "features": {
+      "title": "Features Built for Hallways",
+      "linear": {
+        "title": "Linear End-to-End Light",
+        "desc": "Continuous LED strips run the full length of your hallway, providing perfectly uniform illumination with no dark patches."
+      },
+      "motion": {
+        "title": "Motion Sensor Compatible",
+        "desc": "Connect to a motion sensor so lights activate only when needed — ideal for hallways, saving energy automatically."
+      },
+      "night": {
+        "title": "Night Mode",
+        "desc": "Set a 5–10% dim warm white mode overnight. Enough to navigate safely without disturbing sleep or wasting energy."
+      },
+      "narrow": {
+        "title": "Slim Profile for Narrow Spaces",
+        "desc": "Our COB strips are just a few millimeters thick, fitting neatly in any ceiling cove or mounted flush without bulk."
+      },
+      "instant": {
+        "title": "Instant Full Brightness",
+        "desc": "LED strips reach full brightness instantly — no warm-up time. Perfect for a space you pass through quickly multiple times a day."
+      }
+    },
+    "setup": {
+      "title": "Recommended Setup for Hallway",
+      "temp_label": "Color temperature",
+      "temp_value": "3000K–4000K (neutral-warm)",
+      "brightness_label": "Brightness",
+      "brightness_value": "600–800 lm/m",
+      "length_label": "Strip length (typical hallway)",
+      "length_value": "2–5 meters",
+      "control_label": "Control",
+      "control_value": "Switch + optional app",
+      "install_label": "Installation",
+      "install_value": "Ceiling perimeter or linear run"
+    },
+    "products": {
+      "title": "LED Kits for Hallway Ceilings",
+      "subtitle": "Complete kits with everything included — strip, driver, controller, and connectors.",
+      "from": "From",
+      "view_kit": "View Kit",
+      "view_all": "View All Products"
+    },
+    "stats": {
+      "length_label": "Typical hallway strip length",
+      "savings_label": "Energy savings vs traditional",
+      "lifespan_label": "LED Lifespan",
+      "warranty_label": "Warranty",
+      "lifespan_value": "10 years",
+      "warranty_value": "24 months"
+    },
+    "articles": {
+      "title": "Helpful Articles on Hallway Lighting",
+      "badge": "Featured Article",
+      "read_more": "Read article",
+      "article1_title": "LED Ceiling Lighting Guide",
+      "article1_desc": "Complete LED ceiling lighting guide with planning, installation, and design tips for every room including hallways and corridors.",
+      "article2_title": "How to Install LED Strip Lights",
+      "article2_desc": "Step-by-step guide for installing LED strips on ceilings — perfect for narrow hallways and corridors.",
+      "article3_title": "LED Ceiling Ideas for Every Room",
+      "article3_desc": "Inspiring design ideas for LED ceiling lighting across all room types, including hallways and entryways."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How many meters of LED strip do I need for a hallway?",
+        "answer": "Most standard hallways need 2–5 meters of LED strip depending on length. Measure the total run length of your hallway ceiling and add 10% for connections. Our 5m starter kit is ideal for most hallways. For longer corridors or L-shaped hallways, a 5m or 10m kit gives you flexibility."
+      },
+      "q2": {
+        "question": "What color temperature is best for hallway LED lighting?",
+        "answer": "Neutral white (3500K–4000K) is the best all-round choice for hallways — bright enough to feel welcoming and functional, without being harsh. If your hallway connects to warmer living spaces, warm white (2700K–3000K) creates a more cohesive flow. Avoid very cool white (5000K+) in hallways as it can feel clinical."
+      },
+      "q3": {
+        "question": "Can I install LED ceiling lighting in a narrow hallway?",
+        "answer": "Absolutely — LED strips are ideal for narrow hallways. Unlike bulky fixtures, COB LED strips sit flat in a small ceiling cove with no protruding elements. They actually make narrow spaces feel wider by providing even, indirect illumination that visually expands the space."
+      },
+      "q4": {
+        "question": "How much does it cost to run LED hallway lights all day?",
+        "answer": "Very little. A 5-meter COB LED strip uses approximately 25–50W total. Running 24 hours at average electricity rates costs around 5–10 cents per day — roughly €1.50–3.00 per month. Compare this to a traditional 60W bulb running the same hours, and the savings are substantial."
+      },
+      "q5": {
+        "question": "Can LED strips be used with motion sensors in hallways?",
+        "answer": "Yes, our LED systems are fully compatible with external motion sensors. This is a popular setup for hallways — lights activate when you enter and turn off after a set delay. The LED strips respond instantly to full brightness, so there's no waiting for them to reach full output as with some older technologies."
+      }
+    },
+    "cta": {
+      "title": "Brighten Your Hallway Today",
+      "subtitle": "Slim, elegant LED kits that transform hallways and corridors. Free shipping, easy installation, 24-month warranty.",
+      "primary": "Shop LED Kits",
+      "secondary": "Ask a Question"
+    }
+  },
+  "office_lighting": {
+    "seo": {
+      "title": "LED Ceiling Lighting for Office — Flicker-Free, Focus-Enhancing, Smart",
+      "description": "Upgrade your home office with professional LED ceiling lighting. Flicker-free COB strips, ideal color temperature for focus, Wi-Fi scheduling. Complete kits with free shipping."
+    },
+    "badge": "Office LED Lighting",
+    "hero": {
+      "title_line1": "LED Ceiling Lighting",
+      "title_line2": "for Your Office",
+      "subtitle": "Work better with professional-grade LED ceiling lighting designed for focus and productivity. Flicker-free, glare-free COB strips at the ideal color temperature for sustained concentration — all day, every day.",
+      "cta_primary": "Shop LED Kits",
+      "cta_secondary": "Installation Guide"
+    },
+    "intro": {
+      "title": "Why Your Home Office Needs Better LED Lighting",
+      "p1": "Poor lighting is one of the most overlooked causes of reduced productivity, eye strain, and headaches in home offices. A single overhead bulb creates direct glare on screens, uneven shadows on your desk, and often operates at the wrong color temperature for sustained concentration. This isn't just uncomfortable — it directly affects your output and wellbeing.",
+      "p2": "Professional LED ceiling strip lighting solves these problems at the source. COB LED strips mounted in a ceiling cove create wide-angle, indirect illumination that distributes light evenly across your entire workspace without any direct glare on screens or harsh shadows on your working surface. The result is a bright, comfortable environment that supports hours of focused work.",
+      "p3": "Smart control means your office lighting works with your schedule automatically. Program cool white (4000K–5000K) for morning focus sessions, transition to neutral during video calls, and warm down in the evening. With Wi-Fi control and scheduling, your office adapts to your working patterns — not the other way around."
+    },
+    "benefits": {
+      "title": "Benefits of Office LED Lighting",
+      "subtitle": "Professional-grade lighting that boosts focus, reduces fatigue, and looks great on video calls.",
+      "focus": {
+        "title": "Enhances Focus & Productivity",
+        "desc": "Cool white light (4000K–5000K) is proven to increase alertness and cognitive performance during work hours."
+      },
+      "eyestrain": {
+        "title": "Reduces Eye Strain",
+        "desc": "Flicker-free, uniform illumination eliminates the micro-flicker that causes eye fatigue during long work sessions."
+      },
+      "energy": {
+        "title": "Energy Efficient All Day",
+        "desc": "LED strips use 60–80% less energy than traditional office lights — important for spaces that are lit 8+ hours daily."
+      },
+      "glare": {
+        "title": "Screen Glare Eliminated",
+        "desc": "Indirect ceiling lighting removes the direct reflections on monitors that traditional overhead fixtures cause."
+      }
+    },
+    "features": {
+      "title": "Features That Improve Your Workday",
+      "cct": {
+        "title": "Work-Optimized Color Temperature",
+        "desc": "4000K–5000K cool white mimics daylight and keeps you alert and focused — far superior to warm household bulbs for daytime work."
+      },
+      "flicker": {
+        "title": "Flicker-Free Operation",
+        "desc": "Our COB strips operate at high frequency with zero flicker. No eye strain, no headaches, no fatigue — even after 8+ hours of use."
+      },
+      "schedule": {
+        "title": "Automatic Daily Scheduling",
+        "desc": "Program your lights to come on at work-start time, adjust at midday, and warm down in the evening — fully automated via app."
+      },
+      "cri": {
+        "title": "High CRI for Accurate Colors",
+        "desc": "CRI 90+ ensures accurate color reproduction — important for design work, photography editing, and precise visual tasks."
+      },
+      "uniform": {
+        "title": "Even Desktop Illumination",
+        "desc": "Perimeter ceiling strips illuminate your entire workspace evenly, eliminating the shadows that make reading and writing difficult."
+      }
+    },
+    "setup": {
+      "title": "Recommended Setup for Office",
+      "temp_label": "Color temperature",
+      "temp_value": "4000K–5000K (focus white)",
+      "brightness_label": "Brightness",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Strip length (8–15 m²)",
+      "length_value": "4–8 meters",
+      "control_label": "Control",
+      "control_value": "App + schedule + voice",
+      "install_label": "Installation",
+      "install_value": "Ceiling perimeter or linear"
+    },
+    "products": {
+      "title": "LED Kits for Office Ceilings",
+      "subtitle": "Everything included — LED strip, power supply, controller, and connectors.",
+      "from": "From",
+      "view_kit": "View Kit",
+      "view_all": "View All Products"
+    },
+    "stats": {
+      "temp_label": "Optimal work color temp",
+      "cri_label": "Color Rendering Index",
+      "lifespan_label": "LED Lifespan",
+      "warranty_label": "Warranty",
+      "lifespan_value": "10 years",
+      "warranty_value": "24 months"
+    },
+    "articles": {
+      "title": "Helpful Articles on Office Lighting",
+      "badge": "Featured Article",
+      "read_more": "Read article",
+      "article1_title": "LED Ceiling Lighting Guide",
+      "article1_desc": "Complete reference guide to LED ceiling lighting technology, planning, and installation for home offices and workspaces.",
+      "article2_title": "How Many Lumens for Ceiling Lighting?",
+      "article2_desc": "Lumen requirements by room type including office spaces — learn how to calculate the right brightness for focused work.",
+      "article3_title": "Smart LED Ceiling Lighting",
+      "article3_desc": "How smart LED systems with scheduling and automation improve productivity and reduce eye strain in home offices."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What color temperature is best for a home office?",
+        "answer": "Cool to neutral white (4000K–5000K) is optimal for work environments. This range closely mimics natural daylight, which research shows increases alertness and cognitive performance. Avoid warm white (2700K) for primary work lighting as it promotes relaxation rather than focus. Our CCT kits let you use cool white during work hours and warmer tones in evenings."
+      },
+      "q2": {
+        "question": "How does LED ceiling lighting reduce eye strain while working?",
+        "answer": "Eye strain from office lighting has two main causes: direct glare (light shining into your eyes or reflecting off screens) and flicker (rapid brightness variation that your eye constantly tries to compensate for). LED strip ceiling lighting solves both — indirect illumination eliminates direct glare, and our COB strips operate at zero-flicker high frequency."
+      },
+      "q3": {
+        "question": "How many meters of LED strip do I need for a home office?",
+        "answer": "For a typical home office (8–15 m²), 4–8 meters of LED strip is sufficient for perimeter ceiling lighting. If your office has a stretched or coffer ceiling, you may want to run strips in two parallel rows for enhanced brightness. Measure your ceiling perimeter and we can recommend the right kit size."
+      },
+      "q4": {
+        "question": "Can I use LED ceiling lighting for video calls and content creation?",
+        "answer": "Excellent choice. Indirect LED ceiling lighting provides even, flattering front-fill illumination that looks professional on video calls — far better than a single directional ring light. High-CRI strips ensure accurate skin tone rendering. For content creation, the even lighting eliminates distracting shadows in your background."
+      },
+      "q5": {
+        "question": "Can I control office LED lighting with a schedule or automation?",
+        "answer": "Yes. Our Wi-Fi-enabled kits support full scheduling, so you can program lights to turn on at your work start time, automatically adjust at lunchtime, and wind down in the evening. This removes manual control from your routine and ensures you always have the right light for the time of day. Compatible with Alexa and Google Home."
+      }
+    },
+    "cta": {
+      "title": "Build Your Ideal Work Environment",
+      "subtitle": "Professional LED lighting for home offices. Flicker-free, focus-enhancing, smart-controlled. Free shipping included.",
+      "primary": "Shop LED Kits",
+      "secondary": "Ask a Question"
+    }
   }
 }

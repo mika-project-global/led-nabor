@@ -51,6 +51,10 @@ const CeilingLedLighting = React.lazy(() => import('./pages/CeilingLedLighting')
 const BuildYourKit = React.lazy(() => import('./pages/BuildYourKit'));
 const LedCeilingLightingBedroom = React.lazy(() => import('./pages/LedCeilingLightingBedroom'));
 const LedCeilingLightingKitchen = React.lazy(() => import('./pages/LedCeilingLightingKitchen'));
+const LedCeilingLightingLivingRoom = React.lazy(() => import('./pages/LedCeilingLightingLivingRoom'));
+const LedCeilingLightingBathroom = React.lazy(() => import('./pages/LedCeilingLightingBathroom'));
+const LedCeilingLightingHallway = React.lazy(() => import('./pages/LedCeilingLightingHallway'));
+const LedCeilingLightingOffice = React.lazy(() => import('./pages/LedCeilingLightingOffice'));
 
 // Компонент для редиректа числовых ID
 function ProductIdRedirect() {
@@ -143,6 +147,10 @@ export default function App() {
                                     <Route path="/build-your-kit" element={<BuildYourKit />} />
                                     <Route path="/led-ceiling-lighting-bedroom" element={<LedCeilingLightingBedroom />} />
                                     <Route path="/led-ceiling-lighting-kitchen" element={<LedCeilingLightingKitchen />} />
+                                    <Route path="/led-ceiling-lighting-living-room" element={<LedCeilingLightingLivingRoom />} />
+                                    <Route path="/led-ceiling-lighting-bathroom" element={<LedCeilingLightingBathroom />} />
+                                    <Route path="/led-ceiling-lighting-hallway" element={<LedCeilingLightingHallway />} />
+                                    <Route path="/led-ceiling-lighting-office" element={<LedCeilingLightingOffice />} />
                                     {/* Catch-all для неправильных путей и редиректа числовых ID */}
                                     <Route path="/*" element={<ProductIdRedirect />} />
                                   </Routes>
