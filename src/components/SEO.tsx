@@ -47,9 +47,9 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const hreflangLinks: Array<Record<string, string>> = [];
   if (alternateUrls) {
     Object.entries(alternateUrls).forEach(([localeKey, url]) => {
-      hreflangLinks.push({ rel: 'alternate', hrefLang: localeToHreflang(localeKey), href: url });
+      hreflangLinks.push({ rel: 'alternate', hreflang: localeToHreflang(localeKey), href: url });
     });
-    hreflangLinks.push({ rel: 'alternate', hrefLang: 'x-default', href: defaultAlternateUrl });
+    hreflangLinks.push({ rel: 'alternate', hreflang: 'x-default', href: defaultAlternateUrl });
   }
 
   const ogAlternateLocaleMeta: Array<Record<string, string>> = Object.entries(LOCALE_MAP)
