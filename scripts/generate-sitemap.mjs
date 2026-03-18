@@ -91,6 +91,8 @@ async function generateSitemap() {
     { path: 'blog/', priority: '0.9', freq: 'daily' },
     { path: 'ceiling-led-lighting/', priority: '0.9', freq: 'weekly' },
     { path: 'led-ceiling-lighting-kit/', priority: '0.9', freq: 'weekly' },
+    { path: 'led-ceiling-lighting-bedroom/', priority: '0.9', freq: 'weekly' },
+    { path: 'led-ceiling-lighting-kitchen/', priority: '0.9', freq: 'weekly' },
     { path: 'about/', priority: '0.7', freq: 'monthly' },
     { path: 'support/', priority: '0.7', freq: 'monthly' },
     { path: 'installation-guide/', priority: '0.7', freq: 'monthly' },
