@@ -1332,5 +1332,529 @@
       "primary": "LED-Sets kaufen",
       "secondary": "Expertenberatung"
     }
+  },
+  "living_room_lighting": {
+    "seo": {
+      "title": "LED-Deckenbeleuchtung Wohnzimmer — Stimmungsvoll, Dimmbar, Smart",
+      "description": "Verwandeln Sie Ihr Wohnzimmer mit premium LED-Deckenbeleuchtung. COB-Streifen mit einstellbarer Farbtemperatur, sanftem Dimmen und WLAN-Steuerung. Kostenloser Versand."
+    },
+    "badge": "LED-Beleuchtung Wohnzimmer",
+    "hero": {
+      "title_line1": "LED-Deckenbeleuchtung",
+      "title_line2": "für Ihr Wohnzimmer",
+      "subtitle": "Schaffen Sie die perfekte Wohnzimmeratmosphäre mit premium COB LED-Deckenbeleuchtung. Von hellem Licht für Geselligkeit bis zu warmem Abendlicht — ein System passt sich per App an jeden Moment an.",
+      "cta_primary": "LED-Sets kaufen",
+      "cta_secondary": "Installationsanleitung"
+    },
+    "intro": {
+      "title": "Warum LED-Beleuchtung das Wohnzimmer verwandelt",
+      "p1": "Das Wohnzimmer ist das Herzstück Ihres Hauses — ein Ort zum Entspannen, für Gäste und zum Arbeiten. Herkömmliche Beleuchtung scheitert hier: Eine einzelne Glühbirne erzeugt harte Schatten, begrenzt Stimmungsoptionen und verschwendet Energie. Moderne LED-Streifen ändern alles.",
+      "p2": "COB LED-Streifen entlang des Deckenumfangs liefern weiches, gleichmäßiges indirektes Licht, das natürlich und luxuriös wirkt. Im Gegensatz zu Spotlights füllt Perimeter-Beleuchtung den gesamten Raum mit gleichmäßigem, schmeichelndem Licht.",
+      "p3": "Mit vollständiger CCT-Regelung (warm 2700K bis kalt 6500K) und sanftem Dimmen 0–100% wechseln Sie sofort von hellem Arbeitslicht zu Kinomodus — alles per App oder Sprachbefehl."
+    },
+    "benefits": {
+      "title": "Vorteile der LED-Beleuchtung im Wohnzimmer",
+      "subtitle": "Ein intelligentes System für jede Stimmung und Aktivität.",
+      "ambiance": {
+        "title": "Perfekte Atmosphärenkontrolle",
+        "desc": "Stellen Sie die exakte Stimmung für jeden Anlass ein — von hellen geselligen Zusammenkünften bis zu warmen, entspannten Abenden."
+      },
+      "scenes": {
+        "title": "Szenen-Voreinstellungen",
+        "desc": "Speichern Sie individuelle Szenen für TV, Abendessen, Lesen und Partys — wechseln Sie sofort mit einem Tipp."
+      },
+      "dimming": {
+        "title": "Vollständiges sanftes Dimmen",
+        "desc": "Dimmbereich 0–100% ohne Flimmern und Brummen — seidig glatte Übergänge zwischen Helligkeitsstufen."
+      },
+      "uniform": {
+        "title": "Gleichmäßiges, schattenfreies Licht",
+        "desc": "COB-Technologie liefert gleichmäßige Beleuchtung ohne sichtbare Punkte — elegant an Spann- und Gipskartondecken."
+      }
+    },
+    "features": {
+      "title": "Für die Vielseitigkeit des Wohnzimmers konzipiert",
+      "entertainment": {
+        "title": "Unterhaltungsmodus",
+        "desc": "Synchronisieren Sie die Beleuchtung mit Musik oder stellen Sie dynamische Farbeffekte für Partys direkt aus der App ein."
+      },
+      "movie": {
+        "title": "Kinomodus",
+        "desc": "Dimmen auf 10–20% warmweiß für die perfekte Filmschauen-Atmosphäre ohne Augenbelastung."
+      },
+      "social": {
+        "title": "Gesellschafts- und Tischatmosphäre",
+        "desc": "Warmes neutrales Licht (3000K) bei 70% Helligkeit schafft eine einladende, schmeichelhafte Umgebung für Gäste."
+      },
+      "accent": {
+        "title": "Akzentbeleuchtung",
+        "desc": "Nutzen Sie die Perimeterinstallation, um architektonische Merkmale, Kunstwerke oder Regale mit schönem indirektem Licht hervorzuheben."
+      },
+      "smart": {
+        "title": "Vollständige Smart-Home-Integration",
+        "desc": "Funktioniert mit Alexa, Google Home und den wichtigsten Smart-Home-Plattformen. Zeitplan, Automatisierung und Sprachsteuerung."
+      }
+    },
+    "setup": {
+      "title": "Empfohlenes Setup für Wohnzimmer",
+      "temp_label": "Farbtemperatur",
+      "temp_value": "2700K–6500K (voller CCT-Bereich)",
+      "brightness_label": "Helligkeit",
+      "brightness_value": "600–1000 lm/m (einstellbar)",
+      "length_label": "Streifenlänge (15–25 m²)",
+      "length_value": "8–14 Meter",
+      "control_label": "Steuerung",
+      "control_value": "App + Fernbedienung + Stimme",
+      "install_label": "Installation",
+      "install_value": "Deckenperimeter-Hohlraum"
+    },
+    "products": {
+      "title": "LED-Sets für Wohnzimmerdecken",
+      "subtitle": "Komplette Sets mit LED-Streifen, Netzteil, Controller, Fernbedienung und Verbindern.",
+      "from": "Ab",
+      "view_kit": "Set ansehen",
+      "view_all": "Alle Produkte"
+    },
+    "stats": {
+      "temp_label": "Farbtemperaturbereich",
+      "dimming_label": "Dimmbereich",
+      "lifespan_label": "LED-Lebensdauer",
+      "warranty_label": "Garantie",
+      "lifespan_value": "10 Jahre",
+      "warranty_value": "24 Monate"
+    },
+    "articles": {
+      "title": "Hilfreiche Artikel zur Wohnzimmerbeleuchtung",
+      "badge": "Empfohlener Artikel",
+      "read_more": "Artikel lesen",
+      "article1_title": "LED-Deckenbeleuchtung Guide",
+      "article1_desc": "Vollständiger LED-Deckenbeleuchtungs-Guide — Technologie, Planung, Installationsmethoden und Smart-Integration.",
+      "article2_title": "Intelligente LED-Deckenbeleuchtung",
+      "article2_desc": "Vollständiger Leitfaden zur intelligenten LED-Beleuchtung: WLAN, Sprachsteuerung, Automatisierung und Heimintegration.",
+      "article3_title": "LED-Deckenideen für jeden Raum",
+      "article3_desc": "Inspirierende LED-Deckenbeleuchtungsideen für Wohnzimmer, Schlafzimmer, Küchen und Flure mit praktischen Tipps."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Wie viele Meter LED-Streifen benötige ich für ein Wohnzimmer?",
+        "answer": "Für ein typisches Wohnzimmer (15–25 m²) planen Sie 8–14 Meter LED-Streifen für Deckenperimeter-Beleuchtung. Messen Sie den Raumumfang und addieren Sie 10% für Ecken und Verbindungen."
+      },
+      "q2": {
+        "question": "Können LED-Streifen die herkömmliche Wohnzimmerbeleuchtung ersetzen?",
+        "answer": "Ja. Ein gut konzipiertes LED-Streifensystem liefert ausreichend Umgebungslicht für ein Wohnzimmer. Bei voller Helligkeit liefern COB LED-Streifen mit 800+ lm/m komfortables Licht für alle Aktivitäten."
+      },
+      "q3": {
+        "question": "Welche Farbtemperatur ist am besten für ein Wohnzimmer?",
+        "answer": "Für maximale Vielseitigkeit wählen Sie ein CCT- oder RGB+CCT-Set. Warmweiß (2700K–3000K) ist ideal für Abende. Neutralweiß (4000K) eignet sich für Tagesaktivitäten und Lesen."
+      },
+      "q4": {
+        "question": "Kann ich LED-Beleuchtung für ein Heimkino nutzen?",
+        "answer": "Absolut. LED-Streifen sind ideal für Heimkinos. Stellen Sie eine tiefe rote oder blaue Hintergrundbeleuchtung bei niedriger Helligkeit ein — das reduziert Augenbelastung durch den Kontrast zwischen Bildschirm und Raum."
+      },
+      "q5": {
+        "question": "Sind LED-Streifen sicher für Spanndecken im Wohnzimmer?",
+        "answer": "Ja. Unsere COB LED-Streifen erzeugen sehr wenig Wärme und sind speziell für Spanndecken konzipiert. Der Niedervoltbetrieb (12V/24V DC) gewährleistet Sicherheit."
+      }
+    },
+    "cta": {
+      "title": "Verwandeln Sie Ihr Wohnzimmer heute",
+      "subtitle": "Komplette LED-Sets mit kostenlosem Versand. Professionelle Qualität, einfache Installation, 24 Monate Garantie.",
+      "primary": "LED-Sets kaufen",
+      "secondary": "Frage stellen"
+    }
+  },
+  "bathroom_lighting": {
+    "seo": {
+      "title": "LED-Deckenbeleuchtung Badezimmer — Hell, Sicher, Niedervolt",
+      "description": "Verbessern Sie Ihr Badezimmer mit premium LED-Deckenbeleuchtung. COB-Streifen mit hohem CRI, sicherer Niedervoltbetrieb und schönes gleichmäßiges Licht. Komplette Sets mit kostenlosem Versand."
+    },
+    "badge": "LED-Beleuchtung Badezimmer",
+    "hero": {
+      "title_line1": "LED-Deckenbeleuchtung",
+      "title_line2": "für Ihr Badezimmer",
+      "subtitle": "Helles, vorteilhaftes und sicheres LED-Licht für Badezimmer. COB-Streifen mit hohem CRI liefern genaue Farbwiedergabe für die Körperpflege — damit Sie stets Ihr Bestes aussehen.",
+      "cta_primary": "LED-Sets kaufen",
+      "cta_secondary": "Installationsanleitung"
+    },
+    "intro": {
+      "title": "Warum LED-Beleuchtung ideal für Badezimmer ist",
+      "p1": "Badezimmerbeleuchtung ist wichtiger als die meisten Menschen denken. Schlechtes Licht erschwert die Körperpflege — bei niedrigem CRI können Sie Make-up, Rasur oder Hautpflege nicht korrekt beurteilen. Das richtige LED-System löst dies mit hellem, präzisem Licht.",
+      "p2": "COB LED-Streifen sorgen für breite, gleichmäßige Beleuchtung ohne die Schatten einzelner Deckenleuchten. Entlang des Deckenumfangs verteilt sich Licht gleichmäßig über den gesamten Raum.",
+      "p3": "Sicherheit in Feuchträumen hat Priorität. Unsere Systeme arbeiten mit sicherem Niedervolt (12V/24V DC) mit dem Netzteil außerhalb des Badezimmers. Alle Komponenten erfüllen europäische Sicherheitsstandards."
+    },
+    "benefits": {
+      "title": "Vorteile der LED-Beleuchtung im Badezimmer",
+      "subtitle": "Professionelle Badezimmerbeleuchtung mit eingebauter Sicherheit.",
+      "moisture": {
+        "title": "Feuchtigkeitsresistentes Design",
+        "desc": "Niedervoltbetrieb mit Netzteil außerhalb des Badezimmers gewährleistet sicheren, zuverlässigen Betrieb in feuchter Umgebung."
+      },
+      "safe": {
+        "title": "Sichere Niederspannung",
+        "desc": "Betrieb bei 12V/24V DC ist inhärent sicher für Badezimmer — kein Risiko selbst bei Feuchtigkeitskontakt mit dem Streifen."
+      },
+      "bright": {
+        "title": "Helles Arbeitslicht",
+        "desc": "Hoher Lichtstrom gewährleistet ausreichend Licht für Körperpflege, Make-up und Hautpflegebehandlungen."
+      },
+      "uniform": {
+        "title": "Schattenfreie Beleuchtung",
+        "desc": "Perimeterstreifen eliminieren die Schatten, die herkömmliche Deckenleuchten bei der Körperpflege verursachen."
+      }
+    },
+    "features": {
+      "title": "Eigenschaften für Badezimmer",
+      "mirror": {
+        "title": "Spiegelqualitäts-Beleuchtung",
+        "desc": "Licht mit hohem CRI (90+) gibt Hauttöne und Farben korrekt wieder — wichtig für Make-up, Rasur und Hautpflege."
+      },
+      "shadow": {
+        "title": "Keine Gesichtsschatten mehr",
+        "desc": "Perimeter-Deckenbeleuchtung beleuchtet Ihr Gesicht gleichzeitig von mehreren Seiten und eliminiert Schatten."
+      },
+      "spa": {
+        "title": "Spa-Atmosphäre-Modus",
+        "desc": "Dimmen auf warmweiß (2700K) für ein entspannendes Bad. Ein System wechselt von hellem Arbeitslicht zu Spa-Atmosphäre."
+      },
+      "cri": {
+        "title": "CRI 90+ Genauigkeit",
+        "desc": "Farben — einschließlich Hauttöne — sehen genau so aus wie im natürlichen Licht. Keine Überraschungen draußen."
+      },
+      "lowvoltage": {
+        "title": "Niederspannungssicherheit",
+        "desc": "Das Netzteil wird außerhalb des Badezimmers installiert. Der Streifen arbeitet bei 12V/24V DC — sicher selbst bei Feuchtigkeitskontakt."
+      }
+    },
+    "setup": {
+      "title": "Empfohlenes Setup für Badezimmer",
+      "temp_label": "Farbtemperatur",
+      "temp_value": "3000K–5000K (Arbeit + Entspannung)",
+      "brightness_label": "Helligkeit",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Streifenlänge (4–8 m²)",
+      "length_value": "3–6 Meter",
+      "ip_label": "Schutzklasse",
+      "ip_value": "Netzteil außerhalb Zone 1/2",
+      "install_label": "Installation",
+      "install_value": "Deckenperimeter-Hohlraum"
+    },
+    "products": {
+      "title": "LED-Sets für Badezimmerdecken",
+      "subtitle": "Alles inklusive — LED-Streifen, Netzteil, Controller, Fernbedienung und Verbinder.",
+      "from": "Ab",
+      "view_kit": "Set ansehen",
+      "view_all": "Alle Produkte"
+    },
+    "stats": {
+      "cri_label": "Farbwiedergabeindex",
+      "voltage_label": "Sichere Betriebsspannung",
+      "lifespan_label": "LED-Lebensdauer",
+      "warranty_label": "Garantie",
+      "lifespan_value": "10 Jahre",
+      "warranty_value": "24 Monate"
+    },
+    "articles": {
+      "title": "Hilfreiche Artikel zur Badezimmerbeleuchtung",
+      "badge": "Empfohlener Artikel",
+      "read_more": "Artikel lesen",
+      "article1_title": "LED-Deckenbeleuchtung Guide",
+      "article1_desc": "Vollständiger LED-Deckenbeleuchtungs-Guide mit Technologie, Planung und Installationstipps.",
+      "article2_title": "Warm oder Kalt: Vollständiger Farbtemperatur-Leitfaden",
+      "article2_desc": "Wie Sie die richtige LED-Farbtemperatur für jeden Raum wählen, einschließlich Badezimmer.",
+      "article3_title": "LED-Streifen installieren",
+      "article3_desc": "Schritt-für-Schritt-Anleitung zur Installation von LED-Streifen an Decken mit Tipps für Feuchträume."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Ist die Installation von LED-Streifen im Badezimmer sicher?",
+        "answer": "Ja, bei korrekter Installation. Unsere Systeme verwenden Niedervolt-Streifen (12V/24V DC) mit dem Netzteil außerhalb des Badezimmers. Dies entspricht europäischen Badezimmer-Sicherheitsstandards."
+      },
+      "q2": {
+        "question": "Welche Farbtemperatur ist am besten für LED-Badezimmerbeleuchtung?",
+        "answer": "Für Badezimmer eignet sich neutrales bis kühles Weiß (3500K–5000K) am besten für Pflege. CCT-Sets ermöglichen das Umschalten auf Warmweiß (2700K) für ein entspannendes Bad."
+      },
+      "q3": {
+        "question": "Wie viele Meter LED-Streifen benötige ich für ein Badezimmer?",
+        "answer": "Die meisten Standardbadezimmer (4–8 m²) benötigen 3–6 Meter LED-Streifen. Unser Mindest-Set beginnt bei 5 Metern, was für die meisten Badezimmer ausreicht."
+      },
+      "q4": {
+        "question": "Hilft LED-Beleuchtung im Badezimmer beim Auftragen von Make-up?",
+        "answer": "Absolut. COB-Streifen mit CRI 90+ geben Hauttöne korrekt wieder, sodass was Sie im Spiegel sehen dem entspricht, wie Sie im natürlichen Licht aussehen."
+      },
+      "q5": {
+        "question": "Kann ich Badezimmer-LED-Deckenlichter dimmen?",
+        "answer": "Ja, alle unsere Sets beinhalten einen dimmbaren Controller. Sanftes Dimmen 0–100% ohne Flimmern."
+      }
+    },
+    "cta": {
+      "title": "Verbessern Sie Ihre Badezimmerbeleuchtung heute",
+      "subtitle": "Professionelle LED-Sets für Badezimmer. Besseres Licht, genaue Farben, sichere Niedervolt-Installation.",
+      "primary": "LED-Sets kaufen",
+      "secondary": "Frage stellen"
+    }
+  },
+  "hallway_lighting": {
+    "seo": {
+      "title": "LED-Deckenbeleuchtung Flur — Hell, Elegant, Energieeffizient",
+      "description": "Beleuchten Sie Ihren Flur mit premium LED-Deckenbeleuchtung. Schlanke COB-Streifen, die enge Räume breiter und heller erscheinen lassen. Komplette Sets mit kostenlosem Versand."
+    },
+    "badge": "LED-Beleuchtung Flur",
+    "hero": {
+      "title_line1": "LED-Deckenbeleuchtung",
+      "title_line2": "für Ihren Flur",
+      "subtitle": "Machen Sie mit eleganter LED-Deckenbeleuchtung im Flur einen großartigen ersten Eindruck. Helles, gleichmäßiges Licht lässt enge Räume offen und einladend wirken — energieeffizient rund um die Uhr.",
+      "cta_primary": "LED-Sets kaufen",
+      "cta_secondary": "Installationsanleitung"
+    },
+    "intro": {
+      "title": "Warum LED-Deckenbeleuchtung perfekt für Flure funktioniert",
+      "p1": "Flure sind oft die am schlechtesten beleuchteten Bereiche eines Hauses — werden aber ständig genutzt. Herkömmliche Einzelleuchten erzeugen dunkle Stellen an Korridorenden. LED-Streifen lösen dies vollständig.",
+      "p2": "LED-Streifen entlang der gesamten Decke schaffen kontinuierliche, gleichmäßige Beleuchtung von Ende zu Ende. Das indirekte Licht lässt enge Flure optisch deutlich breiter und einladender wirken.",
+      "p3": "Da Flurlichter oft lange brennen, spielt Energieeffizienz hier eine wichtige Rolle. LED-Streifen verbrauchen 60–80% weniger Energie als herkömmliche Glühbirnen. Ein Flur-LED-System amortisiert sich typischerweise in 12–18 Monaten."
+    },
+    "benefits": {
+      "title": "Vorteile der LED-Beleuchtung im Flur",
+      "subtitle": "Hell, effizient und elegant — für Räume, die den ganzen Tag genutzt werden.",
+      "visibility": {
+        "title": "Ausgezeichnete Sichtbarkeit",
+        "desc": "Gleichmäßige Beleuchtung von Ende zu Ende eliminiert dunkle Stellen und ermöglicht sicheres Bewegen zu jeder Zeit."
+      },
+      "space": {
+        "title": "Räume wirken größer",
+        "desc": "Indirektes Deckenlicht erzeugt einen visuellen Erweiterungseffekt und lässt enge Flure breiter wirken."
+      },
+      "energy": {
+        "title": "Maximale Energieeffizienz",
+        "desc": "LED-Streifen verbrauchen 60–80% weniger Energie — wichtig für Lichter, die täglich viele Stunden laufen."
+      },
+      "safety": {
+        "title": "Sichere Nachtnavigation",
+        "desc": "Nachtmodus mit minimaler Helligkeit ermöglicht sicheres Bewegen ohne den Haushalt zu wecken."
+      }
+    },
+    "features": {
+      "title": "Eigenschaften für Flure",
+      "linear": {
+        "title": "Lineares Licht von Ende zu Ende",
+        "desc": "Durchgehende LED-Streifen laufen über die gesamte Länge Ihres Flures und sorgen für perfekt gleichmäßige Beleuchtung."
+      },
+      "motion": {
+        "title": "Bewegungssensor-kompatibel",
+        "desc": "Schließen Sie einen Bewegungssensor an, damit Lichter nur bei Bedarf aktiviert werden — ideal für Flure zur automatischen Energieeinsparung."
+      },
+      "night": {
+        "title": "Nachtmodus",
+        "desc": "Stellen Sie nachts einen 5–10% gedimmten Warmweiß-Modus ein. Ausreichend zum sicheren Navigieren ohne Schlaf zu stören."
+      },
+      "narrow": {
+        "title": "Schlankes Profil für enge Räume",
+        "desc": "Unsere COB-Streifen sind nur wenige Millimeter dick und passen ordentlich in jeden Deckenhohlraum."
+      },
+      "instant": {
+        "title": "Sofortige volle Helligkeit",
+        "desc": "LED-Streifen erreichen sofortige volle Helligkeit — perfekt für einen Raum, den Sie täglich mehrmals schnell passieren."
+      }
+    },
+    "setup": {
+      "title": "Empfohlenes Setup für Flur",
+      "temp_label": "Farbtemperatur",
+      "temp_value": "3000K–4000K (neutral-warm)",
+      "brightness_label": "Helligkeit",
+      "brightness_value": "600–800 lm/m",
+      "length_label": "Streifenlänge (typischer Flur)",
+      "length_value": "2–5 Meter",
+      "control_label": "Steuerung",
+      "control_value": "Schalter + optional App",
+      "install_label": "Installation",
+      "install_value": "Deckenperimeter oder linearer Lauf"
+    },
+    "products": {
+      "title": "LED-Sets für Flurdecken",
+      "subtitle": "Komplette Sets mit Streifen, Netzteil, Controller und Verbindern.",
+      "from": "Ab",
+      "view_kit": "Set ansehen",
+      "view_all": "Alle Produkte"
+    },
+    "stats": {
+      "length_label": "Typische Flur-Streifenlänge",
+      "savings_label": "Energieeinsparung vs. herkömmlich",
+      "lifespan_label": "LED-Lebensdauer",
+      "warranty_label": "Garantie",
+      "lifespan_value": "10 Jahre",
+      "warranty_value": "24 Monate"
+    },
+    "articles": {
+      "title": "Hilfreiche Artikel zur Flurbeleuchtung",
+      "badge": "Empfohlener Artikel",
+      "read_more": "Artikel lesen",
+      "article1_title": "LED-Deckenbeleuchtung Guide",
+      "article1_desc": "Vollständiger LED-Deckenbeleuchtungs-Guide mit Planung, Installation und Designtipps für jeden Raum.",
+      "article2_title": "LED-Streifen installieren",
+      "article2_desc": "Schritt-für-Schritt-Anleitung für LED-Streifen an Decken — perfekt für enge Flure und Korridore.",
+      "article3_title": "LED-Deckenideen für jeden Raum",
+      "article3_desc": "Inspirierende Designideen für LED-Deckenbeleuchtung für alle Raumtypen, einschließlich Flure."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Wie viele Meter LED-Streifen benötige ich für einen Flur?",
+        "answer": "Die meisten Standardflure benötigen je nach Länge 2–5 Meter LED-Streifen. Unser 5m-Starter-Set ist ideal für die meisten Flure."
+      },
+      "q2": {
+        "question": "Welche Farbtemperatur ist am besten für LED-Flurbeleuchtung?",
+        "answer": "Neutralweiß (3500K–4000K) ist die beste Allround-Wahl für Flure — hell genug um einladend und funktional zu sein. Vermeiden Sie sehr kühles Weiß (5000K+) in Fluren, da es klinisch wirkt."
+      },
+      "q3": {
+        "question": "Kann ich LED-Deckenbeleuchtung in einem engen Flur installieren?",
+        "answer": "Absolut — LED-Streifen sind ideal für enge Flure. Im Gegensatz zu sperrigen Leuchten liegen COB LED-Streifen flach in einem kleinen Deckenhohlraum. Sie lassen enge Räume optisch breiter wirken."
+      },
+      "q4": {
+        "question": "Was kostet es, Flur-LED-Lichter den ganzen Tag laufen zu lassen?",
+        "answer": "Sehr wenig. Ein 5-Meter COB LED-Streifen verbraucht etwa 25–50W. 24 Stunden Betrieb kostet etwa 5–10 Cent pro Tag — ungefähr 1,50–3,00 Euro pro Monat."
+      },
+      "q5": {
+        "question": "Können LED-Streifen mit Bewegungssensoren in Fluren verwendet werden?",
+        "answer": "Ja, unsere LED-Systeme sind vollständig mit externen Bewegungssensoren kompatibel. Lichter aktivieren sich beim Betreten und schalten nach einer eingestellten Verzögerung ab."
+      }
+    },
+    "cta": {
+      "title": "Erhellen Sie Ihren Flur heute",
+      "subtitle": "Schlanke, elegante LED-Sets für Flure und Korridore. Kostenloser Versand, einfache Installation, 24 Monate Garantie.",
+      "primary": "LED-Sets kaufen",
+      "secondary": "Frage stellen"
+    }
+  },
+  "office_lighting": {
+    "seo": {
+      "title": "LED-Deckenbeleuchtung Büro — Flimmerfrei, Fokusfördernd, Smart",
+      "description": "Verbessern Sie Ihr Homeoffice mit professioneller LED-Deckenbeleuchtung. Flimmerfreie COB-Streifen, ideale Farbtemperatur für Fokus, WLAN-Zeitplan. Komplette Sets mit kostenlosem Versand."
+    },
+    "badge": "LED-Beleuchtung Büro",
+    "hero": {
+      "title_line1": "LED-Deckenbeleuchtung",
+      "title_line2": "für Ihr Büro",
+      "subtitle": "Arbeiten Sie besser mit professioneller LED-Deckenbeleuchtung für Fokus und Produktivität. Flimmerfrei, blendfrei, mit idealer Farbtemperatur für konzentriertes Arbeiten den ganzen Tag.",
+      "cta_primary": "LED-Sets kaufen",
+      "cta_secondary": "Installationsanleitung"
+    },
+    "intro": {
+      "title": "Warum Ihr Homeoffice bessere LED-Beleuchtung braucht",
+      "p1": "Schlechte Beleuchtung ist eine der am häufigsten unterschätzten Ursachen für verringerte Produktivität, Augenbelastung und Kopfschmerzen in Homeoffices. Eine einzelne Deckenlampe erzeugt direkte Blendung auf Bildschirmen und ungleichmäßige Schatten auf dem Schreibtisch.",
+      "p2": "Professionelle LED-Deckenstreifen-Beleuchtung löst diese Probleme an der Quelle. COB LED-Streifen in einem Deckenhohlraum erzeugen weitwinkliges, indirektes Licht das sich gleichmäßig über Ihren gesamten Arbeitsbereich verteilt.",
+      "p3": "Intelligente Steuerung bedeutet, dass Ihre Bürobeleuchtung automatisch an Ihren Zeitplan angepasst wird. Programmieren Sie kühles Weiß (4000K–5000K) für morgendliche Arbeitssitzungen und Aufwärmen am Abend."
+    },
+    "benefits": {
+      "title": "Vorteile der LED-Beleuchtung im Büro",
+      "subtitle": "Professionelle Beleuchtung die Fokus steigert, Ermüdung reduziert und bei Videoanrufen großartig aussieht.",
+      "focus": {
+        "title": "Steigert Fokus und Produktivität",
+        "desc": "Kühles weißes Licht (4000K–5000K) steigert nachweislich Aufmerksamkeit und kognitive Leistung während der Arbeitszeit."
+      },
+      "eyestrain": {
+        "title": "Reduziert Augenbelastung",
+        "desc": "Gleichmäßige, flimmerfreie Beleuchtung eliminiert das Mikroflimmern, das bei langen Arbeitssitzungen Augenermüdung verursacht."
+      },
+      "energy": {
+        "title": "Den ganzen Tag energieeffizient",
+        "desc": "LED-Streifen verbrauchen 60–80% weniger Energie — wichtig für Räume, die täglich 8+ Stunden beleuchtet werden."
+      },
+      "glare": {
+        "title": "Bildschirmblendung eliminiert",
+        "desc": "Indirekte Deckenbeleuchtung beseitigt die direkten Reflexionen auf Monitoren, die herkömmliche Deckenleuchten verursachen."
+      }
+    },
+    "features": {
+      "title": "Eigenschaften zur Verbesserung Ihres Arbeitstags",
+      "cct": {
+        "title": "Arbeits-optimierte Farbtemperatur",
+        "desc": "4000K–5000K kühles Weiß ahmt Tageslicht nach und hält Sie aufmerksam und fokussiert — weit überlegen gegenüber warmen Glühbirnen für Tagesarbeit."
+      },
+      "flicker": {
+        "title": "Flimmerfreier Betrieb",
+        "desc": "Unsere COB-Streifen arbeiten mit hoher Frequenz mit null Flimmern. Keine Augenbelastung, keine Kopfschmerzen, keine Ermüdung selbst nach 8+ Stunden."
+      },
+      "schedule": {
+        "title": "Automatischer Tagesablauf-Zeitplan",
+        "desc": "Programmieren Sie das Einschalten zur Arbeitszeit, Anpassen mittags und Aufwärmen abends — vollautomatisch per App."
+      },
+      "cri": {
+        "title": "Hoher CRI für genaue Farben",
+        "desc": "CRI 90+ gewährleistet genaue Farbwiedergabe — wichtig für Designarbeit, Fotobearbeitung und präzise visuelle Aufgaben."
+      },
+      "uniform": {
+        "title": "Gleichmäßige Schreibtischbeleuchtung",
+        "desc": "Perimeter-Deckenstreifen beleuchten Ihren gesamten Arbeitsbereich gleichmäßig und eliminieren Schatten beim Lesen und Schreiben."
+      }
+    },
+    "setup": {
+      "title": "Empfohlenes Setup für Büro",
+      "temp_label": "Farbtemperatur",
+      "temp_value": "4000K–5000K (Arbeitsweiß)",
+      "brightness_label": "Helligkeit",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Streifenlänge (8–15 m²)",
+      "length_value": "4–8 Meter",
+      "control_label": "Steuerung",
+      "control_value": "App + Zeitplan + Stimme",
+      "install_label": "Installation",
+      "install_value": "Deckenperimeter oder linear"
+    },
+    "products": {
+      "title": "LED-Sets für Bürodecken",
+      "subtitle": "Alles inklusive — LED-Streifen, Netzteil, Controller und Verbinder.",
+      "from": "Ab",
+      "view_kit": "Set ansehen",
+      "view_all": "Alle Produkte"
+    },
+    "stats": {
+      "temp_label": "Optimale Arbeits-Farbtemperatur",
+      "cri_label": "Farbwiedergabeindex",
+      "lifespan_label": "LED-Lebensdauer",
+      "warranty_label": "Garantie",
+      "lifespan_value": "10 Jahre",
+      "warranty_value": "24 Monate"
+    },
+    "articles": {
+      "title": "Hilfreiche Artikel zur Bürobeleuchtung",
+      "badge": "Empfohlener Artikel",
+      "read_more": "Artikel lesen",
+      "article1_title": "LED-Deckenbeleuchtung Guide",
+      "article1_desc": "Vollständiges Referenzhandbuch zur LED-Deckenbeleuchtung für Homeoffices und Arbeitsbereiche.",
+      "article2_title": "Wie viele Lumen für Deckenbeleuchtung?",
+      "article2_desc": "Lumen-Anforderungen nach Raumtyp einschließlich Büroräume — lernen Sie die richtige Helligkeit zu berechnen.",
+      "article3_title": "Intelligente LED-Deckenbeleuchtung",
+      "article3_desc": "Wie intelligente LED-Systeme mit Zeitplan und Automatisierung Produktivität steigern und Augenbelastung reduzieren."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Welche Farbtemperatur ist am besten für ein Homeoffice?",
+        "answer": "Kühl bis neutralweiß (4000K–5000K) ist optimal für Arbeitsumgebungen. Dieser Bereich ahmt natürliches Tageslicht nach. Unsere CCT-Sets ermöglichen kühles Weiß während der Arbeitszeit und wärmere Töne abends."
+      },
+      "q2": {
+        "question": "Wie reduziert LED-Deckenbeleuchtung Augenbelastung beim Arbeiten?",
+        "answer": "Augenbelastung durch Bürobeleuchtung hat zwei Hauptursachen: direkte Blendung und Flimmern. LED-Streifen-Deckenbeleuchtung löst beide — indirektes Licht eliminiert Blendung, und unsere COB-Streifen arbeiten flimmerfrei."
+      },
+      "q3": {
+        "question": "Wie viele Meter LED-Streifen benötige ich für ein Homeoffice?",
+        "answer": "Für ein typisches Homeoffice (8–15 m²) reichen 4–8 Meter LED-Streifen für Perimeter-Deckenbeleuchtung. Messen Sie Ihren Deckenumfang und wir empfehlen die richtige Set-Größe."
+      },
+      "q4": {
+        "question": "Kann ich LED-Deckenbeleuchtung für Videoanrufe nutzen?",
+        "answer": "Ausgezeichnete Wahl. Indirektes LED-Deckenlicht liefert gleichmäßige, schmeichelhafte Beleuchtung, die bei Videoanrufen professionell aussieht. Streifen mit hohem CRI gewährleisten genaue Hautton-Wiedergabe."
+      },
+      "q5": {
+        "question": "Kann ich Büro-LED-Beleuchtung mit einem Zeitplan steuern?",
+        "answer": "Ja. Unsere WLAN-Sets unterstützen vollständige Zeitplanung — Einschalten zur Arbeitszeit, automatische Anpassung mittags und Aufwärmen abends. Kompatibel mit Alexa und Google Home."
+      }
+    },
+    "cta": {
+      "title": "Schaffen Sie Ihre ideale Arbeitsumgebung",
+      "subtitle": "Professionelle LED-Beleuchtung für Homeoffices. Flimmerfrei, fokusfördernd, smart gesteuert. Kostenloser Versand.",
+      "primary": "LED-Sets kaufen",
+      "secondary": "Frage stellen"
+    }
   }
 }

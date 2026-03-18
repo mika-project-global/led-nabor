@@ -1332,5 +1332,529 @@
       "primary": "Kup zestaw LED",
       "secondary": "Uzyskaj poradę"
     }
+  },
+  "living_room_lighting": {
+    "seo": {
+      "title": "Oświetlenie sufitu LED do salonu — nastrojowe, ściemnialne, inteligentne",
+      "description": "Odmień swój salon dzięki premium oświetleniu sufitowemu LED. Taśmy COB z regulacją temperatury barwowej, płynnym ściemnianiem i sterowaniem Wi-Fi. Darmowa dostawa."
+    },
+    "badge": "Oświetlenie LED salonu",
+    "hero": {
+      "title_line1": "Oświetlenie sufitu LED",
+      "title_line2": "do Twojego salonu",
+      "subtitle": "Stwórz idealny nastrój w salonie z premium oświetleniem sufitowym COB LED. Od jasnego światła na spotkania do przytulnego wieczornego ciepła — jeden system dopasowuje się do każdej chwili sterowany z telefonu.",
+      "cta_primary": "Kup zestaw LED",
+      "cta_secondary": "Poradnik instalacji"
+    },
+    "intro": {
+      "title": "Dlaczego oświetlenie LED przemienia salon",
+      "p1": "Salon to serce Twojego domu — miejsce do odpoczynku, spotkań i pracy. Tradycyjne oświetlenie zawodzi: jedna żarówka tworzy ostre cienie, ogranicza nastrój i marnuje energię. Nowoczesna taśma LED zmienia wszystko.",
+      "p2": "Taśmy COB LED wzdłuż obwodu sufitu dają miękkie, równomierne pośrednie światło, które wygląda naturalnie i luksusowo. W przeciwieństwie do reflektorów punktowych, oświetlenie obwodowe wypełnia cały pokój równomiernym, przyjemnym światłem.",
+      "p3": "Dzięki pełnej regulacji CCT (ciepły 2700K do zimnego 6500K) i płynnemu ściemnianiu 0–100% natychmiast przełączasz się z jasnego roboczego światła w tryb kinowy — wszystko przez aplikację lub polecenia głosowe."
+    },
+    "benefits": {
+      "title": "Zalety oświetlenia LED salonu",
+      "subtitle": "Jeden inteligentny system na każdy nastrój i aktywność.",
+      "ambiance": {
+        "title": "Idealna kontrola atmosfery",
+        "desc": "Ustaw dokładny nastrój na każdą okazję — od jasnych spotkań po ciepłe, relaksujące wieczory."
+      },
+      "scenes": {
+        "title": "Wstępnie ustawione sceny",
+        "desc": "Zapisz niestandardowe sceny dla TV, kolacji, czytania i imprez — przełączaj natychmiast jednym dotknięciem."
+      },
+      "dimming": {
+        "title": "Płynne pełne ściemnianie",
+        "desc": "Zakres ściemniania 0–100% bez migotania i szumów — jedwabiste płynne przejścia między poziomami jasności."
+      },
+      "uniform": {
+        "title": "Równomierne światło bez cieni",
+        "desc": "Technologia COB zapewnia równomierne oświetlenie bez widocznych punktów — eleganckie na sufitach naprężanych i gipsowo-kartonowych."
+      }
+    },
+    "features": {
+      "title": "Zaprojektowany dla wszechstronności salonu",
+      "entertainment": {
+        "title": "Tryb rozrywki",
+        "desc": "Zsynchronizuj oświetlenie z muzyką lub ustaw dynamiczne efekty kolorystyczne na imprezy bezpośrednio z aplikacji."
+      },
+      "movie": {
+        "title": "Tryb kinowy",
+        "desc": "Przyciemnij do 10–20% ciepłej bieli dla idealnej atmosfery oglądania bez zmęczenia oczu."
+      },
+      "social": {
+        "title": "Atmosfera towarzyska",
+        "desc": "Ciepłe neutralne światło (3000K) przy 70% jasności tworzy przyjazną, zachęcającą atmosferę dla gości."
+      },
+      "accent": {
+        "title": "Oświetlenie akcentowe",
+        "desc": "Użyj instalacji obwodowej do podświetlenia elementów architektonicznych, dzieł sztuki lub półek pięknym pośrednim światłem."
+      },
+      "smart": {
+        "title": "Pełna integracja z inteligentnym domem",
+        "desc": "Działa z Alexa, Google Home i głównymi platformami inteligentnego domu. Harmonogram, automatyzacja i sterowanie głosem."
+      }
+    },
+    "setup": {
+      "title": "Zalecana konfiguracja dla salonu",
+      "temp_label": "Temperatura barwowa",
+      "temp_value": "2700K–6500K (pełny zakres CCT)",
+      "brightness_label": "Jasność",
+      "brightness_value": "600–1000 lm/m (regulowana)",
+      "length_label": "Długość taśmy (15–25 m²)",
+      "length_value": "8–14 metrów",
+      "control_label": "Sterowanie",
+      "control_value": "Aplikacja + pilot + głos",
+      "install_label": "Instalacja",
+      "install_value": "Obrys sufitu w kasecie"
+    },
+    "products": {
+      "title": "Zestawy LED do sufitów salonu",
+      "subtitle": "Kompletne zestawy z taśmą LED, zasilaczem, sterownikiem, pilotem i złączkami.",
+      "from": "Od",
+      "view_kit": "Zobacz zestaw",
+      "view_all": "Wszystkie produkty"
+    },
+    "stats": {
+      "temp_label": "Zakres temperatury barwowej",
+      "dimming_label": "Zakres ściemniania",
+      "lifespan_label": "Żywotność LED",
+      "warranty_label": "Gwarancja",
+      "lifespan_value": "10 lat",
+      "warranty_value": "24 miesiące"
+    },
+    "articles": {
+      "title": "Pomocne artykuły o oświetleniu salonu",
+      "badge": "Polecany artykuł",
+      "read_more": "Czytaj artykuł",
+      "article1_title": "Poradnik oświetlenia sufitowego LED",
+      "article1_desc": "Kompleksowy poradnik oświetlenia sufitowego LED — technologia, planowanie, metody instalacji i integracja inteligentna.",
+      "article2_title": "Inteligentne oświetlenie sufitowe LED",
+      "article2_desc": "Kompletny przewodnik po inteligentnym oświetleniu LED: Wi-Fi, sterowanie głosem, automatyzacja i integracja z domem.",
+      "article3_title": "Pomysły na oświetlenie LED dla każdego pokoju",
+      "article3_desc": "Inspirujące pomysły na oświetlenie LED dla salonów, sypialni, kuchni i korytarzy z praktycznymi wskazówkami."
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": {
+        "question": "Ile metrów taśmy LED potrzebuję do salonu?",
+        "answer": "Do typowego salonu (15–25 m²) potrzebujesz 8–14 metrów taśmy LED do oświetlenia obwodowego sufitu. Zmierz obwód pomieszczenia i dodaj 10% na narożniki i połączenia."
+      },
+      "q2": {
+        "question": "Czy taśmy LED mogą zastąpić tradycyjne oświetlenie salonu?",
+        "answer": "Tak. Prawidłowo zaprojektowany system taśm LED zapewnia wystarczające oświetlenie ambient dla salonu. Przy pełnej jasności taśmy COB LED z 800+ lm/m dają komfortowe oświetlenie do wszystkich aktywności."
+      },
+      "q3": {
+        "question": "Jaka temperatura barwowa jest najlepsza do salonu?",
+        "answer": "Dla maksymalnej wszechstronności wybierz zestaw CCT lub RGB+CCT. Ciepła biel (2700K–3000K) jest idealna na wieczory. Neutralna biel (4000K) sprawdza się przy dziennych aktywnościach i czytaniu."
+      },
+      "q4": {
+        "question": "Czy mogę używać oświetlenia LED do domowego kina?",
+        "answer": "Doskonale. Taśmy LED są idealne do domowych kin. Ustaw nasycone czerwone lub niebieskie podświetlenie przy niskiej jasności — zmniejsza to zmęczenie oczu od kontrastu ekranu i pokoju."
+      },
+      "q5": {
+        "question": "Czy taśmy LED są bezpieczne dla sufitów naprężanych w salonie?",
+        "answer": "Tak. Nasze taśmy COB LED wytwarzają bardzo mało ciepła i są specjalnie zaprojektowane do sufitów naprężanych. Niskonapięciowa praca (12V/24V DC) zapewnia bezpieczeństwo."
+      }
+    },
+    "cta": {
+      "title": "Przemień swój salon już dziś",
+      "subtitle": "Kompletne zestawy LED z darmową dostawą. Profesjonalna jakość, łatwa instalacja, gwarancja 24 miesięcy.",
+      "primary": "Kup zestaw LED",
+      "secondary": "Zadaj pytanie"
+    }
+  },
+  "bathroom_lighting": {
+    "seo": {
+      "title": "Oświetlenie sufitu LED do łazienki — jasne, bezpieczne, niskonapięciowe",
+      "description": "Ulepsz łazienkę dzięki premium oświetleniu sufitowemu LED. Taśmy COB z wysokim CRI, bezpieczne niskonapięciowe zasilanie i piękne równomierne światło. Kompletne zestawy z darmową dostawą."
+    },
+    "badge": "Oświetlenie LED łazienki",
+    "hero": {
+      "title_line1": "Oświetlenie sufitu LED",
+      "title_line2": "do Twojej łazienki",
+      "subtitle": "Jasne, korzystne i bezpieczne oświetlenie LED do łazienek. Taśmy COB z wysokim CRI zapewniają dokładne odwzorowanie kolorów do pielęgnacji — abyś zawsze wyglądał perfekcyjnie.",
+      "cta_primary": "Kup zestaw LED",
+      "cta_secondary": "Poradnik instalacji"
+    },
+    "intro": {
+      "title": "Dlaczego oświetlenie LED jest idealne do łazienek",
+      "p1": "Oświetlenie łazienki jest krytycznie ważne. Złe światło utrudnia pielęgnację — nie możesz dokładnie ocenić makijażu przy niskim CRI. Właściwy system LED rozwiązuje to jasnym, dokładnym i pochlebnym światłem.",
+      "p2": "Taśmy COB LED zapewniają szerokie, równomierne oświetlenie, eliminując cienie od pojedynczych opraw. Wzdłuż obwodu sufitu światło rozkłada się równomiernie po całym pomieszczeniu.",
+      "p3": "Bezpieczeństwo w wilgotnych strefach to priorytet. Nasze systemy działają przy bezpiecznym niskim napięciu (12V/24V DC) z zasilaczem poza łazienką. Wszystkie komponenty spełniają europejskie normy bezpieczeństwa."
+    },
+    "benefits": {
+      "title": "Zalety oświetlenia LED łazienki",
+      "subtitle": "Profesjonalne oświetlenie łazienki z wbudowanym bezpieczeństwem.",
+      "moisture": {
+        "title": "Projekt odporny na wilgoć",
+        "desc": "Niskonapięciowe działanie z zasilaczem poza łazienką zapewnia bezpieczną i niezawodną pracę w wilgotnym środowisku."
+      },
+      "safe": {
+        "title": "Bezpieczne niskie napięcie",
+        "desc": "Praca przy 12V/24V DC jest inherentnie bezpieczna dla łazienki — żadnego ryzyka nawet przy kontakcie wilgoci z taśmą."
+      },
+      "bright": {
+        "title": "Jasne oświetlenie robocze",
+        "desc": "Wysoki strumień świetlny zapewnia wystarczające światło do pielęgnacji, makijażu i zabiegów pielęgnacyjnych."
+      },
+      "uniform": {
+        "title": "Oświetlenie bez cieni",
+        "desc": "Taśmy obwodowe eliminują cienie utrudniające pielęgnację przy tradycyjnych oprawach sufitowych."
+      }
+    },
+    "features": {
+      "title": "Funkcje zaprojektowane dla łazienek",
+      "mirror": {
+        "title": "Oświetlenie jak w lustrze",
+        "desc": "Światło z wysokim CRI (90+) dokładnie odwzorowuje odcienie skóry i kolory — niezbędne do makijażu i pielęgnacji skóry."
+      },
+      "shadow": {
+        "title": "Żadnych cieni na twarzy",
+        "desc": "Obwodowe oświetlenie sufitowe oświetla twarz z kilku stron jednocześnie, eliminując cienie."
+      },
+      "spa": {
+        "title": "Tryb spa",
+        "desc": "Przyciemnij do ciepłej bieli (2700K) dla relaksującej kąpieli. Jeden system przechodzi od jasnego roboczego światła do atmosfery spa."
+      },
+      "cri": {
+        "title": "Dokładność CRI 90+",
+        "desc": "Kolory — w tym odcienie skóry — wyglądają dokładnie tak jak w naturalnym świetle. Żadnych niespodzianek na zewnątrz."
+      },
+      "lowvoltage": {
+        "title": "Bezpieczeństwo niskiego napięcia",
+        "desc": "Zasilacz zainstalowany poza łazienką. Taśma działa przy 12V/24V DC — bezpieczna nawet przy kontakcie z wilgocią."
+      }
+    },
+    "setup": {
+      "title": "Zalecana konfiguracja dla łazienki",
+      "temp_label": "Temperatura barwowa",
+      "temp_value": "3000K–5000K (robocze + relaks)",
+      "brightness_label": "Jasność",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Długość taśmy (4–8 m²)",
+      "length_value": "3–6 metrów",
+      "ip_label": "Klasa ochrony",
+      "ip_value": "Zasilacz poza strefą 1/2",
+      "install_label": "Instalacja",
+      "install_value": "Obrys sufitu w kasecie"
+    },
+    "products": {
+      "title": "Zestawy LED do sufitów łazienki",
+      "subtitle": "Wszystko w zestawie — taśma LED, zasilacz, sterownik, pilot i złączki.",
+      "from": "Od",
+      "view_kit": "Zobacz zestaw",
+      "view_all": "Wszystkie produkty"
+    },
+    "stats": {
+      "cri_label": "Wskaźnik oddawania barw",
+      "voltage_label": "Bezpieczne napięcie robocze",
+      "lifespan_label": "Żywotność LED",
+      "warranty_label": "Gwarancja",
+      "lifespan_value": "10 lat",
+      "warranty_value": "24 miesiące"
+    },
+    "articles": {
+      "title": "Pomocne artykuły o oświetleniu łazienki",
+      "badge": "Polecany artykuł",
+      "read_more": "Czytaj artykuł",
+      "article1_title": "Poradnik oświetlenia sufitowego LED",
+      "article1_desc": "Kompletny poradnik oświetlenia sufitowego LED z technologią, planowaniem i wskazówkami instalacyjnymi.",
+      "article2_title": "Ciepłe czy zimne światło LED: kompletny poradnik",
+      "article2_desc": "Jak wybrać odpowiednią temperaturę barwową LED dla każdego pomieszczenia, w tym łazienki.",
+      "article3_title": "Jak zainstalować taśmę LED",
+      "article3_desc": "Przewodnik krok po kroku do instalacji taśmy LED na suficie ze wskazówkami dla stref wilgotnych."
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": {
+        "question": "Czy instalacja taśmy LED w łazience jest bezpieczna?",
+        "answer": "Tak, przy prawidłowej instalacji. Nasze systemy używają niskonapięciowych taśm (12V/24V DC) z zasilaczem poza łazienką. Spełnia to europejskie normy bezpieczeństwa elektrycznego dla łazienek."
+      },
+      "q2": {
+        "question": "Jaka temperatura barwowa jest najlepsza do oświetlenia LED łazienki?",
+        "answer": "Do łazienek neutralna lub zimna biel (3500K–5000K) najlepiej sprawdza się do pielęgnacji. Zestawy CCT pozwalają przełączyć się na ciepłą biel (2700K) do relaksującej kąpieli."
+      },
+      "q3": {
+        "question": "Ile metrów taśmy LED potrzebuję do łazienki?",
+        "answer": "Większość standardowych łazienek (4–8 m²) potrzebuje 3–6 metrów taśmy LED. Nasz minimalny zestaw zaczyna się od 5 metrów, co odpowiada większości łazienek."
+      },
+      "q4": {
+        "question": "Czy oświetlenie LED w łazience pomaga przy aplikacji makijażu?",
+        "answer": "Absolutnie. To jedna z głównych zalet. Taśmy COB z CRI 90+ dokładnie oddają odcienie skóry, więc to co widzisz w lustrze odpowiada temu jak wyglądasz w naturalnym świetle."
+      },
+      "q5": {
+        "question": "Czy można ściemniać sufitowe światło LED w łazience?",
+        "answer": "Tak, wszystkie nasze zestawy zawierają ściemniany sterownik. Płynne ściemnianie 0–100% bez migotania."
+      }
+    },
+    "cta": {
+      "title": "Ulepsz oświetlenie łazienki już dziś",
+      "subtitle": "Profesjonalne zestawy LED do łazienek. Lepsze światło, dokładne kolory, bezpieczna niskonapięciowa instalacja.",
+      "primary": "Kup zestaw LED",
+      "secondary": "Zadaj pytanie"
+    }
+  },
+  "hallway_lighting": {
+    "seo": {
+      "title": "Oświetlenie sufitu LED do korytarza — jasne, eleganckie, energooszczędne",
+      "description": "Oświetl korytarz dzięki premium oświetleniu sufitowemu LED. Smukłe taśmy COB sprawiające, że wąskie przestrzenie wyglądają szerzej i jaśniej. Kompletne zestawy z darmową dostawą."
+    },
+    "badge": "Oświetlenie LED korytarza",
+    "hero": {
+      "title_line1": "Oświetlenie sufitu LED",
+      "title_line2": "do Twojego korytarza",
+      "subtitle": "Zrób świetne pierwsze wrażenie eleganckim oświetleniem sufitowym LED w korytarzu. Jasne, równomierne światło sprawia, że wąskie przestrzenie wydają się otwarte i gościnne.",
+      "cta_primary": "Kup zestaw LED",
+      "cta_secondary": "Poradnik instalacji"
+    },
+    "intro": {
+      "title": "Dlaczego oświetlenie LED doskonale sprawdza się w korytarzach",
+      "p1": "Korytarze są często najgorzej oświetlonymi miejscami w domu, choć są używane cały czas. Tradycyjne pojedyncze oprawy tworzą ciemne plamy na końcach korytarzy. Taśma LED całkowicie rozwiązuje ten problem.",
+      "p2": "Taśmy LED wzdłuż całego sufitu tworzą ciągłe, równomierne oświetlenie od końca do końca. Pośrednie światło sprawia, że wąskie korytarze wydają się wizualnie znacznie szersze i bardziej przyjazne.",
+      "p3": "Ponieważ światło w korytarzu często świeci przez długi czas, efektywność energetyczna jest bardzo ważna. Taśmy LED zużywają 60–80% mniej energii niż tradycyjne żarówki. System LED korytarza zwykle zwraca się w ciągu 12–18 miesięcy."
+    },
+    "benefits": {
+      "title": "Zalety oświetlenia LED korytarza",
+      "subtitle": "Jasne, efektywne i eleganckie — stworzone dla przestrzeni używanych przez cały dzień.",
+      "visibility": {
+        "title": "Doskonała widoczność",
+        "desc": "Równomierne oświetlenie od końca do końca eliminuje ciemne plamy i zapewnia bezpieczne poruszanie się o każdej porze."
+      },
+      "space": {
+        "title": "Przestrzeń wydaje się większa",
+        "desc": "Pośrednie światło sufitowe tworzy efekt wizualnego rozszerzenia, sprawiając że wąskie korytarze wydają się szersze."
+      },
+      "energy": {
+        "title": "Maksymalna efektywność energetyczna",
+        "desc": "Taśmy LED zużywają 60–80% mniej energii — ważne dla oświetlenia działającego wiele godzin dziennie."
+      },
+      "safety": {
+        "title": "Bezpieczne nocne poruszanie się",
+        "desc": "Tryb nocny z minimalną jasnością zapewnia bezpieczne oświetlenie do nocnego poruszania się bez budzenia domowników."
+      }
+    },
+    "features": {
+      "title": "Funkcje dla korytarzy",
+      "linear": {
+        "title": "Liniowe światło od końca do końca",
+        "desc": "Ciągłe taśmy LED biegną przez całą długość korytarza, zapewniając idealnie równomierne oświetlenie."
+      },
+      "motion": {
+        "title": "Kompatybilność z czujnikiem ruchu",
+        "desc": "Podłącz czujnik ruchu — światła aktywują się tylko gdy potrzeba, automatycznie oszczędzając energię."
+      },
+      "night": {
+        "title": "Tryb nocny",
+        "desc": "Ustaw tryb 5–10% przyciemnionej ciepłej bieli na noc. Wystarczy do bezpiecznego poruszania się bez zakłócania snu."
+      },
+      "narrow": {
+        "title": "Smukły profil dla wąskich przestrzeni",
+        "desc": "Nasze taśmy COB mają zaledwie kilka milimetrów grubości, idealnie mieszczą się w każdej kasecie sufitowej."
+      },
+      "instant": {
+        "title": "Natychmiastowa pełna jasność",
+        "desc": "Taśmy LED osiągają pełną jasność natychmiastowo — idealne dla przestrzeni, przez którą szybko przechodzisz wiele razy dziennie."
+      }
+    },
+    "setup": {
+      "title": "Zalecana konfiguracja dla korytarza",
+      "temp_label": "Temperatura barwowa",
+      "temp_value": "3000K–4000K (neutralno-ciepła)",
+      "brightness_label": "Jasność",
+      "brightness_value": "600–800 lm/m",
+      "length_label": "Długość taśmy (typowy korytarz)",
+      "length_value": "2–5 metrów",
+      "control_label": "Sterowanie",
+      "control_value": "Włącznik + opcjonalnie aplikacja",
+      "install_label": "Instalacja",
+      "install_value": "Obrys sufitu lub liniowy bieg"
+    },
+    "products": {
+      "title": "Zestawy LED do sufitów korytarza",
+      "subtitle": "Kompletne zestawy z taśmą, zasilaczem, sterownikiem i złączkami.",
+      "from": "Od",
+      "view_kit": "Zobacz zestaw",
+      "view_all": "Wszystkie produkty"
+    },
+    "stats": {
+      "length_label": "Typowa długość taśmy korytarza",
+      "savings_label": "Oszczędność energii vs tradycyjne",
+      "lifespan_label": "Żywotność LED",
+      "warranty_label": "Gwarancja",
+      "lifespan_value": "10 lat",
+      "warranty_value": "24 miesiące"
+    },
+    "articles": {
+      "title": "Pomocne artykuły o oświetleniu korytarza",
+      "badge": "Polecany artykuł",
+      "read_more": "Czytaj artykuł",
+      "article1_title": "Poradnik oświetlenia sufitowego LED",
+      "article1_desc": "Kompletny poradnik oświetlenia sufitowego LED z planowaniem, instalacją i wskazówkami projektowymi dla każdego pomieszczenia.",
+      "article2_title": "Jak zainstalować taśmę LED",
+      "article2_desc": "Przewodnik krok po kroku do instalacji taśm LED na suficie — idealny dla wąskich korytarzy.",
+      "article3_title": "Pomysły na oświetlenie LED dla każdego pokoju",
+      "article3_desc": "Inspirujące pomysły na oświetlenie LED dla wszystkich typów pomieszczeń, w tym korytarzy."
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": {
+        "question": "Ile metrów taśmy LED potrzebuję do korytarza?",
+        "answer": "Większość standardowych korytarzy potrzebuje 2–5 metrów taśmy LED w zależności od długości. Nasz startowy zestaw 5m jest idealny dla większości korytarzy."
+      },
+      "q2": {
+        "question": "Jaka temperatura barwowa jest najlepsza do oświetlenia LED korytarza?",
+        "answer": "Neutralna biel (3500K–4000K) to najlepszy wszechstronny wybór dla korytarzy — wystarczająco jasna i przyjazna. Unikaj bardzo zimnej bieli (5000K+) w korytarzach, ponieważ wygląda klinicznie."
+      },
+      "q3": {
+        "question": "Czy mogę zainstalować sufitowe oświetlenie LED w wąskim korytarzu?",
+        "answer": "Absolutnie — taśmy LED są idealne do wąskich korytarzy. W przeciwieństwie do masywnych opraw, taśmy COB LED leżą płasko w małej kasecie sufitowej. Sprawiają że wąskie przestrzenie wyglądają wizualnie szerzej."
+      },
+      "q4": {
+        "question": "Ile kosztuje utrzymanie oświetlenia LED w korytarzu przez cały dzień?",
+        "answer": "Bardzo mało. Taśma LED 5 metrów zużywa około 25–50W. Działanie przez 24 godziny kosztuje około 5–10 centów dziennie — około 1,50–3,00 euro miesięcznie."
+      },
+      "q5": {
+        "question": "Czy można używać taśm LED z czujnikami ruchu w korytarzach?",
+        "answer": "Tak, nasze systemy LED są w pełni kompatybilne z zewnętrznymi czujnikami ruchu. Światła aktywują się przy wejściu i wyłączają po ustawionym czasie. Taśmy LED natychmiast reagują do pełnej jasności."
+      }
+    },
+    "cta": {
+      "title": "Rozjaśnij swój korytarz już dziś",
+      "subtitle": "Smukłe, eleganckie zestawy LED do korytarzy. Darmowa dostawa, łatwa instalacja, gwarancja 24 miesięcy.",
+      "primary": "Kup zestaw LED",
+      "secondary": "Zadaj pytanie"
+    }
+  },
+  "office_lighting": {
+    "seo": {
+      "title": "Oświetlenie sufitu LED do biura — bez migotania, wspomagające skupienie, inteligentne",
+      "description": "Ulepsz domowe biuro profesjonalnym oświetleniem sufitowym LED. Taśmy COB bez migotania, idealna temperatura barwowa do skupienia, harmonogram Wi-Fi. Kompletne zestawy z darmową dostawą."
+    },
+    "badge": "Oświetlenie LED biura",
+    "hero": {
+      "title_line1": "Oświetlenie sufitu LED",
+      "title_line2": "do Twojego biura",
+      "subtitle": "Pracuj lepiej z profesjonalnym oświetleniem LED zaprojektowanym dla skupienia i produktywności. Bez migotania, bez odbłysków COB przy idealnej temperaturze barwowej dla długotrwałej koncentracji.",
+      "cta_primary": "Kup zestaw LED",
+      "cta_secondary": "Poradnik instalacji"
+    },
+    "intro": {
+      "title": "Dlaczego Twoje domowe biuro potrzebuje lepszego oświetlenia LED",
+      "p1": "Złe oświetlenie to jedna z najbardziej niedocenianych przyczyn obniżonej produktywności, zmęczenia oczu i bólów głowy w domowych biurach. Jedna żarówka tworzy bezpośrednie odblaski na ekranach, nierówne cienie na biurku.",
+      "p2": "Profesjonalne oświetlenie sufitowe LED rozwiązuje te problemy u źródła. Taśmy COB LED w kasecie sufitowej tworzą szerokoktne, pośrednie oświetlenie równomiernie rozkładające się po całej przestrzeni roboczej bez odbłysków.",
+      "p3": "Inteligentne sterowanie oznacza że oświetlenie biura automatycznie dostosowuje się do Twojego harmonogramu. Zaprogramuj zimną biel (4000K–5000K) na poranne sesje robocze i ocieplenie wieczorem."
+    },
+    "benefits": {
+      "title": "Zalety oświetlenia LED biura",
+      "subtitle": "Profesjonalne oświetlenie zwiększające skupienie, redukujące zmęczenie i świetnie wyglądające na wideorozmowach.",
+      "focus": {
+        "title": "Zwiększa skupienie i produktywność",
+        "desc": "Zimne białe światło (4000K–5000K) udowodniono zwiększa czujność i wydajność poznawczą w godzinach pracy."
+      },
+      "eyestrain": {
+        "title": "Redukuje zmęczenie oczu",
+        "desc": "Równomierne oświetlenie bez migotania eliminuje mikromigotanie powodujące zmęczenie oczu podczas długich sesji roboczych."
+      },
+      "energy": {
+        "title": "Efektywność energetyczna przez cały dzień",
+        "desc": "Taśmy LED zużywają 60–80% mniej energii — ważne dla przestrzeni oświetlonych 8+ godzin dziennie."
+      },
+      "glare": {
+        "title": "Eliminacja odbłysków na ekranie",
+        "desc": "Pośrednie oświetlenie sufitowe eliminuje bezpośrednie odbicia na monitorach powodowane przez tradycyjne oprawy sufitowe."
+      }
+    },
+    "features": {
+      "title": "Funkcje usprawniające Twój dzień pracy",
+      "cct": {
+        "title": "Temperatura barwowa zoptymalizowana do pracy",
+        "desc": "4000K–5000K zimna biel naśladuje światło dzienne i utrzymuje czujność i skupienie — znacznie lepsze niż ciepłe żarówki do dziennej pracy."
+      },
+      "flicker": {
+        "title": "Praca bez migotania",
+        "desc": "Nasze taśmy COB działają z wysoką częstotliwością z zerowym migotaniem. Żadnego zmęczenia oczu, bólów głowy, zmęczenia nawet po 8+ godzinach użytkowania."
+      },
+      "schedule": {
+        "title": "Automatyczny dzienny harmonogram",
+        "desc": "Zaprogramuj włączenie o rozpoczęciu pracy, regulację w południe i ocieplenie wieczorem — w pełni automatycznie przez aplikację."
+      },
+      "cri": {
+        "title": "Wysoki CRI dla dokładnych kolorów",
+        "desc": "CRI 90+ zapewnia dokładne odwzorowanie kolorów — ważne przy pracy projektowej, edycji zdjęć i precyzyjnych zadaniach wizualnych."
+      },
+      "uniform": {
+        "title": "Równomierne oświetlenie biurka",
+        "desc": "Obwodowe taśmy sufitowe oświetlają całą przestrzeń roboczą równomiernie, eliminując cienie utrudniające czytanie i pisanie."
+      }
+    },
+    "setup": {
+      "title": "Zalecana konfiguracja dla biura",
+      "temp_label": "Temperatura barwowa",
+      "temp_value": "4000K–5000K (biel robocza)",
+      "brightness_label": "Jasność",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Długość taśmy (8–15 m²)",
+      "length_value": "4–8 metrów",
+      "control_label": "Sterowanie",
+      "control_value": "Aplikacja + harmonogram + głos",
+      "install_label": "Instalacja",
+      "install_value": "Obrys sufitu lub liniowy"
+    },
+    "products": {
+      "title": "Zestawy LED do sufitów biura",
+      "subtitle": "Wszystko w zestawie — taśma LED, zasilacz, sterownik i złączki.",
+      "from": "Od",
+      "view_kit": "Zobacz zestaw",
+      "view_all": "Wszystkie produkty"
+    },
+    "stats": {
+      "temp_label": "Optymalna robocza temperatura barwowa",
+      "cri_label": "Wskaźnik oddawania barw",
+      "lifespan_label": "Żywotność LED",
+      "warranty_label": "Gwarancja",
+      "lifespan_value": "10 lat",
+      "warranty_value": "24 miesiące"
+    },
+    "articles": {
+      "title": "Pomocne artykuły o oświetleniu biura",
+      "badge": "Polecany artykuł",
+      "read_more": "Czytaj artykuł",
+      "article1_title": "Poradnik oświetlenia sufitowego LED",
+      "article1_desc": "Kompletny podręcznik oświetlenia sufitowego LED dla domowych biur i przestrzeni roboczych.",
+      "article2_title": "Ile lumenów potrzebujesz do oświetlenia sufitowego?",
+      "article2_desc": "Wymagania lumenów według rodzaju pomieszczenia, w tym przestrzeni biurowych — dowiedz się jak obliczyć właściwą jasność.",
+      "article3_title": "Inteligentne oświetlenie sufitowe LED",
+      "article3_desc": "Jak inteligentne systemy LED z harmonogramem i automatyzacją zwiększają produktywność i redukują zmęczenie oczu."
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "q1": {
+        "question": "Jaka temperatura barwowa jest najlepsza do domowego biura?",
+        "answer": "Zimna do neutralnej bieli (4000K–5000K) jest optymalna dla środowisk pracy. Ten zakres blisko naśladuje naturalne światło dzienne. Nasze zestawy CCT pozwalają na zimną biel w godzinach pracy i cieplejsze odcienie wieczorem."
+      },
+      "q2": {
+        "question": "Jak oświetlenie sufitowe LED redukuje zmęczenie oczu podczas pracy?",
+        "answer": "Zmęczenie oczu od oświetlenia biurowego ma dwie główne przyczyny: bezpośrednie odblaski i migotanie. Taśmowe oświetlenie sufitowe LED rozwiązuje oba problemy — pośrednie oświetlenie eliminuje odblaski, a nasze taśmy COB działają bez migotania."
+      },
+      "q3": {
+        "question": "Ile metrów taśmy LED potrzebuję do domowego biura?",
+        "answer": "Do typowego domowego biura (8–15 m²) wystarczy 4–8 metrów taśmy LED do obwodowego oświetlenia sufitowego. Zmierz obwód sufitu a my polecamy właściwy rozmiar zestawu."
+      },
+      "q4": {
+        "question": "Czy mogę używać sufitowego oświetlenia LED do wideorozmów?",
+        "answer": "Doskonały wybór. Pośrednie oświetlenie sufitowe LED zapewnia równomierne, pochlebne oświetlenie wyglądające profesjonalnie na wideorozmowach. Taśmy z wysokim CRI zapewniają dokładne odwzorowanie odcieni skóry."
+      },
+      "q5": {
+        "question": "Czy mogę sterować oświetleniem LED biura według harmonogramu?",
+        "answer": "Tak. Nasze zestawy Wi-Fi obsługują pełny harmonogram — włączenie o rozpoczęciu pracy, automatyczna regulacja w południe i ocieplenie wieczorem. Kompatybilne z Alexa i Google Home."
+      }
+    },
+    "cta": {
+      "title": "Zbuduj swoje idealne środowisko pracy",
+      "subtitle": "Profesjonalne oświetlenie LED do domowych biur. Bez migotania, wspomagające skupienie, inteligentne sterowanie. Darmowa dostawa.",
+      "primary": "Kup zestaw LED",
+      "secondary": "Zadaj pytanie"
+    }
   }
 }
