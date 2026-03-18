@@ -1335,414 +1335,526 @@
   },
   "living_room_lighting": {
     "seo": {
-      "title": "LED osvětlení stropu v obývacím pokoji — COB pásky, Wi-Fi, bez teček",
-      "description": "Proměňte svůj obývací pokoj prémiovým LED osvětlením stropu. COB pásky bez teček, nastavitelná teplota světla a Wi-Fi ovládání. Vhodné pro napínané stropy. Doprava zdarma.",
-      "keywords": "LED osvětlení obývací pokoj, LED strop obývací pokoj, COB pásek obývací pokoj, stropní osvětlení obývací pokoj"
+      "title": "LED osvětlení stropu pro obývací pokoj — atmosférické, stmívatelné, chytré",
+      "description": "Proměňte obývací pokoj prémiovým LED osvětlením stropu. COB pásky s nastavitelnou teplotou barvy, plynným stmíváním a Wi-Fi ovládáním. Vhodné pro každý typ stropu. Doprava zdarma."
     },
-    "badge": "Nejoblíbenější místnost",
+    "badge": "LED osvětlení obývacího pokoje",
     "hero": {
-      "title": "LED osvětlení stropu pro obývací pokoj",
-      "subtitle": "Vytvořte dokonalou atmosféru s prémiovými COB LED pásky bez viditelných teček. Wi-Fi ovládání, plynné stmívání, instalace za hodiny.",
-      "cta_primary": "Vybrat sadu",
-      "cta_secondary": "Poradit se"
+      "title_line1": "LED osvětlení stropu",
+      "title_line2": "pro váš obývací pokoj",
+      "subtitle": "Vytvořte dokonalou atmosféru obývacího pokoje s prémiovým COB LED osvětlením stropu. Od jasného světla pro společnost po útulné světlo filmového večera — jeden systém se přizpůsobí každému okamžiku, ovládaný z telefonu.",
+      "cta_primary": "Vybrat LED sadu",
+      "cta_secondary": "Průvodce instalací"
     },
     "intro": {
-      "title": "Moderní osvětlení pro váš obývací pokoj",
-      "text": "Obývací pokoj potřebuje univerzální osvětlení — od jasné bílé pro čtení po teplou atmosféru pro relaxaci. Naše COB LED sady to zajistí snadno a elegantně."
+      "title": "Proč LED osvětlení stropu proměňuje váš obývací pokoj",
+      "p1": "Obývací pokoj je srdcem vašeho domova — prostor pro relaxaci, zábavu, práci i vše ostatní. Tradiční stropní osvětlení zde selhává: jediná žárovka vytváří ostré stíny, omezuje možnosti nálady a plýtvá energií. Moderní LED stropní pásky to mění.",
+      "p2": "COB LED pásky montované podél obvodu stropu poskytují měkké, rovnoměrné nepřímé světlo, které působí přirozeně a luxusně. Na rozdíl od reflektorů, které vytvářejí ostrá světla a tmavé rohy, obvodové osvětlení rovnoměrně zaplní celou místnost.",
+      "p3": "S plnou regulací CCT (teplá 2700K až studená 6500K) a plynným stmíváním 0–100% okamžitě přepnete z jasného pracovního světla na kinematografický filmový režim až po intimní večeři — vše jednou aplikací nebo hlasovým příkazem."
     },
     "benefits": {
-      "title": "Proč COB LED pro obývací pokoj?",
-      "b1_title": "Rovnoměrné světlo",
-      "b1_desc": "Žádné viditelné tečky ani skvrny — jen plynulé, příjemné světlo po celém stropě.",
-      "b2_title": "Nastavitelná atmosféra",
-      "b2_desc": "Plynné stmívání a nastavení teploty barvy pro každou náladu a příležitost.",
-      "b3_title": "Snadná instalace",
-      "b3_desc": "Samolepicí COB pásek s 3M lepidlem — montáž bez vrtání, za 2–3 hodiny.",
-      "b4_title": "Chytré ovládání",
-      "b4_desc": "Wi-Fi ovladač, mobilní aplikace, hlasové příkazy Alexa a Google Home."
+      "title": "Výhody LED osvětlení obývacího pokoje",
+      "subtitle": "Jeden inteligentní systém pro každou náladu a aktivitu v nejpoužívanější místnosti.",
+      "ambiance": {
+        "title": "Dokonalá kontrola atmosféry",
+        "desc": "Nastavte přesnou náladu pro každou příležitost — od jasných společenských setkání po teplé, relaxované večery."
+      },
+      "scenes": {
+        "title": "Předvolby scén",
+        "desc": "Uložte si scény pro televizi, večeři, čtení a večírky — přepínejte okamžitě jedním klepnutím."
+      },
+      "dimming": {
+        "title": "Plynné stmívání",
+        "desc": "Rozsah stmívání 0–100% bez blikání a bzučení — hedvábně plynné přechody mezi úrovněmi jasu."
+      },
+      "uniform": {
+        "title": "Rovnoměrné světlo bez stínů",
+        "desc": "Technologie COB zajišťuje rovnoměrné osvětlení bez viditelných teček — elegantní na napínaných i sádrových stropech."
+      }
     },
     "features": {
-      "title": "Technické parametry",
-      "f1_title": "COB technologie",
-      "f1_desc": "Chip-on-Board LED pro rovnoměrné světlo bez teček.",
-      "f2_title": "Wi-Fi ovládání",
-      "f2_desc": "Kompatibilní s Alexa, Google Home a mobilní aplikací.",
-      "f3_title": "Plynné stmívání",
-      "f3_desc": "0–100% stmívání pro přesné nastavení osvětlení.",
-      "f4_title": "Nastavitelná teplota",
-      "f4_desc": "Od teplé 2700K po studenou 6500K bílou."
+      "title": "Navrženo pro všestrannost obývacího pokoje",
+      "entertainment": {
+        "title": "Zábavní režim",
+        "desc": "Synchronizujte osvětlení s hudbou nebo nastavte dynamické barevné efekty pro večírky přímo z aplikace."
+      },
+      "movie": {
+        "title": "Režim kino",
+        "desc": "Ztlumte na 10–20% teplé bílé pro dokonalou filmovou atmosféru bez únavy očí z kontrastu."
+      },
+      "social": {
+        "title": "Společenská a večeřní atmosféra",
+        "desc": "Teplé neutrální světlo (3000K) při 70% jasu vytváří přívětivé, lichotivé prostředí pro hosty."
+      },
+      "accent": {
+        "title": "Akcentní osvětlení",
+        "desc": "Použijte obvodovou instalaci k zvýraznění architektonických prvků, uměleckých děl nebo polic krásným nepřímým světlem."
+      },
+      "smart": {
+        "title": "Plná integrace s chytrým domem",
+        "desc": "Funguje s Alexa, Google Home a hlavními platformami chytré domácnosti. Naplánujte, automatizujte a ovládejte hlasem."
+      }
     },
     "setup": {
-      "title": "Instalace krok za krokem",
-      "s1_title": "Změřte obvod",
-      "s1_desc": "Změřte délku stropního obvodu obývacího pokoje a vyberte správnou délku pásku.",
-      "s2_title": "Připevněte profil",
-      "s2_desc": "Nainstalujte hliníkový profil podél stropu samolepicím nebo šrouby.",
-      "s3_title": "Vložte pásek",
-      "s3_desc": "Vložte COB pásek do profilu a připojte k napájení.",
-      "s4_title": "Spárujte ovladač",
-      "s4_desc": "Připojte Wi-Fi ovladač a spárujte s mobilní aplikací."
+      "title": "Doporučené nastavení pro obývací pokoj",
+      "temp_label": "Teplota barvy",
+      "temp_value": "2700K–6500K (plný rozsah CCT)",
+      "brightness_label": "Jas",
+      "brightness_value": "600–1000 lm/m (nastavitelný)",
+      "length_label": "Délka pásku (15–25 m²)",
+      "length_value": "8–14 metrů",
+      "control_label": "Ovládání",
+      "control_value": "Aplikace + dálkové + hlas",
+      "install_label": "Instalace",
+      "install_value": "Obvodová lišta stropu"
     },
     "products": {
-      "title": "Doporučené sady pro obývací pokoj",
-      "subtitle": "Kompletní LED sady s vším potřebným pro instalaci"
+      "title": "LED sady pro stropy obývacích pokojů",
+      "subtitle": "Kompletní sady se vším potřebným — LED pásek, zdroj napájení, ovladač, dálkové ovládání a konektory.",
+      "from": "Od",
+      "view_kit": "Zobrazit sadu",
+      "view_all": "Zobrazit všechny produkty"
     },
     "stats": {
-      "rooms_label": "Instalací obývacích pokojů",
-      "rooms_value": "5 000+",
-      "lumens_label": "Lumenů na metr",
-      "savings_label": "Úspora energie oproti halogenu",
-      "warranty_label": "Záruka v ceně",
+      "temp_label": "Rozsah teploty barvy",
+      "dimming_label": "Rozsah stmívání",
+      "lifespan_label": "Životnost LED",
+      "warranty_label": "Záruka",
+      "lifespan_value": "10 let",
       "warranty_value": "24 měsíců"
     },
     "articles": {
-      "title": "Články o osvětlení obývacího pokoje",
+      "title": "Užitečné články o osvětlení obývacího pokoje",
       "badge": "Doporučený článek",
       "read_more": "Číst článek",
-      "article1_title": "Jak vybrat LED osvětlení pro obývací pokoj",
-      "article1_desc": "Kompletní průvodce výběrem a instalací LED osvětlení stropu v obývacím pokoji.",
-      "article2_title": "Kolik lumenů potřebujete?",
-      "article2_desc": "Zjistěte, jak vypočítat přesné požadavky na lumeny pro váš obývací pokoj.",
-      "article3_title": "Průvodce LED osvětlením stropu",
-      "article3_desc": "Vše o LED osvětlení stropu — technologie, plánování, instalace."
+      "article1_title": "Průvodce LED osvětlením stropu",
+      "article1_desc": "Kompletní referenční průvodce LED osvětlením stropu pokrývající základy technologie, plánování, metody instalace a chytrou integraci.",
+      "article2_title": "Chytré LED osvětlení stropu",
+      "article2_desc": "Kompletní průvodce chytrým LED osvětlením stropu: Wi-Fi, hlasové ovládání, automatizace a integrace s celou domácností.",
+      "article3_title": "Nápady na LED osvětlení stropu pro každou místnost",
+      "article3_desc": "Inspirativní nápady na design LED osvětlení stropu pro obývací pokoje, ložnice, kuchyně a chodby — s praktickými tipy pro instalaci."
     },
     "faq": {
       "title": "Často kladené otázky",
       "q1": {
-        "question": "Jaký pásek je nejlepší pro obývací pokoj?",
-        "answer": "Pro obývací pokoj doporučujeme RGB+CCT sadu — umožňuje nastavit barvu i teplotu světla pro různé nálady."
+        "question": "Kolik metrů LED pásku potřebuji pro obývací pokoj?",
+        "answer": "Pro typický obývací pokoj (15–25 m²) plánujte 8–14 metrů LED pásku pro obvodové stropní osvětlení. Změřte obvod místnosti a přidejte 10 % pro rohy a spoje. Naše sady jsou v krocích po 5 m od 5 m do 30 m."
       },
       "q2": {
-        "question": "Kolik metrů pásku potřebuji?",
-        "answer": "Změřte obvod místnosti. Standardní obývací pokoj (20 m²) obvykle potřebuje 14–18 metrů pásku."
+        "question": "Mohou LED stropní pásky nahradit tradiční světla v obývacím pokoji?",
+        "answer": "Ano, absolutně. Správně navržený systém LED stropních pásků poskytuje dostatečné okolní osvětlení pro obývací pokoj. Při plném jasu (100 %) COB LED pásky s 800+ lm/m zajišťují pohodlné osvětlení pro všechny aktivity."
       },
       "q3": {
-        "question": "Lze pásek ovládat hlasem?",
-        "answer": "Ano, Wi-Fi ovladač je kompatibilní s Alexa a Google Home. Stačí říct: 'Nastaví obývací pokoj na teplé světlo.'"
+        "question": "Jaká teplota barvy je nejlepší pro obývací pokoj?",
+        "answer": "Pro maximální všestrannost zvolte CCT nebo RGB+CCT sadu. Teplá bílá (2700K–3000K) je ideální pro večery a vytvoření útulné atmosféry. Neutrální bílá (4000K) funguje dobře pro denní aktivity a čtení."
       },
       "q4": {
-        "question": "Je instalace vhodná pro napínané stropy?",
-        "answer": "Ano, naše profily jsou navrženy speciálně pro napínané stropy. Nepotřebujete vrtání ani úpravy."
+        "question": "Mohu použít LED stropní osvětlení pro domácí kino?",
+        "answer": "Absolutně. LED pásky jsou ideální pro domácí kina. Použijte naši RGB+CCT sadu pro nastavení tmavě červeného nebo modrého podsvícení při nízkém jasu — to snižuje únavu očí z kontrastu a zároveň dodává atmosféru."
       },
       "q5": {
-        "question": "Jak dlouho trvá instalace?",
-        "answer": "Standardní obývací pokoj lze osadit za 2–3 hodiny. Video návod je součástí každé sady."
+        "question": "Jsou LED pásky bezpečné pro napínané stropy v obývacích pokojích?",
+        "answer": "Ano. Naše COB LED pásky generují velmi málo tepla a jsou speciálně navrženy pro aplikace na napínané stropy. Provoz při nízkém napětí (12V/24V DC) zajišťuje bezpečnost a minimální výstup tepla nepoškodí napínané stropy."
       }
     },
     "cta": {
       "title": "Proměňte svůj obývací pokoj ještě dnes",
-      "subtitle": "Profesionální LED sady s dopravou zdarma. Dokonalé osvětlení pro každou náladu.",
-      "primary": "Koupit sadu LED",
-      "secondary": "Získat poradenství"
+      "subtitle": "Kompletní LED sady s dopravou zdarma. Profesionální kvalita, snadná instalace, 24měsíční záruka.",
+      "primary": "Vybrat LED sadu",
+      "secondary": "Zeptat se"
     }
   },
   "bathroom_lighting": {
     "seo": {
-      "title": "LED osvětlení stropu v koupelně — voděodolné, IP65, COB pásky",
-      "description": "Bezpečné a stylové LED osvětlení stropu pro koupelnu. COB pásky s krytím IP65, rovnoměrné světlo a Wi-Fi ovládání. Vhodné pro vlhké prostředí. Doprava zdarma.",
-      "keywords": "LED osvětlení koupelna, LED strop koupelna, voděodolný LED pásek, IP65 LED koupelna"
+      "title": "LED osvětlení stropu pro koupelnu — jasné, bezpečné, nizkonapěťové",
+      "description": "Modernizujte koupelnu prémiovým LED osvětlením stropu. COB pásky s vysokým CRI, bezpečný nizkonapěťový provoz a krásné rovnoměrné světlo. Kompletní sady s dopravou zdarma."
     },
-    "badge": "Voděodolné řešení",
+    "badge": "LED osvětlení koupelny",
     "hero": {
-      "title": "LED osvětlení stropu pro koupelnu",
-      "subtitle": "Bezpečné a elegantní osvětlení koupelny s COB LED pásky s krytím IP65. Rovnoměrné světlo bez teček, Wi-Fi ovládání.",
-      "cta_primary": "Vybrat sadu",
-      "cta_secondary": "Poradit se"
+      "title_line1": "LED osvětlení stropu",
+      "title_line2": "pro vaši koupelnu",
+      "subtitle": "Jasné, lichotivé a bezpečné LED stropní osvětlení pro koupelny. COB pásky s vysokým CRI zajišťují přesné podání barev pro péči o vzhled — abyste vždy vypadali nejlépe před odchodem z domu.",
+      "cta_primary": "Vybrat LED sadu",
+      "cta_secondary": "Průvodce instalací"
     },
     "intro": {
-      "title": "Osvětlení koupelny vyžaduje speciální přístup",
-      "text": "Koupelna je vlhké prostředí, kde záleží na bezpečnosti i estetice. Naše COB LED pásky s krytím IP65 jsou navrženy přesně pro takové podmínky."
+      "title": "Proč je LED stropní osvětlení ideální pro koupelny",
+      "p1": "Osvětlení koupelny je důležitější, než si většina lidí uvědomuje. Špatné osvětlení ztěžuje péči o vzhled — nelze přesně posoudit make-up, holení ani péči o pleť pod světly s nízkým CRI, které zkreslují tóny pleti. Správný LED stropní systém to řeší jasným, přesným a lichotivým světlem.",
+      "p2": "COB LED pásky poskytují široké, rovnoměrné osvětlení, které eliminuje stíny typické pro jednotlivá stropní svítidla. Rozmístěné podél obvodu stropu distribuují světlo rovnoměrně po celé místnosti — žádné tmavé rohy u zrcadla, žádné ostré reflektory. Výsledkem je měkké, rovnoměrné světlo jako v profesionálním salonu.",
+      "p3": "Bezpečnost je v mokrých prostorách prvořadá. Naše systémy pracují při bezpečném nízkém napětí (12V/24V DC) s napájecím zdrojem instalovaným mimo koupelnu. Pásky samotné lze umístit mimo přímý kontakt s vodou a všechny komponenty splňují evropské bezpečnostní normy."
     },
     "benefits": {
-      "title": "Proč COB LED pro koupelnu?",
-      "b1_title": "Krytí IP65",
-      "b1_desc": "Voděodolné provedení chrání pásek před vlhkostí a stříkající vodou.",
-      "b2_title": "Rovnoměrné světlo",
-      "b2_desc": "COB technologie zajišťuje plynulé osvětlení bez teček — ideální pro koupelnu.",
-      "b3_title": "Neutrální bílá",
-      "b3_desc": "4000K–5000K pro přirozené vnímání barev při líčení a holení.",
-      "b4_title": "Bezpečná instalace",
-      "b4_desc": "Nizkonapěťové 24V systémy jsou bezpečné i v koupelně."
+      "title": "Výhody LED osvětlení koupelny",
+      "subtitle": "Profesionální osvětlení koupelny s integrovanou bezpečností.",
+      "moisture": {
+        "title": "Odolnost vůči vlhkosti",
+        "desc": "Nizkonapěťový provoz s napájecím zdrojem mimo koupelnovou zónu zajišťuje bezpečný, spolehlivý provoz ve vlhkém prostředí."
+      },
+      "safe": {
+        "title": "Bezpečné nízké napětí",
+        "desc": "Provoz při 12V/24V DC je ze své podstaty bezpečný pro použití v koupelně — bez rizika i při kontaktu s vlhkostí."
+      },
+      "bright": {
+        "title": "Jasné pracovní osvětlení",
+        "desc": "Vysoký světelný výkon zajišťuje dostatek světla pro péči o vzhled, make-up a rutinní péči o pleť."
+      },
+      "uniform": {
+        "title": "Osvětlení bez stínů",
+        "desc": "Obvodové pásky eliminují stíny, které ztěžují péči o vzhled u tradičních stropních svítidel."
+      }
     },
     "features": {
-      "title": "Technické parametry",
-      "f1_title": "IP65 krytí",
-      "f1_desc": "Chráněno proti prachu a stříkající vodě.",
-      "f2_title": "24V systém",
-      "f2_desc": "Bezpečné nizkonapěťové napájení pro vlhké prostory.",
-      "f3_title": "COB pásek",
-      "f3_desc": "Rovnoměrné světlo bez viditelných teček.",
-      "f4_title": "Wi-Fi ovládání",
-      "f4_desc": "Kompatibilní s mobilní aplikací a hlasovými asistenty."
+      "title": "Vlastnosti navržené pro koupelny",
+      "mirror": {
+        "title": "Osvětlení na úrovni zrcadla",
+        "desc": "Světlo s vysokým CRI (90+) přesně reprodukuje tóny pleti a barvy — nezbytné pro make-up, péči a rutinní ošetřování."
+      },
+      "shadow": {
+        "title": "Žádné stíny na obličeji",
+        "desc": "Obvodové stropní osvětlení osvětluje váš obličej z více stran současně a eliminuje stíny, které vytváří jednotlivá stropní svítidla."
+      },
+      "spa": {
+        "title": "Režim spa atmosféra",
+        "desc": "Ztlumte na teplou bílou (2700K) pro relaxační zážitek při koupání. Jeden systém přechází od jasného pracovního světla po lázeňskou atmosféru."
+      },
+      "cri": {
+        "title": "Přesnost CRI 90+",
+        "desc": "Barvy — včetně tónů pleti — vypadají přesně jako v přirozeném světle. Žádná překvapení, když vyjdete ven."
+      },
+      "lowvoltage": {
+        "title": "Bezpečnost nízkého napětí",
+        "desc": "Napájecí zdroj je instalován mimo koupelnu. Pásek samotný pracuje při 12V/24V DC — bezpečné i při kontaktu s vlhkostí."
+      }
     },
     "setup": {
-      "title": "Instalace v koupelně",
-      "s1_title": "Plánování zón",
-      "s1_desc": "Rozdělte koupelnu na osvětlovací zóny podle bezpečnostních předpisů.",
-      "s2_title": "Příprava profilu",
-      "s2_desc": "Nainstalujte voděodolný profil v dostatečné vzdálenosti od vody.",
-      "s3_title": "Montáž pásku",
-      "s3_desc": "Vložte IP65 pásek do profilu a zajistěte voděodolné spoje.",
-      "s4_title": "Připojení a test",
-      "s4_desc": "Připojte napájení a otestujte před zakrytím."
+      "title": "Doporučené nastavení pro koupelnu",
+      "temp_label": "Teplota barvy",
+      "temp_value": "3000K–5000K (pracovní + relaxační)",
+      "brightness_label": "Jas",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Délka pásku (4–8 m²)",
+      "length_value": "3–6 metrů",
+      "ip_label": "Bezpečnostní třída",
+      "ip_value": "Napájení mimo zónu 1/2",
+      "install_label": "Instalace",
+      "install_value": "Obvodová lišta stropu"
     },
     "products": {
-      "title": "Doporučené sady pro koupelnu",
-      "subtitle": "Voděodolné LED sady s vším potřebným"
+      "title": "LED sady pro stropy koupelen",
+      "subtitle": "Vše v ceně — LED pásek, napájecí zdroj, ovladač, dálkové ovládání a konektory.",
+      "from": "Od",
+      "view_kit": "Zobrazit sadu",
+      "view_all": "Zobrazit všechny produkty"
     },
     "stats": {
-      "rooms_label": "Instalací koupelen",
-      "rooms_value": "2 500+",
-      "lumens_label": "Lumenů na metr",
-      "savings_label": "Úspora energie oproti halogenu",
-      "warranty_label": "Záruka v ceně",
+      "cri_label": "Index podání barev",
+      "voltage_label": "Bezpečné provozní napětí",
+      "lifespan_label": "Životnost LED",
+      "warranty_label": "Záruka",
+      "lifespan_value": "10 let",
       "warranty_value": "24 měsíců"
     },
     "articles": {
-      "title": "Články o osvětlení koupelny",
+      "title": "Užitečné články o osvětlení koupelny",
       "badge": "Doporučený článek",
       "read_more": "Číst článek",
-      "article1_title": "LED osvětlení stropu v koupelně",
-      "article1_desc": "Průvodce bezpečnou instalací LED osvětlení v koupelně — zóny, krytí IP a výběr sady.",
-      "article2_title": "Jaká teplota světla je nejlepší pro koupelnu?",
-      "article2_desc": "Porovnání teplé a studené bílé pro koupelnu — co je lepší pro líčení a ranní rutinu.",
-      "article3_title": "Průvodce LED osvětlením stropu",
-      "article3_desc": "Vše o LED osvětlení stropu — technologie, plánování, instalace."
+      "article1_title": "Průvodce LED osvětlením stropu",
+      "article1_desc": "Kompletní referenční průvodce LED osvětlením stropu pokrývající základy technologie, plánování, metody instalace a chytrou integraci.",
+      "article2_title": "Teplé nebo studené LED světlo: kompletní průvodce teplotou barvy",
+      "article2_desc": "Jak vybrat správnou teplotu barvy LED pro každou místnost — včetně koupelen.",
+      "article3_title": "Jak nainstalovat LED pásky",
+      "article3_desc": "Průvodce instalací LED stropního osvětlení krok za krokem s tipy pro oblasti náchylné k vlhkosti."
     },
     "faq": {
       "title": "Často kladené otázky",
       "q1": {
-        "question": "Je LED pásek bezpečný v koupelně?",
-        "answer": "Ano, pokud použijete pásek s krytím min. IP65 a nizkonapěťový 24V systém. Naše sady jsou speciálně navrženy pro koupelny."
+        "question": "Je instalace LED pásku v koupelně bezpečná?",
+        "answer": "Ano, při správné instalaci. Naše systémy používají nizkonapěťové pásky (12V/24V DC) s napájecím zdrojem instalovaným mimo koupelnu na suchém místě. LED pásek samotný je umístěn ve stropní liště mimo přímé zdroje vody. Tento design splňuje evropské normy elektrické bezpečnosti pro koupelny."
       },
       "q2": {
-        "question": "Jaká barevná teplota je nejlepší pro koupelnu?",
-        "answer": "Doporučujeme neutrální bílou 4000K–5000K — přirozené vnímání barev pro líčení a holení."
+        "question": "Jaká teplota barvy je nejlepší pro LED osvětlení koupelny?",
+        "answer": "Pro koupelny nejlépe funguje neutrální až studená bílá (3500K–5000K) pro péči o vzhled a make-up — blíží se přirozenému dennímu světlu a zajišťuje přesné podání barev. Pokud chcete všestrannost, naše CCT sady umožňují přepnutí na teplou bílou (2700K) pro relaxační koupele."
       },
       "q3": {
-        "question": "Kde smím instalovat pásek v koupelně?",
-        "answer": "Mimo zónu 1 (přímý kontakt s vodou). Obvod stropu nebo štuková lišta jsou ideální místa."
+        "question": "Kolik metrů LED pásku potřebuji pro koupelnu?",
+        "answer": "Většina standardních koupelen (4–8 m²) potřebuje 3–6 metrů LED pásku pro obvodové stropní osvětlení. Změřte obvod koupelny a odečtěte šířky dveří. Naše nejmenší sada začíná na 5 metrech, což vyhovuje většině koupelen."
       },
       "q4": {
-        "question": "Jak dlouho trvá instalace v koupelně?",
-        "answer": "Standardní koupelna (5–10 m²) trvá 1–2 hodiny. Video návod je součástí každé sady."
+        "question": "Může LED stropní osvětlení pomoci s nanášením make-upu v koupelně?",
+        "answer": "Absolutně. To je jedna z největších výhod správného osvětlení koupelny. LED pásky s vysokým CRI (90+) přesně reprodukují tóny pleti a barvy, takže to, co vidíte v zrcadle, odpovídá tomu, jak budete vypadat v přirozeném světle."
       },
       "q5": {
-        "question": "Mohu ovládat osvětlení koupelny hlasem?",
-        "answer": "Ano, Wi-Fi ovladač je kompatibilní s Alexa a Google Home. Hlasové ovládání je pohodlné, zejména mokrýma rukama."
+        "question": "Mohu stmívat stropní LED světla v koupelně?",
+        "answer": "Ano, všechny naše LED sady obsahují stmívatelný ovladač. Stmívání je v koupelnách užitečné pro vytvoření relaxační atmosféry při koupání nebo pro noční návštěvy koupelny, kdy nechcete plný jas. Stmívání je plynulé od 0–100 % bez blikání ani bzučení."
       }
     },
     "cta": {
       "title": "Modernizujte osvětlení koupelny ještě dnes",
-      "subtitle": "Bezpečné voděodolné LED sady s dopravou zdarma.",
-      "primary": "Koupit sadu LED",
-      "secondary": "Získat poradenství"
+      "subtitle": "Profesionální LED sady navržené pro koupelny. Lepší světlo, přesné barvy, bezpečná nizkonapěťová instalace.",
+      "primary": "Vybrat LED sadu",
+      "secondary": "Zeptat se"
     }
   },
   "hallway_lighting": {
     "seo": {
-      "title": "LED osvětlení stropu v chodbě — COB pásky, pohybový senzor, Wi-Fi",
-      "description": "Elegantní a funkční LED osvětlení stropu pro chodbu. COB pásky bez teček, pohybový senzor a Wi-Fi ovládání. Snadná instalace. Doprava zdarma.",
-      "keywords": "LED osvětlení chodba, LED strop chodba, COB pásek chodba, osvětlení předsíně"
+      "title": "LED osvětlení stropu pro chodbu — jasné, elegantní, energeticky úsporné",
+      "description": "Osvětlete chodbu prémiovým LED stropním osvětlením. Tenké COB pásky, díky kterým se úzké prostory cítí širší a světlejší. Kompletní sady s dopravou zdarma."
     },
-    "badge": "Prvotní dojem",
+    "badge": "LED osvětlení chodby",
     "hero": {
-      "title": "LED osvětlení stropu pro chodbu",
-      "subtitle": "Vytvořte skvělý první dojem s prémiovými COB LED pásky. Rovnoměrné světlo bez teček, pohybový senzor a Wi-Fi ovládání.",
-      "cta_primary": "Vybrat sadu",
-      "cta_secondary": "Poradit se"
+      "title_line1": "LED osvětlení stropu",
+      "title_line2": "pro vaši chodbu",
+      "subtitle": "Udělejte skvělý první dojem elegantním LED stropním osvětlením ve vaší chodbě a koridoru. Jasné, rovnoměrné světlo, díky kterému se úzké prostory cítí otevřeně a přívětivě — s energeticky úsporným provozem 24/7.",
+      "cta_primary": "Vybrat LED sadu",
+      "cta_secondary": "Průvodce instalací"
     },
     "intro": {
-      "title": "Chodba — první dojem o vašem domě",
-      "text": "Chodba je první i poslední prostor, který hosté vidí. Kvalitní osvětlení zde vytváří příjemnou atmosféru a usnadňuje orientaci při příchodu domů."
+      "title": "Proč LED stropní osvětlení funguje perfektně v chodbách",
+      "p1": "Chodby a koridory jsou často nejhůře osvětlenými místy v domě — přesto se používají neustále během dne i noci. Tradiční jednobodová svítidla v úzkých chodbách vytvářejí tmavá místa na koncích koridorů a ostré světlo přímo pod svítidlem. LED stropní osvětlení to zcela řeší.",
+      "p2": "LED pásky vedené podél celé délky stropu vytvářejí nepřetržité, rovnoměrné osvětlení od začátku do konce. Žádná tmavá místa, žádné ostré přechodové zóny. Nepřímé světlo také vizuálně rozšiřuje úzké chodby — jednoduchý optický efekt, který proměňuje pocit z celého domu.",
+      "p3": "Protože chodby jsou osvětleny po delší dobu, energetická účinnost je zde velmi důležitá. LED pásky spotřebují o 60–80 % méně energie než tradiční žárovky a s chytrým plánováním nebo detektorem pohybu zajistíte, že světla nikdy zbytečně nesvítí."
     },
     "benefits": {
-      "title": "Proč COB LED pro chodbu?",
-      "b1_title": "Rovnoměrné světlo",
-      "b1_desc": "COB pásky bez teček osvětlí celou chodbu rovnoměrně bez tmavých míst.",
-      "b2_title": "Pohybový senzor",
-      "b2_desc": "Automatické zapínání při pohybu — pohodlné a energeticky úsporné.",
-      "b3_title": "Úzká chodba?",
-      "b3_desc": "Naše profily jsou dostupné v různých šířkách — vhodné i pro úzké chodby.",
-      "b4_title": "Teplá atmosféra",
-      "b4_desc": "Nastavitelná teplota barvy od 2700K do 6500K pro správnou náladu."
+      "title": "Výhody LED osvětlení chodby",
+      "subtitle": "Jasné, účinné a elegantní — navrženo pro prostory, které se používají celý den.",
+      "visibility": {
+        "title": "Výborná viditelnost",
+        "desc": "Rovnoměrné osvětlení od konce do konce eliminuje tmavá místa a zajišťuje bezpečný pohyb kdykoliv."
+      },
+      "space": {
+        "title": "Prostory se zdají větší",
+        "desc": "Nepřímé stropní světlo vytváří vizuální efekt rozšíření, díky kterému se úzké chodby cítí širší a otevřenější."
+      },
+      "energy": {
+        "title": "Maximální energetická účinnost",
+        "desc": "LED pásky spotřebují o 60–80 % méně energie — klíčové pro světla, která svítí mnoho hodin denně v chodbách."
+      },
+      "safety": {
+        "title": "Bezpečný noční pohyb",
+        "desc": "Tlumený noční režim poskytuje bezpečné nízkoúrovňové osvětlení pro noční pohyb bez probouzení domácnosti."
+      }
     },
     "features": {
-      "title": "Technické parametry",
-      "f1_title": "COB technologie",
-      "f1_desc": "Rovnoměrné světlo bez viditelných teček.",
-      "f2_title": "Pohybový senzor",
-      "f2_desc": "Automatické zapínání/vypínání pro úsporu energie.",
-      "f3_title": "Wi-Fi ovládání",
-      "f3_desc": "Mobilní aplikace, Alexa a Google Home.",
-      "f4_title": "Plynné stmívání",
-      "f4_desc": "0–100% stmívání pro přesné nastavení."
+      "title": "Funkce vytvořené pro chodby",
+      "linear": {
+        "title": "Lineární světlo od konce do konce",
+        "desc": "Nepřetržité LED pásky vedou celou délkou chodby a zajišťují dokonale rovnoměrné osvětlení bez tmavých míst."
+      },
+      "motion": {
+        "title": "Kompatibilita s detektorem pohybu",
+        "desc": "Připojte detektor pohybu, aby se světla aktivovala jen při potřebě — ideální pro chodby, automaticky šetří energii."
+      },
+      "night": {
+        "title": "Noční režim",
+        "desc": "Nastavte 5–10% tlumený teplý bílý režim přes noc. Dostatečné pro bezpečný pohyb bez narušení spánku nebo plýtvání energií."
+      },
+      "narrow": {
+        "title": "Tenký profil pro úzké prostory",
+        "desc": "Naše COB pásky jsou jen několik milimetrů tlusté a elegantně se vejdou do jakékoli stropní lišty bez objemu."
+      },
+      "instant": {
+        "title": "Okamžitý plný jas",
+        "desc": "LED pásky dosáhnou plného jasu okamžitě — žádná doba náběhu. Perfektní pro prostor, kterým rychle procházíte mnohokrát denně."
+      }
     },
     "setup": {
-      "title": "Instalace v chodbě",
-      "s1_title": "Změřte chodbu",
-      "s1_desc": "Změřte délku chodby a výšku stropu pro výběr správné sady.",
-      "s2_title": "Upevněte profil",
-      "s2_desc": "Nainstalujte profil podél středu stropu nebo po obvodu.",
-      "s3_title": "Vložte pásek",
-      "s3_desc": "Vložte COB pásek do profilu a připojte k napájení.",
-      "s4_title": "Nastavte senzor",
-      "s4_desc": "Nakonfigurujte pohybový senzor a časovač přes aplikaci."
+      "title": "Doporučené nastavení pro chodbu",
+      "temp_label": "Teplota barvy",
+      "temp_value": "3000K–4000K (neutrálně-teplá)",
+      "brightness_label": "Jas",
+      "brightness_value": "600–800 lm/m",
+      "length_label": "Délka pásku (typická chodba)",
+      "length_value": "2–5 metrů",
+      "control_label": "Ovládání",
+      "control_value": "Vypínač + volitelně aplikace",
+      "install_label": "Instalace",
+      "install_value": "Obvod stropu nebo lineární průběh"
     },
     "products": {
-      "title": "Doporučené sady pro chodbu",
-      "subtitle": "Kompletní LED sady pro chodbu a předsíň"
+      "title": "LED sady pro stropy chodeb",
+      "subtitle": "Kompletní sady se vším potřebným — pásek, napájení, ovladač a konektory.",
+      "from": "Od",
+      "view_kit": "Zobrazit sadu",
+      "view_all": "Zobrazit všechny produkty"
     },
     "stats": {
-      "rooms_label": "Instalací chodeb",
-      "rooms_value": "3 000+",
-      "lumens_label": "Lumenů na metr",
-      "savings_label": "Úspora energie oproti halogenu",
-      "warranty_label": "Záruka v ceně",
+      "length_label": "Typická délka pásku chodby",
+      "savings_label": "Úspora energie vs tradiční",
+      "lifespan_label": "Životnost LED",
+      "warranty_label": "Záruka",
+      "lifespan_value": "10 let",
       "warranty_value": "24 měsíců"
     },
     "articles": {
-      "title": "Články o osvětlení chodby",
+      "title": "Užitečné články o osvětlení chodby",
       "badge": "Doporučený článek",
       "read_more": "Číst článek",
-      "article1_title": "Jak osvětlit chodbu LED pásky",
-      "article1_desc": "Tipy pro výběr a instalaci LED osvětlení v chodbě a předsíni.",
-      "article2_title": "Moderní nápady na LED osvětlení stropu",
-      "article2_desc": "Inspirace a nápady pro elegantní LED osvětlení v každém prostoru.",
-      "article3_title": "Průvodce LED osvětlením stropu",
-      "article3_desc": "Vše o LED osvětlení stropu — technologie, plánování, instalace."
+      "article1_title": "Průvodce LED osvětlením stropu",
+      "article1_desc": "Kompletní průvodce LED osvětlením stropu s tipy pro plánování, instalaci a design pro každou místnost včetně chodeb.",
+      "article2_title": "Jak nainstalovat LED pásky",
+      "article2_desc": "Průvodce instalací LED pásků na strop krok za krokem — ideální pro úzké chodby a koridory.",
+      "article3_title": "Nápady na LED osvětlení stropu pro každou místnost",
+      "article3_desc": "Inspirativní nápady na design LED stropního osvětlení pro všechny typy místností, včetně chodeb a předsíní."
     },
     "faq": {
       "title": "Často kladené otázky",
       "q1": {
-        "question": "Jaká délka pásku je potřeba pro chodbu?",
-        "answer": "Záleží na délce chodby. Standardní chodba (3–5 m) potřebuje 6–12 metrů pásku pro obvodovou instalaci."
+        "question": "Kolik metrů LED pásku potřebuji pro chodbu?",
+        "answer": "Většina standardních chodeb potřebuje 2–5 metrů LED pásku v závislosti na délce. Změřte celkovou délku průběhu stropu chodby a přidejte 10 % pro spoje. Naše startovací sada na 5 m je ideální pro většinu chodeb."
       },
       "q2": {
-        "question": "Funguje pohybový senzor s LED pásky?",
-        "answer": "Ano, naše Wi-Fi ovladače podporují pohybové senzory. Lze nastavit dobu svícení po detekci pohybu."
+        "question": "Jaká teplota barvy je nejlepší pro LED osvětlení chodby?",
+        "answer": "Neutrální bílá (3500K–4000K) je nejlepší volbou pro chodby — dostatečně jasná, aby působila přívětivě a funkčně, aniž by byla drsná. Pokud vaše chodba navazuje na teplejší obytné prostory, teplá bílá (2700K–3000K) vytváří harmoničtější přechod."
       },
       "q3": {
-        "question": "Jaká barevná teplota je nejlepší pro chodbu?",
-        "answer": "Doporučujeme teplou nebo neutrální bílou (3000K–4000K) pro příjemné uvítání."
+        "question": "Mohu instalovat LED stropní osvětlení v úzké chodbě?",
+        "answer": "Absolutně — LED pásky jsou ideální pro úzké chodby. Na rozdíl od objemných svítidel COB LED pásky leží ploché v malé stropní liště bez vystupujících prvků. Díky rovnoměrnému, nepřímému osvětlení vizuálně rozšiřují prostor."
       },
       "q4": {
-        "question": "Lze instalovat pásek na nízký strop?",
-        "answer": "Ano, naše profily mají výšku pouhých 14 mm, takže jsou vhodné i pro nízké stropy."
+        "question": "Kolik stojí provoz LED osvětlení chodby po celý den?",
+        "answer": "Velmi málo. Pětimetrový COB LED pásek spotřebuje přibližně 25–50 W celkem. Provoz 24 hodin při průměrných tarifech za elektřinu stojí přibližně 5–10 centů denně — zhruba 1,50–3,00 € měsíčně."
       },
       "q5": {
-        "question": "Je instalace vhodná pro panelové domy?",
-        "answer": "Ano, samolepicí profily jsou vhodné pro betonové i sádrové stropy bez nutnosti vrtání."
+        "question": "Mohou být LED pásky použity s detektory pohybu v chodbách?",
+        "answer": "Ano, naše LED systémy jsou plně kompatibilní s externími detektory pohybu. Toto je oblíbené nastavení pro chodby — světla se aktivují při vstupu a vypnou po nastaveném zpoždění. LED pásky reagují okamžitě na plný jas."
       }
     },
     "cta": {
-      "title": "Vytvořte skvělý první dojem",
-      "subtitle": "Profesionální LED osvětlení chodby s dopravou zdarma.",
-      "primary": "Koupit sadu LED",
-      "secondary": "Získat poradenství"
+      "title": "Rozjasněte svou chodbu ještě dnes",
+      "subtitle": "Tenké, elegantní LED sady, které proměňují chodby a koridory. Doprava zdarma, snadná instalace, 24měsíční záruka.",
+      "primary": "Vybrat LED sadu",
+      "secondary": "Zeptat se"
     }
   },
   "office_lighting": {
     "seo": {
-      "title": "LED osvětlení stropu v kanceláři — COB pásky, studená bílá, Wi-Fi",
-      "description": "Zvyšte produktivitu s prémiovým LED osvětlením stropu pro kancelář. COB pásky, studená bílá 5000K–6500K, Wi-Fi ovládání a plynné stmívání. Doprava zdarma.",
-      "keywords": "LED osvětlení kancelář, LED strop kancelář, COB pásek kancelář, pracovní osvětlení"
+      "title": "LED osvětlení stropu pro kancelář — bez blikání, pro soustředění, chytré",
+      "description": "Modernizujte domácí kancelář profesionálním LED stropním osvětlením. COB pásky bez blikání, ideální teplota barvy pro soustředění, Wi-Fi plánování. Kompletní sady s dopravou zdarma."
     },
-    "badge": "Boost produktivity",
+    "badge": "LED osvětlení kanceláře",
     "hero": {
-      "title": "LED osvětlení stropu pro kancelář",
-      "subtitle": "Zvyšte soustředění a produktivitu s prémiovými COB LED pásky. Studená bílá pro práci, Wi-Fi ovládání, plynné stmívání.",
-      "cta_primary": "Vybrat sadu",
-      "cta_secondary": "Poradit se"
+      "title_line1": "LED osvětlení stropu",
+      "title_line2": "pro vaši kancelář",
+      "subtitle": "Pracujte lépe s profesionálním LED stropním osvětlením navrženým pro soustředění a produktivitu. COB pásky bez blikání a oslnění při ideální teplotě barvy pro dlouhodobou koncentraci — celý den, každý den.",
+      "cta_primary": "Vybrat LED sadu",
+      "cta_secondary": "Průvodce instalací"
     },
     "intro": {
-      "title": "Správné osvětlení zvyšuje produktivitu",
-      "text": "Studie ukazují, že správné osvětlení pracovního prostoru zvyšuje produktivitu až o 20 %. Naše COB LED sady zajistí optimální světlo pro práci a koncentraci."
+      "title": "Proč vaše domácí kancelář potřebuje lepší LED osvětlení",
+      "p1": "Špatné osvětlení je jednou z nejpřehlíženějších příčin snížené produktivity, únavy očí a bolestí hlavy v domácích kancelářích. Jediná stropní žárovka vytváří přímé oslnění na obrazovkách, nerovnoměrné stíny na stole a často svítí ve špatné teplotě barvy pro dlouhodobou koncentraci.",
+      "p2": "Profesionální LED stropní pásky tyto problémy řeší u zdroje. COB LED pásky montované ve stropní liště vytvářejí osvětlení pod širokým úhlem, které rovnoměrně distribuuje světlo po celém pracovišti bez přímého oslnění na obrazovkách nebo ostrých stínů na pracovní ploše.",
+      "p3": "Chytré ovládání znamená, že kancelářské osvětlení pracuje s vaším rozvrhem automaticky. Naprogramujte studené bílé (4000K–5000K) pro ranní pracovní bloky, přejděte na neutrální během video hovorů a večer ztlumte. S Wi-Fi ovládáním a plánováním se vaše kancelář přizpůsobuje vašim pracovním vzorcům."
     },
     "benefits": {
-      "title": "Proč COB LED pro kancelář?",
-      "b1_title": "Studená bílá",
-      "b1_desc": "5000K–6500K pro maximální soustředění a snížení únavy očí.",
-      "b2_title": "Bez blikání",
-      "b2_desc": "COB pásky neblíkají — chrání zrak při dlouhodobé práci.",
-      "b3_title": "Nastavitelný jas",
-      "b3_desc": "Plynné stmívání pro optimální osvětlení v každou denní dobu.",
-      "b4_title": "Chytré scény",
-      "b4_desc": "Automatické nastavení jasu a teploty podle denní doby."
+      "title": "Výhody LED osvětlení kanceláře",
+      "subtitle": "Profesionální osvětlení, které zvyšuje soustředění, snižuje únavu a skvěle vypadá na video hovorech.",
+      "focus": {
+        "title": "Zvyšuje soustředění a produktivitu",
+        "desc": "Studená bílá (4000K–5000K) prokazatelně zvyšuje bdělost a kognitivní výkon během pracovní doby."
+      },
+      "eyestrain": {
+        "title": "Snižuje únavu očí",
+        "desc": "Osvětlení bez blikání a rovnoměrné osvětlení eliminuje mikroblikání, které způsobuje únavu očí při dlouhých pracovních sezeních."
+      },
+      "energy": {
+        "title": "Energeticky účinné po celý den",
+        "desc": "LED pásky spotřebují o 60–80 % méně energie než tradiční kancelářská světla — důležité pro prostory osvětlené 8+ hodin denně."
+      },
+      "glare": {
+        "title": "Odstraněno oslnění obrazovky",
+        "desc": "Nepřímé stropní osvětlení odstraňuje přímé odrazy na monitorech, které způsobují tradiční stropní svítidla."
+      }
     },
     "features": {
-      "title": "Technické parametry",
-      "f1_title": "CRI 90+",
-      "f1_desc": "Vysoký index podání barev pro přirozené vnímání.",
-      "f2_title": "Bez blikání",
-      "f2_desc": "Flicker-free technologie pro ochranu zraku.",
-      "f3_title": "Wi-Fi ovládání",
-      "f3_desc": "Mobilní aplikace, Alexa a Google Home.",
-      "f4_title": "5000K–6500K",
-      "f4_desc": "Studená bílá pro maximální soustředění."
+      "title": "Funkce, které zlepší váš pracovní den",
+      "cct": {
+        "title": "Teplota barvy optimalizovaná pro práci",
+        "desc": "Studená bílá 4000K–5000K napodobuje denní světlo a udržuje vás bdělé a soustředěné — daleko lepší než teplé domácí žárovky pro denní práci."
+      },
+      "flicker": {
+        "title": "Provoz bez blikání",
+        "desc": "Naše COB pásky pracují při vysoké frekvenci s nulových blikáním. Žádná únava očí, žádné bolesti hlavy, žádná únava — i po 8+ hodinách použití."
+      },
+      "schedule": {
+        "title": "Automatické denní plánování",
+        "desc": "Naprogramujte světla, aby se zapínala v čase začátku práce, upravovala v poledne a večer ztlumovala — plně automatizováno přes aplikaci."
+      },
+      "cri": {
+        "title": "Vysoké CRI pro přesné barvy",
+        "desc": "CRI 90+ zajišťuje přesnou reprodukci barev — důležité pro grafickou práci, úpravy fotografií a přesné vizuální úkoly."
+      },
+      "uniform": {
+        "title": "Rovnoměrné osvětlení pracovní plochy",
+        "desc": "Obvodové stropní pásky rovnoměrně osvětlují celé pracoviště a eliminují stíny, které ztěžují čtení a psaní."
+      }
     },
     "setup": {
-      "title": "Instalace v kanceláři",
-      "s1_title": "Analýza prostoru",
-      "s1_desc": "Změřte kancelář a identifikujte pracovní zóny pro optimální rozmístění.",
-      "s2_title": "Instalace profilů",
-      "s2_desc": "Upevněte profily podél stropu nebo nad pracovní plochy.",
-      "s3_title": "Montáž pásku",
-      "s3_desc": "Vložte COB pásek a připojte k napájení.",
-      "s4_title": "Nastavte scény",
-      "s4_desc": "Nakonfigurujte pracovní scény v aplikaci pro různé činnosti."
+      "title": "Doporučené nastavení pro kancelář",
+      "temp_label": "Teplota barvy",
+      "temp_value": "4000K–5000K (soustředěná bílá)",
+      "brightness_label": "Jas",
+      "brightness_value": "800–1000 lm/m",
+      "length_label": "Délka pásku (8–15 m²)",
+      "length_value": "4–8 metrů",
+      "control_label": "Ovládání",
+      "control_value": "Aplikace + plánování + hlas",
+      "install_label": "Instalace",
+      "install_value": "Obvod stropu nebo lineární"
     },
     "products": {
-      "title": "Doporučené sady pro kancelář",
-      "subtitle": "Profesionální LED sady pro zvýšení produktivity"
+      "title": "LED sady pro stropy kanceláří",
+      "subtitle": "Vše v ceně — LED pásek, napájecí zdroj, ovladač a konektory.",
+      "from": "Od",
+      "view_kit": "Zobrazit sadu",
+      "view_all": "Zobrazit všechny produkty"
     },
     "stats": {
-      "rooms_label": "Instalací kanceláří",
-      "rooms_value": "2 000+",
-      "lumens_label": "Lumenů na metr",
-      "savings_label": "Úspora energie oproti halogenu",
-      "warranty_label": "Záruka v ceně",
+      "temp_label": "Optimální pracovní teplota barvy",
+      "cri_label": "Index podání barev",
+      "lifespan_label": "Životnost LED",
+      "warranty_label": "Záruka",
+      "lifespan_value": "10 let",
       "warranty_value": "24 měsíců"
     },
     "articles": {
-      "title": "Články o osvětlení kanceláře",
+      "title": "Užitečné články o osvětlení kanceláře",
       "badge": "Doporučený článek",
       "read_more": "Číst článek",
-      "article1_title": "Jak vybrat LED osvětlení pro kancelář",
-      "article1_desc": "Průvodce výběrem a instalací LED osvětlení pro zvýšení produktivity.",
-      "article2_title": "Teplá vs studená bílá — co je lepší?",
-      "article2_desc": "Porovnání teplé a studené bílé pro různé prostory a aktivity.",
-      "article3_title": "Průvodce LED osvětlením stropu",
-      "article3_desc": "Vše o LED osvětlení stropu — technologie, plánování, instalace."
+      "article1_title": "Průvodce LED osvětlením stropu",
+      "article1_desc": "Kompletní referenční průvodce technologií LED osvětlení stropu, plánováním a instalací pro domácí kanceláře a pracovní prostory.",
+      "article2_title": "Kolik lumenů pro stropní osvětlení?",
+      "article2_desc": "Požadavky na lumeny podle typu místnosti včetně kancelářských prostorů — zjistěte, jak vypočítat správný jas pro soustředěnou práci.",
+      "article3_title": "Chytré LED osvětlení stropu",
+      "article3_desc": "Jak chytré LED systémy s plánováním a automatizací zvyšují produktivitu a snižují únavu očí v domácích kancelářích."
     },
     "faq": {
       "title": "Často kladené otázky",
       "q1": {
-        "question": "Jaká barevná teplota je nejlepší pro kancelář?",
-        "answer": "Pro kancelář doporučujeme studenou bílou 5000K–6500K — zvyšuje bdělost a soustředění."
+        "question": "Jaká teplota barvy je nejlepší pro domácí kancelář?",
+        "answer": "Studená až neutrální bílá (4000K–5000K) je optimální pro pracovní prostředí. Tento rozsah se blíží přirozenému dennímu světlu, které výzkum ukazuje jako zvyšující bdělost a kognitivní výkon. Vyhněte se teplé bílé (2700K) pro primární pracovní osvětlení, protože podporuje relaxaci spíše než soustředění."
       },
       "q2": {
-        "question": "Jak zabránit únavě očí při práci s LED osvětlením?",
-        "answer": "Používejte flicker-free COB pásky s CRI 90+ a nastavte jas na 70–80% pro pohodlnou práci."
+        "question": "Jak LED stropní osvětlení snižuje únavu očí při práci?",
+        "answer": "Únava očí z kancelářského osvětlení má dvě hlavní příčiny: přímé oslnění (světlo svítící do očí nebo odrážející se od obrazovek) a blikání (rychlé variace jasu). LED stropní osvětlení řeší oboje — nepřímé osvětlení eliminuje přímé oslnění a naše COB pásky pracují při nulové frekvenci blikání."
       },
       "q3": {
-        "question": "Mohu nastavit různé scény pro různé aktivity?",
-        "answer": "Ano, Wi-Fi ovladač umožňuje vytvořit neomezené scény — různý jas a teplotu pro různé činnosti."
+        "question": "Kolik metrů LED pásku potřebuji pro domácí kancelář?",
+        "answer": "Pro typickou domácí kancelář (8–15 m²) postačuje 4–8 metrů LED pásku pro obvodové stropní osvětlení. Změřte obvod stropu a doporučíme správnou velikost sady."
       },
       "q4": {
-        "question": "Je LED pásek vhodný pro velkou kancelář?",
-        "answer": "Ano, sady lze zapojit paralelně pro osvětlení libovolně velkého prostoru."
+        "question": "Mohu použít LED stropní osvětlení pro video hovory a tvorbu obsahu?",
+        "answer": "Výborná volba. Nepřímé LED stropní osvětlení poskytuje rovnoměrné, lichotivé osvětlení zepředu, které vypadá profesionálně na video hovorech — daleko lepší než jednosměrné kruhové světlo. COB pásky s vysokým CRI zajišťují přesné podání tónů pleti."
       },
       "q5": {
-        "question": "Lze integrovat osvětlení s chytrým domem?",
-        "answer": "Ano, naše sady jsou kompatibilní s Alexa, Google Home a dalšími chytrými systémy."
+        "question": "Mohu ovládat kancelářské LED osvětlení pomocí plánovače nebo automatizace?",
+        "answer": "Ano. Naše sady s Wi-Fi podporují plné plánování, takže můžete naprogramovat světla, aby se zapínala v čase začátku práce, automaticky upravovala v poledne a večer ztlumovala. Kompatibilní s Alexa a Google Home."
       }
     },
     "cta": {
-      "title": "Zvyšte produktivitu s LED osvětlením",
-      "subtitle": "Profesionální LED sady pro kancelář s dopravou zdarma.",
-      "primary": "Koupit sadu LED",
-      "secondary": "Získat poradenství"
+      "title": "Vybudujte ideální pracovní prostředí",
+      "subtitle": "Profesionální LED osvětlení pro domácí kanceláře. Bez blikání, pro soustředění, chytře ovládané. Doprava zdarma.",
+      "primary": "Vybrat LED sadu",
+      "secondary": "Zeptat se"
     }
   }
 }
