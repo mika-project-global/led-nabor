@@ -4,7 +4,7 @@ import { Lightbulb, CheckCircle, Sparkles, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
-import { getProductUrl } from '../lib/urls';
+import { getProductUrl, getStaticPageAlternateUrls } from '../lib/urls';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import Accordion from '../components/Accordion';
 import CTASection from '../components/CTASection';
@@ -85,6 +85,7 @@ const CeilingLedLighting: React.FC = () => {
         title={t('ceiling_lighting.seo.title')}
         description={t('ceiling_lighting.seo.description')}
         keywords="LED ceiling lighting, COB LED strips, ceiling lights, LED strip lights, modern ceiling lighting"
+        alternateUrls={getStaticPageAlternateUrls('/ceiling-led-lighting')}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
