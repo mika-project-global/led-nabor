@@ -7,9 +7,11 @@ import { products } from '../data/products';
 import { getProductUrl, getStaticPageAlternateUrls } from '../lib/urls';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import Accordion from '../components/Accordion';
+import { useProductMinPrices } from '../hooks/useProductMinPrices';
 
 export default function LedCeilingLightingBedroom() {
   const { t, locale } = useTranslation();
+  const { priceMap, formatPrice } = useProductMinPrices([1, 2]);
 
   const bedroomProducts = useMemo(() => products.filter(p => [1, 2].includes(p.id)), []);
   const alternateUrls = useMemo(() => getStaticPageAlternateUrls('/led-ceiling-lighting-bedroom'), []);
@@ -218,7 +220,7 @@ export default function LedCeilingLightingBedroom() {
                       <div>
                         <span className="text-xs text-gray-500">{t('bedroom_lighting.products.from')}</span>
                         <div className="text-2xl font-bold text-gray-900">
-                          {Math.min(...product.variants.map(v => v.price)).toLocaleString('de-DE')} Kč
+                          {formatPrice(priceMap[product.id] ?? Math.min(...product.variants.map(v => v.price)))}
                         </div>
                       </div>
                       <Link

@@ -8,9 +8,11 @@ import { getProductUrl, getStaticPageAlternateUrls } from '../lib/urls';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import Accordion from '../components/Accordion';
 import CTASection from '../components/CTASection';
+import { useProductMinPrices } from '../hooks/useProductMinPrices';
 
 const CeilingLedLighting: React.FC = () => {
   const { t, locale } = useTranslation();
+  const { priceMap, formatPrice } = useProductMinPrices([1, 2]);
 
   const ceilingProducts = useMemo(() => products.filter(p => [1, 2].includes(p.id)), []);
 
@@ -178,9 +180,8 @@ const CeilingLedLighting: React.FC = () => {
                       <div className="flex items-baseline gap-2">
                         <span className="text-gray-500 text-sm">{t('ceiling_lighting.products.price_from')}</span>
                         <span className="text-2xl md:text-3xl font-bold text-gray-900">
-                          {Math.min(...product.variants.map(v => v.price)).toLocaleString('cs-CZ')}
+                          {formatPrice(priceMap[product.id] ?? Math.min(...product.variants.map(v => v.price)))}
                         </span>
-                        <span className="text-lg md:text-xl text-gray-600">Kč</span>
                       </div>
                     </div>
 
