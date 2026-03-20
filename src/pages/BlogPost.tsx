@@ -290,15 +290,16 @@ export default function BlogPost() {
         {(() => {
           const rec = detectRecommendedProduct(post.slug, post.title);
           const isRgb = rec.id === 1;
+          const productName = t(isRgb ? 'calculator.rgb_kit' : 'calculator.cct_kit');
           return (
             <div className="my-8 md:my-10 rounded-xl overflow-hidden shadow-md border border-gray-100 bg-white">
               <div className={`h-1.5 ${isRgb ? 'bg-gradient-to-r from-cyan-400 to-blue-500' : 'bg-gradient-to-r from-gray-400 to-gray-600'}`} />
-              <div className="flex flex-col sm:flex-row items-stretch gap-0">
-                <div className="sm:w-32 md:w-40 shrink-0 overflow-hidden bg-gray-100">
+              <div className="flex flex-col sm:flex-row gap-0">
+                <div className="sm:w-36 md:w-44 shrink-0 bg-gray-50 flex items-center justify-center p-3">
                   <img
                     src={rec.image}
-                    alt={rec.name}
-                    className="w-full h-36 sm:h-full object-cover"
+                    alt={productName}
+                    className="w-full max-h-36 sm:max-h-48 object-contain"
                   />
                 </div>
                 <div className="flex-1 p-5 flex flex-col justify-between">
@@ -306,7 +307,7 @@ export default function BlogPost() {
                     <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded mb-2 ${isRgb ? 'bg-cyan-100 text-cyan-700' : 'bg-gray-100 text-gray-600'}`}>
                       {isRgb ? 'RGB + CCT' : 'CCT'}
                     </span>
-                    <h3 className="font-bold text-gray-900 mb-1">{rec.name}</h3>
+                    <h3 className="font-bold text-gray-900 mb-1">{productName}</h3>
                     <p className="text-sm text-gray-500">{t('blog.ctaKitsDescription')}</p>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
