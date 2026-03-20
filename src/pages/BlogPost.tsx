@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, Clock, Eye, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, Eye, ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { supabase } from '../lib/supabase';
 import { addCacheBuster } from '../lib/supabase-storage';
@@ -9,7 +9,19 @@ import { useLocale } from '../context/LocaleContext';
 import { useBlogTranslations } from '../context/BlogTranslationsContext';
 import { SEO } from '../components/SEO';
 import LoadingState from '../components/LoadingState';
-import { SITE_URL } from '../lib/urls';
+import { SITE_URL, getProductUrl } from '../lib/urls';
+import { products } from '../data/products';
+
+const RGB_KEYWORDS = ['rgb', 'color', 'colour', 'smart', 'dynamic', 'music', 'scene', 'living-room', 'living_room', 'neon', 'multicolor', 'dimmer'];
+const CCT_KEYWORDS = ['cct', 'white', 'kitchen', 'bathroom', 'bedroom', 'office', 'warm', 'cool', 'temperature', 'hallway', 'study', 'minimali'];
+
+function detectRecommendedProduct(slug: string, title: string) {
+  const text = `${slug} ${title}`.toLowerCase();
+  const rgbScore = RGB_KEYWORDS.filter(k => text.includes(k)).length;
+  const cctScore = CCT_KEYWORDS.filter(k => text.includes(k)).length;
+  if (cctScore > rgbScore) return products.find(p => p.id === 2) ?? products[0];
+  return products.find(p => p.id === 1) ?? products[0];
+}
 
 interface BlogPostData {
   id: string;
@@ -275,35 +287,50 @@ export default function BlogPost() {
         </div>
 
         {/* Recommended Product CTA */}
-        <div className="my-8 md:my-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl p-5 md:p-6 shadow-lg">
-          <Link
-            to={`/${locale}/led-ceiling-lighting-kit`}
-            className="block group"
-          >
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-5 text-white">
-              <div className="flex-shrink-0">
-                <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
+        {(() => {
+          const rec = detectRecommendedProduct(post.slug, post.title);
+          const isRgb = rec.id === 1;
+          return (
+            <div className="my-8 md:my-10 rounded-xl overflow-hidden shadow-md border border-gray-100 bg-white">
+              <div className={`h-1.5 ${isRgb ? 'bg-gradient-to-r from-cyan-400 to-blue-500' : 'bg-gradient-to-r from-gray-400 to-gray-600'}`} />
+              <div className="flex flex-col sm:flex-row items-stretch gap-0">
+                <div className="sm:w-32 md:w-40 shrink-0 overflow-hidden bg-gray-100">
+                  <img
+                    src={rec.image}
+                    alt={rec.name}
+                    className="w-full h-36 sm:h-full object-cover"
+                  />
                 </div>
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="heading-h3 text-white mb-2">
-                  {t('blog.ctaKitsTitle')}
-                </h3>
-                <p className="text-white/90">
-                  {t('blog.ctaKitsDescription')}
-                </p>
-              </div>
-              <div className="flex-shrink-0">
-                <div className="bg-white text-cyan-600 px-5 py-2.5 rounded-lg font-semibold group-hover:bg-cyan-50 transition-colors">
-                  {t('blog.ctaKitsButton')}
+                <div className="flex-1 p-5 flex flex-col justify-between">
+                  <div>
+                    <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded mb-2 ${isRgb ? 'bg-cyan-100 text-cyan-700' : 'bg-gray-100 text-gray-600'}`}>
+                      {isRgb ? 'RGB + CCT' : 'CCT'}
+                    </span>
+                    <h3 className="font-bold text-gray-900 mb-1">{rec.name}</h3>
+                    <p className="text-sm text-gray-500">{t('blog.ctaKitsDescription')}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Link
+                      to={getProductUrl(locale, rec)}
+                      className={`flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-lg transition-colors ${
+                        isRgb ? 'bg-cyan-500 hover:bg-cyan-600 text-white' : 'bg-gray-800 hover:bg-gray-700 text-white'
+                      }`}
+                    >
+                      {t('blog.ctaKitsButton')}
+                      <ArrowRight size={14} />
+                    </Link>
+                    <Link
+                      to={`/${locale}/comparison`}
+                      className="flex items-center gap-1.5 text-sm font-medium px-4 py-2 rounded-lg border border-gray-200 text-gray-600 hover:border-gray-400 transition-colors"
+                    >
+                      {t('comparison.title', 'Compare kits')}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </Link>
-        </div>
+          );
+        })()}
 
         {relatedPosts.length > 0 && (
           <section className="mt-12 md:mt-14 pt-6 md:pt-8 border-t border-gray-200">
