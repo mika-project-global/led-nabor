@@ -284,31 +284,26 @@ export default function Checkout() {
         };
 
         if (selectedPaymentMethod === 'cash') {
-          // Cash on delivery flow
           await createCashOnDeliveryOrder(order);
-          showNotification('success', 'Order placed successfully!'); 
-          navigate(`/${locale}/order-success`);
           clearCart();
+          navigate(`/${locale}/order-success?order_id=${orderId}`);
         } else if (selectedPaymentMethod === 'card') {
-          // Card payment flow with Stripe
-          const { id, error } = await createCheckoutSession(order);
-          if (error) {
-            throw new Error(error);
+          const result = await createCheckoutSession(order);
+          if ('error' in result) {
+            throw new Error(result.error);
           }
-
-          // If we reach here, the checkout was successful but the redirect hasn't happened yet
-          showNotification('info', 'Redirecting to payment...'); 
+          showNotification('info', 'Redirecting to payment...');
         }
-      } catch (error) {
-        console.error('Error processing order:', error.message || error);
-        setError(typeof error === 'string' ? error : 
-                (error.message || 'An error occurred while processing your order'));
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : 'An error occurred while processing your order';
+        console.error('Error processing order:', msg);
+        setError(msg);
         setIsSubmitting(false);
       }
-    } catch (error) {
-      console.error('Error creating order:', error.message || error);
-      setError(typeof error === 'string' ? error : 
-              (error.message || 'An error occurred while creating your order'));
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'An error occurred while creating your order';
+      console.error('Error creating order:', msg);
+      setError(msg);
       setIsSubmitting(false);
     } finally {
       // Don't set isSubmitting to false here for card payments

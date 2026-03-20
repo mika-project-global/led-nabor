@@ -9,8 +9,27 @@ import { useEffect, useState } from 'react';
 import { SEO } from '../components/SEO';
 import { useNotifications } from '../hooks/useNotifications';
 import { supabase } from '../lib/supabase';
-import { Order } from '../types';
 import { getImageUrl } from '../lib/supabase-storage';
+
+interface DbOrder {
+  id: string;
+  created_at: string;
+  customer_info: { email: string; firstName: string; lastName: string };
+  items: Array<{
+    id: number;
+    name: string;
+    quantity: number;
+    variant: { id: string; length: number; price: number };
+    warranty?: { months: number; additionalCost: number };
+    image: string;
+  }>;
+  total: number;
+  delivery_method: { id: string; name: string; price: number; currency: string; estimatedDays: string };
+  payment_method: { id: string; name: string; type: string };
+  status: string;
+  user_id: string | null;
+  currency?: string;
+}
 
 interface UserProfile {
   id: string;
@@ -39,7 +58,7 @@ export default function Profile() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [orders, setOrders] = useState<Order[]>([]);
+  const [orders, setOrders] = useState<DbOrder[]>([]);
   const [isLoadingOrders, setIsLoadingOrders] = useState(true);
   const { showNotification } = useNotifications();
   const { formatPrice, locale } = useLocale();
@@ -372,7 +391,7 @@ export default function Profile() {
                         </div>
                         
                         <div className="space-y-3">
-                          {order.items.map((item: any, index: number) => (
+                          {order.items.map((item, index) => (
                             <div key={index} className="flex items-center gap-4">
                               <img
                                 src={getImageUrl(item.image)}

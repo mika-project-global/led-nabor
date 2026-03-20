@@ -113,54 +113,16 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
 
 export async function createCashOnDeliveryOrder(order: Order): Promise<boolean> {
   try {
-    // Create a simplified order object without React elements or circular references
-    const cleanOrder = {
-      id: order.id,
-      items: order.items.map(item => ({
-        id: item.id,
-        name: item.name,
-        quantity: item.quantity,
-        variant: {
-          id: item.variant.id,
-          length: item.variant.length,
-          price: item.variant.price
-        },
-        warranty: item.warranty,
-        image: item.image
-      })),
-      total: order.total,
-      customerInfo: order.customerInfo,
-      deliveryMethod: {
-        id: order.deliveryMethod.id,
-        name: order.deliveryMethod.name,
-        price: order.deliveryMethod.price,
-        currency: order.deliveryMethod.currency,
-        estimatedDays: order.deliveryMethod.estimatedDays
-      },
-      paymentMethod: {
-        id: order.paymentMethod.id,
-        name: order.paymentMethod.name,
-        type: order.paymentMethod.type
-      },
-      status: 'pending_cod',
-      createdAt: order.createdAt
-    };
-
-    // Update order status to indicate cash on delivery (works for both guest and authenticated users)
     const { error: updateError } = await supabase
       .from('orders')
-      .update({ status: 'pending_cod' }) // pending cash on delivery
+      .update({ status: 'pending_cod' })
       .eq('id', order.id);
 
     if (updateError) {
-      console.error('Error updating order status:', updateError);
       throw updateError;
     }
-    
-    // Store the clean order in sessionStorage for retrieval on the success page
-    sessionStorage.setItem('cod_order', JSON.stringify(cleanOrder));
-    
-    return true; 
+
+    return true;
   } catch (error) {
     console.error('Error creating cash on delivery order:', error);
     throw error;
