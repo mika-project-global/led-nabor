@@ -7,11 +7,13 @@ import { PriceManager } from '../components/PriceManager';
 import { InstallationVideosManager } from '../components/InstallationVideosManager';
 import BlogEditor from '../components/BlogEditor';
 import { AIImageEditor } from '../components/AIImageEditor';
+import { OrdersManager } from '../components/OrdersManager';
+import { SalesAnalytics } from '../components/SalesAnalytics';
 import { useTranslation } from '../hooks/useTranslation';
 import { supabase } from '../lib/supabase';
 import { checkIsAdmin } from '../lib/auth-utils';
 import { products } from '../data/products';
-import { Trash2, CheckCircle, Plus, CreditCard as Edit2, Eye, Sparkles } from 'lucide-react';
+import { Trash2, CheckCircle, Plus, CreditCard as Edit2, Eye, Sparkles, BarChart2, ShoppingBag } from 'lucide-react';
 
 interface ProductVideo {
   id: string;
@@ -47,7 +49,7 @@ export default function Admin() {
   const [uploadedVideos, setUploadedVideos] = useState<ProductVideo[]>([]);
   const [siteLogo, setSiteLogo] = useState<string | undefined>();
   const [uploadType, setUploadType] = useState<'blog' | 'product'>('blog');
-  const [activeTab, setActiveTab] = useState<'media' | 'prices' | 'installation' | 'blog'>('media');
+  const [activeTab, setActiveTab] = useState<'analytics' | 'orders' | 'media' | 'prices' | 'installation' | 'blog'>('analytics');
   const [selectedProductForVideo, setSelectedProductForVideo] = useState<number>(products[0]?.id || 20);
   const [videoTitle, setVideoTitle] = useState<string>('');
   const [isLoadingVideos, setIsLoadingVideos] = useState(false);
@@ -276,10 +278,32 @@ export default function Admin() {
       </div>
       
       {/* Tabs */}
-      <div className="flex border-b mb-8">
+      <div className="flex flex-wrap gap-1 border-b mb-8">
+        <button
+          onClick={() => setActiveTab('analytics')}
+          className={`flex items-center gap-2 px-5 py-3 font-medium text-sm ${
+            activeTab === 'analytics'
+              ? 'border-b-2 border-cyan-500 text-cyan-600'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
+        >
+          <BarChart2 size={16} />
+          Аналитика
+        </button>
+        <button
+          onClick={() => setActiveTab('orders')}
+          className={`flex items-center gap-2 px-5 py-3 font-medium text-sm ${
+            activeTab === 'orders'
+              ? 'border-b-2 border-cyan-500 text-cyan-600'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
+        >
+          <ShoppingBag size={16} />
+          Заказы
+        </button>
         <button
           onClick={() => setActiveTab('media')}
-          className={`px-6 py-3 font-medium ${
+          className={`px-5 py-3 font-medium text-sm ${
             activeTab === 'media'
               ? 'border-b-2 border-cyan-500 text-cyan-600'
               : 'text-gray-500 hover:text-gray-700'
@@ -289,7 +313,7 @@ export default function Admin() {
         </button>
         <button
           onClick={() => setActiveTab('prices')}
-          className={`px-6 py-3 font-medium ${
+          className={`px-5 py-3 font-medium text-sm ${
             activeTab === 'prices'
               ? 'border-b-2 border-cyan-500 text-cyan-600'
               : 'text-gray-500 hover:text-gray-700'
@@ -299,7 +323,7 @@ export default function Admin() {
         </button>
         <button
           onClick={() => setActiveTab('installation')}
-          className={`px-6 py-3 font-medium ${
+          className={`px-5 py-3 font-medium text-sm ${
             activeTab === 'installation'
               ? 'border-b-2 border-cyan-500 text-cyan-600'
               : 'text-gray-500 hover:text-gray-700'
@@ -309,16 +333,30 @@ export default function Admin() {
         </button>
         <button
           onClick={() => setActiveTab('blog')}
-          className={`px-6 py-3 font-medium ${
+          className={`px-5 py-3 font-medium text-sm ${
             activeTab === 'blog'
               ? 'border-b-2 border-cyan-500 text-cyan-600'
               : 'text-gray-500 hover:text-gray-700'
           }`}
         >
-          Blog / SEO Articles
+          Blog / SEO
         </button>
       </div>
       
+      {activeTab === 'analytics' && (
+        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Аналитика продаж</h2>
+          <SalesAnalytics />
+        </div>
+      )}
+
+      {activeTab === 'orders' && (
+        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Управление заказами</h2>
+          <OrdersManager />
+        </div>
+      )}
+
       {activeTab === 'media' && (
         <div className="grid grid-cols-1 gap-8">
           {/* Logo Upload Section */}

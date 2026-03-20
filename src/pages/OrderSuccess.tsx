@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useLocation, Link, Navigate } from 'react-router-dom';
-import { CheckCircle, Package, Banknote, CreditCard, ShoppingBag, User } from 'lucide-react';
+import { CheckCircle, Package, Banknote, CreditCard, ShoppingBag, User, Search } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useCart } from '../context/CartContext';
 import { useLocale } from '../context/LocaleContext';
@@ -213,6 +213,15 @@ export default function OrderSuccess() {
             <Link to={`/${locale}/profile`} className="btn-secondary btn-full flex items-center justify-center gap-2">
               <User size={18} />
               {t('profile.my_orders')}
+            </Link>
+          )}
+          {fetchedOrder && (
+            <Link
+              to={`/${locale}/track-order?order_id=${fetchedOrder.id}&email=${encodeURIComponent(fetchedOrder.customer_info.email)}`}
+              className="btn-secondary btn-full flex items-center justify-center gap-2"
+            >
+              <Search size={18} />
+              Отслеживать заказ
             </Link>
           )}
         </div>
