@@ -51,62 +51,76 @@ export default function Comparison() {
     return addedIds.has(`${product.id}-${selectedVariants[product.id]}`);
   };
 
+  const rgbFeatures = [
+    t('comparison.rgb_feature_1'),
+    t('comparison.rgb_feature_2'),
+    t('comparison.rgb_feature_3'),
+    t('comparison.rgb_feature_4'),
+  ];
+
+  const cctFeatures = [
+    t('comparison.cct_feature_1'),
+    t('comparison.cct_feature_2'),
+    t('comparison.cct_feature_3'),
+    t('comparison.cct_feature_4'),
+  ];
+
   const features = [
     {
       icon: <Palette size={18} className="text-cyan-600" />,
       name: t('comparison.lighting_type'),
       rgb: 'RGB + CCT',
       cct: 'CCT',
-      tooltip: 'RGB+CCT — colors + adjustable white. CCT — adjustable white only.',
+      tooltip: t('comparison.tooltip_lighting_type'),
     },
     {
       icon: <Thermometer size={18} className="text-cyan-600" />,
       name: t('comparison.color_temperature'),
       rgb: '2700K–6500K + RGB',
       cct: '2700K–6500K',
-      tooltip: 'Warm to cool white, plus full color for RGB+CCT.',
+      tooltip: t('comparison.tooltip_color_temperature'),
     },
     {
       icon: <Layers size={18} className="text-cyan-600" />,
       name: t('comparison.strip_type'),
       rgb: t('comparison.cob_without_dots'),
       cct: t('comparison.cob_without_dots'),
-      tooltip: 'COB technology delivers uniform light with no visible hotspots.',
+      tooltip: t('comparison.tooltip_strip_type'),
     },
     {
       icon: <Zap size={18} className="text-cyan-600" />,
       name: t('comparison.color_rendering_index'),
       rgb: '>90 Ra',
       cct: '>95 Ra',
-      tooltip: 'Higher Ra means more accurate color reproduction.',
+      tooltip: t('comparison.tooltip_cri'),
     },
     {
       icon: <Wifi size={18} className="text-cyan-600" />,
       name: t('comparison.wifi_control'),
       rgb: true,
       cct: true,
-      tooltip: 'Full control via smartphone app.',
+      tooltip: t('comparison.tooltip_wifi'),
     },
     {
       icon: <Mic size={18} className="text-cyan-600" />,
       name: t('comparison.voice_control'),
       rgb: true,
       cct: true,
-      tooltip: 'Works with Alexa, Google Home, Alice.',
+      tooltip: t('comparison.tooltip_voice'),
     },
     {
       icon: <Layers size={18} className="text-cyan-600" />,
       name: t('comparison.scenes_automation'),
       rgb: true,
       cct: true,
-      tooltip: 'Create lighting schedules and mood scenes.',
+      tooltip: t('comparison.tooltip_scenes'),
     },
     {
       icon: <Wrench size={18} className="text-cyan-600" />,
       name: t('comparison.custom_configuration'),
       rgb: true,
       cct: true,
-      tooltip: 'Order any length from 5 to 30 meters.',
+      tooltip: t('comparison.tooltip_custom'),
     },
   ];
 
@@ -148,7 +162,7 @@ export default function Comparison() {
                 >
                   {isRgb && (
                     <div className="bg-cyan-500 text-white text-xs font-semibold text-center py-1.5 rounded-t-2xl tracking-wide uppercase">
-                      Popular choice
+                      {t('comparison.popular_choice')}
                     </div>
                   )}
 
@@ -168,10 +182,12 @@ export default function Comparison() {
                         {isRgb ? 'RGB + CCT' : 'CCT'}
                       </span>
                     </div>
-                    <h2 className="text-xl font-bold text-gray-900 mb-1">{product.name}</h2>
+                    <h2 className="text-xl font-bold text-gray-900 mb-1">
+                      {t(isRgb ? 'calculator.rgb_kit' : 'calculator.cct_kit')}
+                    </h2>
 
                     <ul className="space-y-1.5 mb-5 mt-3">
-                      {product.features.slice(0, 4).map((f, i) => (
+                      {(isRgb ? rgbFeatures : cctFeatures).map((f, i) => (
                         <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
                           <Check size={14} className="text-green-500 shrink-0" />
                           {f}
@@ -181,7 +197,7 @@ export default function Comparison() {
 
                     <div className="mb-4">
                       <label className="block text-xs font-medium text-gray-500 mb-1.5">
-                        Strip length
+                        {t('comparison.strip_length')}
                       </label>
                       <select
                         value={selectedVariants[product.id]}
@@ -196,7 +212,7 @@ export default function Comparison() {
 
                     <div className="flex items-end justify-between mb-4">
                       <div>
-                        <p className="text-xs text-gray-400">Price</p>
+                        <p className="text-xs text-gray-400">{t('comparison.price')}</p>
                         <p className="text-2xl font-bold text-gray-900">
                           {isLoading ? '...' : formatPrice(variantPrice)}
                         </p>
@@ -215,7 +231,7 @@ export default function Comparison() {
                         }`}
                       >
                         {added ? (
-                          <><Check size={16} /> Added</>
+                          <><Check size={16} /> {t('comparison.added')}</>
                         ) : (
                           <><ShoppingCart size={16} /> {t('product.add_to_cart', 'Add to cart')}</>
                         )}
@@ -235,13 +251,13 @@ export default function Comparison() {
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-12">
             <div className="px-6 py-4 border-b border-gray-100">
-              <h2 className="text-xl font-bold text-gray-900">Detailed comparison</h2>
+              <h2 className="text-xl font-bold text-gray-900">{t('comparison.detailed_comparison')}</h2>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-100 bg-gray-50">
-                    <th className="py-3 px-6 text-left text-sm font-semibold text-gray-600 w-1/2">Feature</th>
+                    <th className="py-3 px-6 text-left text-sm font-semibold text-gray-600 w-1/2">{t('comparison.feature_column')}</th>
                     <th className="py-3 px-6 text-center text-sm font-semibold text-cyan-600">RGB+CCT</th>
                     <th className="py-3 px-6 text-center text-sm font-semibold text-gray-600">CCT</th>
                   </tr>
@@ -288,9 +304,9 @@ export default function Comparison() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-cyan-50 border border-cyan-100 rounded-2xl p-6">
-              <h3 className="font-bold text-gray-900 mb-2">Choose RGB+CCT if you want:</h3>
+              <h3 className="font-bold text-gray-900 mb-2">{t('comparison.choose_rgb_title')}</h3>
               <ul className="space-y-2">
-                {['Colorful dynamic lighting for living rooms and entertainment spaces', 'Mood-setting with millions of color options', 'Smart scenes synced to music or time of day', 'A "wow" factor for guests'].map((item, i) => (
+                {[t('comparison.rgb_reason_1'), t('comparison.rgb_reason_2'), t('comparison.rgb_reason_3'), t('comparison.rgb_reason_4')].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
                     <Check size={14} className="text-cyan-500 shrink-0 mt-0.5" />
                     {item}
@@ -299,9 +315,9 @@ export default function Comparison() {
               </ul>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-              <h3 className="font-bold text-gray-900 mb-2">Choose CCT if you want:</h3>
+              <h3 className="font-bold text-gray-900 mb-2">{t('comparison.choose_cct_title')}</h3>
               <ul className="space-y-2">
-                {['Clean, professional white lighting for kitchens and offices', 'Higher color accuracy (Ra >95) for studios or ateliers', 'Simpler setup with no color configuration needed', 'Slightly lower starting price'].map((item, i) => (
+                {[t('comparison.cct_reason_1'), t('comparison.cct_reason_2'), t('comparison.cct_reason_3'), t('comparison.cct_reason_4')].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
                     <Check size={14} className="text-gray-500 shrink-0 mt-0.5" />
                     {item}
