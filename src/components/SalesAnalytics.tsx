@@ -23,7 +23,7 @@ interface DayData {
 }
 
 function formatCurrency(amount: number) {
-  return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK', maximumFractionDigits: 0 }).format(amount / 100);
+  return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK', maximumFractionDigits: 0 }).format(amount);
 }
 
 function StatCard({

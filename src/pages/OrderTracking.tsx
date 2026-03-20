@@ -49,9 +49,9 @@ const STATUS_ORDER = ['pending', 'processing', 'shipped', 'delivered'];
 
 function formatCurrency(amount: number, currency = 'CZK') {
   if (currency === 'EUR') {
-    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(amount / 100);
+    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(amount);
   }
-  return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK' }).format(amount / 100);
+  return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK' }).format(amount);
 }
 
 function OrderStatusTimeline({ status }: { status: string }) {

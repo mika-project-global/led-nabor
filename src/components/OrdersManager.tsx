@@ -57,11 +57,10 @@ const STATUS_COLORS: Record<string, string> = {
 const PAGE_SIZE = 20;
 
 function formatPrice(amount: number, currency = 'CZK') {
-  const value = amount / 100;
   if (currency === 'EUR') {
-    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
+    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(amount);
   }
-  return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK' }).format(value);
+  return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK' }).format(amount);
 }
 
 function StatusBadge({ status }: { status: string }) {
