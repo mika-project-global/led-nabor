@@ -625,7 +625,7 @@ export default function Checkout() {
                       className="w-full h-full object-cover rounded"
                       onError={(e) => {
                         const img = e.target as HTMLImageElement;
-                        img.src = 'https://via.placeholder.com/80x80?text=Image+Not+Found';
+                        img.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23f3f4f6'/%3E%3Cpath d='M30 25h20a4 4 0 014 4v22a4 4 0 01-4 4H30a4 4 0 01-4-4V29a4 4 0 014-4z' stroke='%23d1d5db' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='35' cy='34' r='3' fill='%23d1d5db'/%3E%3Cpath d='M26 47l8-8 5 5 4-4 11 11' stroke='%23d1d5db' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E";
                       }}
                     />
                   </div>

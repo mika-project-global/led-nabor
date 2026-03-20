@@ -69,9 +69,12 @@ export function SEO({ title, description, image, type = 'website', keywords, can
     ...hreflangLinks,
   ];
 
+  const privateRouteSegments = ['admin', 'auth', 'profile', 'checkout', 'order-success', 'reset-password'];
+  const isPrivateRoute = privateRouteSegments.some(segment => location.pathname.includes(`/${segment}`));
+
   const metaTags: Array<Record<string, string>> = [
     { name: 'description', content: description },
-    { name: 'robots', content: 'index, follow' },
+    { name: 'robots', content: isPrivateRoute ? 'noindex, nofollow' : 'index, follow' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
     { name: 'theme-color', content: '#0891b2' },
     { name: 'format-detection', content: 'telephone=no' },

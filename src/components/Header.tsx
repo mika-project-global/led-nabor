@@ -73,7 +73,7 @@ export function Header() {
                 aria-expanded={isMenuOpen}
                 aria-haspopup="true"
               >
-                <Menu size={24} aria-label={t('menu.home')} />
+                <Menu size={24} aria-label={t('menu.open_menu', 'Open menu')} />
               </button>
               
               {isMenuOpen && (

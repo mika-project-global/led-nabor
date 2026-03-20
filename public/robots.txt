@@ -2,11 +2,13 @@
 User-agent: *
 Allow: /
 
-# Disallow admin and auth pages
-Disallow: /admin
-Disallow: /auth
-Disallow: /profile
-Disallow: /checkout
+# Disallow admin and auth pages (locale-prefixed routes)
+Disallow: /*/admin
+Disallow: /*/auth
+Disallow: /*/profile
+Disallow: /*/checkout
+Disallow: /*/order-success
+Disallow: /*/reset-password
 
 # Sitemap location
 Sitemap: https://led-nabor.com/sitemap.xml
