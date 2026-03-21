@@ -1226,7 +1226,32 @@
       "q5": {
         "question": "Ist LED-Deckenbeleuchtung sicher — gibt es UV oder Flimmern?",
         "answer": "Unsere COB-Streifen emittieren kein UV und sind flimmerfrei — vollständig sicher, auch für Kinderzimmer. Niederspannung 12V/24V DC."
+      },
+      "q6": {
+        "question": "Welche Farbtemperatur ist am besten zum Schlafen im Schlafzimmer?",
+        "answer": "Für guten Schlaf verwenden Sie abends warmweißes LED-Licht bei 2700K–3000K. Dieses Spektrum minimiert Blaulicht, das die Melatoninproduktion unterdrückt. Mit einem CCT-verstellbaren Streifen können Sie morgens 5000K–6500K für energisches Aufwachen nutzen."
+      },
+      "q7": {
+        "question": "Welche LED-Helligkeit ist angenehm für eine Schlafzimmerdecke?",
+        "answer": "Die Schlafzimmerbeleuchtung sollte 100–200 Lux zur Entspannung und 30–50 Lux vor dem Schlafengehen betragen. Für ein 12–16 m² Schlafzimmer bedeutet das etwa 300–500 lm/m LED-Streifen. Dimmen auf 5–10% ist entscheidend."
+      },
+      "q8": {
+        "question": "Kann ich LED-Deckenleuchten im Schlafzimmer mit einem normalen Dimmer steuern?",
+        "answer": "Standard-Wanddimmer sind nicht kompatibel mit LED-Streifen — Sie benötigen einen PWM- oder Konstantspannungs-LED-Dimmer. Unsere Schlafzimmer-LED-Kits enthalten einen kompatiblen Fernbedienungsdimmer."
+      },
+      "q9": {
+        "question": "Wie installiere ich LED-Streifen in einer Schlafzimmerdeckenvoute?",
+        "answer": "Messen Sie den Deckenumfang und schneiden Sie den Streifen an den markierten Stellen. Montieren Sie den Streifen in einer Gipskarton- oder Aluminiumvoute, sodass nur das reflektierte Licht sichtbar ist. Verbinden Sie mit einem 12V- oder 24V-Treiber."
       }
+    },
+    "seo_guide": {
+      "title": "So wählen Sie die richtige LED-Deckenbeleuchtung für Ihr Schlafzimmer",
+      "p1": "Das Schlafzimmer erfordert Beleuchtung, die sich an sehr unterschiedliche Bedürfnisse anpasst: hell und energetisierend am Morgen, warm und entspannend am Abend, und gedimmt genug, um den Schlaf nicht zu stören.",
+      "p2": "<strong>Farbtemperatur für Schlaf:</strong> Verwenden Sie 2700K–3000K (warmweiß) vor dem Schlafengehen. Dieses Spektrum unterdrückt Blaulicht, das die Melatoninproduktion hemmt. Morgens kann ein CCT-verstellbarer Streifen auf 5000K–6500K wechseln.",
+      "p3": "<strong>Helligkeit und Dimmen:</strong> Die Schlafzimmerbeleuchtung sollte 100–200 Lux für abendliche Aktivitäten und 30–50 Lux zur Schlafvorbereitung erreichen. Vollständiges 0–100% Dimmen ist unerlässlich.",
+      "p4": "<strong>Platzierung für sanftes Licht:</strong> Montieren Sie Streifen in einer Deckenvoute nach oben gerichtet, damit nur reflektiertes Licht sichtbar ist. Diese indirekte Beleuchtung eliminiert Blendung.",
+      "p5": "<strong>Intelligente Automatisierung:</strong> Richten Sie einen zirkadianen Rhythmus ein — automatischer Wechsel von hell-kühl morgens zu warm-gedimmt abends. Verbinden Sie mit Alexa oder Google Home.",
+      "p6": "<strong>Häufige Fehler:</strong> Kühles 4000K+ Licht im Schlafzimmer fühlt sich wie ein Büro an. Nicht dimmbare Streifen entfernen die Möglichkeit, eine schlaffreundliche Umgebung zu schaffen."
     },
     "cta": {
       "title": "Bereit, Ihr Schlafzimmer zu verwandeln?",
@@ -1356,7 +1381,32 @@
       "q5": {
         "question": "Wie schwierig ist die Installation von LED-Küchenbeleuchtung?",
         "answer": "Einfach — 3M-Selbstklebestreifen, alle Komponenten vorgetestet. Die meisten Küchen sind in 2–3 Stunden fertig. Videoanleitungen im Lieferumfang."
+      },
+      "q6": {
+        "question": "Wie viele Lumen brauche ich für die Küchendeckenbeleuchtung?",
+        "answer": "Für die Küche sollten Sie 50–75 Lux pro Quadratmeter Umgebungslicht und 300–500 Lux über Arbeitsflächen anstreben. Eine 10 m² Küche benötigt typischerweise LED-Streifen mit 800–1200 lm/m am Umfang. COB-LED-Streifen mit 800+ lm/m bieten gleichmäßige, schattenfreie Abdeckung."
+      },
+      "q7": {
+        "question": "Welche Farbtemperatur ist am besten für LED-Küchenbeleuchtung?",
+        "answer": "4000K–5000K (neutrales bis kühles Weiß) ist ideal für Küchen. Dieser Bereich gibt Lebensmittelfarben dank hohem CRI (90+) genau wieder und hält Sie beim Kochen wach. Warme 2700K-Leuchtmittel lassen frische Produkte blass erscheinen."
+      },
+      "q8": {
+        "question": "Wie eliminiere ich Schatten auf Küchenarbeitsplatten?",
+        "answer": "Montieren Sie LED-Streifen um den gesamten Deckenumfang, damit Licht von allen vier Seiten gleichzeitig einfällt. Diese Kreuzbeleuchtung beseitigt die Schatten einer einzelnen Deckenleuchte. Bei Inselküchen fügen Sie einen Streifen in die Deckennische der Insel ein."
+      },
+      "q9": {
+        "question": "Wie installiere ich LED-Streifen an einer Küchendecke?",
+        "answer": "Reinigen Sie die Deckenoberfläche gründlich, kleben Sie den LED-Streifen mit der Selbstklebeschicht auf und sichern Sie ihn alle 50 cm mit Montageclips. Führen Sie das Niederspannungskabel zum Transformator und verbinden Sie es mit einem kompatiblen Dimmer-Controller."
       }
+    },
+    "seo_guide": {
+      "title": "So wählen Sie die richtige LED-Deckenbeleuchtung für Ihre Küche",
+      "p1": "Die Küche ist der anspruchsvollste Raum für Beleuchtung. Sie brauchen helles, genaues, schattenfreies Licht für die Essenszubereitung und eine sanftere Atmosphäre zum Essen. LED-Deckenstreifen — insbesondere COB-Technologie — liefern beides.",
+      "p2": "<strong>Helligkeit (Lumen):</strong> Arbeitsflächen benötigen 300–500 Lux Arbeitslicht. Für Deckenstreifen bedeutet das 800–1200 lm/m. Eine 10 m² Küche mit 4×4 m Umfang braucht Streifen mit mindestens 800 lm pro Meter.",
+      "p3": "<strong>Farbtemperatur:</strong> Wählen Sie 4000K–5000K für die Küche. Dieser neutral-kühle Weißbereich hält Sie beim Kochen wach und gibt Lebensmittelfarben genau wieder. Ein CCT-verstellbarer Streifen ermöglicht abends 3000K.",
+      "p4": "<strong>CRI (Farbwiedergabeindex):</strong> Verwenden Sie immer CRI 90+ in der Küche. Hoher CRI stellt sicher, dass Sie die echten Farben der Zutaten sehen.",
+      "p5": "<strong>Platzierungsstrategie:</strong> Montieren Sie Streifen an allen vier Deckenkanten. Positionieren Sie den Streifen zur Rauminnenseite, damit Licht gleichmäßig über Wände und Arbeitsplatten fällt.",
+      "p6": "<strong>Häufige Fehler:</strong> Eine einzelne Deckenleuchte in der Mitte ist der größte Fehler — sie erzeugt starke Schatten. Warme 2700K für die gesamte Küche macht abendliches Kochen trüb. Nicht dimmbare Streifen entfernen die Flexibilität."
     },
     "cta": {
       "title": "Modernisieren Sie Ihre Küchenbeleuchtung heute",
@@ -1487,7 +1537,32 @@
       "q5": {
         "question": "Sind LED-Streifen sicher für Spanndecken im Wohnzimmer?",
         "answer": "Ja. Unsere COB LED-Streifen erzeugen sehr wenig Wärme und sind speziell für Spanndecken konzipiert. Der Niedervoltbetrieb (12V/24V DC) gewährleistet Sicherheit."
+      },
+      "q6": {
+        "question": "Welche Farbtemperatur ist am besten für eine Wohnzimmer-LED-Decke?",
+        "answer": "2700K–3000K (warmweiß) schafft die einladendste Wohnzimmeratmosphäre. Für Mehrzweckräume ermöglicht ein CCT-verstellbarer Streifen: warmes Bernstein für Filmabende, neutrales 4000K zum Lesen, helles 5000K für Tagesaktivitäten."
+      },
+      "q7": {
+        "question": "Wie viele Meter LED-Streifen brauche ich für eine Wohnzimmerdecke?",
+        "answer": "Berechnen Sie den gesamten Raumumfang und addieren Sie 10–15% für Ecken. Ein 20 m² Wohnzimmer mit 4×5 m Grundfläche benötigt ca. 18–20 m LED-Streifen. Unsere Kits mit 5 m und 10 m Länge lassen sich in Serie verbinden."
+      },
+      "q8": {
+        "question": "Können LED-Streifen eine zentrale Deckenleuchte im Wohnzimmer vollständig ersetzen?",
+        "answer": "Ja, am Umfang montierte LED-Streifen können einen Kronleuchter vollständig ersetzen. Sie liefern gleichmäßige, schattenfreie Beleuchtung, die den Raum größer und eleganter wirken lässt."
+      },
+      "q9": {
+        "question": "Wie erstelle ich verschiedene Lichtszenen im Wohnzimmer mit LED-Streifen?",
+        "answer": "Verwenden Sie einen RGB+CCT LED-Streifen mit Mehrkanalsteuerung. Programmieren Sie Szenen wie «Film» (10% warm 2700K), «Gesellig» (60% 3000K), «Lesen» (100% 4500K). Smart-Controller ermöglichen sofortiges Umschalten."
       }
+    },
+    "seo_guide": {
+      "title": "So wählen Sie die richtige LED-Deckenbeleuchtung für Ihr Wohnzimmer",
+      "p1": "Das Wohnzimmer ist ein Mehrzweckraum, der am meisten von flexibler, dimmbarer LED-Deckenbeleuchtung profitiert. Von hellem Licht für Tagesaktivitäten bis hin zu gedimmtem warmem Licht für Filmabende.",
+      "p2": "<strong>Farbtemperatur für Atmosphäre:</strong> 2700K–3000K (warmweiß) ist Standard für Wohnzimmer. Ein CCT-verstellbarer Streifen (2700K–6500K) bietet volle Flexibilität.",
+      "p3": "<strong>Helligkeit für Zonierung:</strong> Teilen Sie die Beleuchtung in Zonen ein. Deckenstreifen bei 400–600 lm/m bilden Hintergrundlicht. Akzente für Regale schaffen Tiefe. Unabhängige Dimmerkanäle für jede Zone.",
+      "p4": "<strong>Szenenprogrammierung:</strong> Voreingestellte Szenen: «Hell» (100%, 4000K), «Gesellig» (60%, 3000K), «Film» (10%, 2700K), «Entspannen» (25%, 2700K).",
+      "p5": "<strong>Platzierungstipps:</strong> Installieren Sie Streifen am gesamten Deckenumfang. Fügen Sie Streifen hinter dem Fernseher für Bias-Beleuchtung hinzu. Betonen Sie architektonische Details.",
+      "p6": "<strong>Häufige Fehler:</strong> Gleichmäßig helle Beleuchtung im ganzen Raum tötet die Atmosphäre. Streifen zu nah an der Wand — Sie sehen den LED-Chip; lassen Sie 8–10 cm Abstand."
     },
     "cta": {
       "title": "Verwandeln Sie Ihr Wohnzimmer heute",
@@ -1618,7 +1693,32 @@
       "q5": {
         "question": "Kann ich Badezimmer-LED-Deckenlichter dimmen?",
         "answer": "Ja, alle unsere Sets beinhalten einen dimmbaren Controller. Sanftes Dimmen 0–100% ohne Flimmern."
+      },
+      "q6": {
+        "question": "Kann ich LED-Streifen im Badezimmer in der Nähe von Wasser verwenden?",
+        "answer": "Ja, mit der richtigen IP-Schutzart. Zone 3 erlaubt IP20, Zone 2 (bis 0,6 m von der Dusche) erfordert IP44, Zone 1 (über der Dusche) erfordert IP65. Unsere Kits enthalten wasserdichte Streifen."
+      },
+      "q7": {
+        "question": "Welche Farbtemperatur ist am besten für LED-Badbeleuchtung?",
+        "answer": "4000K–4500K (kühles neutrales Weiß) ist optimal für Badezimmer. Bietet klare Beleuchtung ohne Gelbstich (2700K) oder Kälte (6500K). Immer mit CRI 90+ kombinieren."
+      },
+      "q8": {
+        "question": "Wie positioniere ich LED-Streifen im Badezimmer am besten?",
+        "answer": "Installieren Sie Streifen an allen vier Deckenkanten. Platzieren Sie zusätzlich vertikale Streifen auf beiden Seiten des Spiegels — nicht nur darüber — um unvorteilhafte Gesichtsschatten zu eliminieren."
+      },
+      "q9": {
+        "question": "Ist ein 12V LED-Streifen sicherer als 230V-Beleuchtung im Badezimmer?",
+        "answer": "Ja, erheblich. Niederspannungssysteme 12V und 24V arbeiten unter der 50V-Sicherheitsschwelle. Der Transformator wird außerhalb der Nasszone installiert. Dies ist die sicherste Wahl für Baddeckenbeleuchtung."
       }
+    },
+    "seo_guide": {
+      "title": "So wählen Sie die richtige LED-Deckenbeleuchtung für Ihr Badezimmer",
+      "p1": "Die Badbeleuchtung muss widersprüchliche Anforderungen erfüllen: funktionales helles Licht für Pflege, sanftes atmosphärisches Licht zur Entspannung und strenge Sicherheitsstandards für Nassräume.",
+      "p2": "<strong>Sicherheit zuerst — IP-Schutzarten:</strong> Zone 1 erfordert IP65, Zone 2 IP44, Zone 3 erlaubt IP20. Niederspannungssysteme 12V/24V bieten zusätzliche Sicherheit.",
+      "p3": "<strong>Farbtemperatur für Pflege:</strong> 4000K–4500K ist der professionelle Standard. Gibt Hauttöne genau wieder. Immer CRI 90+ verwenden.",
+      "p4": "<strong>Spiegelbeleuchtungsstrategie:</strong> Häufiger Fehler ist alles Licht über dem Spiegel. Professionelle Lösung: vertikale Streifen auf beiden Seiten des Spiegels auf Gesichtshöhe.",
+      "p5": "<strong>Platzierung für Abdeckung:</strong> Deckenstreifen an allen vier Kanten. IP65-Streifen über der Dusche. Für größere Bäder zusätzlich in der Deckenmitte.",
+      "p6": "<strong>Häufige Fehler:</strong> Nicht-wasserdichte Streifen in Nasszonen ist ein Normenverstoß. Warme 2700K erschweren genaue Pflege. Ein einzelner Streifen über dem Spiegel ist der häufigste Fehler."
     },
     "cta": {
       "title": "Verbessern Sie Ihre Badezimmerbeleuchtung heute",
@@ -1749,7 +1849,32 @@
       "q5": {
         "question": "Können LED-Streifen mit Bewegungssensoren in Fluren verwendet werden?",
         "answer": "Ja, unsere LED-Systeme sind vollständig mit externen Bewegungssensoren kompatibel. Lichter aktivieren sich beim Betreten und schalten nach einer eingestellten Verzögerung ab."
+      },
+      "q6": {
+        "question": "Was ist die beste LED-Beleuchtung für einen schmalen Flur?",
+        "answer": "Für schmale Flure unter 1,5 m Breite montieren Sie einen einzelnen LED-Streifen an der Deckenmittellinie. In breiteren Fluren Streifen auf beiden Seiten. Wählen Sie 3000K–4000K für ein einladendes Gefühl. 600–800 lm/m ist ausreichend."
+      },
+      "q7": {
+        "question": "Sollte ich Bewegungssensoren mit LED-Deckenbeleuchtung im Flur verwenden?",
+        "answer": "Bewegungssensoren sind für Flure sehr empfehlenswert. PIR-Sensoren integrieren sich leicht mit 12V LED-Systemen. Stellen Sie eine 1–2-minütige automatische Abschaltung ein. Dies spart 70–80% der Flurbeleuchtungsenergie."
+      },
+      "q8": {
+        "question": "Wie beleuchte ich einen langen Flur gleichmäßig mit LED-Streifen?",
+        "answer": "Für Flure über 6 m teilen Sie den Streifen in zwei oder drei unabhängig steuerbare Zonen. Halten Sie einzelne Streifenlängen unter 10 m oder verwenden Sie Signalverstärker."
+      },
+      "q9": {
+        "question": "Kann LED-Deckenbeleuchtung einen kleinen Flur größer wirken lassen?",
+        "answer": "Absolut. Decken-LED-Streifen erzeugen die Illusion höherer Decken und breiterer Räume, besonders in einer Deckenvoute. Kühlere Farbtemperatur und maximale Helligkeit verstärken diesen Effekt."
       }
+    },
+    "seo_guide": {
+      "title": "So wählen Sie die richtige LED-Deckenbeleuchtung für Ihren Flur",
+      "p1": "Flure und Korridore sind Durchgangsräume, in denen die Beleuchtung praktisch, energieeffizient sein und einen starken ersten Eindruck machen muss.",
+      "p2": "<strong>Helligkeitsanforderungen:</strong> Flure benötigen 100–150 Lux. Ein einzelner LED-Streifen bei 600–800 lm/m reicht für Flure bis 1,5 m Breite. Für breitere Eingangshallen Streifen auf beiden Seiten.",
+      "p3": "<strong>Farbtemperatur:</strong> 3000K–4000K ist die ideale Balance. Warme 3000K schaffen einen einladenden Eindruck; neutrale 4000K bieten Klarheit für Sicherheit.",
+      "p4": "<strong>Bewegungssensoren für Effizienz:</strong> PIR-Sensoren aktivieren den Streifen bei Bewegung und schalten nach 1–3 Minuten ab, was über 75% Energie spart.",
+      "p5": "<strong>Nachtmodus:</strong> Ein sekundärer Niedrighelligkeitskreis (5–10%) bietet sanfte Nachtorientierung. RGB+CCT-Streifen können auf ultra-gedimmtes warmes Bernstein eingestellt werden.",
+      "p6": "<strong>Häufige Fehler:</strong> Eine einzelne Pendelleuchte in einem langen Flur erzeugt helle Pools mit dunklen Zonen. Spannungsabfall bei langen Strecken macht das Ende merklich dunkler."
     },
     "cta": {
       "title": "Erhellen Sie Ihren Flur heute",
@@ -1880,7 +2005,32 @@
       "q5": {
         "question": "Kann ich Büro-LED-Beleuchtung mit einem Zeitplan steuern?",
         "answer": "Ja. Unsere WLAN-Sets unterstützen vollständige Zeitplanung — Einschalten zur Arbeitszeit, automatische Anpassung mittags und Aufwärmen abends. Kompatibel mit Alexa und Google Home."
+      },
+      "q6": {
+        "question": "Wie viele Lumen brauche ich für eine Home-Office-Decke?",
+        "answer": "Büroarbeit erfordert 300–500 Lux auf Schreibtischniveau — etwa 3–5 mal mehr als ein Schlafzimmer. Für ein 9 m² Home-Office verwenden Sie LED-Streifen mit 1000–1200 lm/m, ergänzt durch eine Schreibtischlampe."
+      },
+      "q7": {
+        "question": "Welche Farbtemperatur fördert Fokus und Produktivität im Home-Office?",
+        "answer": "4000K–5000K (neutrales bis kühles Weiß) ist der wissenschaftlich fundierte Bereich für konzentriertes Arbeiten. Vermeiden Sie harsche 6500K+ für längere Sitzungen. CCT-verstellbare Streifen ermöglichen 5000K morgens und 4000K nachmittags."
+      },
+      "q8": {
+        "question": "Kann LED-Deckenbeleuchtung Augenermüdung bei Computerarbeit verursachen?",
+        "answer": "Schlecht gewählte LEDs können Augenermüdung verursachen. Verwenden Sie flimmerfreie Streifen (PWM-Frequenz über 1000 Hz), positionieren Sie Streifen so, dass sie nicht im Bildschirm reflektieren, und wählen Sie 4000K–5000K."
+      },
+      "q9": {
+        "question": "Ist LED-Deckenbeleuchtung besser als nur eine Schreibtischlampe?",
+        "answer": "Verwenden Sie beides zusammen. LED-Deckenstreifen bieten gleichmäßige Umgebungsbeleuchtung, die den harten Kontrast zwischen heller Schreibtischlampe und dunkler Umgebung eliminiert — eine Hauptursache für Augenermüdung."
       }
+    },
+    "seo_guide": {
+      "title": "So wählen Sie die richtige LED-Deckenbeleuchtung für Ihr Home-Office",
+      "p1": "Die Beleuchtung des Home-Office hat direkten Einfluss auf Produktivität, Konzentration und Augengesundheit. Ein Home-Office erfordert nahezu professionelle Beleuchtungsstandards.",
+      "p2": "<strong>Helligkeitsanforderungen:</strong> Büroarbeit erfordert 300–500 Lux — drei bis fünf Mal mehr als ein Schlafzimmer. LED-Streifen mit 1000–1200 lm/m plus Schreibtischlampe.",
+      "p3": "<strong>Farbtemperatur für Konzentration:</strong> 4000K–5000K ist der wissenschaftlich validierte Bereich. Imitiert natürliches Mittagslicht. Vermeiden Sie warmes 2700K.",
+      "p4": "<strong>Flimmerfreier Betrieb:</strong> LED-Flimmern trägt zu Augenermüdung und Kopfschmerzen bei. Verwenden Sie Konstantstromtreiber oder hochfrequentes PWM-Dimmen (über 1000 Hz).",
+      "p5": "<strong>Bildschirmblendungsvermeidung:</strong> Positionieren Sie Streifen so, dass keine Reflexionen auf Bildschirmen entstehen. Montieren Sie an den Seitenwänden und der Wand hinter Ihnen.",
+      "p6": "<strong>Häufige Fehler:</strong> Warmes 2700K macht nachmittägliche Arbeit schlapp. Nicht dimmbare Streifen verhindern Anpassung an sich änderndes Tageslicht."
     },
     "cta": {
       "title": "Schaffen Sie Ihre ideale Arbeitsumgebung",
@@ -1888,5 +2038,14 @@
       "primary": "LED-Sets kaufen",
       "secondary": "Frage stellen"
     }
+  },
+  "room_links": {
+    "section_title": "LED-Deckenbeleuchtung für andere Räume",
+    "kitchen": "LED-Deckenbeleuchtung für die Küche",
+    "bedroom": "LED-Deckenbeleuchtung für das Schlafzimmer",
+    "living_room": "LED-Deckenbeleuchtung für das Wohnzimmer",
+    "bathroom": "LED-Deckenbeleuchtung für das Badezimmer",
+    "hallway": "LED-Deckenbeleuchtung für den Flur",
+    "office": "LED-Deckenbeleuchtung für das Büro"
   }
 }

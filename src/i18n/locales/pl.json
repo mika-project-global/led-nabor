@@ -1226,7 +1226,32 @@
       "q5": {
         "question": "Czy oświetlenie LED jest bezpieczne dla sypialni — UV lub migotanie?",
         "answer": "Nasze paski COB nie emitują UV i pracują bez migotania — w pełni bezpieczne, także dla pokojów dziecięcych. Niskie napięcie 12V/24V DC."
+      },
+      "q6": {
+        "question": "Jaka temperatura barwowa LED jest najlepsza dla snu w sypialni?",
+        "answer": "Dla dobrego snu używaj wieczorem ciepłego białego światła LED 2700K–3000K. To spektrum minimalizuje niebieskie światło, które hamuje produkcję melatoniny. Z regulowaną taśmą CCT możesz rano użyć 5000K–6500K do energetycznego budzenia."
+      },
+      "q7": {
+        "question": "Jaka jasność LED jest komfortowa dla sufitu sypialni?",
+        "answer": "Oświetlenie sypialni powinno wynosić 100–200 luksów do relaksu i 30–50 luksów przed snem. Dla typowej sypialni 12–16 m² to około 300–500 lm/m taśmy LED. Ściemnianie do 5–10% jest kluczowe."
+      },
+      "q8": {
+        "question": "Czy mogę ściemniać LED sufitowe w sypialni standardowym ściemniaczem?",
+        "answer": "Standardowe ściemniacze ścienne nie są kompatybilne z taśmami LED — potrzebny jest sterownik PWM lub LED dimmer. Nasze zestawy do sypialni zawierają kompatybilny ściemniacz z pilotem."
+      },
+      "q9": {
+        "question": "Jak zainstalować taśmę LED w sufitowej wnęce sypialni?",
+        "answer": "Zmierz obwód sufitu i przytnij taśmę w oznaczonych punktach. Zamontuj taśmę wewnątrz wnęki gipsowo-kartonowej tak, aby widoczne było tylko odbite światło. Podłącz do zasilacza 12V lub 24V w szafie."
       }
+    },
+    "seo_guide": {
+      "title": "Jak wybrać oświetlenie LED sufitu do sypialni",
+      "p1": "Sypialnia wymaga oświetlenia adaptującego się do różnych potrzeb: jasnego i energetyzującego rano, ciepłego i relaksującego wieczorem, wystarczająco przyciemnionego, by nie zakłócać snu.",
+      "p2": "<strong>Temperatura barwowa dla snu:</strong> Używaj 2700K–3000K (ciepła biel) przed snem. To spektrum hamuje niebieskie światło. Rano regulowana taśma CCT może przełączyć na 5000K–6500K.",
+      "p3": "<strong>Jasność i ściemnianie:</strong> Oświetlenie sypialni powinno osiągać 100–200 luksów wieczorem i 30–50 luksów przed snem. Pełne ściemnianie 0–100% jest niezbędne.",
+      "p4": "<strong>Rozmieszczenie dla miękkiego światła:</strong> Zamontuj taśmy w sufitowej wnęce skierowane w górę, aby widoczne było tylko odbite światło. Eliminuje to olśnienie.",
+      "p5": "<strong>Inteligentna automatyzacja:</strong> Ustaw rytm dobowy — automatyczne przełączanie z jasno-chłodnego rano na ciepło-przyciemnione wieczorem. Podłącz do Alexy lub Google Home.",
+      "p6": "<strong>Częste błędy:</strong> Chłodne 4000K+ w sypialni tworzy atmosferę biura. Nieściemnialne taśmy usuwają możliwość tworzenia środowiska do snu."
     },
     "cta": {
       "title": "Gotowy odmienić swoją sypialnię?",
@@ -1356,7 +1381,32 @@
       "q5": {
         "question": "Czy instalacja oświetlenia LED w kuchni jest trudna?",
         "answer": "Nie — pasek na kleju 3M, wszystkie komponenty pretestowane. Większość kuchni gotowa w 2–3 godziny. Instrukcja wideo w zestawie."
+      },
+      "q6": {
+        "question": "Ile lumenów potrzebuję do oświetlenia sufitu kuchni?",
+        "answer": "Dla kuchni dąż do 50–75 luksów na metr kwadratowy światła ogólnego i 300–500 luksów nad blatami. Kuchnia 10 m² potrzebuje taśm LED 800–1200 lm/m na obwodzie. Taśmy COB LED z 800+ lm/m zapewniają równomierne, bezcieniowe pokrycie."
+      },
+      "q7": {
+        "question": "Jaka temperatura barwowa jest najlepsza dla oświetlenia LED kuchni?",
+        "answer": "4000K–5000K (neutralna do chłodnej bieli) jest idealna dla kuchni. Ten zakres dokładnie oddaje kolory żywności dzięki wysokiemu CRI (90+) i utrzymuje czujność podczas gotowania. Ciepłe 2700K sprawia, że świeże produkty wyglądają blado."
+      },
+      "q8": {
+        "question": "Jak wyeliminować cienie na blatach kuchennych?",
+        "answer": "Zamontuj taśmy LED na całym obwodzie sufitu, aby światło padało z czterech stron jednocześnie. To oświetlenie krzyżowe eliminuje cienie. W kuchniach z wyspą dodaj taśmę we wnęce sufitowej wyspy."
+      },
+      "q9": {
+        "question": "Jak zainstalować taśmę LED na suficie kuchni?",
+        "answer": "Dokładnie wyczyść powierzchnię sufitu, następnie przyklej taśmę LED za pomocą kleju samoprzylepnego, wzmacniając klamrami montażowymi co 50 cm. Poprowadź kabel niskonapięciowy do transformatora i podłącz do kompatybilnego sterownika ściemniania."
       }
+    },
+    "seo_guide": {
+      "title": "Jak wybrać oświetlenie LED sufitu do kuchni",
+      "p1": "Kuchnia jest najbardziej wymagającym pomieszczeniem pod względem oświetlenia. Potrzebujesz jasnego, precyzyjnego, bezcieniowego światła do przygotowywania posiłków oraz łagodniejszej atmosfery do jedzenia. Taśmy LED sufitowe — szczególnie technologia COB — spełniają oba wymagania.",
+      "p2": "<strong>Jasność (Lumeny):</strong> Blaty robocze wymagają 300–500 luksów. Dla taśm sufitowych to 800–1200 lm/m. Kuchnia 10 m² z obwodem 4×4 m potrzebuje taśm o co najmniej 800 lm na metr.",
+      "p3": "<strong>Temperatura barwowa:</strong> Wybierz 4000K–5000K do kuchni. Ten neutralno-chłodny zakres utrzymuje czujność i dokładnie oddaje kolory żywności. Regulowana taśma CCT pozwala wieczorem przejść na 3000K.",
+      "p4": "<strong>CRI (Współczynnik oddawania barw):</strong> Zawsze używaj CRI 90+ w kuchni. Wysoki CRI zapewnia, że widzisz prawdziwe kolory składników.",
+      "p5": "<strong>Strategia rozmieszczenia:</strong> Zamontuj taśmy na wszystkich czterech krawędziach sufitu. Ustaw taśmę w kierunku wnętrza pokoju, aby światło równomiernie opadało na ściany i blaty.",
+      "p6": "<strong>Częste błędy:</strong> Pojedyncza lampa centralna to największy błąd — tworzy silne cienie. Ciepłe 2700K sprawia, że wieczorne gotowanie jest mroczne. Nieściemnialne taśmy usuwają elastyczność."
     },
     "cta": {
       "title": "Zmodernizuj oświetlenie kuchni już dziś",
@@ -1487,7 +1537,32 @@
       "q5": {
         "question": "Czy taśmy LED są bezpieczne dla sufitów naprężanych w salonie?",
         "answer": "Tak. Nasze taśmy COB LED wytwarzają bardzo mało ciepła i są specjalnie zaprojektowane do sufitów naprężanych. Niskonapięciowa praca (12V/24V DC) zapewnia bezpieczeństwo."
+      },
+      "q6": {
+        "question": "Jaka temperatura barwowa jest najlepsza dla LED sufitu salonu?",
+        "answer": "2700K–3000K (ciepła biel) tworzy najbardziej przytulną atmosferę salonu. Regulowana taśma CCT pozwala: ciepły bursztyn do filmów, neutralne 4000K do czytania, jasne 5000K do dziennych czynności."
+      },
+      "q7": {
+        "question": "Ile metrów taśmy LED potrzebuję na sufit salonu?",
+        "answer": "Oblicz pełny obwód pokoju i dodaj 10–15% na narożniki. Salon 20 m² o wymiarach 4×5 m potrzebuje około 18–20 m taśmy LED. Nasze zestawy po 5 m i 10 m łączą się szeregowo."
+      },
+      "q8": {
+        "question": "Czy taśmy LED mogą całkowicie zastąpić centralną lampę sufitową w salonie?",
+        "answer": "Tak, taśmy LED zamontowane na obwodzie mogą całkowicie zastąpić żyrandol. Zapewniają równomierne, bezcieniowe oświetlenie, które sprawia, że pokój wydaje się większy."
+      },
+      "q9": {
+        "question": "Jak tworzyć różne sceny oświetleniowe w salonie z taśmami LED?",
+        "answer": "Użyj taśmy RGB+CCT LED z wielokanałowym sterowaniem. Zaprogramuj sceny: «Film» (10% ciepłe 2700K), «Towarzyskie» (60% 3000K), «Czytanie» (100% 4500K). Inteligentne sterowniki pozwalają przełączać sceny natychmiast."
       }
+    },
+    "seo_guide": {
+      "title": "Jak wybrać oświetlenie LED sufitu do salonu",
+      "p1": "Salon to przestrzeń wielofunkcyjna, która najbardziej korzysta z elastycznego, ściemnialnego oświetlenia LED sufitowego. Od jasnego światła dziennego po przyciemnione ciepłe do filmów.",
+      "p2": "<strong>Temperatura barwowa dla atmosfery:</strong> 2700K–3000K to standard dla salonów. Regulowana taśma CCT (2700K–6500K) zapewnia pełną elastyczność.",
+      "p3": "<strong>Jasność do strefowania:</strong> Podziel oświetlenie na strefy. Taśmy sufitowe 400–600 lm/m jako światło tła. Akcenty dla półek tworzą głębię.",
+      "p4": "<strong>Programowanie scen:</strong> Predefiniowane sceny: «Jasno» (100%, 4000K), «Towarzyskie» (60%, 3000K), «Film» (10%, 2700K), «Relaks» (25%, 2700K).",
+      "p5": "<strong>Wskazówki rozmieszczenia:</strong> Zainstaluj taśmy na całym obwodzie sufitu. Dodaj taśmy za telewizorem. Podświetl elementy architektoniczne.",
+      "p6": "<strong>Częste błędy:</strong> Jednolite jasne światło w całym pokoju zabija atmosferę. Taśmy zbyt blisko ściany — widzisz chip LED; zostaw 8–10 cm odstępu."
     },
     "cta": {
       "title": "Przemień swój salon już dziś",
@@ -1618,7 +1693,32 @@
       "q5": {
         "question": "Czy można ściemniać sufitowe światło LED w łazience?",
         "answer": "Tak, wszystkie nasze zestawy zawierają ściemniany sterownik. Płynne ściemnianie 0–100% bez migotania."
+      },
+      "q6": {
+        "question": "Czy mogę używać taśm LED w łazience blisko wody?",
+        "answer": "Tak, z odpowiednią klasą IP. Strefa 3 dopuszcza IP20, Strefa 2 (do 0,6 m od prysznica) wymaga IP44, Strefa 1 (nad prysznicem) wymaga IP65. Nasze zestawy zawierają wodoodporne taśmy."
+      },
+      "q7": {
+        "question": "Jaka temperatura barwowa jest najlepsza dla LED łazienki?",
+        "answer": "4000K–4500K (chłodna neutralna biel) jest optymalna dla łazienek. Zapewnia precyzyjne oświetlenie do pielęgnacji bez żółtego odcienia (2700K) lub nadmiernego chłodu (6500K). Zawsze CRI 90+."
+      },
+      "q8": {
+        "question": "Jak rozmieścić taśmy LED w łazience dla najlepszego efektu?",
+        "answer": "Zainstaluj taśmy na wszystkich czterech krawędziach sufitu. Dodatkowo umieść pionowe taśmy po obu stronach lustra — nie tylko nad nim — aby wyeliminować niekorzystne cienie na twarzy."
+      },
+      "q9": {
+        "question": "Czy taśma LED 12V jest bezpieczniejsza niż oświetlenie 230V w łazience?",
+        "answer": "Tak, znacząco. Systemy niskonapięciowe 12V i 24V działają poniżej progu bezpieczeństwa 50V. Transformator instalowany jest poza strefą mokrą. To najbezpieczniejszy wybór dla oświetlenia sufitowego łazienki."
       }
+    },
+    "seo_guide": {
+      "title": "Jak wybrać oświetlenie LED sufitu do łazienki",
+      "p1": "Oświetlenie łazienki musi spełniać sprzeczne wymagania: funkcjonalne jasne światło do pielęgnacji, miękkie atmosferyczne światło do relaksu i surowe normy bezpieczeństwa.",
+      "p2": "<strong>Bezpieczeństwo przede wszystkim — klasy IP:</strong> Strefa 1 wymaga IP65, Strefa 2 IP44, Strefa 3 dopuszcza IP20. Systemy 12V/24V zapewniają dodatkowe bezpieczeństwo.",
+      "p3": "<strong>Temperatura barwowa do pielęgnacji:</strong> 4000K–4500K to profesjonalny standard. Dokładnie oddaje odcienie skóry. Zawsze CRI 90+.",
+      "p4": "<strong>Strategia oświetlenia lustra:</strong> Częsty błąd to całe światło nad lustrem. Rozwiązanie: pionowe taśmy po obu stronach lustra na wysokości twarzy.",
+      "p5": "<strong>Rozmieszczenie dla pokrycia:</strong> Taśmy sufitowe na wszystkich czterech krawędziach. Taśma IP65 nad prysznicem.",
+      "p6": "<strong>Częste błędy:</strong> Niewodoodporne taśmy w strefach mokrych to naruszenie norm. Ciepłe 2700K utrudnia precyzyjną pielęgnację. Jedna taśma nad lustrem to najczęstszy błąd."
     },
     "cta": {
       "title": "Ulepsz oświetlenie łazienki już dziś",
@@ -1749,7 +1849,32 @@
       "q5": {
         "question": "Czy można używać taśm LED z czujnikami ruchu w korytarzach?",
         "answer": "Tak, nasze systemy LED są w pełni kompatybilne z zewnętrznymi czujnikami ruchu. Światła aktywują się przy wejściu i wyłączają po ustawionym czasie. Taśmy LED natychmiast reagują do pełnej jasności."
+      },
+      "q6": {
+        "question": "Jakie jest najlepsze rozwiązanie LED dla wąskiego korytarza?",
+        "answer": "Dla wąskich korytarzy do 1,5 m szerokości zamontuj jedną taśmę LED na osi sufitu. W szerszych korytarzach taśmy po obu stronach. Wybierz 3000K–4000K. 600–800 lm/m jest wystarczające."
+      },
+      "q7": {
+        "question": "Czy powinienem używać czujników ruchu z LED sufitowym na korytarzu?",
+        "answer": "Czujniki ruchu są bardzo zalecane dla korytarzy. Czujniki PIR integrują się łatwo z systemami LED 12V. Ustaw automatyczne wyłączanie po 1–2 minutach. Oszczędność 70–80% energii."
+      },
+      "q8": {
+        "question": "Jak równomiernie oświetlić długi korytarz taśmami LED?",
+        "answer": "Dla korytarzy powyżej 6 m podziel taśmę na dwie lub trzy niezależnie sterowane strefy. Utrzymuj długość każdego odcinka poniżej 10 m lub użyj wzmacniaczy sygnału."
+      },
+      "q9": {
+        "question": "Czy oświetlenie LED sufitowe może sprawić, że mały korytarz wydaje się większy?",
+        "answer": "Absolutnie. Sufitowe taśmy LED tworzą iluzję wyższych sufitów i szerszych przestrzeni, szczególnie w sufitowej wnęce. Chłodniejsza temperatura i maksymalna jasność wzmacniają ten efekt."
       }
+    },
+    "seo_guide": {
+      "title": "Jak wybrać oświetlenie LED sufitu dla korytarza",
+      "p1": "Korytarze to przestrzenie przejściowe, gdzie oświetlenie musi być praktyczne, energooszczędne i zdolne wywrzeć silne pierwsze wrażenie.",
+      "p2": "<strong>Wymagania jasności:</strong> Korytarze potrzebują 100–150 luksów. Jedna taśma LED 600–800 lm/m wystarczy dla korytarza do 1,5 m szerokości.",
+      "p3": "<strong>Temperatura barwowa:</strong> 3000K–4000K to idealny balans. Ciepłe 3000K tworzy przytulne wrażenie; neutralne 4000K dodaje wyrazistości.",
+      "p4": "<strong>Czujniki ruchu dla oszczędności:</strong> Czujnik PIR aktywuje taśmę przy wykryciu ruchu i wyłącza po 1–3 minutach, oszczędzając ponad 75% energii.",
+      "p5": "<strong>Tryb nocny:</strong> Wtórny obwód niskiej jasności (5–10%) zapewnia delikatną nocną orientację. Taśmy RGB+CCT można ustawić na ultra-przyciemniony ciepły bursztyn.",
+      "p6": "<strong>Częste błędy:</strong> Pojedyncza lampa wisząca w długim korytarzu tworzy jasne strefy z ciemnymi obszarami. Spadek napięcia na długich odcinkach czyni dalszy koniec ciemniejszym."
     },
     "cta": {
       "title": "Rozjaśnij swój korytarz już dziś",
@@ -1880,7 +2005,32 @@
       "q5": {
         "question": "Czy mogę sterować oświetleniem LED biura według harmonogramu?",
         "answer": "Tak. Nasze zestawy Wi-Fi obsługują pełny harmonogram — włączenie o rozpoczęciu pracy, automatyczna regulacja w południe i ocieplenie wieczorem. Kompatybilne z Alexa i Google Home."
+      },
+      "q6": {
+        "question": "Ile lumenów potrzebuję na sufit domowego biura?",
+        "answer": "Praca biurowa wymaga 300–500 luksów na poziomie biurka — około 3–5 razy więcej niż sypialnia. Dla biura 9 m² użyj taśm LED 1000–1200 lm/m, uzupełnionych lampą biurkową."
+      },
+      "q7": {
+        "question": "Jaka temperatura barwowa sprzyja skupieniu w domowym biurze?",
+        "answer": "4000K–5000K to naukowo uzasadniony zakres dla skoncentrowanej pracy. Unikaj ostrych 6500K+ przy dłuższych sesjach. Regulowane taśmy CCT pozwalają na 5000K rano i 4000K po południu."
+      },
+      "q8": {
+        "question": "Czy LED sufitowe może powodować zmęczenie oczu przy pracy komputerowej?",
+        "answer": "Źle dobrane LED mogą powodować zmęczenie oczu. Używaj taśm bez migotania (częstotliwość PWM powyżej 1000 Hz), umieszczaj taśmy tak, by nie odbijały się w ekranie monitora, wybieraj 4000K–5000K."
+      },
+      "q9": {
+        "question": "Czy LED sufitowe jest lepsze niż sama lampa biurkowa?",
+        "answer": "Używaj obu razem. Sufitowe taśmy LED zapewniają równomierne oświetlenie otoczenia, eliminując ostry kontrast między jasną lampą biurkową a ciemnym otoczeniem — główna przyczyna zmęczenia oczu."
       }
+    },
+    "seo_guide": {
+      "title": "Jak wybrać oświetlenie LED sufitu do domowego biura",
+      "p1": "Oświetlenie domowego biura ma bezpośredni wpływ na produktywność, skupienie i zdrowie oczu. Wymaga niemal profesjonalnych standardów — wysoka jasność, neutralna temperatura i zerowe migotanie.",
+      "p2": "<strong>Wymagania jasności:</strong> Praca biurowa wymaga 300–500 luksów — 3–5 razy więcej niż sypialnia. Taśmy LED 1000–1200 lm/m plus lampa biurkowa.",
+      "p3": "<strong>Temperatura dla koncentracji:</strong> 4000K–5000K to naukowo zweryfikowany zakres. Imituje naturalne światło południa. Unikaj ciepłego 2700K.",
+      "p4": "<strong>Praca bez migotania:</strong> Migotanie LED przyczynia się do zmęczenia oczu i bólów głowy. Używaj sterowników prądu stałego lub wysokoczęstotliwościowego PWM (powyżej 1000 Hz).",
+      "p5": "<strong>Zapobieganie odblaskowi na ekranie:</strong> Umieszczaj taśmy tak, by nie tworzyły odbić na monitorach. Montuj na ścianach bocznych i ścianie za tobą.",
+      "p6": "<strong>Częste błędy:</strong> Ciepłe 2700K sprawia, że popołudniowa praca jest ospała. Nieściemnialne taśmy uniemożliwiają adaptację do zmieniającego się światła dziennego."
     },
     "cta": {
       "title": "Zbuduj swoje idealne środowisko pracy",
@@ -1888,5 +2038,14 @@
       "primary": "Kup zestaw LED",
       "secondary": "Zadaj pytanie"
     }
+  },
+  "room_links": {
+    "section_title": "Oświetlenie LED sufitu dla innych pomieszczeń",
+    "kitchen": "Oświetlenie LED sufitu dla kuchni",
+    "bedroom": "Oświetlenie LED sufitu dla sypialni",
+    "living_room": "Oświetlenie LED sufitu dla salonu",
+    "bathroom": "Oświetlenie LED sufitu dla łazienki",
+    "hallway": "Oświetlenie LED sufitu dla korytarza",
+    "office": "Oświetlenie LED sufitu dla biura"
   }
 }

@@ -1259,7 +1259,32 @@
       "q5": {
         "question": "Is LED ceiling lighting safe for a bedroom — does it emit UV or flicker?",
         "answer": "Our COB LED strips have zero UV emission and are engineered for flicker-free operation, making them completely safe for bedrooms including children's rooms. They operate at low voltage (12V/24V DC) which is inherently safe."
+      },
+      "q6": {
+        "question": "What color temperature of LED light is best for sleep in a bedroom?",
+        "answer": "For good sleep, use warm white LED light at 2700K–3000K in the evening. This spectrum minimizes blue light, which suppresses melatonin production. With a CCT-adjustable LED strip, you can use 5000K–6500K in the morning for an energizing wake-up, then gradually transition to 2700K about an hour before bedtime."
+      },
+      "q7": {
+        "question": "What LED brightness is comfortable for a bedroom ceiling?",
+        "answer": "Bedroom ambient lighting should be 100–200 lux for relaxation and 30–50 lux for pre-sleep wind-down. For a typical 12–16 m² bedroom, this means roughly 300–500 lm/m of LED strip on the perimeter. Dimming capability is essential — being able to reduce to 5–10% allows you to create a true sleep-ready environment without turning lights fully off."
+      },
+      "q8": {
+        "question": "Can I dim LED ceiling lights in the bedroom with a standard dimmer switch?",
+        "answer": "Standard wall dimmers are not compatible with LED strips — they require a PWM or constant-voltage LED dimmer controller. Our bedroom LED kits include a compatible remote-controlled dimmer, and CCT+RGB models integrate with smart home systems like Alexa or Google Home for hands-free voice dimming and automated sleep schedules."
+      },
+      "q9": {
+        "question": "How do I install LED strip lighting in a bedroom ceiling cove?",
+        "answer": "Measure your ceiling perimeter and cut the strip at the marked cut points. Mount the strip inside a plasterboard or aluminium cove profile so only the reflected light is visible, creating a soft glow. Connect to a 12V or 24V driver placed inside a wardrobe or above a false ceiling panel. The warm indirect light this creates is ideal for a relaxing bedroom atmosphere."
       }
+    },
+    "seo_guide": {
+      "title": "How to Choose LED Ceiling Lighting for Your Bedroom",
+      "p1": "The bedroom demands lighting that adapts to very different needs: bright and energizing in the morning, warm and relaxing in the evening, and dim enough not to interfere with sleep. LED ceiling strips with CCT (color temperature) adjustment and full dimming are the ideal solution.",
+      "p2": "<strong>Color Temperature for Sleep:</strong> Use 2700K–3000K (warm white) in the hours before bedtime. This spectrum suppresses blue light that inhibits melatonin production, making it easier to fall asleep naturally. For morning wake-up, a CCT-adjustable strip can shift to 5000K–6500K to mimic bright daylight and help you feel alert faster.",
+      "p3": "<strong>Brightness and Dimming:</strong> Bedroom ambient lighting should reach 100–200 lux for normal evening activity and 30–50 lux for pre-sleep relaxation. For a 12–16 m² bedroom, this means 300–500 lm/m of perimeter strip. Full 0–100% dimming is essential — the ability to set lights to 5% or lower is crucial for creating a true sleep environment without full darkness.",
+      "p4": "<strong>Placement for Soft Ambient Light:</strong> Mount strips inside a ceiling cove or plasterboard recess facing upward or outward so you see reflected light, not the LED strip directly. This indirect lighting eliminates glare and creates an even, shadow-free glow that feels significantly more relaxing than direct lighting. A full perimeter installation ensures no dark corners.",
+      "p5": "<strong>Smart Automation:</strong> Set a circadian rhythm schedule so lights automatically shift from bright-cool in the morning to warm-dim in the evening. Connect to Alexa, Google Home, or a bedside switch panel for hands-free control when you are already in bed. A gentle 30-minute sunset dimming sequence is particularly effective for sleep quality.",
+      "p6": "<strong>Common Mistakes:</strong> Installing cool 4000K+ lighting in a bedroom makes it feel like an office. Using non-dimmable strips removes the ability to create a sleep-friendly environment. Mounting strips too close to the bed headwall can create visual glare when lying down — always position them on all four sides for balanced, glare-free light."
     },
     "cta": {
       "title": "Ready to Transform Your Bedroom?",
@@ -1389,7 +1414,32 @@
       "q5": {
         "question": "How difficult is it to install LED ceiling lighting in a kitchen?",
         "answer": "Installation is straightforward with our complete kits — no special tools required. The LED strip has 3M adhesive backing, and all components (power supply, controller, remote) are pre-wired and tested. Most kitchens can be completed in 2–3 hours. We provide step-by-step video guides for each kit."
+      },
+      "q6": {
+        "question": "How many lumens do I need for kitchen ceiling lighting?",
+        "answer": "For a kitchen, aim for 50–75 lux per square meter of ambient light, with 300–500 lux over work surfaces. A 10 m² kitchen typically needs LED strips delivering 800–1200 lm/m around the perimeter. COB LED strips with 800+ lm/m deliver even, shadow-free coverage across all countertops without hot spots."
+      },
+      "q7": {
+        "question": "What color temperature is best for kitchen LED lighting?",
+        "answer": "4000K–5000K (neutral to cool white) is ideal for kitchens. This range renders food colors accurately thanks to high CRI (90+) and keeps you alert while cooking. Warm 2700K bulbs over worktops make fresh produce appear dull and make it harder to judge the doneness of food."
+      },
+      "q8": {
+        "question": "How do I eliminate shadows on kitchen countertops with LED ceiling lighting?",
+        "answer": "Mount LED strips around the full ceiling perimeter so light comes from all four sides simultaneously. This cross-illumination removes the shadows that a single central fixture creates on every surface you work on. For island kitchens, add a strip inside the island ceiling recess for complete, shadow-free task coverage."
+      },
+      "q9": {
+        "question": "How do I install LED strip lights on a kitchen ceiling?",
+        "answer": "Clean the ceiling surface thoroughly, then apply the LED strip using the self-adhesive backing reinforced with mounting clips every 50 cm for security. Run the low-voltage cable to the driver/transformer mounted in a cabinet or ceiling void, then connect to a compatible dimmer controller. The entire installation requires no electrician for the low-voltage portion."
       }
+    },
+    "seo_guide": {
+      "title": "How to Choose LED Ceiling Lighting for Your Kitchen",
+      "p1": "The kitchen is the most demanding room for lighting. You need bright, accurate, shadow-free light for food preparation, and a softer atmosphere for dining. LED ceiling strip lighting — particularly COB technology — delivers both.",
+      "p2": "<strong>Brightness (Lumens):</strong> Worktops require 300–500 lux of task light. For ceiling perimeter strips, this means 800–1200 lm/m. A 10 m² kitchen with a 4×4 m perimeter needs strips delivering at least 800 lm per meter to achieve adequate counter-level brightness. Under-cabinet strips add targeted light exactly where you need it most.",
+      "p3": "<strong>Color Temperature:</strong> Choose 4000K–5000K for the kitchen. This neutral-to-cool white range keeps you alert while cooking and renders food colors accurately. Warm 2700K light makes tomatoes look washed out and raw meat harder to evaluate. A CCT-adjustable strip lets you drop to 3000K in the evening for a warmer dining atmosphere without changing fixtures.",
+      "p4": "<strong>CRI (Color Rendering Index):</strong> Always use CRI 90+ in the kitchen. High CRI ensures you see the true color of ingredients, making it easier to judge the freshness of produce and the doneness of cooked food. Low CRI lighting makes kitchen tasks harder and less precise.",
+      "p5": "<strong>Placement Strategy:</strong> Mount strips on all four ceiling edges or inside a ceiling cove for maximum shadow elimination. Position the strip toward the room's interior edge so light washes down the walls and across countertops evenly. For L-shaped or galley kitchens, follow the perimeter continuously including the short walls to avoid dark end-zones.",
+      "p6": "<strong>Common Mistakes to Avoid:</strong> Mounting a single central downlight is the biggest error — it creates strong shadows on every surface you work on. Choosing warm 2700K for the entire kitchen makes nighttime meal prep feel dim and tired. Using non-dimmable strips removes the flexibility to shift from bright task mode to ambient dining mode in the same space."
     },
     "cta": {
       "title": "Upgrade Your Kitchen Lighting Today",
@@ -1520,7 +1570,32 @@
       "q5": {
         "question": "Are LED strips safe for stretch ceilings in living rooms?",
         "answer": "Yes. Our COB LED strips generate very little heat and are specifically designed for stretch ceiling applications. The low-voltage (12V/24V DC) operation ensures safety, and the minimal heat output won't damage or warp stretch ceiling materials."
+      },
+      "q6": {
+        "question": "What color temperature is best for a living room LED ceiling?",
+        "answer": "2700K–3000K (warm white) creates the most inviting living room atmosphere, mimicking the warmth of incandescent bulbs. For multi-use spaces that serve both relaxing and working purposes, a CCT-adjustable strip (2700K–6500K) lets you dial in the mood: warm amber for movie nights, neutral 4000K for reading, or bright 5000K for daytime activities."
+      },
+      "q7": {
+        "question": "How many meters of LED strip do I need for a living room ceiling?",
+        "answer": "Calculate the full perimeter of your room and add 10–15% for corners and overlaps. A 20 m² living room with a 4×5 m footprint needs approximately 18–20 m of LED strip for a full perimeter install. For double-row or cove lighting effects, double this figure. Our LED kits come in 5 m and 10 m lengths that connect in series."
+      },
+      "q8": {
+        "question": "Can LED strip lights fully replace a central ceiling light in a living room?",
+        "answer": "Yes, perimeter-mounted LED strips can fully replace a chandelier or central fixture. They deliver even, shadow-free illumination that makes the room feel larger and more sophisticated. You gain dimmability, color temperature control, and the ability to highlight architectural features with indirect cove lighting — advantages a central light cannot offer."
+      },
+      "q9": {
+        "question": "How do I create different lighting scenes in a living room with LED strips?",
+        "answer": "Use an RGB+CCT LED strip with multi-channel control. Program scenes such as \"Movie\" (10% warm 2700K), \"Social\" (60% 3000K), and \"Reading\" (100% 4500K). Smart controllers with app control let you save and switch between scenes instantly, or automate them based on time of day or connected devices like TVs and speakers."
       }
+    },
+    "seo_guide": {
+      "title": "How to Choose LED Ceiling Lighting for Your Living Room",
+      "p1": "The living room is a multi-purpose space that benefits most from flexible, dimmable LED ceiling lighting. From bright light for daytime activities to dim warm light for movie nights and entertaining, a well-planned LED system transforms how the room feels throughout the day.",
+      "p2": "<strong>Color Temperature for Ambiance:</strong> 2700K–3000K (warm white) is the standard for living rooms, creating the inviting, cozy atmosphere associated with traditional incandescent lighting. For spaces that also serve as home offices or play areas, a CCT-adjustable strip (2700K–6500K) provides full flexibility — warm evenings, neutral afternoons, bright mornings.",
+      "p3": "<strong>Brightness for Zoning:</strong> Divide your living room lighting into zones. Ambient ceiling strips at 400–600 lm/m provide comfortable background light. Accent strips highlighting shelves, alcoves, or artwork can run at lower brightness to create depth. Use independent dimmer channels for each zone to build layered lighting scenes without additional fixtures.",
+      "p4": "<strong>Scene Programming:</strong> A living room benefits most from preset scenes: \"Bright\" for cleaning and activities (100%, 4000K), \"Social\" for guests (60%, 3000K), \"Movie\" for film watching (10%, 2700K), and \"Relax\" for evening wind-down (25%, 2700K). Smart LED controllers let you switch between scenes with one tap on a phone or voice command.",
+      "p5": "<strong>Placement Tips:</strong> Install strips around the full ceiling perimeter for even base illumination. Add strips behind the TV or entertainment unit for bias lighting that reduces eye strain during viewing. Highlight architectural features like beamed ceilings, alcoves, or feature walls with directional accent strips to add visual depth and interest.",
+      "p6": "<strong>Common Mistakes:</strong> Uniform bright lighting at the same level throughout the room kills atmosphere — always design for multiple brightness levels. Installing strips too close to the wall means you see the LED chip rather than reflected light; leave at least 8–10 cm of clearance for a proper glow. Skipping dimmer control eliminates the room's most important functional advantage."
     },
     "cta": {
       "title": "Transform Your Living Room Today",
@@ -1651,7 +1726,32 @@
       "q5": {
         "question": "Can I dim bathroom LED ceiling lights?",
         "answer": "Yes, all our LED kits include a dimmable controller. Dimming is useful in bathrooms for creating a relaxing atmosphere during baths or for late-night bathroom visits when you don't want full brightness. The dimming is smooth from 0–100% with no flicker or buzzing."
+      },
+      "q6": {
+        "question": "Can I use LED strip lights in a bathroom near water?",
+        "answer": "Yes, with the correct IP rating. For general ceiling use away from shower spray (Zone 3), IP20 is sufficient. Within 0.6 m of shower enclosures (Zone 2), use IP44 minimum. Directly above a shower head (Zone 1), use IP65-rated strips. Our kits include waterproof strip options specifically suited for bathroom ceiling installations."
+      },
+      "q7": {
+        "question": "What color temperature is best for bathroom LED lighting?",
+        "answer": "4000K–4500K (cool neutral white) is optimal for bathrooms. It provides crisp, accurate lighting for grooming tasks without making skin tones look yellow (2700K issue) or harshly cold (6500K). Always pair with high CRI 90+ so makeup colors appear true and shaving is easier in the mirror."
+      },
+      "q8": {
+        "question": "How should I position LED strips in a bathroom for the best effect?",
+        "answer": "Install strips on all four ceiling edges for even ambient light. Additionally, place vertical strips on both sides of the mirror — not just above it — to eliminate the unflattering facial shadows that overhead-only lighting creates. A strip above the shower zone provides targeted task lighting. This multi-zone approach is the professional standard."
+      },
+      "q9": {
+        "question": "Is 12V LED strip safer than 230V lighting in a bathroom?",
+        "answer": "Yes, significantly. Low-voltage 12V and 24V LED systems operate below the 50V safety threshold defined in electrical standards for wet locations. The transformer is installed outside the wet zone, and only the low-voltage strip runs near water. This makes them the safest and most code-compliant choice for bathroom ceiling installations in all zones."
       }
+    },
+    "seo_guide": {
+      "title": "How to Choose LED Ceiling Lighting for Your Bathroom",
+      "p1": "Bathroom lighting must satisfy conflicting requirements: functional bright light for grooming tasks, soft atmospheric light for relaxation, and strict safety standards for wet environments. LED strip lighting addresses all three when specified correctly.",
+      "p2": "<strong>Safety First — IP Ratings:</strong> The bathroom is divided into zones under electrical safety regulations. Zone 1 (directly above the shower/bath) requires IP65 minimum. Zone 2 (within 0.6 m of water sources) requires IP44 minimum. Zone 3 (the rest of the bathroom) allows IP20. Using 12V/24V low-voltage LED systems also provides a fundamental safety advantage since they operate below the hazardous voltage threshold.",
+      "p3": "<strong>Color Temperature for Grooming:</strong> 4000K–4500K is the professional standard for bathroom lighting. This cool-neutral range renders skin tones accurately without the yellow cast of 2700K or the harshness of 6500K. Always specify CRI 90+ for bathroom use — color accuracy matters enormously for makeup application, shaving, and assessing skin condition.",
+      "p4": "<strong>Mirror Lighting Strategy:</strong> A common mistake is placing all light directly above the mirror. This creates deep shadows under the chin, nose, and eyes — unflattering for grooming and inaccurate for makeup. The professional solution is vertical strip lighting on both sides of the mirror at face height, which fills in shadows completely. Combine with ceiling perimeter strips for overall ambient light.",
+      "p5": "<strong>Placement for Coverage:</strong> Install ceiling strips on all four edges for even ambient light that eliminates dark corners. Add a strip specifically above or in the shower enclosure (IP65 rated) for safe, bright shower lighting. For larger bathrooms, a strip in the ceiling center provides supplemental task lighting over the vanity area.",
+      "p6": "<strong>Common Mistakes:</strong> Using non-waterproof strips in wet zones is a code violation and a safety hazard. Choosing warm 2700K lighting creates an atmosphere but makes accurate grooming much harder. Using a single overhead strip directly above the mirror is perhaps the most widespread error — always flank the mirror with side lighting for accurate, professional-quality results."
     },
     "cta": {
       "title": "Upgrade Your Bathroom Lighting Today",
@@ -1782,7 +1882,32 @@
       "q5": {
         "question": "Can LED strips be used with motion sensors in hallways?",
         "answer": "Yes, our LED systems are fully compatible with external motion sensors. This is a popular setup for hallways — lights activate when you enter and turn off after a set delay. The LED strips respond instantly to full brightness, so there's no waiting for them to reach full output as with some older technologies."
+      },
+      "q6": {
+        "question": "What is the best LED lighting solution for a narrow hallway?",
+        "answer": "For narrow hallways under 1.5 m wide, mount a single LED strip along the ceiling centerline for maximum light spread. In wider hallways, use strips on both sides for uniform coverage. Choose 3000K–4000K (warm-neutral) color temperature for a welcoming feel. A brightness of 600–800 lm/m is typically sufficient to achieve safe, comfortable light levels."
+      },
+      "q7": {
+        "question": "Should I use motion sensors with LED ceiling lighting in a hallway?",
+        "answer": "Motion sensors are highly recommended for hallways as they are transitional spaces used only briefly. PIR motion sensors integrate easily with 12V LED systems via a relay. Set a 1–2 minute auto-off delay so lights stay on while you are still in the space. This approach typically saves 70–80% of hallway lighting energy compared to always-on solutions."
+      },
+      "q8": {
+        "question": "How do I light a long hallway evenly with LED strip lights?",
+        "answer": "For hallways over 6 m, divide the strip into two or three independently controlled zones. This ensures brightness remains consistent along the entire length without voltage drop causing dimness at the far end. Keep individual strip runs under 10 m, or use signal amplifiers for longer runs. Our kits use matched LED chip batches to ensure consistent color along the full length."
+      },
+      "q9": {
+        "question": "Can LED strip ceiling lighting make a small hallway look bigger?",
+        "answer": "Absolutely. Ceiling-mounted LED strips create the visual illusion of higher ceilings and wider spaces, especially when installed in a recessed ceiling cove. Choosing a slightly cooler color temperature (3500K–4000K) and maximizing brightness amplifies this effect. Pairing LED ceiling strips with mirrored walls or light-colored surfaces creates a dramatically more spacious-feeling entrance."
       }
+    },
+    "seo_guide": {
+      "title": "How to Choose LED Ceiling Lighting for Your Hallway",
+      "p1": "Hallways and corridors are transitional spaces where lighting needs to be practical, energy-efficient, and capable of making a strong first impression. LED strip ceiling lighting is perfectly suited to this challenge — offering uniform illumination, optional motion control, and the ability to visually transform narrow spaces.",
+      "p2": "<strong>Brightness Requirements:</strong> Hallways require 100–150 lux for comfortable navigation — less than a kitchen or office, but enough to avoid stumbling and to make the space feel welcoming. A single LED strip at 600–800 lm/m is typically sufficient for a hallway up to 1.5 m wide. For wider entrance halls, use strips on both sides of the ceiling for cross-illumination.",
+      "p3": "<strong>Color Temperature:</strong> 3000K–4000K strikes the ideal balance for a hallway. Warm 3000K creates a welcoming entrance impression; neutral 4000K adds clarity for safety. Avoid very warm 2700K (feels dim at lower brightness) and very cool 5000K+ (feels clinical for an entrance space). A fixed 3500K is an excellent compromise if CCT adjustment is not in the budget.",
+      "p4": "<strong>Motion Sensors for Efficiency:</strong> Hallways are used briefly and repeatedly — an ideal application for PIR motion sensors. The sensor activates the LED strip when movement is detected and turns it off after a set delay (typically 1–3 minutes). This is the single most effective way to reduce hallway energy consumption, often saving over 75% compared to a manually operated light left on.",
+      "p5": "<strong>Night Mode:</strong> A secondary low-brightness circuit (5–10%) activated by a twilight sensor provides gentle nighttime guidance without disturbing sleep. This eliminates the need for a full-power light in the night while ensuring safe navigation from bedroom to bathroom. RGB+CCT strips can be set to an ultra-dim warm amber for the most sleep-friendly nighttime glow.",
+      "p6": "<strong>Common Mistakes:</strong> Using a single pendant light in a long hallway creates bright pools with dark zones between them — always use a continuous strip for even coverage. Forgetting to account for voltage drop in long runs causes the far end of the strip to be noticeably dimmer; use 24V strips or amplifiers to maintain uniform brightness over longer distances."
     },
     "cta": {
       "title": "Brighten Your Hallway Today",
@@ -1913,7 +2038,32 @@
       "q5": {
         "question": "Can I control office LED lighting with a schedule or automation?",
         "answer": "Yes. Our Wi-Fi-enabled kits support full scheduling, so you can program lights to turn on at your work start time, automatically adjust at lunchtime, and wind down in the evening. This removes manual control from your routine and ensures you always have the right light for the time of day. Compatible with Alexa and Google Home."
+      },
+      "q6": {
+        "question": "How many lumens do I need for a home office ceiling?",
+        "answer": "Office work requires 300–500 lux at desk level — roughly 3–5 times more than a bedroom needs. For a 9 m² home office, use LED strips delivering 1000–1200 lm/m around the perimeter, supplemented by a desk task lamp. This ensures you are not straining your eyes during video calls or extended document work throughout the day."
+      },
+      "q7": {
+        "question": "What color temperature promotes focus and productivity in a home office?",
+        "answer": "4000K–5000K (neutral to cool white) is the scientifically-backed range for focused cognitive work, mimicking midday daylight that supports alertness and concentration. Avoid harsh 6500K+ for extended sessions as it becomes fatiguing. CCT-adjustable strips let you run 5000K in the morning and shift to 4000K in the afternoon to reduce accumulated fatigue."
+      },
+      "q8": {
+        "question": "Can ceiling LED lighting cause eye strain during computer work?",
+        "answer": "Poorly chosen LEDs can cause eye strain, but high-quality strips avoid it. Use flicker-free strips (PWM frequency above 1000 Hz or constant-current DC drivers), position strips so they do not reflect directly in your monitor screen, and choose 4000K–5000K rather than warm 2700K. Our office-rated strips are tested flicker-free and designed for prolonged screen work."
+      },
+      "q9": {
+        "question": "Is LED ceiling lighting better than a desk lamp alone for a home office?",
+        "answer": "Use both together for the best result. LED ceiling strips provide even ambient illumination that eliminates the harsh contrast between a bright desk lamp and a dark surrounding environment — a major cause of eye fatigue on video calls. Ceiling perimeter strips at 60–70% brightness combined with a focused desk lamp gives the most comfortable and productive working environment."
       }
+    },
+    "seo_guide": {
+      "title": "How to Choose LED Ceiling Lighting for Your Home Office",
+      "p1": "Home office lighting has a direct, measurable impact on productivity, focus, and eye health. Unlike residential spaces, a home office requires near-professional lighting standards — high brightness, neutral color temperature, and zero flicker — to support sustained cognitive work throughout the day.",
+      "p2": "<strong>Brightness Requirements:</strong> Office work requires 300–500 lux at desk level — three to five times more than a comfortable bedroom. For a 9–12 m² office, this means LED strips delivering 1000–1200 lm/m around the ceiling perimeter, supplemented by a desk task lamp for direct work surface illumination. Video call setups additionally benefit from front-facing lighting to eliminate facial shadows on camera.",
+      "p3": "<strong>Color Temperature for Concentration:</strong> 4000K–5000K (neutral to cool white) is the scientifically-validated range for office lighting. It mimics midday natural light, supporting alertness and sustained concentration. The human body responds to cool-neutral light with reduced melatonin production and increased cortisol — exactly the right state for focused work. Avoid 2700K warm white, which creates a relaxing atmosphere incompatible with productivity.",
+      "p4": "<strong>Flicker-Free Operation:</strong> LED flicker is invisible to the naked eye but detectable by the brain's visual processing system, contributing significantly to eye fatigue, headaches, and difficulty concentrating during extended screen use. Always specify strips with constant-current drivers or high-frequency PWM dimming (above 1000 Hz). Our office-rated strips are explicitly tested and certified as flicker-free.",
+      "p5": "<strong>Screen Glare Prevention:</strong> Position ceiling strips so they do not create reflections in monitor screens. In a typical office, this means mounting strips on the side walls and the wall behind you, rather than the wall behind the monitor. Test the placement by sitting at your desk and checking for reflections across different screen angles before finalizing the installation.",
+      "p6": "<strong>Common Mistakes:</strong> Using warm 2700K makes afternoon work sessions feel progressively more sluggish. Non-dimmable strips prevent adaptation to changing daylight throughout the day. Placing a single bright strip directly in your line of sight creates glare that forces your eyes to constantly readjust — a leading cause of digital eye strain during video calls and screen work."
     },
     "cta": {
       "title": "Build Your Ideal Work Environment",
@@ -1921,5 +2071,14 @@
       "primary": "Shop LED Kits",
       "secondary": "Ask a Question"
     }
+  },
+  "room_links": {
+    "section_title": "LED Ceiling Lighting for Other Rooms",
+    "kitchen": "LED Ceiling Lighting for Kitchen",
+    "bedroom": "LED Ceiling Lighting for Bedroom",
+    "living_room": "LED Ceiling Lighting for Living Room",
+    "bathroom": "LED Ceiling Lighting for Bathroom",
+    "hallway": "LED Ceiling Lighting for Hallway",
+    "office": "LED Ceiling Lighting for Office"
   }
 }

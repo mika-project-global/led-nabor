@@ -58,10 +58,10 @@ export default function LedCeilingLightingBedroom() {
     { question: t('bedroom_lighting.faq.q3.question'), answer: t('bedroom_lighting.faq.q3.answer') },
     { question: t('bedroom_lighting.faq.q4.question'), answer: t('bedroom_lighting.faq.q4.answer') },
     { question: t('bedroom_lighting.faq.q5.question'), answer: t('bedroom_lighting.faq.q5.answer') },
-    { question: 'What color temperature of LED light is best for sleep in a bedroom?', answer: 'For good sleep, use warm white LED light at 2700K–3000K in the evening. This spectrum minimizes blue light, which suppresses melatonin production. With a CCT-adjustable LED strip, you can use 5000K–6500K in the morning for an energizing wake-up, then gradually transition to 2700K about an hour before bedtime.' },
-    { question: 'What LED brightness is comfortable for a bedroom ceiling?', answer: 'Bedroom ambient lighting should be 100–200 lux for relaxation and 30–50 lux for pre-sleep wind-down. For a typical 12–16 m² bedroom, this means roughly 300–500 lm/m of LED strip on the perimeter. Dimming capability is essential — being able to reduce to 5–10% allows you to create a true sleep-ready environment without turning lights fully off.' },
-    { question: 'Can I dim LED ceiling lights in the bedroom with a standard dimmer switch?', answer: 'Standard wall dimmers are not compatible with LED strips — they require a PWM or constant-voltage LED dimmer controller. Our bedroom LED kits include a compatible remote-controlled dimmer, and CCT+RGB models integrate with smart home systems like Alexa or Google Home for hands-free voice dimming and automated sleep schedules.' },
-    { question: 'How do I install LED strip lighting in a bedroom ceiling cove?', answer: 'Measure your ceiling perimeter and cut the strip at the marked cut points. Mount the strip inside a plasterboard or aluminium cove profile so only the reflected light is visible, creating a soft glow. Connect to a 12V or 24V driver placed inside a wardrobe or above a false ceiling panel. The warm indirect light this creates is ideal for a relaxing bedroom atmosphere.' }
+    { question: t('bedroom_lighting.faq.q6.question'), answer: t('bedroom_lighting.faq.q6.answer') },
+    { question: t('bedroom_lighting.faq.q7.question'), answer: t('bedroom_lighting.faq.q7.answer') },
+    { question: t('bedroom_lighting.faq.q8.question'), answer: t('bedroom_lighting.faq.q8.answer') },
+    { question: t('bedroom_lighting.faq.q9.question'), answer: t('bedroom_lighting.faq.q9.answer') }
   ];
 
   return (
@@ -319,15 +319,15 @@ export default function LedCeilingLightingBedroom() {
         <section className="py-12 md:py-16 bg-white border-t border-gray-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              How to Choose LED Ceiling Lighting for Your Bedroom
+              {t('bedroom_lighting.seo_guide.title')}
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
-              <p>The bedroom demands lighting that adapts to very different needs: bright and energizing in the morning, warm and relaxing in the evening, and dim enough not to interfere with sleep. LED ceiling strips with CCT (color temperature) adjustment and full dimming are the ideal solution.</p>
-              <p><strong>Color Temperature for Sleep:</strong> Use 2700K–3000K (warm white) in the hours before bedtime. This spectrum suppresses blue light that inhibits melatonin production, making it easier to fall asleep naturally. For morning wake-up, a CCT-adjustable strip can shift to 5000K–6500K to mimic bright daylight and help you feel alert faster.</p>
-              <p><strong>Brightness and Dimming:</strong> Bedroom ambient lighting should reach 100–200 lux for normal evening activity and 30–50 lux for pre-sleep relaxation. For a 12–16 m² bedroom, this means 300–500 lm/m of perimeter strip. Full 0–100% dimming is essential — the ability to set lights to 5% or lower is crucial for creating a true sleep environment without full darkness.</p>
-              <p><strong>Placement for Soft Ambient Light:</strong> Mount strips inside a ceiling cove or plasterboard recess facing upward or outward so you see reflected light, not the LED strip directly. This indirect lighting eliminates glare and creates an even, shadow-free glow that feels significantly more relaxing than direct lighting. A full perimeter installation ensures no dark corners.</p>
-              <p><strong>Smart Automation:</strong> Set a circadian rhythm schedule so lights automatically shift from bright-cool in the morning to warm-dim in the evening. Connect to Alexa, Google Home, or a bedside switch panel for hands-free control when you are already in bed. A gentle 30-minute sunset dimming sequence is particularly effective for sleep quality.</p>
-              <p><strong>Common Mistakes:</strong> Installing cool 4000K+ lighting in a bedroom makes it feel like an office. Using non-dimmable strips removes the ability to create a sleep-friendly environment. Mounting strips too close to the bed headwall can create visual glare when lying down — always position them on all four sides for balanced, glare-free light.</p>
+              <p>{t('bedroom_lighting.seo_guide.p1')}</p>
+              <p dangerouslySetInnerHTML={{ __html: t('bedroom_lighting.seo_guide.p2') }} />
+              <p dangerouslySetInnerHTML={{ __html: t('bedroom_lighting.seo_guide.p3') }} />
+              <p dangerouslySetInnerHTML={{ __html: t('bedroom_lighting.seo_guide.p4') }} />
+              <p dangerouslySetInnerHTML={{ __html: t('bedroom_lighting.seo_guide.p5') }} />
+              <p dangerouslySetInnerHTML={{ __html: t('bedroom_lighting.seo_guide.p6') }} />
             </div>
           </div>
         </section>
@@ -337,15 +337,15 @@ export default function LedCeilingLightingBedroom() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-3 mb-6">
               <Home className="w-5 h-5 text-cyan-500" />
-              <h2 className="text-xl font-bold text-gray-900">LED Ceiling Lighting for Other Rooms</h2>
+              <h2 className="text-xl font-bold text-gray-900">{t('room_links.section_title')}</h2>
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
               {[
-                { to: `/${locale}/led-ceiling-lighting-kitchen`, label: 'LED Ceiling Lighting for Kitchen' },
-                { to: `/${locale}/led-ceiling-lighting-living-room`, label: 'LED Ceiling Lighting for Living Room' },
-                { to: `/${locale}/led-ceiling-lighting-bathroom`, label: 'LED Ceiling Lighting for Bathroom' },
-                { to: `/${locale}/led-ceiling-lighting-hallway`, label: 'LED Ceiling Lighting for Hallway' },
-                { to: `/${locale}/led-ceiling-lighting-office`, label: 'LED Ceiling Lighting for Office' },
+                { to: `/${locale}/led-ceiling-lighting-kitchen`, label: t('room_links.kitchen') },
+                { to: `/${locale}/led-ceiling-lighting-living-room`, label: t('room_links.living_room') },
+                { to: `/${locale}/led-ceiling-lighting-bathroom`, label: t('room_links.bathroom') },
+                { to: `/${locale}/led-ceiling-lighting-hallway`, label: t('room_links.hallway') },
+                { to: `/${locale}/led-ceiling-lighting-office`, label: t('room_links.office') },
               ].map(link => (
                 <Link
                   key={link.to}

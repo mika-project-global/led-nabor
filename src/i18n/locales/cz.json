@@ -1226,7 +1226,32 @@
       "q5": {
         "question": "Je LED osvětlení bezpečné pro ložnici — UV nebo blikání?",
         "answer": "Naše COB pásky nevyzařují UV a pracují bez blikání — zcela bezpečné, i pro dětské pokoje. Nízké napětí 12V/24V DC."
+      },
+      "q6": {
+        "question": "Jaká teplota barvy LED světla je nejlepší pro spánek?",
+        "answer": "Pro dobrý spánek používejte večer teplé bílé LED světlo 2700K–3000K. Minimalizuje modré světlo potlačující melatonin. S nastavitelným CCT páskem můžete ráno použít 5000K–6500K pro energetické probuzení."
+      },
+      "q7": {
+        "question": "Jaký jas LED je pohodlný pro strop ložnice?",
+        "answer": "Osvětlení ložnice by mělo být 100–200 luxů pro relaxaci a 30–50 luxů před spaním. Pro typickou ložnici 12–16 m² to znamená 300–500 lm/m LED pásku. Stmívání na 5–10% je klíčové."
+      },
+      "q8": {
+        "question": "Mohu stmívat LED stropní světla v ložnici standardním stmívačem?",
+        "answer": "Standardní nástěnné stmívače nejsou kompatibilní s LED pásky — potřebujete PWM nebo LED dimmer ovladač. Naše sady LED pro ložnici obsahují kompatibilní dálkově ovládaný stmívač."
+      },
+      "q9": {
+        "question": "Jak nainstalovat LED pásky do stropní niky ložnice?",
+        "answer": "Změřte obvod stropu a přestřihněte pásek v označených místech. Namontujte do sádrové nebo hliníkové niky tak, aby bylo viditelné pouze odražené světlo. Připojte k ovladači 12V nebo 24V ve skříni."
       }
+    },
+    "seo_guide": {
+      "title": "Jak vybrat LED stropní osvětlení pro vaši ložnici",
+      "p1": "Ložnice vyžaduje osvětlení přizpůsobující se různým potřebám: jasné a energizující ráno, teplé a relaxační večer a dostatečně stmívané pro nerušený spánek.",
+      "p2": "<strong>Teplota barvy pro spánek:</strong> Používejte 2700K–3000K (teplá bílá) před spaním. Potlačuje modré světlo inhibující melatonin. Ráno CCT pásek může přepnout na 5000K–6500K.",
+      "p3": "<strong>Jas a stmívání:</strong> Osvětlení ložnice by mělo dosahovat 100–200 luxů večer a 30–50 luxů před spaním. Plné stmívání 0–100% je nezbytné.",
+      "p4": "<strong>Umístění pro měkké světlo:</strong> Namontujte pásky do stropní niky směrem nahoru, aby bylo viditelné pouze odražené světlo. Eliminuje oslnění a vytváří příjemnou záři.",
+      "p5": "<strong>Chytrá automatizace:</strong> Nastavte plán cirkadiánního rytmu. Připojte k Alexe nebo Google Home.",
+      "p6": "<strong>Časté chyby:</strong> Chladné 4000K+ v ložnici vytváří atmosféru kanceláře. Nestmívatelné pásky odstraňují možnost vytvoření prostředí vhodného pro spánek."
     },
     "cta": {
       "title": "Připraveni proměnit svou ložnici?",
@@ -1356,7 +1381,32 @@
       "q5": {
         "question": "Je instalace LED osvětlení v kuchyni obtížná?",
         "answer": "Ne — pásek na samolepce 3M, všechny součásti předtestovány. Většina kuchyní hotova za 2–3 hodiny. Video návod v sadě."
+      },
+      "q6": {
+        "question": "Kolik lumenů potřebuji pro stropní osvětlení kuchyně?",
+        "answer": "Pro kuchyň usilujte o 50–75 luxů na metr čtvereční a 300–500 luxů nad pracovními plochami. Kuchyň 10 m² potřebuje LED pásky 800–1200 lm/m po obvodu. COB LED pásky s 800+ lm/m poskytují rovnoměrné bezstínové pokrytí."
+      },
+      "q7": {
+        "question": "Jaká teplota barvy je nejlepší pro LED osvětlení kuchyně?",
+        "answer": "4000K–5000K (neutrální až chladná bílá) je ideální pro kuchyně. Přesně reprodukuje barvy potravin díky vysokému CRI (90+). Teplé 2700K způsobuje, že čerstvé produkty vypadají mdlé."
+      },
+      "q8": {
+        "question": "Jak eliminovat stíny na kuchyňských pracovních plochách?",
+        "answer": "Namontujte LED pásky po celém obvodu stropu, aby světlo vycházelo ze všech čtyř stran současně. U kuchyní s ostrůvkem přidejte pásek do výklenku stropu ostrůvku."
+      },
+      "q9": {
+        "question": "Jak nainstalovat LED pásky na kuchyňský strop?",
+        "answer": "Důkladně vyčistěte povrch stropu, přilepte LED pásek samolepicí vrstvou zesílenou montážními sponami každých 50 cm. Veďte kabel k transformátoru a připojte k ovladači stmívání."
       }
+    },
+    "seo_guide": {
+      "title": "Jak vybrat LED stropní osvětlení pro vaši kuchyni",
+      "p1": "Kuchyň je pro osvětlení nejnáročnější místností. Potřebujete jasné, přesné, bezstínové světlo pro přípravu jídla a jemnější atmosféru pro stolování. LED stropní pásky — zejména technologie COB — splní obě požadavky.",
+      "p2": "<strong>Jas (Lumeny):</strong> Pracovní plochy vyžadují 300–500 luxů. Pro stropní pásky to znamená 800–1200 lm/m. Kuchyň 10 m² s obvodem 4×4 m potřebuje pásky dodávající alespoň 800 lm na metr.",
+      "p3": "<strong>Teplota barvy:</strong> Vyberte 4000K–5000K pro kuchyň. Tento neutrálně-chladný bílý rozsah vás udržuje bdělé při vaření a přesně reprodukuje barvy potravin. Regulovatelný CCT pásek umožňuje večer přepnout na 3000K.",
+      "p4": "<strong>CRI (Index podání barev):</strong> Vždy používejte CRI 90+ v kuchyni. Vysoký CRI zajišťuje, že vidíte skutečnou barvu ingrediencí.",
+      "p5": "<strong>Strategie umístění:</strong> Namontujte pásky na všechny čtyři hrany stropu. Umístěte pásek k vnitřnímu okraji místnosti pro rovnoměrné rozložení světla.",
+      "p6": "<strong>Časté chyby:</strong> Jediné centrální světlo je největší chybou — vytváří stíny. Teplé 2700K pro celou kuchyň dělá noční vaření tmavým. Nestmívatelné pásky odstraňují flexibilitu."
     },
     "cta": {
       "title": "Modernizujte osvětlení kuchyně ještě dnes",
@@ -1487,7 +1537,32 @@
       "q5": {
         "question": "Jsou LED pásky bezpečné pro napínané stropy v obývacích pokojích?",
         "answer": "Ano. Naše COB LED pásky generují velmi málo tepla a jsou speciálně navrženy pro aplikace na napínané stropy. Provoz při nízkém napětí (12V/24V DC) zajišťuje bezpečnost a minimální výstup tepla nepoškodí napínané stropy."
+      },
+      "q6": {
+        "question": "Jaká teplota barvy je nejlepší pro LED strop obývacího pokoje?",
+        "answer": "2700K–3000K (teplá bílá) vytváří nejpříjemnější atmosféru. Nastavitelný CCT pásek umožňuje teplý jantar pro filmy, neutrální 4000K pro čtení, jasný 5000K pro denní aktivity."
+      },
+      "q7": {
+        "question": "Kolik metrů LED pásku potřebuji na strop obývacího pokoje?",
+        "answer": "Vypočítejte celý obvod místnosti a přidejte 10–15% na rohy. Obývací pokoj 20 m² s půdorysem 4×5 m potřebuje přibližně 18–20 m. Naše sady po 5 m a 10 m se spojují v sérii."
+      },
+      "q8": {
+        "question": "Mohou LED pásky plně nahradit centrální stropní světlo v obývacím pokoji?",
+        "answer": "Ano, obvodově namontované LED pásky mohou plně nahradit lustr. Poskytují rovnoměrné, bezstínové osvětlení, které místnost vizuálně zvětšuje."
+      },
+      "q9": {
+        "question": "Jak vytvořit různé světelné scény v obývacím pokoji pomocí LED pásků?",
+        "answer": "Použijte RGB+CCT LED pásek s vícekanálovým ovládáním. Naprogramujte scény jako Film (10% teplá 2700K), Společenská (60% 3000K), Čtení (100% 4500K)."
       }
+    },
+    "seo_guide": {
+      "title": "Jak vybrat LED stropní osvětlení pro váš obývací pokoj",
+      "p1": "Obývací pokoj je víceúčelový prostor, který nejvíce těží z flexibilního, stmívatelného LED stropního osvětlení.",
+      "p2": "<strong>Teplota barvy pro atmosféru:</strong> 2700K–3000K je standardem. Nastavitelný CCT pásek (2700K–6500K) poskytuje plnou flexibilitu.",
+      "p3": "<strong>Jas pro zónování:</strong> Rozdělte osvětlení do zón. Stropní pásky při 400–600 lm/m poskytují pozadí. Akcenty pro police vytvářejí hloubku.",
+      "p4": "<strong>Programování scén:</strong> Přednastavené scény: Jasno (100%, 4000K), Společenské (60%, 3000K), Film (10%, 2700K), Relax (25%, 2700K).",
+      "p5": "<strong>Tipy pro umístění:</strong> Instalujte pásky na celý obvod stropu. Přidejte pásky za televizorem. Zvýrazněte architektonické prvky.",
+      "p6": "<strong>Časté chyby:</strong> Rovnoměrně jasné osvětlení v celém pokoji ničí atmosféru. Pásky příliš blízko stěny — vidíte LED čip; nechejte 8–10 cm."
     },
     "cta": {
       "title": "Proměňte svůj obývací pokoj ještě dnes",
@@ -1618,7 +1693,32 @@
       "q5": {
         "question": "Mohu stmívat stropní LED světla v koupelně?",
         "answer": "Ano, všechny naše LED sady obsahují stmívatelný ovladač. Stmívání je v koupelnách užitečné pro vytvoření relaxační atmosféry při koupání nebo pro noční návštěvy koupelny, kdy nechcete plný jas. Stmívání je plynulé od 0–100 % bez blikání ani bzučení."
+      },
+      "q6": {
+        "question": "Mohu použít LED pásky v koupelně v blízkosti vody?",
+        "answer": "Ano, se správnou třídou IP. Zóna 3 dopouští IP20, Zóna 2 (do 0,6 m od sprchy) vyžaduje IP44, Zóna 1 (nad sprchou) vyžaduje IP65. Naše sady obsahují voděodolné pásky."
+      },
+      "q7": {
+        "question": "Jaká teplota barvy je nejlepší pro LED osvětlení koupelny?",
+        "answer": "4000K–4500K (chladná neutrální bílá) je optimální pro koupelny. Poskytuje přesné osvětlení bez žlutého nádech (2700K) nebo přílišného chladu (6500K). Vždy CRI 90+."
+      },
+      "q8": {
+        "question": "Jak umístit LED pásky v koupelně pro nejlepší efekt?",
+        "answer": "Instalujte pásky na všechny čtyři hrany stropu. Navíc umístěte svislé pásky na obě strany zrcadla — nejen nad ním — abyste eliminovali nevýhodné stíny na obličeji."
+      },
+      "q9": {
+        "question": "Je 12V LED pásek bezpečnější než 230V osvětlení v koupelně?",
+        "answer": "Ano, výrazně. Nízkonapěťové systémy 12V a 24V fungují pod bezpečnostní hranicí 50V. Transformátor je instalován mimo mokrou zónu. Nejbezpečnější volba pro stropní osvětlení koupelny."
       }
+    },
+    "seo_guide": {
+      "title": "Jak vybrat LED stropní osvětlení pro vaši koupelnu",
+      "p1": "Osvětlení koupelny musí splňovat protichůdné požadavky: funkční jasné světlo pro péči, měkké atmosferické světlo pro relaxaci a přísné bezpečnostní normy.",
+      "p2": "<strong>Bezpečnost především — třídy IP:</strong> Zóna 1 vyžaduje IP65, Zóna 2 IP44, Zóna 3 dopouští IP20. Systémy 12V/24V poskytují další bezpečnost.",
+      "p3": "<strong>Teplota barvy pro péči:</strong> 4000K–4500K je profesionální standard. Přesně reprodukuje tóny pleti. Vždy CRI 90+.",
+      "p4": "<strong>Strategie osvětlení zrcadla:</strong> Častou chybou je veškeré světlo nad zrcadlem. Profesionální řešení: svislé pásky po obou stranách zrcadla.",
+      "p5": "<strong>Umístění pro pokrytí:</strong> Stropní pásky na všechny čtyři hrany. IP65 pásek nad sprchou.",
+      "p6": "<strong>Časté chyby:</strong> Nevoděodolné pásky v mokrých zónách je porušení předpisů. Teplé 2700K ztěžuje přesnou péči."
     },
     "cta": {
       "title": "Modernizujte osvětlení koupelny ještě dnes",
@@ -1749,7 +1849,32 @@
       "q5": {
         "question": "Mohou být LED pásky použity s detektory pohybu v chodbách?",
         "answer": "Ano, naše LED systémy jsou plně kompatibilní s externími detektory pohybu. Toto je oblíbené nastavení pro chodby — světla se aktivují při vstupu a vypnou po nastaveném zpoždění. LED pásky reagují okamžitě na plný jas."
+      },
+      "q6": {
+        "question": "Jaké je nejlepší LED osvětlení pro úzkou chodbu?",
+        "answer": "Pro úzké chodby do 1,5 m šířky namontujte jeden LED pásek podél středové linie stropu. V širších chodbách pásky na obou stranách. Vyberte 3000K–4000K. 600–800 lm/m je dostatečné."
+      },
+      "q7": {
+        "question": "Mám použít pohybové senzory s LED stropním osvětlením na chodbě?",
+        "answer": "Pohybové senzory jsou pro chodby velmi doporučeny. PIR senzory se snadno integrují se systémy LED 12V. Nastavte automatické vypnutí po 1–2 minutách. Ušetříte 70–80% energie."
+      },
+      "q8": {
+        "question": "Jak rovnoměrně osvětlit dlouhou chodbu LED pásky?",
+        "answer": "Pro chodby delší než 6 m rozdělte pásek na dvě nebo tři nezávisle ovládané zóny. Udržujte jednotlivé úseky pod 10 m nebo použijte zesilovače signálu."
+      },
+      "q9": {
+        "question": "Může LED stropní osvětlení udělat malou chodbu větší?",
+        "answer": "Absolutně. Stropní LED pásky vytvářejí iluzi vyšších stropů a širších prostorů, zejména v zapuštěné stropní nice. Chladnější teplota a maximální jas tento efekt zesilují."
       }
+    },
+    "seo_guide": {
+      "title": "Jak vybrat LED stropní osvětlení pro vaši chodbu",
+      "p1": "Chodby jsou přechodové prostory, kde osvětlení musí být praktické, energeticky účinné a schopné udělat silný první dojem.",
+      "p2": "<strong>Požadavky na jas:</strong> Chodby vyžadují 100–150 luxů. Jeden LED pásek 600–800 lm/m je typicky dostatečný pro šířku do 1,5 m.",
+      "p3": "<strong>Teplota barvy:</strong> 3000K–4000K je ideální rovnováha. Teplé 3000K vytváří přívětivý dojem; neutrální 4000K přidává přehlednost.",
+      "p4": "<strong>Pohybové senzory pro efektivitu:</strong> PIR senzor aktivuje pásek při pohybu a vypne po 1–3 minutách, čímž ušetří přes 75% energie.",
+      "p5": "<strong>Noční režim:</strong> Sekundární okruh nízké jasu (5–10%) poskytuje jemné noční vedení. RGB+CCT pásky lze nastavit na ultra-tlumený teplý jantar.",
+      "p6": "<strong>Časté chyby:</strong> Jedna závěsná lampa v dlouhé chodbě vytváří jasné ostrůvky s tmavými zónami. Pokles napětí na dlouhých úsecích činí vzdálený konec tmavším."
     },
     "cta": {
       "title": "Rozjasněte svou chodbu ještě dnes",
@@ -1880,7 +2005,32 @@
       "q5": {
         "question": "Mohu ovládat kancelářské LED osvětlení pomocí plánovače nebo automatizace?",
         "answer": "Ano. Naše sady s Wi-Fi podporují plné plánování, takže můžete naprogramovat světla, aby se zapínala v čase začátku práce, automaticky upravovala v poledne a večer ztlumovala. Kompatibilní s Alexa a Google Home."
+      },
+      "q6": {
+        "question": "Kolik lumenů potřebuji pro strop domácí kanceláře?",
+        "answer": "Kancelářská práce vyžaduje 300–500 luxů na úrovni stolu — přibližně 3–5krát více než ložnice. Pro kancelář 9 m² použijte LED pásky 1000–1200 lm/m, doplněné stolní lampou."
+      },
+      "q7": {
+        "question": "Jaká teplota barvy podporuje soustředění v domácí kanceláři?",
+        "answer": "4000K–5000K je vědecky podložený rozsah pro soustředěnou práci. Vyhněte se tvrdému 6500K+ pro delší sezení. Regulovatelné CCT pásky umožňují 5000K ráno a 4000K odpoledne."
+      },
+      "q8": {
+        "question": "Může stropní LED osvětlení způsobit únavu očí při práci na počítači?",
+        "answer": "Špatně zvolené LED mohou způsobit únavu očí. Používejte pásky bez blikání (PWM frekvence nad 1000 Hz), umísťujte tak, aby se neodrážely v monitoru, volte 4000K–5000K."
+      },
+      "q9": {
+        "question": "Je LED stropní osvětlení lepší než samotná stolní lampa?",
+        "answer": "Používejte obojí dohromady. Stropní LED pásky poskytují rovnoměrné ambientní osvětlení eliminující ostrý kontrast mezi jasnou stolní lampou a tmavým okolím."
       }
+    },
+    "seo_guide": {
+      "title": "Jak vybrat LED stropní osvětlení pro vaši domácí kancelář",
+      "p1": "Osvětlení domácí kanceláře má přímý dopad na produktivitu, soustředění a zdraví očí. Vyžaduje téměř profesionální standardy — vysoký jas, neutrální teplotu a nulové blikání.",
+      "p2": "<strong>Požadavky na jas:</strong> Kancelářská práce vyžaduje 300–500 luxů — 3–5krát více než ložnice. LED pásky 1000–1200 lm/m plus stolní lampa.",
+      "p3": "<strong>Teplota barvy pro soustředění:</strong> 4000K–5000K je vědecky ověřený rozsah. Napodobuje přirozené polední světlo. Vyhněte se 2700K.",
+      "p4": "<strong>Provoz bez blikání:</strong> Blikání LED přispívá k únavě očí a bolestem hlavy. Používejte konstantní ovladače nebo vysokofrekvenční PWM nad 1000 Hz.",
+      "p5": "<strong>Prevence oslnění obrazovky:</strong> Umísťujte pásky tak, aby nevytvářely odrazy na monitorech. Montujte na boční stěny a stěnu za vámi.",
+      "p6": "<strong>Časté chyby:</strong> Teplé 2700K činí odpolední práci ospalou. Nestmívatelné pásky zabraňují adaptaci na denní světlo."
     },
     "cta": {
       "title": "Vybudujte ideální pracovní prostředí",
@@ -1888,5 +2038,14 @@
       "primary": "Vybrat LED sadu",
       "secondary": "Zeptat se"
     }
+  },
+  "room_links": {
+    "section_title": "LED stropní osvětlení pro ostatní místnosti",
+    "kitchen": "LED stropní osvětlení pro kuchyni",
+    "bedroom": "LED stropní osvětlení pro ložnici",
+    "living_room": "LED stropní osvětlení pro obývací pokoj",
+    "bathroom": "LED stropní osvětlení pro koupelnu",
+    "hallway": "LED stropní osvětlení pro chodbu",
+    "office": "LED stropní osvětlení pro kancelář"
   }
 }
