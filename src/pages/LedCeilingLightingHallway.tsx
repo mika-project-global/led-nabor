@@ -223,7 +223,7 @@ export default function LedCeilingLightingHallway() {
                     {product.images?.[0] && (
                       <ImageWithFallback
                         src={product.images[0]}
-                        alt={product.name}
+                        alt={t(`products.${product.id}.name`)}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         width={800}
                         height={450}
@@ -232,12 +232,12 @@ export default function LedCeilingLightingHallway() {
                     )}
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t(`products.${product.id}.name`)}</h3>
                     <div className="space-y-2 mb-5">
-                      {product.features.slice(0, 4).map((f, i) => (
+                      {product.features.slice(0, 4).map((_, i) => (
                         <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
                           <CheckCircle className="w-4 h-4 text-gray-500 flex-shrink-0" />
-                          {f}
+                          {t(`products.${product.id}.features.${i}`)}
                         </div>
                       ))}
                     </div>
