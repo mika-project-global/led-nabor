@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Eye, ThumbsUp, Cpu, CheckCircle, ArrowRight, BookOpen, Star } from 'lucide-react';
+import { Zap, Eye, ThumbsUp, Cpu, CheckCircle, ArrowRight, BookOpen, Star, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
@@ -65,7 +65,11 @@ export default function LedCeilingLightingKitchen() {
     { question: t('kitchen_lighting.faq.q2.question'), answer: t('kitchen_lighting.faq.q2.answer') },
     { question: t('kitchen_lighting.faq.q3.question'), answer: t('kitchen_lighting.faq.q3.answer') },
     { question: t('kitchen_lighting.faq.q4.question'), answer: t('kitchen_lighting.faq.q4.answer') },
-    { question: t('kitchen_lighting.faq.q5.question'), answer: t('kitchen_lighting.faq.q5.answer') }
+    { question: t('kitchen_lighting.faq.q5.question'), answer: t('kitchen_lighting.faq.q5.answer') },
+    { question: 'How many lumens do I need for kitchen ceiling lighting?', answer: 'For a kitchen, aim for 50–75 lux per square meter of ambient light, with 300–500 lux over work surfaces. A 10 m² kitchen typically needs LED strips delivering 800–1200 lm/m around the perimeter. COB LED strips with 800+ lm/m deliver even, shadow-free coverage across all countertops without hot spots.' },
+    { question: 'What color temperature is best for kitchen LED lighting?', answer: '4000K–5000K (neutral to cool white) is ideal for kitchens. This range renders food colors accurately thanks to high CRI (90+) and keeps you alert while cooking. Warm 2700K bulbs over worktops make fresh produce appear dull and make it harder to judge the doneness of food.' },
+    { question: 'How do I eliminate shadows on kitchen countertops with LED ceiling lighting?', answer: 'Mount LED strips around the full ceiling perimeter so light comes from all four sides simultaneously. This cross-illumination removes the shadows that a single central fixture creates on every surface you work on. For island kitchens, add a strip inside the island ceiling recess for complete, shadow-free task coverage.' },
+    { question: 'How do I install LED strip lights on a kitchen ceiling?', answer: 'Clean the ceiling surface thoroughly, then apply the LED strip using the self-adhesive backing reinforced with mounting clips every 50 cm for security. Run the low-voltage cable to the driver/transformer mounted in a cabinet or ceiling void, then connect to a compatible dimmer controller. The entire installation requires no electrician for the low-voltage portion.' }
   ];
 
   return (
@@ -73,7 +77,7 @@ export default function LedCeilingLightingKitchen() {
       <SEO
         title={t('kitchen_lighting.seo.title')}
         description={t('kitchen_lighting.seo.description')}
-        keywords="LED ceiling lighting kitchen, kitchen LED strips, kitchen ceiling lights, COB LED kitchen, bright kitchen lighting"
+        keywords="LED ceiling lighting kitchen, kitchen LED strips, how many lumens for kitchen, kitchen LED color temperature CRI, COB LED kitchen, bright kitchen lighting, shadow-free kitchen ceiling light"
         alternateUrls={alternateUrls}
       />
 
@@ -335,6 +339,51 @@ export default function LedCeilingLightingKitchen() {
                       {t('kitchen_lighting.articles.read_more')} <ArrowRight className="w-4 h-4" />
                     </div>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Guide */}
+        <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              How to Choose LED Ceiling Lighting for Your Kitchen
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+              <p>The kitchen is the most demanding room for lighting. You need bright, accurate, shadow-free light for food preparation, and a softer atmosphere for dining. LED ceiling strip lighting — particularly COB technology — delivers both.</p>
+              <p><strong>Brightness (Lumens):</strong> Worktops require 300–500 lux of task light. For ceiling perimeter strips, this means 800–1200 lm/m. A 10 m² kitchen with a 4×4 m perimeter needs strips delivering at least 800 lm per meter to achieve adequate counter-level brightness. Under-cabinet strips add targeted light exactly where you need it most.</p>
+              <p><strong>Color Temperature:</strong> Choose 4000K–5000K for the kitchen. This neutral-to-cool white range keeps you alert while cooking and renders food colors accurately. Warm 2700K light makes tomatoes look washed out and raw meat harder to evaluate. A CCT-adjustable strip lets you drop to 3000K in the evening for a warmer dining atmosphere without changing fixtures.</p>
+              <p><strong>CRI (Color Rendering Index):</strong> Always use CRI 90+ in the kitchen. High CRI ensures you see the true color of ingredients, making it easier to judge the freshness of produce and the doneness of cooked food. Low CRI lighting makes kitchen tasks harder and less precise.</p>
+              <p><strong>Placement Strategy:</strong> Mount strips on all four ceiling edges or inside a ceiling cove for maximum shadow elimination. Position the strip toward the room's interior edge so light washes down the walls and across countertops evenly. For L-shaped or galley kitchens, follow the perimeter continuously including the short walls to avoid dark end-zones.</p>
+              <p><strong>Common Mistakes to Avoid:</strong> Mounting a single central downlight is the biggest error — it creates strong shadows on every surface you work on. Choosing warm 2700K for the entire kitchen makes nighttime meal prep feel dim and tired. Using non-dimmable strips removes the flexibility to shift from bright task mode to ambient dining mode in the same space.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internal Links */}
+        <section className="py-10 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Home className="w-5 h-5 text-cyan-500" />
+              <h2 className="text-xl font-bold text-gray-900">LED Ceiling Lighting for Other Rooms</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { to: `/${locale}/led-ceiling-lighting-bedroom`, label: 'LED Ceiling Lighting for Bedroom' },
+                { to: `/${locale}/led-ceiling-lighting-living-room`, label: 'LED Ceiling Lighting for Living Room' },
+                { to: `/${locale}/led-ceiling-lighting-bathroom`, label: 'LED Ceiling Lighting for Bathroom' },
+                { to: `/${locale}/led-ceiling-lighting-hallway`, label: 'LED Ceiling Lighting for Hallway' },
+                { to: `/${locale}/led-ceiling-lighting-office`, label: 'LED Ceiling Lighting for Office' },
+              ].map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-all duration-200 group"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-cyan-500" />
+                  <span className="leading-tight">{link.label}</span>
                 </Link>
               ))}
             </div>

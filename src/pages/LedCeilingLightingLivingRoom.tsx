@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Sofa, Palette, Sliders, Sparkles, CheckCircle, ArrowRight, BookOpen, Star } from 'lucide-react';
+import { Sofa, Palette, Sliders, Sparkles, CheckCircle, ArrowRight, BookOpen, Star, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
@@ -65,7 +65,11 @@ export default function LedCeilingLightingLivingRoom() {
     { question: t('living_room_lighting.faq.q2.question'), answer: t('living_room_lighting.faq.q2.answer') },
     { question: t('living_room_lighting.faq.q3.question'), answer: t('living_room_lighting.faq.q3.answer') },
     { question: t('living_room_lighting.faq.q4.question'), answer: t('living_room_lighting.faq.q4.answer') },
-    { question: t('living_room_lighting.faq.q5.question'), answer: t('living_room_lighting.faq.q5.answer') }
+    { question: t('living_room_lighting.faq.q5.question'), answer: t('living_room_lighting.faq.q5.answer') },
+    { question: 'What color temperature is best for a living room LED ceiling?', answer: '2700K–3000K (warm white) creates the most inviting living room atmosphere, mimicking the warmth of incandescent bulbs. For multi-use spaces that serve both relaxing and working purposes, a CCT-adjustable strip (2700K–6500K) lets you dial in the mood: warm amber for movie nights, neutral 4000K for reading, or bright 5000K for daytime activities.' },
+    { question: 'How many meters of LED strip do I need for a living room ceiling?', answer: 'Calculate the full perimeter of your room and add 10–15% for corners and overlaps. A 20 m² living room with a 4×5 m footprint needs approximately 18–20 m of LED strip for a full perimeter install. For double-row or cove lighting effects, double this figure. Our LED kits come in 5 m and 10 m lengths that connect in series.' },
+    { question: 'Can LED strip lights fully replace a central ceiling light in a living room?', answer: 'Yes, perimeter-mounted LED strips can fully replace a chandelier or central fixture. They deliver even, shadow-free illumination that makes the room feel larger and more sophisticated. You gain dimmability, color temperature control, and the ability to highlight architectural features with indirect cove lighting — advantages a central light cannot offer.' },
+    { question: 'How do I create different lighting scenes in a living room with LED strips?', answer: 'Use an RGB+CCT LED strip with multi-channel control. Program scenes such as "Movie" (10% warm 2700K), "Social" (60% 3000K), and "Reading" (100% 4500K). Smart controllers with app control let you save and switch between scenes instantly, or automate them based on time of day or connected devices like TVs and speakers.' }
   ];
 
   return (
@@ -73,7 +77,7 @@ export default function LedCeilingLightingLivingRoom() {
       <SEO
         title={t('living_room_lighting.seo.title')}
         description={t('living_room_lighting.seo.description')}
-        keywords="LED ceiling lighting living room, living room LED strips, ambient living room lighting, COB LED lounge, dimmable living room lights"
+        keywords="LED ceiling lighting living room, living room LED strips, how many meters LED strip living room, ambient living room lighting, dimmable LED ceiling lounge, COB LED living room, LED scene lighting"
         alternateUrls={alternateUrls}
       />
 
@@ -335,6 +339,51 @@ export default function LedCeilingLightingLivingRoom() {
                       {t('living_room_lighting.articles.read_more')} <ArrowRight className="w-4 h-4" />
                     </div>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Guide */}
+        <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              How to Choose LED Ceiling Lighting for Your Living Room
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+              <p>The living room is a multi-purpose space that benefits most from flexible, dimmable LED ceiling lighting. From bright light for daytime activities to dim warm light for movie nights and entertaining, a well-planned LED system transforms how the room feels throughout the day.</p>
+              <p><strong>Color Temperature for Ambiance:</strong> 2700K–3000K (warm white) is the standard for living rooms, creating the inviting, cozy atmosphere associated with traditional incandescent lighting. For spaces that also serve as home offices or play areas, a CCT-adjustable strip (2700K–6500K) provides full flexibility — warm evenings, neutral afternoons, bright mornings.</p>
+              <p><strong>Brightness for Zoning:</strong> Divide your living room lighting into zones. Ambient ceiling strips at 400–600 lm/m provide comfortable background light. Accent strips highlighting shelves, alcoves, or artwork can run at lower brightness to create depth. Use independent dimmer channels for each zone to build layered lighting scenes without additional fixtures.</p>
+              <p><strong>Scene Programming:</strong> A living room benefits most from preset scenes: "Bright" for cleaning and activities (100%, 4000K), "Social" for guests (60%, 3000K), "Movie" for film watching (10%, 2700K), and "Relax" for evening wind-down (25%, 2700K). Smart LED controllers let you switch between scenes with one tap on a phone or voice command.</p>
+              <p><strong>Placement Tips:</strong> Install strips around the full ceiling perimeter for even base illumination. Add strips behind the TV or entertainment unit for bias lighting that reduces eye strain during viewing. Highlight architectural features like beamed ceilings, alcoves, or feature walls with directional accent strips to add visual depth and interest.</p>
+              <p><strong>Common Mistakes:</strong> Uniform bright lighting at the same level throughout the room kills atmosphere — always design for multiple brightness levels. Installing strips too close to the wall means you see the LED chip rather than reflected light; leave at least 8–10 cm of clearance for a proper glow. Skipping dimmer control eliminates the room's most important functional advantage.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internal Links */}
+        <section className="py-10 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Home className="w-5 h-5 text-amber-500" />
+              <h2 className="text-xl font-bold text-gray-900">LED Ceiling Lighting for Other Rooms</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { to: `/${locale}/led-ceiling-lighting-kitchen`, label: 'LED Ceiling Lighting for Kitchen' },
+                { to: `/${locale}/led-ceiling-lighting-bedroom`, label: 'LED Ceiling Lighting for Bedroom' },
+                { to: `/${locale}/led-ceiling-lighting-bathroom`, label: 'LED Ceiling Lighting for Bathroom' },
+                { to: `/${locale}/led-ceiling-lighting-hallway`, label: 'LED Ceiling Lighting for Hallway' },
+                { to: `/${locale}/led-ceiling-lighting-office`, label: 'LED Ceiling Lighting for Office' },
+              ].map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-amber-400 hover:text-amber-600 transition-all duration-200 group"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-amber-500" />
+                  <span className="leading-tight">{link.label}</span>
                 </Link>
               ))}
             </div>

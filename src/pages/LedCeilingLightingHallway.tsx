@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeftRight, Eye, Zap, Shield, CheckCircle, ArrowRight, BookOpen, Star } from 'lucide-react';
+import { ArrowLeftRight, Eye, Zap, Shield, CheckCircle, ArrowRight, BookOpen, Star, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
@@ -65,7 +65,11 @@ export default function LedCeilingLightingHallway() {
     { question: t('hallway_lighting.faq.q2.question'), answer: t('hallway_lighting.faq.q2.answer') },
     { question: t('hallway_lighting.faq.q3.question'), answer: t('hallway_lighting.faq.q3.answer') },
     { question: t('hallway_lighting.faq.q4.question'), answer: t('hallway_lighting.faq.q4.answer') },
-    { question: t('hallway_lighting.faq.q5.question'), answer: t('hallway_lighting.faq.q5.answer') }
+    { question: t('hallway_lighting.faq.q5.question'), answer: t('hallway_lighting.faq.q5.answer') },
+    { question: 'What is the best LED lighting solution for a narrow hallway?', answer: 'For narrow hallways under 1.5 m wide, mount a single LED strip along the ceiling centerline for maximum light spread. In wider hallways, use strips on both sides for uniform coverage. Choose 3000K–4000K (warm-neutral) color temperature for a welcoming feel. A brightness of 600–800 lm/m is typically sufficient to achieve safe, comfortable light levels.' },
+    { question: 'Should I use motion sensors with LED ceiling lighting in a hallway?', answer: 'Motion sensors are highly recommended for hallways as they are transitional spaces used only briefly. PIR motion sensors integrate easily with 12V LED systems via a relay. Set a 1–2 minute auto-off delay so lights stay on while you are still in the space. This approach typically saves 70–80% of hallway lighting energy compared to always-on solutions.' },
+    { question: 'How do I light a long hallway evenly with LED strip lights?', answer: 'For hallways over 6 m, divide the strip into two or three independently controlled zones. This ensures brightness remains consistent along the entire length without voltage drop causing dimness at the far end. Keep individual strip runs under 10 m, or use signal amplifiers for longer runs. Our kits use matched LED chip batches to ensure consistent color along the full length.' },
+    { question: 'Can LED strip ceiling lighting make a small hallway look bigger?', answer: 'Absolutely. Ceiling-mounted LED strips create the visual illusion of higher ceilings and wider spaces, especially when installed in a recessed ceiling cove. Choosing a slightly cooler color temperature (3500K–4000K) and maximizing brightness amplifies this effect. Pairing LED ceiling strips with mirrored walls or light-colored surfaces creates a dramatically more spacious-feeling entrance.' }
   ];
 
   return (
@@ -73,7 +77,7 @@ export default function LedCeilingLightingHallway() {
       <SEO
         title={t('hallway_lighting.seo.title')}
         description={t('hallway_lighting.seo.description')}
-        keywords="LED ceiling lighting hallway, hallway LED strips, corridor LED lighting, COB LED hallway, narrow hallway lights"
+        keywords="LED ceiling lighting hallway, hallway LED strips, narrow corridor LED lighting, motion sensor LED hallway, COB LED corridor, how to light a long hallway, hallway ceiling LED strip"
         alternateUrls={alternateUrls}
       />
 
@@ -326,6 +330,51 @@ export default function LedCeilingLightingHallway() {
                       {t('hallway_lighting.articles.read_more')} <ArrowRight className="w-4 h-4" />
                     </div>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Guide */}
+        <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              How to Choose LED Ceiling Lighting for Your Hallway
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+              <p>Hallways and corridors are transitional spaces where lighting needs to be practical, energy-efficient, and capable of making a strong first impression. LED strip ceiling lighting is perfectly suited to this challenge — offering uniform illumination, optional motion control, and the ability to visually transform narrow spaces.</p>
+              <p><strong>Brightness Requirements:</strong> Hallways require 100–150 lux for comfortable navigation — less than a kitchen or office, but enough to avoid stumbling and to make the space feel welcoming. A single LED strip at 600–800 lm/m is typically sufficient for a hallway up to 1.5 m wide. For wider entrance halls, use strips on both sides of the ceiling for cross-illumination.</p>
+              <p><strong>Color Temperature:</strong> 3000K–4000K strikes the ideal balance for a hallway. Warm 3000K creates a welcoming entrance impression; neutral 4000K adds clarity for safety. Avoid very warm 2700K (feels dim at lower brightness) and very cool 5000K+ (feels clinical for an entrance space). A fixed 3500K is an excellent compromise if CCT adjustment is not in the budget.</p>
+              <p><strong>Motion Sensors for Efficiency:</strong> Hallways are used briefly and repeatedly — an ideal application for PIR motion sensors. The sensor activates the LED strip when movement is detected and turns it off after a set delay (typically 1–3 minutes). This is the single most effective way to reduce hallway energy consumption, often saving over 75% compared to a manually operated light left on.</p>
+              <p><strong>Night Mode:</strong> A secondary low-brightness circuit (5–10%) activated by a twilight sensor provides gentle nighttime guidance without disturbing sleep. This eliminates the need for a full-power light in the night while ensuring safe navigation from bedroom to bathroom. RGB+CCT strips can be set to an ultra-dim warm amber for the most sleep-friendly nighttime glow.</p>
+              <p><strong>Common Mistakes:</strong> Using a single pendant light in a long hallway creates bright pools with dark zones between them — always use a continuous strip for even coverage. Forgetting to account for voltage drop in long runs causes the far end of the strip to be noticeably dimmer; use 24V strips or amplifiers to maintain uniform brightness over longer distances.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internal Links */}
+        <section className="py-10 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Home className="w-5 h-5 text-gray-600" />
+              <h2 className="text-xl font-bold text-gray-900">LED Ceiling Lighting for Other Rooms</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { to: `/${locale}/led-ceiling-lighting-kitchen`, label: 'LED Ceiling Lighting for Kitchen' },
+                { to: `/${locale}/led-ceiling-lighting-bedroom`, label: 'LED Ceiling Lighting for Bedroom' },
+                { to: `/${locale}/led-ceiling-lighting-living-room`, label: 'LED Ceiling Lighting for Living Room' },
+                { to: `/${locale}/led-ceiling-lighting-bathroom`, label: 'LED Ceiling Lighting for Bathroom' },
+                { to: `/${locale}/led-ceiling-lighting-office`, label: 'LED Ceiling Lighting for Office' },
+              ].map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-gray-400 hover:text-gray-700 transition-all duration-200 group"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-gray-600" />
+                  <span className="leading-tight">{link.label}</span>
                 </Link>
               ))}
             </div>

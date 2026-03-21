@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Monitor, Brain, Zap, Eye, CheckCircle, ArrowRight, BookOpen, Star } from 'lucide-react';
+import { Monitor, Brain, Zap, Eye, CheckCircle, ArrowRight, BookOpen, Star, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
@@ -65,7 +65,11 @@ export default function LedCeilingLightingOffice() {
     { question: t('office_lighting.faq.q2.question'), answer: t('office_lighting.faq.q2.answer') },
     { question: t('office_lighting.faq.q3.question'), answer: t('office_lighting.faq.q3.answer') },
     { question: t('office_lighting.faq.q4.question'), answer: t('office_lighting.faq.q4.answer') },
-    { question: t('office_lighting.faq.q5.question'), answer: t('office_lighting.faq.q5.answer') }
+    { question: t('office_lighting.faq.q5.question'), answer: t('office_lighting.faq.q5.answer') },
+    { question: 'How many lumens do I need for a home office ceiling?', answer: 'Office work requires 300–500 lux at desk level — roughly 3–5× more than a bedroom needs. For a 9 m² home office, use LED strips delivering 1000–1200 lm/m around the perimeter, supplemented by a desk task lamp. This ensures you are not straining your eyes during video calls or extended document work throughout the day.' },
+    { question: 'What color temperature promotes focus and productivity in a home office?', answer: '4000K–5000K (neutral to cool white) is the scientifically-backed range for focused cognitive work, mimicking midday daylight that supports alertness and concentration. Avoid harsh 6500K+ for extended sessions as it becomes fatiguing. CCT-adjustable strips let you run 5000K in the morning and shift to 4000K in the afternoon to reduce accumulated fatigue.' },
+    { question: 'Can ceiling LED lighting cause eye strain during computer work?', answer: 'Poorly chosen LEDs can cause eye strain, but high-quality strips avoid it. Use flicker-free strips (PWM frequency >1000 Hz or constant-current DC drivers), position strips so they do not reflect directly in your monitor screen, and choose 4000K–5000K rather than warm 2700K. Our office-rated strips are tested flicker-free and designed for prolonged screen work.' },
+    { question: 'Is LED ceiling lighting better than a desk lamp alone for a home office?', answer: 'Use both together for the best result. LED ceiling strips provide even ambient illumination that eliminates the harsh contrast between a bright desk lamp and a dark surrounding environment — a major cause of eye fatigue on video calls. Ceiling perimeter strips at 60–70% brightness combined with a focused desk lamp gives the most comfortable and productive working environment.' }
   ];
 
   return (
@@ -73,7 +77,7 @@ export default function LedCeilingLightingOffice() {
       <SEO
         title={t('office_lighting.seo.title')}
         description={t('office_lighting.seo.description')}
-        keywords="LED ceiling lighting office, home office LED strips, office ceiling lights, COB LED workspace, flicker-free office lighting"
+        keywords="LED ceiling lighting office, home office LED strips, flicker-free office lighting, best LED color temperature home office, how many lumens office ceiling, COB LED workspace, eye strain LED office"
         alternateUrls={alternateUrls}
       />
 
@@ -335,6 +339,51 @@ export default function LedCeilingLightingOffice() {
                       {t('office_lighting.articles.read_more')} <ArrowRight className="w-4 h-4" />
                     </div>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Guide */}
+        <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              How to Choose LED Ceiling Lighting for Your Home Office
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+              <p>Home office lighting has a direct, measurable impact on productivity, focus, and eye health. Unlike residential spaces, a home office requires near-professional lighting standards — high brightness, neutral color temperature, and zero flicker — to support sustained cognitive work throughout the day.</p>
+              <p><strong>Brightness Requirements:</strong> Office work requires 300–500 lux at desk level — three to five times more than a comfortable bedroom. For a 9–12 m² office, this means LED strips delivering 1000–1200 lm/m around the ceiling perimeter, supplemented by a desk task lamp for direct work surface illumination. Video call setups additionally benefit from front-facing lighting to eliminate facial shadows on camera.</p>
+              <p><strong>Color Temperature for Concentration:</strong> 4000K–5000K (neutral to cool white) is the scientifically-validated range for office lighting. It mimics midday natural light, supporting alertness and sustained concentration. The human body responds to cool-neutral light with reduced melatonin production and increased cortisol — exactly the right state for focused work. Avoid 2700K warm white, which creates a relaxing atmosphere incompatible with productivity.</p>
+              <p><strong>Flicker-Free Operation:</strong> LED flicker is invisible to the naked eye but detectable by the brain's visual processing system, contributing significantly to eye fatigue, headaches, and difficulty concentrating during extended screen use. Always specify strips with constant-current drivers or high-frequency PWM dimming (&gt;1000 Hz). Our office-rated strips are explicitly tested and certified as flicker-free.</p>
+              <p><strong>Screen Glare Prevention:</strong> Position ceiling strips so they do not create reflections in monitor screens. In a typical office, this means mounting strips on the side walls and the wall behind you, rather than the wall behind the monitor. Test the placement by sitting at your desk and checking for reflections across different screen angles before finalizing the installation.</p>
+              <p><strong>Common Mistakes:</strong> Using warm 2700K makes afternoon work sessions feel progressively more sluggish. Non-dimmable strips prevent adaptation to changing daylight throughout the day. Placing a single bright strip directly in your line of sight creates glare that forces your eyes to constantly readjust — a leading cause of digital eye strain during video calls and screen work.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internal Links */}
+        <section className="py-10 bg-blue-50 border-t border-blue-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Home className="w-5 h-5 text-blue-500" />
+              <h2 className="text-xl font-bold text-gray-900">LED Ceiling Lighting for Other Rooms</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { to: `/${locale}/led-ceiling-lighting-kitchen`, label: 'LED Ceiling Lighting for Kitchen' },
+                { to: `/${locale}/led-ceiling-lighting-bedroom`, label: 'LED Ceiling Lighting for Bedroom' },
+                { to: `/${locale}/led-ceiling-lighting-living-room`, label: 'LED Ceiling Lighting for Living Room' },
+                { to: `/${locale}/led-ceiling-lighting-bathroom`, label: 'LED Ceiling Lighting for Bathroom' },
+                { to: `/${locale}/led-ceiling-lighting-hallway`, label: 'LED Ceiling Lighting for Hallway' },
+              ].map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-blue-400 hover:text-blue-600 transition-all duration-200 group"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-blue-500" />
+                  <span className="leading-tight">{link.label}</span>
                 </Link>
               ))}
             </div>

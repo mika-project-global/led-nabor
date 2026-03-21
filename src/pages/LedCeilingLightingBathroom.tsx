@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Droplets, ShieldCheck, Zap, Sparkles, CheckCircle, ArrowRight, BookOpen, Star } from 'lucide-react';
+import { Droplets, ShieldCheck, Zap, Sparkles, CheckCircle, ArrowRight, BookOpen, Star, Home } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SEO } from '../components/SEO';
 import { products } from '../data/products';
@@ -65,7 +65,11 @@ export default function LedCeilingLightingBathroom() {
     { question: t('bathroom_lighting.faq.q2.question'), answer: t('bathroom_lighting.faq.q2.answer') },
     { question: t('bathroom_lighting.faq.q3.question'), answer: t('bathroom_lighting.faq.q3.answer') },
     { question: t('bathroom_lighting.faq.q4.question'), answer: t('bathroom_lighting.faq.q4.answer') },
-    { question: t('bathroom_lighting.faq.q5.question'), answer: t('bathroom_lighting.faq.q5.answer') }
+    { question: t('bathroom_lighting.faq.q5.question'), answer: t('bathroom_lighting.faq.q5.answer') },
+    { question: 'Can I use LED strip lights in a bathroom near water?', answer: 'Yes, with the correct IP rating. For general ceiling use away from shower spray (Zone 3), IP20 is sufficient. Within 0.6 m of shower enclosures (Zone 2), use IP44 minimum. Directly above a shower head (Zone 1), use IP65-rated strips. Our kits include waterproof strip options specifically suited for bathroom ceiling installations.' },
+    { question: 'What color temperature is best for bathroom LED lighting?', answer: '4000K–4500K (cool neutral white) is optimal for bathrooms. It provides crisp, accurate lighting for grooming tasks without making skin tones look yellow (2700K issue) or harshly cold (6500K). Always pair with high CRI 90+ so makeup colors appear true and shaving is easier in the mirror.' },
+    { question: 'How should I position LED strips in a bathroom for the best effect?', answer: 'Install strips on all four ceiling edges for even ambient light. Additionally, place vertical strips on both sides of the mirror — not just above it — to eliminate the unflattering facial shadows that overhead-only lighting creates. A strip above the shower zone provides targeted task lighting. This multi-zone approach is the professional standard.' },
+    { question: 'Is 12V LED strip safer than 230V lighting in a bathroom?', answer: 'Yes, significantly. Low-voltage 12V and 24V LED systems operate below the 50V safety threshold defined in electrical standards for wet locations. The transformer is installed outside the wet zone, and only the low-voltage strip runs near water. This makes them the safest and most code-compliant choice for bathroom ceiling installations in all zones.' }
   ];
 
   return (
@@ -73,7 +77,7 @@ export default function LedCeilingLightingBathroom() {
       <SEO
         title={t('bathroom_lighting.seo.title')}
         description={t('bathroom_lighting.seo.description')}
-        keywords="LED ceiling lighting bathroom, bathroom LED strips, moisture resistant LED, COB LED bathroom, bathroom ceiling lights"
+        keywords="LED ceiling lighting bathroom, bathroom LED strips, waterproof LED strip IP44 IP65, LED bathroom mirror lighting, safe LED bathroom ceiling, COB LED bathroom, 12V LED bathroom"
         alternateUrls={alternateUrls}
       />
 
@@ -335,6 +339,51 @@ export default function LedCeilingLightingBathroom() {
                       {t('bathroom_lighting.articles.read_more')} <ArrowRight className="w-4 h-4" />
                     </div>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Guide */}
+        <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              How to Choose LED Ceiling Lighting for Your Bathroom
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+              <p>Bathroom lighting must satisfy conflicting requirements: functional bright light for grooming tasks, soft atmospheric light for relaxation, and strict safety standards for wet environments. LED strip lighting addresses all three when specified correctly.</p>
+              <p><strong>Safety First — IP Ratings:</strong> The bathroom is divided into zones under electrical safety regulations. Zone 1 (directly above the shower/bath) requires IP65 minimum. Zone 2 (within 0.6 m of water sources) requires IP44 minimum. Zone 3 (the rest of the bathroom) allows IP20. Using 12V/24V low-voltage LED systems also provides a fundamental safety advantage since they operate below the hazardous voltage threshold.</p>
+              <p><strong>Color Temperature for Grooming:</strong> 4000K–4500K is the professional standard for bathroom lighting. This cool-neutral range renders skin tones accurately without the yellow cast of 2700K or the harshness of 6500K. Always specify CRI 90+ for bathroom use — color accuracy matters enormously for makeup application, shaving, and assessing skin condition.</p>
+              <p><strong>Mirror Lighting Strategy:</strong> A common mistake is placing all light directly above the mirror. This creates deep shadows under the chin, nose, and eyes — unflattering for grooming and inaccurate for makeup. The professional solution is vertical strip lighting on both sides of the mirror at face height, which fills in shadows completely. Combine with ceiling perimeter strips for overall ambient light.</p>
+              <p><strong>Placement for Coverage:</strong> Install ceiling strips on all four edges for even ambient light that eliminates dark corners. Add a strip specifically above or in the shower enclosure (IP65 rated) for safe, bright shower lighting. For larger bathrooms, a strip in the ceiling center provides supplemental task lighting over the vanity area.</p>
+              <p><strong>Common Mistakes:</strong> Using non-waterproof strips in wet zones is a code violation and a safety hazard. Choosing warm 2700K lighting creates an atmosphere but makes accurate grooming much harder. Using a single overhead strip directly above the mirror is perhaps the most widespread error — always flank the mirror with side lighting for accurate, professional-quality results.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internal Links */}
+        <section className="py-10 bg-teal-50 border-t border-teal-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-6">
+              <Home className="w-5 h-5 text-teal-500" />
+              <h2 className="text-xl font-bold text-gray-900">LED Ceiling Lighting for Other Rooms</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { to: `/${locale}/led-ceiling-lighting-kitchen`, label: 'LED Ceiling Lighting for Kitchen' },
+                { to: `/${locale}/led-ceiling-lighting-bedroom`, label: 'LED Ceiling Lighting for Bedroom' },
+                { to: `/${locale}/led-ceiling-lighting-living-room`, label: 'LED Ceiling Lighting for Living Room' },
+                { to: `/${locale}/led-ceiling-lighting-hallway`, label: 'LED Ceiling Lighting for Hallway' },
+                { to: `/${locale}/led-ceiling-lighting-office`, label: 'LED Ceiling Lighting for Office' },
+              ].map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-teal-400 hover:text-teal-600 transition-all duration-200 group"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-teal-500" />
+                  <span className="leading-tight">{link.label}</span>
                 </Link>
               ))}
             </div>
