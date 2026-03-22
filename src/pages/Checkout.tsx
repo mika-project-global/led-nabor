@@ -117,7 +117,6 @@ export default function Checkout() {
           });
         }
       } catch (error) {
-        console.error('Error loading user profile:', error);
         setIsAuthenticated(false);
       } finally {
         setIsLoadingProfile(false);
@@ -296,13 +295,11 @@ export default function Checkout() {
         }
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : 'An error occurred while processing your order';
-        console.error('Error processing order:', msg);
         setError(msg);
         setIsSubmitting(false);
       }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'An error occurred while creating your order';
-      console.error('Error creating order:', msg);
       setError(msg);
       setIsSubmitting(false);
     } finally {

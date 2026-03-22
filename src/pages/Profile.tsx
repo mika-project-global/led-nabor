@@ -97,7 +97,6 @@ export default function Profile() {
         if (error) throw error;
         setOrders(data || []);
       } catch (error) {
-        console.error('Error loading orders:', error);
         showNotification('error', 'Failed to load orders');
       } finally {
         setIsLoadingOrders(false);
@@ -152,7 +151,6 @@ export default function Profile() {
       showNotification('success', 'Profile updated successfully');
       setProfile(prev => ({ ...prev, ...updatedFormData }));
     } catch (error) {
-      console.error('Error updating profile:', error);
       showNotification('error', 'Error updating profile');
     } finally {
       setIsSubmitting(false);

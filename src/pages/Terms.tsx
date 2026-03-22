@@ -135,7 +135,7 @@ export default function Terms() {
         <h2 className="text-xl font-bold mb-4">{t('terms_page.additional_info')}</h2>
         <p className="text-gray-600 mb-4">
           {t('terms_page.additional_info_desc')}{' '}
-          <Link to="/privacy-policy" className="text-cyan-600 hover:text-cyan-700">
+          <Link to={`/${locale}/privacy-policy`} className="text-cyan-600 hover:text-cyan-700">
             {t('privacy_policy')}
           </Link>
           , {t('terms_page.additional_info_link')}

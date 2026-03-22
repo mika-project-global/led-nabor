@@ -84,7 +84,6 @@ export default function Admin() {
       const isAdminUser = await checkIsAdmin();
       setIsAdmin(isAdminUser);
     } catch (error) {
-      console.error('Error checking admin access:', error);
       setIsAdmin(false);
     } finally {
       setIsCheckingAccess(false);
@@ -103,7 +102,6 @@ export default function Admin() {
       if (error) throw error;
       setUploadedVideos(data || []);
     } catch (error) {
-      console.error('Error loading videos:', error);
     } finally {
       setIsLoadingVideos(false);
     }
@@ -133,7 +131,6 @@ export default function Admin() {
 
       setTimeout(() => setUploadMessage(null), 3000);
     } catch (error) {
-      console.error('Error saving video:', error);
       setUploadMessage({ type: 'error', text: 'Ошибка при сохранении видео в базу данных' });
       setTimeout(() => setUploadMessage(null), 5000);
     }
@@ -154,7 +151,6 @@ export default function Admin() {
       await loadProductVideos();
       setTimeout(() => setUploadMessage(null), 3000);
     } catch (error) {
-      console.error('Error deleting video:', error);
       setUploadMessage({ type: 'error', text: 'Ошибка при удалении видео' });
       setTimeout(() => setUploadMessage(null), 5000);
     }
@@ -190,7 +186,6 @@ export default function Admin() {
       const uniquePosts = Array.from(groupedPosts.values());
       setBlogPosts(uniquePosts as any);
     } catch (error) {
-      console.error('Error loading blog posts:', error);
     } finally {
       setIsLoadingPosts(false);
     }
@@ -214,7 +209,6 @@ export default function Admin() {
       await loadBlogPosts();
       setTimeout(() => setUploadMessage(null), 3000);
     } catch (error) {
-      console.error('Error deleting post:', error);
       setUploadMessage({ type: 'error', text: 'Failed to delete blog post' });
       setTimeout(() => setUploadMessage(null), 5000);
     }

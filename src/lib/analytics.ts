@@ -74,7 +74,6 @@ export function trackPurchase(params: PurchaseEventParams) {
       items: params.items
     });
 
-    console.log('GA4 Purchase event sent:', params);
   } else {
     console.warn('gtag is not available for tracking purchase');
   }

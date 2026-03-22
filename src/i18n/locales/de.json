@@ -94,6 +94,8 @@
     "warranty_24_months": "24 Monate Garantie",
     "recently_viewed": "Kürzlich angesehen",
     "not_found": "Produkt nicht gefunden",
+    "not_found_description": "Das angeforderte Produkt existiert leider nicht oder wurde entfernt.",
+    "back_to_catalog": "Zurück zum Katalog",
     "overview": "Übersicht",
     "specifications": "Spezifikationen",
     "calculators": "Rechner",
@@ -443,6 +445,7 @@
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
+    "subtitle": "Antworten auf die häufigsten Fragen zu unseren Produkten und Dienstleistungen",
     "search_placeholder": "Fragen suchen",
     "categories": {
       "installation": "Installation",
@@ -515,7 +518,10 @@
     "advantage_2_desc": "Sie können sicher sein: In Ihrer Decke werden keine billigen chinesischen Noname-Produkte verbaut. Wir arbeiten nur mit Herstellern bekannter Marken, die sich bewährt haben und offizielle Garantien bieten (Arlight, JazzWay, LedsPower, Rexant, Wago, Electrostandart, Klus).",
     "advantage_3_title": "Zuverlässige Montage",
     "advantage_3_desc": "Wir montieren mit Qualität im Sinn. Wir setzen an das Ende jedes Kabels eine Kontakthülse. Ein Kabel mit Hülse fällt niemals aus einem Steckverbinder. Die Decke wird eher vor Alter zerfallen als dass die Kontakte versagen.",
-    "contact_info": "Kontaktinformationen"
+    "contact_info": "Kontaktinformationen",
+    "working_hours": "Geschäftszeiten",
+    "weekdays": "Werktage: 9:00 - 18:00",
+    "weekends": "Wochenende: 10:00 - 16:00"
   },
   "support": {
     "title": "Ingenieur-Unterstützung",
@@ -760,7 +766,9 @@
     "receive_notifications": "Bestellstatusbenachrichtigungen erhalten",
     "subscribe_newsletter": "Newsletter und Aktionen abonnieren",
     "no_reviews": "Sie haben noch keine Bewertungen geschrieben",
-    "no_settings": "Einstellungen"
+    "no_settings": "Einstellungen",
+    "warranty": "Garantie",
+    "my_reviews": "Meine Bewertungen"
   },
   "common": {
     "loading": "Laden...",
@@ -782,7 +790,8 @@
     "privacy_policy": "Datenschutzerklärung",
     "and": "und",
     "terms": "Nutzungsbedingungen",
-    "accept": "Akzeptieren"
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen"
   },
   "lang": {
     "en": "English",
@@ -2047,5 +2056,8 @@
     "bathroom": "LED-Deckenbeleuchtung für das Badezimmer",
     "hallway": "LED-Deckenbeleuchtung für den Flur",
     "office": "LED-Deckenbeleuchtung für das Büro"
+  },
+  "seo": {
+    "title_suffix": "LED-Streifen für Deckenbeleuchtung"
   }
 }

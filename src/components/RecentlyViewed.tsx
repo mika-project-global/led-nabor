@@ -11,7 +11,7 @@ export function RecentlyViewed() {
   const { productId } = useParams<{ productId: string }>();
   const currentProductId = productId ? Number(productId) : null;
   const { t } = useTranslation();
-  const { locale } = useLocale();
+  const { locale, formatPrice } = useLocale();
 
   if (loading || history.length === 0) {
     return null;
@@ -58,10 +58,10 @@ export function RecentlyViewed() {
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                  {product.name}
+                  {t(`products.${product.id}.name`)}
                 </h3>
                 <p className="text-lg font-bold text-blue-600 mt-2">
-                  от {product.variants[0].price.toLocaleString()} Kč
+                  {formatPrice(product.variants[0].price)}
                 </p>
               </div>
             </Link>

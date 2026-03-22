@@ -58,12 +58,10 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
     });
 
     if (error) {
-      console.error('Error creating checkout session:', error);
       return { error: error.message };
     }
 
     if (!data || !data.id) {
-      console.error('Failed to create checkout session - no data or ID returned');
       return { error: 'Failed to create checkout session' };
     }
 
@@ -74,7 +72,6 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
       .eq('id', order.id);
 
     if (updateError) {
-      console.error('Error updating order status:', updateError);
     }
 
     // Create payment session record
@@ -106,7 +103,6 @@ export async function createCheckoutSession(order: Order): Promise<{ id: string 
 
     return { id: data.id };
   } catch (error) {
-    console.error('Error in createCheckoutSession:', error.message || error);
     return { error: typeof error === 'string' ? error : (error.message || 'An unknown error occurred') };
   }
 }
@@ -124,7 +120,6 @@ export async function createCashOnDeliveryOrder(order: Order): Promise<boolean> 
 
     return true;
   } catch (error) {
-    console.error('Error creating cash on delivery order:', error);
     throw error;
   }
 }

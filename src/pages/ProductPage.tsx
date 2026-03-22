@@ -38,35 +38,8 @@ import { SEO } from '../components/SEO';
 function ProductPage() {
   const { productSlug, locale: urlLocale } = useParams<{ productSlug: string; locale: string }>();
   const navigate = useNavigate();
-  const currentLocale = (urlLocale || 'en') as 'en' | 'ru' | 'cz' | 'de' | 'pl';
+  const currentLocale = (urlLocale || 'en') as 'en' | 'ru' | 'uk' | 'cz' | 'de' | 'pl';
 
-  // Try to find product by slug first
-  let product = products.find(p => p.slugs[currentLocale] === productSlug);
-
-  // Fallback: search across all locales (handles old translated slugs)
-  if (!product && productSlug) {
-    product = products.find(p =>
-      Object.values(p.slugs).includes(productSlug)
-    );
-    if (product) {
-      const correctSlug = product.slugs[currentLocale];
-      navigate(`/${currentLocale}/product/${correctSlug}`, { replace: true });
-      return null;
-    }
-  }
-
-  // Fallback: If not found by slug, try to find by ID (for old URLs)
-  if (!product && productSlug) {
-    const productId = Number(productSlug);
-    if (!isNaN(productId)) {
-      const productById = products.find(p => p.id === productId);
-      if (productById) {
-        const correctSlug = productById.slugs[currentLocale];
-        navigate(`/${currentLocale}/product/${correctSlug}`, { replace: true });
-        return null;
-      }
-    }
-  }
   const [selectedVariant, setSelectedVariant] = useState<any | null>(null);
   const [warrantyPolicies, setWarrantyPolicies] = useState<WarrantyPolicy[]>([]);
   const [selectedWarranty, setSelectedWarranty] = useState<WarrantySelection | null>(null);
@@ -94,6 +67,29 @@ function ProductPage() {
   const [showAIEditor, setShowAIEditor] = useState(false);
   const [currentImageForAI, setCurrentImageForAI] = useState<string>('');
   const [isAdmin, setIsAdmin] = useState(false);
+
+  let product = products.find(p => p.slugs[currentLocale] === productSlug);
+
+  if (!product && productSlug) {
+    product = products.find(p =>
+      Object.values(p.slugs).includes(productSlug)
+    );
+  }
+
+  if (!product && productSlug) {
+    const numericId = Number(productSlug);
+    if (!isNaN(numericId)) {
+      product = products.find(p => p.id === numericId);
+    }
+  }
+
+  useEffect(() => {
+    if (!product) return;
+    const correctSlug = product.slugs[currentLocale];
+    if (productSlug !== correctSlug) {
+      navigate(`/${currentLocale}/product/${correctSlug}`, { replace: true });
+    }
+  }, [product, productSlug, currentLocale, navigate]);
 
   const tabs = [
     { id: 'overview', label: t('product.overview'), icon: Info },
@@ -130,13 +126,11 @@ function ProductPage() {
             .order('created_at', { ascending: false });
 
           if (error) {
-            console.error('Error loading reviews:', error);
             return;
           }
 
           setReviews(data || []);
         } catch (error) {
-          console.error('Error in fetchReviews:', error);
         } finally {
           setIsLoading(false);
         }
@@ -159,13 +153,11 @@ function ProductPage() {
             .order('order_position', { ascending: true });
 
           if (error) {
-            console.error('Error loading product videos:', error);
             return;
           }
 
           setProductVideos(data || []);
         } catch (error) {
-          console.error('Error in loadProductVideos:', error);
         }
       };
 
@@ -266,7 +258,7 @@ function ProductPage() {
             });
           }
         })
-        .catch(error => console.error('Error loading warranty policies:', error));
+        .catch(() => {});
     }
   }, [product]);
 
@@ -295,7 +287,6 @@ function ProductPage() {
       setReviews(newReviews || []);
       setIsReviewFormVisible(false);
     } catch (error) {
-      console.error('Error submitting review:', error);
       throw error;
     }
   };
@@ -308,7 +299,6 @@ function ProductPage() {
     const isYouTube = currentMedia.includes('youtube.com') || currentMedia.includes('youtu.be');
 
     if (isYouTube) {
-      alert('AI обработка доступна только для изображений, не для видео');
       return;
     }
 
@@ -316,8 +306,7 @@ function ProductPage() {
     setShowAIEditor(true);
   };
 
-  const handleImageProcessed = async (processedUrl: string) => {
-    console.log('Обработанное изображение:', processedUrl);
+  const handleImageProcessed = async (_processedUrl: string) => {
   };
 
   if (!product) {
@@ -325,16 +314,16 @@ function ProductPage() {
       <div className="min-h-[60vh] flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            {t('product.not_found') || 'Товар не найден'}
+            {t('product.not_found')}
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            К сожалению, запрашиваемый товар не существует или был удален
+            {t('product.not_found_description')}
           </p>
           <Link
             to={`/${locale}/catalog`}
             className="inline-block bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition-colors"
           >
-            {t('back_to_catalog') || 'Вернуться в каталог'}
+            {t('product.back_to_catalog')}
           </Link>
         </div>
       </div>

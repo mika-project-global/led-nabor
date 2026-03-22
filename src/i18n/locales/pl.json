@@ -94,6 +94,8 @@
     "warranty_24_months": "Gwarancja 24 miesiące",
     "recently_viewed": "Ostatnio Oglądane",
     "not_found": "Produkt nie znaleziony",
+    "not_found_description": "Niestety, żądany produkt nie istnieje lub został usunięty.",
+    "back_to_catalog": "Wróć do katalogu",
     "overview": "Przegląd",
     "specifications": "Specyfikacje",
     "calculators": "Kalkulatory",
@@ -443,6 +445,7 @@
   },
   "faq": {
     "title": "Najczęściej Zadawane Pytania",
+    "subtitle": "Odpowiedzi na najczęściej zadawane pytania dotyczące naszych produktów i usług",
     "search_placeholder": "Szukaj pytań",
     "categories": {
       "installation": "Instalacja",
@@ -515,7 +518,10 @@
     "advantage_2_desc": "Możesz być pewien: w Twoim suficie nie będzie tanich chińskich produktów bez nazwy. Pracujemy tylko z producentami znanych marek, które sprawdziły się w czasie i oferują oficjalne gwarancje (Arlight, JazzWay, LedsPower, Rexant, Wago, Electrostandart, Klus).",
     "advantage_3_title": "Niezawodny montaż",
     "advantage_3_desc": "Montujemy z myślą o jakości. Na koniec każdego przewodu zakładamy końcówkę kontaktową. Przewód z końcówką nigdy nie wypadnie ze złącza. Prędzej sufit się rozsypie ze starości niż zawiodą kontakty.",
-    "contact_info": "Informacje kontaktowe"
+    "contact_info": "Informacje kontaktowe",
+    "working_hours": "Godziny pracy",
+    "weekdays": "Dni robocze: 9:00 - 18:00",
+    "weekends": "Weekendy: 10:00 - 16:00"
   },
   "support": {
     "title": "Pomoc Inżyniera",
@@ -760,7 +766,9 @@
     "receive_notifications": "Otrzymuj powiadomienia o statusie zamówienia",
     "subscribe_newsletter": "Subskrybuj newsletter i promocje",
     "no_reviews": "Nie napisałeś jeszcze żadnych opinii",
-    "no_settings": "Ustawienia"
+    "no_settings": "Ustawienia",
+    "warranty": "Gwarancja",
+    "my_reviews": "Moje recenzje"
   },
   "common": {
     "loading": "Ładowanie...",
@@ -782,7 +790,8 @@
     "privacy_policy": "Politykę Prywatności",
     "and": "i",
     "terms": "Regulamin",
-    "accept": "Akceptuj"
+    "accept": "Akceptuj",
+    "reject": "Odrzuć"
   },
   "lang": {
     "en": "English",
@@ -2047,5 +2056,8 @@
     "bathroom": "Oświetlenie LED sufitu dla łazienki",
     "hallway": "Oświetlenie LED sufitu dla korytarza",
     "office": "Oświetlenie LED sufitu dla biura"
+  },
+  "seo": {
+    "title_suffix": "Taśmy LED do oświetlenia sufitowego"
   }
 }

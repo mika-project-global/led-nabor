@@ -1,8 +1,0 @@
-/* Neon Avatar Styles */
-.neon-avatar {
-  transition: all 0.3s ease;
-}
-
-.neon-avatar:hover {
-  transform: scale(1.05);
-}

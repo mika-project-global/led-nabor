@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
 
 interface BreadcrumbItem {
@@ -11,10 +11,12 @@ interface BreadcrumbsProps {
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
+  const { locale = 'en' } = useParams<{ locale: string }>();
+
   return (
     <nav className="flex items-center space-x-2 text-sm mb-6" aria-label="Breadcrumb">
       <Link
-        to="/"
+        to={`/${locale}`}
         className="text-gray-500 hover:text-blue-600 transition-colors flex items-center"
       >
         <Home className="w-4 h-4" />

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useLocale } from '../context/LocaleContext';
@@ -21,12 +20,17 @@ export function CookieConsent() {
     setShow(false);
   };
 
+  const handleReject = () => {
+    localStorage.setItem('cookie-consent', 'rejected');
+    setShow(false);
+  };
+
   if (!show) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-4 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-        <p className="text-gray-600">
+    <div className="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.1)] border-t border-gray-200 p-4 z-50">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <p className="text-sm text-gray-600">
           {t('cookie_consent.message')}{' '}
           <Link to={`/${locale}/privacy-policy`} className="text-cyan-600 hover:text-cyan-700">
             {t('cookie_consent.privacy_policy')}
@@ -36,18 +40,18 @@ export function CookieConsent() {
             {t('cookie_consent.terms')}
           </Link>.
         </p>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 flex-shrink-0">
           <button
-            onClick={handleAccept}
-            className="bg-cyan-500 text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors"
+            onClick={handleReject}
+            className="px-5 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
           >
-            {t('cookie_consent.accept')}
+            {t('cookie_consent.reject')}
           </button>
           <button
-            onClick={() => setShow(false)}
-            className="text-gray-500 hover:text-gray-700"
+            onClick={handleAccept}
+            className="px-5 py-2 text-sm font-medium bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors"
           >
-            <X size={24} />
+            {t('cookie_consent.accept')}
           </button>
         </div>
       </div>

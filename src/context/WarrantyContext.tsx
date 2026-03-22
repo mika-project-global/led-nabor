@@ -59,7 +59,7 @@ export function WarrantyProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-function useWarranty() {
+export function useWarranty() {
   const context = useContext(WarrantyContext);
   if (context === undefined) {
     throw new Error('useWarranty must be used within a WarrantyProvider');

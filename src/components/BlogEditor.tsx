@@ -83,7 +83,6 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
       });
       setTranslations(translationsMap);
     } catch (error) {
-      console.error('Error loading translations:', error);
     } finally {
       setLoadingTranslations(false);
     }
@@ -127,7 +126,6 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
 
       if (sessionError) {
-        console.error('Session error:', sessionError);
         setError(`Session error: ${sessionError.message}`);
         setSaving(false);
         return;
@@ -138,10 +136,6 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
         setSaving(false);
         return;
       }
-
-      console.log('Current user ID:', session.user.id);
-      console.log('Saving for locale:', selectedLocale);
-      console.log('Translation group ID:', translationGroupId);
 
       const existingPostForLocale = translations[selectedLocale];
 
@@ -162,8 +156,6 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
           updated_at: new Date().toISOString()
         };
 
-        console.log('Updating existing post:', existingPostForLocale.id, postData);
-
         const { error: updateError, count } = await supabase
           .from('blog_posts')
           .update(postData)
@@ -171,7 +163,6 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
           .select();
 
         if (updateError) {
-          console.error('Update error:', updateError);
           throw updateError;
         }
 
@@ -179,7 +170,6 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
           throw new Error('Update blocked: You do not have permission to edit this post. Please check if you are the author.');
         }
 
-        console.log('Update successful');
         await loadTranslations(translationGroupId);
       } else {
         const newId = crypto.randomUUID();
@@ -200,24 +190,19 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
           published_at: formData.published ? new Date().toISOString() : null
         };
 
-        console.log('Creating new post:', postData);
-
         const { error: insertError } = await supabase
           .from('blog_posts')
           .insert(postData);
 
         if (insertError) {
-          console.error('Insert error:', insertError);
           throw insertError;
         }
 
-        console.log('Insert successful');
         await loadTranslations(translationGroupId);
       }
 
       onSave();
     } catch (err: any) {
-      console.error('Error saving blog post:', err);
       setError(err.message || 'Failed to save blog post');
     } finally {
       setSaving(false);
@@ -229,13 +214,11 @@ export default function BlogEditor({ post, onSave, onCancel }: BlogEditorProps) 
   }
 
   function handleContentImageUpload(url: string) {
-    console.log('handleContentImageUpload called with URL:', url);
     const markdownImage = `![Image](${url})`;
     const newContent = formData.content
       ? formData.content + '\n\n' + markdownImage
       : markdownImage;
 
-    console.log('Setting new content:', newContent);
     setFormData(prev => ({
       ...prev,
       content: newContent

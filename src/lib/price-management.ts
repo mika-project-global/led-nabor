@@ -8,7 +8,6 @@ import { PriceData, WarrantyPriceData } from '../types';
  */
 export async function refreshProductData(productId: number) {
   try {
-    console.log(`Refreshing product data for product ID: ${productId}`);
     const { data, error } = await supabase
       .from('products')
       .select('*')
@@ -16,10 +15,8 @@ export async function refreshProductData(productId: number) {
       .single();
 
     if (error) throw error;
-    console.log(`Successfully refreshed product data: ${data.id}`);
     return data;
   } catch (error) {
-    console.error('Error refreshing product data:', error);
     return null;
   }
 }
@@ -39,7 +36,6 @@ async function getProductPrices(currency: string = 'CZK'): Promise<PriceData[]> 
     if (error) throw error;
     return data || [];
   } catch (error) {
-    console.error('Error fetching product prices:', error);
     return [];
   }
 }
@@ -61,7 +57,6 @@ async function getWarrantyPrices(currency: string = 'CZK', variantId: string = '
     if (error) throw error;
     return data || [];
   } catch (error) {
-    console.error('Error fetching warranty prices:', error);
     return [];
   }
 }
@@ -81,7 +76,6 @@ async function updateProductPrice(
   price: number
 ): Promise<number | null> {
   try {
-    console.log(`Updating product price: ${productId}, ${variantId}, ${currency}, ${price}`);
     const { data, error } = await supabase
       .rpc('update_product_variant_price', {
         p_product_id: productId,
@@ -90,10 +84,8 @@ async function updateProductPrice(
       });
 
     if (error) throw error;
-    console.log(`Price update successful: ${data}`);
     return data;
   } catch (error) {
-    console.error('Error updating product price:', error);
     return null;
   }
 }
@@ -115,7 +107,6 @@ async function updateWarrantyPrice(
   variantId: string = 'rgb-5'
 ): Promise<boolean> {
   try {
-    console.log(`Updating warranty price: ${productId}, ${months}, ${currency}, ${price}, ${variantId}`);
     const { data, error } = await supabase
       .rpc('update_warranty_price_with_variant', {
         p_product_id: productId,
@@ -126,10 +117,8 @@ async function updateWarrantyPrice(
       });
 
     if (error) throw error;
-    console.log(`Warranty price update successful`);
     return true;
   } catch (error) {
-    console.error('Error updating warranty price:', error);
     return false;
   }
 }
@@ -148,7 +137,6 @@ async function getProducts() {
     if (error) throw error;
     return data || [];
   } catch (error) {
-    console.error('Error fetching products:', error);
     return [];
   }
 }
@@ -179,7 +167,6 @@ async function debugWarrantyPrice(
     if (error) throw error;
     return data;
   } catch (error) {
-    console.error('Error debugging warranty price:', error);
     return null;
   }
 }
@@ -207,7 +194,6 @@ async function debugProductPrice(
     if (error) throw error;
     return data;
   } catch (error) {
-    console.error('Error debugging product price:', error);
     return null;
   }
 }
@@ -225,7 +211,6 @@ async function updateProductVariantPrice(
   price: number
 ): Promise<boolean> {
   try {
-    console.log(`Directly updating product variant price: ${productId}, ${variantId}, ${price}`);
     const { data, error } = await supabase
       .rpc('update_product_variant_price', {
         p_product_id: productId,
@@ -234,10 +219,8 @@ async function updateProductVariantPrice(
       });
 
     if (error) throw error;
-    console.log(`Direct price update successful: ${data}`);
     return !!data;
   } catch (error) {
-    console.error('Error updating product variant price:', error);
     return false;
   }
 }

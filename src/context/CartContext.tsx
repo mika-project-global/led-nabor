@@ -25,7 +25,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       const parsed = saved ? JSON.parse(saved) : [];
       return Array.isArray(parsed) ? parsed : [];
     } catch (error) {
-      console.error('Failed to parse cart data:', error);
       return [];
     }
   });
@@ -35,7 +34,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     try {
       localStorage.setItem('cart', JSON.stringify(items));
     } catch (error) {
-      console.error('Failed to save cart data:', error);
     }
   }, [items]);
 
@@ -47,7 +45,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
           const parsed = JSON.parse(e.newValue);
           setItems(Array.isArray(parsed) ? parsed : []);
         } catch (error) {
-          console.error('Failed to sync cart data:', error);
         }
       }
     };

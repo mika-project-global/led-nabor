@@ -94,6 +94,8 @@
     "warranty_24_months": "24měsíční záruka",
     "recently_viewed": "Nedávno zobrazené",
     "not_found": "Produkt nenalezen",
+    "not_found_description": "Požadovaný produkt bohužel neexistuje nebo byl odstraněn.",
+    "back_to_catalog": "Zpět do katalogu",
     "overview": "Přehled",
     "specifications": "Specifikace",
     "calculators": "Kalkulačky",
@@ -443,6 +445,7 @@
   },
   "faq": {
     "title": "Často kladené otázky",
+    "subtitle": "Odpovědi na nejčastější otázky o našich produktech a službách",
     "search_placeholder": "Hledat otázky",
     "categories": {
       "installation": "Instalace",
@@ -515,7 +518,10 @@
     "advantage_2_desc": "Můžete si být jisti: ve vašem stropě nebudou levné čínské noname produkty. Pracujeme pouze s výrobci známých značek, které prošly zkouškou času a poskytují oficiální záruky (Arlight, JazzWay, LedsPower, Rexant, Wago, Electrostandart, Klus).",
     "advantage_3_title": "Spolehlivá montáž",
     "advantage_3_desc": "Sestavujeme s důrazem na kvalitu. Na konec každého kabelu dáváme kontaktní dutinku. Kabel s dutinkou nikdy nevypadne z konektoru. Spíš se strop rozpadne stářím než selžou kontakty.",
-    "contact_info": "Kontaktní informace"
+    "contact_info": "Kontaktní informace",
+    "working_hours": "Pracovní doba",
+    "weekdays": "Pracovní dny: 9:00 - 18:00",
+    "weekends": "Víkendy: 10:00 - 16:00"
   },
   "support": {
     "title": "Pomoc inženýra",
@@ -760,7 +766,9 @@
     "receive_notifications": "Přijímat oznámení o stavu objednávky",
     "subscribe_newsletter": "Odebírat newsletter a akce",
     "no_reviews": "Zatím jste nenapsali žádné recenze",
-    "no_settings": "Nastavení"
+    "no_settings": "Nastavení",
+    "warranty": "Záruka",
+    "my_reviews": "Moje recenze"
   },
   "common": {
     "loading": "Načítání...",
@@ -782,7 +790,8 @@
     "privacy_policy": "Zásadami ochrany osobních údajů",
     "and": "a",
     "terms": "Podmínkami použití",
-    "accept": "Přijmout"
+    "accept": "Přijmout",
+    "reject": "Odmítnout"
   },
   "lang": {
     "en": "English",
@@ -2047,5 +2056,8 @@
     "bathroom": "LED stropní osvětlení pro koupelnu",
     "hallway": "LED stropní osvětlení pro chodbu",
     "office": "LED stropní osvětlení pro kancelář"
+  },
+  "seo": {
+    "title_suffix": "LED pásky pro stropní osvětlení"
   }
 }

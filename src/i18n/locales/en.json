@@ -94,6 +94,8 @@
     "warranty_24_months": "24-month warranty",
     "recently_viewed": "Recently Viewed",
     "not_found": "Product not found",
+    "not_found_description": "Sorry, the requested product does not exist or has been removed.",
+    "back_to_catalog": "Back to catalog",
     "overview": "Overview",
     "specifications": "Specifications",
     "calculators": "Calculators",
@@ -554,7 +556,9 @@
     "receive_notifications": "Receive order status notifications",
     "subscribe_newsletter": "Subscribe to news and promotions",
     "no_reviews": "You haven't written any reviews yet",
-    "no_settings": "Settings"
+    "no_settings": "Settings",
+    "warranty": "Warranty",
+    "my_reviews": "My Reviews"
   },
   "admin": {
     "title": "Admin Panel",
@@ -615,7 +619,8 @@
     "privacy_policy": "Privacy Policy",
     "and": "and",
     "terms": "Terms of Use",
-    "accept": "Accept"
+    "accept": "Accept",
+    "reject": "Reject"
   },
   "lang": {
     "en": "English",
@@ -623,6 +628,7 @@
   },
   "faq": {
     "title": "FAQ",
+    "subtitle": "Find answers to the most common questions about our products and services",
     "search_placeholder": "Search questions",
     "categories": {
       "installation": "Installation",
@@ -2080,5 +2086,8 @@
     "bathroom": "LED Ceiling Lighting for Bathroom",
     "hallway": "LED Ceiling Lighting for Hallway",
     "office": "LED Ceiling Lighting for Office"
+  },
+  "seo": {
+    "title_suffix": "LED Strips for Ceiling Lighting"
   }
 }

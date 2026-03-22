@@ -79,10 +79,10 @@ export default class ErrorBoundary extends Component<Props, State> {
               <AlertTriangle className="text-red-600" size={32} />
             </div>
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
-              Что-то пошло не так
+              Something went wrong
             </h1>
             <p className="text-gray-600 mb-6">
-              Произошла ошибка при загрузке страницы. Пожалуйста, попробуйте обновить страницу.
+              An error occurred while loading the page. Please try refreshing.
             </p>
             {process.env.NODE_ENV === 'development' && this.state.error && (
               <pre className="mt-4 p-4 bg-gray-100 rounded-lg text-left overflow-auto text-sm" tabIndex={0}>
@@ -95,17 +95,17 @@ export default class ErrorBoundary extends Component<Props, State> {
             <button
               onClick={this.resetError}
               className="inline-flex items-center gap-2 bg-cyan-500 text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors"
-              aria-label="Обновить страницу"
+              aria-label="Refresh page"
               tabIndex={0}
               autoFocus
             >
               <RefreshCw size={20} />
-              Обновить страницу
+              Refresh page
             </button>
             <p className="mt-4 text-sm text-gray-500">
-              Если проблема повторяется, пожалуйста,{' '}
-              <a href="/support" className="text-cyan-600 hover:text-cyan-700">
-                свяжитесь с поддержкой
+              If the problem persists, please{' '}
+              <a href="/en/support" className="text-cyan-600 hover:text-cyan-700">
+                contact support
               </a>
             </p>
           </div>

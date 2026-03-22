@@ -157,15 +157,8 @@ export function Cart({
                               return (
                                 <button
                                   key={policy.id}
-                                  onClick={() => {                                  
-                                    // Calculate the additional cost
-                                    // Store the warranty policy in the item
-                                    item.warrantyPolicies = warrantyPolicies[item.id];
-
-                                    // Update the warranty
+                                  onClick={() => {
                                     onUpdateWarranty(item.id, item.variant.id, policy.id);
-
-                                    // Close the dropdown
                                     toggleWarrantyOptions(item.id);
                                   }}
                                   type="button"

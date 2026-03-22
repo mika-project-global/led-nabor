@@ -149,7 +149,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       link={linkTags}
       meta={metaTags}
     >
-      <title>{`${title} | ${__APP_NAME__} - LED ленты для подсветки потолка`}</title>
+      <title>{`${title} | ${__APP_NAME__}`}</title>
 
       <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
 
