@@ -11,6 +11,7 @@ import { supabase } from '../lib/supabase';
 import { getImageUrl } from '../lib/supabase-storage';
 import { useNotifications } from '../hooks/useNotifications';
 import { SEO } from '../components/SEO';
+import { trackBeginCheckout, trackAddPaymentInfo } from '../lib/analytics';
 
 // Helper function to create a serializable order item
 const createSerializableOrderItem = (item: any) => ({
@@ -170,6 +171,11 @@ export default function Checkout() {
 
   const handleDeliverySubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackBeginCheckout({
+      value: total,
+      currency,
+      items: items.map(item => ({ id: item.id, name: item.name, price: item.variant.price, quantity: item.quantity }))
+    });
     setStep('confirmation');
   };
 
@@ -184,6 +190,13 @@ export default function Checkout() {
       setIsSubmitting(false);
       return;
     }
+
+    trackAddPaymentInfo({
+      value: total,
+      currency,
+      payment_type: selectedPaymentMethod,
+      items: items.map(item => ({ id: item.id, name: item.name, price: item.variant.price, quantity: item.quantity }))
+    });
 
     try {
       // Get user ID once at the beginning - check session directly

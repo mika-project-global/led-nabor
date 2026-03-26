@@ -27,7 +27,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
   const { locale = 'en' } = useParams<{ locale: string }>();
   const location = useLocation();
   const siteUrl = __SITE_URL__ || 'https://led-nabor.com';
-  const defaultImage = '/og-image.svg';
+  const defaultImage = '/og-image.webp';
   const ogLocale = LOCALE_MAP[locale] || 'en_US';
   const htmlLang = localeToHreflang(locale);
 
@@ -87,7 +87,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     { property: 'og:image:alt', content: title },
-    { property: 'og:image:type', content: image ? 'image/jpeg' : 'image/svg+xml' },
+    { property: 'og:image:type', content: image ? 'image/jpeg' : 'image/webp' },
     { property: 'og:url', content: fullCanonicalUrl },
     { property: 'og:site_name', content: 'LED Nabor' },
     { property: 'og:locale', content: ogLocale },
@@ -128,17 +128,36 @@ export function SEO({ title, description, image, type = 'website', keywords, can
     },
   };
 
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'LED Nabor',
+    url: siteUrl,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${siteUrl}/${locale}/catalog?search={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   const productSchema = type === 'product' && schema
     ? {
         '@context': 'https://schema.org',
         '@type': 'Product',
         ...(schema as Record<string, unknown>),
+        brand: { '@type': 'Brand', name: 'LED Nabor' },
+        manufacturer: { '@type': 'Organization', name: 'LED Nabor' },
+        url: fullCanonicalUrl,
         offers: {
           ...((schema as Record<string, unknown>).offers as Record<string, unknown>),
           '@type': 'Offer',
-          priceCurrency: 'CZK',
           availability: 'https://schema.org/InStock',
           priceValidUntil: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+          url: fullCanonicalUrl,
+          seller: { '@type': 'Organization', name: 'LED Nabor' },
         },
       }
     : null;
@@ -152,6 +171,7 @@ export function SEO({ title, description, image, type = 'website', keywords, can
       <title>{`${title} | ${__APP_NAME__}`}</title>
 
       <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
+      <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
 
       {productSchema && (
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>

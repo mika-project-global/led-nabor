@@ -7,6 +7,7 @@ import { Cart } from './Cart';
 import { Logo } from './Logo';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { useLocale } from '../context/LocaleContext';
+import { trackRemoveFromCart } from '../lib/analytics';
 
 export function Header() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -14,7 +15,15 @@ export function Header() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const { items, removeFromCart, updateQuantity, updateWarranty } = useCart();
-  const { formatPrice, locale } = useLocale();
+  const { formatPrice, locale, currency } = useLocale();
+
+  const handleRemoveFromCart = (productId: number, variantId: string) => {
+    const item = items.find(i => i.id === productId && i.variant.id === variantId);
+    if (item) {
+      trackRemoveFromCart({ id: productId, name: item.name, price: item.variant.price, currency, quantity: item.quantity });
+    }
+    removeFromCart(productId, variantId);
+  };
   const { t } = useTranslation();
 
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
@@ -141,7 +150,7 @@ export function Header() {
         items={items}
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
-        onRemoveFromCart={removeFromCart}
+        onRemoveFromCart={handleRemoveFromCart}
         onUpdateQuantity={updateQuantity}
         onUpdateWarranty={updateWarranty}
       />

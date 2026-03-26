@@ -31,6 +31,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { AIImageEditor } from '../components/AIImageEditor';
 import { checkIsAdmin } from '../lib/auth-utils';
 import { getProductAlternateUrls } from '../lib/urls';
+import { trackViewItem, trackAddToCart } from '../lib/analytics';
 
 type TabType = 'overview' | 'details' | 'calculator' | 'gallery' | 'reviews';
 import { SEO } from '../components/SEO';
@@ -240,6 +241,19 @@ function ProductPage() {
     }
   }, [currency, selectedVariant]);
   
+  const viewItemTracked = useRef(false);
+  useEffect(() => {
+    if (product && totalPrice !== null && !viewItemTracked.current) {
+      viewItemTracked.current = true;
+      trackViewItem({
+        id: product.id,
+        name: product.name,
+        price: totalPrice,
+        currency
+      });
+    }
+  }, [product, totalPrice, currency]);
+
   // Load warranty policies
   useEffect(() => {
     if (product) {
@@ -808,15 +822,17 @@ function ProductPage() {
                   </div>
                 </div>
 
-                <AddToCartAnimation 
-                  onAddToCart={() => selectedVariant && addToCart({
-                    ...product,
-                    variant: {
-                      ...selectedVariant,
-                      price: totalPrice !== null ? totalPrice : selectedVariant.price
-                    },
-                    warranty: selectedWarranty
-                  })}
+                <AddToCartAnimation
+                  onAddToCart={() => {
+                    if (!selectedVariant) return;
+                    const effectivePrice = totalPrice !== null ? totalPrice : selectedVariant.price;
+                    trackAddToCart({ id: product.id, name: product.name, price: effectivePrice, currency });
+                    addToCart({
+                      ...product,
+                      variant: { ...selectedVariant, price: effectivePrice },
+                      warranty: selectedWarranty
+                    });
+                  }}
                   onGoToCheckout={() => navigate(`/${locale}/checkout`)}
                 >
                   <button
