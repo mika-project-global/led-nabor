@@ -8,6 +8,7 @@ interface ViewingHistoryItem {
 }
 
 const SESSION_KEY = 'viewing_session_id';
+const CLEANUP_KEY = 'viewing_history_last_cleanup';
 
 function getOrCreateSessionId(): string {
   let sessionId = localStorage.getItem(SESSION_KEY);
@@ -18,12 +19,29 @@ function getOrCreateSessionId(): string {
   return sessionId;
 }
 
+function shouldRunCleanup(): boolean {
+  const lastCleanup = localStorage.getItem(CLEANUP_KEY);
+  if (!lastCleanup) return true;
+  const daysSinceCleanup = (Date.now() - parseInt(lastCleanup)) / (1000 * 60 * 60 * 24);
+  return daysSinceCleanup > 1;
+}
+
+async function runPeriodicCleanup() {
+  if (!shouldRunCleanup()) return;
+  try {
+    await supabase.rpc('cleanup_viewing_history');
+    localStorage.setItem(CLEANUP_KEY, Date.now().toString());
+  } catch {
+  }
+}
+
 export function useViewingHistory() {
   const [history, setHistory] = useState<ViewingHistoryItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loadHistory();
+    runPeriodicCleanup();
   }, []);
 
   const loadHistory = async () => {
@@ -33,7 +51,7 @@ export function useViewingHistory() {
 
       let query = supabase
         .from('viewing_history')
-        .select('*')
+        .select('id, product_id, viewed_at')
         .order('viewed_at', { ascending: false })
         .limit(20);
 
@@ -47,8 +65,7 @@ export function useViewingHistory() {
 
       if (error) throw error;
       setHistory(data || []);
-    } catch (error) {
-      console.error('Error loading history:', error);
+    } catch {
     } finally {
       setLoading(false);
     }
@@ -73,21 +90,12 @@ export function useViewingHistory() {
       const { data: existing } = await existingQuery.limit(1);
 
       if (existing && existing.length > 0) {
-        const lastViewedAt = new Date(existing[0].viewed_at);
-        const now = new Date();
-        const hoursSinceLastView = (now.getTime() - lastViewedAt.getTime()) / (1000 * 60 * 60);
-
-        if (hoursSinceLastView < 1) {
-          return;
-        }
-
-        await supabase
-          .from('viewing_history')
-          .delete()
-          .eq('id', existing[0].id);
+        const hoursSinceLastView = (Date.now() - new Date(existing[0].viewed_at).getTime()) / (1000 * 60 * 60);
+        if (hoursSinceLastView < 1) return;
+        await supabase.from('viewing_history').delete().eq('id', existing[0].id);
       }
 
-      const insertData: any = {
+      const insertData: Record<string, unknown> = {
         product_id: productId,
         session_id: sessionId
       };
@@ -96,15 +104,11 @@ export function useViewingHistory() {
         insertData.user_id = user.id;
       }
 
-      const { error } = await supabase
-        .from('viewing_history')
-        .insert(insertData);
-
+      const { error } = await supabase.from('viewing_history').insert(insertData);
       if (error) throw error;
 
       await loadHistory();
-    } catch (error) {
-      console.error('Error adding to history:', error);
+    } catch {
     }
   };
 
@@ -122,12 +126,10 @@ export function useViewingHistory() {
       }
 
       const { error } = await query;
-
       if (error) throw error;
 
       await loadHistory();
-    } catch (error) {
-      console.error('Error clearing history:', error);
+    } catch {
     }
   };
 
